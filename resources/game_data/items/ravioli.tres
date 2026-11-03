@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_4qpoc"]
+
+[resource]
+script = ExtResource("1_4qpoc")
+kind = 1
+sell_price = 30
+taste = "data.item.ravioli.taste"
+catalog_hint = "data.item.ravioli.hint"
+order = 174
+theme = "game:theme/mediterranean"
+tags = Array[String](["game:tag/home"])
+id = "item/ravioli"
+display_name = "data.item.ravioli.name"
+description = "data.item.ravioli.desc"

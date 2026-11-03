@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_j60k4"]
+
+[resource]
+script = ExtResource("1_j60k4")
+kind = 1
+sell_price = 16
+taste = "data.item.macchiato.taste"
+catalog_hint = "data.item.macchiato.hint"
+order = 114
+theme = "game:theme/cafe"
+order_weight = 1.2
+tags = Array[String](["game:tag/sweet"])
+id = "item/macchiato"
+display_name = "data.item.macchiato.name"
+description = "data.item.macchiato.desc"

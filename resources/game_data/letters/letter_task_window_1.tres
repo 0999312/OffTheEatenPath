@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="LetterDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/material_stack.gd" id="1_stack"]
+[ext_resource type="Script" path="res://scripts/resources/letter_def.gd" id="2_letter"]
+
+[resource]
+script = ExtResource("2_letter")
+title = "data.letter.task_window_1.title"
+body = "data.letter.task_window_1.body"
+order = 2
+condition = 1
+condition_ref = "game:letter/window"
+id = "letter/task_window_1"
+display_name = "data.letter.task_window_1.name"
+description = "data.letter.task_window_1.desc"
+task_title = "data.letter.task_window_1.task_title"
+task_body = "data.letter.task_window_1.task_body"
+task_goal = 1
+task_ref = "game:item/pour_over"
+task_amount = 1
+task_reward_coins = 20

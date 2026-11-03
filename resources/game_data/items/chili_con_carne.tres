@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_item"]
+
+[resource]
+script = ExtResource("1_item")
+kind = 1
+sell_price = 42
+taste = "data.item.chili_con_carne.taste"
+catalog_hint = "data.item.chili_con_carne.hint"
+order = 390
+theme = "game:theme/americas"
+order_weight = 1.0
+tags = Array[String](["game:tag/spicy"])
+id = "item/chili_con_carne"
+display_name = "data.item.chili_con_carne.name"
+description = "data.item.chili_con_carne.desc"

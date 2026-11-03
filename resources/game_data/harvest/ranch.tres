@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="HarvestDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/harvest_def.gd" id="1_harv"]
+
+[resource]
+script = ExtResource("1_harv")
+tag = "game:tag/livestock"
+cooldown_seconds = Array[float]([80, 45, 29, 17, 8])
+yield_per_click = Array[int]([1, 1, 2, 2, 3])
+trickle_per_second = Array[float]([0, 0.0111, 0.0333, 0.0667, 0.1667])
+upgrade_coin_costs = Array[int]([40, 120, 300, 700])
+upgrade_item_amounts = Array[int]([0, 3, 8, 20])
+unlock_letter = "game:letter/western_arrive"
+display_name = "data.harvest.ranch.name"
+order = 5
+id = "harvest/ranch"
+description = "data.harvest.ranch.desc"

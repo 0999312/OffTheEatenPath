@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_k5r3d"]
+
+[resource]
+script = ExtResource("1_k5r3d")
+kind = 1
+sell_price = 24
+taste = "data.item.nasi_lemak.taste"
+catalog_hint = "data.item.nasi_lemak.hint"
+order = 230
+theme = "game:theme/southeast_asia"
+order_weight = 1.1
+tags = Array[String](["game:tag/home"])
+id = "item/nasi_lemak"
+display_name = "data.item.nasi_lemak.name"
+description = "data.item.nasi_lemak.desc"

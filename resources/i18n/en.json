@@ -1,0 +1,4715 @@
+{
+	"ui": {
+		"app": {
+			"title": "Off the Eaten Path"
+		},
+		"tutorial": {
+			"step0_title": "Read the first letter",
+			"step0_body": "There's a new letter in the mailbox. Open it.",
+			"step1_title": "Cook your first dish",
+			"step1_body": "The commission in your mailbox asks for a pour-over. Make one at the stove — that's your start.",
+			"step2_title": "Read the grocer's letter",
+			"step2_body": "Finish this letter and the grocer opens up, with more to buy.",
+			"step3_title": "Deliver your first order",
+			"step3_body": "The order board is open. Cook what it asks for, then hand it over.",
+			"go": "Go",
+			"skip": "Skip"
+		},
+		"common": {
+			"not_enough": "Not enough coins or materials.",
+			"coins_short": "{0} coins short",
+			"list_sep": ", ",
+			"instant": "Instantly",
+			"seconds": "{0}s",
+			"minutes_seconds": "{0}m {1}s",
+			"coins_amount": "{0} coins",
+			"device": "Equipment",
+			"new_recipe": "a new recipe"
+		},
+		"settings": {
+			"title": "Settings",
+			"section_general": "General",
+			"section_audio": "Audio",
+			"language": "Language",
+			"language_changed": "Language switched.",
+			"language_name_zh": "中文",
+			"language_name_en": "English",
+			"volume_master": "Master",
+			"volume_music": "Music",
+			"volume_sfx": "Sound effects",
+			"no_music": "No background music yet — drop a track into assets/audio/music/ and it will be picked up.",
+			"section_save": "Save",
+			"save_path": "Location: {0} (autosaved every 20 s and on window close; a .bak copy is kept)",
+			"section_reset": "Start over",
+			"reset_hint": "Deletes the save and clears this run. Cannot be undone.",
+			"reset_button": "Clear save",
+			"reset_confirm": "Really clear it? (press again)",
+			"reset_armed": "After this, the room goes back to how it started.",
+			"reset_done": "Cleared.",
+			"section_about": "About",
+			"about_hint": "Engine, framework, sounds and fonts — credits and licenses are all there.",
+			"credits_button": "Credits & third-party licenses",
+			"shortcuts": "Shortcuts: C Stove · R Research · V Catalog · F Equipment · M Merchant · L Mailbox · O Settings · Esc Back",
+			"section_debug": "Debug",
+			"debug_hint": "In the normal flow, offline production waits for the 16th letter. This only shows up in debug builds, to see what the summary looks like.",
+			"debug_button": "Test: unlock offline summary now",
+			"debug_done": "Unlocked. Close the game and reopen to see the offline summary.",
+			"research_guide_title": "Research guide",
+			"research_guide_hint": "The research desk shows a three-step guide the first time you open it. Press the button below to make it show up again next time.",
+			"research_guide_button": "Show the guide again next time",
+			"research_guide_done": "Right — it will show up the next time you open the research desk."
+		},
+		"hud": {
+			"coins": "Coins",
+			"catalog": "Catalog",
+			"mail_new": {
+				"one": "{0} new letter",
+				"empty": "Nothing matches.",
+				"other": "{0} new letters"
+			},
+			"orders": "Orders {0}",
+			"orders_tooltip": "Open the order board and hand in your dishes",
+			"task_open": {
+				"one": "{0} to-do",
+				"other": "{0} to-dos"
+			},
+			"mail_task": "{0} letters · {1} to-dos",
+			"catalog_tooltip": "Open the catalog and see what is newly recorded",
+			"mail_tooltip": "Open the mailbox: letters and to-dos both live here",
+			"clock_playtime_tooltip": "Play time · click for the real clock",
+			"clock_realtime_tooltip": "Real time · click for play time"
+		},
+		"hint": {
+			"back": "Right-click / Esc"
+		},
+		"facility": {
+			"title": "Equipment",
+			"subtitle": "The smoother the gear, the shorter the wait.",
+			"empty": "No equipment yet.",
+			"level": "Lv.{0} / {1}",
+			"speed": "Parallel {0} · Time ×{1}",
+			"maxed": "Already maxed out.",
+			"upgrade_button": "Upgrade to Lv.{0} ({1})",
+			"upgraded": "{0} reached Lv.{1}.",
+			"kitchen_title": "Kitchen",
+			"kitchen_lanes": "Lv.{0}: {1} line(s); expanding to Lv.{2} gives {3}.",
+			"kitchen_lanes_max": "Lv.{0}: {1} line(s), fully expanded.",
+			"kitchen_parallel_hint": "How many batches a station runs side by side depends on its own level.",
+			"kitchen_upgrade": "Expand to Lv.{0} ({1})",
+			"kitchen_maxed": "The kitchen is as big as it gets.",
+			"next_level": "Next Lv.{0}: parallel {1} · time ×{2}",
+			"section": "Facilities",
+			"warehouse_title": "Pantry",
+			"warehouse_body": "Lv.{0} · common ingredients up to {1}, rare up to {2}.",
+			"warehouse_button": "Open pantry",
+			"research_title": "Research desk",
+			"research_body": "Put two ingredients together and see if something new comes out.",
+			"research_button": "Go research",
+			"orders_title": "Order board",
+			"orders_body": "{0} / {1} orders posted; can grow to {2}. Expand it from the order board.",
+			"orders_button": "View orders"
+		},
+		"mail": {
+			"title": "Mailbox",
+			"tab_unread": "Unread ({0})",
+			"tab_read": "Read ({0})",
+			"empty_unread": "Nothing unread left.",
+			"empty_read": "Nothing opened yet.",
+			"subtitle": "No sender on the envelope — only the date.",
+			"empty": "The mailbox is empty.",
+			"pending": "{0} more on the way.",
+			"waiting_catalog": "The next one waits until the catalog holds {0} entries.",
+			"waiting_craft": "The next one comes after you make {0}.",
+			"waiting_task": "The next one comes after you finish what is on your hands.",
+			"waiting_task_hand_in": "Finish the errand in \"{0}\" first; then the next one arrives.",
+			"waiting_letter": "The next one comes after you read the letter in your hands.",
+			"waiting_other": "The next one comes after you go one step further.",
+			"waiting_catalog_remaining": "The next one waits until the catalog holds {0} entries ({1} to go).",
+			"waiting_letter_catalog": "After reading \"{0}\", the catalog must reach {1} entries ({2} to go).",
+			"order": "Letter {0}",
+			"unread": "Unread",
+			"tab_todo": "To-do ({0})",
+			"empty_todo": "Nothing taken on yet. Some letters will ask you to lend a hand.",
+			"task_from": "From \"{0}\"",
+			"task_hint": "This one only asks for {0} — don't spend extra on anything else.",
+			"task_done": "Done"
+		},
+		"letter": {
+			"attached": "Enclosed",
+			"offline_unlocked": "(While you're away, things will start growing here on their own.)",
+			"task_heading": "Another sheet is folded in with the letter",
+			"task_accept": "Take this on",
+			"task_accepted": "Already on your to-do list",
+			"task_accepted_hint": "Added to your to-do list — third tab of the mailbox.",
+			"task_done": "Done",
+			"task_progress": "{0} / {1}",
+			"task_reward": "When it's done: {0}",
+			"task_craft": "Make and hand over \"{0}\" × {1}",
+			"task_craft_theme": "Make {1} dishes from \"{0}\", then come back to confirm",
+			"task_craft_tag": "Make {1} dishes tagged \"{0}\", then come back to confirm",
+			"task_collect": "Gather and hand over \"{0}\" × {1}",
+			"task_hand_in": "Hand over",
+			"task_confirm": "Mark done",
+			"task_need_stock": "Handing over needs \"{0}\" × {1}; you have {2}.",
+			"task_ready": "Ready to hand over",
+			"task_ready_confirm": "Ready to confirm",
+			"task_keep_hint": "Handing over uses these items.",
+			"task_catalog": "Bring the catalog to {0} entries",
+			"task_deliver": "Deliver {0} order(s)",
+			"task_research": "Research \"{0}\"",
+			"handwriting_unknown": "The handwriting is unfamiliar, not anyone who lives on this truck.",
+			"handwriting_familiar": "The handwriting looks familiar, though I cannot place it.",
+			"handwriting_own": "It is my own hand. I do not remember writing it."
+		},
+		"merchant": {
+			"title": "Grocer",
+			"subtitle": "\"Take these and cook something — better than sitting in my stall.\"",
+			"tab_buy": "Buy",
+			"tab_sell": "Sell",
+			"show_all": "Show all",
+			"filter_owned": "In stock",
+			"filter_all": "All",
+			"search_placeholder": "Search…",
+			"empty": "Nothing for sale today.",
+			"empty_owned": "Nothing in hand to sell yet — switch to \"All\".",
+			"empty_sell": "Nothing to buy back right now.",
+			"foods_caption": "Finished dishes (bought by the portion)",
+			"each_price": "{0} coins each",
+			"per_portion": "{0} coins per portion",
+			"owned": "You have {0}",
+			"buy_button": "Buy {0} ({1} coins)",
+			"sell_button": "Sell {0} ({1} coins)",
+			"bought": "Bought {0} × {1}.",
+			"sold": "Sold {0} × {1}.",
+			"not_enough_coins": "Not enough coins.",
+			"not_enough_items": "You don't have enough.",
+			"shop_stock": "Shelf {0} / {1}",
+			"shop_refill": "Restocks in {0}",
+			"refill_all": "All shelves restock in {0}",
+			"shop_sold_out": "Shelf is empty — restocking.",
+			"buy_one": "Buy 1",
+			"card_hint": "Tap a card to trade.",
+			"card_price": "{0}c each",
+			"card_shelf": "Shelf {0}/{1}",
+			"sell_all": "Sell all ({0} coins)",
+			"trade_cancel": "Not now",
+			"count": "{0} items",
+			"page": "Page {0} / {1}",
+			"prev": "Previous",
+			"next": "Next",
+			"group_none": "None",
+			"group_source": "Source",
+			"group_category": "Ingredient type",
+			"family_seafood": "Seafood",
+			"family_meat": "Meat",
+			"family_fruit": "Fruit",
+			"family_veg": "Vegetables",
+			"family_misc": "Other",
+			"group_kind": "Type",
+			"group_intermediate": "Prepared ingredients",
+			"group_food": "Finished dishes",
+			"group_theme": "Theme",
+			"sort_default": "Default",
+			"sort_price_up": "Low → high",
+			"sort_price_down": "High → low",
+			"sort_name": "Name",
+			"sort_owned": "Most owned",
+			"level_button": "Merchant Lv.{0}",
+			"level_title": "The Merchant",
+			"level_current": "Level {0} of {1}",
+			"level_slots": "Shelf {0} · Rare {1}",
+			"level_refill": "Refills in {0}",
+			"level_hint": "The more he can get, the wider the shelves and the quicker the refill.",
+			"level_next": "To Lv.{0}",
+			"level_next_gain": "Shelf {0} · Rare {1} · Refill {2}",
+			"level_cost": "Costs {0}",
+			"level_up_button": "Level up (Lv.{0})",
+			"level_max": "There is nothing more he can bring in.",
+			"level_done": "The merchant is now Lv.{0}."
+		},
+		"warehouse": {
+			"title": "Pantry",
+			"subtitle": "\"Count what you have first — then we'll talk about selling.\"",
+			"tab_material": "Ingredients",
+			"tab_food": "Dishes",
+			"tab_harvest": "Sources",
+			"search_placeholder": "Search ingredients or dishes",
+			"buyer_merchant": "Merchant",
+			"buyer_hint": "Only one merchant for now.",
+			"filter_all": "All",
+			"filter_sellable": "Sellable",
+			"filter_theme": "Theme",
+			"filter_tag": "Tag",
+			"theme_all": "All themes",
+			"tag_all": "All tags",
+			"kind_material": "Ingredient",
+			"kind_food": "Dish",
+			"owned": "In stock {0}",
+			"source_line": "Source: {0}",
+			"source_merchant": "sold by the merchant",
+			"source_free": "free",
+			"source_recipe": "recipe \"{0}\"",
+			"source_unknown": "unknown",
+			"known": "recorded",
+			"sell_button": "Sell {0} ({1} coins)",
+			"sell_all": "Sell all {0}",
+			"sell_all_armed": "Confirm all ({0} coins)",
+			"sell_armed": "Click again to sell the whole stack.",
+			"sold": "Sold {0} × {1} for {2} coins.",
+			"not_enough": "Not enough in stock.",
+			"no_buyer": "The merchant won't buy this.",
+			"empty_material": "Nothing in the pantry yet. Knock on the crate by the door, or see the merchant.",
+			"empty_food": "No dishes made yet. The stove is hot — go cook one.",
+			"count": "{0} kinds",
+			"page": "Page {0} / {1}",
+			"prev": "Previous",
+			"next": "Next",
+			"group_none": "None",
+			"group_source": "Source",
+			"group_theme": "Theme",
+			"sort_owned": "Most in stock",
+			"sort_price_down": "Highest price",
+			"sort_name": "Name",
+			"sort_default": "Default",
+			"capacity_title": "Storage caps",
+			"capacity_line": "Common {0} · Rare {1} · Prepared {2} each",
+			"capacity_hint": "Caps only limit what a source piles up on its own. Bought, cooked, and mailed goods ignore them.",
+			"capacity": "Cap {0}",
+			"upgrade": "Expand pantry to Lv.{0} ({1})",
+			"upgrade_maxed": "The pantry is fully expanded.",
+			"harvest_stats": "{0} per pull · {1}s cooldown",
+			"harvest_trickle": "One every {0}s automatically",
+			"harvest_upgrade": "Upgrade source to Lv.{0} ({1})",
+			"harvest_items": "+ {0}× {1}",
+			"harvest_upgraded": "{0} is now Lv.{1}.",
+			"harvest_maxed": "This source is maxed out.",
+			"harvest_need_letter": "Starts producing after reading “{0}”.",
+			"harvest_need_facility": "Starts producing once {0} reaches Lv.{1}.",
+			"harvest_locked": "This source isn't open yet.",
+			"empty_harvest": "No sources producing yet."
+		},
+		"order": {
+			"title": "Order board",
+			"subtitle": "\"Passers-by write down what they want and hand it through the window. I cook it, they pay.\"",
+			"subtitle_boost": "{0}\nNow pulling in: {1}",
+			"full": "The board is full. Hand one in and the next will come.",
+			"next_in": "Next order in about {0} min.",
+			"empty": "No orders yet. Unlock a dish and the customers will know what to ask for.",
+			"reward": "Reward {0} coins",
+			"bonus": "Plus {0} × {1}",
+			"have": "{0} / {1} in hand",
+			"go_craft": "Cook it",
+			"deliver": "Deliver",
+			"delivered": "Delivered {0} × {1}.",
+			"not_enough": "Not enough dishes in hand.",
+			"signature": "Signature",
+			"signature_theme": "Signature cuisine {0} ×{1}",
+			"capacity": "Orders {0} / {1}",
+			"upgrade": "Add a slot ({0})",
+			"upgrade_maxed": "Fully expanded",
+			"upgraded": "The board now holds {0} orders.",
+			"upgrade_denied": "Not enough coins yet.",
+			"refresh": "Swap",
+			"refresh_in": "Swap ({0}s)",
+			"refreshed": "A fresh batch of orders.",
+			"refresh_wait": "Just swapped — give it a moment.",
+			"decline": "Pass",
+			"declined": "Declined that order."
+		},
+		"craft": {
+			"title": "Stove",
+			"subtitle": "The pot will tell you if you have enough.",
+			"empty": "No recipes yet.",
+			"in_progress": "In progress",
+			"pick": "Pick something on the left to make.",
+			"pick_craftable": "Switch to \"All\" to see what each dish is missing; materials usually come from the box outside or the merchant.",
+			"needs": "Needs",
+			"craft_button": "Make one",
+			"repeat": "Repeat",
+			"repeat_on": "Will keep making {0}.",
+			"repeat_off": "Repeat turned off.",
+			"ingredient_have": " — you have {0}",
+			"ingredient_free": " — free",
+			"handmade": "Handmade",
+			"facility_level": "{0} (Lv.{1})",
+			"facility_line": "Equipment: {0} · Time: {1}",
+			"card_need_facility": "Needs {0}",
+			"used_in": "Goes into…",
+			"used_in_more": "{0} more",
+			"used_in_unknown": "???",
+			"used_in_research": "Needs research",
+			"output_line": "Yields: {0}",
+			"food_meta": "Order weight {0} · sells for {1}",
+			"tag_members": "Members of “{0}” ({1})",
+			"tag_members_more": "{0} more not shown",
+			"job_left": "{0} left",
+			"started": "Started {0}.",
+			"cant_craft": "Not enough materials, or no free hands.",
+			"batches": "Batches {0} / {1} · ingredients ×{0}",
+			"batch_cost": "{0} at once: ×{0} ingredients, about {1}",
+			"craft_button_batch": "Make {0}",
+			"lane_busy": "All lines are busy — wait for one to finish.",
+			"lanes_in_use": "{0} / {1} lines busy",
+			"group_semi": "Prep",
+			"group_drink": "Drinks",
+			"group_bake": "Bakes",
+			"group_steam": "Steamed",
+			"group_meal": "Meals",
+			"need_first": "Make {0} first",
+			"group_simple": "Simple Dishes",
+			"facility_locked": "{0} — not in the kitchen yet",
+			"nothing_craftable": "Nothing to make right now.",
+			"group_title": "{0} · {1}",
+			"lanes_idle": "{0} free",
+			"search_placeholder": "Find a dish…",
+			"filter_all": "All",
+			"filter_craftable": "Craftable",
+			"theme_all": "Everywhere",
+			"filter_theme": "Place",
+			"tag_all": "All tags",
+			"filter_tag": "Tag",
+			"empty_result": "Nothing comes through with these filters. Try another word, or loosen them.",
+			"card_guided": "Task",
+			"card_new": "New",
+			"filter_uncrafted": "Unrecorded"
+		},
+		"filter": {
+			"more": "Filters",
+			"more_count": "Filters · {0}",
+			"done": "Done",
+			"result_count": "{0} items",
+			"group_tip": "How to split this page into groups",
+			"other": "Other",
+			"sort_tip": "What order to lay this page out in",
+			"empty": "Nothing matches these filters. Try another word, or loosen them."
+		},
+		"catalog": {
+			"title": "Catalog",
+			"subtitle": "Flavors written down stay here.",
+			"cat_material": "Ingredients",
+			"cat_food": "Dishes",
+			"cat_recipe": "Recipes",
+			"cat_facility": "Equipment",
+			"cat_world": "Places",
+			"cat_letter": "Letters",
+			"recorded": "Recorded {0} / {1}",
+			"page": "Page {0} / {1}",
+			"prev": "Previous",
+			"next": "Next",
+			"group_none": "None",
+			"group_theme": "Theme",
+			"group_source": "Source",
+			"group_category": "Ingredient type",
+			"family_seafood": "Seafood",
+			"family_meat": "Meat",
+			"family_fruit": "Fruit",
+			"family_veg": "Vegetables",
+			"family_misc": "Other",
+			"filter_theme": "Theme",
+			"filter_tag": "Tag",
+			"sort_default": "Default",
+			"sort_name": "Name",
+			"unknown": "???",
+			"theme_locked": "Not there yet.",
+			"locate_failed": "Couldn't find that new entry; staying on this page.",
+			"view": "View",
+			"cost_time": "Takes {0}",
+			"from_letter": "From a letter",
+			"gathered": "Gathered along the way",
+			"semi_finished": "Semi-finished",
+			"recipe_summary": "Something you can make.",
+			"facility_summary": "Up to Lv.{0}.",
+			"hint_food": "Never tasted anything like this.",
+			"hint_recipe_locked": "Haven't figured out how yet.",
+			"hint_research_try": "Not figured out yet. Put {0} together at the research desk and try.",
+			"any_tag": "Any {0}",
+			"progress_early": "Just opened. A few more entries and a letter will arrive.",
+			"progress_quarter": "Still a long way to go. A few more entries and a letter will arrive.",
+			"progress_half": "Past halfway. A few more entries and a letter will arrive.",
+			"progress_near": "Almost there. A few more entries and a letter will arrive.",
+			"progress_done": "Every step is in here.",
+			"hint_recipe": "Haven't made it yet.",
+			"hint_facility": "Not sure how to use it yet.",
+			"hint_letter": "Not delivered yet.",
+			"hint_world": "Haven't been there yet.",
+			"hint_unknown": "Never seen it.",
+			"detail_title": "Catalog · {0}",
+			"missing": "This entry is gone.",
+			"recorded_badge": "Recorded",
+			"not_recorded": "Not recorded",
+			"first_meet": "The page fills in the first time you meet it.",
+			"fact_category": "Category: {0}",
+			"fact_harvest_cap": "Full at {0}; buy or craft beyond that",
+			"fact_trickle": "Left alone, one more every {0}s",
+			"fact_merchant_price": "Merchant price: {0} each",
+			"fact_merchant_buy": "Merchant buys: {0} each",
+			"fact_taste": "Taste: {0}",
+			"fact_duration": "Time: {0}",
+			"fact_inputs": "Needs: {0}",
+			"fact_output": "Makes: {0}",
+			"fact_locked_hint": "Not figured out yet: {0}",
+			"try_combo": "Try combining ingredients you know.",
+			"fact_max_level": "Max level: {0}",
+			"hint_material_base": "Picked up along the way — leave it and it comes.",
+			"hint_material_semi": "A semi-finished thing you made yourself.",
+			"hint_material_made": "Made from {0} at the {1}.",
+			"hint_material_made_plain": "Made from {0}.",
+			"hint_material_buy": "The merchant has it — {0} coins each.",
+			"hint_material_harvest": "You can get it from the {0}.",
+			"hint_material_harvest_locked": "The {0} must reach Lv.{1} to gather it (now Lv.{2}).",
+			"hint_material_harvest_unopened": "Gatherable at the {0} once it opens.",
+			"source_separator": "; ",
+			"hint_material_free": "Always on hand.",
+			"hint_material_unknown": "Not seen yet — keep an eye out.",
+			"fact_unlock": "Starts producing once {0} reaches Lv.{1}",
+			"harvest_upgrade_tip": "To Lv.{0}: {1} coins + {2}× {3}",
+			"section_origin": "Origin",
+			"section_value": "Value",
+			"section_method": "Method",
+			"section_spec": "Spec",
+			"row_source": "Gathered at",
+			"row_speed": "One batch",
+			"row_pool": "Yields",
+			"row_cap": "Storage",
+			"row_trickle": "Idle gain",
+			"row_unlock": "Unlocked by",
+			"row_price": "Shop price",
+			"row_sell": "Merchant pays",
+			"row_duration": "Takes",
+			"row_inputs": "Ingredients",
+			"row_output": "Makes",
+			"row_made_by": "Recipe",
+			"row_category": "Category",
+			"row_max_level": "Max level",
+			"row_order": "Letter no.",
+			"value_speed": "One every {0}s",
+			"value_cap": "{0}",
+			"value_trickle": "One every {0}s while idle",
+			"value_price": "{0} each",
+			"value_unlock": "Once {0} reaches Lv.{1}",
+			"value_unlock_letter": "After reading “{0}”",
+			"search_placeholder": "Search…",
+			"filter_all": "All",
+			"filter_found": "Found",
+			"filter_missing": "Missing",
+			"theme_all": "All themes",
+			"empty_result": "Nothing matches.",
+			"category_coffee_machine": "Coffee Machine",
+			"category_grinder": "Grinder",
+			"category_oven": "Oven",
+			"category_stove": "Stove",
+			"category_steamer": "Steamer",
+			"category_pan": "Frying Pan",
+			"tag_all": "All tags",
+			"category_fridge": "Fridge",
+			"fact_harvest_at": "{0} yields one every {1}s",
+			"fact_harvest_pool": "Available now: {0}"
+		},
+		"research": {
+			"title": "Research desk",
+			"tab_candidates": "Candidates ({0})",
+			"tab_desk": "Desk",
+			"tab_records": "Records ({0})",
+			"subtitle": "Trying costs a little of what you burn, but one success is written down for good.",
+			"all_known": "Nothing left to figure out — everything on the stove is known.",
+			"no_candidates": "No combinations to try right now. Cook or unlock more recipes — new leads will follow.",
+			"show_all": "Show all leads",
+			"desk_level": "Test {0} sets at once",
+			"burn_rate": "{0} units burned on failure",
+			"upgrade_button": "Upgrade desk ({0})",
+			"upgraded": "Desk reached Lv.{0}.",
+			"upgrade_hint": "Less waste, more sets at once",
+			"candidates": "Candidate ingredients",
+			"pick_hint": "Click to put in a slot",
+			"only_owned": "In stock only",
+			"search_hint": "Search ingredients",
+			"family_filter": "Ingredient type",
+			"family_all": "All",
+			"family_seafood": "Seafood",
+			"family_meat": "Meat",
+			"family_fruit": "Fruit",
+			"family_veg": "Vegetables",
+			"family_misc": "Other",
+			"no_match": "No matching ingredients.",
+			"picked": "In slots",
+			"slot_tooltip": "Click to take it out",
+			"try_button": "Try ({0} items)",
+			"need_more": "Add {0} more.",
+			"too_many": "At most {0} items.",
+			"desk_busy": "The desk is busy — wait or take one back.",
+			"no_materials": "Not enough materials.",
+			"burn_warn": "On failure, {0} materials will burn.",
+			"in_progress": "In progress",
+			"desk_empty": "The desk is empty.",
+			"cancel": "Take back",
+			"cancelled": "Materials taken back.",
+			"records": "Tried combinations: {0}",
+			"records_empty": "Combinations you try are written down here — retrying costs nothing.",
+			"last": "Last: {0}",
+			"started": "Set on the desk — wait for the result.",
+			"cant_start": "Can't put it in — materials, slots or the candidate pool aren't right.",
+			"job": "{0} · {1}% · {2} left",
+			"line_sep": " ",
+			"desc_untried": "That combination hasn't been tried yet.",
+			"desc_near_miss": "Close — {0} is missing one thing.",
+			"desc_near_miss_missing": "Close — {0} still needs {1}.",
+			"desc_heat": "Wrong heat: {0} needs at least Lv.{1}.",
+			"desc_heat_ready": "Heat is enough: {0} is now Lv.{1} — you can try again.",
+			"desc_success": "It worked: {0}.",
+			"desc_mismatch": "These don't make anything together.",
+			"desc_facility": "equipment",
+			"cost_hint": "Each pick costs 1; half a chance it costs 2.",
+			"usage_hint": "{0} more directions to try — pick 2–4 items into the slots, then “Try”.",
+			"empty_hint": "Cook a few more dishes and record more of the catalog — new directions will surface.",
+			"guide_title": "How the research desk works",
+			"guide_step_1": "1. On “Candidates”, click 2–4 ingredients — they drop into the desk slots.",
+			"guide_step_2": "2. Press “Try”: the ingredients are spent, and a match teaches you the recipe.",
+			"guide_step_3": "3. A miss burns a little; results go to “Records”, and retrying the same set costs nothing.",
+			"guide_ok": "Got it",
+			"history_cost": "Burned: {0}",
+			"history_no_burn": "Nothing burned this time.",
+			"history_tuition": "Everything in the slots counts as tuition.",
+			"free_badge": "on hand"
+		},
+		"credits": {
+			"title": "Credits",
+			"subtitle": "We didn't make these, but without them the room would be much quieter.",
+			"engine_title": "Engine",
+			"engine_body": "Godot Engine 4.7.2 · MIT license · godotengine.org",
+			"framework_title": "Game framework (our own)",
+			"framework_body": "mc_game_framework 1.0.0 · a plugin written for this project (SyameimaruZheng) · shipped with it",
+			"sfx_title": "Sound playback",
+			"sfx_body": "Sound Manager · MIT license · Nathan Hoad",
+			"sfx_assets_title": "Sound effects",
+			"sfx_assets_body": "Kenney sound packs (Interface Sounds / Impact Sounds — switch click and ambience) · CC0 · kenney.nl",
+			"music_title": "Music",
+			"music_body": "Cozy Tunes by pizzadoggy · single-seat license · tracks play in-game only and are not redistributed · pizzadoggy.itch.io",
+			"font_title": "Font",
+			"font_body": "MiSans (MiSans-Semibold) · Xiaomi · free to use under the MiSans font license",
+			"icons_title": "Icons",
+			"icons_body": "Game Icon Pack by Nieobie · CC0 · github.com/Nieobie/game-icon-pack",
+			"shader_title": "Window light shader",
+			"shader_body": "God rays by pend00 · CC0 1.0 · godotshaders.com/shader/god-rays",
+			"test_title": "Test tooling (not shipped)",
+			"test_body": "GUT 9.6.0 · MIT license",
+			"footer": "The full list (with license texts) lives in docs/THIRD_PARTY.md."
+		},
+		"offline": {
+			"title": "While you were away",
+			"locked": "Nothing grows here on its own yet — that takes the right letter.",
+			"nothing": "Nothing grew. Maybe fix the stove first.",
+			"tips": "Coins (shop-watching tips)",
+			"orders": "The order board refreshed {0} times — new requests are on the table.",
+			"letters": "{0} letters arrived in the mailbox.",
+			"elapsed_days": "{0}d {1}h",
+			"elapsed_hours": "{0}h {1}m",
+			"elapsed_minutes": "{0}m",
+			"take": "Collect",
+			"elapsed_less_minute": "under a minute"
+		},
+		"hotspot": {
+			"stove_title": "Stove",
+			"stove_subtitle": "Simmer something",
+			"equipment_title": "Equipment",
+			"equipment_subtitle": "Faster equipment",
+			"merchant_title": "Grocer",
+			"merchant_subtitle": "Buying and selling",
+			"merchant_locked": "Opens after the grocer's letter",
+			"shelf_title": "Shelf",
+			"shelf_subtitle": "Flavors noted down",
+			"mail_title": "Mailbox",
+			"mail_subtitle": "Letters from outside",
+			"research_title": "Research desk",
+			"research_subtitle": "Untried combinations",
+			"research_subtitle_hint": "Still dishes left to figure out — go try?"
+		},
+		"table": {
+			"title": "On the table",
+			"caption": "In progress and just finished",
+			"empty": "The table is clear",
+			"empty_hint": "The stove is still warm — go make something.",
+			"go_stove": "Go to the stove",
+			"thing": "Something",
+			"research_title": "Researching: {0}",
+			"materials_count": "{0} kinds of ingredients in hand",
+			"view_warehouse": "Open pantry"
+		},
+		"toast": {
+			"crafted": "{0} is ready",
+			"crafted_first": " (first time: +{0} coins)",
+			"letter": "A letter arrived · {0}",
+			"facility_upgraded": "{0} reached Lv.{1}",
+			"recipe_unlocked": "New recipe researched · {0}",
+			"milestone": "Catalog milestone · +{0} coins",
+			"coin_picked": "+{0} coin, pocketed",
+			"task_done": "That's taken care of · {0}",
+			"merchant_locked": "The grocer isn't open yet — read that letter first.",
+			"orders_locked": "The order board opens after the letter before you leave."
+		},
+		"ambient": {
+			"sign_title": "Hot Food",
+			"sign_subtitle": "Off the Eaten Path",
+			"sign_label": "Today's Menu",
+			"sign_clear": "Leave unset",
+			"sign_slot": "Dish {0}",
+			"sign_auto": "Automatic",
+			"sign_auto_tip": "Faded dishes are automatic picks with no bonus. Tap the note to choose."
+		},
+		"harvest": {
+			"ready": "Ready",
+			"cooling": "{0}s",
+			"full": "Full"
+		}
+	},
+	"data": {
+		"theme": {
+			"africa": {
+				"name": "Africa",
+				"desc": "A sturdy staple beside a pot of stew."
+			},
+			"americas": {
+				"name": "Americas",
+				"desc": "From grilled meat to corn, portions are honest."
+			},
+			"base": {
+				"name": "Home Cooking",
+				"desc": "Everyday food without a region: a coffee, a pastry, a simple meal."
+			},
+			"cafe": {
+				"name": "Cafe Menu",
+				"desc": "The shop menu: coffee, pastries, and a seat in the afternoon."
+			},
+			"east_asia": {
+				"name": "East Asian Table",
+				"desc": "Home-style dishes built on rice and noodles — steamed, stir-fried, boiled, braised."
+			},
+			"fast_food": {
+				"name": "Fast Food",
+				"desc": "Wrapped in paper, eaten standing up."
+			},
+			"mediterranean": {
+				"name": "Mediterranean",
+				"desc": "Olive oil, tomatoes, and a lot of sun."
+			},
+			"middle_east": {
+				"name": "Middle East & Central Asia",
+				"desc": "Spices and a slow fire; the lid lifts and it smells."
+			},
+			"south_asia": {
+				"name": "South Asia",
+				"desc": "Spices layered in, thickening as it cooks."
+			},
+			"southeast_asia": {
+				"name": "Southeast Asia",
+				"desc": "Sour, hot, coconut — one bite wakes you."
+			},
+			"western": {
+				"name": "Western Classics",
+				"desc": "Knife and fork laid out, taken slowly."
+			}
+		},
+		"tag": {
+			"breakfast": {
+				"name": "Breakfast",
+				"desc": "Early light, something before the day."
+			},
+			"festival": {
+				"name": "Celebration",
+				"desc": "The kind worth making only when there is someone to share it with."
+			},
+			"home": {
+				"name": "Home Cooking",
+				"desc": "The everyday kind: plain ingredients, no fuss."
+			},
+			"late_night": {
+				"name": "Late Night",
+				"desc": "Lights off, still wanting one more bite."
+			},
+			"soup": {
+				"name": "Soup & Broth",
+				"desc": "The bowl is hot; the spoon goes first."
+			},
+			"spicy": {
+				"name": "Spicy",
+				"desc": "The heat comes up behind the tongue."
+			},
+			"street": {
+				"name": "Street & Late Night",
+				"desc": "Something you can carry away, or want only after dark."
+			},
+			"sweet": {
+				"name": "Sweets & Drinks",
+				"desc": "Sweet, cold, or sipped slowly out of a cup."
+			},
+			"vegetarian": {
+				"name": "Vegetarian",
+				"desc": "No meat, and it does not feel missing."
+			},
+			"meat": {
+				"name": "Meats",
+				"desc": "\"Any meat\" — take whichever you have."
+			},
+			"veg": {
+				"name": "Vegetables",
+				"desc": "\"Any vegetable\" — use what is in the basket."
+			},
+			"fruit": {
+				"name": "Fruit",
+				"desc": "\"Any fruit\" — sweet or sour, both count."
+			},
+			"seafood": {
+				"name": "Seafood",
+				"desc": "\"Any seafood\" — fish, shrimp, shellfish alike."
+			},
+			"pantry": {
+				"name": "Pantry",
+				"desc": "The everyday shelf: salt, sugar, flour, oil, coffee beans."
+			},
+			"livestock": {
+				"name": "Livestock",
+				"desc": "Any meat, egg or dairy from the ranch — use whatever it gives you."
+			},
+			"chocolate": {
+				"name": "Chocolate",
+				"desc": "\"Any kind of chocolate\" — dark or milk chocolate both count."
+			}
+		},
+		"facility": {
+			"coffee_machine": {
+				"name": "Coffee Machine",
+				"desc": "Press the button and it stays silent for a second first."
+			},
+			"grinder": {
+				"name": "Grinder",
+				"desc": "It wobbles a little when it spins."
+			},
+			"oven": {
+				"name": "Oven",
+				"desc": "The glass in the door is always a little fogged."
+			},
+			"pan": {
+				"name": "Frying Pan",
+				"desc": "A thin film of oil on the bottom; the rim has been scorched black."
+			},
+			"research_desk": {
+				"name": "Research Desk",
+				"desc": "A corner of the desk: a polished wooden tray and a few empty bowls."
+			},
+			"steamer": {
+				"name": "Steamer",
+				"desc": "Lift the lid and the steam rushes out first, and nothing is clear."
+			},
+			"stove": {
+				"name": "Stove",
+				"desc": "Turn the flame down and the pot goes quiet."
+			},
+			"fridge": {
+				"name": "Fridge",
+				"desc": "A humming steel box, colder inside than out."
+			},
+			"warehouse": {
+				"name": "Pantry",
+				"desc": "The shelves in the corner. How much they hold depends on how high they go."
+			}
+		},
+		"item": {
+			"eggplant": {
+				"name": "Eggplant",
+				"desc": "Glossy purple skin; pale, soft flesh inside."
+			},
+			"cassava": {
+				"name": "Cassava",
+				"desc": "Rough skin; snow-white flesh once peeled."
+			},
+			"roasted_eggplant": {
+				"taste": "Charred skin and soy, soft enough to pull apart with chopsticks.",
+				"hint": "Roast whole until the skin wrinkles, then split and top.",
+				"name": "Roasted Eggplant",
+				"desc": "Roast the eggplant soft, split it open, cover with spice and soy, and return to the oven until glossy."
+			},
+			"eggplant_parmesan": {
+				"taste": "Cheese pulls; the eggplant has drunk the tomato.",
+				"hint": "Fry the slices first so they do not weep.",
+				"name": "Eggplant Parmesan",
+				"desc": "Fry eggplant slices, layer with tomato and cheese, and bake until bubbling."
+			},
+			"cassava_fries": {
+				"taste": "Crisp outside, mealy inside.",
+				"hint": "Parboil the cut cassava before frying.",
+				"name": "Cassava Fries",
+				"desc": "Cut cassava into batons, parboil, drain, fry golden and salt."
+			},
+			"cassava_cake": {
+				"taste": "Soft and chewy; coconut outruns the sugar.",
+				"hint": "Grate the cassava fine and stir the coconut milk smooth.",
+				"name": "Cassava Cake",
+				"desc": "Grate cassava into a batter with coconut milk and sugar, then steam until set."
+			},
+			"americano": {
+				"taste": "Bitter and clean, like wiping the morning once with a cloth.",
+				"hint": "What's left after hot water runs through an espresso.",
+				"name": "Americano",
+				"desc": "One espresso, one pour of water. Too simple to wait for, too simple to get wrong."
+			},
+			"apple_crumble": {
+				"taste": "Crumb on top, soft beneath.",
+				"hint": "Cold butter makes bigger crumbs.",
+				"name": "Apple Crumble",
+				"desc": "Apples below, buttered dough crumbled over, baked gold."
+			},
+			"apple_pie": {
+				"taste": "The rim is flakier; the middle is soft.",
+				"hint": "Cook the water out of the apples so the filling holds.",
+				"name": "Apple Pie",
+				"desc": "Soften apples with sugar, wrap in dough, bake until golden."
+			},
+			"arancini": {
+				"taste": "Cheese runs out at the first bite.",
+				"hint": "Cool the rice or the balls fall apart.",
+				"name": "Arancini",
+				"desc": "Wrap cold rice around cheese, shape, fry golden."
+			},
+			"asado": {
+				"taste": "Charred outside, pink within.",
+				"hint": "Coarse salt, only before it hits the fire.",
+				"name": "Asado",
+				"desc": "Oil and salt a whole cut, roast slow until charred and pink."
+			},
+			"avocado_toast": {
+				"taste": "The green layer is not quite flat.",
+				"hint": "Toast it crisp so it does not sag.",
+				"name": "Veggie Mash Toast",
+				"desc": "Toast the slice, crush greens over it, finish with oil."
+			},
+			"baba_ganoush": {
+				"taste": "Smoky, and grey underneath.",
+				"hint": "Roast until the skin wrinkles.",
+				"name": "Baba Ganoush",
+				"desc": "Roast the eggplant until the skin shrivels, scoop the flesh, mash with oil and spice."
+			},
+			"bagel": {
+				"taste": "A chewy skin, a tight crumb.",
+				"hint": "Boil before baking for the shine.",
+				"name": "Bagel",
+				"desc": "Shape rings, boil them briefly, then bake."
+			},
+			"bagel_sandwich": {
+				"taste": "Split bagel, cheese spread to the edge.",
+				"hint": "Toast the cut faces first.",
+				"name": "Bagel Sandwich",
+				"desc": "Split the bagel, spread cream cheese, tuck in greens."
+			},
+			"baklava": {
+				"taste": "It shatters at a bite; syrup on your fingers.",
+				"hint": "Syrup after baking keeps it crisp.",
+				"name": "Baklava",
+				"desc": "Layer pastry with nuts, bake gold, then pour syrup."
+			},
+			"banana_rice": {
+				"taste": "Sweet, but the side is salt.",
+				"hint": "The bananas should be black-ripe.",
+				"name": "Banana Rice",
+				"desc": "Cook rice in coconut milk, serve with ripe banana."
+			},
+			"banh_mi": {
+				"taste": "The crust cracks; the inside is packed.",
+				"hint": "Toast the roll so the shell sings.",
+				"name": "Banh Mi",
+				"desc": "Crisp the baguette, fill with meat and greens, sauce."
+			},
+			"beef_bourguignon": {
+				"taste": "The meat gives way; the sauce coats the spoon.",
+				"hint": "Low heat, lid on, no peeking.",
+				"name": "Slow-Braised Beef",
+				"desc": "Brown the beef, dust with flour, add vegetables and spice, stew gently."
+			},
+			"beef_wellington": {
+				"taste": "Pink inside, the pastry in layers.",
+				"hint": "Wrap it tight or the pastry opens.",
+				"name": "Beef Wellington",
+				"desc": "Sear the meat, coat with mushroom, wrap in dough, brush egg, bake."
+			},
+			"bibimbap": {
+				"taste": "Pretty before mixing, better after.",
+				"hint": "A runny yolk loosens the whole bowl.",
+				"name": "Bibimbap",
+				"desc": "Rice under greens, meat and a fried egg; mix with chilli sauce."
+			},
+			"biryani": {
+				"taste": "Grains separate, stained gold.",
+				"hint": "Layer it; do not stir.",
+				"name": "Biryani",
+				"desc": "Layer rice and meat, scatter nuts, steam until it takes the spice."
+			},
+			"blt": {
+				"taste": "Bacon fat soaking in, tomato still cool.",
+				"hint": "Crisp bacon, dry lettuce.",
+				"name": "BLT",
+				"desc": "Bacon, lettuce, tomato. The name is the recipe."
+			},
+			"boerewors": {
+				"taste": "Thick, and it bleeds juice when cut.",
+				"hint": "Do not prick it or the juice goes.",
+				"name": "Boerewors",
+				"desc": "Season minced meat, stuff, fry until the skin catches."
+			},
+			"boiled_egg": {
+				"taste": "Springy white, powdery yolk.",
+				"hint": "Six minutes for a runny yolk, ten for set.",
+				"name": "Boiled Egg",
+				"desc": "Egg in cold water, time from the boil. Peel slowly."
+			},
+			"braised_egg": {
+				"taste": "The white has gone brown; the salt arrives at the end.",
+				"hint": "Crack the shells before they soak.",
+				"name": "Braised Egg",
+				"desc": "Boil the eggs, crack them, simmer in soy and spice."
+			},
+			"brownie": {
+				"taste": "A thin crust, wet inside.",
+				"hint": "Underbake a little; a crumb on the skewer is enough.",
+				"name": "Brownie",
+				"desc": "Melt butter and sugar, fold in egg, flour and chocolate, bake till the top crusts."
+			},
+			"buffalo_wings": {
+				"taste": "Sauce to the knuckles, and the heat builds.",
+				"hint": "Butter in the sauce makes it cling.",
+				"name": "Buffalo Wings",
+				"desc": "Bake the meat crisp, toss in chilli and butter."
+			},
+			"bun": {
+				"taste": "The wrapper drinks the juices; better than the filling.",
+				"hint": "Dough around meat, steamed.",
+				"name": "Steamed Bun",
+				"desc": "Risen dough wrapped around pork, seam up, steamed until the skin turns translucent."
+			},
+			"burrito": {
+				"taste": "Rolled tight; cut it and the layers show.",
+				"hint": "Fold the ends in or it leaks.",
+				"name": "Burrito",
+				"desc": "Fill a corn tortilla with meat, greens and cheese, roll, then griddle."
+			},
+			"butter_rice": {
+				"taste": "Butter melting in, soy only at the rim.",
+				"hint": "Hot rice, cold butter.",
+				"name": "Butter Rice",
+				"desc": "A well in hot rice, a pat of butter, soy around the edge. Look before you stir."
+			},
+			"butter_toast": {
+				"taste": "Butter melts into the crumb, the edge stays crisp.",
+				"hint": "Spread while hot, all the way to the corners.",
+				"name": "Butter Toast",
+				"desc": "Toast it, butter it while warm. That melting layer is the point."
+			},
+			"caesar_salad": {
+				"taste": "The croutons still crunch; the dressing coats evenly.",
+				"hint": "Add the bread last or it softens.",
+				"name": "Caesar Salad",
+				"desc": "Tear the leaves, toss in dressing, scatter bread cubes and cheese."
+			},
+			"cake": {
+				"taste": "The weight of butter pins the sweetness down.",
+				"hint": "The one that takes the longest.",
+				"name": "Cake",
+				"desc": "Pour the batter into the tin and let it rise."
+			},
+			"candied_fruit": {
+				"taste": "The sugar shell cracks at one bite.",
+				"hint": "Dip at the small bubbles or it sticks to your teeth.",
+				"name": "Candied Fruit",
+				"desc": "Skewer the fruit, dip in hot sugar, let it set."
+			},
+			"cappuccino": {
+				"taste": "Sweet first, bitter after; the foam lies on top like a light thing.",
+				"hint": "Its name wears a little hat; drinking it is like a sweet cloud.",
+				"name": "Cappuccino",
+				"desc": "Milk beaten up: the sweet floats to the top and the bitter stays below."
+			},
+			"caprese": {
+				"taste": "Sliced to the same thickness.",
+				"hint": "Room-temperature tomatoes, never cold.",
+				"name": "Caprese",
+				"desc": "Slice tomato and cheese, overlap them, add spice."
+			},
+			"caramel_macchiato": {
+				"taste": "The syrup at the bottom stays; the last sip is sweetest.",
+				"hint": "Do not stir; the layers are the point.",
+				"name": "Caramel Macchiato",
+				"desc": "Syrup in the glass, milk and espresso over it, a caramel streak on top."
+			},
+			"carrot_cake": {
+				"taste": "You cannot taste the carrot, only see it.",
+				"hint": "Grate it fine or the crumb turns tough.",
+				"name": "Carrot Cake",
+				"desc": "Fold grated carrot into the batter, bake until a skewer comes clean."
+			},
+			"ceviche": {
+				"taste": "Raw fish, gone white.",
+				"hint": "Do not leave it long or it falls apart.",
+				"name": "Ceviche",
+				"desc": "Cure fish slices in fruit juice until opaque, season."
+			},
+			"chai": {
+				"taste": "Spice hits first; milk follows behind.",
+				"hint": "Pull it just before the boil.",
+				"name": "Chai",
+				"desc": "Milk with tea leaves, spice and sugar, simmered until it darkens."
+			},
+			"cheese_stick": {
+				"taste": "Crisp out, a long pull inside.",
+				"hint": "Cold cheese, hot oil.",
+				"name": "Cheese Sticks",
+				"desc": "Cheese in sticks, battered, fried gold. Eat them hot."
+			},
+			"cheese_toast": {
+				"taste": "The cheese puffs, then browns at the edge.",
+				"hint": "Top heat, and don't walk away.",
+				"name": "Cheese Toast",
+				"desc": "Toast under a blanket of cheese until it collapses. The pull is the best part."
+			},
+			"cheeseburger": {
+				"taste": "Cheese melted over the patty, pulling in strings.",
+				"hint": "Cheese in the last ten seconds, no longer.",
+				"name": "Cheeseburger",
+				"desc": "Lay a slice of cheese on the near-done patty and cover it to melt."
+			},
+			"cheesecake": {
+				"taste": "Cool in the middle, browned at the rim.",
+				"hint": "Do not cut while warm; a night in the cold sets it.",
+				"name": "Cheesecake",
+				"desc": "Fold cream cheese and sugar through the batter, pour into a tin, bake until the edge sets."
+			},
+			"chicken_curry": {
+				"taste": "Thick sauce, deep colour.",
+				"hint": "Fry the spice before the meat.",
+				"name": "Chicken Curry",
+				"desc": "Fry spice, add meat, simmer with milk until thick."
+			},
+			"chicken_wrap": {
+				"taste": "Rolled a bit loose; a bite drops filling.",
+				"hint": "Warm the flatbread first so it folds without cracking.",
+				"name": "Chicken Wrap",
+				"desc": "Fry and slice the meat, roll it with greens in a flatbread."
+			},
+			"cinnamon_roll": {
+				"taste": "Sugar pooled in the folds; it opens in a spiral.",
+				"hint": "Roll it thin for more layers.",
+				"name": "Cinnamon Roll",
+				"desc": "Roll the dough, spread butter, sugar and cinnamon, slice and bake."
+			},
+			"clear_noodle_soup": {
+				"taste": "Clear broth, slippery noodles.",
+				"hint": "Boil the noodles apart or the soup clouds.",
+				"name": "Clear Noodle Soup",
+				"desc": "Noodles into the bowl, clear stock over. A little scallion is enough."
+			},
+			"club_sandwich": {
+				"taste": "Three layers, held by a pick.",
+				"hint": "Keep each layer thin so it bites clean.",
+				"name": "Club Sandwich",
+				"desc": "Toast the bread, stack meat, egg and greens, cut into triangles."
+			},
+			"coconut_dessert": {
+				"taste": "Sweet; better cold than warm.",
+				"hint": "Do not stir hard or it foams.",
+				"name": "Coconut Dessert",
+				"desc": "Reduce coconut milk with sugar, add fruit, chill."
+			},
+			"cold_brew": {
+				"taste": "Slow cold, slow bitterness.",
+				"hint": "Takes a long time, but no fire.",
+				"name": "Cold Brew",
+				"desc": "Coffee grounds steep in cold water in the fridge all afternoon before the flavor comes out."
+			},
+			"con_panna": {
+				"taste": "Cream first, then espresso -- no transition in between.",
+				"hint": "Cream on top of the shot; don't stir.",
+				"name": "Con Panna",
+				"desc": "A small shot under a cloud of cream, a blanket for something bitter."
+			},
+			"cookie": {
+				"taste": "A little burnt at the edge, still soft in the middle.",
+				"hint": "A small round slice, sweet without detour.",
+				"name": "Cookie",
+				"desc": "Spread into thin rounds: the edges brown before the middle has time."
+			},
+			"corn_soup": {
+				"taste": "Sweet, kernels still there.",
+				"hint": "Hold back half the corn for the end.",
+				"name": "Corn Chowder",
+				"desc": "Corn and milk blended, brought to a boil, a few whole kernels on top."
+			},
+			"corn_tortilla": {
+				"taste": "Charred at the edge, sweet corn through the middle.",
+				"hint": "Corn and flour, rolled thin.",
+				"name": "Corn Tortilla",
+				"desc": "Corn and flour kneaded into a dough, rolled thin, toasted in a pan until it blisters."
+			},
+			"couscous": {
+				"taste": "Loose grains that spoon cleanly.",
+				"hint": "Steam it twice for lightness.",
+				"name": "Couscous",
+				"desc": "Rub flour into grains, steam, toss with vegetables and spice."
+			},
+			"cream_puff": {
+				"taste": "Hollow at first bite, then the cream.",
+				"hint": "Bake the shell hollow, then fill it.",
+				"name": "Cream Puff",
+				"desc": "The shell puffs up; once cool, cream goes in from the bottom."
+			},
+			"creamed_spinach": {
+				"taste": "Dark in colour, mild in taste.",
+				"hint": "Squeeze it dry after blanching.",
+				"name": "Creamed Spinach",
+				"desc": "Blanch and squeeze the spinach, chop, fold into white sauce and butter."
+			},
+			"creamy_mushroom_chicken": {
+				"taste": "Thick sauce, mushrooms still a little firm.",
+				"hint": "Fry the mushrooms apart first and pour off the water.",
+				"name": "Creamy Mushroom Chicken",
+				"desc": "Brown the chicken, fry the mushrooms, add white sauce and reduce."
+			},
+			"creme_brulee": {
+				"taste": "Caramel on top; you have to break it.",
+				"hint": "Egg, cream, sugar -- then burn the sugar.",
+				"name": "Creme Brulee",
+				"desc": "Baked until set, dusted with sugar, torched into a thin shell."
+			},
+			"croissant": {
+				"taste": "Layer after layer; your fingers shine when you're done.",
+				"hint": "The first thing into the oven, and it sheds crumbs.",
+				"name": "Croissant",
+				"desc": "Dough folded over butter, folded a few times, and the layers come out of the oven."
+			},
+			"curry_puff": {
+				"taste": "Layered pastry, hot filling.",
+				"hint": "Cool the filling before wrapping.",
+				"name": "Curry Puff",
+				"desc": "Wrap curry filling in pastry, bake until flaky."
+			},
+			"curry_rice": {
+				"taste": "Thick curry stains every grain.",
+				"hint": "Fry the spice first to wake it.",
+				"name": "Curry Rice",
+				"desc": "Fry meat and vegetables, add spice and water, thicken, pour over rice."
+			},
+			"dal": {
+				"taste": "Thick enough to hold a spoon.",
+				"hint": "Cook until the beans collapse.",
+				"name": "Dal",
+				"desc": "Boil the beans until they break down, then season."
+			},
+			"dumpling": {
+				"taste": "Thin skin, the green showing through.",
+				"hint": "Work the filling or it falls apart.",
+				"name": "Dumplings",
+				"desc": "Roll wrappers, fold in meat filling, steam."
+			},
+			"egg_drop_soup": {
+				"taste": "Egg blooming into ribbons.",
+				"hint": "Boiling stock, a thin stream of egg, no stirring.",
+				"name": "Egg Drop Soup",
+				"desc": "Stock at a rolling boil, egg poured in a thread. Leave it alone."
+			},
+			"egg_pancake": {
+				"taste": "Crisp at the rim, soft in the middle.",
+				"hint": "A looser batter spreads thinner.",
+				"name": "Egg Pancake",
+				"desc": "Whisk egg and flour, pour thin into a pan, fry both sides."
+			},
+			"egg_roll": {
+				"taste": "Layers inside, milk at the end.",
+				"hint": "Spread it thin or it cracks when rolled.",
+				"name": "Egg Roll",
+				"desc": "Egg and milk, spread thin, rolled into spirals and sliced."
+			},
+			"egg_salad": {
+				"taste": "Yolk and dressing together, white in chunks.",
+				"hint": "Boil them hard for easier crushing.",
+				"name": "Egg Salad",
+				"desc": "Crushed egg and dressing. On bread or beside lettuce."
+			},
+			"egg_salad_sandwich": {
+				"taste": "Soft filling squeezing out of the cut.",
+				"hint": "Crush the egg, don't dice it.",
+				"name": "Egg Salad Sandwich",
+				"desc": "Crushed egg and dressing between toast. Better after a rest in the cold."
+			},
+			"egg_tart": {
+				"taste": "Crisp at the rim, trembling in the middle.",
+				"hint": "Custard poured into a dough cup.",
+				"name": "Egg Tart",
+				"desc": "Dough pressed into little cups, custard poured in, baked until a skin forms."
+			},
+			"egg_toast": {
+				"taste": "Bite down and the yolk runs.",
+				"hint": "Runny egg, crisp toast.",
+				"name": "Egg Toast",
+				"desc": "Buttered toast, fried egg on top. Your fingers will catch some yolk."
+			},
+			"espresso": {
+				"taste": "Bitter enough to shine, leaving only a little at the bottom of the cup.",
+				"hint": "Coffee grounds run once through hot water; this is the little part that comes out.",
+				"name": "Espresso",
+				"desc": "The base of every coffee. It is also a finished thing you can dilute with water or milk."
+			},
+			"falafel": {
+				"taste": "Crisp outside, green inside.",
+				"hint": "Soak, do not boil, then grind.",
+				"name": "Falafel",
+				"desc": "Soak and grind the beans, bind with flour, fry into balls."
+			},
+			"farinata": {
+				"taste": "Thin, crisp at the edge, soft in the middle.",
+				"hint": "A loose batter spreads thin.",
+				"name": "Farinata",
+				"desc": "Whisk flour and water thin, pour in a tray, oil and bake."
+			},
+			"feijoada": {
+				"taste": "Dark and salty, made for rice.",
+				"hint": "Stew until the beans go to sand.",
+				"name": "Feijoada",
+				"desc": "Slow-cook meat and beans with spice until the broth thickens."
+			},
+			"fish_and_chips": {
+				"taste": "A shell outside, flakes inside.",
+				"hint": "Keep the oil hot or it drinks oil.",
+				"name": "Fish & Chips",
+				"desc": "Coat the seafood, fry until it puffs, serve beside fries."
+			},
+			"flat_white": {
+				"taste": "Stronger than a latte; the milk just holds the bitterness down.",
+				"hint": "Two shots, one part milk, no sugar.",
+				"name": "Flat White",
+				"desc": "Less milk, so the coffee steps forward."
+			},
+			"focaccia": {
+				"taste": "Oil pools in the dimples.",
+				"hint": "Press with your fingers, not through.",
+				"name": "Focaccia",
+				"desc": "Spread the dough, dimple it, oil and spice, then bake."
+			},
+			"french_omelette": {
+				"taste": "Wet inside, set outside.",
+				"hint": "Low heat, spatula always moving.",
+				"name": "French Omelette",
+				"desc": "Beat the eggs, melt butter, push into a roll over low heat."
+			},
+			"french_onion_soup": {
+				"taste": "The onions taste sweet, not like onions.",
+				"hint": "Fry them to deep brown; do not hurry.",
+				"name": "French Onion Soup",
+				"desc": "Caramelise sliced onions, add stock, top with bread and cheese, grill."
+			},
+			"french_toast": {
+				"taste": "Custard-soft inside.",
+				"hint": "Soak it through, don't just dip.",
+				"name": "French Toast",
+				"desc": "Bread through egg and milk, fried on both sides. Cut it open: wet in the middle."
+			},
+			"fresh_milk": {
+				"taste": "A white film on the glass.",
+				"hint": "Serve cold; do not heat it.",
+				"name": "Fresh Milk",
+				"desc": "Milk into a glass, chilled."
+			},
+			"fried_chicken": {
+				"taste": "The crust makes a sound; the inside still burns.",
+				"hint": "Spice in the batter beats spice on top.",
+				"name": "Fried Chicken",
+				"desc": "Coat the meat, fry till gold, lift and drain."
+			},
+			"fried_dough": {
+				"taste": "Crisp outside, hollow within.",
+				"hint": "A soft dough puffs best.",
+				"name": "Fried Dough",
+				"desc": "Let the dough rise, tear into pieces, fry golden."
+			},
+			"fried_egg": {
+				"taste": "Crisp at the edge, still soft in the middle.",
+				"hint": "The yolk should wobble.",
+				"name": "Fried Egg",
+				"desc": "A little oil, an egg, and patience until the edge curls."
+			},
+			"fried_noodles": {
+				"taste": "All wok smoke; the strands break short.",
+				"hint": "Parboil first or it turns to mush.",
+				"name": "Fried Noodles",
+				"desc": "Half-cook the noodles, then fry hard with greens."
+			},
+			"fried_rice": {
+				"taste": "Every grain separate, the wok very hot.",
+				"hint": "Rice, egg, vegetable -- high heat, quick.",
+				"name": "Fried Rice",
+				"desc": "Day-old rice is best; scramble the egg first, then toss it all."
+			},
+			"fries": {
+				"taste": "Salt still clinging, edges a little soft.",
+				"hint": "Soak the cut strips; they fry crisper.",
+				"name": "Fries",
+				"desc": "Cut the potatoes, soak off the starch, fry until the edges brown."
+			},
+			"fruit_salad": {
+				"taste": "Cut unevenly, the cream beginning to loosen.",
+				"hint": "Chill the fruit before folding in cream.",
+				"name": "Fruit Salad",
+				"desc": "Cube the fruit, fold in cream, chill a while."
+			},
+			"fufu": {
+				"taste": "A single ball, eaten with the fingers.",
+				"hint": "Pound it hot; cold it sets.",
+				"name": "Fufu",
+				"desc": "Boil the cassava, pound it hot into a ball."
+			},
+			"garlic_toast": {
+				"taste": "Garlic hits first, butter follows.",
+				"hint": "Crush the garlic, don't dice it.",
+				"name": "Garlic Toast",
+				"desc": "Soft butter, crushed garlic, spice. Spread and bake until the edge browns."
+			},
+			"gazpacho": {
+				"taste": "Served cold, and only then does it taste of summer.",
+				"hint": "Chill it; never heat it.",
+				"name": "Gazpacho",
+				"desc": "Blend tomato with oil, then chill."
+			},
+			"greek_salad": {
+				"taste": "A slab of cheese on top, the oil bright.",
+				"hint": "Toss gently or it waters out.",
+				"name": "Greek Salad",
+				"desc": "Chop the vegetables, top with cheese, oil and spice."
+			},
+			"green_curry": {
+				"taste": "Green, but the heat is warm.",
+				"hint": "Crack the coconut milk before the paste.",
+				"name": "Green Curry",
+				"desc": "Boil coconut milk, add spice and meat, reduce until thick."
+			},
+			"green_papaya_salad": {
+				"taste": "Sour and hot, and it crunches.",
+				"hint": "Pound lightly; it should not mash.",
+				"name": "Shredded Veggie Salad",
+				"desc": "Shred the greens, pound with spice, scatter nuts."
+			},
+			"grilled_cheese": {
+				"taste": "A crisp shell out, a pull inside.",
+				"hint": "Low heat, press it down.",
+				"name": "Grilled Cheese",
+				"desc": "Toast and cheese, buttered outside, fried gold. Cut while hot."
+			},
+			"groundnut_stew": {
+				"taste": "Thick, and peanut over everything.",
+				"hint": "Stir the nut paste in last or it splits.",
+				"name": "Groundnut Stew",
+				"desc": "Stew meat and greens soft, then stir in nut paste."
+			},
+			"ham_cheese_sandwich": {
+				"taste": "Salty, warm, pressed flat.",
+				"hint": "Keep ham and cheese touching.",
+				"name": "Ham & Cheese Sandwich",
+				"desc": "Two slices, ham and cheese between. Press, cut, two layers."
+			},
+			"hamburger": {
+				"taste": "One corner of the bun has gone soft with juice.",
+				"hint": "Press the patty flat; it sits better.",
+				"name": "Hamburger",
+				"desc": "Bun split, patty fried, a leaf of lettuce, then pressed down."
+			},
+			"hash_brown": {
+				"taste": "A shell outside, soft strands in.",
+				"hint": "Squeeze the shreds dry.",
+				"name": "Hash Brown",
+				"desc": "Grated potato, squeezed, pressed into a cake, browned on both sides."
+			},
+			"hash_browns": {
+				"taste": "Pressed flat, browned on both sides.",
+				"hint": "Squeeze the shreds dry or the cake falls apart.",
+				"name": "Hash Browns",
+				"desc": "Shred the potato, squeeze dry, press into cakes and fry both sides."
+			},
+			"hot_cocoa": {
+				"taste": "A thin skin forms on top.",
+				"hint": "Do not boil; pull it at the first bubbles.",
+				"name": "Hot Cocoa",
+				"desc": "Milk, cocoa and sugar over low heat, stirred until dark."
+			},
+			"hot_dog": {
+				"taste": "Casing crisp, the sauce sour.",
+				"hint": "Do not over-toast the bun; it scrapes.",
+				"name": "Hot Dog",
+				"desc": "Fry the sausage until the skin splits, tuck it in a roll, add tomato."
+			},
+			"hummus": {
+				"taste": "Smooth, with a well pressed in the middle.",
+				"hint": "Cook the beans until they crush at a touch.",
+				"name": "Hummus",
+				"desc": "Boil the beans soft, blend with spice, finish with oil."
+			},
+			"iced_americano": {
+				"taste": "The ice has begun to melt; the taste thins.",
+				"hint": "Cool the espresso before the ice or it clouds.",
+				"name": "Iced Americano",
+				"desc": "Espresso with cold water and a couple of cubes."
+			},
+			"iced_latte": {
+				"taste": "Milk sinks then rises; two colours.",
+				"hint": "Cold milk keeps the layers from collapsing.",
+				"name": "Iced Latte",
+				"desc": "Cold milk in the glass, espresso poured over slowly."
+			},
+			"injera": {
+				"taste": "Full of holes, and soft.",
+				"hint": "Let the batter ferment for the holes.",
+				"name": "Injera",
+				"desc": "Ferment the batter, spread thin, cook until it bubbles."
+			},
+			"jam_toast": {
+				"taste": "Jam spread thick; the rim left bare.",
+				"hint": "Spread while warm so it softens.",
+				"name": "Jam Toast",
+				"desc": "Toast the slice and spread jam while it is hot."
+			},
+			"jollof": {
+				"taste": "Red rice, a crust at the pot bottom.",
+				"hint": "Fry the tomato and spice until the oil runs.",
+				"name": "Jollof Rice",
+				"desc": "Fry tomato and spice, add rice and meat, steam."
+			},
+			"juice": {
+				"taste": "Some pulp; shake before drinking.",
+				"hint": "Drink it fresh or it separates.",
+				"name": "Juice",
+				"desc": "Press the fruit, strain the coarse bits."
+			},
+			"kebab": {
+				"taste": "The skewer still burns; the edges are charred.",
+				"hint": "A night in the marinade keeps it tender.",
+				"name": "Kebab",
+				"desc": "Marinate cubed meat, skewer, grill until the edges catch."
+			},
+			"kebab_wrap": {
+				"taste": "The meat is shaved off hot.",
+				"hint": "Warm the flatbread or it cracks.",
+				"name": "Kebab Wrap",
+				"desc": "Lay out the bread, add meat and greens, sauce, roll tight."
+			},
+			"khao_soi": {
+				"taste": "A nest of fried noodles on top, still crisp.",
+				"hint": "The broth must be thick to cling.",
+				"name": "Khao Soi",
+				"desc": "Simmer coconut curry, add the clear noodle soup and meat, crown with crisp noodles."
+			},
+			"kimchi_soup": {
+				"taste": "Sour first, heat after.",
+				"hint": "The longer it simmers, the deeper it gets.",
+				"name": "Kimchi Soup",
+				"desc": "Fry pickle and meat, add water, simmer till rich."
+			},
+			"lasagna": {
+				"taste": "Layer on layer; it slumps when cut.",
+				"hint": "Sauce every layer or it bakes dry.",
+				"name": "Lasagna",
+				"desc": "Stack pasta, meat sauce and white sauce, bake until bubbling."
+			},
+			"latte": {
+				"taste": "The milk arrives first; the bitterness catches up after.",
+				"hint": "Add a portion of milk to an americano.",
+				"name": "Latte",
+				"desc": "Milk pushes the bitterness back a little, and the whole cup goes soft."
+			},
+			"lemonade": {
+				"taste": "Sour enough to wince, and you sip again.",
+				"hint": "Dissolve the sugar before the juice.",
+				"name": "Lemonade",
+				"desc": "Squeeze the fruit, add sugar water, chill."
+			},
+			"mac_cheese": {
+				"taste": "A browned crust, a pull underneath.",
+				"hint": "Cheese in two rounds deepens it.",
+				"name": "Mac and Cheese",
+				"desc": "Boil the pasta, fold with cheese and milk, bake until browned."
+			},
+			"macaron": {
+				"taste": "Thin shell: crisp then soft.",
+				"hint": "Do not overmix or they flatten.",
+				"name": "Macaron",
+				"desc": "Ground nuts with sugar and egg white, piped small and baked, then filled."
+			},
+			"macchiato": {
+				"taste": "A dab of milk on top, coffee underneath.",
+				"hint": "One spoon of milk; more makes it a latte.",
+				"name": "Macchiato",
+				"desc": "A small spoon of foam on the espresso, unstirred."
+			},
+			"mango_lassi": {
+				"taste": "Thick enough to fight the straw.",
+				"hint": "Only ripe fruit will do.",
+				"name": "Mango Lassi",
+				"desc": "Blend fruit, yogurt and sugar smooth."
+			},
+			"mango_sticky_rice": {
+				"taste": "Sweet rice, cool fruit.",
+				"hint": "Fold the coconut milk in hot so it drinks it.",
+				"name": "Mango Sticky Rice",
+				"desc": "Steam the rice, stir through coconut milk, serve with sliced fruit."
+			},
+			"mapo_tofu": {
+				"taste": "Numbness first; the heat waits behind it.",
+				"hint": "Slide the tofu in, never stir it.",
+				"name": "Mapo Tofu",
+				"desc": "Fry minced meat, add chili and soy sauce, slide in the bean curd."
+			},
+			"mashed_potato": {
+				"taste": "Fine, with a few lumps left.",
+				"hint": "Mash while hot or it clumps.",
+				"name": "Mashed Potato",
+				"desc": "Boil and crush the potato, stir in milk and butter."
+			},
+			"meat_sauce_rice": {
+				"taste": "The sauce sinks into the rice, saltier toward the bottom.",
+				"hint": "Rice under meat sauce.",
+				"name": "Rice with Meat Sauce",
+				"desc": "Meat sauce reduced until thick, spooned over hot rice; the edges slump."
+			},
+			"meat_soup": {
+				"taste": "Thick, with a sheen of fat on top.",
+				"hint": "Meat into the broth, simmered.",
+				"name": "Meat Soup",
+				"desc": "Meat sliced thin, blanched in rolling broth until the color deepens."
+			},
+			"milk_cereal": {
+				"taste": "Crisp at first, soft by the last spoon.",
+				"hint": "Cold milk, no waiting.",
+				"name": "Milk & Cereal",
+				"desc": "Cereal into a bowl, cold milk over it, left to soak."
+			},
+			"milk_tea": {
+				"taste": "Tea faint, milk behind it.",
+				"hint": "Let it sit off the heat a moment.",
+				"name": "Milk Tea",
+				"desc": "Boil milk, tea leaves and sugar, then take it off the heat and let it steep."
+			},
+			"milkshake": {
+				"taste": "Too thick for the straw; use a spoon.",
+				"hint": "Chill the milk and cream first for thickness.",
+				"name": "Milkshake",
+				"desc": "Beat milk, cream and sugar until it coats the glass."
+			},
+			"mint_tea": {
+				"taste": "Very sweet, and the mint comes out through your nose.",
+				"hint": "Pour from a height for the foam.",
+				"name": "Mint Tea",
+				"desc": "Boil water with spice and sugar, pour high into the glass."
+			},
+			"mocha": {
+				"taste": "Chocolate and coffee, neither clearly first.",
+				"hint": "Melt the sugar first or it sinks.",
+				"name": "Mocha",
+				"desc": "Espresso with milk, dark chocolate and sugar, stirred until it darkens."
+			},
+			"mooncake": {
+				"taste": "Cut it and it is dense, sweet without apology.",
+				"hint": "Press the mould hard or the pattern blurs.",
+				"name": "Mooncake",
+				"desc": "Press dough into a mould, brush egg, bake."
+			},
+			"muffin": {
+				"taste": "Egg first, sweetness after.",
+				"hint": "Batter, sugar, butter -- fill a cup.",
+				"name": "Muffin",
+				"desc": "Batter into the cup, baked until it domes and cracks."
+			},
+			"mushroom_risotto": {
+				"taste": "Creamy outside, a little bite at the core.",
+				"hint": "Keep stirring or it never thickens.",
+				"name": "Mushroom Risotto",
+				"desc": "Stir rice with mushroom and white sauce, finish with cheese."
+			},
+			"mushroom_soup": {
+				"taste": "Thick, smooth, mushroom hiding behind.",
+				"hint": "Add the white sauce slowly so it doesn't lump.",
+				"name": "Mushroom Soup",
+				"desc": "Browned mushrooms, white sauce and milk, cooked until it coats a spoon."
+			},
+			"naan": {
+				"taste": "Charred spots; soft when torn.",
+				"hint": "Slap it on a hot wall for the blisters.",
+				"name": "Naan",
+				"desc": "Roll the dough and bake hot until it spots."
+			},
+			"nachos": {
+				"taste": "Cheese melts and pulls when you lift a chip.",
+				"hint": "Pull it as the cheese just gives.",
+				"name": "Nachos",
+				"desc": "Spread chips with cheese and spice, bake until melted."
+			},
+			"nasi_goreng": {
+				"taste": "Dry grains, plenty of wok smoke.",
+				"hint": "Day-old rice, or it turns sticky.",
+				"name": "Nasi Goreng",
+				"desc": "Fry cold rice with meat and spice, top with a fried egg."
+			},
+			"nasi_lemak": {
+				"taste": "Coconut in the rice, chilli at the rim.",
+				"hint": "Soak the rice so it steams loose.",
+				"name": "Nasi Lemak",
+				"desc": "Soak the rice, steam it in coconut milk, serve with chilli."
+			},
+			"noodle_soup": {
+				"taste": "The soup is hotter than the noodles; still warm at the last bite.",
+				"hint": "Clear noodle soup with vegetable.",
+				"name": "Noodle Soup",
+				"desc": "Noodles boiled separately, broth on its own; combine at the end so nothing goes soft."
+			},
+			"onigiri": {
+				"taste": "Cool rice, salty filling.",
+				"hint": "Rice around vegetable and meat, pressed tight.",
+				"name": "Onigiri",
+				"desc": "Wet your hands, shape the rice into a triangle, hide a little filling inside."
+			},
+			"onion_rings": {
+				"taste": "Bite through and it is sweet inside.",
+				"hint": "Cut the rings thick so the batter holds.",
+				"name": "Onion Rings",
+				"desc": "Slice onion into rings, coat in batter, fry until they float."
+			},
+			"onion_soup": {
+				"taste": "Onions gone translucent, the broth pale brown.",
+				"hint": "Soften them first or the soup bites.",
+				"name": "Onion Soup",
+				"desc": "Fry sliced onion soft, add stock, simmer till it darkens."
+			},
+			"onion_tart": {
+				"taste": "Onions piled high, the rim charred.",
+				"hint": "Cook the onions to sweetness first.",
+				"name": "Onion Tart",
+				"desc": "Press dough into a tin, top with soft onions and cheese, bake."
+			},
+			"oyakodon": {
+				"taste": "Half-set egg slides over the rice.",
+				"hint": "Two pours of egg, two textures.",
+				"name": "Oyakodon",
+				"desc": "Simmer meat and scallion, pour egg over, slide onto rice while loose."
+			},
+			"pad_thai": {
+				"taste": "Sweet, sour and salt all at once.",
+				"hint": "Hard heat, or the noodles clump.",
+				"name": "Pad Thai",
+				"desc": "Soak the noodles, then fry hard with prawns, egg and greens."
+			},
+			"paella": {
+				"taste": "The crust at the bottom goes first.",
+				"hint": "Do not stir at the end; let it set.",
+				"name": "Paella",
+				"desc": "Spread rice and seafood in the pan, season, simmer until dry."
+			},
+			"palak_paneer": {
+				"taste": "White cubes in green sauce.",
+				"hint": "Add the cheese last or it crumbles.",
+				"name": "Palak Paneer",
+				"desc": "Boil and blend the greens, season, fold in cheese cubes."
+			},
+			"pancake": {
+				"taste": "All little holes, drinking whatever you spread.",
+				"hint": "Flip once, when bubbles break.",
+				"name": "Pancake",
+				"desc": "Ladle batter into a pan, turn it when bubbles pop, brown both sides."
+			},
+			"pasta_tomato": {
+				"taste": "The strands wear red; the plate comes back clean.",
+				"hint": "Straight from the pot into the sauce.",
+				"name": "Tomato Pasta",
+				"desc": "Boil the pasta, toss it through softened tomato."
+			},
+			"persian_stew": {
+				"taste": "Deep broth, beans gone soft.",
+				"hint": "Spice late, or the perfume boils off.",
+				"name": "Persian Stew",
+				"desc": "Stew meat and beans, add greens and spice near the end."
+			},
+			"peruvian_chicken": {
+				"taste": "Crisp skin, fruit acid in the meat.",
+				"hint": "Acid in the marinade keeps it tender.",
+				"name": "Peruvian Chicken",
+				"desc": "Marinate in spice and fruit juice, roast until the skin crisps."
+			},
+			"pho": {
+				"taste": "Clear broth, a few slices floating.",
+				"hint": "Pour boiling, or the meat never turns.",
+				"name": "Pho",
+				"desc": "Boil the stock, pour over noodles, top with meat and greens."
+			},
+			"pilaf": {
+				"taste": "Each grain separate and shining.",
+				"hint": "Soak, fry, then add water.",
+				"name": "Pilaf",
+				"desc": "Soak the rice, fry with meat and spice, steam with water."
+			},
+			"pita": {
+				"taste": "Hollow inside, steam when torn.",
+				"hint": "Hot and fast, or it never puffs.",
+				"name": "Pita",
+				"desc": "Roll the dough flat, bake hot until it balloons."
+			},
+			"pbj_sandwich": {
+				"taste": "Sweet and salty, half and half.",
+				"hint": "Two slices, each with its own spread.",
+				"name": "Peanut Butter & Jam Sandwich",
+				"desc": "Peanut butter on one slice, jam on the other, pressed together."
+			},
+			"pizza": {
+				"taste": "The rim puffs; the cheese still pulls.",
+				"hint": "Rest the dough or it will not stretch.",
+				"name": "Pizza",
+				"desc": "Stretch the dough, spread tomato, scatter cheese, bake till the rim blisters."
+			},
+			"poached_egg": {
+				"taste": "A thin veil of white around liquid gold.",
+				"hint": "A splash of vinegar keeps it together.",
+				"name": "Poached Egg",
+				"desc": "Slide the egg in just as the water shivers. Lift it gently."
+			},
+			"popcorn": {
+				"taste": "A few never popped and bite hard.",
+				"hint": "Leave a gap for the steam.",
+				"name": "Popcorn",
+				"desc": "Corn into a hot pot, lid on, until the popping thins."
+			},
+			"potato_salad": {
+				"taste": "Mealy, cold, better after a rest.",
+				"hint": "Boil until a chopstick goes through.",
+				"name": "Potato Salad",
+				"desc": "Potato and egg crushed into dressing. Eat it cold."
+			},
+			"pour_over": {
+				"taste": "The cup that slowed down; the sourness walks in front.",
+				"hint": "An extraction without the equipment — you wait a little longer.",
+				"name": "Pour-over",
+				"desc": "Water circles the grounds and you have to let it fall through on its own."
+			},
+			"poutine": {
+				"taste": "The gravy is thick; the fries below have given up.",
+				"hint": "Double-fry so they hold the sauce.",
+				"name": "Poutine",
+				"desc": "Fry the potatoes crisp, pour gravy and white sauce, add meat."
+			},
+			"pudding": {
+				"taste": "Cold; the spoon sinks in.",
+				"hint": "Sweetness steamed in the oven.",
+				"name": "Pudding",
+				"desc": "Egg and milk together, baked in a water bath — that is why it trembles."
+			},
+			"raita": {
+				"taste": "Cold, and it puts the fire out.",
+				"hint": "Chop the vegetables very fine.",
+				"name": "Raita",
+				"desc": "Fold chopped vegetables into yogurt, dust with spice."
+			},
+			"ramen": {
+				"taste": "Cloudy broth, noodles still firm.",
+				"hint": "Reheat just before serving; it softens fast.",
+				"name": "Ramen",
+				"desc": "Bring the clear noodle soup to a boil, top with pork and egg, finish with scallion."
+			},
+			"ravioli": {
+				"taste": "Edges pressed tight, the filling bulging.",
+				"hint": "Wet the rim or they open in the pot.",
+				"name": "Ravioli",
+				"desc": "Roll the dough thin, add filling, fold and seal, then boil."
+			},
+			"red_curry": {
+				"taste": "Red oil on top, thick below.",
+				"hint": "A pinch of sugar rounds the heat.",
+				"name": "Red Curry",
+				"desc": "Simmer coconut milk and spice, add meat, cook until the oil splits."
+			},
+			"ribs": {
+				"taste": "A glossy crust; the bone slides out.",
+				"hint": "Low and slow, glaze at the end.",
+				"name": "Ribs",
+				"desc": "Rub with spice, bake low, glaze with sugar at the finish."
+			},
+			"rice_cake": {
+				"taste": "Sweet slowly, only after chewing.",
+				"hint": "Rice ground to a slurry, steamed with sugar.",
+				"name": "Rice Cake",
+				"desc": "Rice slurry into a mold, steamed until a chopstick lifts it whole."
+			},
+			"roast_chicken": {
+				"taste": "Crisp skin, juices left in the pan.",
+				"hint": "Dry the skin before it goes in.",
+				"name": "Roast Chicken",
+				"desc": "Rub the meat with spice and butter, roast till the skin is gold and juices run clear."
+			},
+			"roasted_corn": {
+				"taste": "Charred spots, and sweet at the bite.",
+				"hint": "Roast until the kernels swell, then butter.",
+				"name": "Roasted Corn",
+				"desc": "Grill the corn until it spots, brush with butter and spice."
+			},
+			"roasted_vegetables": {
+				"taste": "Charred edges, soft centres.",
+				"hint": "Cut them the same size so they cook evenly.",
+				"name": "Roasted Vegetables",
+				"desc": "Toss cut vegetables with oil and spice, roast until the edges catch."
+			},
+			"rose_dessert": {
+				"taste": "Cloying, and you keep going back.",
+				"hint": "Do not over-reduce or it sets hard.",
+				"name": "Rose Dessert",
+				"desc": "Thicken milk and sugar, pour into moulds, scatter nuts."
+			},
+			"samosa": {
+				"taste": "Triangular; the potato burns your tongue.",
+				"hint": "Seal the edges or the oil gets in.",
+				"name": "Samosa",
+				"desc": "Wrap potato filling in pastry, crimp into triangles, fry."
+			},
+			"sandwich": {
+				"taste": "Soft toast, crisp edge of the fried egg.",
+				"hint": "Toast, fried egg, vegetable.",
+				"name": "Sandwich",
+				"desc": "Two slices, egg and greens between, pressed and cut."
+			},
+			"satay": {
+				"taste": "Thick sauce, oil still dripping from the skewer.",
+				"hint": "Add the nut paste last or it turns bitter.",
+				"name": "Satay",
+				"desc": "Marinate and skewer the meat, grill, serve with nut sauce."
+			},
+			"sausage_sauerkraut": {
+				"taste": "The sour cuts the fat.",
+				"hint": "Rub the cabbage with salt until it softens and sours.",
+				"name": "Sausage & Sauerkraut",
+				"desc": "Shred the cabbage, rub it with salt and spice, then simmer with sausage until sour and savoury."
+			},
+			"scallion_noodle": {
+				"taste": "Scallions fried dark, the oil carries it.",
+				"hint": "Low and slow, don't burn them.",
+				"name": "Scallion Noodles",
+				"desc": "Scallions in oil until fragrant, fished out, the oil tossed through noodles."
+			},
+			"scone": {
+				"taste": "Dry outside, still a little damp inside.",
+				"hint": "Butter rubbed into the dough, baked until it cracks.",
+				"name": "Scone",
+				"desc": "Baked until it splits along the seam."
+			},
+			"scrambled_egg": {
+				"taste": "Soft, broken, butter first.",
+				"hint": "Small pan, low heat, keep the spatula moving.",
+				"name": "Scrambled Eggs",
+				"desc": "Eggs beaten into melted butter, pushed slowly into a pile."
+			},
+			"seafood_pancake": {
+				"taste": "Crisp rim, juicy centre.",
+				"hint": "A thin batter cooks the seafood through.",
+				"name": "Seafood Pancake",
+				"desc": "Fold seafood into batter, fry flat until both sides catch."
+			},
+			"sesame_bun": {
+				"taste": "Sesame outside, hollow inside.",
+				"hint": "Griddle first, then bake, for the crust.",
+				"name": "Sesame Bun",
+				"desc": "Roll dough with oil, flatten, top with sesame, bake."
+			},
+			"shawarma": {
+				"taste": "Shaved thin; sauce runs into your palm.",
+				"hint": "Warm the bread so it folds.",
+				"name": "Shawarma",
+				"desc": "Warm the bread, layer meat and greens, sauce, roll tight."
+			},
+			"shepherd_pie": {
+				"taste": "A browned top over gravy.",
+				"hint": "Keep the mash dry or it sinks.",
+				"name": "Shepherd's Pie",
+				"desc": "Fry meat and vegetables into a filling, top with mash, bake till golden."
+			},
+			"shumai": {
+				"taste": "Thin skin, juice inside.",
+				"hint": "Dough, meat, vegetable -- a little bag left open.",
+				"name": "Shumai",
+				"desc": "No rising; the wrapper is rolled thin, pleated, the filling showing at the top."
+			},
+			"soda": {
+				"taste": "Plenty of fizz; a sip makes you burp.",
+				"hint": "Chill before opening; the gas stays longer.",
+				"name": "Soda",
+				"desc": "Squeeze the fruit, add sugar water, chill until it fizzes."
+			},
+			"souffle": {
+				"taste": "It falls as it leaves the oven; eat fast.",
+				"hint": "Beat the whites to peaks and fold gently.",
+				"name": "Soufflé",
+				"desc": "Fold yolk custard into whipped whites, bake in a ramekin until it rises."
+			},
+			"soy_rice": {
+				"taste": "Soy sauce coats each grain; the bean comes through.",
+				"hint": "Hot rice, or the smell never comes.",
+				"name": "Soy Sauce Rice",
+				"desc": "Soy sauce around the rim of hot rice, then stir."
+			},
+			"sparkling_water": {
+				"taste": "Bubbles rise and the throat prickles.",
+				"hint": "Chill it hard before opening.",
+				"name": "Sparkling Water",
+				"desc": "Chill the water, add a squeeze of fruit."
+			},
+			"spring_roll": {
+				"taste": "Crisp, and steam rushes out at the bite.",
+				"hint": "Squeeze the filling dry or they burst.",
+				"name": "Spring Roll",
+				"desc": "Wrap the filling tight, fry golden."
+			},
+			"steak": {
+				"taste": "Pink inside, charred at the edge.",
+				"hint": "Bring it to room temperature first.",
+				"name": "Steak",
+				"desc": "Sear both sides, add butter and spice, rest before slicing."
+			},
+			"steamed_egg": {
+				"taste": "Smooth, almost silent.",
+				"hint": "Egg and water, steamed; keep the heat low.",
+				"name": "Steamed Egg",
+				"desc": "Water and egg whisked, steamed just until set -- no honeycomb on the surface."
+			},
+			"stew": {
+				"taste": "Everything soft, the flavors merged.",
+				"hint": "Broth, vegetable, meat -- low and slow.",
+				"name": "Stew",
+				"desc": "Simmered low; the liquid reduces and the flavor thickens."
+			},
+			"sushi": {
+				"taste": "Warm rice, cool fish.",
+				"hint": "Wet your hands or the rice sticks.",
+				"name": "Sushi",
+				"desc": "Shape warm rice, drape fish over it, add a sliver of greens."
+			},
+			"taco": {
+				"taste": "Soft shell, filling escaping.",
+				"hint": "Warm the tortilla or it cracks.",
+				"name": "Taco",
+				"desc": "Warm the tortilla, fill with meat, greens and spice."
+			},
+			"tagine": {
+				"taste": "Lift the lid and sweet meets savoury.",
+				"hint": "Low and slow, until the meat let go.",
+				"name": "Tagine",
+				"desc": "Slow-cook meat and vegetables with spice, scatter nuts at the end."
+			},
+			"tamale": {
+				"taste": "Unwrap the leaf and it is soft.",
+				"hint": "Beat the masa until it holds.",
+				"name": "Tamale",
+				"desc": "Wrap meat in corn dough and leaves, then steam through."
+			},
+			"tamarind_sauce": {
+				"taste": "Sharply sour; a little goes far.",
+				"hint": "Add sugar by the spoon and taste.",
+				"name": "Tamarind Sauce",
+				"desc": "Simmer fruit in water, strain, reduce with sugar."
+			},
+			"tandoori_chicken": {
+				"taste": "Red outside, white within.",
+				"hint": "The longer it sits, the deeper the colour.",
+				"name": "Tandoori Chicken",
+				"desc": "Marinate meat in spice and milk, bake until the surface reddens."
+			},
+			"tangyuan": {
+				"taste": "Sweet inside, clear broth around.",
+				"hint": "They are done when they float.",
+				"name": "Tangyuan",
+				"desc": "Roll dough into balls, boil until they rise."
+			},
+			"tea_egg": {
+				"taste": "Cracks carry the colour inward, fading as they go.",
+				"hint": "Crack the shell and soak overnight.",
+				"name": "Tea Egg",
+				"desc": "Boil, crack, then simmer low in spiced water. No rushing."
+			},
+			"tea_rice": {
+				"taste": "The tea is clear, the rice still stands.",
+				"hint": "Do not let the tea get too hot or the rice will fall apart.",
+				"name": "Tea Rice",
+				"desc": "Rice in a bowl, hot tea poured over, a little greens."
+			},
+			"tempura": {
+				"taste": "The batter is thin enough to see through.",
+				"hint": "Ice-cold batter fries crisper.",
+				"name": "Tempura",
+				"desc": "Dip seafood in loose batter, fry pale gold."
+			},
+			"thali": {
+				"taste": "Small bowls ringed around rice.",
+				"hint": "Make a little of each so the tray looks full.",
+				"name": "Thali",
+				"desc": "Rice in the middle; beans, greens and sauce in bowls around it."
+			},
+			"tiramisu": {
+				"taste": "Dusted on top, soft beneath the spoon.",
+				"hint": "A night in the cold marries the flavours.",
+				"name": "Tiramisu",
+				"desc": "Dip cake in coffee, layer with cream, dust with grounds, chill."
+			},
+			"toast": {
+				"taste": "Cut thick, a dark ring at the edge.",
+				"hint": "Day-old bread slices cleaner.",
+				"name": "Toast",
+				"desc": "A loaf into a stack. Good plain, better with anything."
+			},
+			"toast_slice": {
+				"taste": "Dry, crisp, a ring of colour.",
+				"hint": "A thin scrape of butter is enough.",
+				"name": "Toast Slices",
+				"desc": "Sliced bread, buttered, baked crisp. Best beside soup."
+			},
+			"tom_yum": {
+				"taste": "Sour and hot at once: a wince, then another spoon.",
+				"hint": "Aromatics last, or the perfume leaves.",
+				"name": "Tom Yum",
+				"desc": "Simmer seafood and mushroom with spice and coconut milk."
+			},
+			"tomato_soup": {
+				"taste": "Sour, warm, the stomach relaxes first.",
+				"hint": "Cook the tomatoes down before adding stock.",
+				"name": "Tomato Soup",
+				"desc": "Tomatoes softened in the pan, stock poured in. Deeper colour, sweeter soup."
+			},
+			"tostada": {
+				"taste": "Crisp enough to shatter.",
+				"hint": "Fry it through or it goes soft.",
+				"name": "Tostada",
+				"desc": "Fry the corn cake crisp, top with meat and cheese."
+			},
+			"tres_leches": {
+				"taste": "Milk seeps out when you cut it.",
+				"hint": "Bake first, then soak.",
+				"name": "Tres Leches",
+				"desc": "Bake the cake, soak with milk and cream, chill."
+			},
+			"tuna_sandwich": {
+				"taste": "The sea, wrapped in dressing.",
+				"hint": "Taste the mix before it goes in.",
+				"name": "Tuna Sandwich",
+				"desc": "Seafood and dressing between toast. A leaf of lettuce helps."
+			},
+			"turkish_coffee": {
+				"taste": "A layer of grounds at the bottom; stop short of it.",
+				"hint": "Pull it at the foam, never boil.",
+				"name": "Turkish Coffee",
+				"desc": "Heat grounds, water and sugar; pour at the first foam."
+			},
+			"turmeric_rice": {
+				"taste": "Yellow grains, each one loose.",
+				"hint": "Bloom the spice in oil first.",
+				"name": "Turmeric Rice",
+				"desc": "Bloom the spice in oil, fold through the rice."
+			},
+			"twice_cooked_pork": {
+				"taste": "The slices curl, edges browned.",
+				"hint": "Boil before slicing or it shreds.",
+				"name": "Twice-cooked Pork",
+				"desc": "Boil and slice the pork, then fry again with greens and chili."
+			},
+			"vegetable_salad": {
+				"taste": "Crisp, cold, leaves still beaded.",
+				"hint": "Dry them well after washing.",
+				"name": "Garden Salad",
+				"desc": "Leaves torn, a little oil, a toss. Nothing else to say."
+			},
+			"vegetable_soup": {
+				"taste": "Clear; warm all the way down.",
+				"hint": "Broth boiling, vegetables in.",
+				"name": "Vegetable Soup",
+				"desc": "Broth first, vegetables last, pulled off the heat the moment they soften."
+			},
+			"vienna_coffee": {
+				"taste": "Cream floats on top: sweet first, bitter after.",
+				"hint": "Whip the cream to stand; do not stir it in.",
+				"name": "Vienna Coffee",
+				"desc": "Sweeten the espresso and crown it with whipped cream."
+			},
+			"waffle": {
+				"taste": "Sugar in the grid has turned to crust.",
+				"hint": "A softer dough presses in evenly.",
+				"name": "Waffle",
+				"desc": "Press the dough into the iron and bake until the edges crisp."
+			},
+			"cocoa_shake": {
+				"taste": "Cold enough to sting your teeth; the cocoa comes through.",
+				"hint": "Crush the ice first for a smoother shake.",
+				"name": "Cocoa Shake",
+				"desc": "Cocoa, milk, ice and sugar, blended thick."
+			},
+			"white_rice": {
+				"taste": "Nothing added, just the rice's own sweetness.",
+				"hint": "A splash too much is porridge; too little, grit.",
+				"name": "White Rice",
+				"desc": "A bowl of plain rice. Looks empty; everything else stands on it."
+			},
+			"wonton": {
+				"taste": "Skin thin enough to see light, oil on the broth.",
+				"hint": "Cook them at once or they stick.",
+				"name": "Wonton",
+				"desc": "Roll thin wrappers, fold in meat, poach in stock."
+			},
+			"yogurt_soup": {
+				"taste": "Sour, but gentle.",
+				"hint": "Keep it low or the yogurt splits.",
+				"name": "Yogurt Soup",
+				"desc": "Stir yogurt, flour and spice over low heat until thick."
+			},
+			"yorkshire_pudding": {
+				"taste": "Hollow in the middle, crisp at the rim.",
+				"hint": "The fat must be hot before the batter.",
+				"name": "Yorkshire Pudding",
+				"desc": "Pour batter into hot fat and bake until it rises."
+			},
+			"zongzi": {
+				"taste": "The rice has taken the colour by the time it opens.",
+				"hint": "Soak the rice or it never steams through.",
+				"name": "Zongzi",
+				"desc": "Wrap rice and meat in leaves, tie tight, steam through."
+			},
+			"yogurt": {
+				"name": "Yogurt",
+				"desc": "Milk and sugar, left warm until it sets."
+			},
+			"bacon": {
+				"name": "Bacon",
+				"desc": "Slices striped fat and lean."
+			},
+			"batter": {
+				"name": "Batter",
+				"desc": "Batter"
+			},
+			"bean": {
+				"name": "Mixed Beans",
+				"desc": "Dry, hard, a whole sack. Everything but soy."
+			},
+			"bread": {
+				"name": "Bread",
+				"desc": "Lighter than dough; tap it and it sounds hollow."
+			},
+			"broth": {
+				"name": "Broth",
+				"desc": "Skim the foam and what's left is pale."
+			},
+			"butter": {
+				"name": "Butter",
+				"desc": "Out of the cold, it first breaks into a thin sweat."
+			},
+			"cereal": {
+				"name": "Cereal",
+				"desc": "Loud dry, quiet in milk."
+			},
+			"cheese": {
+				"name": "Cheese",
+				"desc": "Tiny holes in the cut face."
+			},
+			"coconut_milk": {
+				"name": "Coconut Milk",
+				"desc": "Thick as it pours, faintly sweet."
+			},
+			"coffee_bean": {
+				"name": "Green Coffee Beans",
+				"desc": "Pale green beans; they smell like a morning that hasn't woken yet."
+			},
+			"coffee_ground": {
+				"name": "Ground Coffee",
+				"desc": "Ground, the aroma scatters faster — and is easier to remember."
+			},
+			"corn": {
+				"name": "Corn",
+				"desc": "Silk still clinging to the cob."
+			},
+			"cream": {
+				"name": "Cream",
+				"desc": "Skimmed off the milk, thick enough to cling to a spoon."
+			},
+			"cream_cheese": {
+				"name": "Cream Cheese",
+				"desc": "Rich with milk, softening on warm bread."
+			},
+			"dough": {
+				"name": "Dough",
+				"desc": "Knead until it stops sticking; it will still rise slowly."
+			},
+			"egg": {
+				"name": "Eggs",
+				"desc": "In a little basket by the stove; there are always a few each day."
+			},
+			"flour": {
+				"name": "Flour",
+				"desc": "Lift it and it slips through your fingers; very light."
+			},
+			"jam": {
+				"name": "Jam",
+				"desc": "Fruit and sugar, simmered until it coats a spoon."
+			},
+			"meat_sauce": {
+				"name": "Meat Sauce",
+				"desc": "Reduced over a low flame, thicker the longer it goes."
+			},
+			"dark_chocolate": {
+				"taste": "Bitter and blunt, the snapped edge still glossy.",
+				"hint": "More cocoa, less sugar; keep the heat low.",
+				"name": "Dark Chocolate",
+				"desc": "Cocoa stirred into melted butter and sugar, pressed into a mould to set."
+			},
+			"milk_chocolate": {
+				"taste": "Milk first, bitterness catching up behind.",
+				"hint": "Don't let the milk boil — pull it as soon as the edge bubbles.",
+				"name": "Milk Chocolate",
+				"desc": "Cocoa with fresh milk, butter and sugar, stirred smooth and poured to set."
+			},
+			"lava_cake": {
+				"taste": "The middle runs when you cut it; the rim stays soft.",
+				"hint": "Pull it early or the centre sets.",
+				"name": "Molten Chocolate Cake",
+				"desc": "Dark chocolate, butter, egg and sugar, baked until the middle still runs."
+			},
+			"milk": {
+				"name": "Milk",
+				"desc": "White, quiet, like a sentence left unfinished."
+			},
+			"mushroom": {
+				"name": "Mushroom",
+				"desc": "Fine gills under the cap."
+			},
+			"noodle": {
+				"name": "Noodles",
+				"desc": "Cut a little uneven; shake them loose before they go in."
+			},
+			"nuts": {
+				"name": "Nuts",
+				"desc": "A handful, shell and oil on your fingers."
+			},
+			"oil": {
+				"name": "Vegetable Oil",
+				"desc": "The old bottle by the stove; it pours out clear and yellow."
+			},
+			"onion": {
+				"name": "Onion",
+				"desc": "Layers that sting when cut."
+			},
+			"peanut_butter": {
+				"name": "Peanut Butter",
+				"desc": "Ground peanuts, oil rising on its own."
+			},
+			"potato": {
+				"name": "Potato",
+				"desc": "Dirty, dimpled skin."
+			},
+			"rice": {
+				"name": "Rice",
+				"desc": "Husked grain; it rustles faintly in the hand."
+			},
+			"roasted_bean": {
+				"name": "Roasted Coffee Beans",
+				"desc": "Darker now, and the aroma pushes harder than the green beans did."
+			},
+			"salad_dressing": {
+				"name": "Salad Dressing",
+				"desc": "Salad Dressing"
+			},
+			"sausage": {
+				"name": "Sausage",
+				"desc": "Meat in casing, fried until the skin splits."
+			},
+			"soy_sauce": {
+				"name": "Soy Sauce",
+				"desc": "Soy Sauce"
+			},
+			"spice": {
+				"name": "Spices",
+				"desc": "A pinch, and you sneeze."
+			},
+			"sugar": {
+				"name": "Sugar",
+				"desc": "Fine grains; on your fingertips they're slightly sticky."
+			},
+			"syrup": {
+				"name": "Syrup",
+				"desc": "Sugar melted into water, thicker once cool."
+			},
+			"tomato": {
+				"name": "Tomato",
+				"desc": "Glossy red, heavy in the hand."
+			},
+			"water": {
+				"name": "Water",
+				"desc": "The thing you can always take from a recipe. The catalog doesn't record it."
+			},
+			"white_sauce": {
+				"name": "White Sauce",
+				"desc": "White Sauce"
+			},
+			"pork": {
+				"name": "Pork",
+				"desc": "Wrapped in paper, fat and lean in stripes; cold to the touch."
+			},
+			"beef": {
+				"name": "Beef",
+				"desc": "Dark and coarse-grained; the knife has to be patient."
+			},
+			"chicken": {
+				"name": "Chicken",
+				"desc": "Pale and mild, willing to become something else."
+			},
+			"shrimp": {
+				"name": "Shrimp",
+				"desc": "Still moving, shells a translucent green."
+			},
+			"fish": {
+				"name": "Fish",
+				"desc": "Bright eyes, gills still red."
+			},
+			"leafy": {
+				"name": "Leafy Greens",
+				"desc": "Tied in a bunch, water still beading on the leaves."
+			},
+			"cabbage": {
+				"name": "Cabbage",
+				"desc": "The outer leaf wilts; inside it is still crisp."
+			},
+			"root": {
+				"name": "Root Vegetables",
+				"desc": "Muddy and heavy, a pale bruise where it snapped."
+			},
+			"scallion": {
+				"name": "Scallion",
+				"desc": "White root, green leaf, sharp and sweet at once."
+			},
+			"apple": {
+				"name": "Apple",
+				"desc": "A faint bloom on the skin; it cracks when you bite."
+			},
+			"banana": {
+				"name": "Banana",
+				"desc": "A hand of them, just spotting black."
+			},
+			"tropical": {
+				"name": "Tropical Fruit",
+				"desc": "Mango, pineapple, coconut — they smell of sun."
+			},
+			"lemon": {
+				"name": "Lemon",
+				"desc": "Pocked skin; squeeze it and your whole hand smells of it."
+			},
+			"salt": {
+				"name": "Salt",
+				"desc": "A small bag, the least of the lot, and every pot wants a pinch."
+			},
+			"ice": {
+				"name": "Ice",
+				"desc": "Little blocks knocked out of the freezer, hard enough to clink."
+			},
+			"vanilla": {
+				"name": "Vanilla",
+				"desc": "A short dark pod; the sweetness takes its time coming out."
+			},
+			"cocoa": {
+				"name": "Cocoa",
+				"desc": "Bitter powder ground fine; it turns to a brown haze the moment it meets heat."
+			},
+			"olive_oil": {
+				"name": "Olive Oil",
+				"desc": "Pressed out green, with a faint catch at the back of the throat."
+			},
+			"tea_leaf": {
+				"name": "Tea Leaves",
+				"desc": "Dry leaves still curled shut, awake the second hot water hits them."
+			},
+			"ice_cream_scoop": {
+				"name": "A Scoop of Ice Cream",
+				"desc": "Rounded off neat; a spoon stuck in it will stand there a moment.",
+				"taste": "Cold and clean; the sweetness takes its time.",
+				"hint": "Scoop one out of the tub."
+			},
+			"shaved_ice": {
+				"name": "Shaved Ice",
+				"desc": "A big bowl of snow that slumps by half once the syrup lands.",
+				"taste": "Syrup seeps down through the cracks; the sweet is bright.",
+				"hint": "Shave the ice fine and pour syrup over."
+			},
+			"popsicle": {
+				"name": "Popsicle",
+				"desc": "Frozen in a mould; the stick pulls out clean.",
+				"taste": "Cold first, then the fruit creeps in.",
+				"hint": "Freeze ice and fruit together in a mould."
+			},
+			"smoothie": {
+				"name": "Smoothie",
+				"desc": "Cold wraps the pulp; a film of mist stays on the glass.",
+				"taste": "Thick enough to hold the straw, pulp still grainy.",
+				"hint": "Crush ice and fruit together."
+			},
+			"ice_bar": {
+				"name": "Ice Bar",
+				"desc": "Firm enough to leave a row of teeth marks.",
+				"taste": "Milk rides on top; the ice melts slowly behind it.",
+				"hint": "Freeze ice and milk hard, then cut."
+			},
+			"milk_pudding": {
+				"name": "Milk Pudding",
+				"desc": "It wobbles when the spoon lifts — and still holds.",
+				"taste": "Goes down without a sound; milk stays at the back of the tongue.",
+				"hint": "Milk and sugar, frozen just short of hard."
+			},
+			"vanilla_ice_cream": {
+				"name": "Vanilla Ice Cream",
+				"desc": "A whole tub, surface smoothed flat, the spoon's path still showing.",
+				"taste": "Vanilla sweetens first; the cold catches up after.",
+				"hint": "Ice, milk, sugar and a pod of vanilla."
+			},
+			"chocolate_ice_cream": {
+				"name": "Chocolate Ice Cream",
+				"desc": "So dark in the tub it looks like mud, and digs out heavy.",
+				"taste": "Bitter and sweet hold each other off; neither wins.",
+				"hint": "Freeze cocoa and milk together; it goes dark."
+			},
+			"fruit_ice_cream": {
+				"name": "Fruit Ice Cream",
+				"desc": "All one colour, and you can still taste the shapes.",
+				"taste": "The fruit froze hard; the sweet carries a little sour.",
+				"hint": "Use whatever fruit is at hand."
+			},
+			"sundae": {
+				"name": "Sundae",
+				"desc": "Jam over the ball, then a cap of cream.",
+				"taste": "Cream melts first, jam sweetens after, ice last.",
+				"hint": "One scoop, with jam and cream piled on."
+			},
+			"black_tea": {
+				"name": "Black Tea",
+				"desc": "The colour sinks to the bottom; a ring stays on the cup.",
+				"taste": "Tannin clean; the sweetness comes back slowly.",
+				"hint": "Just let hot water open the leaves."
+			},
+			"green_tea": {
+				"name": "Green Tea",
+				"desc": "The leaves never fully open; the liquor stays pale.",
+				"taste": "Green bitterness first, then the cool of leaves.",
+				"hint": "Steep it shorter than black tea."
+			},
+			"lemon_tea": {
+				"name": "Lemon Tea",
+				"desc": "The slices float up and the tea goes pale.",
+				"taste": "Sour hits first; the tea catches it from behind.",
+				"hint": "Two slices of lemon in the tea."
+			},
+			"wheat": {
+				"name": "Wheat",
+				"desc": "Grind it, and you've got the start of flour."
+			},
+			"whole_wheat_flour": {
+				"name": "Whole Wheat Flour",
+				"desc": "The bran stays in, so the color runs deep."
+			},
+			"cocoa_powder": {
+				"name": "Cocoa Powder",
+				"desc": "Ground cocoa: a clean, bitter edge."
+			},
+			"marshmallow": {
+				"name": "Marshmallow",
+				"desc": "Press it and it slowly springs back."
+			},
+			"whole_wheat_bread": {
+				"taste": "A hard crust over soft crumb.",
+				"hint": "The color of whole wheat runs deep.",
+				"name": "European Bun",
+				"desc": "Baked until the crust knocks hollow."
+			},
+			"whole_wheat_cracker": {
+				"taste": "The more you chew, the sweeter it gets.",
+				"hint": "Roll it thin for a cleaner snap.",
+				"name": "Whole Wheat Cracker",
+				"desc": "Rolled thin and baked to a pale brown rim."
+			},
+			"chocolate_chip_cookie": {
+				"taste": "Sweet with little bitter bites.",
+				"hint": "Fold chocolate into the dough.",
+				"name": "Chocolate Chip Cookie",
+				"desc": "Baked to brown edges, still soft in the middle."
+			},
+			"chocolate_cookie": {
+				"taste": "Bitter cocoa against sweet dough.",
+				"hint": "Chocolate goes into the dough.",
+				"name": "Chocolate Cookie",
+				"desc": "Dough and cocoa baked until the top cracks."
+			},
+			"oreo": {
+				"taste": "Two dark cookies around one sweet layer.",
+				"hint": "Two cookies, one cream filling.",
+				"name": "Oreo",
+				"desc": "Two chocolate cookies pressed around cream."
+			},
+			"roasted_marshmallow": {
+				"taste": "Crisp outside, molten inside.",
+				"hint": "One turn over the fire is enough.",
+				"name": "Toasted Marshmallow",
+				"desc": "Toasted until the surface blisters; eat it hot."
+			},
+			"smore": {
+				"taste": "Toast, chocolate and whole wheat together.",
+				"hint": "Stack all three.",
+				"name": "S'more",
+				"desc": "A whole wheat cracker around toasted marshmallow and dark chocolate."
+			},
+			"chili": {
+				"name": "Chili Pepper",
+				"desc": "Unapologetically red; cut one and your hands smell of it."
+			},
+			"soy": {
+				"name": "Soybeans",
+				"desc": "A handful of pale rounds; soak overnight and they grind."
+			},
+			"tofu": {
+				"name": "Tofu",
+				"desc": "Soy milk curdled and pressed into a block, light as nothing."
+			},
+			"kimchi": {
+				"name": "Kimchi",
+				"desc": "Cabbage rubbed with chili and salt; a few days and it sours just right."
+			},
+			"tomato_egg_stirfry": {
+				"taste": "The tomato gives its juice first; the egg stays soft.",
+				"hint": "Take the egg out half-cooked and slide it back at the end.",
+				"name": "Tomato and Egg Stir-fry",
+				"desc": "Tomato fried down to juice, egg slid in, red and yellow in one pan."
+			},
+			"stir_fried_greens": {
+				"taste": "Crisp, with a breath of the wok.",
+				"hint": "High heat, quick toss, no lid.",
+				"name": "Stir-fried Greens",
+				"desc": "Whatever greens are at hand, a pinch of salt, straight out of the pan."
+			},
+			"vinegar_potato_shreds": {
+				"taste": "Clean sourness, the potato still crisp.",
+				"hint": "Soak the shreds first or they glue together.",
+				"name": "Vinegar Potato Shreds",
+				"desc": "Potatoes cut to threads, soaked, sourness added just before the pan leaves the fire."
+			},
+			"braised_tofu": {
+				"taste": "Sauce outside, still tender inside.",
+				"hint": "Sear one side of the tofu, then pour the soy over.",
+				"name": "Braised Tofu",
+				"desc": "Tofu seared to a thin shell; chili and sugar reduce to a glossy sauce."
+			},
+			"kung_pao_chicken": {
+				"taste": "Peanuts first; the heat catches up after.",
+				"hint": "Peanuts go in last or they lose their crunch.",
+				"name": "Kung Pao Chicken",
+				"desc": "Chicken cubes passed through oil, dried chili and peanuts tossed in, out of the pan fast."
+			},
+			"yu_xiang_pork": {
+				"taste": "Sour, sweet, hot — all three in one bite.",
+				"hint": "Mix the sugar and soy beforehand; there is no time once the pan is hot.",
+				"name": "Yuxiang Shredded Pork",
+				"desc": "Pork shreds velveted; pickled chili meets sweet vinegar in the pan."
+			},
+			"spicy_chicken": {
+				"taste": "Hunting the chicken in the chili pile is half the pleasure.",
+				"hint": "Fry the chicken twice; perfume the chili, then return the chicken.",
+				"name": "Chongqing Spicy Chicken",
+				"desc": "Chicken fried hard and buried in a fistful of chili, tossed through."
+			},
+			"xiao_chao_rou": {
+				"taste": "The chili steals the show from the pork.",
+				"hint": "Render the pork first; the chili goes in after.",
+				"name": "Stir-fried Pork",
+				"desc": "Pork rendered, chili tossed in, soy poured down the side of the wok."
+			},
+			"shui_zhu_rou_pian": {
+				"taste": "A red layer on the soup, tender pork underneath.",
+				"hint": "Slide the pork in last and do not stir.",
+				"name": "Boiled Pork Slices",
+				"desc": "Stock at a rolling boil, pork slid in, chili on top, hot oil poured over."
+			},
+			"dan_dan_noodles": {
+				"taste": "Once you toss it, everything good is at the bottom.",
+				"hint": "Noodles and topping stay apart until you eat.",
+				"name": "Dan Dan Noodles",
+				"desc": "Noodles bowled; minced pork, chili and peanuts piled on top."
+			},
+			"dry_pot_cabbage": {
+				"taste": "The charred edges are the point.",
+				"hint": "Tear the cabbage, do not cut it.",
+				"name": "Dry Pot Cabbage",
+				"desc": "Cabbage torn by hand, bacon and chili rendering fat, all tossed together."
+			},
+			"steamed_chili_fish": {
+				"taste": "The heat steams in; it is not poured on.",
+				"hint": "High heat, and do not steam it a minute longer.",
+				"name": "Steamed Fish Head with Chili",
+				"desc": "Fish head covered in chopped chili, steamed, soy drizzled on at the end."
+			},
+			"budae_jjigae": {
+				"taste": "Everything is in it, and it all works.",
+				"hint": "Fry the kimchi first or the soup stays flat.",
+				"name": "Budae Jjigae",
+				"desc": "Kimchi, sausage and noodles in one pot, chili in the broth, boil until it rolls."
+			},
+			"kimchi_fried_rice": {
+				"taste": "Sour heat on every grain.",
+				"hint": "Day-old rice; fresh rice goes gluey.",
+				"name": "Kimchi Fried Rice",
+				"desc": "Chopped kimchi first, rice and egg after, chili to finish."
+			},
+			"dak_galbi": {
+				"taste": "Sweet heat glazed on the skin.",
+				"hint": "Chili and rice go in together for the crust.",
+				"name": "Spicy Stir-fried Chicken",
+				"desc": "Chicken seared at the edges, chili and rice in, tossed until a crust forms."
+			},
+			"pad_kra_pow": {
+				"taste": "Basil arrives before the heat.",
+				"hint": "Fry the egg crisp at the edge, soft in the middle.",
+				"name": "Pad Kra Pao",
+				"desc": "Beef and chili over hard heat, over rice, with a fried egg on top."
+			},
+			"laksa": {
+				"taste": "Coconut wraps the heat; the finish lasts longer.",
+				"hint": "Coconut milk last or it splits.",
+				"name": "Laksa",
+				"desc": "Fry chili to red oil; coconut milk and rice noodles go in, shrimp last."
+			},
+			"sambal_shrimp": {
+				"taste": "The shrimp is sweet; the sambal is not polite.",
+				"hint": "Shrimp last; out of the pan the moment they turn red.",
+				"name": "Sambal Shrimp",
+				"desc": "Chili and onion pounded into paste, fried, shrimp tossed through twice."
+			},
+			"mirchi_salan": {
+				"taste": "Whole chilies stewed soft, the heat in the sauce.",
+				"hint": "Slit the chilies first or nothing gets in.",
+				"name": "Mirchi Salan",
+				"desc": "Chilies stewed with nuts and spice, cream stirred in at the end."
+			},
+			"chilli_chicken": {
+				"taste": "Glazed outside, still juicy inside.",
+				"hint": "Dust the chicken in flour first or the sauce slides off.",
+				"name": "Chilli Chicken",
+				"desc": "Floured chicken fried crisp, chili and soy reduced to a glaze."
+			},
+			"vindaloo": {
+				"taste": "Sour first, then heat, then another spoon.",
+				"hint": "Fry spice and chili until the oil turns red.",
+				"name": "Vindaloo",
+				"desc": "Pork braised with chili and spice, sourness braised into the meat."
+			},
+			"shakshuka": {
+				"taste": "The yolk runs; use the bread.",
+				"hint": "Crack the eggs and leave them; lid on, low heat.",
+				"name": "Shakshuka",
+				"desc": "Tomato and chili cooked to sauce, eggs cracked in, lid on until set."
+			},
+			"lemon_chili_chicken": {
+				"taste": "A rub of lemon peel and the heat brightens.",
+				"hint": "Squeeze the lemon at the end; baked peel turns bitter.",
+				"name": "Lemon Chili Roast Chicken",
+				"desc": "Chicken skin rubbed with chili and oil, roasted crisp, half a lemon squeezed over."
+			},
+			"paprikash": {
+				"taste": "Cream rounds the heat off.",
+				"hint": "Cream off the heat; never let it boil.",
+				"name": "Paprikash",
+				"desc": "Chicken and onion stewed soft, chili in, cream turning it pink."
+			},
+			"nashville_hot_chicken": {
+				"taste": "One bite and your lips go numb first.",
+				"hint": "Stir the chili into hot frying oil and pour it over.",
+				"name": "Nashville Hot Chicken",
+				"desc": "Chicken fried dark, chili and butter burned to red oil, poured over."
+			},
+			"chili_con_carne": {
+				"taste": "The longer it stews, the deeper the heat.",
+				"hint": "Brown the beef first, then add liquid.",
+				"name": "Chili con Carne",
+				"desc": "Beef browned, tomato and beans in, chili stewed down thick."
+			},
+			"jerk_chicken": {
+				"taste": "Smoke arrives first, then the heat.",
+				"hint": "Marinate overnight; char the skin without burning it.",
+				"name": "Jerk Chicken",
+				"desc": "Chicken rubbed with chili and spice, roasted charred, still tender inside."
+			},
+			"elote": {
+				"taste": "Sweet, salty, hot, all smeared on the corn.",
+				"hint": "Char the corn before you smear it.",
+				"name": "Elote",
+				"desc": "Corn charred, cream and cheese smeared on, a layer of chili on top."
+			},
+			"doro_wat": {
+				"taste": "A heavy heat; you need bread with it.",
+				"hint": "Cook the onions dark; do not rush it.",
+				"name": "Doro Wat",
+				"desc": "Onions cooked dark, chili and chicken in, eggs buried in at the end."
+			},
+			"peri_peri_chicken": {
+				"taste": "Crisp skin, the heat hanging on it.",
+				"hint": "Brush the chili oil twice, the last time at the very end.",
+				"name": "Peri-Peri Chicken",
+				"desc": "Chicken turned in chili oil, grilled until the skin curls."
+			},
+			"suya": {
+				"taste": "Spice and chili on the meat; the more you chew, the drier and better.",
+				"hint": "Slice the meat thin; spice goes on last.",
+				"name": "Suya",
+				"desc": "Beef sliced thin, rubbed with chili and groundnut spice, grilled to dry edges."
+			},
+			"chili_dog": {
+				"taste": "The bread soaks the chili oil and beats the sausage.",
+				"hint": "Warm the chili first; toast the bread last.",
+				"name": "Chili Dog",
+				"desc": "Sausage fried in its fat, bread around it, chili and cheese over the top."
+			},
+			"miso": {
+				"name": "Miso",
+				"desc": "Soybeans fermented into a brown paste; one spoonful is enough savor."
+			},
+			"rice_noodle": {
+				"name": "Rice Noodles",
+				"desc": "Rice soaked, ground, pressed into thin strands and dried."
+			},
+			"nian_gao": {
+				"name": "Rice Cakes",
+				"desc": "Pounded out of cooked rice; slice it and it still pulls a little."
+			},
+			"miso_soup": {
+				"taste": "Salty with a sweet finish; the tofu falls apart at a touch.",
+				"hint": "Stir the miso in at the end and never let it boil.",
+				"name": "Miso Soup",
+				"desc": "Miso dissolved into the broth, tofu at the bottom, scallion floating."
+			},
+			"tofu_dengaku": {
+				"taste": "Char first, then the sweet-salty glaze.",
+				"hint": "Dry the tofu surface first or the glaze slides off.",
+				"name": "Tofu Dengaku",
+				"desc": "Tofu grilled until the edges brown, brushed with miso and sugar, then back under the heat."
+			},
+			"miso_ramen": {
+				"taste": "The broth is thick and the noodles still firm — just right.",
+				"hint": "Do not boil the miso; thin it in just before serving.",
+				"name": "Miso Ramen",
+				"desc": "Clear noodle soup turned miso-dark, egg and scallion floating on top."
+			},
+			"fried_rice_noodle": {
+				"taste": "Dry and savory, every strand its own.",
+				"hint": "Soak the noodles soft first, then only a few tosses in the pan.",
+				"name": "Stir-fried Rice Noodles",
+				"desc": "Rice noodles tossed with egg, greens and soy until the pan smells dry and toasted."
+			},
+			"tteokbokki": {
+				"taste": "Sweet inside the heat; the more you chew, the stickier.",
+				"hint": "Soak the rice cakes first or they glue to the pan.",
+				"name": "Tteokbokki",
+				"desc": "Rice cakes rolling in a glossy red sauce, chili and sugar clinging to each piece."
+			},
+			"di_san_xian": {
+				"name": "Three Treasures of the Earth",
+				"desc": "Potato and eggplant, plus whatever vegetable is in season, pan-fried until the edges soften.",
+				"taste": "Potato soft, eggplant softer, the third one still has a little bite.",
+				"hint": "Potato and eggplant first, then any vegetable."
+			},
+			"scallion_pancake": {
+				"name": "Scallion Pancake",
+				"desc": "Roll out the dough, brush with oil and scatter scallions, roll it up, flatten again, and pan-fry until both sides brown.",
+				"taste": "Crisp outside; layer after layer of scallion oil inside.",
+				"hint": "Oil and scallions on the dough, roll, flatten, fry."
+			},
+			"liangpi": {
+				"name": "Liangpi",
+				"desc": "Steam a thin sheet of batter, cut it into strips, and dress with chili oil.",
+				"taste": "Cool, slippery, chili oil clinging to the edges.",
+				"hint": "Steam the batter thin, cut into strips, toss with chili oil."
+			}
+		},
+		"letter": {
+			"window": {
+				"title": "By the Window",
+				"body": "I don't know whether this letter will be read.\nThere's no road outside the window, only light. But every morning the light falls in exactly the same place.\nIf you live here too, you must have seen it.\n— the one who writes",
+				"name": "By the Window",
+				"desc": "A letter left on the windowsill, its edges bleached by light."
+			},
+			"task_window_1": {
+				"title": "The First Cup",
+				"body": "The cup is on the shelf. So is the kettle.\nBoil the water once, let the dry beans go wet, and the smell comes out.\nLeave it on the windowsill when it's done — I want to see it steam.\n— the one who writes",
+				"name": "The First Cup",
+				"desc": "The words are written on the back of a card, pressed hard.",
+				"task_title": "Put the kettle on and pour",
+				"task_body": "Grind and pour a dripper.\nHand it over from the third mailbox tab when ready."
+			},
+			"coffee_machine": {
+				"title": "The Crate at the Door",
+				"body": "A crate was left at the door, a little taller than me.\nInside is a coffee machine. Brass. Wipe it and you can see yourself.\nBeside it: a bottle of milk and a bag of beans.\nIt was mine once. It's yours now. Don't let it sit idle.\n— the one who writes",
+				"name": "The Crate at the Door",
+				"desc": "A delivery note is tucked into the envelope, its corners curled."
+			},
+			"milk_merchant": {
+				"title": "The Grocer",
+				"body": "The cart passes at this hour every day.\nThe milk is in a box in the back of the cart, under a damp cloth. Keep it out of the sun, he says; once it warms, it won't keep.\nThe cart carries more than milk — rice, flour, oil, salt, jars and tins.\nIn all my years here I bought from him many times and never said much.\n— if it's any use to you, remember it.",
+				"name": "The Grocer",
+				"desc": "There are dried milk stains along the edge of the envelope.",
+				"task_title": "The cup he asked for",
+				"task_body": "He said some shops make it this way: espresso under hot milk, a thin layer of foam on top.\n\"There's a research desk on this cart,\" he said, tapping the edge of the table. \"Put two things in and wait — see what comes out.\"\nMake an espresso first, then put it on the desk together with milk and try."
+			},
+			"teach_market": {
+				"title": "The Cart and the Hill",
+				"body": "You can get things from two places now. Don't walk only one.\nThe cart comes once a day, and when it sells out you wait — buy early if you want it.\nThe slope behind the house grows things too. Lean out the window and reach; no one to ask.\nUse both, or the counter runs empty.\nEven when you eat alone, wait for the water to boil.",
+				"name": "The Cart and the Hill",
+				"desc": "On the back is a crooked little drawing of a cart."
+			},
+			"sugar_jar": {
+				"title": "The Sugar Jar",
+				"body": "The jar was left by someone else; a layer of undissolved sugar sits at the bottom.\nI put it where you can reach it.\nIf you're already making that milky thing, put in a spoonful.\n— no need to return it.",
+				"name": "The Sugar Jar",
+				"desc": "There's a ring of sugar around the rim, hard enough to scrape with a nail."
+			},
+			"flour_sack": {
+				"title": "The Flour Sack",
+				"body": "The letters on the sack were soaked by water; only half remain.\nI guess you still remember that dough has to be kneaded —\nthere's a white mark on the edge of the table, left by whoever was here before.\nHave you started making things yet?",
+				"name": "The Flour Sack",
+				"desc": "A kraft-paper sack with flour leaking out at one corner."
+			},
+			"teach_upgrade": {
+				"title": "The Loose Screw",
+				"body": "The things on the counter start to creak after a while.\nDon't put up with it. Open them up, tighten what's loose, and they go faster.\nAnd that board beside the stove — set two things on it and it shows you a third.\nTry it once and you'll see.",
+				"name": "The Loose Screw",
+				"desc": "A short brass screw falls out of the envelope."
+			},
+			"butter_warmth": {
+				"title": "The Warmth of Butter",
+				"body": "Butter has to come out of the cold and sit until it softens on its own.\nHeat it and it splits; leave it alone and it softens just right.\nIt took me a few tries to remember that.",
+				"name": "The Warmth of Butter",
+				"desc": "The paper has faint grease spots; up close it smells of milk."
+			},
+			"grinder_owner": {
+				"title": "The Grinder's Old Owner",
+				"body": "That machine belonged to someone who ground beans once a day.\nBy the few-hundredth grind the person had gone, and the machine stayed.\nIt wobbles because something in there came loose.\nNo need to fix it.",
+				"name": "The Grinder's Old Owner",
+				"desc": "There's a crooked gear drawn in the corner."
+			},
+			"oven_heat": {
+				"title": "The Heat of the Oven",
+				"body": "The glass in the door is always fogged; you can't see inside.\nIt has baked a great many things, most of all other people's breakfasts.\nWhen you pull it open, the heat hits your face first —\nthat's the moment in this room that feels most like someone lives here.\nBake a small tray of cookies first. Butter and sugar, until the edges go just brown.",
+				"name": "The Heat of the Oven",
+				"desc": "The paper's edges are slightly yellowed, as if baked.",
+				"task_title": "Bake a tray of cookies",
+				"task_body": "Six cookies.\nBake them, then hand them over from the third mailbox tab."
+			},
+			"task_oven_heat_1": {
+				"title": "The Second Batch",
+				"body": "The cookies came out well.\nBake one more batch of croissants — slower this time, let them rise on their own.\nI left flour in the sack. Enough for three tries.",
+				"name": "The Second Batch",
+				"desc": "A small dried smear of butter is on the paper.",
+				"task_title": "Bake one more croissant",
+				"task_body": "One croissant.\nHand it over from the third mailbox tab when ready."
+			},
+			"fridge_hum": {
+				"title": "The Humming Box",
+				"body": "Woke this morning and there was a steel box inside the back door, humming.\nA note on top: 'Colder inside than out. Put water in; in a while it is ice. Don't mind the noise — it never stops.'\nI set a bowl of water inside and stood listening for a long while. It showed no sign of stopping.\nBy evening the ice had taken shape — thick at the edges, thin in the middle, splitting at a knock.",
+				"name": "The Humming Box",
+				"desc": "A humming steel box turned up inside the back door."
+			},
+			"before_leaving": {
+				"title": "Time to Start",
+				"body": "The truck had been stopped for a long time.\nLong enough that I began to think this was how it was always meant to be — stopped, then slowly becoming a room.\nThis morning the light came in from the other side. I pushed the door open and stood at the threshold as usual.\nSomething tapped softly at the rear.\nI hesitated, then left the door for the first time, crossed the ground to the back, and turned around.\nOnly then did I see the whole of it: an old food truck, most of its paint gone, wheels sunk in the dirt.\nSo the room I'd been living in all along was this truck.\nIt had run to a great many places, and then stood still so long it forgot itself.\nI went back to the door and wiped a small patch of dust from the inside.\nUnderneath, a line of painted letters showed —\n'OFF THE EATEN PATH'.\nI wiped the keys clean and sat back down in the driver's seat.\nTime to start.",
+				"name": "Time to Start",
+				"desc": "The paper has crease lines, as if it was opened and folded again and again."
+			},
+			"east_asia_arrive": {
+				"title": "First Stop",
+				"body": "The truck stopped.\nI don't know whether it decided to, or whether the road just needed to catch its breath.\nOutside the window: a row of low eaves, and things hung under them knocking against each other in the wind. Someone walked past the truck without looking up.\nI opened the window a crack. Warm air came in with a very clean smell — rice, and a little char.\nThe bowls here are small and the chopsticks are light. Nobody talks while they eat.",
+				"name": "First Stop",
+				"desc": "Thin paper, corners curled, as if it sat on a windowsill a long time."
+			},
+			"task_east_asia_arrive_1": {
+				"title": "Two Pairs of Chopsticks",
+				"body": "Someone is sitting on the doorstep at the corner, eating noodles.\nHe doesn't look up. He only says: make two dishes from here, let me smell whether they're right.\nJust two. More than that and he can't finish.",
+				"name": "Two Pairs of Chopsticks",
+				"desc": "A chopstick-crease runs across the paper.",
+				"task_title": "Cook two East Asian dishes",
+				"task_body": "Two is enough. No need to pick the hardest.\nConfirm from the third mailbox tab when done."
+			},
+			"east_asia_note": {
+				"title": "The Paper on the Step",
+				"body": "In the morning I opened the door and found a piece of paper on the step. Torn from an exercise book, edges uneven.\nThree lines, in a crooked hand:\n\"One hot bowl. It has to have soup.\"\n\"The rolled-up kind. Like last time.\"\n\"Something sweet. Not too sweet.\"\nNo name. No time to come and collect it.\nI put the paper on the windowsill. On windy days it moves a little.",
+				"name": "The Paper on the Step",
+				"desc": "A page torn from an exercise book, edges uneven."
+			},
+			"task_east_asia_note_1": {
+				"title": "Three Lines on the Step",
+				"body": "That paper has one more line:\n\"Two different soups. That will do.\"\nI folded it and left it by the windowsill.",
+				"name": "Three Lines on the Step",
+				"desc": "A shoe print sits on one corner.",
+				"task_title": "Cook two different soups",
+				"task_body": "Something warm. Two different soups will do.\nConfirm from the third mailbox tab when done."
+			},
+			"east_asia_leave": {
+				"title": "Leaving",
+				"body": "On the third morning the truck moved on its own.\nWhen I woke, the eaves had already shrunk to a line far behind.\nThe paper was still on the windowsill. I put it in the notebook, next to the page that has writing on it.\nSome places you only stop at for three days, and remember for a long time.\nWhere the next stop is, I don't know. The truck does.",
+				"name": "Leaving",
+				"desc": "A sheet folded and unfolded many times, kept inside."
+			},
+			"middle_page": {
+				"title": "The Middle Page of the Catalog",
+				"body": "Turn to the middle page and you'll find that someone noted something down before you.\nDifferent handwriting, drawn a different way.\nWhat he recorded was the same cup — only that day he added one thing less than I did.\nRecord-keeping is like that — everyone writes their own.\nThe notebook grows thicker. Sometimes, turning to the back, I forget which page I started from.",
+				"name": "The Middle Page of the Catalog",
+				"desc": "Two different inks on the paper."
+			},
+			"beyond_paper": {
+				"title": "Beyond the White Paper",
+				"body": "There's color at the edge of the paper.\nJust not anywhere you can see it yet.\nFinish writing this page and we'll talk about the rest.\n— still the one who writes",
+				"name": "Beyond the White Paper",
+				"desc": "There's a faint wash of color on the back of the sheet, invisible from the front.",
+				"task_title": "Try one thing on paper",
+				"task_body": "Work out one new dish at the research table.\nUnlocked is done."
+			},
+			"southeast_asia_arrive": {
+				"title": "Damp",
+				"body": "This stop is loud.\nBefore the truck even settled, sound closed in from every side: motorbikes, shouting, water falling from somewhere high.\nThe air is wet. It sits on the skin like cloth that never dried.\nOutside the window the green is so dense you can't see what's behind it.\nSomeone knocked twice on the side of the truck. I rolled the window down. He handed me a bundle of leaves and left without a word.\nThe leaves were still wet.",
+				"name": "Damp",
+				"desc": "The paper feels damp."
+			},
+			"task_southeast_asia_arrive_1": {
+				"title": "Fire Under the Awning",
+				"body": "A small fire is burning under the rain awning.\nThe one tending it says the taste here needs heat, needs sour, and needs someone to watch the fire.\nMake two and show me.",
+				"name": "Fire Under the Awning",
+				"desc": "The paper is a little damp.",
+				"task_title": "Cook two Southeast Asian dishes",
+				"task_body": "Two. Hot or sour, either is fine.\nConfirm from the third mailbox tab when done."
+			},
+			"southeast_asia_note": {
+				"title": "Back of a Cigarette Packet",
+				"body": "No paper at the door today. This one came through the window gap.\nThe back of a cigarette packet, in pencil:\n\"Sour, hot, the one with coconut.\"\n\"That soup from last time. I thought about it for a long while.\"\nThere is another line below, rubbed out and written over. I can't read it.\nI stood it up by the window.",
+				"name": "Back of a Cigarette Packet",
+				"desc": "The back of a cigarette packet, the pencil rubbed out once."
+			},
+			"task_southeast_asia_note_1": {
+				"title": "Writing on a Wet Cloth",
+				"body": "A wet cloth lies on the windowsill, a sheet of paper laid over it.\nThe damp has softened the paper and the ink has run. All I can read is “two”.\nTake two orders and deliver them.",
+				"name": "Writing on a Wet Cloth",
+				"desc": "The cloth is half dry; the words remain.",
+				"task_title": "Deliver two orders",
+				"task_body": "Don't keep anyone waiting too long."
+			},
+			"southeast_asia_leave": {
+				"title": "Rain",
+				"body": "It was raining when the truck left.\nThe rain hit the roof in a dense patter, like someone jogging across it.\nI left a bowl on the windowsill to cool.\nWhen I came back for it, the bowl was empty and there was a leaf underneath.\nThe truck drove a long way, and the leaf was still dripping.",
+				"name": "Rain",
+				"desc": "One corner of the envelope is soft, as if rain got to it."
+			},
+			"vegetable_patch": {
+				"title": "The Vegetable Patch",
+				"body": "There's a small plot of turned earth in the corner outside the window.\nThe soil is loose; a stick with a faded red string is stuck in it.\nI don't know who planted it, but it's growing better than anything indoors.\nIf you're short on vegetables, reach out from the window — don't pull the whole plant.",
+				"name": "The Vegetable Patch",
+				"desc": "A stick with a faded red string tied to it.",
+				"task_title": "Pick three bunches of greens",
+				"task_body": "Three bunches of leafy greens.\nGather them, then hand them over from the third mailbox tab."
+			},
+			"rice_sack": {
+				"title": "The Rice Sack",
+				"body": "The sack is printed with characters I can't read; the only one I recognize is \"rice\".\nThe rest of the story is missing.\nScoop out a handful. The grains slip through my fingers with a dry rustle.\nWhoever lived here before probably wasn't from around here either.",
+				"name": "The Rice Sack",
+				"desc": "The sack is tied shut with hemp cord, twice.",
+				"task_title": "Gather five measures of rice",
+				"task_body": "Five measures of rice.\nGather them, then hand them over from the third mailbox tab."
+			},
+			"south_asia_arrive": {
+				"title": "Color",
+				"body": "The colors here are heavy.\nA layer of fine dust settles on the window. I wipe it with my sleeve and make a bright streak; slowly it fogs over again.\nSomeone has set up a pot outside. The flame licks the bottom. The wind carries the smell in — too many kinds to name, but every one of them is loud.",
+				"name": "Color",
+				"desc": "Fine dust on the paper; it smudges when you touch it."
+			},
+			"task_south_asia_arrive_1": {
+				"title": "The Color on Their Hands",
+				"body": "People here eat with their fingers.\nTurmeric and chili stain them. It doesn't wash off, so they let it stay.\nMake three. The color has to be right.",
+				"name": "The Color on Their Hands",
+				"desc": "A small yellow stain is on the corner of the envelope.",
+				"task_title": "Cook three South Asian dishes",
+				"task_body": "Three. Check the color and the spice.\nConfirm from the third mailbox tab when done."
+			},
+			"south_asia_note": {
+				"title": "Back of a Bill",
+				"body": "The back of a bill, in round, hard-pressed letters:\n\"The yellow one. The one with beans in it.\"\n\"Flatbread. Two.\"\n\"Not too much heat.\"\nAt the bottom, a crooked drawing of a bowl.\nI made it. While I cooked, the same song played outside the whole time.",
+				"name": "Back of a Bill",
+				"desc": "The back of an old bill; there is more writing on the back than the front."
+			},
+			"task_south_asia_note_1": {
+				"title": "A Note on the Spice Sack",
+				"body": "A string is tied around the spice sack, with a slip of paper threaded on it.\nThe slip says: three meatless dishes.\nNothing else.",
+				"name": "A Note on the Spice Sack",
+				"desc": "The slip smells of cinnamon.",
+				"task_title": "Cook three vegetarian dishes",
+				"task_body": "Three meatless ones, but do not skimp on the spice.\nConfirm from the third mailbox tab when done."
+			},
+			"south_asia_leave": {
+				"title": "The Pot",
+				"body": "The pot was still there when the truck pulled away.\nThe fire hadn't gone out. The smoke climbed slowly.\nI closed the window. The smell stayed in the truck anyway.\nI wrote this page three times before I got the word right.\nI didn't cross out the wrong ones.",
+				"name": "The Pot",
+				"desc": "A small hole in the paper where the pen pressed through."
+			},
+			"butcher_street": {
+				"title": "The Street with the Butcher",
+				"body": "Out the window to the left, third crossing: a butcher's shop.\nThe owner doesn't ask what you're making, only how much.\nToday someone left a parcel of meat on the windowsill, wrapped in oil paper, the knot tied the old way.\nI haven't seen him in a long time. I wonder if he still remembers me.",
+				"name": "The Street with the Butcher",
+				"desc": "There's a grease stain on the letter.",
+				"task_title": "Deliver one order",
+				"task_body": "Fill one customer's order."
+			},
+			"middle_east_arrive": {
+				"title": "Under the Wall",
+				"body": "The truck stopped below a wall. Earth-yellow, bleached pale by the sun.\nAt noon the whole street was empty. Every sound had gone into hiding, leaving only heat.\nIn the evening people came out all at once.\nSomeone spread a cloth beside the truck, set down a copper pot and a few small cups. He poured one and pushed it onto my windowsill.\nVery sweet. Sweet enough to taste bitter.",
+				"name": "Under the Wall",
+				"desc": "The paper has gone brittle from the sun."
+			},
+			"task_middle_east_arrive_1": {
+				"title": "The Oven at the Wall",
+				"body": "An oven is buried at the foot of the wall. Its fire has never gone out.\nPress dough against it and it puffs up in a moment.\nMake three. Let's see whether you can press them on steady.",
+				"name": "The Oven at the Wall",
+				"desc": "The edges of the paper are singed crisp.",
+				"task_title": "Cook three Middle Eastern dishes",
+				"task_body": "Three. Do not let the fire run hot.\nConfirm from the third mailbox tab when done."
+			},
+			"middle_east_note": {
+				"title": "No Signature",
+				"body": "A sheet of paper, crumpled and smoothed out again. Large letters:\n\"The sesame one.\"\n\"Grilled. I want it dark at the edges.\"\n\"Tea. Sweet.\"\nThere is a small grease mark in one corner, like a thumbprint.\nI turned the paper over. On the back, a few faint lines:\n\"Once this slope was grassland, with a pair of flowers, bright red. She pointed them out and said they were anemones.\"\n\"She said the anemone's flower language is wind.\"\n\"When she rode, the grass bent away on both sides, as if the wind were passing through. I liked watching her ride. I thought that one day I might ride beside her.\"\n\"Now there is only sand on the slope.\"",
+				"name": "No Signature",
+				"desc": "A small grease mark on the paper; up close it smells of sesame."
+			},
+			"task_middle_east_note_1": {
+				"title": "The Shepherd’s Slip",
+				"body": "A shepherd passed by the truck and left a slip of paper under the wall. His flock waited outside the wall, and he kept one hand on the rope.\nI guessed that when he eats, he has only one hand free.\nIt says: Out with the sheep, the wind comes down the slope. I want to eat something like the wind.\nBelow that, one more line: Rolled up. Meat, vegetables, easy to carry.\nI pulled the slip out. Rolled up, one hand free — that sounds like shawarma.",
+				"name": "The Shepherd’s Slip",
+				"desc": "Sand has frayed the edge of the slip.",
+				"task_title": "One shawarma",
+				"task_body": "Make one shawarma. Hand it over from the third mailbox tab when it is ready."
+			},
+			"middle_east_leave": {
+				"title": "Sweet",
+				"body": "We left at dawn, the wall's shadow long across the road.\nThe copper pot was still there. The cups had been collected.\nI poured out yesterday's half-finished tea, washed the cup, and set it on the windowsill.\nA long way out, the wall in the mirror was still yellow.\nFrom this stop, what I remember is sweet.",
+				"name": "Sweet",
+				"desc": "A little sugar stuck to the flap, hard now."
+			},
+			"stove_fire": {
+				"title": "Keep the Fire Low",
+				"body": "What's in that pot burns if the flame gets too high.\nI tried many times. In the end I found that if I turned it down, the soup would reduce on its own.\nA clearer broth holds its flavor better.",
+				"name": "Keep the Fire Low",
+				"desc": "One corner of the letter is singed brown.",
+				"task_title": "Make a vegetable soup",
+				"task_body": "One vegetable soup.\nHand it over from the third mailbox tab when ready."
+			},
+			"mediterranean_arrive": {
+				"title": "Salt",
+				"body": "The wind here is salty.\nThe truck stopped on a slope. Down below, water — so bright it makes your eyes ache if you look too long.\nSomeone down the slope was hauling in a net. When it came up, something silver flashed and went out.\nAt noon they ate by the roadside. Bread torn open, oil poured on, salt scattered.\nToo simple to call a meal, and yet it took a long time.",
+				"name": "Salt",
+				"desc": "A few grains of salt on the paper, white where they dried."
+			},
+			"task_mediterranean_arrive_1": {
+				"title": "Oil Drying in the Sun",
+				"body": "A row of bottles is drying on the roof; the oil inside is green.\nThings here are simple: oil, salt, fire, and time.\nMake three. Don't use too much.",
+				"name": "Oil Drying in the Sun",
+				"desc": "An oil ring marks the envelope.",
+				"task_title": "Cook three Mediterranean dishes",
+				"task_body": "Three. Easy on the oil.\nConfirm from the third mailbox tab when done."
+			},
+			"mediterranean_note": {
+				"title": "The Napkin",
+				"body": "A paper napkin, pencil, very light:\n\"Tomato and that white cheese.\"\n\"Pasta. Not too soft.\"\n\"If there's lemon, a squeeze.\"\nThe wind pushed it into the door gap. By the time I picked it up the edges had curled.\nI made it once, the way the napkin says. Salt and oil both light. Halfway through, it tasted like somewhere I had eaten before — I could not remember where.\nEat alone long enough and you start to forget what home tasted like.",
+				"name": "The Napkin",
+				"desc": "A paper napkin, soft even when flattened."
+			},
+			"task_mediterranean_note_1": {
+				"title": "The Note by the Oil Bottle",
+				"body": "A note stands beside the oil bottle.\nIt says: three meatless dishes, while they are hot.\nI put the note back.",
+				"name": "The Note by the Oil Bottle",
+				"desc": "An oily fingerprint is on the note.",
+				"task_title": "Cook three vegetarian dishes",
+				"task_body": "Three fresh ones. Do not hold back on the olive oil.\nConfirm from the third mailbox tab when done."
+			},
+			"mediterranean_leave": {
+				"title": "Use Less",
+				"body": "It rained a little the day we left, then stopped.\nThe water below turned grey, and stayed bright.\nI tore up yesterday's bread and left it on the outer windowsill.\nA long way out, my mouth still tasted of salt.\nFrom this stop, I learned to put in less.",
+				"name": "Use Less",
+				"desc": "A little oil in the corner, as if the paper was held."
+			},
+			"steamer_lid": {
+				"title": "Water on the Steamer Lid",
+				"body": "Be careful when you lift the lid — water runs down the edge.\nThe water is hot, and it hurts when it lands on your hand.\nI was scalded a lot as a child. Later I learned to lift it just a crack and let the steam out first.\nBe patient. The food is cooking inside.",
+				"name": "Water on the Steamer Lid",
+				"desc": "A ring of condensation on the lid.",
+				"task_title": "Steam one basket of dumplings",
+				"task_body": "One portion of dumplings.\nHand them over from the third mailbox tab when ready."
+			},
+			"western_arrive": {
+				"title": "Fog",
+				"body": "The truck stopped farther out than usual. The land here is flat — flat enough that you can see fog starting a long way off.\nCondensation formed on the window. I drew a line through it, then wiped it away.\nSomeone had left a small basket at the door, covered with cloth. Underneath: bread, still warm.\nThe crust was hard and shed crumbs when broken. The inside was soft.\nThe butter here is yellow, not white.",
+				"name": "Fog",
+				"desc": "The paper is thick, like kitchen paper."
+			},
+			"task_western_arrive_1": {
+				"title": "Half a Menu",
+				"body": "Only half the menu is left on the wall.\nThe half that remains says: serve hot.\nMake three. They have to be hot when they reach the table.",
+				"name": "Half a Menu",
+				"desc": "The paper is stiff, like it was torn off a menu.",
+				"task_title": "Cook three classic Western dishes",
+				"task_body": "Three. They should still be hot at the table.\nConfirm from the third mailbox tab when done."
+			},
+			"western_note": {
+				"title": "A Small Basket of Bread",
+				"body": "A note on good paper, in small writing:\n\"Soup. Thick.\"\n\"Bread. The kind you can dip.\"\n\"The pot kind. With beef.\"\nUnder the note was a small piece of butter wrapped in wax paper.\nI held the butter close and smelled it. It smells familiar, but I cannot remember where I've smelled it before.",
+				"name": "A Small Basket of Bread",
+				"desc": "There used to be butter under this note; the paper kept the mark."
+			},
+			"task_western_note_1": {
+				"title": "The Official’s Menu Board",
+				"body": "A menu board turned up on the counter, not one of ours.\nOn the back, pressed hard: A pack of barbarians from out of town tore down the lighthouse. Nobody did a thing.\nThe writing stops there. The pen has gouged the board.\nA gap follows, then: One Middle Eastern grill. Char it a bit. Let it be them.\nAn official seal is stamped at the bottom, the ink smeared.\nHe means to take it out on that meat — burn it, get it out of his system, and then find the heart to clean up the mess.",
+				"name": "The Official’s Menu Board",
+				"desc": "An old word is still there, impossible to wipe off, with deep gouges beside it.",
+				"task_title": "One kebab",
+				"task_body": "Make one kebab, char it a bit, and hand it over from the third mailbox tab when it is ready."
+			},
+			"western_leave": {
+				"title": "Warmth",
+				"body": "The fog hadn't lifted when we left.\nThe truck went slowly, as if it didn't want to either.\nI ate the last of the bread. Crumbs fell on my lap.\nA little butter got on this page. It went through, and there's a mark on the back too.\nFrom this stop, what I remember is warmth.",
+				"name": "Warmth",
+				"desc": "Butter has soaked through the paper."
+			},
+			"americas_arrive": {
+				"title": "The Straight Road",
+				"body": "The road here is straight — so straight you can't see a bend.\nAfter the truck stopped, nobody came for a long time. Far off there were tin roofs that rattled in the wind.\nToward evening a car pulled up beside me and the driver rolled his window down, asking if I wanted to try what he had.\nI shook my head. He smiled, set a paper bag on my windowsill, and drove off.\nThe bag was hot. The grease had gone through the paper.",
+				"name": "The Straight Road",
+				"desc": "A grease mark soaked through the envelope.",
+				"task_title": "Deliver one order",
+				"task_body": "Fill one customer's order."
+			},
+			"task_americas_arrive_1": {
+				"title": "The Car on the Straight Road",
+				"body": "A road runs straight through, without a bend in sight.\nA radio is playing in a car. Nobody turns it off.\nMake three. Bigger portions.",
+				"name": "The Car on the Straight Road",
+				"desc": "A tire track of grey dust crosses the envelope.",
+				"task_title": "Cook three American dishes",
+				"task_body": "Three. Give a little more.\nConfirm from the third mailbox tab when done."
+			},
+			"americas_note": {
+				"title": "The Receipt",
+				"body": "The back of a receipt, ballpoint:\n\"Meat. The kind between bread.\"\n\"Potatoes. Cut into strips.\"\n\"Something sweet, cold, with bubbles.\"\nThe letters are huge, filling almost the whole paper.\nOrdering two portions for one person is a habit the road teaches.",
+				"name": "The Receipt",
+				"desc": "The back of a receipt; the prices are still on the front."
+			},
+			"task_americas_note_1": {
+				"title": "A Hand in the Car Window",
+				"body": "The car is parked at the roadside, its window rolled halfway down.\nA hand comes out and holds up two fingers.\nI'm guessing that means two orders.",
+				"name": "A Hand in the Car Window",
+				"desc": "An ink fingerprint marks the envelope.",
+				"task_title": "Deliver two orders",
+				"task_body": "Two, to the car."
+			},
+			"americas_leave": {
+				"title": "Never Saw the Face",
+				"body": "We left at first light. The road was still straight.\nI folded the paper bag and put it in the notebook.\nThe grease mark was still there a day later.\nThe truck had gone a long way before I realized I never saw that man's face clearly.\nFrom this stop, I remember the hand.\nTwo fingers, a small gesture, enough.\nThe world kept moving outside the window; I sat and watched. I never went down most of those roads, and a lot of sentences never got finished.",
+				"name": "Never Saw the Face",
+				"desc": "A paper bag folded into four; the grease mark is still there."
+			},
+			"africa_arrive": {
+				"title": "The Sun Sets Slowly",
+				"body": "The sun sets slowly here.\nThe truck stopped under a tree. The shade covered only half of it. The other half was too hot to touch.\nToward evening someone built a fire nearby. A small fire, a large pot.\nSomeone brought over a bowl. Thick, dark.\nI took a mouthful. Very hot. Strong with peanuts.",
+				"name": "The Sun Sets Slowly",
+				"desc": "The paper is darker than the others.",
+				"task_title": "Cook one dish from Africa",
+				"task_body": "Any one dish from Africa.\nConfirm from the third mailbox tab when done."
+			},
+			"task_africa_arrive_1": {
+				"title": "The Sun Sets Slowly",
+				"body": "The sun goes down slowly here.\nSlow enough for a pot to finish stewing, slow enough for people to sit and wait.\nMake two. No rush.",
+				"name": "The Sun Sets Slowly",
+				"desc": "The paper has yellowed in the sun.",
+				"task_title": "Cook two African dishes",
+				"task_body": "Two. Slow is fine.\nConfirm from the third mailbox tab when done."
+			},
+			"africa_note": {
+				"title": "A Burnt Corner",
+				"body": "A piece of paper with a burnt edge:\n\"Stew. Cook it until it falls apart.\"\n\"The yellow root. Mash it.\"\n\"Flatbread. To dip.\"\nThe letters are stroke by stroke, like someone who doesn't write often.",
+				"name": "A Burnt Corner",
+				"desc": "One corner of the paper was licked by fire; the edge is charred."
+			},
+			"task_africa_note_1": {
+				"title": "The Clock That Slowed",
+				"body": "The clock on the wall stopped once; someone set it to three and it started again.\nIt runs slow — so slow that an afternoon barely moves the hands.\nSomeone wants three street snacks, and says there is no hurry.",
+				"name": "The Clock That Slowed",
+				"desc": "The envelope is light; only one sheet inside.",
+				"task_title": "Cook three street snacks",
+				"task_body": "Three you can eat on the move. Spice is welcome.\nConfirm from the third mailbox tab when done."
+			},
+			"africa_leave": {
+				"title": "Slow",
+				"body": "The fire was still burning when we left.\nThere was a small stool under the tree that hadn't been there before.\nI washed the bowl and set it on the outer windowsill.\nA long way out, the fire in the mirror was only a dot.\nFrom this stop, I learned to slow down.",
+				"name": "Slow",
+				"desc": "A little ash on the envelope, as if it came from beside a fire."
+			},
+			"fast_food_arrive": {
+				"title": "The Last Stop",
+				"body": "The last stop is busier than I expected.\nNeon burns from dusk until late, turning the window into blocks of color.\nPeople here walk fast and eat fast. Someone stood by the truck, finished a meal, crumpled the paper, threw it in a bin, and left.\nI watched for a long time.\nI think this is the first time I've seen someone treat a meal as something to get through.",
+				"name": "The Last Stop",
+				"desc": "Very white paper, as if pulled from a printer tray.",
+				"task_title": "Cook one fast-food dish",
+				"task_body": "Any one fast-food dish.\nConfirm from the third mailbox tab when done."
+			},
+			"task_fast_food_arrive_1": {
+				"title": "The Last Shop",
+				"body": "This street ends here.\nThe last shop still has its light on. There's no one behind the counter.\nMake two, while the light is still on.",
+				"name": "The Last Shop",
+				"desc": "A faded logo is printed on the envelope.",
+				"task_title": "Cook two fast food dishes",
+				"task_body": "Two. Quick.\nConfirm from the third mailbox tab when done."
+			},
+			"fast_food_note": {
+				"title": "The Receipt Slip",
+				"body": "A small printed receipt, the letters tiny:\n\"One. All of it.\"\n\"Drink. With ice.\"\n\"Quickly.\"\nBelow the last line, someone has added two words in pen:\n\"Thank you.\"",
+				"name": "The Receipt Slip",
+				"desc": "A receipt; someone wrote two words on the back in pen."
+			},
+			"task_fast_food_note_1": {
+				"title": "Three Before Closing",
+				"body": "The light is about to go off.\nFinally someone speaks from behind the counter: three more, the last three.\nCook these three, and that's today done.",
+				"name": "Three Before Closing",
+				"desc": "An oil spot is on the envelope.",
+				"task_title": "Cook three last street snacks",
+				"task_body": "Three more, then we close up.\nConfirm from the third mailbox tab when done."
+			},
+			"fast_food_leave": {
+				"title": "All Put Away",
+				"body": "I didn't leave right away.\nThe truck stayed where it was while the lights went out one by one.\nI spread out every piece of paper from this road and put them in order.\nTorn exercise-book edges, cigarette-packet backs, napkins, a burnt corner, a printed receipt.\nThe handwriting is all different. Some I recognize. Some I don't.\nSome of these I keep not for the words but because the handwriting looks like it belongs to someone I know.\nI put them away again, into the notebook.\nThen the truck moved.",
+				"name": "All Put Away",
+				"desc": "A thick envelope with several folded sheets inside.",
+				"task_title": "Deliver two orders",
+				"task_body": "Fill two customer orders."
+			},
+			"on_the_road": {
+				"title": "Still on the Road",
+				"body": "The truck didn't stop.\nBefore dawn I put the table away and opened the notebook by the window.\nOutside are the places I passed through: the morning market's lamps coming on one by one, steam in the alley mouth, charcoal still glowing out in the desert.\nThey line up and fade far behind.\nI don't look back again. The truck keeps going.",
+				"name": "Still on the Road",
+				"desc": "A very light envelope with a single page inside."
+			},
+			"east_asia_noodle_stand": {
+				"title": "The Noodle Stand in the Back Alley",
+				"body": "The innkeeper sent word: those three lines came from the noodle stand in the back alley south of town.\nThe next day the noodle man pushed his stand up beside the truck. Two low tables, and a pot that never came off the boil.\nHe didn't look up. He only said: 'My girl wrote that. She's picky.'\nHe dropped noodles into the pot and added a ladle of broth.\n'Your broth is decent. Want to learn?'\nTwo pans hang by the stove — one for stir-frying, one for boiling.",
+				"name": "The Noodle Stand in the Back Alley",
+				"desc": "A note in pencil, flour still on the back."
+			},
+			"task_east_asia_noodle_stand_1": {
+				"title": "The Stand's Errand",
+				"body": "The noodle man sent word: have two bowls of clear noodle soup ready tomorrow.\nHe says he wants to see whether my broth holds up.\n'Noodles are noodles. Broth is broth. Don't muddle them.'\nI counted my flour and eggs. Enough. Two bowls.",
+				"name": "The Stand's Errand",
+				"desc": "A slip with a time and a place, neater than the last one.",
+				"task_title": "Bring two bowls of clear noodle soup",
+				"task_body": "Two bowls of clear noodle soup.\nHand them over from the third mailbox tab when ready."
+			}
+		},
+		"merchant": {
+			"name": "Grocer",
+			"desc": "The man with the cart. He remembers what you need."
+		},
+		"recipe": {
+			"roasted_eggplant": {
+				"name": "Roasted Eggplant",
+				"desc": "Roast the eggplant soft, split it, top with spice and soy, and bake until glossy."
+			},
+			"eggplant_parmesan": {
+				"name": "Eggplant Parmesan",
+				"desc": "Fry eggplant slices, layer with tomato and cheese, and bake until bubbling."
+			},
+			"cassava_fries": {
+				"name": "Cassava Fries",
+				"desc": "Parboil cassava batons, drain, fry golden and salt."
+			},
+			"cassava_cake": {
+				"name": "Cassava Cake",
+				"desc": "Grate cassava into a batter with coconut milk and sugar, then steam until set."
+			},
+			"americano": {
+				"name": "Dilute into an Americano",
+				"desc": "Dilute: espresso plus one pour of water. Hard to get wrong."
+			},
+			"apple_crumble": {
+				"name": "Apple Crumble",
+				"desc": "Apples below, buttered dough crumbled over, baked gold."
+			},
+			"apple_pie": {
+				"name": "Apple Pie",
+				"desc": "Soften apples with sugar, wrap in dough, bake until golden."
+			},
+			"arancini": {
+				"name": "Arancini",
+				"desc": "Wrap cold rice around cheese, shape, fry golden."
+			},
+			"asado": {
+				"name": "Asado",
+				"desc": "Oil and salt a whole cut, roast slow until charred and pink."
+			},
+			"avocado_toast": {
+				"name": "Veggie Mash Toast",
+				"desc": "Toast the slice, crush greens over it, finish with oil."
+			},
+			"baba_ganoush": {
+				"name": "Baba Ganoush",
+				"desc": "Roast the eggplant until the skin shrivels, scoop the flesh, mash with oil and spice."
+			},
+			"bagel": {
+				"name": "Bagel",
+				"desc": "Shape rings, boil them briefly, then bake."
+			},
+			"bagel_sandwich": {
+				"name": "Bagel Sandwich",
+				"desc": "Split the bagel, spread cream cheese, tuck in greens."
+			},
+			"baklava": {
+				"name": "Baklava",
+				"desc": "Layer pastry with nuts, bake gold, then pour syrup."
+			},
+			"banana_rice": {
+				"name": "Banana Rice",
+				"desc": "Cook rice in coconut milk, serve with ripe banana."
+			},
+			"banh_mi": {
+				"name": "Banh Mi",
+				"desc": "Crisp the baguette, fill with meat and greens, sauce."
+			},
+			"batter": {
+				"name": "Batter",
+				"desc": "Flour, water, egg into a batter."
+			},
+			"beef_bourguignon": {
+				"name": "Slow-Braised Beef",
+				"desc": "Brown the beef, dust with flour, add vegetables and spice, stew gently."
+			},
+			"beef_wellington": {
+				"name": "Beef Wellington",
+				"desc": "Sear the meat, coat with mushroom, wrap in dough, brush egg, bake."
+			},
+			"bibimbap": {
+				"name": "Bibimbap",
+				"desc": "Rice under greens, meat and a fried egg; mix with chilli sauce."
+			},
+			"biryani": {
+				"name": "Biryani",
+				"desc": "Layer rice and meat, scatter nuts, steam until it takes the spice."
+			},
+			"blt": {
+				"name": "BLT",
+				"desc": "Bacon, lettuce, tomato stacked in toast."
+			},
+			"boerewors": {
+				"name": "Boerewors",
+				"desc": "Season minced meat, stuff, fry until the skin catches."
+			},
+			"boiled_egg": {
+				"name": "Boiled Egg",
+				"desc": "Eggs in cold water, timing from the boil."
+			},
+			"braised_egg": {
+				"name": "Braised Egg",
+				"desc": "Boil the eggs, crack them, simmer in soy and spice."
+			},
+			"bread": {
+				"name": "Bake Bread",
+				"desc": "Once baked, the dough lifts itself from the inside."
+			},
+			"broth": {
+				"name": "Simmer Broth",
+				"desc": "Vegetables and meat together; the flavor stays in the water."
+			},
+			"brownie": {
+				"name": "Brownie",
+				"desc": "Bake: butter and sugar melted, egg, flour and chocolate folded in, baked to a crust."
+			},
+			"buffalo_wings": {
+				"name": "Buffalo Wings",
+				"desc": "Fry: chicken fried crisp, tossed in hot sauce and butter."
+			},
+			"bun": {
+				"name": "Steamed Bun",
+				"desc": "Risen dough wrapped around pork, seam up, steamed until the skin turns translucent."
+			},
+			"burrito": {
+				"name": "Burrito",
+				"desc": "Fill a corn tortilla with meat, greens and cheese, roll, then griddle."
+			},
+			"butter_rice": {
+				"name": "Butter Rice",
+				"desc": "Toss: hot rice, a pat of butter, soy sauce down the side, mixed through."
+			},
+			"butter_toast": {
+				"name": "Butter Toast",
+				"desc": "Butter hot toast."
+			},
+			"caesar_salad": {
+				"name": "Caesar Salad",
+				"desc": "Tear the leaves, toss in dressing, scatter bread cubes and cheese."
+			},
+			"cake": {
+				"name": "Bake a Cake",
+				"desc": "Pour the batter into the tin and let it rise."
+			},
+			"candied_fruit": {
+				"name": "Candied Fruit",
+				"desc": "Skewer the fruit, dip in hot sugar, let it set."
+			},
+			"cappuccino": {
+				"hint": "Its name wears a little hat; drinking it is like a sweet cloud.",
+				"name": "Steam Milk for a Cappuccino",
+				"desc": "Foam: espresso first, two parts milk steamed thick, foam floating on top."
+			},
+			"caprese": {
+				"name": "Caprese",
+				"desc": "Slice tomato and cheese, overlap them, add spice."
+			},
+			"caramel_macchiato": {
+				"name": "Caramel Macchiato",
+				"desc": "Syrup in the glass, milk and espresso over it, a caramel streak on top."
+			},
+			"carrot_cake": {
+				"name": "Carrot Cake",
+				"desc": "Fold grated carrot into the batter, bake until a skewer comes clean."
+			},
+			"cereal": {
+				"name": "Cereal",
+				"desc": "Loud dry, quiet in milk."
+			},
+			"ceviche": {
+				"name": "Ceviche",
+				"desc": "Cure fish slices in fruit juice until opaque, season."
+			},
+			"chai": {
+				"name": "Chai",
+				"desc": "Two parts milk with tea leaves, spice and sugar, simmered dark."
+			},
+			"cheese_stick": {
+				"name": "Cheese Sticks",
+				"desc": "Cheese in batter, into the oil."
+			},
+			"cheese_toast": {
+				"name": "Cheese Toast",
+				"desc": "Toast under cheese until it melts."
+			},
+			"cheeseburger": {
+				"name": "Cheeseburger",
+				"desc": "Lay a slice of cheese on the near-done patty and cover it to melt."
+			},
+			"cheesecake": {
+				"name": "Cheesecake",
+				"desc": "Fold cream cheese and sugar through the batter, pour into a tin, bake until the edge sets."
+			},
+			"chicken_curry": {
+				"name": "Chicken Curry",
+				"desc": "Stew: spice toasted, chicken in, milk simmered down thick."
+			},
+			"chicken_wrap": {
+				"name": "Chicken Wrap",
+				"desc": "Fry and slice the meat, roll it with greens in a flatbread."
+			},
+			"cinnamon_roll": {
+				"name": "Cinnamon Roll",
+				"desc": "Roll the dough, spread butter, sugar and cinnamon, slice and bake."
+			},
+			"clear_noodle_soup": {
+				"name": "Clear Noodle Soup",
+				"desc": "Noodles bowled, clear stock poured over."
+			},
+			"club_sandwich": {
+				"name": "Club Sandwich",
+				"desc": "Toast the bread, stack meat, egg and greens, cut into triangles."
+			},
+			"coconut_dessert": {
+				"name": "Coconut Dessert",
+				"desc": "Reduce coconut milk with sugar, add fruit, chill."
+			},
+			"cold_brew": {
+				"name": "Cold Brew",
+				"desc": "Coffee grounds steep in cold water in the fridge all afternoon before the flavor comes out.",
+				"hint": "Cold water, coffee grounds, and the fridge; leave it alone."
+			},
+			"con_panna": {
+				"name": "Con Panna",
+				"desc": "A small shot under a cloud of cream, a blanket for something bitter."
+			},
+			"cookie": {
+				"name": "Bake Cookies",
+				"desc": "Spread into thin rounds: the edges brown before the middle has time."
+			},
+			"corn_soup": {
+				"name": "Corn Chowder",
+				"desc": "Corn and milk blended, then boiled."
+			},
+			"corn_tortilla": {
+				"name": "Toast Corn Tortillas",
+				"desc": "Toast: corn and flour into a dough, rolled thin, toasted until it blisters.",
+				"hint": "Thin as paper, and it can wrap almost anything."
+			},
+			"couscous": {
+				"name": "Couscous",
+				"desc": "Rub flour into grains, steam, toss with vegetables and spice."
+			},
+			"cream": {
+				"name": "Whip Cream",
+				"desc": "Whip: milk rested, the thick top skimmed and whipped to peaks."
+			},
+			"cream_cheese": {
+				"name": "Cream Cheese",
+				"desc": "Whip: milk and butter whipped thick enough to spread."
+			},
+			"cream_puff": {
+				"name": "Cream Puff",
+				"desc": "The shell puffs up; once cool, cream goes in from the bottom."
+			},
+			"creamed_spinach": {
+				"name": "Creamed Spinach",
+				"desc": "Blanch and squeeze the spinach, chop, fold into white sauce and butter."
+			},
+			"creamy_mushroom_chicken": {
+				"name": "Creamy Mushroom Chicken",
+				"desc": "Brown the chicken, fry the mushrooms, add white sauce and reduce."
+			},
+			"creme_brulee": {
+				"name": "Creme Brulee",
+				"desc": "Baked until set, dusted with sugar, torched into a thin shell.",
+				"hint": "Egg and cream first; sugar goes on top at the very end."
+			},
+			"croissant": {
+				"name": "Bake a Croissant",
+				"desc": "Dough folded over butter a few times, and the layers come out of the oven."
+			},
+			"curry_puff": {
+				"name": "Curry Puff",
+				"desc": "Wrap curry filling in pastry, bake until flaky."
+			},
+			"curry_rice": {
+				"name": "Curry Rice",
+				"desc": "Fry meat and vegetables, add spice and water, thicken, pour over rice."
+			},
+			"dal": {
+				"name": "Dal",
+				"desc": "Boil the beans until they break down, then season."
+			},
+			"dumpling": {
+				"name": "Dumplings",
+				"desc": "Steam: dough rolled, filled with pork, a pinch of scallion, steamed."
+			},
+			"egg_drop_soup": {
+				"name": "Egg Drop Soup",
+				"desc": "A thin stream of egg into boiling stock."
+			},
+			"egg_pancake": {
+				"name": "Egg Pancake",
+				"desc": "Whisk egg and flour, pour thin into a pan, fry both sides."
+			},
+			"egg_roll": {
+				"name": "Egg Roll",
+				"desc": "Spread thin, rolled layer by layer."
+			},
+			"egg_salad": {
+				"name": "Egg Salad",
+				"desc": "Egg crushed into dressing."
+			},
+			"egg_salad_sandwich": {
+				"name": "Egg Salad Sandwich",
+				"desc": "Crushed egg and dressing, into toast."
+			},
+			"egg_tart": {
+				"name": "Egg Tart",
+				"desc": "Bake: dough pressed into cups, custard poured in, baked to a skin."
+			},
+			"egg_toast": {
+				"name": "Egg Toast",
+				"desc": "Buttered toast, fried egg on top."
+			},
+			"espresso": {
+				"name": "Pull an Espresso",
+				"desc": "Pull: hot water forced through the grounds, one small cup in twenty seconds."
+			},
+			"falafel": {
+				"name": "Falafel",
+				"desc": "Soak and grind the beans, bind with flour, fry into balls."
+			},
+			"farinata": {
+				"name": "Farinata",
+				"desc": "Whisk flour and water thin, pour in a tray, oil and bake."
+			},
+			"feijoada": {
+				"name": "Feijoada",
+				"desc": "Slow-cook meat and beans with spice until the broth thickens."
+			},
+			"fish_and_chips": {
+				"name": "Fish & Chips",
+				"desc": "Coat the seafood, fry until it puffs, serve beside fries."
+			},
+			"flat_white": {
+				"name": "Flat White",
+				"desc": "Less milk, so the coffee steps forward.",
+				"hint": "Two shots and one part milk; don't whip the milk too stiff."
+			},
+			"focaccia": {
+				"name": "Focaccia",
+				"desc": "Spread the dough, dimple it, oil and spice, then bake."
+			},
+			"french_omelette": {
+				"name": "French Omelette",
+				"desc": "Beat the eggs, melt butter, push into a roll over low heat."
+			},
+			"french_onion_soup": {
+				"name": "French Onion Soup",
+				"desc": "Caramelise sliced onions, add stock, top with bread and cheese, grill."
+			},
+			"french_toast": {
+				"name": "French Toast",
+				"desc": "Soak in egg and milk, fry both sides."
+			},
+			"fresh_milk": {
+				"name": "Fresh Milk",
+				"desc": "Milk into a glass, chilled."
+			},
+			"fried_chicken": {
+				"name": "Fried Chicken",
+				"desc": "Coat the meat, fry till gold, lift and drain."
+			},
+			"fried_dough": {
+				"name": "Fried Dough",
+				"desc": "Let the dough rise, tear into pieces, fry golden."
+			},
+			"fried_egg": {
+				"name": "Fry an Egg",
+				"desc": "The oil shimmers, the egg goes in, the edge speaks first."
+			},
+			"fried_noodles": {
+				"name": "Fried Noodles",
+				"desc": "Half-cook the noodles, then fry hard with greens."
+			},
+			"fried_rice": {
+				"name": "Fried Rice",
+				"desc": "Day-old rice is best; scramble the egg first, then toss it all."
+			},
+			"fries": {
+				"name": "Fries",
+				"desc": "Cut the potatoes, soak off the starch, fry until the edges brown."
+			},
+			"fruit_salad": {
+				"name": "Fruit Salad",
+				"desc": "Cube the fruit, fold in cream, chill a while."
+			},
+			"fufu": {
+				"name": "Fufu",
+				"desc": "Boil the cassava, pound it hot into a ball."
+			},
+			"garlic_toast": {
+				"name": "Garlic Toast",
+				"desc": "Butter and crushed garlic, spread and baked."
+			},
+			"gazpacho": {
+				"name": "Gazpacho",
+				"desc": "Blend tomato with oil, then chill."
+			},
+			"greek_salad": {
+				"name": "Greek Salad",
+				"desc": "Chop the vegetables, top with cheese, oil and spice."
+			},
+			"green_curry": {
+				"name": "Green Curry",
+				"desc": "Boil coconut milk, add spice and meat, reduce until thick."
+			},
+			"green_papaya_salad": {
+				"name": "Shredded Veggie Salad",
+				"desc": "Shred the greens, pound with spice, scatter nuts."
+			},
+			"grilled_cheese": {
+				"name": "Grilled Cheese",
+				"desc": "Toast and cheese, buttered, fried gold on both sides."
+			},
+			"grind_bean": {
+				"name": "Grind Coffee",
+				"desc": "The sound of the grinder arrives before the aroma."
+			},
+			"groundnut_stew": {
+				"name": "Groundnut Stew",
+				"desc": "Stew meat and greens soft, then stir in nut paste."
+			},
+			"ham_cheese_sandwich": {
+				"name": "Ham & Cheese Sandwich",
+				"desc": "Ham and cheese between toast, pressed."
+			},
+			"hamburger": {
+				"name": "Hamburger",
+				"desc": "Bun split, patty fried, a leaf of lettuce, then pressed down."
+			},
+			"hash_brown": {
+				"name": "Hash Brown",
+				"desc": "Dry shreds pressed into a cake and browned."
+			},
+			"hash_browns": {
+				"name": "Hash Browns",
+				"desc": "Shred the potato, squeeze dry, press into cakes and fry both sides."
+			},
+			"hot_cocoa": {
+				"name": "Hot Cocoa",
+				"desc": "Milk, cocoa and sugar over low heat, stirred until dark."
+			},
+			"hot_dog": {
+				"name": "Hot Dog",
+				"desc": "Fry the sausage until the skin splits, tuck it in a roll, add tomato."
+			},
+			"hummus": {
+				"name": "Hummus",
+				"desc": "Boil the beans soft, blend with spice, finish with oil."
+			},
+			"iced_americano": {
+				"name": "Iced Americano",
+				"desc": "Dilute: espresso and cold water, two cubes of ice, the glass going cold."
+			},
+			"iced_latte": {
+				"name": "Iced Latte",
+				"desc": "Chill: cold milk first, espresso poured over, glass fogging up."
+			},
+			"injera": {
+				"name": "Injera",
+				"desc": "Ferment: thin flour batter rested till bubbly, spread thin and griddled."
+			},
+			"jam": {
+				"name": "Jam",
+				"desc": "Simmer: fruit and sugar down to a spoon-coating jam, half the water gone."
+			},
+			"jam_toast": {
+				"name": "Jam Toast",
+				"desc": "Toast the slice and spread jam while it is hot."
+			},
+			"jollof": {
+				"name": "Jollof Rice",
+				"desc": "Fry tomato and spice, add rice and meat, steam."
+			},
+			"juice": {
+				"name": "Juice",
+				"desc": "Press: fruit pressed and strained, drunk right away."
+			},
+			"kebab": {
+				"name": "Kebab",
+				"desc": "Marinate cubed meat, skewer, grill until the edges catch."
+			},
+			"kebab_wrap": {
+				"name": "Kebab Wrap",
+				"desc": "Lay out the bread, add meat and greens, sauce, roll tight."
+			},
+			"khao_soi": {
+				"name": "Khao Soi",
+				"desc": "Simmer coconut curry, add the clear noodle soup and meat, crown with crisp noodles."
+			},
+			"kimchi_soup": {
+				"name": "Kimchi Soup",
+				"desc": "Fry pickle and meat, add water, simmer till rich."
+			},
+			"lasagna": {
+				"name": "Lasagna",
+				"desc": "Stack pasta, meat sauce and white sauce, bake until bubbling."
+			},
+			"latte": {
+				"hint": "Some say that once milk enters an espresso, the bitterness steps back a little.",
+				"name": "Add Milk for a Latte",
+				"desc": "Steam: milk steamed thick, poured into espresso to push the bitterness back."
+			},
+			"lemonade": {
+				"name": "Lemonade",
+				"desc": "Squeeze the fruit, add sugar water, chill."
+			},
+			"mac_cheese": {
+				"name": "Mac and Cheese",
+				"desc": "Boil the pasta, fold with cheese and milk, bake until browned."
+			},
+			"macaron": {
+				"name": "Macaron",
+				"desc": "Ground nuts with sugar and egg white, piped small and baked, then filled."
+			},
+			"macchiato": {
+				"name": "Macchiato",
+				"desc": "Dot: a small spoon of whipped cream on the espresso. Do not stir."
+			},
+			"make_dough": {
+				"name": "Make Dough",
+				"desc": "Flour and milk together; your hands know how long to knead before your head does."
+			},
+			"mango_lassi": {
+				"name": "Mango Lassi",
+				"desc": "Blend fruit, yogurt and sugar smooth."
+			},
+			"mango_sticky_rice": {
+				"name": "Mango Sticky Rice",
+				"desc": "Steam the rice, stir through coconut milk, serve with sliced fruit."
+			},
+			"mapo_tofu": {
+				"name": "Mapo Tofu",
+				"desc": "Fry minced meat, add chili and soy sauce, slide in the bean curd."
+			},
+			"mashed_potato": {
+				"name": "Mashed Potato",
+				"desc": "Boil and crush the potato, stir in milk and butter."
+			},
+			"meat_sauce": {
+				"name": "Cook Meat Sauce",
+				"desc": "Brown the meat first, then let the vegetables and water reduce into it."
+			},
+			"meat_sauce_rice": {
+				"name": "Rice with Meat Sauce",
+				"desc": "Meat sauce reduced until thick, spooned over hot rice; the edges slump.",
+				"hint": "Reduce the meat sauce until thick, then spoon it over the rice."
+			},
+			"meat_soup": {
+				"name": "Meat Soup",
+				"desc": "Meat sliced thin, blanched in rolling broth until the color deepens."
+			},
+			"dark_chocolate": {
+				"name": "Dark Chocolate",
+				"desc": "Melt: cocoa, butter and sugar into a thick paste, pressed and cooled."
+			},
+			"milk_chocolate": {
+				"name": "Milk Chocolate",
+				"desc": "Melt: cocoa, fresh milk, butter and sugar over water, poured and cooled."
+			},
+			"lava_cake": {
+				"name": "Molten Chocolate Cake",
+				"desc": "Bake: dark chocolate, butter, egg and sugar, until the middle still runs."
+			},
+			"milk_cereal": {
+				"name": "Pour Milk over Cereal",
+				"desc": "Pour: cereal into a bowl, cold milk over it, left to soften."
+			},
+			"milk_tea": {
+				"name": "Milk Tea",
+				"desc": "Boil milk, tea leaves and sugar, then take it off the heat and let it steep."
+			},
+			"milkshake": {
+				"name": "Milkshake",
+				"desc": "Beat milk, cream and sugar until it coats the glass."
+			},
+			"mint_tea": {
+				"name": "Mint Tea",
+				"desc": "Boil water with spice and sugar, pour high into the glass."
+			},
+			"mocha": {
+				"name": "Mocha",
+				"desc": "Stir: espresso, milk and dark chocolate stirred till the colour deepens."
+			},
+			"mooncake": {
+				"name": "Mooncake",
+				"desc": "Press dough into a mould, brush egg, bake."
+			},
+			"muffin": {
+				"name": "Muffin",
+				"desc": "Fold milk, butter and sugar into the batter, fill the cups, bake until domed and cracked."
+			},
+			"mushroom_risotto": {
+				"name": "Mushroom Risotto",
+				"desc": "Stir rice with mushroom and white sauce, finish with cheese."
+			},
+			"mushroom_soup": {
+				"name": "Mushroom Soup",
+				"desc": "Browned mushrooms, white sauce and milk."
+			},
+			"naan": {
+				"name": "Naan",
+				"desc": "Roll the dough and bake hot until it spots."
+			},
+			"nachos": {
+				"name": "Nachos",
+				"desc": "Spread chips with cheese and spice, bake until melted."
+			},
+			"nasi_goreng": {
+				"name": "Nasi Goreng",
+				"desc": "Fry cold rice with meat and spice, top with a fried egg."
+			},
+			"nasi_lemak": {
+				"name": "Nasi Lemak",
+				"desc": "Soak the rice, steam it in coconut milk, serve with chilli."
+			},
+			"noodle": {
+				"name": "Roll Out Noodles",
+				"desc": "Roll the dough out, fold, cut, and shake loose."
+			},
+			"noodle_soup": {
+				"name": "Noodle Soup",
+				"desc": "Noodles boiled separately, broth on its own; combine at the end so nothing goes soft.",
+				"hint": "Boil the noodles on their own; keep the broth separate."
+			},
+			"onigiri": {
+				"name": "Onigiri",
+				"desc": "Wet your hands, shape the rice into a triangle, hide a little filling inside."
+			},
+			"onion_rings": {
+				"name": "Onion Rings",
+				"desc": "Slice onion into rings, coat in batter, fry until they float."
+			},
+			"onion_soup": {
+				"name": "Onion Soup",
+				"desc": "Fry sliced onion soft, add stock, simmer till it darkens."
+			},
+			"onion_tart": {
+				"name": "Onion Tart",
+				"desc": "Press dough into a tin, top with soft onions and cheese, bake."
+			},
+			"oyakodon": {
+				"name": "Oyakodon",
+				"desc": "Simmer meat and scallion, pour egg over, slide onto rice while loose."
+			},
+			"pad_thai": {
+				"name": "Pad Thai",
+				"desc": "Soak the noodles, then fry hard with prawns, egg and greens."
+			},
+			"paella": {
+				"name": "Paella",
+				"desc": "Spread rice and seafood in the pan, season, simmer until dry."
+			},
+			"palak_paneer": {
+				"name": "Palak Paneer",
+				"desc": "Boil and blend the greens, season, fold in cheese cubes."
+			},
+			"pancake": {
+				"name": "Pancake",
+				"desc": "Ladle batter into a pan, turn it when bubbles pop, brown both sides."
+			},
+			"pasta_tomato": {
+				"name": "Tomato Pasta",
+				"desc": "Boil the pasta, toss it through softened tomato."
+			},
+			"peanut_butter": {
+				"name": "Peanut Butter",
+				"desc": "Ground peanuts, oil rising on its own."
+			},
+			"pbj_sandwich": {
+				"name": "Make a PB&J",
+				"desc": "Spread: peanut butter on one slice, jam on the other, press them together."
+			},
+			"persian_stew": {
+				"name": "Persian Stew",
+				"desc": "Stew meat and beans, add greens and spice near the end."
+			},
+			"peruvian_chicken": {
+				"name": "Peruvian Chicken",
+				"desc": "Marinate in spice and fruit juice, roast until the skin crisps."
+			},
+			"pho": {
+				"name": "Pho",
+				"desc": "Boil the stock, pour over noodles, top with meat and greens."
+			},
+			"pilaf": {
+				"name": "Pilaf",
+				"desc": "Soak the rice, fry with meat and spice, steam with water."
+			},
+			"pita": {
+				"name": "Pita",
+				"desc": "Bake: dough rolled round, baked hot till it puffs."
+			},
+			"pizza": {
+				"name": "Pizza",
+				"desc": "Stretch the dough, spread tomato, scatter cheese, bake till the rim blisters."
+			},
+			"poached_egg": {
+				"name": "Poached Egg",
+				"desc": "Poach: water just under a boil, a pinch of salt, egg slid in."
+			},
+			"popcorn": {
+				"name": "Popcorn",
+				"desc": "Corn into a hot pot, lid on, until the popping thins."
+			},
+			"potato_salad": {
+				"name": "Potato Salad",
+				"desc": "Potato and egg crushed into dressing."
+			},
+			"pour_over": {
+				"name": "Drip a Slow Pour-over",
+				"desc": "Water circles the grounds and you have to let it fall through on its own."
+			},
+			"poutine": {
+				"name": "Poutine",
+				"desc": "Fry the potatoes crisp, pour gravy and white sauce, add meat."
+			},
+			"pudding": {
+				"hint": "Cold; the spoon sinks in. You have to let the oven heat through.",
+				"name": "Steam-Bake a Pudding",
+				"desc": "Egg and milk together, baked in a water bath — that is why it trembles."
+			},
+			"raita": {
+				"name": "Raita",
+				"desc": "Fold chopped vegetables into yogurt, dust with spice."
+			},
+			"ramen": {
+				"name": "Ramen",
+				"desc": "Bring the clear noodle soup to a boil, top with pork and egg, finish with scallion."
+			},
+			"ravioli": {
+				"name": "Ravioli",
+				"desc": "Roll the dough thin, add filling, fold and seal, then boil."
+			},
+			"red_curry": {
+				"name": "Red Curry",
+				"desc": "Simmer coconut milk and spice, add meat, cook until the oil splits."
+			},
+			"ribs": {
+				"name": "Ribs",
+				"desc": "Rub with spice, bake low, glaze with sugar at the finish."
+			},
+			"rice_cake": {
+				"name": "Rice Cake",
+				"desc": "Rice slurry into a mold, steamed until a chopstick lifts it whole."
+			},
+			"roast_bean": {
+				"name": "Roast Coffee Beans",
+				"desc": "Green beans into the pan, low heat, keep them moving until the color deepens."
+			},
+			"roast_chicken": {
+				"name": "Roast Chicken",
+				"desc": "Roast: spice and butter rubbed in, roasted till the skin is gold and the juices run clear."
+			},
+			"roasted_corn": {
+				"name": "Roasted Corn",
+				"desc": "Grill the corn until it spots, brush with butter and spice."
+			},
+			"roasted_vegetables": {
+				"name": "Roasted Vegetables",
+				"desc": "Toss cut vegetables with oil and spice, roast until the edges catch."
+			},
+			"rose_dessert": {
+				"name": "Rose Dessert",
+				"desc": "Thicken milk and sugar, pour into moulds, scatter nuts."
+			},
+			"salad_dressing": {
+				"name": "Salad Dressing",
+				"desc": "Egg, oil, spice whisked smooth."
+			},
+			"samosa": {
+				"name": "Samosa",
+				"desc": "Wrap potato filling in pastry, crimp into triangles, fry."
+			},
+			"sandwich": {
+				"name": "Sandwich",
+				"desc": "Two slices, egg and greens between, pressed and cut."
+			},
+			"satay": {
+				"name": "Satay",
+				"desc": "Marinate and skewer the meat, grill, serve with nut sauce."
+			},
+			"sausage": {
+				"name": "Sausage",
+				"desc": "Meat ground, salted and spiced, then into the casing."
+			},
+			"sausage_sauerkraut": {
+				"name": "Sausage & Sauerkraut",
+				"desc": "Shred the cabbage, rub it with salt and spice, then simmer with sausage until sour and savoury."
+			},
+			"scallion_noodle": {
+				"name": "Scallion Noodles",
+				"desc": "Scallions fried low, oil tossed through noodles."
+			},
+			"scone": {
+				"name": "Scone",
+				"desc": "Baked until it splits along the seam.",
+				"hint": "Rub the butter into the dough, but don't work it long."
+			},
+			"scrambled_egg": {
+				"name": "Scrambled Eggs",
+				"desc": "Eggs into butter, pushed into soft curds."
+			},
+			"seafood_pancake": {
+				"name": "Seafood Pancake",
+				"desc": "Fold seafood into batter, fry flat until both sides catch."
+			},
+			"sesame_bun": {
+				"name": "Sesame Bun",
+				"desc": "Roll dough with oil, flatten, top with sesame, bake."
+			},
+			"shawarma": {
+				"name": "Shawarma",
+				"desc": "Warm the bread, layer meat and greens, sauce, roll tight."
+			},
+			"shepherd_pie": {
+				"name": "Shepherd's Pie",
+				"desc": "Fry meat and vegetables into a filling, top with mash, bake till golden."
+			},
+			"shumai": {
+				"name": "Shumai",
+				"desc": "Steam: thin wrapper pleated, left open at the top so the filling shows.",
+				"hint": "Leave the wrapper open; the filling should show on top."
+			},
+			"soda": {
+				"name": "Soda",
+				"desc": "Pour: sweet fruit water chilled, poured over ice, bubbling up."
+			},
+			"souffle": {
+				"name": "Soufflé",
+				"desc": "Fold yolk custard into whipped whites, bake in a ramekin until it rises."
+			},
+			"soy_rice": {
+				"name": "Soy Sauce Rice",
+				"desc": "Toss: hot rice and soy sauce only, no butter, the bean comes through."
+			},
+			"soy_sauce": {
+				"name": "Soy Sauce",
+				"desc": "Beans and spice simmered low."
+			},
+			"sparkling_water": {
+				"name": "Sparkling Water",
+				"desc": "Chill the water, add a squeeze of fruit."
+			},
+			"spring_roll": {
+				"name": "Spring Roll",
+				"desc": "Wrap the filling tight, fry golden."
+			},
+			"steak": {
+				"name": "Steak",
+				"desc": "Sear both sides, add butter and spice, rest before slicing."
+			},
+			"steamed_egg": {
+				"name": "Steamed Egg",
+				"desc": "Water and egg whisked, steamed just until set -- no honeycomb on the surface."
+			},
+			"stew": {
+				"name": "Stew",
+				"desc": "Simmered low; the liquid reduces and the flavor thickens."
+			},
+			"sushi": {
+				"name": "Sushi",
+				"desc": "Shape warm rice, drape fish over it, add a sliver of greens."
+			},
+			"syrup": {
+				"name": "Syrup",
+				"desc": "Sugar melts into water over a low flame; thicker once cool."
+			},
+			"taco": {
+				"name": "Taco",
+				"desc": "Warm the tortilla, fill with meat, greens and spice."
+			},
+			"tagine": {
+				"name": "Tagine",
+				"desc": "Slow-cook meat and vegetables with spice, scatter nuts at the end."
+			},
+			"tamale": {
+				"name": "Tamale",
+				"desc": "Wrap meat in corn dough and leaves, then steam through."
+			},
+			"tamarind_sauce": {
+				"name": "Tamarind Sauce",
+				"desc": "Simmer: fruit simmered with water, strained, sweetened and reduced."
+			},
+			"tandoori_chicken": {
+				"name": "Tandoori Chicken",
+				"desc": "Roast: chicken marinated in spice and milk, brushed with cream, roasted red."
+			},
+			"tangyuan": {
+				"name": "Tangyuan",
+				"desc": "Roll dough into balls, boil until they rise."
+			},
+			"tea_egg": {
+				"name": "Tea Egg",
+				"desc": "Braise: eggs boiled and cracked, soaked in soy, spice and tea."
+			},
+			"tea_rice": {
+				"name": "Tea Rice",
+				"desc": "Rice in a bowl, hot tea poured over, a little greens."
+			},
+			"tempura": {
+				"name": "Tempura",
+				"desc": "Dip seafood in loose batter, fry pale gold."
+			},
+			"thali": {
+				"name": "Thali",
+				"desc": "Rice in the middle; beans, greens and sauce in bowls around it."
+			},
+			"tiramisu": {
+				"name": "Tiramisu",
+				"desc": "Dip cake in coffee, layer with cream, dust with grounds, chill."
+			},
+			"toast": {
+				"name": "Toast",
+				"desc": "Slice the loaf thick."
+			},
+			"toast_slice": {
+				"name": "Toast Slices",
+				"desc": "Buttered bread baked crisp."
+			},
+			"tom_yum": {
+				"name": "Tom Yum",
+				"desc": "Simmer seafood and mushroom with spice and coconut milk."
+			},
+			"tomato_soup": {
+				"name": "Tomato Soup",
+				"desc": "Tomatoes softened, stock brought to a boil."
+			},
+			"tostada": {
+				"name": "Tostada",
+				"desc": "Fry the corn cake crisp, top with meat and cheese."
+			},
+			"tres_leches": {
+				"name": "Tres Leches",
+				"desc": "Bake the cake, soak with milk and cream, chill."
+			},
+			"tuna_sandwich": {
+				"name": "Tuna Sandwich",
+				"desc": "Seafood and dressing between toast."
+			},
+			"turkish_coffee": {
+				"name": "Turkish Coffee",
+				"desc": "Heat grounds, water and sugar; pour at the first foam."
+			},
+			"turmeric_rice": {
+				"name": "Turmeric Rice",
+				"desc": "Bloom the spice in oil, fold through the rice."
+			},
+			"twice_cooked_pork": {
+				"name": "Twice-cooked Pork",
+				"desc": "Boil and slice the pork, then fry again with greens and chili."
+			},
+			"vegetable_salad": {
+				"name": "Garden Salad",
+				"desc": "Torn leaves, oil, a toss."
+			},
+			"vegetable_soup": {
+				"name": "Vegetable Soup",
+				"desc": "Broth first, vegetables last, pulled off the heat the moment they soften."
+			},
+			"vienna_coffee": {
+				"name": "Vienna Coffee",
+				"desc": "Sweeten the espresso and crown it with whipped cream."
+			},
+			"waffle": {
+				"name": "Waffle",
+				"desc": "Bake: press the dough into the iron, fill it to hold shape, bake until the edges crisp."
+			},
+			"cocoa_shake": {
+				"name": "Cocoa Shake",
+				"desc": "Blend: cocoa, milk, ice and sugar into a thick shake."
+			},
+			"white_rice": {
+				"name": "White Rice",
+				"desc": "Rice and water, steamed until the grains stand apart."
+			},
+			"white_sauce": {
+				"name": "White Sauce",
+				"desc": "Flour in butter, milk stirred thick."
+			},
+			"wonton": {
+				"name": "Wonton",
+				"desc": "Roll thin wrappers, fold in meat, poach in stock."
+			},
+			"yogurt_soup": {
+				"name": "Yogurt Soup",
+				"desc": "Stir yogurt, flour and spice over low heat until thick."
+			},
+			"yorkshire_pudding": {
+				"name": "Yorkshire Pudding",
+				"desc": "Pour batter into hot fat and bake until it rises."
+			},
+			"zongzi": {
+				"name": "Zongzi",
+				"desc": "Wrap rice and meat in leaves, tie tight, steam through."
+			},
+			"ice": {
+				"name": "Ice",
+				"desc": "Water, frozen into blocks — the fridge does the rest."
+			},
+			"ice_cream_scoop": {
+				"name": "Ice Cream Scoop",
+				"desc": "Scoop one out of the tub."
+			},
+			"shaved_ice": {
+				"name": "Shaved Ice",
+				"desc": "Shave the ice, pour syrup over."
+			},
+			"popsicle": {
+				"name": "Popsicle",
+				"desc": "Freeze: fruit and sugar into a mould, a stick, frozen solid."
+			},
+			"smoothie": {
+				"name": "Smoothie",
+				"desc": "Blend: fruit, milk and ice blended thick."
+			},
+			"ice_bar": {
+				"name": "Ice Bar",
+				"desc": "Freeze: ice, milk and sugar frozen hard, then cut into bars."
+			},
+			"milk_pudding": {
+				"name": "Milk Pudding",
+				"desc": "Chill: milk, sugar and vanilla set just short of firm."
+			},
+			"vanilla_ice_cream": {
+				"name": "Vanilla Ice Cream",
+				"desc": "Ice, milk, sugar and a pod of vanilla."
+			},
+			"chocolate_ice_cream": {
+				"name": "Chocolate Ice Cream",
+				"desc": "Freeze cocoa and milk together."
+			},
+			"fruit_ice_cream": {
+				"name": "Fruit Ice Cream",
+				"desc": "Fruit, milk, sugar and ice blended and frozen."
+			},
+			"sundae": {
+				"name": "Sundae",
+				"desc": "One scoop, jam and cream piled on."
+			},
+			"black_tea": {
+				"name": "Black Tea",
+				"desc": "Steep: two measures of leaf, boiling water, steeped till the liquor reddens."
+			},
+			"green_tea": {
+				"name": "Green Tea",
+				"desc": "Steep: one measure of leaf, water cooled a little, steeped briefly."
+			},
+			"lemon_tea": {
+				"name": "Lemon Tea",
+				"desc": "Two slices of lemon in the tea."
+			},
+			"whole_wheat_flour": {
+				"name": "Grind Whole Wheat Flour",
+				"desc": "Wheat, ground twice with the bran left in."
+			},
+			"flour_from_whole_wheat": {
+				"name": "Mill Refined Flour",
+				"desc": "Grind it finer and sift the bran out; more flour comes through."
+			},
+			"cocoa_powder": {
+				"name": "Grind Cocoa Powder",
+				"desc": "Cocoa beans ground until the bitterness comes first."
+			},
+			"whole_wheat_bread": {
+				"name": "Bake a European Bun",
+				"desc": "Whole wheat dough, rested and baked to a hard crust."
+			},
+			"whole_wheat_cracker": {
+				"name": "Bake Whole Wheat Crackers",
+				"desc": "Pressed thin and baked crisp."
+			},
+			"chocolate_chip_cookie": {
+				"name": "Bake Chocolate Chip Cookies",
+				"desc": "Chocolate folded into the dough, baked to a brown rim."
+			},
+			"chocolate_cookie": {
+				"name": "Bake Chocolate Cookies",
+				"desc": "Cocoa and chocolate worked into the dough together."
+			},
+			"oreo": {
+				"name": "Press an Oreo",
+				"desc": "Two chocolate cookies pressed shut around cream."
+			},
+			"marshmallow": {
+				"name": "Boil Marshmallows",
+				"desc": "Sugar and syrup boiled to a gum, poured out to set soft."
+			},
+			"roasted_marshmallow": {
+				"name": "Toast a Marshmallow",
+				"desc": "Hold it over the fire until the skin chars."
+			},
+			"smore": {
+				"name": "Make a S'more",
+				"desc": "A cracker, toasted marshmallow and dark chocolate, stacked."
+			},
+			"tomato_egg_stirfry": {
+				"name": "Tomato and Egg Stir-fry",
+				"desc": "Tomato fried to juice, egg slid in."
+			},
+			"stir_fried_greens": {
+				"name": "Stir-fry Greens",
+				"desc": "A handful of greens, a pinch of salt, high heat."
+			},
+			"vinegar_potato_shreds": {
+				"name": "Vinegar Potato Shreds",
+				"desc": "Shred and soak the potato; add the sourness at the very end."
+			},
+			"braised_tofu": {
+				"name": "Braised Tofu",
+				"desc": "Sear the tofu, reduce chili and sugar into a glaze."
+			},
+			"kung_pao_chicken": {
+				"name": "Kung Pao Chicken",
+				"desc": "Chicken through oil, dried chili and peanuts tossed in."
+			},
+			"yu_xiang_pork": {
+				"name": "Yuxiang Shredded Pork",
+				"desc": "Velvet the pork; pickled chili meets sweet vinegar."
+			},
+			"spicy_chicken": {
+				"name": "Chongqing Spicy Chicken",
+				"desc": "Fry the chicken hard, bury it in chili, toss."
+			},
+			"tofu": {
+				"name": "Press Tofu",
+				"desc": "Grind soybeans, curdle, press into a block."
+			},
+			"kimchi": {
+				"name": "Make Kimchi",
+				"desc": "Rub cabbage with chili and salt; wait a few days."
+			},
+			"xiao_chao_rou": {
+				"name": "Stir-fry Pork",
+				"desc": "Render the pork; toss the chili through."
+			},
+			"shui_zhu_rou_pian": {
+				"name": "Boil Pork Slices",
+				"desc": "Boil the broth, slide in the pork, chili on top, hot oil last."
+			},
+			"dan_dan_noodles": {
+				"name": "Dan Dan Noodles",
+				"desc": "Noodles bowled; pork, chili and peanuts piled on."
+			},
+			"dry_pot_cabbage": {
+				"name": "Dry-pot Cabbage",
+				"desc": "Torn cabbage, bacon and chili rendering their fat."
+			},
+			"steamed_chili_fish": {
+				"name": "Steamed Fish Head with Chili",
+				"desc": "Cover the fish with chopped chili and steam it through."
+			},
+			"budae_jjigae": {
+				"name": "Budae Jjigae",
+				"desc": "Kimchi, sausage, noodles in one pot; chili makes the broth."
+			},
+			"kimchi_fried_rice": {
+				"name": "Kimchi Fried Rice",
+				"desc": "Fry chopped kimchi, then rice and egg."
+			},
+			"dak_galbi": {
+				"name": "Spicy Chicken and Rice",
+				"desc": "Sear the chicken, then chili and rice."
+			},
+			"pad_kra_pow": {
+				"name": "Pad Kra Pao",
+				"desc": "Beef and chili over high heat, on rice, under a fried egg."
+			},
+			"laksa": {
+				"name": "Laksa",
+				"desc": "Fry chili to red oil; coconut milk and rice noodles go in, shrimp last."
+			},
+			"sambal_shrimp": {
+				"name": "Sambal Shrimp",
+				"desc": "Pound chili and onion into paste, fry, toss the shrimp twice."
+			},
+			"mirchi_salan": {
+				"name": "Mirchi Salan",
+				"desc": "Stew chilies with nuts and spice; cream to finish."
+			},
+			"chilli_chicken": {
+				"name": "Chilli Chicken",
+				"desc": "Fry floured chicken crisp; reduce chili and soy to a glaze."
+			},
+			"vindaloo": {
+				"name": "Vindaloo",
+				"desc": "Braise pork with chili and spice until the sourness is in the meat."
+			},
+			"shakshuka": {
+				"name": "Shakshuka",
+				"desc": "Cook tomato and chili to sauce; crack eggs in and cover."
+			},
+			"lemon_chili_chicken": {
+				"name": "Roast Chicken with Lemon and Chili",
+				"desc": "Rub the skin with chili and oil, roast crisp, squeeze lemon over."
+			},
+			"paprikash": {
+				"name": "Paprikash",
+				"desc": "Stew chicken and onion soft; chili and cream turn it pink."
+			},
+			"nashville_hot_chicken": {
+				"name": "Nashville Hot Chicken",
+				"desc": "Pour chili-butter oil over fried chicken."
+			},
+			"chili_con_carne": {
+				"name": "Chili con Carne",
+				"desc": "Brown the beef; stew tomato, beans and chili down thick."
+			},
+			"jerk_chicken": {
+				"name": "Jerk Chicken",
+				"desc": "Rub the chicken with chili and spice; roast it charred."
+			},
+			"elote": {
+				"name": "Elote",
+				"desc": "Char the corn; smear cream and cheese, dust with chili."
+			},
+			"doro_wat": {
+				"name": "Doro Wat",
+				"desc": "Cook onions dark; add chili and chicken; bury the eggs in."
+			},
+			"peri_peri_chicken": {
+				"name": "Peri-Peri Chicken",
+				"desc": "Turn chicken in chili oil until the skin curls."
+			},
+			"suya": {
+				"name": "Suya",
+				"desc": "Rub thin beef with chili and groundnut spice; grill to dry edges."
+			},
+			"chili_dog": {
+				"name": "Chili Dog",
+				"desc": "Fry the sausage, bread it, cover with chili and cheese."
+			},
+			"cheese": {
+				"name": "Make Cheese",
+				"desc": "Milk and salt heated until it curdles, then pressed dry."
+			},
+			"butter": {
+				"name": "Churn Butter",
+				"desc": "Cream with a pinch of salt, worked until smooth."
+			},
+			"yogurt": {
+				"name": "Make Yogurt",
+				"desc": "Milk and sugar, stirred and left to set."
+			},
+			"rice_noodle": {
+				"name": "Press Rice Noodles",
+				"desc": "Rice and water ground to a slurry, steamed and pressed into strands."
+			},
+			"nian_gao": {
+				"name": "Pound Rice Cakes",
+				"desc": "Pound hot rice until no grain is left."
+			},
+			"miso_soup": {
+				"name": "Make Miso Soup",
+				"desc": "Miso stirred into broth, tofu cut small and let down into it."
+			},
+			"tofu_dengaku": {
+				"name": "Grill Tofu Dengaku",
+				"desc": "Thick tofu grilled until fragrant, brushed with miso thinned by sugar."
+			},
+			"miso_ramen": {
+				"name": "Cook Miso Ramen",
+				"desc": "Clear noodle soup finished with miso, egg and scallion added last."
+			},
+			"fried_rice_noodle": {
+				"name": "Fry Rice Noodles",
+				"desc": "Soaked rice noodles thrown in the pan with egg, greens and soy."
+			},
+			"tteokbokki": {
+				"name": "Simmer Tteokbokki",
+				"desc": "Rice cakes reduced with chili, soy and sugar until the sauce clings."
+			},
+			"di_san_xian": {
+				"name": "Three Treasures of the Earth",
+				"desc": "Fry the potato and eggplant first, then add the third vegetable; finish with oil and let it tighten."
+			},
+			"scallion_pancake": {
+				"name": "Scallion Pancake",
+				"desc": "Oil and scallions on the dough, roll and flatten, pan-fry until both sides brown."
+			},
+			"liangpi": {
+				"name": "Liangpi",
+				"desc": "Steam the batter thin, cut into strips, dress with chili oil."
+			}
+		},
+		"research": {
+			"rules": {
+				"name": "Research Desk Rules",
+				"desc": "The price of trial and error: the smoother the desk, the less gets burnt."
+			}
+		},
+		"world": {
+			"room": {
+				"subtitle": "A room lived in for a long time",
+				"body": "The table is bolted to the floor.\nA stove, a window, a lamp that never quite gets bright — that's all of it.\nYou cook here, and you wait here for morning. A shelf runs along the wall, every flavor you've written down kept up there.",
+				"hint": "The room you're standing in right now.",
+				"name": "The Room",
+				"desc": "Every flavor starts here."
+			},
+			"nearby": {
+				"subtitle": "The little patch outside the window",
+				"body": "Someone walks past, stops at the window, and hands in a note of what they'd like to eat.\nThe paper is folded, the writing hurried.\nThey put it down and leave, as if handing you a small errand.",
+				"hint": "The knocking at the window usually comes from here.",
+				"name": "The Doorway",
+				"desc": "Where orders and news arrive."
+			},
+			"cafe": {
+				"subtitle": "An old food truck that ran for many years",
+				"body": "Turning around at the rear, I finally saw the whole of it: an old food truck.\nBack at the door, I wiped the dust from the inside and four words came clear — OFF THE EATEN PATH.\nAn old little plaque is nailed up beside it, with the route it used to run.\nThe room you have lived in all along was this truck.",
+				"hint": "The four words wiped out of the dust inside the door.",
+				"name": "Off the Eaten Path",
+				"desc": "What this truck used to be called."
+			},
+			"east_asia": {
+				"subtitle": "Stalls open before dawn",
+				"body": "Before the sky is light, the stalls are already out.\nDough twists turn in the oil, soy milk steams white.\nMore people press their faces to the window than yesterday.",
+				"hint": "Somewhere the truck has stopped.",
+				"name": "The Eastern Morning Market",
+				"desc": "The first stop."
+			},
+			"southeast_asia": {
+				"subtitle": "An alley where the rain comes and goes",
+				"body": "The rain comes in waves.\nAt the mouth of the alley a charcoal stove is set up, leaf-wrapped things slowly cooking.\nThe air is sweet, and it is spicy.",
+				"hint": "Somewhere the truck has stopped.",
+				"name": "The Alley by the Rainforest",
+				"desc": "Damp, and loud."
+			},
+			"south_asia": {
+				"subtitle": "A shop that weighs colors by the spoon",
+				"body": "The shop is heaped with colors, weighed out spoon by spoon.\nThe owner says every color has to go into the pot together.\nYou write the order down.",
+				"hint": "Somewhere the truck has stopped.",
+				"name": "The Spice Shop Afternoon",
+				"desc": "Here a flavor only counts when it's complete."
+			},
+			"middle_east": {
+				"subtitle": "Too hot by day, awake at night",
+				"body": "The day is too hot; the night market only wakes at dusk.\nThe fires under the flatbreads line up like stars on the ground.\nPeople weave between the stalls with tea in their hands.",
+				"hint": "Somewhere the truck has stopped.",
+				"name": "The Desert Night Market",
+				"desc": "The later it gets, the brighter it is."
+			},
+			"mediterranean": {
+				"subtitle": "A coast that eats slowly",
+				"body": "The white walls glare in the sun; the sea wind comes through from the far end of the alley.\nThe olive oil on the table is new, the bread still warm.\nPeople here eat slowly.",
+				"hint": "Somewhere the truck has stopped.",
+				"name": "White Walls and Sea Wind",
+				"desc": "Slow down, and the flavor comes out."
+			},
+			"western": {
+				"subtitle": "Snow at the top, sugar in the doorway",
+				"body": "Snow on the peak, the town below.\nChimneys smoke, and butter and sugar drift out of the doorways.\nNot many people pass by, but they all stop.",
+				"hint": "Somewhere the truck has stopped.",
+				"name": "A Town Below the Snowline",
+				"desc": "Cold, but sweet."
+			},
+			"americas": {
+				"subtitle": "One road, all the way to the end",
+				"body": "A road runs straight until it ends at a gas station.\nBurgers hiss on the griddle, coffee stays warm in the pot.\nHeadlights come from far off, and go past.",
+				"hint": "Somewhere the truck has stopped.",
+				"name": "The Gas Station at the End of the Road",
+				"desc": "Everyone on the road stops here once."
+			},
+			"africa": {
+				"subtitle": "A pot that stewed all day",
+				"body": "The earth is red, the fire is charcoal.\nThe pot is propped on stones, stewing all day long.\nAnyone passing holds out a hand for a bowl.",
+				"hint": "Somewhere the truck has stopped.",
+				"name": "Red Earth and Charcoal Fire",
+				"desc": "Sharing is the rule here."
+			},
+			"fast_food": {
+				"subtitle": "You only queue after dark",
+				"body": "The sky goes dark and the neon comes on.\nThe window hands out one hot thing after another, the paper bags printed with a smiling face.\nThe line never gets shorter.",
+				"hint": "Somewhere the truck has stopped.",
+				"name": "The Window Under the Neon",
+				"desc": "The last stop."
+			}
+		},
+		"harvest": {
+			"mailbox": {
+				"name": "Drop Box",
+				"desc": "A delivery crate by the door. Salt, sugar and coffee beans land inside, no signature needed."
+			},
+			"farm": {
+				"name": "Farm Plot",
+				"desc": "A patch behind the house. Whatever you plant, it grows — slowly."
+			},
+			"orchard": {
+				"name": "Orchard",
+				"desc": "A few trees. More fruit falls than gets picked."
+			},
+			"sea": {
+				"name": "Seafood Spot",
+				"desc": "A stone ledge by the water. What bites depends on luck."
+			},
+			"ranch": {
+				"name": "Ranch",
+				"desc": "Meat, eggs and milk behind the fence. Whether you get a pail or a basket depends on who cooperates."
+			}
+		}
+	}
+}

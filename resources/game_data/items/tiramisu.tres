@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_4usnx"]
+
+[resource]
+script = ExtResource("1_4usnx")
+kind = 1
+sell_price = 40
+taste = "data.item.tiramisu.taste"
+catalog_hint = "data.item.tiramisu.hint"
+order = 172
+theme = "game:theme/mediterranean"
+order_weight = 0.9
+tags = Array[String](["game:tag/sweet", "game:tag/festival"])
+id = "item/tiramisu"
+display_name = "data.item.tiramisu.name"
+description = "data.item.tiramisu.desc"

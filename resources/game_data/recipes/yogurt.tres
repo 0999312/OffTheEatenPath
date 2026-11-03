@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="RecipeDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/material_stack.gd" id="1_stack"]
+[ext_resource type="Script" path="res://scripts/resources/recipe_def.gd" id="2_recipe"]
+
+[sub_resource type="Resource" id="Resource_milk"]
+script = ExtResource("1_stack")
+material = "game:item/milk"
+amount = 1
+
+[sub_resource type="Resource" id="Resource_sugar"]
+script = ExtResource("1_stack")
+material = "game:item/sugar"
+amount = 1
+
+[resource]
+script = ExtResource("2_recipe")
+output = "game:item/yogurt"
+inputs = Array[ExtResource("1_stack")]([SubResource("Resource_milk"), SubResource("Resource_sugar")])
+duration_seconds = 15.0
+order = 414
+group = "semi"
+id = "recipe/yogurt"
+display_name = "data.recipe.yogurt.name"
+description = "data.recipe.yogurt.desc"

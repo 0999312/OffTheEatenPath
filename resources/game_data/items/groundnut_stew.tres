@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_dl82m"]
+
+[resource]
+script = ExtResource("1_dl82m")
+kind = 1
+sell_price = 34
+taste = "data.item.groundnut_stew.taste"
+catalog_hint = "data.item.groundnut_stew.hint"
+order = 254
+theme = "game:theme/africa"
+order_weight = 0.9
+tags = Array[String](["game:tag/home"])
+id = "item/groundnut_stew"
+display_name = "data.item.groundnut_stew.name"
+description = "data.item.groundnut_stew.desc"

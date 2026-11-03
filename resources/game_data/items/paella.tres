@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_8i5ga"]
+
+[resource]
+script = ExtResource("1_8i5ga")
+kind = 1
+sell_price = 60
+taste = "data.item.paella.taste"
+catalog_hint = "data.item.paella.hint"
+order = 169
+theme = "game:theme/mediterranean"
+order_weight = 0.7
+tags = Array[String](["game:tag/festival"])
+id = "item/paella"
+display_name = "data.item.paella.name"
+description = "data.item.paella.desc"

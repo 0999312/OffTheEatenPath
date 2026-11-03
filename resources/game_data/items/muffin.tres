@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_hj3eo"]
+
+[resource]
+script = ExtResource("1_hj3eo")
+kind = 1
+sell_price = 32
+taste = "data.item.muffin.taste"
+catalog_hint = "data.item.muffin.hint"
+order = 14
+order_weight = 0.9
+tags = Array[String](["game:tag/home", "game:tag/sweet"])
+id = "item/muffin"
+display_name = "data.item.muffin.name"
+description = "data.item.muffin.desc"

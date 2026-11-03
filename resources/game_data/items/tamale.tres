@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_mltuo"]
+
+[resource]
+script = ExtResource("1_mltuo")
+kind = 1
+sell_price = 26
+taste = "data.item.tamale.taste"
+catalog_hint = "data.item.tamale.hint"
+order = 243
+theme = "game:theme/americas"
+tags = Array[String](["game:tag/home", "game:tag/festival"])
+id = "item/tamale"
+display_name = "data.item.tamale.name"
+description = "data.item.tamale.desc"

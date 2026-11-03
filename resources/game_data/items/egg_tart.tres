@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_qk6b3"]
+
+[resource]
+script = ExtResource("1_qk6b3")
+kind = 1
+sell_price = 32
+taste = "data.item.egg_tart.taste"
+catalog_hint = "data.item.egg_tart.hint"
+order = 15
+theme = "game:theme/cafe"
+order_weight = 0.8
+tags = Array[String](["game:tag/home", "game:tag/sweet"])
+id = "item/egg_tart"
+display_name = "data.item.egg_tart.name"
+description = "data.item.egg_tart.desc"

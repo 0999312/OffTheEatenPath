@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="TagDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/tag_def.gd" id="1_u1s8r"]
+
+[resource]
+script = ExtResource("1_u1s8r")
+order = 11
+scope = 1
+id = "tag/veg"
+display_name = "data.tag.veg.name"
+description = "data.tag.veg.desc"

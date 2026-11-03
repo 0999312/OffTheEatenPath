@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_51e2v"]
+
+[resource]
+script = ExtResource("1_51e2v")
+kind = 1
+sell_price = 44
+taste = "data.item.feijoada.taste"
+catalog_hint = "data.item.feijoada.hint"
+order = 246
+theme = "game:theme/americas"
+order_weight = 0.9
+tags = Array[String](["game:tag/home", "game:tag/festival"])
+id = "item/feijoada"
+display_name = "data.item.feijoada.name"
+description = "data.item.feijoada.desc"

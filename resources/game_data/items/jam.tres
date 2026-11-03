@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_d0re1"]
+
+[resource]
+script = ExtResource("1_d0re1")
+material_kind = 1
+sell_price = 6
+id = "item/jam"
+display_name = "data.item.jam.name"
+description = "data.item.jam.desc"

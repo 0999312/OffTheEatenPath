@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="RecipeDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/material_stack.gd" id="1_stack"]
+[ext_resource type="Script" path="res://scripts/resources/recipe_def.gd" id="2_rec"]
+
+[sub_resource type="Resource" id="Resource_0"]
+script = ExtResource("1_stack")
+material = "game:item/dough"
+amount = 1
+
+
+[sub_resource type="Resource" id="Resource_1"]
+script = ExtResource("1_stack")
+material = "game:item/pork"
+amount = 1
+
+
+[sub_resource type="Resource" id="Resource_2"]
+script = ExtResource("1_stack")
+by_tag = "game:tag/veg"
+
+
+[resource]
+script = ExtResource("2_rec")
+output = "game:item/shumai"
+inputs = Array[ExtResource("1_stack")]([SubResource("Resource_0"), SubResource("Resource_1"), SubResource("Resource_2")])
+duration_seconds = 40.0
+facility = "game:facility/steamer"
+order = 30
+group = "steam"
+research_pool = Array[String](["game:item/dough", "game:item/pork", "game:item/bean"])
+research_hint = "data.recipe.shumai.hint"
+id = "recipe/shumai"
+display_name = "data.recipe.shumai.name"
+description = "data.recipe.shumai.desc"

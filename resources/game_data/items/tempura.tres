@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_xrdi6"]
+
+[resource]
+script = ExtResource("1_xrdi6")
+kind = 1
+sell_price = 30
+taste = "data.item.tempura.taste"
+catalog_hint = "data.item.tempura.hint"
+order = 180
+theme = "game:theme/east_asia"
+tags = Array[String](["game:tag/home"])
+id = "item/tempura"
+display_name = "data.item.tempura.name"
+description = "data.item.tempura.desc"

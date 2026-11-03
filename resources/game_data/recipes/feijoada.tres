@@ -1,0 +1,41 @@
+[gd_resource type="Resource" script_class="RecipeDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/material_stack.gd" id="1_stack"]
+[ext_resource type="Script" path="res://scripts/resources/recipe_def.gd" id="2_recipe"]
+[ext_resource type="Script" path="res://scripts/resources/facility_def.gd" id="3_fac"]
+
+[sub_resource type="Resource" id="Resource_0"]
+script = ExtResource("1_stack")
+material = "game:item/pork"
+amount = 1
+
+
+[sub_resource type="Resource" id="Resource_1"]
+script = ExtResource("1_stack")
+material = "game:item/bean"
+amount = 1
+
+
+[sub_resource type="Resource" id="Resource_2"]
+script = ExtResource("1_stack")
+by_tag = "game:tag/veg"
+amount = 1
+
+
+[sub_resource type="Resource" id="Resource_3"]
+script = ExtResource("1_stack")
+material = "game:item/spice"
+
+
+[resource]
+script = ExtResource("2_recipe")
+output = "game:item/feijoada"
+inputs = Array[ExtResource("1_stack")]([SubResource("Resource_0"), SubResource("Resource_1"), SubResource("Resource_2"), SubResource("Resource_3")])
+duration_seconds = 70.0
+order = 268
+group = "meal"
+research_pool = Array[String](["game:item/pork", "game:item/bean", "game:item/cabbage", "game:item/spice"])
+id = "recipe/feijoada"
+display_name = "data.recipe.feijoada.name"
+description = "data.recipe.feijoada.desc"
+facility = "game:facility/stove"

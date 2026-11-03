@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_f2q81"]
+
+[resource]
+script = ExtResource("1_f2q81")
+kind = 1
+sell_price = 28
+taste = "data.item.pho.taste"
+catalog_hint = "data.item.pho.hint"
+order = 226
+theme = "game:theme/southeast_asia"
+order_weight = 1.1
+tags = Array[String](["game:tag/home", "game:tag/soup"])
+id = "item/pho"
+display_name = "data.item.pho.name"
+description = "data.item.pho.desc"

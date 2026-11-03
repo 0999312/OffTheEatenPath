@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_gfyok"]
+
+[resource]
+script = ExtResource("1_gfyok")
+kind = 1
+sell_price = 10
+taste = "data.item.fries.taste"
+catalog_hint = "data.item.fries.hint"
+order = 105
+theme = "game:theme/fast_food"
+order_weight = 1.4
+tags = Array[String](["game:tag/street", "game:tag/vegetarian"])
+id = "item/fries"
+display_name = "data.item.fries.name"
+description = "data.item.fries.desc"

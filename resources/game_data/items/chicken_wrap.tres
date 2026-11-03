@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_70f14"]
+
+[resource]
+script = ExtResource("1_70f14")
+kind = 1
+sell_price = 20
+taste = "data.item.chicken_wrap.taste"
+catalog_hint = "data.item.chicken_wrap.hint"
+order = 109
+theme = "game:theme/fast_food"
+order_weight = 1.2
+tags = Array[String](["game:tag/street"])
+id = "item/chicken_wrap"
+display_name = "data.item.chicken_wrap.name"
+description = "data.item.chicken_wrap.desc"

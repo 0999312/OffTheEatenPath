@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_o11q1"]
+
+[resource]
+script = ExtResource("1_o11q1")
+kind = 1
+sell_price = 30
+taste = "data.item.jollof.taste"
+catalog_hint = "data.item.jollof.hint"
+order = 252
+theme = "game:theme/africa"
+tags = Array[String](["game:tag/home", "game:tag/spicy"])
+id = "item/jollof"
+display_name = "data.item.jollof.name"
+description = "data.item.jollof.desc"

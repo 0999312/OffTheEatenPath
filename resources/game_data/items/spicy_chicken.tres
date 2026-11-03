@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_item"]
+
+[resource]
+script = ExtResource("1_item")
+kind = 1
+sell_price = 26
+taste = "data.item.spicy_chicken.taste"
+catalog_hint = "data.item.spicy_chicken.hint"
+order = 371
+theme = "game:theme/east_asia"
+order_weight = 1.0
+tags = Array[String](["game:tag/home", "game:tag/spicy"])
+id = "item/spicy_chicken"
+display_name = "data.item.spicy_chicken.name"
+description = "data.item.spicy_chicken.desc"

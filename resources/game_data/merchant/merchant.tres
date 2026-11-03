@@ -1,0 +1,63 @@
+[gd_resource type="Resource" script_class="MerchantDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/material_stack.gd" id="1_stack"]
+[ext_resource type="Script" path="res://scripts/resources/facility_upgrade.gd" id="2_up"]
+[ext_resource type="Script" path="res://scripts/resources/merchant_def.gd" id="3_mer"]
+
+[sub_resource type="Resource" id="Resource_lv2_flour"]
+script = ExtResource("1_stack")
+material = "game:item/flour"
+amount = 10
+
+[sub_resource type="Resource" id="Resource_lv2_egg"]
+script = ExtResource("1_stack")
+material = "game:item/egg"
+amount = 6
+
+[sub_resource type="Resource" id="Resource_lv2_up"]
+script = ExtResource("2_up")
+coin_cost = 150
+materials = Array[ExtResource("1_stack")]([SubResource("Resource_lv2_flour"), SubResource("Resource_lv2_egg")])
+
+[sub_resource type="Resource" id="Resource_lv3_sugar"]
+script = ExtResource("1_stack")
+material = "game:item/sugar"
+amount = 10
+
+[sub_resource type="Resource" id="Resource_lv3_salt"]
+script = ExtResource("1_stack")
+material = "game:item/salt"
+amount = 10
+
+[sub_resource type="Resource" id="Resource_lv3_up"]
+script = ExtResource("2_up")
+target_level = 3
+coin_cost = 400
+materials = Array[ExtResource("1_stack")]([SubResource("Resource_lv3_sugar"), SubResource("Resource_lv3_salt")])
+
+[sub_resource type="Resource" id="Resource_lv4_spice"]
+script = ExtResource("1_stack")
+material = "game:item/spice"
+amount = 8
+
+[sub_resource type="Resource" id="Resource_lv4_oil"]
+script = ExtResource("1_stack")
+material = "game:item/oil"
+amount = 10
+
+[sub_resource type="Resource" id="Resource_lv4_up"]
+script = ExtResource("2_up")
+target_level = 4
+coin_cost = 900
+materials = Array[ExtResource("1_stack")]([SubResource("Resource_lv4_spice"), SubResource("Resource_lv4_oil")])
+
+[resource]
+script = ExtResource("3_mer")
+max_level = 4
+capacity_normal = Array[int]([20, 25, 30, 35])
+capacity_scarce = Array[int]([10, 12, 14, 16])
+refill_seconds = Array[float]([360.0, 300.0, 240.0, 180.0])
+upgrades = Array[ExtResource("2_up")]([SubResource("Resource_lv2_up"), SubResource("Resource_lv3_up"), SubResource("Resource_lv4_up")])
+id = "merchant/merchant"
+display_name = "data.merchant.name"
+description = "data.merchant.desc"

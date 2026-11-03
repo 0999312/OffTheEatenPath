@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_item"]
+
+[resource]
+script = ExtResource("1_item")
+kind = 1
+sell_price = 48
+taste = "data.item.smore.taste"
+catalog_hint = "data.item.smore.hint"
+order = 363
+theme = "game:theme/americas"
+order_weight = 0.5
+id = "item/smore"
+display_name = "data.item.smore.name"
+description = "data.item.smore.desc"

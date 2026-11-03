@@ -1,0 +1,4715 @@
+{
+	"ui": {
+		"app": {
+			"title": "隨食出發"
+		},
+		"tutorial": {
+			"step0_title": "讀第一封信",
+			"step0_body": "信箱裡有一封新信，拆開看看。",
+			"step1_title": "做第一道菜",
+			"step1_body": "信箱裡那封委託要一杯手衝；去灶臺做一杯，做成就算入門。",
+			"step2_title": "讀雜貨商人的信",
+			"step2_body": "把這封信讀完，雜貨商人就會開張，能買的東西也多起來。",
+			"step3_title": "交上第一單",
+			"step3_body": "訂單板已經開了。照單做一道，做齊了就交付。",
+			"go": "去",
+			"skip": "跳過"
+		},
+		"common": {
+			"not_enough": "錢或者材料不夠。",
+			"coins_short": "銅幣還差 {0}",
+			"list_sep": "、",
+			"instant": "立刻",
+			"seconds": "{0} 秒",
+			"minutes_seconds": "{0} 分 {1} 秒",
+			"coins_amount": "{0} 銅幣",
+			"device": "裝置",
+			"new_recipe": "新的做法"
+		},
+		"settings": {
+			"title": "設定",
+			"section_general": "通用",
+			"section_audio": "音訊",
+			"language": "語言",
+			"language_changed": "語言已切換。",
+			"language_name_zh": "中文",
+			"language_name_en": "English",
+			"volume_master": "總音量",
+			"volume_music": "音樂",
+			"volume_sfx": "音效",
+			"no_music": "還沒有背景音樂素材：放進 assets/audio/music/ 就會自動認出來。",
+			"section_save": "存檔",
+			"save_path": "位置：{0}（每 20 秒自動寫一次，關視窗也會寫；另有一份備份 .bak）",
+			"section_reset": "從頭開始",
+			"reset_hint": "會刪掉存檔並把這一局清空，不能撤銷。",
+			"reset_button": "清空存檔",
+			"reset_confirm": "真的清空？（再按一次）",
+			"reset_armed": "這一步之後，房間會回到最開始的樣子。",
+			"reset_done": "已經清空。",
+			"section_about": "關於",
+			"about_hint": "引擎、框架、音效、字型的出處與許可，都在致謝裡。",
+			"credits_button": "致謝與第三方許可",
+			"shortcuts": "快捷鍵：C 灶臺 · R 研究臺 · V 圖鑑 · F 裝置 · M 商人 · L 信箱 · O 設定 · Esc 返回",
+			"section_debug": "除錯",
+			"debug_hint": "正式流程裡，離線產出要等第 16 封信。這一項只出現在除錯構建裡，用來看結算彈窗長什麼樣。",
+			"debug_button": "測試：立即解鎖離線結算",
+			"debug_done": "已解鎖。關掉遊戲再開啟，就會看到離線結算。",
+			"research_guide_title": "研究臺引導",
+			"research_guide_hint": "研究臺第一次開啟時會貼出三步說明。想再看一遍，點下面這個按鈕，下次開啟研究臺時它會重新出現。",
+			"research_guide_button": "下次開啟研究臺時重看",
+			"research_guide_done": "好，下次開啟研究臺會再顯示一次。"
+		},
+		"hud": {
+			"coins": "銅幣",
+			"catalog": "圖鑑",
+			"mail_new": {
+				"one": "{0} 封新信",
+				"empty": "沒有符合的。",
+				"other": "{0} 封新信"
+			},
+			"orders": "訂單 {0}",
+			"orders_tooltip": "開啟訂單板，把做好的菜交出去",
+			"task_open": {
+				"one": "待辦 {0} 件",
+				"other": "待辦 {0} 件"
+			},
+			"mail_task": "{0} 封信 · {1} 件事",
+			"catalog_tooltip": "開啟圖鑑，看看這次新收錄的條目",
+			"mail_tooltip": "開啟信箱：讀信與待辦都在這裡",
+			"clock_playtime_tooltip": "遊戲時長 · 點選看現實時間",
+			"clock_realtime_tooltip": "現實時間 · 點選看遊戲時長"
+		},
+		"hint": {
+			"back": "右鍵 / Esc 返回"
+		},
+		"facility": {
+			"title": "裝置",
+			"subtitle": "東西越順手，等的時間越短。",
+			"empty": "還沒有任何裝置。",
+			"level": "Lv.{0} / {1}",
+			"speed": "並行 {0} 份　·　耗時 ×{1}",
+			"maxed": "已經到頂了。",
+			"upgrade_button": "升到 {0} 級（{1}）",
+			"upgraded": "{0} 升到了 {1} 級。",
+			"kitchen_title": "廚房擴建",
+			"kitchen_lanes": "當前 Lv.{0}：{1} 條產線；擴到 Lv.{2} 就是 {3} 條。",
+			"kitchen_lanes_max": "當前 Lv.{0}：{1} 條產線，已經擴到最大。",
+			"kitchen_parallel_hint": "同一臺裝置能並排做幾份，看那臺裝置自己的等級。",
+			"kitchen_upgrade": "擴建到 Lv.{0}（{1}）",
+			"kitchen_maxed": "廚房已經擴到最大了。",
+			"next_level": "升到 Lv.{0}：並行 {1} 份 · 耗時 ×{2}",
+			"section": "設施",
+			"warehouse_title": "倉庫",
+			"warehouse_body": "Lv.{0} · 常見材料最多 {1} 份，稀有材料 {2} 份。",
+			"warehouse_button": "檢視倉庫",
+			"research_title": "研究臺",
+			"research_body": "把兩樣材料放一起試，試出沒見過的做法。",
+			"research_button": "去研究",
+			"orders_title": "訂單容量",
+			"orders_body": "現在掛著 {0} / {1} 單，最多能擴到 {2} 單；擴容在訂單板裡。",
+			"orders_button": "看訂單"
+		},
+		"mail": {
+			"title": "信箱",
+			"tab_unread": "未讀 {0}",
+			"tab_read": "已讀 {0}",
+			"empty_unread": "沒有未讀的信了。",
+			"empty_read": "還沒有拆過的信。",
+			"subtitle": "信封上沒有寄件人，只有日期。",
+			"empty": "信箱裡什麼都沒有。",
+			"pending": "還有 {0} 封在路上。",
+			"waiting_catalog": "下一封要等圖鑑湊到 {0} 條才會到。",
+			"waiting_craft": "下一封要等你做出「{0}」之後才會到。",
+			"waiting_task": "下一封要等你把手裡的事辦完才會到。",
+			"waiting_task_hand_in": "先辦妥「{0}」裡的委託，下一封才會到。",
+			"waiting_letter": "下一封要等你讀完手裡的信才會到。",
+			"waiting_other": "下一封要等你再往前走一步才會到。",
+			"waiting_catalog_remaining": "下一封要等圖鑑湊到 {0} 條（還差 {1} 條）。",
+			"waiting_letter_catalog": "讀完「{0}」後，圖鑑還要湊到 {1} 條（還差 {2} 條）。",
+			"order": "第 {0} 封",
+			"unread": "未讀",
+			"tab_todo": "待辦 {0}",
+			"empty_todo": "還沒有應下的事。讀信的時候，有些話會請你搭把手。",
+			"task_from": "來自「{0}」",
+			"task_hint": "這封只要「{0}」這一樣，別為別的配方多花材料。",
+			"task_done": "辦妥了"
+		},
+		"letter": {
+			"attached": "隨信附上",
+			"offline_unlocked": "（離開的時候，這裡也會自己長東西了。）",
+			"task_heading": "信裡還夾著一張紙",
+			"task_accept": "接下這件事",
+			"task_accepted": "已經在待辦裡了",
+			"task_accepted_hint": "記到待辦裡了，信箱的第三頁能看到。",
+			"task_done": "辦妥了",
+			"task_progress": "{0} / {1}",
+			"task_reward": "辦成之後：{0}",
+			"task_craft": "做好並交出「{0}」× {1}",
+			"task_craft_theme": "做出「{0}」的菜 {1} 道，回來確認",
+			"task_craft_tag": "做出帶「{0}」標籤的菜 {1} 道，回來確認",
+			"task_collect": "湊齊並交出「{0}」× {1}",
+			"task_hand_in": "交付",
+			"task_confirm": "確認完成",
+			"task_need_stock": "交付需要「{0}」× {1}，現有 {2}。",
+			"task_ready": "可以交付",
+			"task_ready_confirm": "可以確認完成",
+			"task_keep_hint": "交付會扣掉這些物品。",
+			"task_catalog": "圖鑑湊到 {0} 條",
+			"task_deliver": "交出去 {0} 份訂單",
+			"task_research": "研究出「{0}」",
+			"handwriting_unknown": "字跡很陌生，不像這車上的人寫的。",
+			"handwriting_familiar": "這筆跡有點眼熟，可想不起來在哪見過。",
+			"handwriting_own": "是我的字。我不記得寫過。"
+		},
+		"merchant": {
+			"title": "雜貨商人",
+			"subtitle": "「這些你拿去做點吃的，比放我這兒值。」",
+			"tab_buy": "買",
+			"tab_sell": "賣",
+			"show_all": "顯示全部",
+			"filter_owned": "有貨",
+			"filter_all": "全部",
+			"search_placeholder": "搜材料或菜名",
+			"empty": "今天沒什麼可賣的。",
+			"empty_owned": "手上沒有能賣的東西，切到「全部」看看。",
+			"empty_sell": "暫時沒有能收的菜。",
+			"foods_caption": "成品食物（他按份收）",
+			"each_price": "每個 {0} 銅幣",
+			"per_portion": "每份 {0} 銅幣",
+			"owned": "手上有 {0}",
+			"buy_button": "買 {0}（{1} 銅幣）",
+			"sell_button": "賣 {0}（{1} 銅幣）",
+			"bought": "買下 {0} × {1}。",
+			"sold": "賣掉 {0} × {1}。",
+			"not_enough_coins": "銅幣不夠了。",
+			"not_enough_items": "手上的不夠。",
+			"shop_stock": "貨架 {0} / {1}",
+			"shop_refill": "{0}後補滿",
+			"refill_all": "全部貨架 {0}後補滿",
+			"shop_sold_out": "貨架空了，等補貨。",
+			"buy_one": "買 1",
+			"card_hint": "點一張卡買賣。",
+			"card_price": "{0} 銅 / 份",
+			"card_shelf": "貨架 {0}/{1}",
+			"sell_all": "全賣（{0} 銅幣）",
+			"trade_cancel": "再想想",
+			"count": "共 {0} 樣",
+			"page": "第 {0} / {1} 頁",
+			"prev": "上一頁",
+			"next": "下一頁",
+			"group_none": "不分組",
+			"group_source": "按產地",
+			"group_category": "按材料分類",
+			"family_seafood": "海鮮",
+			"family_meat": "肉類",
+			"family_fruit": "水果",
+			"family_veg": "蔬菜",
+			"family_misc": "其他",
+			"group_kind": "按型別",
+			"group_intermediate": "中間材料",
+			"group_food": "成品菜",
+			"group_theme": "按主題",
+			"sort_default": "預設順序",
+			"sort_price_up": "價格低的在前",
+			"sort_price_down": "價格高的在前",
+			"sort_name": "按名字",
+			"sort_owned": "手上多的在前",
+			"level_button": "商人 Lv.{0}",
+			"level_title": "商人",
+			"level_current": "現在是 Lv.{0} / {1}",
+			"level_slots": "普通貨架 {0} 格 · 貴料 {1} 格",
+			"level_refill": "{0}補滿一輪",
+			"level_hint": "他進得越多，貨架越寬，補得也越快。",
+			"level_next": "升到 Lv.{0}",
+			"level_next_gain": "普通 {0} 格 · 貴料 {1} 格 · 補滿 {2}",
+			"level_cost": "要 {0}",
+			"level_up_button": "升級（Lv.{0}）",
+			"level_max": "他已經沒什麼能再進的了。",
+			"level_done": "商人升到了 Lv.{0}。"
+		},
+		"warehouse": {
+			"title": "倉庫",
+			"subtitle": "「先數數手裡有什麼，再談賣多少。」",
+			"tab_material": "材料",
+			"tab_food": "成品",
+			"tab_harvest": "產地",
+			"search_placeholder": "搜材料或菜名",
+			"buyer_merchant": "商人",
+			"buyer_hint": "目前只有一位商人。",
+			"filter_all": "全部",
+			"filter_sellable": "能賣的",
+			"filter_theme": "主題",
+			"filter_tag": "標籤",
+			"theme_all": "全部主題",
+			"tag_all": "全部標籤",
+			"kind_material": "材料",
+			"kind_food": "成品",
+			"owned": "存量 {0}",
+			"source_line": "來源：{0}",
+			"source_merchant": "商人有售",
+			"source_free": "免費",
+			"source_recipe": "配方「{0}」",
+			"source_unknown": "來路不明",
+			"known": "已記下",
+			"sell_button": "賣 {0}（{1} 銅幣）",
+			"sell_all": "賣光 {0} 份",
+			"sell_all_armed": "確認賣光（{0} 銅幣）",
+			"sell_armed": "再點一次，整摞賣給他。",
+			"sold": "賣掉 {0} × {1}，{2} 銅幣。",
+			"not_enough": "手上的不夠。",
+			"no_buyer": "這樣商人暫時不收。",
+			"empty_material": "倉裡還沒有材料。去門口收貨箱敲一下，或者找商人。",
+			"empty_food": "還沒有做好的菜。灶臺熱著，去做一份。",
+			"count": "共 {0} 樣",
+			"page": "第 {0} / {1} 頁",
+			"prev": "上一頁",
+			"next": "下一頁",
+			"group_none": "不分組",
+			"group_source": "按來源",
+			"group_theme": "按主題",
+			"sort_owned": "存量多的在前",
+			"sort_price_down": "收購價高的在前",
+			"sort_name": "按名字",
+			"sort_default": "預設順序",
+			"capacity_title": "倉儲上限",
+			"capacity_line": "常見 {0} · 稀料 {1} · 中間材料 {2}（每樣）",
+			"capacity_hint": "上限只擋產地自己往上堆；買回來的、做出來的、信裡送的都不受它限制。",
+			"capacity": "上限 {0}",
+			"upgrade": "倉庫升到 {0} 級（{1}）",
+			"upgrade_maxed": "倉庫已經擴到最大",
+			"harvest_stats": "每次 {0} 份 · 冷卻 {1} 秒",
+			"harvest_trickle": "自動 {0} 秒一份",
+			"harvest_upgrade": "產地升到 {0} 級（{1}）",
+			"harvest_items": "另交 {0} 份{1}",
+			"harvest_upgraded": "{0}升到 {1} 級。",
+			"harvest_maxed": "這條產地已經升到頂了。",
+			"harvest_need_letter": "讀完「{0}」後開始出產。",
+			"harvest_need_facility": "{0}升到 {1} 級後開始出產。",
+			"harvest_locked": "這條路還沒通。",
+			"empty_harvest": "還沒有能出產的產地。"
+		},
+		"order": {
+			"title": "訂單板",
+			"subtitle": "「路過的人把想吃的寫在紙上，從視窗遞進來。我照著做，他們照著付。」",
+			"subtitle_boost": "{0}\n正在帶動：{1}",
+			"full": "單子接滿了。交付一份，下一份才會來。",
+			"next_in": "下一份委託大約 {0} 分鐘後到。",
+			"empty": "還沒有委託。先解鎖一道菜，客人就知道該點什麼了。",
+			"reward": "酬勞 {0} 銅幣",
+			"bonus": "另贈 {0} × {1}",
+			"have": "手上有 {0} / {1} 份",
+			"go_craft": "去做",
+			"deliver": "交付",
+			"delivered": "交掉了 {0} × {1}。",
+			"not_enough": "手上的菜不夠。",
+			"signature": "招牌",
+			"signature_theme": "招牌菜系 {0} ×{1}",
+			"capacity": "單子 {0} / {1}",
+			"upgrade": "擴容（{0}）",
+			"upgrade_maxed": "已經擴到最大",
+			"upgraded": "單子板擴到 {0} 張。",
+			"upgrade_denied": "銅幣不夠，擴不了。",
+			"refresh": "換一批",
+			"refresh_in": "換一批（{0} 秒）",
+			"refreshed": "換了一批新單子。",
+			"refresh_wait": "剛換過，再等等。",
+			"decline": "拒",
+			"declined": "推掉了這一單。"
+		},
+		"craft": {
+			"title": "灶臺",
+			"subtitle": "東西夠不夠，鍋裡會告訴你。",
+			"empty": "還沒有任何配方。",
+			"in_progress": "進行中",
+			"pick": "左邊選一樣做做看。",
+			"pick_craftable": "切到「全部」能看到每道菜缺什麼；材料多半在門口收貨箱或商人那兒。",
+			"needs": "需要",
+			"craft_button": "做一份",
+			"repeat": "連續做",
+			"repeat_on": "會連著做 {0}。",
+			"repeat_off": "不再連續做。",
+			"ingredient_have": "　手上有 {0}",
+			"ingredient_free": "　不要錢",
+			"handmade": "手作",
+			"facility_level": "{0}（{1} 級）",
+			"facility_line": "裝置：{0} · 耗時：{1}",
+			"card_need_facility": "需要 {0}",
+			"used_in": "它可以做…",
+			"used_in_more": "還有 {0} 種",
+			"used_in_unknown": "？？？",
+			"used_in_research": "需要研究",
+			"output_line": "產出：{0}",
+			"food_meta": "訂單權重 {0} · 賣價 {1}",
+			"tag_members": "「{0}」有這些（共 {1} 種）",
+			"tag_members_more": "還有 {0} 種沒列",
+			"job_left": "還剩 {0}",
+			"started": "開始做 {0}。",
+			"cant_craft": "材料不夠，或者正好騰不出手。",
+			"batches": "份數 {0} / {1} · 耗材 ×{0}",
+			"batch_cost": "一次做 {0} 份：耗材 ×{0}，約 {1}",
+			"craft_button_batch": "做 {0} 份",
+			"lane_busy": "產線都佔著，等一爐出來再開。",
+			"lanes_in_use": "{0} / {1} 條產線在忙",
+			"group_semi": "半成品",
+			"group_drink": "飲品",
+			"group_bake": "烘焙",
+			"group_steam": "蒸點",
+			"group_meal": "正餐",
+			"need_first": "先做一份 {0}",
+			"group_simple": "簡單菜",
+			"facility_locked": "{0} 還沒到手",
+			"nothing_craftable": "這會兒沒有能做的。",
+			"group_title": "{0} · {1}",
+			"lanes_idle": "{0} 條產線都空著",
+			"search_placeholder": "找一道菜…",
+			"filter_all": "全部",
+			"filter_craftable": "可做",
+			"theme_all": "所有地方",
+			"filter_theme": "地方",
+			"tag_all": "所有標籤",
+			"filter_tag": "標籤",
+			"empty_result": "這麼篩，一道都沒落下來。換個詞，或者放寬一點。",
+			"card_guided": "委託",
+			"card_new": "新",
+			"filter_uncrafted": "未記錄"
+		},
+		"filter": {
+			"more": "篩選",
+			"more_count": "篩選 · {0}",
+			"done": "完成",
+			"result_count": "{0} 條",
+			"group_tip": "按什麼把這一頁分堆",
+			"other": "其他",
+			"sort_tip": "這一頁按什麼順序排",
+			"empty": "這麼篩，一樣都沒剩下。換個詞，或者放寬一點。"
+		},
+		"catalog": {
+			"title": "圖鑑",
+			"subtitle": "記下來的味道，會一直留在這裡。",
+			"cat_material": "材料",
+			"cat_food": "食物",
+			"cat_recipe": "工藝",
+			"cat_facility": "裝置",
+			"cat_world": "世界",
+			"cat_letter": "信件",
+			"recorded": "已記錄 {0} / {1}",
+			"page": "第 {0} / {1} 頁",
+			"prev": "上一頁",
+			"next": "下一頁",
+			"group_none": "不分組",
+			"group_theme": "按主題",
+			"group_source": "按產地",
+			"group_category": "按材料分類",
+			"family_seafood": "海鮮",
+			"family_meat": "肉類",
+			"family_fruit": "水果",
+			"family_veg": "蔬菜",
+			"family_misc": "其他",
+			"filter_theme": "主題",
+			"filter_tag": "標籤",
+			"sort_default": "預設順序",
+			"sort_name": "按名字",
+			"unknown": "？？？",
+			"theme_locked": "還沒到那裡。",
+			"locate_failed": "沒找到那條新收錄，先留在當前這一頁。",
+			"view": "檢視",
+			"cost_time": "耗時 {0}",
+			"from_letter": "來信",
+			"gathered": "沿線拾得",
+			"semi_finished": "半成品",
+			"recipe_summary": "做出來的東西。",
+			"facility_summary": "最高 {0} 級。",
+			"hint_food": "還沒吃過這樣的東西。",
+			"hint_recipe_locked": "還沒想出來怎麼做。",
+			"hint_research_try": "還沒想出來。到研究臺把 {0} 放一起試試。",
+			"any_tag": "任意{0}",
+			"progress_early": "才剛翻開。再記下一些，就會有信寄到。",
+			"progress_quarter": "還差不少。再記下一些，就會有信寄到。",
+			"progress_half": "已經過半。再記下一些，就會有信寄到。",
+			"progress_near": "就差一點。再記下一些，就會有信寄到。",
+			"progress_done": "這一路都記下了。",
+			"hint_recipe": "還沒做過。",
+			"hint_facility": "還不太會用。",
+			"hint_letter": "還沒有寄到。",
+			"hint_world": "還沒到過那裡。",
+			"hint_unknown": "還沒見過。",
+			"detail_title": "圖鑑 · {0}",
+			"missing": "這條記錄不見了。",
+			"recorded_badge": "已記錄",
+			"not_recorded": "尚未記錄",
+			"first_meet": "等第一次遇見它，這一頁才會寫滿。",
+			"fact_category": "類別：{0}",
+			"fact_harvest_cap": "採到 {0} 就滿倉，再多靠商人或配方",
+			"fact_trickle": "放著不管，每 {0} 秒自動多一份",
+			"fact_merchant_price": "商人售價：{0} / 份",
+			"fact_merchant_buy": "商人收購：{0} / 份",
+			"fact_taste": "口味：{0}",
+			"fact_duration": "耗時：{0}",
+			"fact_inputs": "需要：{0}",
+			"fact_output": "產出：{0}",
+			"fact_locked_hint": "還沒想出來：{0}",
+			"try_combo": "試試組合已知材料。",
+			"fact_max_level": "最高等級：{0}",
+			"hint_material_base": "在沿線撿到的東西，放一會兒就有了。",
+			"hint_material_semi": "自己動手做出來的半成品。",
+			"hint_material_made": "用 {0} 在{1}做出來。",
+			"hint_material_made_plain": "用 {0} 做出來。",
+			"hint_material_buy": "商人那兒有，{0} 銅幣一份。",
+			"hint_material_harvest": "{0}能弄到。",
+			"hint_material_harvest_locked": "要{0}到 Lv.{1} 才採得到（現在 Lv.{2}）。",
+			"hint_material_harvest_unopened": "等{0}開放後就能採到。",
+			"source_separator": "；",
+			"hint_material_free": "常備，不用攢。",
+			"hint_material_unknown": "還沒見過，路上留意一下。",
+			"fact_unlock": "{0} 到 Lv.{1} 後開始自動產出",
+			"harvest_upgrade_tip": "升到 Lv.{0}：{1} 銅幣 + {2} 份{3}",
+			"section_origin": "來源",
+			"section_value": "價值",
+			"section_method": "做法",
+			"section_spec": "規格",
+			"row_source": "產地",
+			"row_speed": "一輪耗時",
+			"row_pool": "能採到",
+			"row_cap": "存得住",
+			"row_trickle": "自動積攢",
+			"row_unlock": "開放條件",
+			"row_price": "商店價",
+			"row_sell": "收購價",
+			"row_duration": "耗時",
+			"row_inputs": "用料",
+			"row_output": "出鍋",
+			"row_made_by": "怎麼做",
+			"row_category": "類別",
+			"row_max_level": "最高等級",
+			"row_order": "第幾封",
+			"value_speed": "每 {0} 秒一份",
+			"value_cap": "{0} 份",
+			"value_trickle": "每 {0} 秒自動多一份",
+			"value_price": "{0} / 份",
+			"value_unlock": "{0} 到 Lv.{1} 後開始產出",
+			"value_unlock_letter": "讀完「{0}」後開始產出",
+			"search_placeholder": "搜名字或口味",
+			"filter_all": "全部",
+			"filter_found": "已記錄",
+			"filter_missing": "未記錄",
+			"theme_all": "全部主題",
+			"empty_result": "沒有對上的條目。",
+			"category_coffee_machine": "咖啡機",
+			"category_grinder": "研磨機",
+			"category_oven": "烤箱",
+			"category_stove": "灶臺",
+			"category_steamer": "蒸籠",
+			"category_pan": "平底鍋",
+			"tag_all": "全部標籤",
+			"category_fridge": "冰箱",
+			"fact_harvest_at": "{0} 每 {1} 秒能採一份",
+			"fact_harvest_pool": "現在能採到：{0}"
+		},
+		"research": {
+			"title": "研究臺",
+			"tab_candidates": "候選 {0}",
+			"tab_desk": "檯面",
+			"tab_records": "記錄 {0}",
+			"subtitle": "試錯的代價是燒掉一點東西，但試到一次就記下了。",
+			"all_known": "還沒有想不出來的東西 —— 灶臺上的每一道都知道怎麼做了。",
+			"no_candidates": "現在沒有能試的組合。先做出或解鎖更多配方，研究線索會跟著出現。",
+			"show_all": "看看全部線索",
+			"desk_level": "同時試 {0} 組",
+			"burn_rate": "不成會燒掉 {0} 份",
+			"upgrade_button": "升級研究臺（{0}）",
+			"upgraded": "研究臺升到 {0} 級。",
+			"upgrade_hint": "損耗更少、能同時試更多組",
+			"candidates": "候選材料",
+			"pick_hint": "點一下放進槽位",
+			"only_owned": "只看手上",
+			"search_hint": "搜材料名",
+			"family_filter": "材料分類",
+			"family_all": "全部",
+			"family_seafood": "海鮮",
+			"family_meat": "肉類",
+			"family_fruit": "水果",
+			"family_veg": "蔬菜",
+			"family_misc": "其他",
+			"no_match": "沒有匹配的材料。",
+			"picked": "放進去的",
+			"slot_tooltip": "點一下拿出來",
+			"try_button": "試一試（{0} 樣）",
+			"need_more": "還要再放 {0} 樣。",
+			"too_many": "最多隻能放 {0} 樣。",
+			"desk_busy": "臺上還佔著，等一會兒或者先收回一組。",
+			"no_materials": "材料不夠。",
+			"burn_warn": "不成的話，會燒掉 {0} 份材料。",
+			"in_progress": "進行中",
+			"desk_empty": "檯面上是空著的。",
+			"cancel": "收回",
+			"cancelled": "材料收回來了。",
+			"records": "記下來的試法：{0} 種",
+			"records_empty": "試過的組合會記在這裡，再試一次不會燒材料。",
+			"last": "上次：{0}",
+			"started": "放上去了，等一會兒看結果。",
+			"cant_start": "放不進去 —— 材料、空位或者候選池有一個不對。",
+			"job": "{0} · {1}% · 還剩 {2}",
+			"line_sep": "　",
+			"desc_untried": "還沒試過這個組合。",
+			"desc_near_miss": "像是差了一味（{0} 還差一樣）。",
+			"desc_near_miss_missing": "像是差了一味：{0} 還差 {1}。",
+			"desc_heat": "火候不對：{0} 至少要 {1} 級。",
+			"desc_heat_ready": "火候夠了：{0} 已經到 {1} 級，可以再試一次。",
+			"desc_success": "成了：{0}。",
+			"desc_mismatch": "這幾樣湊在一起，不成東西。",
+			"desc_facility": "裝置",
+			"cost_hint": "每樣先扣 1 份，另有一半機會多扣 1 份。",
+			"usage_hint": "還能試 {0} 個方向：挑 2–4 樣放進槽位，點「試一試」。",
+			"empty_hint": "多做幾道菜、多記錄圖鑑，會有新的研究方向浮出來。",
+			"guide_title": "研究臺怎麼用",
+			"guide_step_1": "1. 在「候選」頁點 2–4 樣材料，它們會進檯面的槽位。",
+			"guide_step_2": "2. 點「試一試」：材料會被花掉，對上了就學會那道做法。",
+			"guide_step_3": "3. 沒對上會燒掉一點；結果記進「記錄」，同一組再試不扣東西。",
+			"guide_ok": "知道了",
+			"history_cost": "燒掉：{0}",
+			"history_no_burn": "這次沒燒掉東西。",
+			"history_tuition": "放進槽位的都算學費。",
+			"free_badge": "常備"
+		},
+		"credits": {
+			"title": "致謝",
+			"subtitle": "這些不是我們做的，但少了它們，屋子裡會安靜很多。",
+			"engine_title": "引擎",
+			"engine_body": "Godot Engine 4.7.2 · MIT 許可 · godotengine.org",
+			"framework_title": "遊戲框架（自有）",
+			"framework_body": "mc_game_framework 1.0.0 · 本專案自己寫的外掛（SyameimaruZheng）· 隨專案分發",
+			"sfx_title": "音效播放",
+			"sfx_body": "Sound Manager · MIT 許可 · Nathan Hoad",
+			"sfx_assets_title": "音效素材",
+			"sfx_assets_body": "Kenney 音效包（Interface Sounds / Impact Sounds，切換聲與環境音）· CC0 · kenney.nl",
+			"music_title": "背景音樂",
+			"music_body": "Cozy Tunes（pizzadoggy）· 單座許可 · 曲目只隨遊戲使用，不再分發原檔案 · pizzadoggy.itch.io",
+			"font_title": "字型",
+			"font_body": "MiSans（MiSans-Semibold）· 小米 · 按 MiSans 字型智慧財產權許可協議免費使用",
+			"icons_title": "介面圖示",
+			"icons_body": "Game Icon Pack（Nieobie）· CC0 · github.com/Nieobie/game-icon-pack",
+			"shader_title": "車窗光著色器",
+			"shader_body": "God rays（pend00）· CC0 1.0 · godotshaders.com/shader/god-rays",
+			"test_title": "測試工具（不隨遊戲分發）",
+			"test_body": "GUT 9.6.0 · MIT 許可",
+			"footer": "完整清單（含許可全文指引）見倉庫 docs/THIRD_PARTY.md。"
+		},
+		"offline": {
+			"title": "你不在的時候",
+			"locked": "屋子裡還沒有自己生長起來的東西 —— 這需要一封合適的來信。",
+			"nothing": "什麼也沒長出來。也許該先修好灶臺。",
+			"tips": "銅幣（看店小費）",
+			"orders": "訂單板重新整理了 {0} 次，新的委託已經擺上桌。",
+			"letters": "信箱裡多了 {0} 封信。",
+			"elapsed_days": "{0} 天 {1} 小時",
+			"elapsed_hours": "{0} 小時 {1} 分",
+			"elapsed_minutes": "{0} 分",
+			"take": "收下",
+			"elapsed_less_minute": "不到 1 分鐘"
+		},
+		"hotspot": {
+			"stove_title": "灶臺",
+			"stove_subtitle": "熬成一鍋",
+			"equipment_title": "裝置",
+			"equipment_subtitle": "更快的裝置",
+			"merchant_title": "雜貨商人",
+			"merchant_subtitle": "賣貨與進貨",
+			"merchant_locked": "讀完雜貨商人的信後開張",
+			"shelf_title": "書架",
+			"shelf_subtitle": "記下的味道",
+			"mail_title": "信箱",
+			"mail_subtitle": "外面來的信",
+			"research_title": "研究臺",
+			"research_subtitle": "試沒試過的組合",
+			"research_subtitle_hint": "還有沒試出來的菜，去試試？"
+		},
+		"table": {
+			"title": "桌上",
+			"caption": "正在做的，和剛做好的",
+			"empty": "桌上空著",
+			"empty_hint": "灶臺還熱著，去做點什麼。",
+			"go_stove": "去灶臺",
+			"thing": "東西",
+			"research_title": "研究中：{0}",
+			"materials_count": "手上有 {0} 種材料",
+			"view_warehouse": "看看倉庫"
+		},
+		"toast": {
+			"crafted": "{0} 做好了",
+			"crafted_first": "（第一次做出來，+{0} 銅幣）",
+			"letter": "信箱裡多了一封信 · {0}",
+			"facility_upgraded": "{0} 升到 Lv.{1}",
+			"recipe_unlocked": "研究出了新做法 · {0}",
+			"milestone": "圖鑑收了一成新的 · +{0} 銅幣",
+			"coin_picked": "+{0} 銅幣，收下了",
+			"task_done": "這件事辦妥了 · {0}",
+			"merchant_locked": "雜貨商人還沒開張：先讀完那封來信。",
+			"orders_locked": "訂單板還沒開：得等離店前的那封信。"
+		},
+		"ambient": {
+			"sign_title": "熱食",
+			"sign_subtitle": "隨食出發",
+			"sign_label": "招牌菜",
+			"sign_clear": "不設",
+			"sign_slot": "第 {0} 道",
+			"sign_auto": "自動",
+			"sign_auto_tip": "淺色的是自動推薦，不計加成；點便條可自己選。"
+		},
+		"harvest": {
+			"ready": "可採",
+			"cooling": "{0} 秒後",
+			"full": "倉滿了"
+		}
+	},
+	"data": {
+		"theme": {
+			"africa": {
+				"name": "非洲",
+				"desc": "厚實的主食，配一鍋燉菜。"
+			},
+			"americas": {
+				"name": "美洲",
+				"desc": "從烤肉到玉米，分量都實在。"
+			},
+			"base": {
+				"name": "家常",
+				"desc": "不強調地域的日常：一杯咖啡、一份點心、一頓簡單的飯。"
+			},
+			"cafe": {
+				"name": "咖啡館",
+				"desc": "店裡那套選單：咖啡、甜點和下午的座位。"
+			},
+			"east_asia": {
+				"name": "東亞餐食",
+				"desc": "從米和麵出發的家常飯食，蒸、炒、煮、燉都有。"
+			},
+			"fast_food": {
+				"name": "西式快餐",
+				"desc": "紙包一拆就吃，站著也行。"
+			},
+			"mediterranean": {
+				"name": "地中海",
+				"desc": "橄欖油、番茄和很足的陽光。"
+			},
+			"middle_east": {
+				"name": "中東·中亞",
+				"desc": "香料與慢火，鍋蓋一掀就香。"
+			},
+			"south_asia": {
+				"name": "南亞",
+				"desc": "一層一層的香料，越煮越厚。"
+			},
+			"southeast_asia": {
+				"name": "東南亞",
+				"desc": "酸、辣、椰漿，一口就醒。"
+			},
+			"western": {
+				"name": "經典西餐",
+				"desc": "刀叉擺好，慢慢吃的一類。"
+			}
+		},
+		"tag": {
+			"breakfast": {
+				"name": "早餐",
+				"desc": "天亮不久，先墊一口。"
+			},
+			"festival": {
+				"name": "節慶",
+				"desc": "要有人一起，才值得做的那一類。"
+			},
+			"home": {
+				"name": "家常",
+				"desc": "日常的、不挑場合的那一類：材料普通，做起來也不費事。"
+			},
+			"late_night": {
+				"name": "夜宵",
+				"desc": "燈關了以後，還想再吃一點。"
+			},
+			"soup": {
+				"name": "湯羹",
+				"desc": "碗裡是熱的，勺子先動。"
+			},
+			"spicy": {
+				"name": "辛辣",
+				"desc": "辣味從舌頭後面上來。"
+			},
+			"street": {
+				"name": "街邊·宵夜",
+				"desc": "可以拿著走、或者深夜才想起來吃的那一類。"
+			},
+			"sweet": {
+				"name": "甜品·飲品",
+				"desc": "帶甜的、帶冰的、能端在手裡慢慢喝的那一類。"
+			},
+			"vegetarian": {
+				"name": "素食",
+				"desc": "不含肉，也不覺得缺。"
+			},
+			"meat": {
+				"name": "肉類",
+				"desc": "寫著「任意一種肉」，做菜時拿哪種都行。"
+			},
+			"veg": {
+				"name": "蔬菜",
+				"desc": "「任意一種蔬菜」，手上有什麼就用什麼。"
+			},
+			"fruit": {
+				"name": "水果",
+				"desc": "「任意一種水果」，甜一點酸一點都算。"
+			},
+			"seafood": {
+				"name": "海鮮",
+				"desc": "「任意一種海鮮」，魚蝦貝都算在內。"
+			},
+			"pantry": {
+				"name": "雜貨",
+				"desc": "廚房裡隨手能拿到的那一類：鹽、糖、糧油、咖啡豆。"
+			},
+			"livestock": {
+				"name": "畜牧",
+				"desc": "「任意一種肉、蛋或奶」，牧場裡出什麼就用什麼。"
+			},
+			"chocolate": {
+				"name": "巧克力",
+				"desc": "「任意一種巧克力」，黑巧或牛奶巧克力都算。"
+			}
+		},
+		"facility": {
+			"coffee_machine": {
+				"name": "咖啡機",
+				"desc": "按下按鈕後，它會先沉默一秒。"
+			},
+			"grinder": {
+				"name": "研磨機",
+				"desc": "轉起來會有一點抖。"
+			},
+			"oven": {
+				"name": "烤箱",
+				"desc": "門上那塊玻璃，永遠有點霧。"
+			},
+			"pan": {
+				"name": "平底鍋",
+				"desc": "鍋底一層薄油光，邊緣被火燎得發黑。"
+			},
+			"research_desk": {
+				"name": "研究臺",
+				"desc": "桌面一角，擺著磨得發亮的木盤和幾隻空碗。"
+			},
+			"steamer": {
+				"name": "蒸籠",
+				"desc": "蓋子一掀，白氣先跑出來，什麼都看不清。"
+			},
+			"stove": {
+				"name": "灶臺",
+				"desc": "火調小一點，鍋裡的聲音就慢下來了。"
+			},
+			"fridge": {
+				"name": "冰箱",
+				"desc": "嗡嗡響的鐵櫃子，裡面比外面冷。"
+			},
+			"warehouse": {
+				"name": "倉庫",
+				"desc": "牆角那排架子。放得下多少，看它有多高。"
+			}
+		},
+		"item": {
+			"eggplant": {
+				"name": "茄子",
+				"desc": "紫皮發亮，切開裡面是綿的白。"
+			},
+			"cassava": {
+				"name": "木薯",
+				"desc": "外皮糙，削開是雪白的肉。"
+			},
+			"roasted_eggplant": {
+				"taste": "焦皮和醬油香混在一起，筷子一夾就斷。",
+				"hint": "整條烤到皮皺，再劃開鋪料。",
+				"name": "烤茄子",
+				"desc": "茄子整條烤軟，劃開鋪上香料和醬油，再回爐烤到冒油。"
+			},
+			"eggplant_parmesan": {
+				"taste": "芝士拉絲，茄子吸飽了番茄汁。",
+				"hint": "茄子先煎過，才不會出水。",
+				"name": "茄子帕瑪森",
+				"desc": "茄子切片煎軟，和番茄、芝士一層層疊好，烤到表面起泡。"
+			},
+			"cassava_fries": {
+				"taste": "外殼脆，裡面是粉的。",
+				"hint": "木薯切條先煮半熟，再炸才不夾生。",
+				"name": "炸木薯條",
+				"desc": "木薯切條煮到半熟，瀝乾下鍋炸到金黃，撒鹽。"
+			},
+			"cassava_cake": {
+				"taste": "軟糯，椰香壓過甜味。",
+				"hint": "木薯磨細，和椰漿拌到沒有疙瘩。",
+				"name": "木薯糕",
+				"desc": "木薯磨成漿，拌椰漿和糖，上蒸籠蒸到成型。"
+			},
+			"americano": {
+				"taste": "苦得乾淨，像把早晨擦了一下。",
+				"hint": "熱水衝過一份濃縮之後剩下的那杯。",
+				"name": "美式",
+				"desc": "濃縮加一次水。簡單到不需要等，也簡單到很難做錯。"
+			},
+			"apple_crumble": {
+				"taste": "上面是碎的，下面是軟的。",
+				"hint": "黃油要冷，搓出來的粒才大。",
+				"name": "蘋果酥",
+				"desc": "蘋果鋪底，麵糰拌黃油搓成碎撒上去，烤到金黃。"
+			},
+			"apple_pie": {
+				"taste": "邊緣的皮更酥，中間是軟的。",
+				"hint": "蘋果先炒掉水，餡才不會流。",
+				"name": "蘋果派",
+				"desc": "蘋果加糖炒軟，包進麵糰，烤到表面發黃。"
+			},
+			"arancini": {
+				"taste": "咬開有芝士流出來。",
+				"hint": "飯要放涼再捏，不然會散。",
+				"name": "意式炸飯糰",
+				"desc": "冷飯包芝士，捏成團，下鍋炸到金黃。"
+			},
+			"asado": {
+				"taste": "外面焦，裡面是粉的。",
+				"hint": "鹽要粗，烤之前才撒。",
+				"name": "阿根廷烤肉",
+				"desc": "大塊肉抹油和鹽，慢烤到外焦裡粉。"
+			},
+			"avocado_toast": {
+				"taste": "綠的那層壓得不太平。",
+				"hint": "吐司烤脆一點，壓上去才不塌。",
+				"name": "蔬菜泥吐司",
+				"desc": "吐司烤脆，壓上搗碎的蔬菜，淋一點油。"
+			},
+			"baba_ganoush": {
+				"taste": "有煙燻味，顏色是灰的。",
+				"hint": "烤到皮皺，肉才軟。",
+				"name": "烤茄子泥",
+				"desc": "茄子烤到皮皺，挖出肉，拌油和香料。"
+			},
+			"bagel": {
+				"taste": "皮是韌的，裡面緊。",
+				"hint": "先煮後烤，皮才亮。",
+				"name": "貝果",
+				"desc": "麵糰搓圈，先下水煮一下，再進烤箱。"
+			},
+			"bagel_sandwich": {
+				"taste": "貝果切開，芝士抹得很滿。",
+				"hint": "貝果先烤一下，切面才不軟。",
+				"name": "貝果三明治",
+				"desc": "貝果橫切，抹奶油芝士，夾一層菜。"
+			},
+			"baklava": {
+				"taste": "一咬就碎，糖漿粘手指。",
+				"hint": "烤好再淋糖漿，才脆。",
+				"name": "果仁蜜餅",
+				"desc": "麵皮夾堅果，烤到金黃，淋糖漿。"
+			},
+			"banana_rice": {
+				"taste": "甜的，但配菜是鹹的。",
+				"hint": "香蕉要熟到發黑。",
+				"name": "香蕉飯",
+				"desc": "飯和椰奶煮軟，配熟透的香蕉。"
+			},
+			"banh_mi": {
+				"taste": "麵包殼很脆，裡面塞得很滿。",
+				"hint": "麵包要烤一下，殼才響。",
+				"name": "越南法棍",
+				"desc": "法棍烤脆，夾肉、菜，淋醬。"
+			},
+			"beef_bourguignon": {
+				"taste": "肉一抿就散，汁掛在勺上。",
+				"hint": "小火，蓋著，別頻繁開蓋。",
+				"name": "慢燉牛肉",
+				"desc": "牛肉煎上色，裹麵粉，加蔬菜和香料，小火燉到軟。"
+			},
+			"beef_wellington": {
+				"taste": "切開來是粉的，酥皮一層層。",
+				"hint": "酥皮要包緊，不然會開。",
+				"name": "惠靈頓牛排",
+				"desc": "肉煎上色，裹上蘑菇碎，包進麵糰，刷蛋液烤。"
+			},
+			"bibimbap": {
+				"taste": "拌開之前很好看，拌開之後更好吃。",
+				"hint": "蛋要半熟，拌開才潤。",
+				"name": "拌飯",
+				"desc": "飯上鋪菜、肉和煎蛋，加辣醬拌開。"
+			},
+			"biryani": {
+				"taste": "米是一粒粒的，有藏紅花色。",
+				"hint": "分層鋪好，別攪。",
+				"name": "比爾亞尼",
+				"desc": "飯和肉分層鋪好，撒堅果，燜到入味。"
+			},
+			"blt": {
+				"taste": "培根的油滲進吐司，番茄是涼的。",
+				"hint": "培根煎脆，生菜要幹。",
+				"name": "BLT",
+				"desc": "培根、生菜、番茄，三樣夾進吐司。名字就是配方。"
+			},
+			"boerewors": {
+				"taste": "很粗，切開有汁。",
+				"hint": "別扎孔，汁會流掉。",
+				"name": "南非香腸",
+				"desc": "肉餡調香料灌成腸，煎到表面焦。"
+			},
+			"boiled_egg": {
+				"taste": "蛋白彈，蛋黃粉。",
+				"hint": "六分鐘溏心，十分鐘全熟。",
+				"name": "水煮蛋",
+				"desc": "蛋放進冷水，水開開始算時間。剝殼的時候別心急。"
+			},
+			"braised_egg": {
+				"taste": "蛋清是褐色的，咬到底才有鹹味。",
+				"hint": "煮好敲裂再泡，顏色才進得去。",
+				"name": "滷蛋",
+				"desc": "蛋煮熟敲出裂紋，放進醬油和香料裡小火煨。"
+			},
+			"brownie": {
+				"taste": "表面一層薄殼，切開是溼的。",
+				"hint": "別烤過頭，牙籤帶一點渣就夠。",
+				"name": "布朗尼",
+				"desc": "黃油和糖化開，拌入蛋、麵粉和巧克力，烤到表面結殼。"
+			},
+			"buffalo_wings": {
+				"taste": "手指上全是醬，越吃越辣。",
+				"hint": "醬裡化黃油，辣才掛得住。",
+				"name": "布法羅雞翅",
+				"desc": "肉烤脆，裹上辣醬和黃油。"
+			},
+			"bun": {
+				"taste": "麵皮吸了肉汁，比餡還好吃。",
+				"hint": "麵糰包住肉，上鍋蒸。",
+				"name": "包子",
+				"desc": "發好的麵糰包上肉餡，收口朝上，蒸到皮透亮。"
+			},
+			"burrito": {
+				"taste": "卷得很緊，切開能看見一層層。",
+				"hint": "兩頭要摺進去，才不漏。",
+				"name": "捲餅",
+				"desc": "玉米餅鋪肉、菜和芝士，卷緊，煎一下。"
+			},
+			"butter_rice": {
+				"taste": "黃油化在飯裡，醬油只在邊上。",
+				"hint": "飯要熱，黃油要冷。",
+				"name": "黃油拌飯",
+				"desc": "熱飯挖個坑，放一塊黃油，沿邊淋醬油。拌開之前先看一眼。"
+			},
+			"butter_toast": {
+				"taste": "黃油化進孔裡，邊上是脆的。",
+				"hint": "趁熱抹，抹到角落。",
+				"name": "黃油吐司",
+				"desc": "吐司烤一下，趁熱抹黃油。化開的那一層最香。"
+			},
+			"caesar_salad": {
+				"taste": "麵包塊還是脆的，醬裹得很勻。",
+				"hint": "麵包丁最後放，早了會軟。",
+				"name": "凱撒沙拉",
+				"desc": "菜葉撕開，拌沙拉醬，撒麵包丁和芝士。"
+			},
+			"cake": {
+				"taste": "黃油的重量把甜壓住了。",
+				"hint": "要等最久的那一個。",
+				"name": "蛋糕",
+				"desc": "麵糊倒進模子，烤到長起來。"
+			},
+			"candied_fruit": {
+				"taste": "糖殼很脆，一咬就裂。",
+				"hint": "糖熬到起小泡再蘸，才不粘牙。",
+				"name": "糖葫蘆",
+				"desc": "水果串起來，蘸熬好的糖，放涼。"
+			},
+			"cappuccino": {
+				"taste": "先甜後苦，泡沫像一層很輕的東西。",
+				"hint": "名字裡有一頂帽子，喝起來像甜的雲。",
+				"name": "卡布奇諾",
+				"desc": "牛奶打起來，先把甜的浮在上面，苦的留在底下。"
+			},
+			"caprese": {
+				"taste": "番茄和芝士切得一樣厚。",
+				"hint": "番茄要常溫，冰過就沒味。",
+				"name": "卡普里沙拉",
+				"desc": "番茄和芝士切片，交錯擺好，撒香料。"
+			},
+			"caramel_macchiato": {
+				"taste": "底下的糖漿沒化開，最後一口最甜。",
+				"hint": "喝之前別攪，層次就在那兒。",
+				"name": "焦糖瑪奇朵",
+				"desc": "糖漿鋪底，倒奶和濃縮，表面淋一道焦糖色。"
+			},
+			"carrot_cake": {
+				"taste": "吃不出胡蘿蔔，但顏色在。",
+				"hint": "胡蘿蔔擦細一點，口感才不硬。",
+				"name": "胡蘿蔔蛋糕",
+				"desc": "胡蘿蔔擦絲拌進麵糊，烤到牙籤乾淨。"
+			},
+			"ceviche": {
+				"taste": "魚是生的，但是白的。",
+				"hint": "醃的時間別太長，會散。",
+				"name": "酸橘汁醃魚",
+				"desc": "魚片用果汁醃到發白，加香料。"
+			},
+			"chai": {
+				"taste": "香料先衝上來，奶味壓在後面。",
+				"hint": "煮到快開就關火，別滾太久。",
+				"name": "印度奶茶",
+				"desc": "奶加茶葉、香料和糖，小火煮到顏色變深。"
+			},
+			"cheese_stick": {
+				"taste": "外面脆，裡面拉出長長的絲。",
+				"hint": "芝士要冷，油要熱。",
+				"name": "乳酪棒",
+				"desc": "芝士切條，裹麵糊，下油鍋炸到金黃。趁熱吃。"
+			},
+			"cheese_toast": {
+				"taste": "芝士鼓起來，邊上焦成一片。",
+				"hint": "烤箱上火上色，別走開。",
+				"name": "芝士吐司",
+				"desc": "吐司鋪一層芝士，烤到它自己塌下去。拉絲的時候最好看。"
+			},
+			"cheeseburger": {
+				"taste": "芝士化在肉餅上，拉著絲。",
+				"hint": "芝士最後十秒放，別煎老。",
+				"name": "芝士漢堡",
+				"desc": "肉餅快熟時鋪一片芝士，蓋一下讓它化開。"
+			},
+			"cheesecake": {
+				"taste": "中間是涼的，邊上一圈發黃。",
+				"hint": "烤完別急著切，冷藏一夜更穩。",
+				"name": "芝士蛋糕",
+				"desc": "麵糊和奶油芝士、糖拌順，倒模烤到邊硬。"
+			},
+			"chicken_curry": {
+				"taste": "醬是厚的，顏色很深。",
+				"hint": "香料先炒香，再下肉。",
+				"name": "咖哩雞",
+				"desc": "香料炒香，下肉，加奶煮到稠。"
+			},
+			"chicken_wrap": {
+				"taste": "卷得有點松，咬一口會掉。",
+				"hint": "餅先熱一下，捲起來不裂。",
+				"name": "雞肉卷",
+				"desc": "肉煎熟切條，和菜一起捲進薄餅裡。"
+			},
+			"cinnamon_roll": {
+				"taste": "糖化在縫裡，掰開是螺旋。",
+				"hint": "卷之前把麵糰擀薄，層數才多。",
+				"name": "肉桂卷",
+				"desc": "麵糰擀開，抹黃油撒糖和肉桂，捲起來切段烤。"
+			},
+			"clear_noodle_soup": {
+				"taste": "湯是清的，面是滑的。",
+				"hint": "面另煮，湯才不渾。",
+				"name": "清湯麵",
+				"desc": "面煮好撈進碗裡，澆上清湯。撒一點蔥花就夠了。"
+			},
+			"club_sandwich": {
+				"taste": "三層，用牙籤固定著。",
+				"hint": "每層都薄一點，咬下去才整齊。",
+				"name": "俱樂部三明治",
+				"desc": "吐司烤一下，夾肉、煎蛋和菜，切成三角。"
+			},
+			"coconut_dessert": {
+				"taste": "很甜，涼的比熱的好吃。",
+				"hint": "煮的時候別攪太狠，會起泡。",
+				"name": "椰漿甜品",
+				"desc": "椰奶加糖煮稠，放水果，冰鎮。"
+			},
+			"cold_brew": {
+				"taste": "涼得慢，苦味也慢。",
+				"hint": "要等很久，但不用開火。",
+				"name": "冷萃",
+				"desc": "冷水泡著咖啡粉，放進冰箱，一整個下午過去，味道才肯出來。"
+			},
+			"con_panna": {
+				"taste": "奶油先甜，濃縮後苦，中間沒有過渡。",
+				"hint": "奶油蓋在濃縮上面，別攪。",
+				"name": "康寶藍",
+				"desc": "一小杯濃縮，頂上一團奶油，像給苦的東西蓋了床被子。"
+			},
+			"cookie": {
+				"taste": "邊緣焦一點，中間還是軟的。",
+				"hint": "小圓片，甜得很直接。",
+				"name": "曲奇",
+				"desc": "攤成小片，邊緣先焦，中間來不及。"
+			},
+			"corn_soup": {
+				"taste": "甜的，顆粒還在。",
+				"hint": "留一半玉米最後放。",
+				"name": "玉米濃湯",
+				"desc": "玉米和奶打成糊，煮開，最後撒幾粒整顆的。"
+			},
+			"corn_tortilla": {
+				"taste": "邊緣烙出焦斑，咬開是玉米的甜。",
+				"hint": "玉米和麵粉，薄薄一張。",
+				"name": "玉米餅",
+				"desc": "玉米和麵粉和成團，擀薄，平底鍋烙到起泡。"
+			},
+			"couscous": {
+				"taste": "顆粒是散的，一勺能舀起來。",
+				"hint": "蒸兩次，才夠松。",
+				"name": "庫斯庫斯",
+				"desc": "麵粉搓成小粒，蒸熟，拌蔬菜和香料。"
+			},
+			"cream_puff": {
+				"taste": "咬下去是空的，然後奶油才出來。",
+				"hint": "麵糰先烤空，再往裡填。",
+				"name": "泡芙",
+				"desc": "外殼烤得鼓起，涼了以後從底下擠進奶油。"
+			},
+			"creamed_spinach": {
+				"taste": "顏色深，味道卻淡。",
+				"hint": "菠菜焯完擠幹，不然會出水。",
+				"name": "奶油菠菜",
+				"desc": "菠菜焯軟擠幹，切碎拌進白醬和黃油。"
+			},
+			"creamy_mushroom_chicken": {
+				"taste": "醬厚，蘑菇還留著一點脆。",
+				"hint": "蘑菇先單獨煎，出水倒掉再合。",
+				"name": "奶油蘑菇雞",
+				"desc": "雞肉煎黃，蘑菇炒香，倒白醬煮到濃。"
+			},
+			"creme_brulee": {
+				"taste": "上面一層焦糖，敲開才吃到下面。",
+				"hint": "蛋、奶油、糖，最後撒糖燒一下。",
+				"name": "布蕾",
+				"desc": "烤到凝固，撒一層糖，用火燎成薄薄的殼。"
+			},
+			"croissant": {
+				"taste": "一層一層，吃完手指上會亮。",
+				"hint": "烤箱裡的第一樣東西，會掉渣。",
+				"name": "可頌",
+				"desc": "麵糰疊上黃油，反覆折幾次，烤出來就是層。"
+			},
+			"curry_puff": {
+				"taste": "酥皮一層層，餡是辣的。",
+				"hint": "餡要放涼再包，皮才不軟。",
+				"name": "咖哩角",
+				"desc": "麵皮包咖哩肉餡，烤到起酥。"
+			},
+			"curry_rice": {
+				"taste": "咖哩是稠的，飯粒沾上顏色。",
+				"hint": "香料先炒一下，味道才出。",
+				"name": "咖哩飯",
+				"desc": "肉和菜炒過，加香料和水煮稠，澆在飯上。"
+			},
+			"dal": {
+				"taste": "很稠，勺子立得住。",
+				"hint": "豆子煮到化開，才夠稠。",
+				"name": "豆湯",
+				"desc": "豆子煮到散開，加香料。"
+			},
+			"dumpling": {
+				"taste": "皮薄，能看見裡面的綠。",
+				"hint": "餡要打上勁，煮的時候才不散。",
+				"name": "餃子",
+				"desc": "麵糰擀皮，包肉餡，上蒸籠蒸。"
+			},
+			"egg_drop_soup": {
+				"taste": "蛋在湯裡散成一片一片。",
+				"hint": "湯要滾，蛋液要細。",
+				"name": "蛋花湯",
+				"desc": "高湯滾起來，蛋液細細地淋下去，別攪。"
+			},
+			"egg_pancake": {
+				"taste": "邊上脆，中間是軟的。",
+				"hint": "麵糊稀一點，攤得才薄。",
+				"name": "蛋餅",
+				"desc": "蛋和麵粉調成糊，倒進鍋裡攤薄，兩面煎熟。"
+			},
+			"egg_roll": {
+				"taste": "捲起來的一層一層，咬開還有奶味。",
+				"hint": "攤薄一點，卷的時候才不裂。",
+				"name": "蛋卷",
+				"desc": "蛋液里加一點奶，攤成薄片，一層層捲起來。切開來是螺旋。"
+			},
+			"egg_salad": {
+				"taste": "蛋黃和醬混在一起，蛋白是塊。",
+				"hint": "蛋煮老一點好壓。",
+				"name": "雞蛋沙拉",
+				"desc": "蛋壓碎，拌沙拉醬。抹面包、配生菜都行。"
+			},
+			"egg_salad_sandwich": {
+				"taste": "軟乎乎的餡，從切口擠出來。",
+				"hint": "蛋要壓碎，別切塊。",
+				"name": "蛋沙拉三明治",
+				"desc": "蛋壓碎，拌沙拉醬，夾進吐司。冰箱裡放一會兒更好吃。"
+			},
+			"egg_tart": {
+				"taste": "邊是脆的，心是晃的。",
+				"hint": "蛋液倒進麵糰做的盞裡。",
+				"name": "蛋撻",
+				"desc": "麵糰壓成小盞，蛋奶液倒進去，烤到表面結一層皮。"
+			},
+			"egg_toast": {
+				"taste": "一口咬下去，蛋黃先流出來。",
+				"hint": "煎蛋要流心，吐司要脆。",
+				"name": "煎蛋吐司",
+				"desc": "吐司抹黃油，煎蛋蓋上去。手上會沾一點蛋黃。"
+			},
+			"espresso": {
+				"taste": "苦得發亮，只肯在杯子最底下留一點點。",
+				"hint": "咖啡粉過一遍熱水，萃出來的那一小份。",
+				"name": "濃縮",
+				"desc": "所有咖啡的底。它本身也是一份能拿去兌水、兌奶的成品。"
+			},
+			"falafel": {
+				"taste": "外面很脆，裡面是綠的。",
+				"hint": "豆子別煮，泡軟打碎就行。",
+				"name": "炸豆丸",
+				"desc": "豆子泡軟打碎，加麵粉和香料，搓球下鍋炸。"
+			},
+			"farinata": {
+				"taste": "薄的，邊上脆，中間軟。",
+				"hint": "麵糊要稀，攤得才薄。",
+				"name": "意式煎餅",
+				"desc": "麵粉加水調稀，倒進烤盤，淋油烤。"
+			},
+			"feijoada": {
+				"taste": "很黑，很鹹，配飯吃。",
+				"hint": "豆子要燉到起沙。",
+				"name": "巴西燉菜",
+				"desc": "肉和豆子慢燉，加香料，燉到湯稠。"
+			},
+			"fish_and_chips": {
+				"taste": "外面一層殼，裡面一瓣一瓣的。",
+				"hint": "油溫別低，低了會吸油。",
+				"name": "炸魚薯條",
+				"desc": "海鮮裹麵糊炸到鼓起來，旁邊配一份薯條。"
+			},
+			"flat_white": {
+				"taste": "比拿鐵更濃一點，奶只是把苦味按住。",
+				"hint": "兩份濃縮，一份牛奶，不加糖。",
+				"name": "澳白",
+				"desc": "奶少一些，咖啡就往前站了一步。"
+			},
+			"focaccia": {
+				"taste": "表面按出的小坑裡積著油。",
+				"hint": "手指按下去，別按穿。",
+				"name": "佛卡夏",
+				"desc": "麵糰攤平，按出小坑，淋油撒香料烤。"
+			},
+			"french_omelette": {
+				"taste": "裡面還是溼的，外面已經定型。",
+				"hint": "火小，鏟子不停畫圈。",
+				"name": "法式煎蛋卷",
+				"desc": "蛋打散，黃油化開，小火推成卷。"
+			},
+			"french_onion_soup": {
+				"taste": "洋蔥甜得不像洋蔥。",
+				"hint": "洋蔥要炒到深褐色，急不得。",
+				"name": "法式洋蔥湯",
+				"desc": "洋蔥切絲慢炒到焦糖色，加高湯煮，面上放麵包和芝士烤。"
+			},
+			"french_toast": {
+				"taste": "裡面是布丁一樣的軟。",
+				"hint": "蛋奶液裡泡透，別隻蘸表面。",
+				"name": "法式吐司",
+				"desc": "吐司泡進蛋奶液，兩面煎黃。切開來看，中間是溼的。"
+			},
+			"fresh_milk": {
+				"taste": "杯壁掛著一層白。",
+				"hint": "冰過更好喝，別加熱。",
+				"name": "鮮奶",
+				"desc": "奶倒進杯子，冰一下。"
+			},
+			"fried_chicken": {
+				"taste": "外殼脆得有聲音，裡面還燙。",
+				"hint": "麵糊里加一點香料，比撒在表面香。",
+				"name": "炸雞",
+				"desc": "肉裹上面糊下油鍋，炸到金黃，撈出來瀝一下。"
+			},
+			"fried_dough": {
+				"taste": "外面脆，裡面是空的。",
+				"hint": "麵糰軟一點，炸出來才膨。",
+				"name": "炸麵糰",
+				"desc": "麵糰發酵，揪成小塊，下鍋炸到金黃。"
+			},
+			"fried_egg": {
+				"taste": "邊上一圈焦，中間還軟。",
+				"hint": "蛋黃晃一晃會動，就剛好。",
+				"name": "煎蛋",
+				"desc": "鍋裡一點油，蛋打下去，等邊上捲起來。最簡單的一份，也最容易做過頭。"
+			},
+			"fried_noodles": {
+				"taste": "鍋氣很重，面是斷的。",
+				"hint": "面煮八分熟再炒，才不爛。",
+				"name": "炒麵",
+				"desc": "麵條煮半熟，和菜一起大火炒。"
+			},
+			"fried_rice": {
+				"taste": "粒粒分開，鍋氣很重。",
+				"hint": "米飯、蛋、菜，大火快炒。",
+				"name": "蛋炒飯",
+				"desc": "隔夜的米飯最合適，蛋先炒散，再一起翻。"
+			},
+			"fries": {
+				"taste": "鹽還掛在上面，邊緣有點軟。",
+				"hint": "切好先泡水，炸出來才脆。",
+				"name": "薯條",
+				"desc": "土豆切條，泡掉澱粉，下油鍋炸到邊上發黃。"
+			},
+			"fruit_salad": {
+				"taste": "水果切得大小不一，奶油化了一點。",
+				"hint": "水果冰過再拌，口感更清。",
+				"name": "水果沙拉",
+				"desc": "水果切塊，拌上奶油，冰一會兒。"
+			},
+			"fufu": {
+				"taste": "是一團，要用手指捏著吃。",
+				"hint": "趁熱搗，涼了會硬。",
+				"name": "木薯泥",
+				"desc": "木薯煮熟，趁熱搗成團。"
+			},
+			"garlic_toast": {
+				"taste": "蒜味先衝出來，然後才是黃油。",
+				"hint": "蒜要壓成泥，別切丁。",
+				"name": "蒜香吐司",
+				"desc": "黃油軟化，拌進蒜泥和香料，抹在吐司上。烤到邊緣發黃。"
+			},
+			"gazpacho": {
+				"taste": "是涼的，喝下去才覺得夏天。",
+				"hint": "冰過再喝，別加熱。",
+				"name": "西班牙冷湯",
+				"desc": "番茄打碎，加油，冰鎮。"
+			},
+			"greek_salad": {
+				"taste": "一塊芝士壓在菜上，油是亮的。",
+				"hint": "別拌太狠，菜會出水。",
+				"name": "希臘沙拉",
+				"desc": "蔬菜切塊，放芝士，淋油撒香料。"
+			},
+			"green_curry": {
+				"taste": "綠的，但辣是暖的。",
+				"hint": "椰奶先煮出油，再下咖哩。",
+				"name": "綠咖哩",
+				"desc": "椰奶煮開，加香料和肉，煮到濃稠。"
+			},
+			"green_papaya_salad": {
+				"taste": "酸辣，嚼起來是脆的。",
+				"hint": "搗的時候輕一點，別搗爛。",
+				"name": "涼拌蔬菜絲",
+				"desc": "菜切絲，加香料搗拌，撒堅果。"
+			},
+			"grilled_cheese": {
+				"taste": "外面一層脆殼，裡面拉絲。",
+				"hint": "小火，壓著煎。",
+				"name": "烤芝士三明治",
+				"desc": "吐司夾芝士，外面抹黃油，小火煎到兩面金黃。切開要趁熱。"
+			},
+			"groundnut_stew": {
+				"taste": "很稠，花生味壓過一切。",
+				"hint": "堅果醬最後放，煮久會油水分離。",
+				"name": "花生燉菜",
+				"desc": "肉和菜燉軟，加堅果醬攪勻。"
+			},
+			"ham_cheese_sandwich": {
+				"taste": "鹹的，熱的，壓得扁扁的。",
+				"hint": "火腿和芝士要貼在一起。",
+				"name": "火腿芝士三明治",
+				"desc": "兩片吐司，夾火腿和芝士。壓一壓，切開是兩層。"
+			},
+			"hamburger": {
+				"taste": "麵包被肉汁浸軟了一角。",
+				"hint": "肉餅壓扁一點，煎出來更貼合。",
+				"name": "漢堡",
+				"desc": "麵包切開，肉餅煎熟，夾一片生菜，壓一壓。"
+			},
+			"hash_brown": {
+				"taste": "外面一層殼，裡面是軟的絲。",
+				"hint": "土豆絲要擠幹水。",
+				"name": "薯餅",
+				"desc": "土豆擦絲，擠幹，壓成餅，兩面煎黃。"
+			},
+			"hash_browns": {
+				"taste": "壓得扁扁的，兩面都焦。",
+				"hint": "土豆絲擠幹水，不然會散。",
+				"name": "薯格",
+				"desc": "土豆刨成細絲，擠幹，壓成小餅兩面煎。"
+			},
+			"hot_cocoa": {
+				"taste": "表面結了一層薄皮。",
+				"hint": "別煮開，邊上冒泡就關火。",
+				"name": "熱可可",
+				"desc": "奶加可可和糖，小火加熱，攪到顏色變深。"
+			},
+			"hot_dog": {
+				"taste": "腸衣脆，醬是酸的。",
+				"hint": "麵包別烤太乾，會刮嘴。",
+				"name": "熱狗",
+				"desc": "香腸煎到皮裂，塞進長麵包，擠一道番茄。"
+			},
+			"hummus": {
+				"taste": "很細，中間用勺子背抹了個窩。",
+				"hint": "豆要煮到一捏就碎。",
+				"name": "鷹嘴豆泥",
+				"desc": "豆子煮爛，加香料打成泥，淋油。"
+			},
+			"iced_americano": {
+				"taste": "冰塊化了一點，味道變淡。",
+				"hint": "濃縮先涼一下再倒冰，不然會渾。",
+				"name": "冰美式",
+				"desc": "濃縮加冷水，扔兩塊冰。"
+			},
+			"iced_latte": {
+				"taste": "奶沉下去又浮上來，兩道顏色。",
+				"hint": "奶要冰的，不然分層很快散。",
+				"name": "冰拿鐵",
+				"desc": "冰牛奶倒進杯裡，慢慢淋上濃縮。"
+			},
+			"injera": {
+				"taste": "表面全是小孔，軟的。",
+				"hint": "麵糊要發一會兒，才有孔。",
+				"name": "英吉拉",
+				"desc": "麵糊發酵後攤薄，烙到表面起孔。"
+			},
+			"jam_toast": {
+				"taste": "果醬抹得厚，邊上一圈沒抹到。",
+				"hint": "吐司還熱的時候抹，果醬會化開。",
+				"name": "果醬吐司",
+				"desc": "吐司烤一下，趁熱抹一層果醬。"
+			},
+			"jollof": {
+				"taste": "飯是紅的，鍋底有一層焦。",
+				"hint": "番茄和香料先炒出油。",
+				"name": "辣味燉飯",
+				"desc": "番茄和香料炒出油，加飯和肉燜熟。"
+			},
+			"juice": {
+				"taste": "有點果肉，喝前要搖一下。",
+				"hint": "現榨現喝，放久了會分層。",
+				"name": "果汁",
+				"desc": "水果壓出汁，濾掉粗渣。"
+			},
+			"kebab": {
+				"taste": "鐵籤子還燙手，肉邊有點焦。",
+				"hint": "肉要醃過夜，才不柴。",
+				"name": "烤肉串",
+				"desc": "肉切塊醃好，串起來烤到邊緣發焦。"
+			},
+			"kebab_wrap": {
+				"taste": "肉是從架子上削下來的，還燙。",
+				"hint": "餅要熱一下，捲起來才不裂。",
+				"name": "烤肉卷",
+				"desc": "餅鋪開，放烤肉和菜，淋醬卷緊。"
+			},
+			"khao_soi": {
+				"taste": "面上有一撮炸過的面，脆的。",
+				"hint": "湯要稠，才掛得住面。",
+				"name": "咖哩面",
+				"desc": "椰奶咖哩煮開，清湯麵下鍋，加肉，面上放一撮炸面。"
+			},
+			"kimchi_soup": {
+				"taste": "酸味先上來，然後才是辣。",
+				"hint": "泡菜多煮一會兒，湯才厚。",
+				"name": "泡菜湯",
+				"desc": "泡菜和肉炒過，加水煮到湯變濃。"
+			},
+			"lasagna": {
+				"taste": "一層一層，切下去會塌一點。",
+				"hint": "每層都要有醬，烤完才不幹。",
+				"name": "千層麵",
+				"desc": "面片、肉醬、白醬一層層疊好，烤到表面起泡。"
+			},
+			"latte": {
+				"taste": "牛奶先到，苦味隨後才追上來。",
+				"hint": "在美式里加一份牛奶。",
+				"name": "拿鐵",
+				"desc": "牛奶把苦味往後推了一點點，於是整杯都變軟了。"
+			},
+			"lemonade": {
+				"taste": "酸得皺眉，但還想再喝一口。",
+				"hint": "糖先化在水裡，再擠水果。",
+				"name": "檸檬水",
+				"desc": "水果擠汁，加糖水，冰鎮。"
+			},
+			"mac_cheese": {
+				"taste": "表面一層焦的芝士，下面在拉絲。",
+				"hint": "芝士分兩次放，味道更厚。",
+				"name": "芝士通心粉",
+				"desc": "通心粉煮熟，拌芝士和奶，烤到表面焦。"
+			},
+			"macaron": {
+				"taste": "外殼薄，咬下去先脆後軟。",
+				"hint": "麵糊別攪過頭，不然攤平。",
+				"name": "馬卡龍",
+				"desc": "堅果磨粉拌糖和蛋白，擠成小圓烤，夾上餡。"
+			},
+			"macchiato": {
+				"taste": "上面一點奶，底下全是咖啡。",
+				"hint": "奶只加一勺，多了就成拿鐵。",
+				"name": "瑪奇朵",
+				"desc": "濃縮上點一小勺奶泡，別攪。"
+			},
+			"mango_lassi": {
+				"taste": "很稠，吸管要用力。",
+				"hint": "水果要熟透，才夠甜。",
+				"name": "芒果酸奶",
+				"desc": "水果、酸奶和糖一起打勻。"
+			},
+			"mango_sticky_rice": {
+				"taste": "飯是甜的，水果是涼的。",
+				"hint": "椰漿趁熱拌進去，才吸得透。",
+				"name": "芒果糯米飯",
+				"desc": "飯蒸熟，拌椰漿，配切片水果。"
+			},
+			"mapo_tofu": {
+				"taste": "麻先到，辣在後面等著。",
+				"hint": "豆腐最後放，別翻，推鍋就好。",
+				"name": "麻婆豆腐",
+				"desc": "豆製品切塊，肉末炒香，加辣椒和醬油煮，推入豆腐。"
+			},
+			"mashed_potato": {
+				"taste": "很細，但還留著一點顆粒。",
+				"hint": "趁熱壓，涼了會結塊。",
+				"name": "土豆泥",
+				"desc": "土豆煮熟壓碎，加奶和黃油攪勻。"
+			},
+			"meat_sauce_rice": {
+				"taste": "醬汁滲進飯裡，越往下越鹹。",
+				"hint": "米飯澆上肉醬。",
+				"name": "肉醬飯",
+				"desc": "肉醬小火收稠，蓋在熱飯上，邊緣會慢慢塌下去。"
+			},
+			"meat_soup": {
+				"taste": "厚，表面有一層油光。",
+				"hint": "高湯里加肉，慢慢煮。",
+				"name": "肉湯",
+				"desc": "肉切薄片，在滾湯裡燙熟，湯色會變深一點。"
+			},
+			"milk_cereal": {
+				"taste": "前半口還是脆的，後半口已經軟了。",
+				"hint": "冷牛奶，倒下去就別等。",
+				"name": "牛奶麥片",
+				"desc": "麥片倒進碗裡，冷牛奶沒過，等它吸飽。"
+			},
+			"milk_tea": {
+				"taste": "茶味不重，奶味在後面。",
+				"hint": "煮好燜一會兒，味道才出。",
+				"name": "奶茶",
+				"desc": "奶加茶葉和糖煮開，關火燜一會兒。"
+			},
+			"milkshake": {
+				"taste": "稠得吸不動，得用勺子。",
+				"hint": "奶和奶油先冰過，打出來才厚。",
+				"name": "奶昔",
+				"desc": "奶、奶油、糖一起打，打到能掛住杯壁。"
+			},
+			"mint_tea": {
+				"taste": "很甜，薄荷味從鼻子裡出來。",
+				"hint": "倒的時候抬高壺，才有泡沫。",
+				"name": "薄荷茶",
+				"desc": "水加香料和糖煮開，倒進杯子。"
+			},
+			"mocha": {
+				"taste": "巧克力和咖啡混在一起，分不清誰在前。",
+				"hint": "先化糖再倒咖啡，不然會沉底。",
+				"name": "摩卡",
+				"desc": "濃縮加奶、黑巧克力和糖，攪到顏色變深。"
+			},
+			"mooncake": {
+				"taste": "切開是實的，甜得很直接。",
+				"hint": "壓模要用力，花紋才清楚。",
+				"name": "月餅",
+				"desc": "麵糰壓進模子，刷蛋液烤到上色。"
+			},
+			"muffin": {
+				"taste": "蛋香先到，甜在後面。",
+				"hint": "麵糊、糖、黃油，裝滿一杯。",
+				"name": "瑪芬",
+				"desc": "麵糊倒進杯子裡，烤到頂起來，裂開幾道口子。"
+			},
+			"mushroom_risotto": {
+				"taste": "米粒外面軟，芯裡還有一點硬。",
+				"hint": "一直攪，才會稠。",
+				"name": "菌菇燴飯",
+				"desc": "米飯加菌菇和白醬慢慢攪，最後拌芝士。"
+			},
+			"mushroom_soup": {
+				"taste": "稠，滑，蘑菇的味道藏在後面。",
+				"hint": "白醬要一點點加，別結塊。",
+				"name": "蘑菇湯",
+				"desc": "蘑菇煎香，加白醬和奶，煮到能掛勺。"
+			},
+			"naan": {
+				"taste": "表面有焦斑，撕開是軟的。",
+				"hint": "貼高溫壁烤，才有那層斑。",
+				"name": "饢",
+				"desc": "麵糰擀開，貼高溫烤到起斑。"
+			},
+			"nachos": {
+				"taste": "芝士化在片上，拿起來會拉絲。",
+				"hint": "烤到芝士剛化，別過頭。",
+				"name": "玉米片",
+				"desc": "玉米片鋪芝士和香料，烤到化。"
+			},
+			"nasi_goreng": {
+				"taste": "飯粒是乾的，鍋氣很足。",
+				"hint": "隔夜飯最好，新飯會粘。",
+				"name": "印尼炒飯",
+				"desc": "冷飯下鍋，加肉、香料炒散，最後放煎蛋。"
+			},
+			"nasi_lemak": {
+				"taste": "飯有椰香，邊上擺著辣醬。",
+				"hint": "米要泡過，蒸出來才松。",
+				"name": "椰漿飯",
+				"desc": "米泡過，用椰漿蒸熟，配辣醬。"
+			},
+			"noodle_soup": {
+				"taste": "湯比面燙，吃到最後還是熱的。",
+				"hint": "清湯麵下鍋，加菜。",
+				"name": "湯麵",
+				"desc": "面另煮，湯另燒，最後合在一起，面才不會糊。"
+			},
+			"onigiri": {
+				"taste": "米是涼的，餡是鹹的。",
+				"hint": "米飯包住菜和肉，捏緊。",
+				"name": "飯糰",
+				"desc": "手上沾水，把飯捏成三角，中間藏一點餡。"
+			},
+			"onion_rings": {
+				"taste": "咬開一圈，裡面是甜的。",
+				"hint": "圈切厚一點，掛糊才掛得住。",
+				"name": "洋蔥圈",
+				"desc": "洋蔥切圈，裹麵糊，下油鍋炸到浮起來。"
+			},
+			"onion_soup": {
+				"taste": "洋蔥煮到透明，湯是淺褐色。",
+				"hint": "洋蔥先炒軟，湯才不衝。",
+				"name": "洋蔥湯",
+				"desc": "洋蔥切絲炒軟，倒高湯煮到顏色變深。"
+			},
+			"onion_tart": {
+				"taste": "洋蔥鋪得很滿，邊上焦了。",
+				"hint": "洋蔥炒到出糖再鋪，才不水。",
+				"name": "焦糖洋蔥撻",
+				"desc": "麵糰壓進模子，鋪上炒軟的洋蔥和芝士，烤到邊黃。"
+			},
+			"oyakodon": {
+				"taste": "蛋是半凝的，蓋在飯上。",
+				"hint": "蛋分兩次下，才有層次。",
+				"name": "親子丼",
+				"desc": "肉和大蔥煮軟，淋蛋液，半熟時蓋到飯上。"
+			},
+			"pad_thai": {
+				"taste": "甜、酸、鹹擠在一起。",
+				"hint": "大火快炒，粉才不粘。",
+				"name": "泰式炒河粉",
+				"desc": "粉先泡軟，和蝦、蛋、菜一起大火炒。"
+			},
+			"paella": {
+				"taste": "鍋底那層焦的，是最先被搶走的。",
+				"hint": "最後別攪，讓它結一層。",
+				"name": "海鮮飯",
+				"desc": "米飯和海鮮鋪在鍋裡，加香料燜到收汁。"
+			},
+			"palak_paneer": {
+				"taste": "綠的醬裡有一塊塊白的。",
+				"hint": "芝士最後放，煮久會散。",
+				"name": "菠菜芝士",
+				"desc": "蔬菜煮軟打碎，加香料，放入芝士塊。"
+			},
+			"pancake": {
+				"taste": "表面全是小孔，抹什麼都吸。",
+				"hint": "一面起泡再翻，只翻一次。",
+				"name": "鬆餅",
+				"desc": "麵糊舀進平底鍋，起泡後翻面，煎到兩面黃。"
+			},
+			"pasta_tomato": {
+				"taste": "麵條裹著紅色的醬，盤子很乾淨。",
+				"hint": "面撈出來直接進醬裡，別過水。",
+				"name": "番茄意麵",
+				"desc": "麵條煮熟，拌進炒軟的番茄裡。"
+			},
+			"persian_stew": {
+				"taste": "湯是深的，豆子已經軟了。",
+				"hint": "香料後放，香味才留得住。",
+				"name": "波斯燉菜",
+				"desc": "肉和豆子慢燉，最後加香料和菜。"
+			},
+			"peruvian_chicken": {
+				"taste": "皮是脆的，肉裡有果酸味。",
+				"hint": "醃料裡要有酸，肉才嫩。",
+				"name": "秘魯烤雞",
+				"desc": "肉用香料和果汁醃過，烤到皮脆。"
+			},
+			"pho": {
+				"taste": "湯是清的，面上浮著幾片肉。",
+				"hint": "湯要滾燙才澆，肉才燙得半熟。",
+				"name": "河粉",
+				"desc": "高湯煮滾，澆在粉上，鋪肉和菜。"
+			},
+			"pilaf": {
+				"taste": "米粒是分開的，油亮。",
+				"hint": "米先泡，炒過再加水。",
+				"name": "抓飯",
+				"desc": "米泡過，和肉、香料一起炒，加水燜熟。"
+			},
+			"pita": {
+				"taste": "中間是空的，撕開有熱氣。",
+				"hint": "高溫快烤，才鼓得起來。",
+				"name": "皮塔",
+				"desc": "麵糰擀圓，高溫烤到鼓起來。"
+			},
+			"pbj_sandwich": {
+				"taste": "甜和鹹在嘴裡各佔一半。",
+				"hint": "兩片吐司，各抹各的。",
+				"name": "花生醬果醬三明治",
+				"desc": "一片吐司抹花生醬，一片抹果醬，合上，壓一壓。"
+			},
+			"pizza": {
+				"taste": "邊上一圈鼓起，芝士還在拉絲。",
+				"hint": "麵糰要醒夠，不然攤不開。",
+				"name": "披薩",
+				"desc": "麵糰攤開，抹番茄，撒芝士，烤到邊緣起泡。"
+			},
+			"poached_egg": {
+				"taste": "外面一層薄薄的蛋白，裡面是流動的黃。",
+				"hint": "水裡加點醋，蛋才不散。",
+				"name": "水波蛋",
+				"desc": "水微開，蛋貼著水面滑進去。撈出來的時候要輕。"
+			},
+			"popcorn": {
+				"taste": "有幾顆沒爆開，咬著硬。",
+				"hint": "鍋蓋留條縫，讓汽跑掉。",
+				"name": "爆米花",
+				"desc": "玉米粒下鍋，蓋蓋子，爆到聲音變稀。"
+			},
+			"potato_salad": {
+				"taste": "綿的，涼的，越放越入味。",
+				"hint": "土豆煮到筷子能穿過。",
+				"name": "土豆沙拉",
+				"desc": "土豆和蛋壓碎，拌沙拉醬。放涼了再吃。"
+			},
+			"pour_over": {
+				"taste": "慢下來的那杯，酸味走在前頭。",
+				"hint": "不用裝置的萃取，等得更久一點。",
+				"name": "滴濾咖啡",
+				"desc": "水繞著粉走一圈，得等它自己下去。"
+			},
+			"poutine": {
+				"taste": "醬是稠的，薯條底下已經軟了。",
+				"hint": "薯條要炸兩遍，才撐得住醬。",
+				"name": "肉汁薯條",
+				"desc": "薯條炸脆，澆肉汁和白醬，撒肉碎。"
+			},
+			"pudding": {
+				"taste": "涼的，勺子進去會陷下去。",
+				"hint": "在烤箱裡蒸出來的甜。",
+				"name": "布丁",
+				"desc": "蛋和奶混在一起，隔著水烤，才會這樣抖。"
+			},
+			"raita": {
+				"taste": "是涼的，用來壓辣。",
+				"hint": "菜要切得很碎。",
+				"name": "酸奶沙拉",
+				"desc": "酸奶和碎菜拌在一起，撒香料。"
+			},
+			"ramen": {
+				"taste": "湯是渾的，面還硬著一點。",
+				"hint": "上桌前再煮開，泡久了會軟。",
+				"name": "拉麵",
+				"desc": "清湯麵煮開，鋪肉和蛋，撒蔥花。"
+			},
+			"ravioli": {
+				"taste": "邊壓得很緊，餡在中間鼓起來。",
+				"hint": "邊要抹水，不然煮的時候會開。",
+				"name": "意式餃子",
+				"desc": "麵糰擀薄，放餡，對摺壓邊，煮熟。"
+			},
+			"red_curry": {
+				"taste": "紅油浮在上面，下面是稠的。",
+				"hint": "糖放一點，辣會圓一些。",
+				"name": "紅咖哩",
+				"desc": "椰奶和香料煮開，下肉，煮到油浮上來。"
+			},
+			"ribs": {
+				"taste": "表面一層亮的醬，骨頭一抽就出來。",
+				"hint": "低溫慢烤，最後刷醬上色。",
+				"name": "肋排",
+				"desc": "肉抹香料低溫烤軟，最後刷糖醬烤上色。"
+			},
+			"rice_cake": {
+				"taste": "甜得慢，嚼久了才出來。",
+				"hint": "米磨成漿，加糖蒸。",
+				"name": "米糕",
+				"desc": "米漿倒進模子，蒸到能用筷子整塊挑起來。"
+			},
+			"roast_chicken": {
+				"taste": "皮是脆的，肉汁留在盤底。",
+				"hint": "烤前把皮擦乾，才會脆。",
+				"name": "烤雞",
+				"desc": "整塊肉抹香料和黃油，烤到皮金黃、汁變清。"
+			},
+			"roasted_corn": {
+				"taste": "有焦斑，咬著甜。",
+				"hint": "烤到粒鼓起來再刷黃油。",
+				"name": "烤玉米",
+				"desc": "玉米烤到起斑，刷黃油撒香料。"
+			},
+			"roasted_vegetables": {
+				"taste": "邊上焦，裡面還是軟的。",
+				"hint": "切得一樣大，熟得才勻。",
+				"name": "烤蔬菜",
+				"desc": "蔬菜切塊，拌油和香料，烤到邊緣發焦。"
+			},
+			"rose_dessert": {
+				"taste": "甜得發膩，但停不下來。",
+				"hint": "糖漿別熬過頭，涼了會硬。",
+				"name": "玫瑰甜點",
+				"desc": "奶和糖煮稠，倒進模子，撒堅果。"
+			},
+			"samosa": {
+				"taste": "三角形，咬開是燙的土豆。",
+				"hint": "邊要捏緊，炸的時候才不漏。",
+				"name": "炸三角",
+				"desc": "麵皮包土豆餡，捏成三角，下鍋炸。"
+			},
+			"sandwich": {
+				"taste": "吐司軟，煎蛋的邊是脆的。",
+				"hint": "吐司夾煎蛋和蔬菜。",
+				"name": "三明治",
+				"desc": "兩片吐司，中間夾煎蛋和菜，壓一壓再切。"
+			},
+			"satay": {
+				"taste": "醬很厚，串上還滴著油。",
+				"hint": "堅果醬要最後加，煮久會苦。",
+				"name": "沙嗲",
+				"desc": "肉醃過串起來烤，蘸堅果醬。"
+			},
+			"sausage_sauerkraut": {
+				"taste": "酸味把油膩壓下去。",
+				"hint": "捲心菜用鹽揉軟，酸味出來再下鍋。",
+				"name": "香腸酸菜",
+				"desc": "捲心菜切絲，用鹽和香料揉過，和香腸一起燜到酸香。"
+			},
+			"scallion_noodle": {
+				"taste": "蔥炸到發黑，油是香的。",
+				"hint": "小火慢炸，別炸糊。",
+				"name": "蔥油麵",
+				"desc": "蔥段下油鍋，小火炸到焦香，撈掉蔥，油拌麵。"
+			},
+			"scone": {
+				"taste": "外面幹，裡面還留著一點溼。",
+				"hint": "麵糰裡揉進黃油，烤到裂口。",
+				"name": "司康",
+				"desc": "不發酵太久，烤出來會沿著裂口分成兩半。"
+			},
+			"scrambled_egg": {
+				"taste": "軟的，碎的，黃油味先上來。",
+				"hint": "鍋要小，火要小，鏟子別停。",
+				"name": "炒蛋",
+				"desc": "蛋打散，倒進黃油裡，慢慢推成一團。早上的第一口。"
+			},
+			"seafood_pancake": {
+				"taste": "邊上焦脆，中間還有汁。",
+				"hint": "麵糊薄一點，海鮮才熟得透。",
+				"name": "海鮮煎餅",
+				"desc": "海鮮拌麵糊，攤進平底鍋煎到兩面焦。"
+			},
+			"sesame_bun": {
+				"taste": "外面一層芝麻，裡面是空的。",
+				"hint": "先烙後烤，才有那層脆。",
+				"name": "燒餅",
+				"desc": "麵糰抹油捲起，壓扁，撒芝麻烤。"
+			},
+			"shawarma": {
+				"taste": "肉削得很薄，醬會流到手心。",
+				"hint": "餅要烘熱，捲起來才不裂。",
+				"name": "沙威瑪",
+				"desc": "餅烘熱，鋪肉和菜，淋醬卷緊。"
+			},
+			"shepherd_pie": {
+				"taste": "上面一層焦，下面是湯。",
+				"hint": "土豆泥要幹，太稀會塌。",
+				"name": "牧羊人派",
+				"desc": "肉和蔬菜炒成餡，鋪土豆泥，烤到表面發黃。"
+			},
+			"shumai": {
+				"taste": "皮薄，咬開有汁。",
+				"hint": "麵糰、肉、菜，捏成不封口的小袋。",
+				"name": "燒賣",
+				"desc": "不用發麵，皮擀薄，捏一圈褶，頂上露出餡。"
+			},
+			"soda": {
+				"taste": "氣很足，喝一口會打嗝。",
+				"hint": "冰鎮過再開，氣跑得慢。",
+				"name": "汽水",
+				"desc": "水果擠汁，加糖水，冰鎮到冒泡。"
+			},
+			"souffle": {
+				"taste": "出爐就塌，得趕緊吃。",
+				"hint": "蛋白打到能立尖，拌的時候輕。",
+				"name": "舒芙蕾",
+				"desc": "蛋黃奶糊拌進打發的蛋白，倒進盅裡烤到漲起來。"
+			},
+			"soy_rice": {
+				"taste": "醬油裹住飯粒，豆香很直。",
+				"hint": "飯要熱，拌開才有那股香。",
+				"name": "醬油拌飯",
+				"desc": "熱飯沿邊淋醬油，拌開。"
+			},
+			"sparkling_water": {
+				"taste": "氣泡衝上來，喉嚨有點麻。",
+				"hint": "冰透再開，氣才留得住。",
+				"name": "氣泡水",
+				"desc": "水冰透，擠一點水果汁進去。"
+			},
+			"spring_roll": {
+				"taste": "很脆，咬開有熱氣衝出來。",
+				"hint": "餡要擠幹水，不然會炸開。",
+				"name": "春捲",
+				"desc": "麵皮包菜餡，卷緊，下鍋炸到金黃。"
+			},
+			"steak": {
+				"taste": "切面是粉的，邊上焦。",
+				"hint": "下鍋前回溫，別從冰箱直接煎。",
+				"name": "牛排",
+				"desc": "肉兩面煎焦，加黃油和香料，靜置一會兒再切。"
+			},
+			"steamed_egg": {
+				"taste": "滑，幾乎沒有聲音。",
+				"hint": "蛋加水，上鍋蒸，火別大。",
+				"name": "蒸蛋",
+				"desc": "水和蛋按份量調開，蒸到剛剛凝住，表面不能有蜂窩。"
+			},
+			"stew": {
+				"taste": "所有東西都軟了，味道混在一起。",
+				"hint": "高湯、菜、肉，小火燉。",
+				"name": "燉菜",
+				"desc": "小火慢慢燉，湯會變少，味道會變濃。"
+			},
+			"sushi": {
+				"taste": "飯是溫的，魚是涼的。",
+				"hint": "手要溼，飯才不粘。",
+				"name": "壽司",
+				"desc": "飯捏成小團，蓋上魚片，放一點菜。"
+			},
+			"taco": {
+				"taste": "餅是軟的，餡會掉出來。",
+				"hint": "餅先烘一下，才不裂。",
+				"name": "塔可",
+				"desc": "餅烘軟，夾肉、菜和香料。"
+			},
+			"tagine": {
+				"taste": "蓋子一掀，甜味和鹹味一起出來。",
+				"hint": "小火慢燉，肉才會脫骨。",
+				"name": "塔吉鍋",
+				"desc": "肉和菜加香料慢燉，起鍋前撒堅果。"
+			},
+			"tamale": {
+				"taste": "拆開葉子，裡面是軟的。",
+				"hint": "玉米麵要打到有勁。",
+				"name": "玉米粽",
+				"desc": "玉米麵裹肉餡，包進葉子，蒸透。"
+			},
+			"tamarind_sauce": {
+				"taste": "酸得很尖，蘸一點就夠。",
+				"hint": "糖要一點點加，邊嘗邊調。",
+				"name": "羅望子醬",
+				"desc": "水果加水煮出味，濾掉渣，加糖收稠。"
+			},
+			"tandoori_chicken": {
+				"taste": "外面是紅的，裡面還是白的。",
+				"hint": "醃得越久，顏色越進去。",
+				"name": "烤雞塊",
+				"desc": "肉用香料和奶醃過，烤到表面焦紅。"
+			},
+			"tangyuan": {
+				"taste": "咬開是甜的，湯是清的。",
+				"hint": "浮起來就熟了，別煮太久。",
+				"name": "湯圓",
+				"desc": "麵糰搓圓，下鍋煮到浮起來。"
+			},
+			"tea_egg": {
+				"taste": "殼上裂紋裡進了色，越靠裡越淡。",
+				"hint": "煮好敲裂，再泡一夜。",
+				"name": "茶葉蛋",
+				"desc": "蛋煮熟，殼敲出細紋，丟進香料水裡慢慢煨。急不得。"
+			},
+			"tea_rice": {
+				"taste": "茶湯是清的，飯粒還立著。",
+				"hint": "茶別太燙，會把飯泡散。",
+				"name": "茶泡飯",
+				"desc": "飯盛進碗裡，澆上熱茶，放一點菜。"
+			},
+			"tempura": {
+				"taste": "面衣很薄，能看見裡面的形狀。",
+				"hint": "麵糊要冰，下鍋才脆。",
+				"name": "天婦羅",
+				"desc": "海鮮裹稀麵糊，下油鍋炸到淺黃。"
+			},
+			"thali": {
+				"taste": "好幾個小碗擺一圈，中間是飯。",
+				"hint": "每樣都少做一點，擺起來才好看。",
+				"name": "塔利",
+				"desc": "飯放中間，豆、菜和醬分裝小碗擺一圈。"
+			},
+			"tiramisu": {
+				"taste": "表面一層粉，舀下去是軟的。",
+				"hint": "冷藏過夜，味道才合。",
+				"name": "提拉米蘇",
+				"desc": "蛋糕蘸咖啡，鋪奶油，撒咖啡粉，冷藏。"
+			},
+			"toast": {
+				"taste": "切得厚，邊上一圈深色。",
+				"hint": "麵包放一天再切，更好切。",
+				"name": "吐司",
+				"desc": "一條麵包切成一摞。什麼都不抹也好吃，抹什麼都不過分。"
+			},
+			"toast_slice": {
+				"taste": "幹，脆，邊上一圈顏色。",
+				"hint": "薄薄抹一層就夠。",
+				"name": "烤麵包片",
+				"desc": "麵包切片，抹黃油，烤到發脆。配湯最好。"
+			},
+			"tom_yum": {
+				"taste": "酸辣一起上來，先皺眉再伸勺子。",
+				"hint": "香茅和青檸最後放，香才不跑。",
+				"name": "冬陰功",
+				"desc": "海鮮和菌菇下鍋，加香料和椰奶，煮到湯色發渾。"
+			},
+			"tomato_soup": {
+				"taste": "酸，暖，喝下去胃先鬆了。",
+				"hint": "番茄要炒出沙，再加水。",
+				"name": "番茄湯",
+				"desc": "番茄切塊炒軟，倒進高湯煮開。顏色越深越甜。"
+			},
+			"tostada": {
+				"taste": "餅是脆的，一咬就碎一地。",
+				"hint": "餅要炸透，涼了才不軟。",
+				"name": "炸玉米餅",
+				"desc": "玉米餅炸脆，鋪肉和芝士。"
+			},
+			"tres_leches": {
+				"taste": "切下去有奶滲出來。",
+				"hint": "烤好再澆奶，才吸得進。",
+				"name": "三奶蛋糕",
+				"desc": "蛋糕烤好，澆上奶和奶油，冷藏。"
+			},
+			"tuna_sandwich": {
+				"taste": "海的味道，被沙拉醬裹住了。",
+				"hint": "拌好先嚐一口鹹淡。",
+				"name": "金槍魚三明治",
+				"desc": "海鮮拌沙拉醬，夾進吐司。配一片生菜更清爽。"
+			},
+			"turkish_coffee": {
+				"taste": "杯底有一層渣，別喝到底。",
+				"hint": "起泡就離火，別煮滾。",
+				"name": "土耳其咖啡",
+				"desc": "咖啡粉、水和糖一起小火加熱，起泡就倒。"
+			},
+			"turmeric_rice": {
+				"taste": "飯是黃的，粒粒分明。",
+				"hint": "香料先用油炒開。",
+				"name": "薑黃飯",
+				"desc": "香料在油裡炒開，拌進飯裡。"
+			},
+			"twice_cooked_pork": {
+				"taste": "肉片捲起來，邊上有點焦。",
+				"hint": "肉先煮再切，才不散。",
+				"name": "回鍋肉",
+				"desc": "肉煮熟切片，和菜、辣椒一起回鍋炒。"
+			},
+			"vegetable_salad": {
+				"taste": "脆的，涼的，葉子還帶著水。",
+				"hint": "洗完一定甩幹。",
+				"name": "蔬菜沙拉",
+				"desc": "菜葉撕開，淋一點油拌開。簡單到沒什麼可說的。"
+			},
+			"vegetable_soup": {
+				"taste": "清，喝完喉嚨是暖的。",
+				"hint": "高湯煮開，下蔬菜。",
+				"name": "蔬菜湯",
+				"desc": "高湯先熬好，蔬菜最後放，煮到剛軟就停。"
+			},
+			"vienna_coffee": {
+				"taste": "奶油浮在上面，先甜後苦。",
+				"hint": "奶油打到能立住，別攪進咖啡裡。",
+				"name": "維也納咖啡",
+				"desc": "濃縮加糖，頂上擠一層打發的奶油。"
+			},
+			"waffle": {
+				"taste": "格子裡的糖化成了殼。",
+				"hint": "麵糰軟一點，烤出來才立得住。",
+				"name": "華夫餅",
+				"desc": "麵糰放進模子，烤到邊上發脆。"
+			},
+			"cocoa_shake": {
+				"taste": "冰得牙發麻，可可味很重。",
+				"hint": "冰先打碎，奶昔才細。",
+				"name": "可可奶昔",
+				"desc": "可可、牛奶、冰和糖打勻，打厚一點。"
+			},
+			"white_rice": {
+				"taste": "什麼都沒加，只有米自己的甜。",
+				"hint": "水多一分是粥，少一分是夾生。",
+				"name": "白飯",
+				"desc": "一碗白飯。看著空，其實是別的菜的地基。"
+			},
+			"wonton": {
+				"taste": "皮薄得透光，湯麵上有油花。",
+				"hint": "包好就下鍋，放久了會粘。",
+				"name": "餛飩",
+				"desc": "麵糰擀薄，包肉餡，下高湯煮。"
+			},
+			"yogurt_soup": {
+				"taste": "是酸的，但很溫和。",
+				"hint": "火要小，酸奶才不會結塊。",
+				"name": "酸奶湯",
+				"desc": "酸奶加麵粉和香料，小火攪到稠。"
+			},
+			"yorkshire_pudding": {
+				"taste": "中間凹下去，邊上是脆的。",
+				"hint": "油要先燒熱，麵糊下去才漲。",
+				"name": "約克郡布丁",
+				"desc": "麵糊倒進燒熱的油裡，烤到漲起來。"
+			},
+			"zongzi": {
+				"taste": "拆開時米已經染了色。",
+				"hint": "米要泡過，才蒸得透。",
+				"name": "粽子",
+				"desc": "米和肉包進葉子裡，紮緊，蒸透。"
+			},
+			"yogurt": {
+				"name": "酸奶",
+				"desc": "牛奶加糖，放到溫處等它凝。"
+			},
+			"bacon": {
+				"name": "培根",
+				"desc": "一片一片，肥瘦相間。"
+			},
+			"batter": {
+				"name": "麵糊",
+				"desc": "稀稠剛好，勺子划過去有痕。"
+			},
+			"bean": {
+				"name": "雜豆",
+				"desc": "乾的，硬，裝一袋。大豆以外的豆子。"
+			},
+			"bread": {
+				"name": "麵包",
+				"desc": "比麵糰輕，敲一下有空響。"
+			},
+			"broth": {
+				"name": "高湯",
+				"desc": "撇掉浮沫，剩下的顏色很淺。"
+			},
+			"butter": {
+				"name": "黃油",
+				"desc": "從冷藏的地方拿出來，會先出一層薄薄的汗。"
+			},
+			"cereal": {
+				"name": "麥片",
+				"desc": "幹吃也響，泡進奶裡就安靜了。"
+			},
+			"cheese": {
+				"name": "芝士",
+				"desc": "切開斷面是細密的孔。"
+			},
+			"coconut_milk": {
+				"name": "椰漿",
+				"desc": "倒出來是稠的，帶著一點甜。"
+			},
+			"coffee_bean": {
+				"name": "咖啡生豆",
+				"desc": "淺綠的豆子，聞起來像還沒醒的早晨。"
+			},
+			"coffee_ground": {
+				"name": "咖啡粉",
+				"desc": "磨過之後，香氣散得更快，也更容易被記住。"
+			},
+			"corn": {
+				"name": "玉米",
+				"desc": "掰下來還帶著須。"
+			},
+			"cream": {
+				"name": "奶油",
+				"desc": "從牛奶上面撇下來的那層，稠得能掛住勺子。"
+			},
+			"cream_cheese": {
+				"name": "奶油芝士",
+				"desc": "奶味很足，抹在熱麵包上會軟。"
+			},
+			"dough": {
+				"name": "麵糰",
+				"desc": "揉到不粘手為止，還會慢慢發起來。"
+			},
+			"egg": {
+				"name": "雞蛋",
+				"desc": "放在灶臺邊的小籃子裡，每天總會有幾個。"
+			},
+			"flour": {
+				"name": "麵粉",
+				"desc": "捧起來會從指縫漏下去，很輕。"
+			},
+			"jam": {
+				"name": "果醬",
+				"desc": "水果加糖，小火熬到能掛勺。"
+			},
+			"meat_sauce": {
+				"name": "肉醬",
+				"desc": "小火慢慢收，越收越稠。"
+			},
+			"dark_chocolate": {
+				"taste": "苦得乾脆，掰開時斷面發亮。",
+				"hint": "可可多、糖少，火別開大。",
+				"name": "黑巧克力",
+				"desc": "可可拌化開的黃油和糖，壓進模子裡放涼。"
+			},
+			"milk_chocolate": {
+				"taste": "奶香先到，苦味在後面追。",
+				"hint": "鮮奶別煮開，邊上冒泡就離火。",
+				"name": "牛奶巧克力",
+				"desc": "可可加鮮奶、黃油和糖，攪順了倒模放涼。"
+			},
+			"lava_cake": {
+				"taste": "切開中間會流，邊上是軟的。",
+				"hint": "烤的時間短一點，中間才不凝固。",
+				"name": "熔岩巧克力蛋糕",
+				"desc": "黑巧克力、黃油、蛋和糖攪勻，烤到中間還流。"
+			},
+			"milk": {
+				"name": "牛奶",
+				"desc": "白色，安靜，像一句沒說完的話。"
+			},
+			"mushroom": {
+				"name": "菌菇",
+				"desc": "傘蓋下面一圈細褶。"
+			},
+			"noodle": {
+				"name": "麵條",
+				"desc": "切得不太齊，下鍋前先抖開。"
+			},
+			"nuts": {
+				"name": "堅果",
+				"desc": "抓一把，殼和油香都在手上。"
+			},
+			"oil": {
+				"name": "植物油",
+				"desc": "灶臺邊上那隻舊瓶子，倒出來是清亮的黃。"
+			},
+			"onion": {
+				"name": "洋蔥",
+				"desc": "層層的，切開辣眼睛。"
+			},
+			"peanut_butter": {
+				"name": "花生醬",
+				"desc": "花生磨碎，油自己析出來。"
+			},
+			"potato": {
+				"name": "土豆",
+				"desc": "帶泥，皮上有小坑。"
+			},
+			"rice": {
+				"name": "米",
+				"desc": "穀子脫了殼，抓在手裡有細碎的響。"
+			},
+			"roasted_bean": {
+				"name": "烘焙咖啡豆",
+				"desc": "顏色深了，香氣比生豆時更用力。"
+			},
+			"salad_dressing": {
+				"name": "沙拉醬",
+				"desc": "稠的，白的，掛在勺上不掉。"
+			},
+			"sausage": {
+				"name": "香腸",
+				"desc": "肉灌進腸衣，煎到皮裂開。"
+			},
+			"soy_sauce": {
+				"name": "醬油",
+				"desc": "深得發黑，晃一下有掛壁。"
+			},
+			"spice": {
+				"name": "香料",
+				"desc": "一小撮，聞一下就打噴嚏。"
+			},
+			"sugar": {
+				"name": "糖",
+				"desc": "細小的顆粒，落在指尖上會有一點黏。"
+			},
+			"syrup": {
+				"name": "糖漿",
+				"desc": "糖化了水，涼下來會更稠。"
+			},
+			"tomato": {
+				"name": "番茄",
+				"desc": "紅得發亮，捏著沉。"
+			},
+			"water": {
+				"name": "水",
+				"desc": "配方里隨手可取的那一樣東西。圖鑑不記它。"
+			},
+			"white_sauce": {
+				"name": "白醬",
+				"desc": "奶白色，涼了會結一層皮。"
+			},
+			"pork": {
+				"name": "豬肉",
+				"desc": "用紙包著，肥瘦相間，摸起來涼。"
+			},
+			"beef": {
+				"name": "牛肉",
+				"desc": "顏色深，纖維粗，刀下去要有耐心。"
+			},
+			"chicken": {
+				"name": "雞肉",
+				"desc": "白淨，沒什麼脾氣，願意變成別的味道。"
+			},
+			"shrimp": {
+				"name": "蝦",
+				"desc": "還在動，殼是半透明的青。"
+			},
+			"fish": {
+				"name": "魚",
+				"desc": "眼睛清亮，腮還是紅的。"
+			},
+			"leafy": {
+				"name": "葉菜",
+				"desc": "一把扎著，葉子上掛著水。"
+			},
+			"cabbage": {
+				"name": "包菜",
+				"desc": "外面一層有些蔫，剝開裡面是脆的。"
+			},
+			"root": {
+				"name": "根莖",
+				"desc": "帶泥，沉甸甸，掰斷時有白茬。"
+			},
+			"scallion": {
+				"name": "大蔥",
+				"desc": "白根青葉，聞起來辣中帶甜。"
+			},
+			"apple": {
+				"name": "蘋果",
+				"desc": "皮上有一層薄霜，咬下去脆響。"
+			},
+			"banana": {
+				"name": "香蕉",
+				"desc": "一掛幾根，皮上剛起了點黑斑。"
+			},
+			"tropical": {
+				"name": "熱帶水果",
+				"desc": "芒果、菠蘿、椰子，聞著像陽光曬過的。"
+			},
+			"lemon": {
+				"name": "檸檬",
+				"desc": "皮上有細孔，掐一下滿手是香。"
+			},
+			"salt": {
+				"name": "鹽",
+				"desc": "一小袋，最不起眼，卻每鍋都要一點。"
+			},
+			"ice": {
+				"name": "冰",
+				"desc": "冰箱裡敲出來的一格一格，硬得能敲出聲音。"
+			},
+			"vanilla": {
+				"name": "香草",
+				"desc": "一小截深色的幹莢，甜香要等很久才滲出來。"
+			},
+			"cocoa": {
+				"name": "可可",
+				"desc": "磨得很細的苦粉，遇熱就化成褐色的霧。"
+			},
+			"olive_oil": {
+				"name": "橄欖油",
+				"desc": "壓出來的青綠色，滑過去帶一點點辣嗓子。"
+			},
+			"tea_leaf": {
+				"name": "茶葉",
+				"desc": "卷著沒展開的幹葉，一遇熱水就醒過來。"
+			},
+			"ice_cream_scoop": {
+				"name": "冰淇淋球",
+				"desc": "球挖得圓，勺子插上去會站一會兒。",
+				"taste": "涼得乾淨，甜味走得不急。",
+				"hint": "從桶裡挖一球出來。"
+			},
+			"shaved_ice": {
+				"name": "刨冰",
+				"desc": "一大碗雪，澆上糖漿就塌下去一半。",
+				"taste": "糖漿順著冰縫往下滲，甜得很亮。",
+				"hint": "把冰刨碎，澆上糖漿。"
+			},
+			"popsicle": {
+				"name": "冰棒",
+				"desc": "凍在模子裡，棍兒一拔就出來了。",
+				"taste": "咬下去先涼一下，再慢慢滲出果味。",
+				"hint": "冰和果肉一起凍進模子。"
+			},
+			"smoothie": {
+				"name": "冰沙",
+				"desc": "涼氣裹著果肉，杯壁上留一層霧。",
+				"taste": "稠得能掛住吸管，果肉還帶著顆粒。",
+				"hint": "冰和水果一起打碎。"
+			},
+			"ice_bar": {
+				"name": "雪糕",
+				"desc": "凍得結實，咬一口留一排牙印。",
+				"taste": "奶味壓在最上面，冰在後面慢慢化。",
+				"hint": "冰和奶凍硬了再切。"
+			},
+			"milk_pudding": {
+				"name": "奶凍",
+				"desc": "勺子舀起來會抖，抖完還立著。",
+				"taste": "滑下去沒有聲音，奶味留在舌根。",
+				"hint": "牛奶和糖凍住，別凍太硬。"
+			},
+			"vanilla_ice_cream": {
+				"name": "香草冰淇淋",
+				"desc": "一整桶，表面被刮平過，留著勺子的路。",
+				"taste": "香草先甜，涼意在後面追上來。",
+				"hint": "冰、奶、糖，再加一截香草。"
+			},
+			"chocolate_ice_cream": {
+				"name": "巧克力冰淇淋",
+				"desc": "桶裡顏色深得像泥，挖起來很沉。",
+				"taste": "苦和甜互相擋著，誰也沒壓過誰。",
+				"hint": "可可和奶一起凍，顏色會很深。"
+			},
+			"fruit_ice_cream": {
+				"name": "水果冰淇淋",
+				"desc": "凍成同一色，吃得出果肉的形狀。",
+				"taste": "果肉凍硬了，甜味帶著一點酸。",
+				"hint": "手邊有什麼水果就用什麼。"
+			},
+			"sundae": {
+				"name": "聖代",
+				"desc": "球上澆了果醬，再壓一頂奶油。",
+				"taste": "奶油先化，果醬後甜，冰在最後。",
+				"hint": "一球冰淇淋，果醬和奶油往上堆。"
+			},
+			"black_tea": {
+				"name": "紅茶",
+				"desc": "顏色一路沉到杯底，喝完杯壁留一圈。",
+				"taste": "澀得乾淨，回甘來得很慢。",
+				"hint": "熱水把茶葉泡開就行。"
+			},
+			"green_tea": {
+				"name": "綠茶",
+				"desc": "葉子還沒完全舒開，湯是淺的。",
+				"taste": "清苦在前，後面是草葉的涼。",
+				"hint": "泡得比紅茶更短。"
+			},
+			"lemon_tea": {
+				"name": "檸檬茶",
+				"desc": "檸檬片浮上去，茶湯慢慢變淺。",
+				"taste": "酸先衝過來，茶味在後面接住。",
+				"hint": "茶里加兩片檸檬。"
+			},
+			"wheat": {
+				"name": "小麥",
+				"desc": "磨成粉，就是麵粉的起點。"
+			},
+			"whole_wheat_flour": {
+				"name": "全麥麵粉",
+				"desc": "麩皮一起磨進去，顏色偏深。"
+			},
+			"cocoa_powder": {
+				"name": "可可粉",
+				"desc": "可可磨碎，苦味很乾淨。"
+			},
+			"marshmallow": {
+				"name": "棉花糖",
+				"desc": "捏下去會慢慢回彈。"
+			},
+			"whole_wheat_bread": {
+				"taste": "外殼硬，裡面是軟的。",
+				"hint": "全麥的顏色偏深。",
+				"name": "歐式餐包",
+				"desc": "烤到外殼敲起來發響。"
+			},
+			"whole_wheat_cracker": {
+				"taste": "越嚼越香。",
+				"hint": "壓薄一點更脆。",
+				"name": "全麥餅乾",
+				"desc": "全麥粉壓薄，烤到邊上一圈淺褐。"
+			},
+			"chocolate_chip_cookie": {
+				"taste": "甜裡有一粒粒的苦。",
+				"hint": "麵糰裡拌進巧克力。",
+				"name": "巧克力豆曲奇",
+				"desc": "烤到邊緣淺褐，中間還軟著。"
+			},
+			"chocolate_cookie": {
+				"taste": "苦可可和甜麵糰打架。",
+				"hint": "巧克力要拌進麵糰。",
+				"name": "巧克力曲奇",
+				"desc": "麵糰裹上可可粉，烤到表面裂開。"
+			},
+			"oreo": {
+				"taste": "兩片黑餅乾夾一層甜。",
+				"hint": "兩片夾著奶油。",
+				"name": "奧利奧",
+				"desc": "兩塊巧克力曲奇夾奶油，壓緊。"
+			},
+			"roasted_marshmallow": {
+				"taste": "外殼焦脆，裡面流心。",
+				"hint": "在火邊轉一圈就好。",
+				"name": "烤棉花糖",
+				"desc": "烤到表面起焦，趁熱吃。"
+			},
+			"smore": {
+				"taste": "烤糖、巧克力、全麥一起。",
+				"hint": "三樣疊在一起。",
+				"name": "S'more",
+				"desc": "全麥餅乾夾烤棉花糖和黑巧克力。"
+			},
+			"chili": {
+				"name": "辣椒",
+				"desc": "紅得很直接，切開滿手都是味道。"
+			},
+			"soy": {
+				"name": "大豆",
+				"desc": "圓滾滾一把，泡一夜就能磨。"
+			},
+			"tofu": {
+				"name": "豆腐",
+				"desc": "大豆磨漿點滷，壓成一方，輕得像沒重量。"
+			},
+			"kimchi": {
+				"name": "泡菜",
+				"desc": "包菜抹上辣椒和鹽，放幾天就酸得剛好。"
+			},
+			"tomato_egg_stirfry": {
+				"taste": "番茄先出汁，蛋剛好嫩。",
+				"hint": "蛋炒到半熟先盛出來，最後再回鍋。",
+				"name": "番茄炒蛋",
+				"desc": "番茄炒出汁，蛋液滑進去，紅黃一鍋。"
+			},
+			"stir_fried_greens": {
+				"taste": "脆的，帶一點鍋氣。",
+				"hint": "大火快炒，別蓋鍋蓋。",
+				"name": "清炒時蔬",
+				"desc": "手邊有什麼綠葉就炒什麼，鹽一撮，起鍋。"
+			},
+			"vinegar_potato_shreds": {
+				"taste": "酸得乾淨，土豆還是脆的。",
+				"hint": "土豆絲泡過水，炒出來才不粘。",
+				"name": "醋溜土豆絲",
+				"desc": "土豆切細絲，泡過水，酸味臨起鍋才下。"
+			},
+			"braised_tofu": {
+				"taste": "外面一層汁，裡面還是嫩的。",
+				"hint": "豆腐先煎一面，再澆醬油。",
+				"name": "紅燒豆腐",
+				"desc": "豆腐煎出薄殼，辣椒和糖在鍋裡收成亮汁。"
+			},
+			"kung_pao_chicken": {
+				"taste": "先是花生，辣才追上來。",
+				"hint": "花生最後放，久了就不脆。",
+				"name": "宮保雞丁",
+				"desc": "雞丁滑油，幹辣椒和花生一起翻，起鍋要快。"
+			},
+			"yu_xiang_pork": {
+				"taste": "酸、甜、辣，一口裡三樣都到。",
+				"hint": "糖和醬油先調好，下鍋就來不及了。",
+				"name": "魚香肉絲",
+				"desc": "肉絲上漿，泡椒和糖醋在鍋裡碰頭。"
+			},
+			"spicy_chicken": {
+				"taste": "在辣椒堆裡找雞丁，找的過程也好吃。",
+				"hint": "雞塊炸兩道，辣椒炒香再回鍋。",
+				"name": "辣子雞",
+				"desc": "雞塊炸到乾脆，埋進一大把辣椒裡翻。"
+			},
+			"xiao_chao_rou": {
+				"taste": "辣椒比肉還搶。",
+				"hint": "肉先煸出油，辣椒後下。",
+				"name": "小炒肉",
+				"desc": "豬肉煸香，辣椒下鍋一翻，醬油沿鍋邊淋。"
+			},
+			"shui_zhu_rou_pian": {
+				"taste": "湯麵一層紅，底下是嫩肉。",
+				"hint": "肉片最後滑進湯裡，別攪。",
+				"name": "水煮肉片",
+				"desc": "湯燒滾，肉片滑進去，辣椒鋪頂，熱油一澆。"
+			},
+			"dan_dan_noodles": {
+				"taste": "拌開以後，底下全是料。",
+				"hint": "面和料分開，吃前再拌。",
+				"name": "擔擔麵",
+				"desc": "面煮好，肉臊、辣椒、花生一起堆上去。"
+			},
+			"dry_pot_cabbage": {
+				"taste": "包菜邊焦了才香。",
+				"hint": "包菜手撕，別用刀。",
+				"name": "乾鍋包菜",
+				"desc": "包菜手撕下鍋，培根和辣椒煸出油，一起翻。"
+			},
+			"steamed_chili_fish": {
+				"taste": "辣是蒸進去的，不是澆上去的。",
+				"hint": "火要大，蒸久了肉就散。",
+				"name": "剁椒魚頭",
+				"desc": "魚頭鋪滿剁椒，上蒸鍋，出鍋淋一勺醬油。"
+			},
+			"budae_jjigae": {
+				"taste": "什麼都有，什麼都對。",
+				"hint": "泡菜先炒，湯才夠味。",
+				"name": "部隊鍋",
+				"desc": "泡菜、香腸、麵條堆一鍋，辣椒調湯，煮到翻滾。"
+			},
+			"kimchi_fried_rice": {
+				"taste": "酸辣裹著每一粒米。",
+				"hint": "隔夜飯最好，新飯會黏。",
+				"name": "泡菜炒飯",
+				"desc": "泡菜切碎下鍋，米飯和蛋跟著炒，辣椒收尾。"
+			},
+			"dak_galbi": {
+				"taste": "甜辣收在雞皮上。",
+				"hint": "辣椒和米飯一起炒，才有鍋巴。",
+				"name": "辣炒雞",
+				"desc": "雞塊炒到焦邊，辣椒米飯下鍋，翻到鍋底起鍋巴。"
+			},
+			"pad_kra_pow": {
+				"taste": "羅勒的香比辣先到。",
+				"hint": "蛋要煎到邊脆心軟。",
+				"name": "打拋飯",
+				"desc": "牛肉和辣椒猛火炒，蓋在米飯上，再壓一個煎蛋。"
+			},
+			"laksa": {
+				"taste": "椰漿把辣包起來，後勁更長。",
+				"hint": "椰漿最後下，煮久了會油水分離。",
+				"name": "叻沙",
+				"desc": "辣椒炒出紅油，椰漿和米粉下鍋，蝦最後放。"
+			},
+			"sambal_shrimp": {
+				"taste": "蝦是甜的，醬是橫的。",
+				"hint": "蝦最後放，變紅就起鍋。",
+				"name": "參巴蝦",
+				"desc": "辣椒和洋蔥搗成醬，炒香，蝦下去翻兩下。"
+			},
+			"mirchi_salan": {
+				"taste": "整根辣椒燉到軟，辣進湯裡。",
+				"hint": "辣椒先劃口，才進味。",
+				"name": "辣椒燉",
+				"desc": "辣椒和堅果、香料一起燉，奶油最後調稠。"
+			},
+			"chilli_chicken": {
+				"taste": "外面一層亮，裡面還是雞汁。",
+				"hint": "雞塊先裹麵粉炸，醬汁才掛得住。",
+				"name": "印度辣雞",
+				"desc": "雞塊裹粉炸脆，辣椒和醬油在鍋裡收成亮汁。"
+			},
+			"vindaloo": {
+				"taste": "酸先來，辣後到，越吃越想吃。",
+				"hint": "香料和辣椒要炒到油變紅。",
+				"name": "果阿辣咖哩",
+				"desc": "豬肉和辣椒、香料一起燜，酸味收進肉裡。"
+			},
+			"shakshuka": {
+				"taste": "蛋心是流的，用它蘸麵包。",
+				"hint": "蛋打下去就別動，蓋鍋燜。",
+				"name": "莎克舒卡",
+				"desc": "番茄和辣椒熬成醬，蛋打進去，燜到蛋白凝固。"
+			},
+			"lemon_chili_chicken": {
+				"taste": "檸檬皮一擦，辣就亮了。",
+				"hint": "檸檬最後擠，烤過會苦。",
+				"name": "檸檬辣烤雞",
+				"desc": "雞皮抹辣椒和橄欖油，烤到脆，出來擠半個檸檬。"
+			},
+			"paprikash": {
+				"taste": "奶油把辣磨圓了。",
+				"hint": "奶油離火再放，別煮開。",
+				"name": "帕普里卡什",
+				"desc": "雞塊和洋蔥燉軟，辣椒下鍋，奶油調成粉色。"
+			},
+			"nashville_hot_chicken": {
+				"taste": "咬一口，嘴唇先麻。",
+				"hint": "辣椒拌進熱油，澆在炸雞上。",
+				"name": "納什維爾辣雞",
+				"desc": "雞塊炸到深色，辣椒和黃油燒成紅油，澆上去。"
+			},
+			"chili_con_carne": {
+				"taste": "燉得越久，辣越沉。",
+				"hint": "牛肉先煎上色，再加水燉。",
+				"name": "辣豆燉牛肉",
+				"desc": "牛肉煎上色，番茄和雜豆下去，辣椒燉到濃。"
+			},
+			"jerk_chicken": {
+				"taste": "煙味先到，辣跟著。",
+				"hint": "醃一夜，烤到皮黑而不糊。",
+				"name": "煙燻辣雞",
+				"desc": "雞皮抹辣椒和香料，烤到焦黑，裡面還是嫩的。"
+			},
+			"elote": {
+				"taste": "甜、鹹、辣，一起糊在玉米上。",
+				"hint": "玉米烤出焦點再抹醬。",
+				"name": "辣玉米",
+				"desc": "玉米烤出焦斑，抹奶油和乳酪，撒一層辣椒。"
+			},
+			"doro_wat": {
+				"taste": "辣得很沉，配餅才吃得下。",
+				"hint": "洋蔥要炒到發黑，急不得。",
+				"name": "埃塞辣燉雞",
+				"desc": "洋蔥炒到深色，辣椒和雞塊下鍋，蛋最後埋進去。"
+			},
+			"peri_peri_chicken": {
+				"taste": "皮脆，辣味掛在上面。",
+				"hint": "辣椒油分兩次刷，最後再補一遍。",
+				"name": "莫三比克辣雞",
+				"desc": "雞塊在辣椒油裡翻，烤到皮捲起來。"
+			},
+			"suya": {
+				"taste": "香料和辣裹在肉上，越嚼越幹香。",
+				"hint": "肉切薄，香料最後撒。",
+				"name": "蘇亞烤肉",
+				"desc": "牛肉切薄片，抹辣椒和堅果香料，烤到邊幹。"
+			},
+			"chili_dog": {
+				"taste": "麵包吸了辣油，比香腸還香。",
+				"hint": "辣醬先熱，麵包最後烤。",
+				"name": "辣味熱狗",
+				"desc": "香腸煎出油，麵包夾好，辣醬和乳酪蓋上去。"
+			},
+			"miso": {
+				"name": "味噌",
+				"desc": "大豆發酵成的一團褐色，挖一勺就夠鮮。"
+			},
+			"rice_noodle": {
+				"name": "米粉",
+				"desc": "大米泡過磨過，壓成細條曬乾。"
+			},
+			"nian_gao": {
+				"name": "年糕",
+				"desc": "白飯捶出來的，切片還帶一點黏。"
+			},
+			"miso_soup": {
+				"taste": "鹹裡帶回甘，豆腐一抿就散。",
+				"hint": "味噌最後化開，別讓它滾。",
+				"name": "味噌湯",
+				"desc": "味噌化在湯裡，豆腐沉底，蔥花浮著。"
+			},
+			"tofu_dengaku": {
+				"taste": "焦香先到，甜鹹的醬跟在後面。",
+				"hint": "豆腐先烤乾表面，醬才掛得住。",
+				"name": "豆腐田樂",
+				"desc": "豆腐烤到邊角發黃，味噌和糖刷上去，再回爐一次。"
+			},
+			"miso_ramen": {
+				"taste": "湯厚，面還硬著，正好。",
+				"hint": "味噌別久煮，起鍋前化開。",
+				"name": "味噌拉麵",
+				"desc": "清湯麵換成味噌底，蛋和蔥浮在上面。"
+			},
+			"fried_rice_noodle": {
+				"taste": "幹香，一根是一根。",
+				"hint": "米粉先泡軟，鍋裡只翻幾下。",
+				"name": "炒米粉",
+				"desc": "米粉和蛋、菜、醬油一起翻到幹香。"
+			},
+			"tteokbokki": {
+				"taste": "辣裡帶甜，越嚼越黏。",
+				"hint": "年糕先泡開，不然粘鍋底。",
+				"name": "辣炒年糕",
+				"desc": "年糕在紅亮的醬裡滾，辣椒和糖貼著。"
+			},
+			"di_san_xian": {
+				"name": "地三鮮",
+				"desc": "土豆、茄子，再配一樣時令蔬菜，下鍋煎到邊角發軟。",
+				"taste": "土豆麵，茄子軟，第三樣還帶著一點脆。",
+				"hint": "土豆、茄子先下鍋，再配任意蔬菜。"
+			},
+			"scallion_pancake": {
+				"name": "蔥油餅",
+				"desc": "麵糰擀開，抹油撒蔥，捲起來再擀平，烙到兩面發黃。",
+				"taste": "外面脆，裡面一層一層都是蔥油。",
+				"hint": "麵糰抹油撒蔥，捲起來擀平再烙。"
+			},
+			"liangpi": {
+				"name": "涼皮",
+				"desc": "麵漿攤薄蒸熟，切條，澆一勺辣椒油。",
+				"taste": "涼、滑，辣油掛在邊上。",
+				"hint": "麵漿蒸成薄片，切條拌辣椒油。"
+			}
+		},
+		"letter": {
+			"window": {
+				"title": "窗邊",
+				"body": "我不知道這封信會不會被讀到。\n窗子外面沒有路，只有光。可每天早上，光都會準時落在同一個地方。\n如果你也住在這裡，你應該見過它。\n——寫信的人",
+				"name": "窗邊",
+				"desc": "放在窗臺上的信，紙邊被光照得發白。"
+			},
+			"task_window_1": {
+				"title": "第一杯",
+				"body": "杯子在架子上，壺也在。\n燒一次水，讓豆子從幹變溼，味道就出來了。\n做完擺在窗臺上，我想看看它冒氣的樣子。\n——寫信的人",
+				"name": "第一杯",
+				"desc": "字寫在卡片背面，筆跡壓得很重。",
+				"task_title": "燒一壺水，衝一杯",
+				"task_body": "磨一磨，衝一杯滴濾。\n備好後到信箱第三頁交付。"
+			},
+			"coffee_machine": {
+				"title": "門口的木箱",
+				"body": "門口放了個木箱，比我還高一點。\n拆開，是臺咖啡機。銅的，擦一擦能照見自己。\n旁邊放著一瓶牛奶和一袋豆子。\n它以前是我的，現在歸你。別讓它閒著。\n——寫信的人",
+				"name": "門口的木箱",
+				"desc": "信封裡夾著一張送貨單，邊角捲起。"
+			},
+			"milk_merchant": {
+				"title": "雜貨商人",
+				"body": "推車的人每天這個時候經過。\n牛奶放在車斗的木箱裡，蓋著溼布。他說，別讓太陽曬著，溫了就容易壞。\n車上不止牛奶，米麵油鹽、瓶瓶罐罐都有一點。\n我在這裡的這些年，跟他買過很多次東西，話沒說過幾句。\n——你要是也用得著，就記著。",
+				"name": "雜貨商人",
+				"desc": "信封邊上有奶漬幹了以後的痕跡。",
+				"task_title": "他想要的那杯",
+				"task_body": "他說，別處的店裡有一種做法：濃縮打底，倒進熱牛奶，最上面浮著一層細密的奶泡。\n「這輛車上有研究臺。」他指了指桌邊，「把兩樣東西放進去，等一會兒，看能不能湊出新東西。」\n先做一份濃縮咖啡，再把它和牛奶一起放上研究臺試試。"
+			},
+			"teach_market": {
+				"title": "推車和坡上的樹",
+				"body": "你現在能從兩個地方拿到東西，別隻走一條路。\n推車每天來一趟，車上的東西賣完就要等——想留的，早點買。\n屋子後面那片坡上也長東西，從視窗探身就夠得著，不用跟誰商量。\n兩條路都走走，檯面才不會空。\n一個人吃飯，也要把水燒開。",
+				"name": "推車和坡上的樹",
+				"desc": "信紙背面畫著一輛歪歪扭扭的小車。"
+			},
+			"sugar_jar": {
+				"title": "糖罐",
+				"body": "罐子是別人留下的，罐底結著一層沒化開的糖。\n我把它放在你夠得到的地方。\n如果你已經在做那杯加奶的東西，就舀一勺進去。\n——不用還我。",
+				"name": "糖罐",
+				"desc": "罐口邊緣有一圈糖，硬得要用指甲刮。"
+			},
+			"flour_sack": {
+				"title": "麵粉袋",
+				"body": "袋上的字被水泡過，只剩一半。\n我猜你還記得要揉麵這件事——\n桌子邊緣有一點白色的印子，是之前的人留下的。\n你開始做東西了沒有？",
+				"name": "麵粉袋",
+				"desc": "牛皮紙袋，角落有面粉漏出來的痕跡。"
+			},
+			"teach_upgrade": {
+				"title": "擰緊的螺絲",
+				"body": "檯面上的傢伙用久了會響。\n響的時候別忍著，拆開來，把松的地方擰緊，它就能快一點。\n還有灶臺邊那塊板子——把兩樣東西擺上去，它能告訴你第三種可能。\n試一次就懂了。",
+				"name": "擰緊的螺絲",
+				"desc": "信封裡掉出一小截銅螺絲。"
+			},
+			"butter_warmth": {
+				"title": "黃油的溫度",
+				"body": "黃油要從冷的地方拿出來，放在一邊，等它自己軟。\n用火催，油和水就分開了；放著不管，反倒軟得正好。\n我試過好幾次，才記住這個。",
+				"name": "黃油的溫度",
+				"desc": "信紙有淡淡的油點，湊近有奶味。"
+			},
+			"grinder_owner": {
+				"title": "研磨機的舊主人",
+				"body": "那臺機器原本屬於一個每天只磨一次豆子的人。\n磨到第幾百次的時候，人走了，機器留了下來。\n它轉起來有點抖，是因為那裡鬆了。\n不用修。",
+				"name": "研磨機的舊主人",
+				"desc": "紙角畫著一個歪歪的齒輪。"
+			},
+			"oven_heat": {
+				"title": "烤箱的熱",
+				"body": "門上的玻璃永遠是霧的，看不清裡面。\n它烤過很多東西，最多的是別人的早飯。\n拉開的時候，熱氣會先撲到你臉上——\n那是這間屋子裡最像「有人住」的一刻。\n先烤一小盤餅乾吧。黃油和糖，烤到邊上一圈淺褐就好。",
+				"name": "烤箱的熱",
+				"desc": "信紙邊緣微微發黃，像被烤過。",
+				"task_title": "烤一盤餅乾",
+				"task_body": "曲奇六塊。\n烤好後到信箱第三頁交付。"
+			},
+			"task_oven_heat_1": {
+				"title": "第二爐",
+				"body": "餅乾烤得不錯。\n再烤一爐可頌吧，這次慢一點，等它自己鼓起來。\n麵粉我留在袋子裡了，夠你試三次。",
+				"name": "第二爐",
+				"desc": "信紙上沾著一小塊幹了的黃油。",
+				"task_title": "再烤一份可頌",
+				"task_body": "可頌一份。\n備好後到信箱第三頁交付。"
+			},
+			"fridge_hum": {
+				"title": "嗡嗡的櫃子",
+				"body": "早上醒來，後門內側多了一臺鐵櫃子，嗡嗡地響。\n上面壓著一張便條：『裡頭比外頭冷。水放進去，過一會兒就是冰。別怕它響，它一直在響。』\n我試著把一碗水放進去，站在旁邊聽了很久。它沒有停下來的意思。\n傍晚取出來的時候，冰成形了，邊上厚，中間薄，敲一下就裂。",
+				"name": "嗡嗡的櫃子",
+				"desc": "後門內側多了一臺會嗡嗡響的鐵櫃子。"
+			},
+			"before_leaving": {
+				"title": "該發動了",
+				"body": "車停了很久。\n久到我開始以為它本來就是這樣——停著，然後慢慢變成一間屋子。\n今天早上，光是從另一邊照進來的。我像往常一樣推開車門，站在門邊。\n車尾忽然輕輕響了一聲。\n我猶豫了一下，第一次離開車門，踩著地面走到車尾。\n回過頭，才看見它完整的模樣：一輛舊的流動餐車，漆掉了大半，輪子陷在土裡。\n原來我一直住著的這間屋子，本來就是這輛車。\n它跑過很多地方，只是停在原地太久，久到自己也忘了。\n我回到車門邊，把內側積了很久的灰擦開一小塊。\n底下露出一行漆字——\n「隨食出發」。\n我把車鑰匙擦乾淨，坐回駕駛座。\n該發動了。",
+				"name": "該發動了",
+				"desc": "信紙上有幾道摺痕，像被反覆開啟又疊回去。"
+			},
+			"east_asia_arrive": {
+				"title": "第一站",
+				"body": "車停了。\n我不知道是它自己想停，還是路到這裡要喘一口氣。\n窗外是一排低矮的屋簷，簷下晾著的東西被風吹得互相碰。有人從車邊走過去，沒有抬頭。\n我把窗推開一條縫。熱氣混著一種很乾淨的香味進來——米，還有一點焦。\n這裡的碗很小，筷子很輕。吃飯的時候沒有人說話。",
+				"name": "第一站",
+				"desc": "紙很薄，邊角有些卷，像是在窗臺上壓了很久。"
+			},
+			"task_east_asia_arrive_1": {
+				"title": "兩雙筷子",
+				"body": "街角有人坐在門檻上吃麵。\n他沒抬頭，只說：你也做兩道這裡的菜吧，讓我聞聞對不對。\n就兩道。做多了他吃不完。",
+				"name": "兩雙筷子",
+				"desc": "紙上有一道筷子壓出來的摺痕。",
+				"task_title": "做兩道東亞餐食",
+				"task_body": "兩道就行，不用挑最難的。\n做好後到信箱第三頁確認。"
+			},
+			"east_asia_note": {
+				"title": "門檻上的紙",
+				"body": "早上開門，門檻上壓著一張紙。是從練習本上撕下來的，邊不齊。\n上面寫著三行，字歪歪扭扭：\n「一碗熱的，要有湯。」\n「上次那種捲起來的。」\n「甜的，別太甜。」\n沒有署名，也沒有說什麼時候來拿。\n我把紙壓在窗臺上。風大的時候它會動一下。",
+				"name": "門檻上的紙",
+				"desc": "從練習本上撕下來的一頁，邊緣參差不齊。"
+			},
+			"task_east_asia_note_1": {
+				"title": "門口的三行字",
+				"body": "那張紙上又多了一行：\n「兩樣湯，做好了就成。」\n我把紙摺好，壓在窗臺邊。",
+				"name": "門口的三行字",
+				"desc": "紙角被踩過一個鞋印。",
+				"task_title": "煮兩樣湯",
+				"task_body": "湯湯水水最暖胃。兩樣就好。\n做好後到信箱第三頁確認。"
+			},
+			"east_asia_leave": {
+				"title": "離站",
+				"body": "第三天早上，車自己動了。\n我醒的時候，屋簷已經退成很遠的一條線。\n窗臺上那張紙還在。我把它收進本子，夾在有字的那一頁旁邊。\n有些地方只停三天，卻會記很久。\n下一站在哪，我不知道。車知道。",
+				"name": "離站",
+				"desc": "信裡夾著一張對摺過很多次的紙。"
+			},
+			"middle_page": {
+				"title": "圖鑑的中間頁",
+				"body": "翻到中間那一頁，你會發現有人在你之前記過一樣東西。\n筆跡不一樣，畫法也不一樣。\n他記的是同一杯東西，只是他那天加的東西，比我少一樣。\n記錄這種事，本來就是各寫各的。\n本子越寫越厚。翻到後面，有時候會忘了自己是從哪一頁開始寫的。",
+				"name": "圖鑑的中間頁",
+				"desc": "紙上有兩道不同的墨色。"
+			},
+			"beyond_paper": {
+				"title": "白紙之外",
+				"body": "紙的邊緣還有顏色。\n只是還沒到能看見的地方。\n等你把這一頁寫完，我們再談別的。\n——還是寫信的人",
+				"name": "白紙之外",
+				"desc": "信紙背面有淡淡的一層顏色，正面看不出來。",
+				"task_title": "在紙上試一次",
+				"task_body": "用研究臺組合出一道新菜。\n解鎖了就算辦妥。"
+			},
+			"southeast_asia_arrive": {
+				"title": "溼的",
+				"body": "這一站很吵。\n還沒停穩，聲音就從四面圍過來：摩托車、叫賣、水從高處落下來的聲音。\n空氣是溼的，貼著皮膚，像一層沒幹的布。\n窗外的綠很密，密到看不見後面有什麼。\n有人敲了兩下車身。我搖下窗，他遞進來一把葉子，什麼也沒說就走了。\n葉子上還帶著水。",
+				"name": "溼的",
+				"desc": "信紙摸上去有點潮。"
+			},
+			"task_southeast_asia_arrive_1": {
+				"title": "棚子下的火",
+				"body": "雨棚下面生著一小堆火。\n守火的人說，這裡的味道要辣，要酸，還得有人守著火等。\n做兩道給我看看。",
+				"name": "棚子下的火",
+				"desc": "信紙帶著一點潮氣。",
+				"task_title": "做兩道東南亞菜",
+				"task_body": "兩道，辣的酸的都行。\n做好後到信箱第三頁確認。"
+			},
+			"southeast_asia_note": {
+				"title": "煙盒背面",
+				"body": "今天門口沒有紙條，是從窗縫裡塞進來的。\n一張煙盒的背面，用鉛筆寫著：\n「酸的、辣的、有椰子的那種。」\n「上次那碗湯，我記了很久。」\n底下還有一行，被擦過又寫上去，看不清了。\n我把它立在窗邊。",
+				"name": "煙盒背面",
+				"desc": "煙盒背面，鉛筆字被擦過一遍。"
+			},
+			"task_southeast_asia_note_1": {
+				"title": "溼布上的字",
+				"body": "窗臺上壓著一塊溼布，布上擱著一張紙。\n紙被水汽洇軟了，字化開，只認出「兩張」。\n接兩張訂單，交出去。",
+				"name": "溼布上的字",
+				"desc": "布已經幹了一半，字還在。",
+				"task_title": "交兩張訂單",
+				"task_body": "別讓人等太久。"
+			},
+			"southeast_asia_leave": {
+				"title": "雨",
+				"body": "走的時候下著雨。\n雨點打在車頂上，聲音很密，像有人在上面小跑。\n我留了一碗在窗臺上，放涼了。\n回來收碗的時候，碗是空的，底下壓著一片葉子。\n車開出去很遠，葉子還在滴水。",
+				"name": "雨",
+				"desc": "信封的一角是軟的，像被雨打過。"
+			},
+			"vegetable_patch": {
+				"title": "菜畦",
+				"body": "窗外角落有一小塊地，是誰翻過的。\n土是松的，邊上插著一根木棍，綁了段紅繩。\n不知道是誰種下的，但它長得比屋裡任何東西都好。\n你要是缺菜，就從視窗伸手摘，別整棵拔走。",
+				"name": "菜畦",
+				"desc": "一根木棍上繫著褪色的紅繩。",
+				"task_title": "挑三份葉菜",
+				"task_body": "葉菜三份。\n採好後到信箱第三頁交付。"
+			},
+			"rice_sack": {
+				"title": "米袋",
+				"body": "袋子上印著看不懂的字，只有「米」這個字我認得。\n底下的故事就斷了。\n抓一把出來，米粒從指縫裡漏下去，沙沙地響。\n這屋子以前的主人，大概也不是本地人。",
+				"name": "米袋",
+				"desc": "袋口用麻繩紮了兩道。",
+				"task_title": "收五份稻米",
+				"task_body": "稻米五份。\n收好後到信箱第三頁交付。"
+			},
+			"south_asia_arrive": {
+				"title": "顏色",
+				"body": "這裡的顏色很重。\n車窗上落了一層細灰，我用袖子擦，擦出一道亮，又慢慢蒙上。\n有人在車外支起一口鍋，火苗舔著鍋底。風把味道送進來——很多種，認不全，但每一樣都很響。",
+				"name": "顏色",
+				"desc": "紙上有細細的灰，一擦就留印子。"
+			},
+			"task_south_asia_arrive_1": {
+				"title": "手上的顏色",
+				"body": "這裡的人用手指吃飯。\n手指上沾著薑黃和辣椒的顏色，洗不掉，就留著。\n做三道，顏色要對。",
+				"name": "手上的顏色",
+				"desc": "信封邊角有一小塊黃色的印子。",
+				"task_title": "做三道南亞菜",
+				"task_body": "三道，看看顏色和香料對不對。\n做好後到信箱第三頁確認。"
+			},
+			"south_asia_note": {
+				"title": "賬單背面",
+				"body": "一張賬單的背面，字是圓的，寫得很用力：\n「要那個黃的，有豆子的。」\n「餅，兩張。」\n「不要太多辣。」\n最後畫了一個歪歪的碗。\n我照做了。做的時候，外面一直在放同一首歌。",
+				"name": "賬單背面",
+				"desc": "一張舊賬單的背面，背面比正面寫得多。"
+			},
+			"task_south_asia_note_1": {
+				"title": "香料袋上的口信",
+				"body": "香料袋上繫著繩子，穿著一張紙條。\n紙條上寫著：三樣素的。\n別的什麼也沒寫。",
+				"name": "香料袋上的口信",
+				"desc": "紙片上有桂皮的味道。",
+				"task_title": "做三樣素菜",
+				"task_body": "三樣不帶肉的，香料照樣給足。\n做好後到信箱第三頁確認。"
+			},
+			"south_asia_leave": {
+				"title": "那口鍋",
+				"body": "車走的時候，那口鍋還在。\n火沒滅，煙一直往上走，走得很慢。\n我把窗關上了，味道還是在車裡。\n本子上這一頁，我寫了三遍才寫對那個詞。\n寫錯的那些，我沒有劃掉。",
+				"name": "那口鍋",
+				"desc": "信紙上有一處筆尖戳破的小洞。"
+			},
+			"butcher_street": {
+				"title": "肉鋪那條街",
+				"body": "窗外往左，第三個路口有一家肉鋪。\n老闆不問你要做什麼，只問要多少。\n今天有人把一包肉放在窗臺上，油紙包著，繩結還是老樣子。\n我很久沒見到他了，不知道他還記不記得我。",
+				"name": "肉鋪那條街",
+				"desc": "信紙上有一點油漬。",
+				"task_title": "交一單",
+				"task_body": "辦妥一單顧客的委託。"
+			},
+			"middle_east_arrive": {
+				"title": "牆下",
+				"body": "車停在一段牆下面。牆是土黃色的，被太陽曬得發白。\n中午的時候，整條街都是空的。所有的聲音都躲起來了，只剩下熱。\n傍晚，人一下子全出來了。\n有人在我車邊鋪開一塊布，擺上一隻銅壺和幾隻小杯子。他倒了一杯，推到我窗臺上。\n很甜。甜得發苦。",
+				"name": "牆下",
+				"desc": "信紙被曬得有點脆。"
+			},
+			"task_middle_east_arrive_1": {
+				"title": "牆下的爐",
+				"body": "牆根下埋著一隻爐子，火一直沒滅。\n麵糰貼上去，一會兒就鼓起來。\n做三道，我看看你貼得穩不穩。",
+				"name": "牆下的爐",
+				"desc": "信紙邊緣被烤得發脆。",
+				"task_title": "做三道中東菜",
+				"task_body": "三道，火候別過。\n做好後到信箱第三頁確認。"
+			},
+			"middle_east_note": {
+				"title": "沒有署名",
+				"body": "一張揉過又展平的紙，字很大：\n「芝麻醬的那個。」\n「烤的，要焦一點。」\n「茶，甜的。」\n紙角有一小塊油印，像是指印。\n我把紙翻過來。背面還有幾行很淡的字：\n「以前這片坡是草原，開著一對紅花，紅得很亮。她指給我看，說，這叫銀蓮花。」\n「她說，銀蓮花的花語是風。」\n「她騎馬跑起來的時候，草往兩邊倒，像風從中間過去。我喜歡看她那樣跑。我想有一天，也能跟她並排跑。」\n「現在坡上只剩沙子了。」",
+				"name": "沒有署名",
+				"desc": "紙上有一小塊油印，湊近有芝麻味。"
+			},
+			"task_middle_east_note_1": {
+				"title": "牧羊人的單子",
+				"body": "放羊的人從車邊過，把一張紙壓在牆根下。羊群在牆外等著，他另一隻手一直牽著繩。\n我猜他吃東西也只能空出一隻手。\n紙上寫著：放羊的時候，風從坡上下來，我想吃一口像風一樣的東西。\n底下又補了一行：捲起來的，有肉，有菜，能拿著走。\n我把紙抽出來。捲起來，一隻手能拿，大概是沙威瑪。",
+				"name": "牧羊人的單子",
+				"desc": "單子邊緣被沙磨毛了。",
+				"task_title": "一份沙威瑪",
+				"task_body": "做好一份沙威瑪，備好後到信箱第三頁交付。"
+			},
+			"middle_east_leave": {
+				"title": "甜的",
+				"body": "走的時候是清晨，牆的影子很長。\n銅壺還在，杯子收走了。\n我把昨天那杯沒喝完的茶倒了，杯子洗乾淨，放在窗臺上。\n開出很遠，後視鏡裡那面牆還是黃的。\n這一站，我記住了甜。",
+				"name": "甜的",
+				"desc": "信封口沾了一點糖，硬硬的。"
+			},
+			"stove_fire": {
+				"title": "火要小",
+				"body": "灶上那口鍋，火一大就糊。\n我試過很多次，最後發現只要把火調小，湯會自己慢慢收。\n湯清一點，味道反而更清楚。",
+				"name": "火要小",
+				"desc": "信紙邊角被燻黃了一小塊。",
+				"task_title": "做一份蔬菜湯",
+				"task_body": "蔬菜湯一份。\n備好後到信箱第三頁交付。"
+			},
+			"mediterranean_arrive": {
+				"title": "鹹",
+				"body": "這裡的風是鹹的。\n車停在一段坡上，往下能看見水。水很亮，亮到看久了眼睛會酸。\n有人在坡下收網。網拉上來的時候，銀光閃了一下，又滅了。\n中午他們就在路邊吃。麵包掰開，倒一點油，撒鹽。\n簡單到不像一頓飯，卻吃了很久。",
+				"name": "鹹",
+				"desc": "信紙上有一小片鹽粒，幹了以後發白。"
+			},
+			"task_mediterranean_arrive_1": {
+				"title": "曬著的油",
+				"body": "屋頂上曬著一排瓶子，油是綠的。\n這裡的東西簡單：油、鹽、火，還有時間。\n做三道，別放太多。",
+				"name": "曬著的油",
+				"desc": "信封上有一圈油漬。",
+				"task_title": "做三道地中海菜",
+				"task_body": "三道，油要輕一點。\n做好後到信箱第三頁確認。"
+			},
+			"mediterranean_note": {
+				"title": "餐巾紙",
+				"body": "一張餐巾紙，上面是鉛筆字，很輕：\n「番茄和那種白白的乳酪。」\n「面，不要煮太軟。」\n「有檸檬的話，擠一點。」\n紙被風吹到車門縫裡。我撿起來的時候，邊已經卷了。\n我按紙上寫的做了一次。鹽和油都很輕，吃到一半，忽然覺得像在哪裡吃過——想不起來是在哪。\n一個人吃飯久了，會記不清家裡的味道。",
+				"name": "餐巾紙",
+				"desc": "一張餐巾紙，壓平了還是軟的。"
+			},
+			"task_mediterranean_note_1": {
+				"title": "油瓶旁的紙條",
+				"body": "油瓶旁邊立著一張便條。\n「三樣素的，趁熱。」\n我把便條放了回去。",
+				"name": "油瓶旁的紙條",
+				"desc": "紙條上有一個油指印。",
+				"task_title": "做三樣素菜",
+				"task_body": "三樣清爽的，橄欖油別省。\n做好後到信箱第三頁確認。"
+			},
+			"mediterranean_leave": {
+				"title": "少放",
+				"body": "走的那天下了一點雨，很快就停了。\n坡下的水變成灰色，還是亮。\n我把昨天剩下的麵包掰碎，放在窗臺外沿。\n開出很遠，嘴裡還是那點鹽味。\n這一站，我學會了少放東西。",
+				"name": "少放",
+				"desc": "紙角有一點油，像是被手捏過。"
+			},
+			"steamer_lid": {
+				"title": "蒸籠蓋上的水",
+				"body": "掀蓋的時候小心，水會順著邊流下來。\n那些水是熱的，落在手上很疼。\n我小時候總被燙，後來學會了先掀一條縫，等氣跑完。\n耐心一點，東西就在裡面熟。",
+				"name": "蒸籠蓋上的水",
+				"desc": "蓋子上凝著一圈水汽。",
+				"task_title": "蒸一籠餃子",
+				"task_body": "餃子一份。\n備好後到信箱第三頁交付。"
+			},
+			"western_arrive": {
+				"title": "霧",
+				"body": "車停得比往常遠一點。這裡的地很平，平到能看見很遠的地方在起霧。\n窗戶上開始結水汽。我在上面畫了一道，又擦掉。\n有人在門口放了一小籃東西，用布蓋著。掀開是麵包，還溫著。\n麵包很硬，掰開的時候掉渣。裡面是軟的。\n這裡的黃油是黃的，不是白的。",
+				"name": "霧",
+				"desc": "信紙有點厚，摸起來像廚房的紙。"
+			},
+			"task_western_arrive_1": {
+				"title": "一張選單",
+				"body": "牆上的選單隻剩半張。\n剩下的那半寫著：趁熱。\n做三道，端上來的時候要燙。",
+				"name": "一張選單",
+				"desc": "紙很硬，像從選單上撕下來的。",
+				"task_title": "做三道經典西餐",
+				"task_body": "三道，端上桌時還得是熱的。\n做好後到信箱第三頁確認。"
+			},
+			"western_note": {
+				"title": "一小籃麵包",
+				"body": "一張便條，紙很好，字很小：\n「湯，濃的。」\n「麵包，要能蘸的。」\n「鍋裡的那種，有牛肉。」\n便條下面壓著一小塊黃油，用蠟紙包著。\n我把黃油湊近聞了聞。這個味道很熟，可我想不起來在哪兒聞過。",
+				"name": "一小籃麵包",
+				"desc": "便條下面原來壓著一小塊黃油，紙上留了油印。"
+			},
+			"task_western_note_1": {
+				"title": "官員的餐牌",
+				"body": "櫃檯上多了一塊餐牌，不是店裡的。\n背面用很重的字寫著：燈塔被一幫外地來的野蠻人拆了。沒人管。\n筆跡到這兒頓了一下，牌面上留了一道深痕。\n下面空了一小截，才又補：來一份中東烤肉，烤焦一點。就當他們。\n落款處蓋著一個官印，印泥蹭花了。\n他大概是想把那幫人當成這塊肉。烤焦，出氣，然後才有力氣去收拾那個爛攤子。",
+				"name": "官員的餐牌",
+				"desc": "餐牌上有一道擦不掉的舊字，旁邊還有幾道很深的劃痕。",
+				"task_title": "一份烤肉串",
+				"task_body": "做好一份烤肉串，烤得焦一點，備好後到信箱第三頁交付。"
+			},
+			"western_leave": {
+				"title": "溫度",
+				"body": "走的時候霧還沒散。\n車走得很慢，像也捨不得。\n我把最後一塊麵包吃了，渣掉在腿上。\n本子這一頁沾了一點黃油，透過去，背面也有一個印子。\n這一站，我記住了溫度。",
+				"name": "溫度",
+				"desc": "紙上有油透過去的痕跡。"
+			},
+			"americas_arrive": {
+				"title": "直路",
+				"body": "這裡的路很直，直得看不見彎。\n車停了以後，很久都沒有人來。遠處有鐵皮屋頂，風一吹就響。\n傍晚有人開車過來，停在我旁邊，搖下車窗問我要不要嚐嚐他車上的東西。\n我搖頭。他笑了一下，把一個紙袋放在我窗臺上，開走了。\n紙袋裡是熱的，油透了紙。",
+				"name": "直路",
+				"desc": "信封上有一處油透的印子。",
+				"task_title": "交一單",
+				"task_body": "辦妥一單顧客的委託。"
+			},
+			"task_americas_arrive_1": {
+				"title": "直路上的車",
+				"body": "一條路筆直地穿過去，看不見彎。\n車裡的收音機在響，沒人關。\n做三道，分量大一點。",
+				"name": "直路上的車",
+				"desc": "信封上有一道輪胎碾過的灰印。",
+				"task_title": "做三道美洲菜",
+				"task_body": "三道，份量給足一點。\n做好後到信箱第三頁確認。"
+			},
+			"americas_note": {
+				"title": "收據",
+				"body": "一張收據背面，圓珠筆：\n「肉，夾在麵包裡的那種。」\n「土豆，切條的。」\n「甜的，冰的，有汽的。」\n字很大，幾乎佔滿整張紙。\n一個人點兩份，是路上養成的習慣。",
+				"name": "收據",
+				"desc": "收據背面，正面還留著價格。"
+			},
+			"task_americas_note_1": {
+				"title": "車窗裡的手",
+				"body": "車停在路邊，車窗搖下來一半。\n一隻手伸出來，比了兩根手指。\n我猜是兩張訂單的意思。",
+				"name": "車窗裡的手",
+				"desc": "信封上有一道油墨指印。",
+				"task_title": "交兩張訂單",
+				"task_body": "兩張，送到車邊。"
+			},
+			"americas_leave": {
+				"title": "沒看清",
+				"body": "走的時候天剛亮。路還是直的。\n我把那個紙袋摺好，收進本子。\n油印在紙上，過了一天還在。\n車開了很久，我才想起來，我始終沒看清那個人的臉。\n這一站，我記住了那隻手。\n兩根手指，比劃一下，就夠了。\n窗外的世界一直在走，我坐在這裡看。很多路我都沒有走過，很多話也沒來得及說完。",
+				"name": "沒看清",
+				"desc": "紙袋被折成四折，油印還在。"
+			},
+			"africa_arrive": {
+				"title": "日落很慢",
+				"body": "這裡的太陽落得很慢。\n車停在一棵樹下。樹影只夠蓋住半個車身，剩下的那半個燙得不能碰。\n傍晚有人在不遠處生火。火很小，鍋很大。\n有人端了一碗過來，裡面是稠的，顏色很深。\n我吃了一口。很燙，花生味很重。",
+				"name": "日落很慢",
+				"desc": "信紙的顏色比別的深一點。",
+				"task_title": "做一道非洲菜",
+				"task_body": "任意一道非洲菜。\n做好後到信箱第三頁確認。"
+			},
+			"task_africa_arrive_1": {
+				"title": "日落很慢",
+				"body": "這裡的太陽落得很慢。\n慢到鍋裡的東西能燉透，慢到人願意坐下來等。\n做兩道，別急。",
+				"name": "日落很慢",
+				"desc": "信紙被曬得發黃。",
+				"task_title": "做兩道非洲菜",
+				"task_body": "兩道。慢一點沒關係。\n做好後到信箱第三頁確認。"
+			},
+			"africa_note": {
+				"title": "燒過一角",
+				"body": "一張紙，邊緣被燒過：\n「燉的，要爛。」\n「那種黃色的根，壓成泥。」\n「餅，蘸著吃。」\n紙上的字一筆一畫，像寫的人不太常寫字。",
+				"name": "燒過一角",
+				"desc": "紙的一角被火燎過，邊緣是焦的。"
+			},
+			"task_africa_note_1": {
+				"title": "慢下來的鐘",
+				"body": "牆上的鐘停過，後來有人把它撥到三點，它又走了。\n它走得很慢，慢到一下午也挪不了多少。\n有人想要三樣街頭小吃，說不急。",
+				"name": "慢下來的鐘",
+				"desc": "信封很輕，裡面只有一張紙。",
+				"task_title": "做三樣街頭小吃",
+				"task_body": "三樣能拿著走的，別怕香料重。\n做好後到信箱第三頁確認。"
+			},
+			"africa_leave": {
+				"title": "慢",
+				"body": "走的時候，那堆火還在燒。\n樹下多了一把小凳子，是有人留下的。\n我把碗洗乾淨，放在窗臺外沿。\n開出很遠，後視鏡裡的火只剩一個點。\n這一站，我記住了慢。",
+				"name": "慢",
+				"desc": "信封上沾著一點灰，像是從火邊帶回來的。"
+			},
+			"fast_food_arrive": {
+				"title": "最後一站",
+				"body": "最後一站比我以為的熱鬧。\n霓虹燈從傍晚亮到很晚，把車窗照成一塊一塊的顏色。\n這裡的人走路很快，吃東西也快。有人在車邊站著吃完，把紙揉成一團，扔進桶裡，走了。\n我看了很久。\n我好像第一次見到有人把吃飯當成一件要趕完的事。",
+				"name": "最後一站",
+				"desc": "信紙很白，像是從印表機的紙盒裡抽出來的。",
+				"task_title": "做一道西式快餐",
+				"task_body": "任意一道西式快餐。\n做好後到信箱第三頁確認。"
+			},
+			"task_fast_food_arrive_1": {
+				"title": "最後一家",
+				"body": "這條街到頭了。\n最後一家店亮著燈，櫃檯後面沒人。\n做兩道，趁燈還亮。",
+				"name": "最後一家",
+				"desc": "信封上印著一個褪色的商標。",
+				"task_title": "做兩道西式快餐",
+				"task_body": "兩道。快一點。\n做好後到信箱第三頁確認。"
+			},
+			"fast_food_note": {
+				"title": "小票",
+				"body": "一張列印的小票，字很小：\n「一份，全都要。」\n「飲料，加冰。」\n「快一點。」\n最後那行下面，有人用筆補了兩個字：\n「謝謝。」",
+				"name": "小票",
+				"desc": "一張小票，背面有人用筆寫了兩個字。"
+			},
+			"task_fast_food_note_1": {
+				"title": "打烊前的三樣",
+				"body": "燈快滅了。\n櫃檯後面終於有人開口：再做三樣，最後三樣。\n做完這三樣，今天就算收尾了。",
+				"name": "打烊前的三樣",
+				"desc": "信封上有一個油點。",
+				"task_title": "再做三樣街頭小吃",
+				"task_body": "最後三樣，做完就收攤。\n做好後到信箱第三頁確認。"
+			},
+			"fast_food_leave": {
+				"title": "都收好了",
+				"body": "我沒有立刻走。\n車停在原地，燈一盞一盞滅掉。\n我把這一路的紙都攤開，按順序排了一遍。\n有練習本撕下來的邊，有煙盒背面，有餐巾紙，有燒過一角的紙，有列印的小票。\n字跡都不一樣。有些我認得，有些我不認得。\n有些紙我留著，不是因為上面的字，是因為那筆跡像是認識的人寫的。\n我把它們重新收好，夾進本子。\n然後車動了。",
+				"name": "都收好了",
+				"desc": "信封很厚，裡面塞著好幾張折過的紙。",
+				"task_title": "交兩單",
+				"task_body": "辦妥兩單顧客的委託。"
+			},
+			"on_the_road": {
+				"title": "仍在路上",
+				"body": "車沒有停。\n天亮之前，我把桌子收好，本子攤在窗邊。\n窗外是我一路經過的地方：早市的燈一盞一盞亮起來，巷口冒著水汽，沙漠那邊還有沒熄的炭火。\n它們排成一條線，一直退到很遠的地方。\n我沒有再回頭。車還在往前。",
+				"name": "仍在路上",
+				"desc": "信封很輕，裡面只有一頁。"
+			},
+			"east_asia_noodle_stand": {
+				"title": "後巷的麵攤",
+				"body": "旅店老闆託人帶話，說那三行紙是從城南後巷麵攤來的。\n第二天，麵攤老闆把攤子推到車邊。兩張矮桌，鍋裡的水一直開著。\n他沒抬頭，只說了一句：「紙是我家丫頭寫的，她嘴刁。」\n他往鍋裡下面，又添了一勺湯。\n「你的湯底不錯。要不要學？」\n灶臺邊掛著兩口鍋，一口炒，一口煮。",
+				"name": "後巷的麵攤",
+				"desc": "一張用鉛筆寫的紙條，背面沾著麵粉。"
+			},
+			"task_east_asia_noodle_stand_1": {
+				"title": "麵攤的託付",
+				"body": "麵攤老闆託人捎話，讓我明天備好兩碗清湯麵。\n他說要看看我的湯底穩不穩。\n「面是面，湯是湯，別混著糊弄。」\n我數了數手裡的麵粉和雞蛋，夠。就兩碗。",
+				"name": "麵攤的託付",
+				"desc": "一張寫著時間地點的紙條，字跡比上一張端正。",
+				"task_title": "帶兩碗清湯麵",
+				"task_body": "清湯麵兩碗。\n備好後到信箱第三頁交付。"
+			}
+		},
+		"merchant": {
+			"name": "雜貨商人",
+			"desc": "推著車來的那個人。你要什麼，他記得住。"
+		},
+		"recipe": {
+			"roasted_eggplant": {
+				"name": "烤茄子",
+				"desc": "茄子烤軟劃開，鋪香料和醬油，回爐烤到冒油。"
+			},
+			"eggplant_parmesan": {
+				"name": "茄子帕瑪森",
+				"desc": "茄子切片煎軟，和番茄、芝士疊好，烤到表面起泡。"
+			},
+			"cassava_fries": {
+				"name": "炸木薯條",
+				"desc": "木薯切條煮半熟，瀝乾炸黃，撒鹽。"
+			},
+			"cassava_cake": {
+				"name": "木薯糕",
+				"desc": "木薯磨漿，拌椰漿和糖，上蒸籠蒸到成型。"
+			},
+			"americano": {
+				"name": "兌水成美式",
+				"desc": "兌：濃縮加一次水，不用等，也不會做錯。"
+			},
+			"apple_crumble": {
+				"name": "蘋果酥",
+				"desc": "蘋果鋪底，麵糰拌黃油搓成碎撒上去，烤到金黃。"
+			},
+			"apple_pie": {
+				"name": "蘋果派",
+				"desc": "蘋果加糖炒軟，包進麵糰，烤到表面發黃。"
+			},
+			"arancini": {
+				"name": "意式炸飯糰",
+				"desc": "冷飯包芝士，捏成團，下鍋炸到金黃。"
+			},
+			"asado": {
+				"name": "阿根廷烤肉",
+				"desc": "大塊肉抹油和鹽，慢烤到外焦裡粉。"
+			},
+			"avocado_toast": {
+				"name": "蔬菜泥吐司",
+				"desc": "吐司烤脆，壓上搗碎的蔬菜，淋一點油。"
+			},
+			"baba_ganoush": {
+				"name": "烤茄子泥",
+				"desc": "茄子烤到皮皺，挖出肉，拌油和香料。"
+			},
+			"bagel": {
+				"name": "貝果",
+				"desc": "麵糰搓圈，先下水煮一下，再進烤箱。"
+			},
+			"bagel_sandwich": {
+				"name": "貝果三明治",
+				"desc": "貝果橫切，抹奶油芝士，夾一層菜。"
+			},
+			"baklava": {
+				"name": "果仁蜜餅",
+				"desc": "麵皮夾堅果，烤到金黃，淋糖漿。"
+			},
+			"banana_rice": {
+				"name": "香蕉飯",
+				"desc": "飯和椰奶煮軟，配熟透的香蕉。"
+			},
+			"banh_mi": {
+				"name": "越南法棍",
+				"desc": "法棍烤脆，夾肉、菜，淋醬。"
+			},
+			"batter": {
+				"name": "麵糊",
+				"desc": "麵粉、水、蛋調成糊。"
+			},
+			"beef_bourguignon": {
+				"name": "慢燉牛肉",
+				"desc": "牛肉煎上色，裹麵粉，加蔬菜和香料，小火燉到軟。"
+			},
+			"beef_wellington": {
+				"name": "惠靈頓牛排",
+				"desc": "肉煎上色，裹上蘑菇碎，包進麵糰，刷蛋液烤。"
+			},
+			"bibimbap": {
+				"name": "拌飯",
+				"desc": "飯上鋪菜、肉和煎蛋，加辣醬拌開。"
+			},
+			"biryani": {
+				"name": "比爾亞尼",
+				"desc": "飯和肉分層鋪好，撒堅果，燜到入味。"
+			},
+			"blt": {
+				"name": "BLT",
+				"desc": "培根、生菜、番茄疊進吐司。"
+			},
+			"boerewors": {
+				"name": "南非香腸",
+				"desc": "肉餡調香料灌成腸，煎到表面焦。"
+			},
+			"boiled_egg": {
+				"name": "水煮蛋",
+				"desc": "冷水下蛋，水開計時。"
+			},
+			"braised_egg": {
+				"name": "滷蛋",
+				"desc": "蛋煮熟敲出裂紋，放進醬油和香料裡小火煨。"
+			},
+			"bread": {
+				"name": "烤麵包",
+				"desc": "麵糰烤過之後，會從裡面撐起來。"
+			},
+			"broth": {
+				"name": "熬高湯",
+				"desc": "菜和肉一起煮，把味道都留在水裡。"
+			},
+			"brownie": {
+				"name": "布朗尼",
+				"desc": "烤：黃油和糖化開，拌入蛋、麵粉和巧克力，烤到表面結殼。"
+			},
+			"buffalo_wings": {
+				"name": "布法羅雞翅",
+				"desc": "炸：肉炸脆，裹上辣醬和黃油，趁熱吃。"
+			},
+			"bun": {
+				"name": "包子",
+				"desc": "發好的麵糰包上肉餡，收口朝上，蒸到皮透亮。"
+			},
+			"burrito": {
+				"name": "捲餅",
+				"desc": "玉米餅鋪肉、菜和芝士，卷緊，煎一下。"
+			},
+			"butter_rice": {
+				"name": "黃油拌飯",
+				"desc": "拌：熱飯放一塊黃油，沿邊淋醬油，拌開。"
+			},
+			"butter_toast": {
+				"name": "黃油吐司",
+				"desc": "烤熱的吐司抹上黃油。"
+			},
+			"caesar_salad": {
+				"name": "凱撒沙拉",
+				"desc": "菜葉撕開，拌沙拉醬，撒麵包丁和芝士。"
+			},
+			"cake": {
+				"name": "烤蛋糕",
+				"desc": "麵糊倒進模子，烤到長起來。"
+			},
+			"candied_fruit": {
+				"name": "糖葫蘆",
+				"desc": "水果串起來，蘸熬好的糖，放涼。"
+			},
+			"cappuccino": {
+				"hint": "名字裡有一頂帽子，喝起來像甜的雲。",
+				"name": "打奶做卡布奇諾",
+				"desc": "打奶：濃縮墊底，兩份奶打厚，泡沫浮在最上面。"
+			},
+			"caprese": {
+				"name": "卡普里沙拉",
+				"desc": "番茄和芝士切片，交錯擺好，撒香料。"
+			},
+			"caramel_macchiato": {
+				"name": "焦糖瑪奇朵",
+				"desc": "糖漿鋪底，倒奶和濃縮，表面淋一道焦糖色。"
+			},
+			"carrot_cake": {
+				"name": "胡蘿蔔蛋糕",
+				"desc": "胡蘿蔔擦絲拌進麵糊，烤到牙籤乾淨。"
+			},
+			"cereal": {
+				"name": "麥片",
+				"desc": "幹吃也響，泡進奶裡就安靜了。"
+			},
+			"ceviche": {
+				"name": "酸橘汁醃魚",
+				"desc": "魚片用果汁醃到發白，加香料。"
+			},
+			"chai": {
+				"name": "印度奶茶",
+				"desc": "兩份奶加茶葉、香料和糖，小火煮到顏色變深。"
+			},
+			"cheese_stick": {
+				"name": "乳酪棒",
+				"desc": "芝士條裹麵糊，下鍋炸。"
+			},
+			"cheese_toast": {
+				"name": "芝士吐司",
+				"desc": "吐司鋪芝士，烤到融化。"
+			},
+			"cheeseburger": {
+				"name": "芝士漢堡",
+				"desc": "肉餅快熟時鋪一片芝士，蓋一下讓它化開。"
+			},
+			"cheesecake": {
+				"name": "芝士蛋糕",
+				"desc": "麵糊和奶油芝士、糖拌順，倒模烤到邊硬。"
+			},
+			"chicken_curry": {
+				"name": "咖哩雞",
+				"desc": "燉：香料炒香，下肉，加奶小火熬到稠。"
+			},
+			"chicken_wrap": {
+				"name": "雞肉卷",
+				"desc": "肉煎熟切條，和菜一起捲進薄餅裡。"
+			},
+			"cinnamon_roll": {
+				"name": "肉桂卷",
+				"desc": "麵糰擀開，抹黃油撒糖和肉桂，捲起來切段烤。"
+			},
+			"clear_noodle_soup": {
+				"name": "清湯麵",
+				"desc": "面煮好撈進碗，澆清湯。"
+			},
+			"club_sandwich": {
+				"name": "俱樂部三明治",
+				"desc": "吐司烤一下，夾肉、煎蛋和菜，切成三角。"
+			},
+			"coconut_dessert": {
+				"name": "椰漿甜品",
+				"desc": "椰奶加糖煮稠，放水果，冰鎮。"
+			},
+			"cold_brew": {
+				"name": "冷萃",
+				"desc": "冷水泡著咖啡粉，放進冰箱，一整個下午過去，味道才肯出來。",
+				"hint": "冷水、咖啡粉，放進冰箱別管它。"
+			},
+			"con_panna": {
+				"name": "康寶藍",
+				"desc": "一小杯濃縮，頂上一團奶油，像給苦的東西蓋了床被子。"
+			},
+			"cookie": {
+				"name": "烤曲奇",
+				"desc": "攤成小片，邊緣先焦，中間來不及。"
+			},
+			"corn_soup": {
+				"name": "玉米濃湯",
+				"desc": "玉米與牛奶打成糊，煮開。"
+			},
+			"corn_tortilla": {
+				"name": "烙玉米餅",
+				"desc": "烙：玉米和麵粉和成團，擀薄，烙到起泡。",
+				"hint": "薄薄一張，能捲住的東西不少。"
+			},
+			"couscous": {
+				"name": "庫斯庫斯",
+				"desc": "麵粉搓成小粒，蒸熟，拌蔬菜和香料。"
+			},
+			"cream": {
+				"name": "打奶油",
+				"desc": "打：牛奶靜置一會兒，撇起上層，打到能立住。"
+			},
+			"cream_cheese": {
+				"name": "奶油芝士",
+				"desc": "打：奶加黃油一起打，打到稠得抹得開。"
+			},
+			"cream_puff": {
+				"name": "泡芙",
+				"desc": "外殼烤得鼓起，涼了以後從底下擠進奶油。"
+			},
+			"creamed_spinach": {
+				"name": "奶油菠菜",
+				"desc": "菠菜焯軟擠幹，切碎拌進白醬和黃油。"
+			},
+			"creamy_mushroom_chicken": {
+				"name": "奶油蘑菇雞",
+				"desc": "雞肉煎黃，蘑菇炒香，倒白醬煮到濃。"
+			},
+			"creme_brulee": {
+				"name": "布蕾",
+				"desc": "烤到凝固，撒一層糖，用火燎成薄薄的殼。",
+				"hint": "蛋和奶油先混，糖最後撒在面上。"
+			},
+			"croissant": {
+				"name": "烤可頌",
+				"desc": "麵糰疊上黃油，反覆折幾次，烤出來就是層。"
+			},
+			"curry_puff": {
+				"name": "咖哩角",
+				"desc": "麵皮包咖哩肉餡，烤到起酥。"
+			},
+			"curry_rice": {
+				"name": "咖哩飯",
+				"desc": "肉和菜炒過，加香料和水煮稠，澆在飯上。"
+			},
+			"dal": {
+				"name": "豆湯",
+				"desc": "豆子煮到散開，加香料。"
+			},
+			"dumpling": {
+				"name": "餃子",
+				"desc": "蒸：麵糰擀皮，包肉餡，撒一撮蔥花，上籠蒸。"
+			},
+			"egg_drop_soup": {
+				"name": "蛋花湯",
+				"desc": "滾湯裡淋細蛋液。"
+			},
+			"egg_pancake": {
+				"name": "蛋餅",
+				"desc": "蛋和麵粉調成糊，倒進鍋裡攤薄，兩面煎熟。"
+			},
+			"egg_roll": {
+				"name": "蛋卷",
+				"desc": "蛋液攤成薄片，一層層捲起。"
+			},
+			"egg_salad": {
+				"name": "雞蛋沙拉",
+				"desc": "蛋壓碎，拌沙拉醬。"
+			},
+			"egg_salad_sandwich": {
+				"name": "蛋沙拉三明治",
+				"desc": "蛋壓碎拌沙拉醬，夾入吐司。"
+			},
+			"egg_tart": {
+				"name": "蛋撻",
+				"desc": "烤：麵糰壓成小盞，蛋奶液倒進去，烤到結一層皮。"
+			},
+			"egg_toast": {
+				"name": "煎蛋吐司",
+				"desc": "吐司抹黃油，蓋上煎蛋。"
+			},
+			"espresso": {
+				"name": "萃取濃縮",
+				"desc": "萃：熱水壓過咖啡粉，二十秒出一小杯。"
+			},
+			"falafel": {
+				"name": "炸豆丸",
+				"desc": "豆子泡軟打碎，加麵粉和香料，搓球下鍋炸。"
+			},
+			"farinata": {
+				"name": "意式煎餅",
+				"desc": "麵粉加水調稀，倒進烤盤，淋油烤。"
+			},
+			"feijoada": {
+				"name": "巴西燉菜",
+				"desc": "肉和豆子慢燉，加香料，燉到湯稠。"
+			},
+			"fish_and_chips": {
+				"name": "炸魚薯條",
+				"desc": "海鮮裹麵糊炸到鼓起來，旁邊配一份薯條。"
+			},
+			"flat_white": {
+				"name": "澳白",
+				"desc": "奶少一些，咖啡就往前站了一步。",
+				"hint": "兩份濃縮加一份牛奶，奶不要打太厚。"
+			},
+			"focaccia": {
+				"name": "佛卡夏",
+				"desc": "麵糰攤平，按出小坑，淋油撒香料烤。"
+			},
+			"french_omelette": {
+				"name": "法式煎蛋卷",
+				"desc": "蛋打散，黃油化開，小火推成卷。"
+			},
+			"french_onion_soup": {
+				"name": "法式洋蔥湯",
+				"desc": "洋蔥切絲慢炒到焦糖色，加高湯煮，面上放麵包和芝士烤。"
+			},
+			"french_toast": {
+				"name": "法式吐司",
+				"desc": "吐司蘸蛋奶液，兩面煎黃。"
+			},
+			"fresh_milk": {
+				"name": "鮮奶",
+				"desc": "奶倒進杯子，冰一下。"
+			},
+			"fried_chicken": {
+				"name": "炸雞",
+				"desc": "肉裹上面糊下油鍋，炸到金黃，撈出來瀝一下。"
+			},
+			"fried_dough": {
+				"name": "炸麵糰",
+				"desc": "麵糰發酵，揪成小塊，下鍋炸到金黃。"
+			},
+			"fried_egg": {
+				"name": "煎蛋",
+				"desc": "植物油化開，蛋打下去，邊緣先響。"
+			},
+			"fried_noodles": {
+				"name": "炒麵",
+				"desc": "麵條煮半熟，和菜一起大火炒。"
+			},
+			"fried_rice": {
+				"name": "蛋炒飯",
+				"desc": "隔夜的米飯最合適，蛋先炒散，再一起翻。"
+			},
+			"fries": {
+				"name": "薯條",
+				"desc": "土豆切條，泡掉澱粉，下油鍋炸到邊上發黃。"
+			},
+			"fruit_salad": {
+				"name": "水果沙拉",
+				"desc": "水果切塊，拌上奶油，冰一會兒。"
+			},
+			"fufu": {
+				"name": "木薯泥",
+				"desc": "木薯煮熟，趁熱搗成團。"
+			},
+			"garlic_toast": {
+				"name": "蒜香吐司",
+				"desc": "黃油拌蒜泥，抹面烤香。"
+			},
+			"gazpacho": {
+				"name": "西班牙冷湯",
+				"desc": "番茄打碎，加油，冰鎮。"
+			},
+			"greek_salad": {
+				"name": "希臘沙拉",
+				"desc": "蔬菜切塊，放芝士，淋油撒香料。"
+			},
+			"green_curry": {
+				"name": "綠咖哩",
+				"desc": "椰奶煮開，加香料和肉，煮到濃稠。"
+			},
+			"green_papaya_salad": {
+				"name": "涼拌蔬菜絲",
+				"desc": "菜切絲，加香料搗拌，撒堅果。"
+			},
+			"grilled_cheese": {
+				"name": "烤芝士三明治",
+				"desc": "吐司夾芝士，抹黃油小火煎到兩面金黃。"
+			},
+			"grind_bean": {
+				"name": "磨咖啡粉",
+				"desc": "研磨機轉起來的聲音，比香氣先到。"
+			},
+			"groundnut_stew": {
+				"name": "花生燉菜",
+				"desc": "肉和菜燉軟，加堅果醬攪勻。"
+			},
+			"ham_cheese_sandwich": {
+				"name": "火腿芝士三明治",
+				"desc": "吐司夾火腿與芝士，壓緊。"
+			},
+			"hamburger": {
+				"name": "漢堡",
+				"desc": "麵包切開，肉餅煎熟，夾一片生菜，壓一壓。"
+			},
+			"hash_brown": {
+				"name": "薯餅",
+				"desc": "土豆絲擠幹，壓餅煎黃。"
+			},
+			"hash_browns": {
+				"name": "薯格",
+				"desc": "土豆刨成細絲，擠幹，壓成小餅兩面煎。"
+			},
+			"hot_cocoa": {
+				"name": "熱可可",
+				"desc": "奶加可可和糖，小火加熱，攪到顏色變深。"
+			},
+			"hot_dog": {
+				"name": "熱狗",
+				"desc": "香腸煎到皮裂，塞進長麵包，擠一道番茄。"
+			},
+			"hummus": {
+				"name": "鷹嘴豆泥",
+				"desc": "豆子煮爛，加香料打成泥，淋油。"
+			},
+			"iced_americano": {
+				"name": "冰美式",
+				"desc": "兌：濃縮加冷水，扔兩塊冰，杯口發涼。"
+			},
+			"iced_latte": {
+				"name": "冰拿鐵",
+				"desc": "凍：冰奶倒進杯裡，最後淋上濃縮，杯壁起霧。"
+			},
+			"injera": {
+				"name": "英吉拉",
+				"desc": "發酵：麵粉調稀糊，靜置到起泡，再攤薄烙。"
+			},
+			"jam": {
+				"name": "果醬",
+				"desc": "熬：水果加糖小火熬到掛勺，收掉一半水分。"
+			},
+			"jam_toast": {
+				"name": "果醬吐司",
+				"desc": "吐司烤一下，趁熱抹一層果醬。"
+			},
+			"jollof": {
+				"name": "辣味燉飯",
+				"desc": "番茄和香料炒出油，加飯和肉燜熟。"
+			},
+			"juice": {
+				"name": "果汁",
+				"desc": "壓：水果壓出汁，濾掉粗渣，現壓現喝。"
+			},
+			"kebab": {
+				"name": "烤肉串",
+				"desc": "肉切塊醃好，串起來烤到邊緣發焦。"
+			},
+			"kebab_wrap": {
+				"name": "烤肉卷",
+				"desc": "餅鋪開，放烤肉和菜，淋醬卷緊。"
+			},
+			"khao_soi": {
+				"name": "咖哩面",
+				"desc": "椰奶咖哩煮開，清湯麵下鍋，加肉，面上放一撮炸面。"
+			},
+			"kimchi_soup": {
+				"name": "泡菜湯",
+				"desc": "泡菜和肉炒過，加水煮到湯變濃。"
+			},
+			"lasagna": {
+				"name": "千層麵",
+				"desc": "面片、肉醬、白醬一層層疊好，烤到表面起泡。"
+			},
+			"latte": {
+				"hint": "有人說，牛奶一進到濃縮裡，苦味就會往後退一點。",
+				"name": "加奶成拿鐵",
+				"desc": "蒸奶：蒸汽把奶打厚，倒進濃縮，苦味往後退一點。"
+			},
+			"lemonade": {
+				"name": "檸檬水",
+				"desc": "水果擠汁，加糖水，冰鎮。"
+			},
+			"mac_cheese": {
+				"name": "芝士通心粉",
+				"desc": "通心粉煮熟，拌芝士和奶，烤到表面焦。"
+			},
+			"macaron": {
+				"name": "馬卡龍",
+				"desc": "堅果磨粉拌糖和蛋白，擠成小圓烤，夾上餡。"
+			},
+			"macchiato": {
+				"name": "瑪奇朵",
+				"desc": "點泡：濃縮上點一小勺打發的奶油，別攪。"
+			},
+			"make_dough": {
+				"name": "和麵團",
+				"desc": "麵粉和牛奶混在一起，手比腦子先知道該揉多久。"
+			},
+			"mango_lassi": {
+				"name": "芒果酸奶",
+				"desc": "水果、酸奶和糖一起打勻。"
+			},
+			"mango_sticky_rice": {
+				"name": "芒果糯米飯",
+				"desc": "飯蒸熟，拌椰漿，配切片水果。"
+			},
+			"mapo_tofu": {
+				"name": "麻婆豆腐",
+				"desc": "豆製品切塊，肉末炒香，加辣椒和醬油煮，推入豆腐。"
+			},
+			"mashed_potato": {
+				"name": "土豆泥",
+				"desc": "土豆煮熟壓碎，加奶和黃油攪勻。"
+			},
+			"meat_sauce": {
+				"name": "炒肉醬",
+				"desc": "肉先炒散，再讓菜和水慢慢收進去。"
+			},
+			"meat_sauce_rice": {
+				"name": "肉醬飯",
+				"desc": "肉醬小火收稠，蓋在熱飯上，邊緣會慢慢塌下去。",
+				"hint": "肉醬先收稠，再澆到飯上。"
+			},
+			"meat_soup": {
+				"name": "肉湯",
+				"desc": "肉切薄片，在滾湯裡燙熟，湯色會變深一點。"
+			},
+			"dark_chocolate": {
+				"name": "黑巧克力",
+				"desc": "化：可可、黃油、糖拌成厚糊，壓模放涼。"
+			},
+			"milk_chocolate": {
+				"name": "牛奶巧克力",
+				"desc": "化：可可、鮮奶、黃油、糖隔水攪開，倒模放涼。"
+			},
+			"lava_cake": {
+				"name": "熔岩巧克力蛋糕",
+				"desc": "烤：黑巧克力、黃油、蛋和糖攪勻，烤到中間還流。"
+			},
+			"milk_cereal": {
+				"name": "泡牛奶麥片",
+				"desc": "倒：麥片進碗，冷牛奶沒過，等它軟。"
+			},
+			"milk_tea": {
+				"name": "奶茶",
+				"desc": "奶加茶葉和糖煮開，關火燜一會兒。"
+			},
+			"milkshake": {
+				"name": "奶昔",
+				"desc": "奶、奶油、糖一起打，打到能掛住杯壁。"
+			},
+			"mint_tea": {
+				"name": "薄荷茶",
+				"desc": "水加香料和糖煮開，倒進杯子。"
+			},
+			"mocha": {
+				"name": "摩卡",
+				"desc": "衝：濃縮加奶和黑巧克力，攪到顏色變深。"
+			},
+			"mooncake": {
+				"name": "月餅",
+				"desc": "麵糰壓進模子，刷蛋液烤到上色。"
+			},
+			"muffin": {
+				"name": "瑪芬",
+				"desc": "麵糊拌進奶、黃油和糖，倒進杯裡，烤到頂起來裂口。"
+			},
+			"mushroom_risotto": {
+				"name": "菌菇燴飯",
+				"desc": "米飯加菌菇和白醬慢慢攪，最後拌芝士。"
+			},
+			"mushroom_soup": {
+				"name": "蘑菇湯",
+				"desc": "蘑菇煎香，加白醬與牛奶。"
+			},
+			"naan": {
+				"name": "饢",
+				"desc": "麵糰擀開，貼高溫烤到起斑。"
+			},
+			"nachos": {
+				"name": "玉米片",
+				"desc": "玉米片鋪芝士和香料，烤到化。"
+			},
+			"nasi_goreng": {
+				"name": "印尼炒飯",
+				"desc": "冷飯下鍋，加肉、香料炒散，最後放煎蛋。"
+			},
+			"nasi_lemak": {
+				"name": "椰漿飯",
+				"desc": "米泡過，用椰漿蒸熟，配辣醬。"
+			},
+			"noodle": {
+				"name": "擀麵條",
+				"desc": "麵糰擀開、疊起、切開，再抖散。"
+			},
+			"noodle_soup": {
+				"name": "湯麵",
+				"desc": "面另煮，湯另燒，最後合在一起，面才不會糊。",
+				"hint": "面單獨煮，湯單獨燒。"
+			},
+			"onigiri": {
+				"name": "飯糰",
+				"desc": "手上沾水，把飯捏成三角，中間藏一點餡。"
+			},
+			"onion_rings": {
+				"name": "洋蔥圈",
+				"desc": "洋蔥切圈，裹麵糊，下油鍋炸到浮起來。"
+			},
+			"onion_soup": {
+				"name": "洋蔥湯",
+				"desc": "洋蔥切絲炒軟，倒高湯煮到顏色變深。"
+			},
+			"onion_tart": {
+				"name": "焦糖洋蔥撻",
+				"desc": "麵糰壓進模子，鋪上炒軟的洋蔥和芝士，烤到邊黃。"
+			},
+			"oyakodon": {
+				"name": "親子丼",
+				"desc": "肉和大蔥煮軟，淋蛋液，半熟時蓋到飯上。"
+			},
+			"pad_thai": {
+				"name": "泰式炒河粉",
+				"desc": "粉先泡軟，和蝦、蛋、菜一起大火炒。"
+			},
+			"paella": {
+				"name": "海鮮飯",
+				"desc": "米飯和海鮮鋪在鍋裡，加香料燜到收汁。"
+			},
+			"palak_paneer": {
+				"name": "菠菜芝士",
+				"desc": "蔬菜煮軟打碎，加香料，放入芝士塊。"
+			},
+			"pancake": {
+				"name": "鬆餅",
+				"desc": "麵糊舀進平底鍋，起泡後翻面，煎到兩面黃。"
+			},
+			"pasta_tomato": {
+				"name": "番茄意麵",
+				"desc": "麵條煮熟，拌進炒軟的番茄裡。"
+			},
+			"peanut_butter": {
+				"name": "花生醬",
+				"desc": "花生磨碎，油自己析出來。"
+			},
+			"pbj_sandwich": {
+				"name": "做花生醬果醬三明治",
+				"desc": "抹：兩片吐司分別抹花生醬和果醬，合上壓緊。"
+			},
+			"persian_stew": {
+				"name": "波斯燉菜",
+				"desc": "肉和豆子慢燉，最後加香料和菜。"
+			},
+			"peruvian_chicken": {
+				"name": "秘魯烤雞",
+				"desc": "肉用香料和果汁醃過，烤到皮脆。"
+			},
+			"pho": {
+				"name": "河粉",
+				"desc": "高湯煮滾，澆在粉上，鋪肉和菜。"
+			},
+			"pilaf": {
+				"name": "抓飯",
+				"desc": "米泡過，和肉、香料一起炒，加水燜熟。"
+			},
+			"pita": {
+				"name": "皮塔",
+				"desc": "烤：麵糰擀圓，高溫烤到鼓起來。"
+			},
+			"pizza": {
+				"name": "披薩",
+				"desc": "麵糰攤開，抹番茄，撒芝士，烤到邊緣起泡。"
+			},
+			"poached_egg": {
+				"name": "水波蛋",
+				"desc": "煮：水微開，加一撮鹽，蛋貼水面滑進去。"
+			},
+			"popcorn": {
+				"name": "爆米花",
+				"desc": "玉米粒下鍋，蓋蓋子，爆到聲音變稀。"
+			},
+			"potato_salad": {
+				"name": "土豆沙拉",
+				"desc": "土豆與蛋壓碎，拌沙拉醬。"
+			},
+			"pour_over": {
+				"name": "慢慢滴一杯滴濾咖啡",
+				"desc": "水繞著粉走一圈，得等它自己下去。"
+			},
+			"poutine": {
+				"name": "肉汁薯條",
+				"desc": "薯條炸脆，澆肉汁和白醬，撒肉碎。"
+			},
+			"pudding": {
+				"hint": "涼的，勺子進去會陷下去。要等烤箱熱透。",
+				"name": "蒸烤布丁",
+				"desc": "蛋和奶混在一起，隔著水烤，才會這樣抖。"
+			},
+			"raita": {
+				"name": "酸奶沙拉",
+				"desc": "酸奶和碎菜拌在一起，撒香料。"
+			},
+			"ramen": {
+				"name": "拉麵",
+				"desc": "清湯麵煮開，鋪肉和蛋，撒蔥花。"
+			},
+			"ravioli": {
+				"name": "意式餃子",
+				"desc": "麵糰擀薄，放餡，對摺壓邊，煮熟。"
+			},
+			"red_curry": {
+				"name": "紅咖哩",
+				"desc": "椰奶和香料煮開，下肉，煮到油浮上來。"
+			},
+			"ribs": {
+				"name": "肋排",
+				"desc": "肉抹香料低溫烤軟，最後刷糖醬烤上色。"
+			},
+			"rice_cake": {
+				"name": "米糕",
+				"desc": "米漿倒進模子，蒸到能用筷子整塊挑起來。"
+			},
+			"roast_bean": {
+				"name": "烘焙咖啡豆",
+				"desc": "生豆倒進鍋裡，小火慢慢翻，等顏色變深。"
+			},
+			"roast_chicken": {
+				"name": "烤雞",
+				"desc": "烤：香料和黃油抹勻，烤到皮金黃、汁變清。"
+			},
+			"roasted_corn": {
+				"name": "烤玉米",
+				"desc": "玉米烤到起斑，刷黃油撒香料。"
+			},
+			"roasted_vegetables": {
+				"name": "烤蔬菜",
+				"desc": "蔬菜切塊，拌油和香料，烤到邊緣發焦。"
+			},
+			"rose_dessert": {
+				"name": "玫瑰甜點",
+				"desc": "奶和糖煮稠，倒進模子，撒堅果。"
+			},
+			"salad_dressing": {
+				"name": "沙拉醬",
+				"desc": "蛋、油、香料打勻成醬。"
+			},
+			"samosa": {
+				"name": "炸三角",
+				"desc": "麵皮包土豆餡，捏成三角，下鍋炸。"
+			},
+			"sandwich": {
+				"name": "三明治",
+				"desc": "兩片吐司，中間夾煎蛋和菜，壓一壓再切。"
+			},
+			"satay": {
+				"name": "沙嗲",
+				"desc": "肉醃過串起來烤，蘸堅果醬。"
+			},
+			"sausage": {
+				"name": "香腸",
+				"desc": "肉絞碎，拌上鹽和香料，灌進腸衣。"
+			},
+			"sausage_sauerkraut": {
+				"name": "香腸酸菜",
+				"desc": "捲心菜切絲，用鹽和香料揉過，和香腸一起燜到酸香。"
+			},
+			"scallion_noodle": {
+				"name": "蔥油麵",
+				"desc": "蔥段小火炸香，油拌麵。"
+			},
+			"scone": {
+				"name": "司康",
+				"desc": "不發酵太久，烤出來會沿著裂口分成兩半。",
+				"hint": "麵糰裡揉黃油，別揉太久。"
+			},
+			"scrambled_egg": {
+				"name": "炒蛋",
+				"desc": "蛋液倒進黃油，小火推成軟塊。"
+			},
+			"seafood_pancake": {
+				"name": "海鮮煎餅",
+				"desc": "海鮮拌麵糊，攤進平底鍋煎到兩面焦。"
+			},
+			"sesame_bun": {
+				"name": "燒餅",
+				"desc": "麵糰抹油捲起，壓扁，撒芝麻烤。"
+			},
+			"shawarma": {
+				"name": "沙威瑪",
+				"desc": "餅烘熱，鋪肉和菜，淋醬卷緊。"
+			},
+			"shepherd_pie": {
+				"name": "牧羊人派",
+				"desc": "肉和蔬菜炒成餡，鋪土豆泥，烤到表面發黃。"
+			},
+			"shumai": {
+				"name": "燒賣",
+				"desc": "蒸：皮擀薄捏一圈褶，頂上不封口，直接露餡。",
+				"hint": "皮不封口，頂上要露出餡。"
+			},
+			"soda": {
+				"name": "汽水",
+				"desc": "衝：果糖水冰鎮，倒進杯子冒氣泡，再加冰。"
+			},
+			"souffle": {
+				"name": "舒芙蕾",
+				"desc": "蛋黃奶糊拌進打發的蛋白，倒進盅裡烤到漲起來。"
+			},
+			"soy_rice": {
+				"name": "醬油拌飯",
+				"desc": "拌：熱飯直接淋醬油，不加黃油，豆香更直。"
+			},
+			"soy_sauce": {
+				"name": "醬油",
+				"desc": "豆類加香料，小火熬出味。"
+			},
+			"sparkling_water": {
+				"name": "氣泡水",
+				"desc": "水冰透，擠一點水果汁進去。"
+			},
+			"spring_roll": {
+				"name": "春捲",
+				"desc": "麵皮包菜餡，卷緊，下鍋炸到金黃。"
+			},
+			"steak": {
+				"name": "牛排",
+				"desc": "肉兩面煎焦，加黃油和香料，靜置一會兒再切。"
+			},
+			"steamed_egg": {
+				"name": "蒸蛋",
+				"desc": "水和蛋按份量調開，蒸到剛剛凝住，表面不能有蜂窩。"
+			},
+			"stew": {
+				"name": "燉菜",
+				"desc": "小火慢慢燉，湯會變少，味道會變濃。"
+			},
+			"sushi": {
+				"name": "壽司",
+				"desc": "飯捏成小團，蓋上魚片，放一點菜。"
+			},
+			"syrup": {
+				"name": "糖漿",
+				"desc": "糖在鍋裡化了水，小火收一收，涼下來會更稠。"
+			},
+			"taco": {
+				"name": "塔可",
+				"desc": "餅烘軟，夾肉、菜和香料。"
+			},
+			"tagine": {
+				"name": "塔吉鍋",
+				"desc": "肉和菜加香料慢燉，起鍋前撒堅果。"
+			},
+			"tamale": {
+				"name": "玉米粽",
+				"desc": "玉米麵裹肉餡，包進葉子，蒸透。"
+			},
+			"tamarind_sauce": {
+				"name": "羅望子醬",
+				"desc": "熬：水果加水煮出味，濾掉渣，加糖收稠。"
+			},
+			"tandoori_chicken": {
+				"name": "烤雞塊",
+				"desc": "烤：肉用香料和奶醃過，再裹一層奶油，烤到焦紅。"
+			},
+			"tangyuan": {
+				"name": "湯圓",
+				"desc": "麵糰搓圓，下鍋煮到浮起來。"
+			},
+			"tea_egg": {
+				"name": "茶葉蛋",
+				"desc": "滷：蛋煮熟敲裂，泡進醬油、香料和茶葉裡。"
+			},
+			"tea_rice": {
+				"name": "茶泡飯",
+				"desc": "飯盛進碗裡，澆上熱茶，放一點菜。"
+			},
+			"tempura": {
+				"name": "天婦羅",
+				"desc": "海鮮裹稀麵糊，下油鍋炸到淺黃。"
+			},
+			"thali": {
+				"name": "塔利",
+				"desc": "飯放中間，豆、菜和醬分裝小碗擺一圈。"
+			},
+			"tiramisu": {
+				"name": "提拉米蘇",
+				"desc": "蛋糕蘸咖啡，鋪奶油，撒咖啡粉，冷藏。"
+			},
+			"toast": {
+				"name": "吐司",
+				"desc": "麵包切厚片。"
+			},
+			"toast_slice": {
+				"name": "烤麵包片",
+				"desc": "麵包抹黃油，烤到發脆。"
+			},
+			"tom_yum": {
+				"name": "冬陰功",
+				"desc": "海鮮和菌菇下鍋，加香料和椰奶，煮到湯色發渾。"
+			},
+			"tomato_soup": {
+				"name": "番茄湯",
+				"desc": "番茄炒軟，加高湯煮開。"
+			},
+			"tostada": {
+				"name": "炸玉米餅",
+				"desc": "玉米餅炸脆，鋪肉和芝士。"
+			},
+			"tres_leches": {
+				"name": "三奶蛋糕",
+				"desc": "蛋糕烤好，澆上奶和奶油，冷藏。"
+			},
+			"tuna_sandwich": {
+				"name": "金槍魚三明治",
+				"desc": "海鮮拌沙拉醬，夾進吐司。"
+			},
+			"turkish_coffee": {
+				"name": "土耳其咖啡",
+				"desc": "咖啡粉、水和糖一起小火加熱，起泡就倒。"
+			},
+			"turmeric_rice": {
+				"name": "薑黃飯",
+				"desc": "香料在油裡炒開，拌進飯裡。"
+			},
+			"twice_cooked_pork": {
+				"name": "回鍋肉",
+				"desc": "肉煮熟切片，和菜、辣椒一起回鍋炒。"
+			},
+			"vegetable_salad": {
+				"name": "蔬菜沙拉",
+				"desc": "菜葉撕開，淋油拌開。"
+			},
+			"vegetable_soup": {
+				"name": "蔬菜湯",
+				"desc": "高湯先熬好，蔬菜最後放，煮到剛軟就停。"
+			},
+			"vienna_coffee": {
+				"name": "維也納咖啡",
+				"desc": "濃縮加糖，頂上擠一層打發的奶油。"
+			},
+			"waffle": {
+				"name": "華夫餅",
+				"desc": "烤：麵糰放進模子，壓滿才立得住，烤到邊上發脆。"
+			},
+			"cocoa_shake": {
+				"name": "可可奶昔",
+				"desc": "打：可可、牛奶、冰和糖打勻，打厚一點。"
+			},
+			"white_rice": {
+				"name": "白飯",
+				"desc": "米加水，蒸到粒粒分開。"
+			},
+			"white_sauce": {
+				"name": "白醬",
+				"desc": "黃油炒麵粉，加牛奶攪稠。"
+			},
+			"wonton": {
+				"name": "餛飩",
+				"desc": "麵糰擀薄，包肉餡，下高湯煮。"
+			},
+			"yogurt_soup": {
+				"name": "酸奶湯",
+				"desc": "酸奶加麵粉和香料，小火攪到稠。"
+			},
+			"yorkshire_pudding": {
+				"name": "約克郡布丁",
+				"desc": "麵糊倒進燒熱的油裡，烤到漲起來。"
+			},
+			"zongzi": {
+				"name": "粽子",
+				"desc": "米和肉包進葉子裡，紮緊，蒸透。"
+			},
+			"ice": {
+				"name": "冰",
+				"desc": "水凍成方塊，冰箱裡一會兒就好。"
+			},
+			"ice_cream_scoop": {
+				"name": "冰淇淋球",
+				"desc": "從桶裡挖一球出來。"
+			},
+			"shaved_ice": {
+				"name": "刨冰",
+				"desc": "冰刨碎，澆糖漿。"
+			},
+			"popsicle": {
+				"name": "冰棒",
+				"desc": "凍：果泥和糖灌進模子，插根棍，凍硬。"
+			},
+			"smoothie": {
+				"name": "冰沙",
+				"desc": "打：水果、奶和冰一起打碎，打成稠糊。"
+			},
+			"ice_bar": {
+				"name": "雪糕",
+				"desc": "凍：冰和奶加糖凍硬，再切塊。"
+			},
+			"milk_pudding": {
+				"name": "奶凍",
+				"desc": "凍：奶加糖和香草，凍到剛好不流動。"
+			},
+			"vanilla_ice_cream": {
+				"name": "香草冰淇淋",
+				"desc": "冰、奶、糖和一截香草。"
+			},
+			"chocolate_ice_cream": {
+				"name": "巧克力冰淇淋",
+				"desc": "可可和奶一起凍。"
+			},
+			"fruit_ice_cream": {
+				"name": "水果冰淇淋",
+				"desc": "水果、牛奶、糖和冰打勻，凍硬。"
+			},
+			"sundae": {
+				"name": "聖代",
+				"desc": "一球冰淇淋，果醬和奶油往上堆。"
+			},
+			"black_tea": {
+				"name": "紅茶",
+				"desc": "泡：兩份茶葉，滾水衝開，泡到湯色發紅。"
+			},
+			"green_tea": {
+				"name": "綠茶",
+				"desc": "泡：一份茶葉，水晾一點再衝，泡短一點。"
+			},
+			"lemon_tea": {
+				"name": "檸檬茶",
+				"desc": "茶里加兩片檸檬。"
+			},
+			"whole_wheat_flour": {
+				"name": "磨全麥麵粉",
+				"desc": "小麥磨兩遍，麩皮也一起留下。"
+			},
+			"flour_from_whole_wheat": {
+				"name": "磨精麵粉",
+				"desc": "把全麥粉再磨細，篩掉麩皮，出得更多。"
+			},
+			"cocoa_powder": {
+				"name": "磨可可粉",
+				"desc": "可可豆磨碎，苦味先出來。"
+			},
+			"whole_wheat_bread": {
+				"name": "烤歐式餐包",
+				"desc": "全麥麵糰發酵，烤到外殼發硬。"
+			},
+			"whole_wheat_cracker": {
+				"name": "烤全麥餅乾",
+				"desc": "全麥粉壓薄，烤到乾脆。"
+			},
+			"chocolate_chip_cookie": {
+				"name": "烤巧克力豆曲奇",
+				"desc": "麵糰裡拌進巧克力，烤到邊上一圈淺褐。"
+			},
+			"chocolate_cookie": {
+				"name": "烤巧克力曲奇",
+				"desc": "可可粉和巧克力一起拌進去。"
+			},
+			"oreo": {
+				"name": "夾奧利奧",
+				"desc": "兩片巧克力曲奇夾奶油，壓到合緊。"
+			},
+			"marshmallow": {
+				"name": "熬棉花糖",
+				"desc": "糖和糖漿熬到起膠，倒出來晾軟。"
+			},
+			"roasted_marshmallow": {
+				"name": "烤棉花糖",
+				"desc": "叉著在火上轉一圈，表皮焦了就行。"
+			},
+			"smore": {
+				"name": "做 S'more",
+				"desc": "全麥餅乾夾烤棉花糖和黑巧克力。"
+			},
+			"tomato_egg_stirfry": {
+				"name": "番茄炒蛋",
+				"desc": "番茄炒出汁，蛋液滑進去。"
+			},
+			"stir_fried_greens": {
+				"name": "清炒時蔬",
+				"desc": "一把綠葉，鹽一撮，大火快炒。"
+			},
+			"vinegar_potato_shreds": {
+				"name": "醋溜土豆絲",
+				"desc": "土豆切絲泡水，酸味臨起鍋才下。"
+			},
+			"braised_tofu": {
+				"name": "紅燒豆腐",
+				"desc": "豆腐煎出薄殼，辣椒和糖收成亮汁。"
+			},
+			"kung_pao_chicken": {
+				"name": "宮保雞丁",
+				"desc": "雞丁滑油，幹辣椒和花生一起翻。"
+			},
+			"yu_xiang_pork": {
+				"name": "魚香肉絲",
+				"desc": "肉絲上漿，泡椒和糖醋在鍋裡碰頭。"
+			},
+			"spicy_chicken": {
+				"name": "辣子雞",
+				"desc": "雞塊炸到乾脆，埋進辣椒裡翻。"
+			},
+			"tofu": {
+				"name": "點豆腐",
+				"desc": "大豆磨漿，點滷，壓成一方。"
+			},
+			"kimchi": {
+				"name": "醃泡菜",
+				"desc": "包菜抹上辣椒和鹽，等幾天。"
+			},
+			"xiao_chao_rou": {
+				"name": "小炒肉",
+				"desc": "豬肉煸香，辣椒下鍋一翻。"
+			},
+			"shui_zhu_rou_pian": {
+				"name": "水煮肉片",
+				"desc": "湯滾肉滑，辣椒鋪頂，熱油一澆。"
+			},
+			"dan_dan_noodles": {
+				"name": "擔擔麵",
+				"desc": "面煮好，肉臊、辣椒、花生一起堆上去。"
+			},
+			"dry_pot_cabbage": {
+				"name": "乾鍋包菜",
+				"desc": "包菜手撕，培根和辣椒煸出油。"
+			},
+			"steamed_chili_fish": {
+				"name": "剁椒魚頭",
+				"desc": "魚頭鋪滿剁椒，上汽蒸透。"
+			},
+			"budae_jjigae": {
+				"name": "部隊鍋",
+				"desc": "泡菜、香腸、麵條堆一鍋，辣椒調湯。"
+			},
+			"kimchi_fried_rice": {
+				"name": "泡菜炒飯",
+				"desc": "泡菜切碎炒香，米飯和蛋跟著下。"
+			},
+			"dak_galbi": {
+				"name": "辣炒雞",
+				"desc": "雞塊炒到焦邊，辣椒米飯下鍋。"
+			},
+			"pad_kra_pow": {
+				"name": "打拋飯",
+				"desc": "牛肉和辣椒猛火炒，蓋飯，壓煎蛋。"
+			},
+			"laksa": {
+				"name": "叻沙",
+				"desc": "辣椒炒出紅油，椰漿和米粉下鍋，蝦最後。"
+			},
+			"sambal_shrimp": {
+				"name": "參巴蝦",
+				"desc": "辣椒洋蔥搗醬炒香，蝦下鍋翻兩下。"
+			},
+			"mirchi_salan": {
+				"name": "辣椒燉",
+				"desc": "辣椒和堅果香料一起燉，奶油收尾。"
+			},
+			"chilli_chicken": {
+				"name": "印度辣雞",
+				"desc": "雞塊裹粉炸脆，辣椒醬油收亮汁。"
+			},
+			"vindaloo": {
+				"name": "果阿辣咖哩",
+				"desc": "豬肉和辣椒香料燜透，酸味收進肉裡。"
+			},
+			"shakshuka": {
+				"name": "莎克舒卡",
+				"desc": "番茄辣椒熬醬，蛋打進去燜。"
+			},
+			"lemon_chili_chicken": {
+				"name": "檸檬辣烤雞",
+				"desc": "雞皮抹辣椒橄欖油，烤脆，擠檸檬。"
+			},
+			"paprikash": {
+				"name": "帕普里卡什",
+				"desc": "雞塊洋蔥燉軟，辣椒和奶油調成粉色。"
+			},
+			"nashville_hot_chicken": {
+				"name": "納什維爾辣雞",
+				"desc": "炸雞上澆辣椒黃油紅油。"
+			},
+			"chili_con_carne": {
+				"name": "辣豆燉牛肉",
+				"desc": "牛肉煎上色，番茄雜豆辣椒燉濃。"
+			},
+			"jerk_chicken": {
+				"name": "煙燻辣雞",
+				"desc": "雞皮抹辣椒香料，烤到焦黑。"
+			},
+			"elote": {
+				"name": "辣玉米",
+				"desc": "玉米烤焦，抹奶油乳酪，撒辣椒。"
+			},
+			"doro_wat": {
+				"name": "埃塞辣燉雞",
+				"desc": "洋蔥炒到深色，辣椒雞塊下鍋，蛋埋進去。"
+			},
+			"peri_peri_chicken": {
+				"name": "莫三比克辣雞",
+				"desc": "雞塊在辣椒油裡翻，烤到皮卷。"
+			},
+			"suya": {
+				"name": "蘇亞烤肉",
+				"desc": "牛肉薄片抹辣椒堅果香料，烤乾邊。"
+			},
+			"chili_dog": {
+				"name": "辣味熱狗",
+				"desc": "香腸煎出油，麵包夾好，辣醬乳酪蓋頂。"
+			},
+			"cheese": {
+				"name": "芝士",
+				"desc": "牛奶加鹽加熱，凝起來，把水壓掉。"
+			},
+			"butter": {
+				"name": "黃油",
+				"desc": "奶油加一小撮鹽，攪到順滑。"
+			},
+			"yogurt": {
+				"name": "做酸奶",
+				"desc": "牛奶加糖，攪勻，靜置到凝。"
+			},
+			"rice_noodle": {
+				"name": "米粉",
+				"desc": "米和水磨成漿，蒸熟壓條。"
+			},
+			"nian_gao": {
+				"name": "年糕",
+				"desc": "白飯趁熱捶，捶到看不見米粒。"
+			},
+			"miso_soup": {
+				"name": "味噌湯",
+				"desc": "味噌在湯裡化開，豆腐切小塊放進去。"
+			},
+			"tofu_dengaku": {
+				"name": "豆腐田樂",
+				"desc": "豆腐切厚片烤香，味噌加糖調開刷上。"
+			},
+			"miso_ramen": {
+				"name": "味噌拉麵",
+				"desc": "清湯麵煮好，味噌化進湯裡，蛋和蔥最後放。"
+			},
+			"fried_rice_noodle": {
+				"name": "炒米粉",
+				"desc": "米粉泡軟，和蛋、菜、醬油一起下鍋翻。"
+			},
+			"tteokbokki": {
+				"name": "辣炒年糕",
+				"desc": "年糕和辣椒、醬油、糖一起收汁。"
+			},
+			"di_san_xian": {
+				"name": "地三鮮",
+				"desc": "土豆、茄子先煎，再下第三樣蔬菜，淋油收汁。"
+			},
+			"scallion_pancake": {
+				"name": "蔥油餅",
+				"desc": "麵糰抹油撒蔥，捲起來擀平，烙到兩面發黃。"
+			},
+			"liangpi": {
+				"name": "涼皮",
+				"desc": "麵漿攤薄蒸熟，切條，澆辣椒油。"
+			}
+		},
+		"research": {
+			"rules": {
+				"name": "研究臺規則",
+				"desc": "試錯的代價：檯面越順手，燒壞的東西越少。"
+			}
+		},
+		"world": {
+			"room": {
+				"subtitle": "一間住了很久的屋子",
+				"body": "桌子釘在地板上。\n灶臺、窗、一盞不太亮的燈，就是全部。\n你在這裡做飯，也在這裡等天亮。靠牆一排書架，記下來的味道都收在上面。",
+				"hint": "你現在待著的這間屋子。",
+				"name": "屋子",
+				"desc": "所有的味道從這裡出發。"
+			},
+			"nearby": {
+				"subtitle": "視窗外面那一小片",
+				"body": "有人路過，停在視窗前，把想吃的寫在紙上遞進來。\n紙是折過的，字寫得很快。\n他們把紙放下就走了，像把一件小事交給了你。",
+				"hint": "敲窗的聲音多半從這裡來。",
+				"name": "門口",
+				"desc": "訂單和訊息來的地方。"
+			},
+			"cafe": {
+				"subtitle": "一輛開過很多年的舊餐車",
+				"body": "在車尾回過頭，才看清它是一輛舊的流動餐車。\n回到車門邊，擦掉內側的灰，露出四個字——隨食出發。\n門邊還釘著一塊舊牌子，寫著它從前跑過的路線。\n你一直住著的這間屋子，本來就是這輛車。",
+				"hint": "車門內側擦出來的四個字。",
+				"name": "隨食出發",
+				"desc": "這輛車原來的名字。"
+			},
+			"east_asia": {
+				"subtitle": "天沒亮就擺開的攤子",
+				"body": "天還沒亮，攤子已經擺開了。\n油條在鍋裡翻身，豆漿冒著白氣。\n貼著車窗往裡看的人，比昨天多了。",
+				"hint": "車停過的地方。",
+				"name": "東岸的早市",
+				"desc": "第一站。"
+			},
+			"southeast_asia": {
+				"subtitle": "雨一陣一陣的巷子",
+				"body": "雨一陣一陣的。\n巷口支著炭爐，葉子包著的東西在火上慢慢熟。\n空氣是甜的，也是辣的。",
+				"hint": "車停過的地方。",
+				"name": "雨林邊的巷口",
+				"desc": "潮溼，也熱鬧。"
+			},
+			"south_asia": {
+				"subtitle": "一勺一勺稱顏色的鋪子",
+				"body": "鋪子裡堆著顏色，一勺一勺地稱。\n老闆說，每種顏色都要一起下鍋才成。\n你把這個順序記了下來。",
+				"hint": "車停過的地方。",
+				"name": "香料鋪的午後",
+				"desc": "這裡的味道要湊齊才算數。"
+			},
+			"middle_east": {
+				"subtitle": "白天太熱，夜裡才醒",
+				"body": "白天太熱，夜市才醒。\n烤餅的火連成一排，像地上的星。\n有人在攤子之間穿來穿去，手裡端著茶。",
+				"hint": "車停過的地方。",
+				"name": "沙漠夜市",
+				"desc": "越晚越亮的地方。"
+			},
+			"mediterranean": {
+				"subtitle": "吃得很慢的海邊",
+				"body": "白牆被曬得發亮，海風從巷子那頭穿過來。\n桌上的橄欖油是新的，麵包還熱。\n這裡的人吃得很慢。",
+				"hint": "車停過的地方。",
+				"name": "白牆與海風",
+				"desc": "慢一點，味道才出來。"
+			},
+			"western": {
+				"subtitle": "山頂有雪，門裡有糖",
+				"body": "雪在山頂，鎮子在下面。\n煙囪冒煙，門裡飄出黃油和糖的味道。\n路過的人不多，但都停下來了。",
+				"hint": "車停過的地方。",
+				"name": "雪線以南的小鎮",
+				"desc": "冷，但是甜的。"
+			},
+			"americas": {
+				"subtitle": "一條路走到底",
+				"body": "一條路直著走，走到盡頭是個加油站。\n漢堡在鐵板上響，咖啡在壺裡溫著。\n遠處有車燈過來，又過去了。",
+				"hint": "車停過的地方。",
+				"name": "公路盡頭的加油站",
+				"desc": "路上的人都在這裡停一下。"
+			},
+			"africa": {
+				"subtitle": "燉了一天的鍋",
+				"body": "土是紅的，火是炭的。\n鍋架在石頭上，燉了一整天。\n路過的人都會伸手要一碗。",
+				"hint": "車停過的地方。",
+				"name": "紅土與炭火",
+				"desc": "分享是這裡的規矩。"
+			},
+			"fast_food": {
+				"subtitle": "天黑以後才排隊",
+				"body": "天黑了，霓虹亮起來。\n視窗遞出一份份熱的，紙袋上印著笑臉。\n隊伍一直沒短過。",
+				"hint": "車停過的地方。",
+				"name": "霓虹下的視窗",
+				"desc": "最後一站。"
+			}
+		},
+		"harvest": {
+			"mailbox": {
+				"name": "貨箱",
+				"desc": "門口一隻收貨箱，快遞員把鹽、糖、咖啡豆放進去，不用簽收。"
+			},
+			"farm": {
+				"name": "農田",
+				"desc": "屋後的一小塊地，種什麼就長什麼，就是長得慢。"
+			},
+			"orchard": {
+				"name": "果園",
+				"desc": "幾棵樹，落下來的果子比摘下來的多。"
+			},
+			"sea": {
+				"name": "海產",
+				"desc": "靠水的石臺，釣上來什麼要看運氣。"
+			},
+			"ranch": {
+				"name": "牧場",
+				"desc": "圍欄裡有肉、有蛋、有奶；擠一桶還是撿一籃，看當天誰肯配合。"
+			}
+		}
+	}
+}

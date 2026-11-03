@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_cb7vy"]
+
+[resource]
+script = ExtResource("1_cb7vy")
+kind = 1
+sell_price = 30
+taste = "data.item.ramen.taste"
+catalog_hint = "data.item.ramen.hint"
+order = 181
+theme = "game:theme/east_asia"
+order_weight = 1.1
+tags = Array[String](["game:tag/home", "game:tag/soup", "game:tag/late_night"])
+id = "item/ramen"
+display_name = "data.item.ramen.name"
+description = "data.item.ramen.desc"

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_item"]
+
+[resource]
+script = ExtResource("1_item")
+kind = 1
+sell_price = 30
+taste = "data.item.sambal_shrimp.taste"
+catalog_hint = "data.item.sambal_shrimp.hint"
+order = 382
+theme = "game:theme/southeast_asia"
+order_weight = 1.0
+tags = Array[String](["game:tag/spicy"])
+id = "item/sambal_shrimp"
+display_name = "data.item.sambal_shrimp.name"
+description = "data.item.sambal_shrimp.desc"

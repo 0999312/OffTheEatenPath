@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_0dba8"]
+
+[resource]
+script = ExtResource("1_0dba8")
+kind = 1
+sell_price = 18
+taste = "data.item.tostada.taste"
+catalog_hint = "data.item.tostada.hint"
+order = 244
+theme = "game:theme/americas"
+order_weight = 1.2
+tags = Array[String](["game:tag/street", "game:tag/late_night"])
+id = "item/tostada"
+display_name = "data.item.tostada.name"
+description = "data.item.tostada.desc"

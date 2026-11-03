@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="LetterDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/material_stack.gd" id="1_cbb0u"]
+[ext_resource type="Script" path="res://scripts/resources/letter_def.gd" id="2_1a5hh"]
+
+[sub_resource type="Resource" id="Resource_jcsc4"]
+script = ExtResource("1_cbb0u")
+material = "game:item/roasted_bean"
+amount = 5
+
+[resource]
+script = ExtResource("2_1a5hh")
+title = "data.letter.grinder_owner.title"
+body = "data.letter.grinder_owner.body"
+order = 10
+condition = 1
+condition_ref = "game:letter/butter_warmth"
+rewards = Array[ExtResource("1_cbb0u")]([SubResource("Resource_jcsc4")])
+reward_coins = 25
+id = "letter/grinder_owner"
+display_name = "data.letter.grinder_owner.name"
+description = "data.letter.grinder_owner.desc"

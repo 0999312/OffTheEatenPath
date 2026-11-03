@@ -1,0 +1,4715 @@
+{
+	"ui": {
+		"app": {
+			"title": "Off the Eaten Path"
+		},
+		"tutorial": {
+			"step0_title": "Đọc chữ cái đầu tiên",
+			"step0_body": "Có một lá thư mới trong hộp thư. Mở nó ra.",
+			"step1_title": "Nấu món ăn đầu tiên của bạn",
+			"step1_body": "Hoa hồng trong hộp thư của bạn yêu cầu chuyển khoản. Làm một cái ở bếp - đó là sự khởi đầu của bạn.",
+			"step2_title": "Đọc thư của người bán tạp hóa",
+			"step2_body": "Hãy hoàn thành bức thư này và người bán tạp hóa sẽ mở cửa với nhiều thứ hơn để mua.",
+			"step3_title": "Giao đơn hàng đầu tiên của bạn",
+			"step3_body": "Bảng đặt hàng đang mở. Nấu những gì nó yêu cầu, sau đó đưa nó.",
+			"go": "Đi",
+			"skip": "Bỏ qua"
+		},
+		"common": {
+			"not_enough": "Không đủ xu hoặc nguyên liệu.",
+			"coins_short": "Thiếu {0} xu",
+			"list_sep": ",",
+			"instant": "Ngay lập tức",
+			"seconds": "{0}s",
+			"minutes_seconds": "{0}m {1}s",
+			"coins_amount": "{0} xu",
+			"device": "Thiết bị",
+			"new_recipe": "một công thức mới"
+		},
+		"settings": {
+			"title": "Cài đặt",
+			"section_general": "Tổng quan",
+			"section_audio": "Âm thanh",
+			"language": "Ngôn ngữ",
+			"language_changed": "Ngôn ngữ đã chuyển đổi.",
+			"language_name_zh": "中文",
+			"language_name_en": "Tiếng Anh",
+			"volume_master": "Tổng",
+			"volume_music": "Nhạc",
+			"volume_sfx": "Hiệu ứng âm thanh",
+			"no_music": "Chưa có nhạc nền - hãy thả một bản nhạc vào nội dung/âm thanh/âm nhạc/ và bản nhạc đó sẽ được chọn.",
+			"section_save": "Cứu",
+			"save_path": "Vị trí: {0} (được lưu tự động sau mỗi 20 giây và khi đóng cửa sổ; một bản sao .bak được giữ)",
+			"section_reset": "Bắt đầu lại",
+			"reset_hint": "Xóa phần lưu và xóa lần chạy này. Không thể hoàn tác.",
+			"reset_button": "Xóa lưu",
+			"reset_confirm": "Thực sự rõ ràng nó? (nhấn lại)",
+			"reset_armed": "Sau đó, căn phòng trở lại như ban đầu.",
+			"reset_done": "Đã xóa.",
+			"section_about": "Về",
+			"about_hint": "Công cụ, khung, âm thanh và phông chữ - tất cả các khoản tín dụng và giấy phép đều có ở đó.",
+			"credits_button": "Ghi công và giấy phép",
+			"shortcuts": "Phím tắt: C Stove · R Research · V Catalog · F Equipment · M Merchant · L Mailbox · O Cài đặt · Esc Quay lại",
+			"section_debug": "Gỡ lỗi",
+			"debug_button": "Kiểm tra: mở khóa tóm tắt ngoại tuyến ngay bây giờ",
+			"debug_done": "Đã mở khóa. Đóng trò chơi và mở lại để xem tóm tắt ngoại tuyến.",
+			"research_guide_title": "Hướng dẫn nghiên cứu",
+			"research_guide_button": "Hiển thị lại hướng dẫn vào lần sau",
+			"research_guide_done": "Đúng rồi - nó sẽ hiển thị vào lần tiếp theo bạn mở bàn nghiên cứu.",
+			"debug_hint": "Trong quy trình bình thường, sản xuất ngoại tuyến chờ chữ cái thứ 16. Điều này chỉ hiển thị trong các bản dựng gỡ lỗi, để xem bản tóm tắt trông như thế nào.",
+			"research_guide_hint": "Bàn nghiên cứu hiển thị hướng dẫn ba bước trong lần đầu tiên bạn mở nó. Nhấn nút bên dưới để nó hiển thị lại vào lần sau."
+		},
+		"hud": {
+			"coins": "Xu",
+			"catalog": "Sổ tay",
+			"mail_new": {
+				"one": "{0} thư mới",
+				"empty": "Không có gì phù hợp.",
+				"other": "{0} chữ cái mới"
+			},
+			"orders": "Đơn hàng {0}",
+			"orders_tooltip": "Mở bảng gọi món và giao món ăn của bạn",
+			"task_open": {
+				"one": "{0} việc cần làm",
+				"other": "{0} việc cần làm"
+			},
+			"mail_task": "{0} chữ cái · {1} việc cần làm",
+			"catalog_tooltip": "Mở danh mục và xem những gì mới được ghi lại",
+			"mail_tooltip": "Mở hộp thư: thư và việc cần làm đều ở đây",
+			"clock_playtime_tooltip": "Thời gian chơi · bấm vào đồng hồ thực",
+			"clock_realtime_tooltip": "Thời gian thực · nhấp để biết thời gian chơi"
+		},
+		"hint": {
+			"back": "Chuột phải / Esc"
+		},
+		"facility": {
+			"title": "Thiết bị",
+			"subtitle": "Thiết bị càng mượt thì thời gian chờ đợi càng ngắn.",
+			"empty": "Chưa có thiết bị.",
+			"level": "Cấp{0} / {1}",
+			"speed": "Song song {0} · Thời gian ×{1}",
+			"maxed": "Đã đạt mức tối đa.",
+			"upgrade_button": "Nâng lên cấp {0} ({1})",
+			"upgraded": "{0} đạt Lv.{1}.",
+			"kitchen_title": "Phòng bếp",
+			"kitchen_lanes": "Lv.{0}: {1} dòng; mở rộng lên Lv.{2} sẽ nhận được {3}.",
+			"kitchen_lanes_max": "Lv.{0}: {1} dòng, được mở rộng hoàn toàn.",
+			"kitchen_parallel_hint": "Một trạm chạy cạnh nhau bao nhiêu đợt tùy thuộc vào trình độ của chính nó.",
+			"kitchen_upgrade": "Mở rộng đến Lv.{0} ({1})",
+			"kitchen_maxed": "Nhà bếp càng lớn càng tốt.",
+			"next_level": "Cấp độ tiếp theo{0}: song song {1} · thời gian ×{2}",
+			"section": "Cơ sở",
+			"warehouse_title": "Kho",
+			"warehouse_body": "Lv.{0} · thành phần phổ biến lên tới {1}, hiếm lên tới {2}.",
+			"warehouse_button": "Mở phòng đựng thức ăn",
+			"research_title": "Bàn nghiên cứu",
+			"research_body": "Đặt hai thành phần lại với nhau và xem có gì mới xuất hiện không.",
+			"research_button": "Đi nghiên cứu",
+			"orders_title": "Bảng đơn hàng",
+			"orders_body": "{0} / {1} đơn hàng đã đăng; có thể tăng lên {2}. Mở rộng nó từ bảng đặt hàng.",
+			"orders_button": "Xem đơn hàng"
+		},
+		"mail": {
+			"title": "Hòm thư",
+			"tab_unread": "Chưa đọc ({0})",
+			"tab_read": "Đã đọc ({0})",
+			"empty_unread": "Không còn gì chưa đọc.",
+			"empty_read": "Chưa có gì mở ra.",
+			"subtitle": "Không có người gửi trên phong bì - chỉ có ngày tháng.",
+			"empty": "Hộp thư trống rỗng.",
+			"pending": "Còn {0} lá đang trên đường.",
+			"waiting_catalog": "Cái tiếp theo đợi cho đến khi danh mục chứa các mục nhập {0}.",
+			"waiting_craft": "Cái tiếp theo xuất hiện sau khi bạn thực hiện {0}.",
+			"waiting_task": "Việc tiếp theo sẽ đến sau khi bạn hoàn thành những gì trên tay.",
+			"waiting_task_hand_in": "Hãy hoàn thành công việc ở \"{0}\" trước; rồi cái tiếp theo sẽ đến.",
+			"waiting_letter": "Cái tiếp theo xuất hiện sau khi bạn đọc lá thư trên tay.",
+			"waiting_other": "Điều tiếp theo sẽ đến sau khi bạn tiến thêm một bước nữa.",
+			"waiting_catalog_remaining": "Cái tiếp theo đợi cho đến khi danh mục chứa {0} mục nhập ({1} sẽ tiếp tục).",
+			"waiting_letter_catalog": "Sau khi đọc \"{0}\", danh mục phải đạt {1} mục nhập ({2} để tiếp tục).",
+			"order": "Chữ cái {0}",
+			"unread": "Chưa đọc",
+			"tab_todo": "Việc cần làm ({0})",
+			"empty_todo": "Chưa có gì được thực hiện. Một số lá thư sẽ yêu cầu bạn giúp một tay.",
+			"task_from": "Từ \"{0}\"",
+			"task_hint": "Cái này chỉ yêu cầu {0} — đừng chi thêm vào bất cứ thứ gì khác.",
+			"task_done": "Xong"
+		},
+		"letter": {
+			"attached": "Kèm theo",
+			"offline_unlocked": "(Khi bạn đi vắng, mọi thứ sẽ tự phát triển ở đây.)",
+			"task_heading": "Một tờ giấy khác được gấp lại với lá thư",
+			"task_accept": "Nhận",
+			"task_accepted": "Đã có trong danh sách việc cần làm của bạn",
+			"task_accepted_hint": "Đã thêm vào danh sách việc cần làm của bạn — tab thứ ba của hộp thư.",
+			"task_done": "Xong",
+			"task_progress": "{0} / {1}",
+			"task_reward": "Khi hoàn tất: {0}",
+			"task_craft": "Lập và bàn giao \"{0}\" × {1}",
+			"task_craft_theme": "Làm {1} món ăn từ \"{0}\", sau đó quay lại xác nhận",
+			"task_craft_tag": "Làm {1} món ăn được gắn thẻ \"{0}\", sau đó quay lại xác nhận",
+			"task_collect": "Tập hợp và bàn giao \"{0}\" × {1}",
+			"task_hand_in": "Nộp",
+			"task_confirm": "Đánh dấu đã xong",
+			"task_need_stock": "Bàn giao nhu cầu \"{0}\" × {1}; bạn có {2}.",
+			"task_ready": "Sẵn sàng bàn giao",
+			"task_ready_confirm": "Sẵn sàng xác nhận",
+			"task_keep_hint": "Bàn giao sử dụng các mặt hàng này.",
+			"task_catalog": "Mang danh mục đến các mục nhập {0}",
+			"task_deliver": "Giao {0} đơn hàng",
+			"task_research": "Nghiên cứu \"{0}\"",
+			"handwriting_unknown": "Chữ viết không quen, không phải ai sống trên chiếc xe tải này.",
+			"handwriting_familiar": "Nét chữ trông quen quen, dù tôi không thể nhớ ra.",
+			"handwriting_own": "Đó là bàn tay của chính tôi. Tôi không nhớ đã viết nó."
+		},
+		"merchant": {
+			"title": "Người bán",
+			"subtitle": "\"Hãy lấy cái này đi nấu món gì đó - tốt hơn là ngồi trong gian hàng của tôi.\"",
+			"tab_buy": "Mua",
+			"tab_sell": "Bán",
+			"show_all": "Hiển thị tất cả",
+			"filter_owned": "Còn hàng",
+			"filter_all": "Tất cả",
+			"search_placeholder": "Tìm kiếm…",
+			"empty": "Hôm nay không có gì để bán.",
+			"empty_owned": "Chưa có gì để bán - chuyển sang \"Tất cả\".",
+			"empty_sell": "Không có gì để mua lại ngay bây giờ.",
+			"foods_caption": "Món ăn đã hoàn thành (mua theo phần)",
+			"each_price": "Mỗi xu {0}",
+			"per_portion": "{0} xu trên mỗi phần",
+			"owned": "Bạn có {0}",
+			"buy_button": "Mua {0} ({1} xu)",
+			"sell_button": "Bán {0} ({1} xu)",
+			"bought": "Đã mua {0} × {1}.",
+			"sold": "Đã bán {0} × {1}.",
+			"not_enough_coins": "Không đủ xu.",
+			"not_enough_items": "Bạn không có đủ.",
+			"shop_stock": "Giá {0} / {1}",
+			"shop_refill": "Sẽ có lại hàng vào {0}",
+			"refill_all": "Tất cả các kệ sẽ được bổ sung lại vào {0}",
+			"shop_sold_out": "Kệ trống - đang bổ sung thêm hàng.",
+			"buy_one": "Mua 1",
+			"card_hint": "Nhấn vào một thẻ để giao dịch.",
+			"card_price": "{0}c mỗi cái",
+			"card_shelf": "Giá {0}/{1}",
+			"sell_all": "Bán tất cả ({0} xu)",
+			"trade_cancel": "Không phải bây giờ",
+			"count": "{0} mục",
+			"page": "Trang {0} / {1}",
+			"prev": "Trước",
+			"next": "Kế tiếp",
+			"group_none": "Không có",
+			"group_source": "Nguồn",
+			"group_category": "Loại thành phần",
+			"family_seafood": "hải sản",
+			"family_meat": "Thịt",
+			"family_fruit": "Hoa quả",
+			"family_veg": "Rau",
+			"family_misc": "Khác",
+			"group_kind": "Kiểu",
+			"group_intermediate": "Nguyên liệu đã chuẩn bị",
+			"group_food": "Món ăn đã hoàn thành",
+			"group_theme": "chủ đề",
+			"sort_default": "Mặc định",
+			"sort_price_up": "Thấp → cao",
+			"sort_price_down": "Cao → thấp",
+			"sort_name": "Tên",
+			"sort_owned": "Sở hữu nhiều nhất",
+			"level_button": "Người bán Lv.{0}",
+			"level_title": "Người buôn bán",
+			"level_current": "Cấp {0} của {1}",
+			"level_slots": "Kệ {0} · Hiếm {1}",
+			"level_refill": "Nạp lại vào {0}",
+			"level_hint": "Anh ta càng lấy được nhiều thì kệ càng rộng và nạp lại càng nhanh.",
+			"level_next": "Đến Lv.{0}",
+			"level_next_gain": "Kệ {0} · Hiếm {1} · Nạp lại {2}",
+			"level_cost": "Chi phí {0}",
+			"level_up_button": "Tăng cấp (Lv.{0})",
+			"level_max": "Anh ấy không thể mang thêm gì vào nữa.",
+			"level_done": "Người bán hiện ở Lv.{0}."
+		},
+		"warehouse": {
+			"title": "Kho",
+			"subtitle": "\"Hãy đếm những gì bạn có trước - sau đó chúng ta sẽ nói về việc bán hàng.\"",
+			"tab_material": "Thành phần",
+			"tab_food": "Đĩa",
+			"tab_harvest": "Nguồn",
+			"search_placeholder": "Tìm kiếm nguyên liệu hoặc món ăn",
+			"buyer_merchant": "Thương gia",
+			"buyer_hint": "Hiện tại chỉ có một thương gia.",
+			"filter_all": "Tất cả",
+			"filter_sellable": "Có thể bán được",
+			"filter_theme": "chủ đề",
+			"filter_tag": "Nhãn",
+			"theme_all": "Tất cả chủ đề",
+			"tag_all": "Tất cả các thẻ",
+			"kind_material": "Nguyên liệu",
+			"kind_food": "Món ăn",
+			"owned": "Còn hàng {0}",
+			"source_line": "Nguồn: {0}",
+			"source_merchant": "được bán bởi thương gia",
+			"source_free": "miễn phí",
+			"source_recipe": "công thức \"{0}\"",
+			"source_unknown": "không rõ",
+			"known": "ghi lại",
+			"sell_button": "Bán {0} ({1} xu)",
+			"sell_all": "Bán hết {0}",
+			"sell_all_armed": "Xác nhận tất cả ({0} xu)",
+			"sell_armed": "Nhấn lần nữa để bán toàn bộ ngăn xếp.",
+			"sold": "Đã bán {0} × {1} để lấy {2} xu.",
+			"not_enough": "Không đủ trong kho.",
+			"no_buyer": "Người bán sẽ không mua cái này.",
+			"empty_material": "Chưa có gì trong phòng đựng thức ăn. Gõ cửa thùng hoặc gặp người bán.",
+			"empty_food": "Chưa có món ăn nào được thực hiện. Bếp đang nóng - hãy nấu một cái đi.",
+			"count": "{0} loại",
+			"page": "Trang {0} / {1}",
+			"prev": "Trước",
+			"next": "Kế tiếp",
+			"group_none": "Không có",
+			"group_source": "Nguồn",
+			"group_theme": "chủ đề",
+			"sort_owned": "Có nhiều nhất trong kho",
+			"sort_price_down": "Giá cao nhất",
+			"sort_name": "Tên",
+			"sort_default": "Mặc định",
+			"capacity_title": "Mũ bảo quản",
+			"capacity_line": "Thông thường {0} · Hiếm {1} · Đã chuẩn bị sẵn {2} mỗi loại",
+			"capacity_hint": "Giới hạn chỉ giới hạn những gì một nguồn tự tích lũy. Hàng hóa mua, nấu và gửi qua đường bưu điện bỏ qua chúng.",
+			"capacity": "Giới hạn {0}",
+			"upgrade": "Mở rộng phòng đựng thức ăn lên Lv.{0} ({1})",
+			"upgrade_maxed": "Phòng đựng thức ăn được mở rộng hoàn toàn.",
+			"harvest_stats": "{0} mỗi lần kéo · Thời gian hồi chiêu {1}s",
+			"harvest_trickle": "Tự động mỗi {0}s",
+			"harvest_upgrade": "Nâng cấp nguồn lên Lv.{0} ({1})",
+			"harvest_items": "+ {0}× {1}",
+			"harvest_upgraded": "{0} hiện là Lv.{1}.",
+			"harvest_maxed": "Nguồn này đã đạt mức tối đa.",
+			"harvest_need_letter": "Bắt đầu sản xuất sau khi đọc “{0}”.",
+			"harvest_need_facility": "Bắt đầu sản xuất khi {0} đạt Lv.{1}.",
+			"harvest_locked": "Nguồn này chưa được mở.",
+			"empty_harvest": "Chưa có nguồn sản xuất."
+		},
+		"order": {
+			"title": "Bảng đơn hàng",
+			"subtitle": "\"Người qua đường viết ra những gì họ muốn và đưa qua cửa sổ. Tôi nấu, họ trả tiền.\"",
+			"subtitle_boost": "{0}\nHiện đang tiến vào: {1}",
+			"full": "Bảng đã đầy. Đưa cái này vào và cái tiếp theo sẽ đến.",
+			"next_in": "Đơn hàng tiếp theo sau khoảng {0} phút nữa.",
+			"empty": "Chưa có đơn đặt hàng nào. Mở khóa một món ăn và khách hàng sẽ biết cần yêu cầu gì.",
+			"reward": "Phần thưởng {0} xu",
+			"bonus": "Cộng với {0} × {1}",
+			"have": "{0} / {1} có trong tay",
+			"go_craft": "Nấu nó",
+			"deliver": "Giao",
+			"delivered": "Đã giao {0} × {1}.",
+			"not_enough": "Không có đủ bát đĩa trong tay.",
+			"signature": "Chữ ký",
+			"signature_theme": "Ẩm thực đặc trưng {0} ×{1}",
+			"capacity": "Đơn hàng {0} / {1}",
+			"upgrade": "Thêm một vị trí ({0})",
+			"upgrade_maxed": "Mở rộng hoàn toàn",
+			"upgraded": "Hội đồng hiện nắm giữ các đơn đặt hàng {0}.",
+			"upgrade_denied": "Vẫn chưa đủ xu.",
+			"refresh": "Đổi đợt",
+			"refresh_in": "Hoán đổi ({0}s)",
+			"refreshed": "Một lô đơn hàng mới.",
+			"refresh_wait": "Vừa đổi chỗ - hãy đợi một lát.",
+			"decline": "Từ chối",
+			"declined": "Đã từ chối đơn đặt hàng đó."
+		},
+		"craft": {
+			"title": "Bếp lò",
+			"subtitle": "Nồi sẽ cho bạn biết nếu bạn có đủ.",
+			"empty": "Chưa có công thức nấu ăn nào.",
+			"in_progress": "Đang làm",
+			"pick": "Chọn thứ gì đó ở bên trái để thực hiện.",
+			"pick_craftable": "Chuyển sang \"Tất cả\" để xem từng món ăn còn thiếu gì; vật liệu thường đến từ hộp bên ngoài hoặc từ thương gia.",
+			"needs": "Nguyên liệu cần",
+			"craft_button": "Làm một phần",
+			"repeat": "Liên tục",
+			"repeat_on": "Sẽ tiếp tục tạo ra {0}.",
+			"repeat_off": "Đã tắt tính năng lặp lại.",
+			"ingredient_have": "— bạn có {0}",
+			"ingredient_free": "- miễn phí",
+			"handmade": "thủ công",
+			"facility_level": "{0} (Lv.{1})",
+			"facility_line": "Trang bị: {0} · Thời gian: {1}",
+			"card_need_facility": "Nhu cầu {0}",
+			"used_in": "Đi vào…",
+			"used_in_more": "{0} nữa",
+			"used_in_unknown": "???",
+			"used_in_research": "Cần nghiên cứu",
+			"output_line": "Năng suất: {0}",
+			"food_meta": "Trọng lượng đơn hàng {0} · bán với giá {1}",
+			"tag_members": "Các thành viên của “{0}” ({1})",
+			"tag_members_more": "{0} khác không được hiển thị",
+			"job_left": "Còn lại {0}",
+			"started": "Đã bắt đầu {0}.",
+			"cant_craft": "Không đủ vật liệu hoặc không có bàn tay rảnh rỗi.",
+			"batches": "Lô {0} / {1} · thành phần ×{0}",
+			"batch_cost": "{0} cùng một lúc: ×{0} thành phần, khoảng {1}",
+			"craft_button_batch": "Tạo {0}",
+			"lane_busy": "Tất cả các dòng đều bận - hãy đợi một dòng kết thúc.",
+			"lanes_in_use": "Dòng {0} / {1} bận",
+			"group_semi": "chuẩn bị",
+			"group_drink": "Đồ uống",
+			"group_bake": "bánh nướng",
+			"group_steam": "hấp",
+			"group_meal": "Các bữa ăn",
+			"need_first": "Tạo {0} trước",
+			"group_simple": "Món ăn đơn giản",
+			"facility_locked": "{0} — chưa vào bếp",
+			"nothing_craftable": "Không có gì để làm ngay bây giờ.",
+			"group_title": "{0} · {1}",
+			"lanes_idle": "{0} miễn phí",
+			"search_placeholder": "Tìm một món ăn…",
+			"filter_all": "Tất cả",
+			"filter_craftable": "có thể chế tạo được",
+			"theme_all": "Mọi nơi",
+			"filter_theme": "Địa điểm",
+			"tag_all": "Tất cả các thẻ",
+			"filter_tag": "Nhãn",
+			"empty_result": "Không có gì xảy ra với các bộ lọc này. Hãy thử một từ khác hoặc nới lỏng chúng.",
+			"card_guided": "Nhiệm vụ",
+			"card_new": "Mới",
+			"filter_uncrafted": "Không được ghi lại"
+		},
+		"filter": {
+			"more": "Bộ lọc",
+			"more_count": "Bộ lọc · {0}",
+			"done": "Xong",
+			"result_count": "{0} mục",
+			"group_tip": "Cách chia trang này thành nhóm",
+			"other": "Khác",
+			"sort_tip": "Thứ tự sắp xếp trang này",
+			"empty": "Không có gì phù hợp với các bộ lọc này. Hãy thử một từ khác hoặc nới lỏng chúng."
+		},
+		"catalog": {
+			"title": "Sổ tay",
+			"subtitle": "Hương vị được viết ra ở lại đây.",
+			"cat_material": "Thành phần",
+			"cat_food": "Đĩa",
+			"cat_recipe": "Công thức nấu ăn",
+			"cat_facility": "Thiết bị",
+			"cat_world": "Địa điểm",
+			"cat_letter": "chữ cái",
+			"recorded": "Đã ghi lại {0} / {1}",
+			"page": "Trang {0} / {1}",
+			"prev": "Trước",
+			"next": "Kế tiếp",
+			"group_none": "Không có",
+			"group_theme": "chủ đề",
+			"group_source": "Nguồn",
+			"group_category": "Loại thành phần",
+			"family_seafood": "hải sản",
+			"family_meat": "Thịt",
+			"family_fruit": "Hoa quả",
+			"family_veg": "Rau",
+			"family_misc": "Khác",
+			"filter_theme": "chủ đề",
+			"filter_tag": "Nhãn",
+			"sort_default": "Mặc định",
+			"sort_name": "Tên",
+			"unknown": "???",
+			"theme_locked": "Chưa có ở đó.",
+			"locate_failed": "Không thể tìm thấy mục mới đó; ở lại trang này.",
+			"view": "Xem",
+			"cost_time": "Mất {0}",
+			"from_letter": "Từ một lá thư",
+			"gathered": "Đã tụ tập trên đường đi",
+			"semi_finished": "Bán thành phẩm",
+			"recipe_summary": "Một cái gì đó bạn có thể làm.",
+			"facility_summary": "Lên đến Lv.{0}.",
+			"hint_food": "Chưa bao giờ nếm thử bất cứ điều gì như thế này.",
+			"hint_recipe_locked": "Vẫn chưa tìm ra cách nào.",
+			"hint_research_try": "Vẫn chưa tìm ra. Đặt {0} cùng nhau tại bàn nghiên cứu và thử.",
+			"any_tag": "Bất kỳ {0} nào",
+			"progress_early": "Vừa mới mở. Một vài mục nữa và một lá thư sẽ đến.",
+			"progress_quarter": "Vẫn còn một chặng đường dài để đi. Một vài mục nữa và một lá thư sẽ đến.",
+			"progress_half": "Đã qua nửa chặng đường. Một vài mục nữa và một lá thư sẽ đến.",
+			"progress_near": "Hầu như ở đó. Một vài mục nữa và một lá thư sẽ đến.",
+			"progress_done": "Mỗi bước đều ở đây.",
+			"hint_recipe": "Vẫn chưa làm được.",
+			"hint_facility": "Vẫn chưa biết cách sử dụng nó.",
+			"hint_letter": "Chưa được giao.",
+			"hint_world": "Chưa đến đó.",
+			"hint_unknown": "Chưa bao giờ nhìn thấy nó.",
+			"detail_title": "Danh mục · {0}",
+			"missing": "Mục nhập này đã biến mất.",
+			"recorded_badge": "Đã ghi âm",
+			"not_recorded": "Không được ghi lại",
+			"first_meet": "Trang này sẽ đầy trong lần đầu tiên bạn gặp nó.",
+			"fact_category": "Danh mục: {0}",
+			"fact_harvest_cap": "Đầy đủ ở mức {0}; mua hoặc chế tạo xa hơn thế",
+			"fact_trickle": "Còn lại, cứ sau {0}s lại có một cái nữa",
+			"fact_merchant_price": "Giá người bán: {0} mỗi cái",
+			"fact_merchant_buy": "Người bán mua: {0} mỗi lần",
+			"fact_taste": "Hương vị: {0}",
+			"fact_duration": "Thời gian: {0}",
+			"fact_inputs": "Nhu cầu: {0}",
+			"fact_output": "Tạo ra: {0}",
+			"fact_locked_hint": "Chưa tìm ra: {0}",
+			"try_combo": "Hãy thử kết hợp các thành phần mà bạn biết.",
+			"fact_max_level": "Cấp độ tối đa: {0}",
+			"hint_material_base": "Nhặt được trên đường đi - để nó và nó sẽ đến.",
+			"hint_material_semi": "Một thứ đã hoàn thành mà bạn tự làm.",
+			"hint_material_made": "Được tạo từ {0} tại {1}.",
+			"hint_material_made_plain": "Được làm từ {0}.",
+			"hint_material_buy": "Người bán có nó - mỗi đồng xu {0}.",
+			"hint_material_harvest": "Bạn có thể lấy nó từ {0}.",
+			"hint_material_harvest_locked": "{0} phải đạt Lv.{1} để thu thập nó (bây giờ là Lv.{2}).",
+			"hint_material_harvest_unopened": "Có thể tập hợp tại {0} khi nó mở ra.",
+			"source_separator": ";",
+			"hint_material_free": "Luôn luôn có sẵn.",
+			"hint_material_unknown": "Chưa thấy - hãy để ý.",
+			"fact_unlock": "Bắt đầu sản xuất khi {0} đạt Lv.{1}",
+			"harvest_upgrade_tip": "Đến Lv.{0}: {1} xu + {2}× {3}",
+			"section_origin": "Nguồn gốc",
+			"section_value": "Giá trị",
+			"section_method": "Phương pháp",
+			"section_spec": "Thông số kỹ thuật",
+			"row_source": "Tập hợp tại",
+			"row_speed": "Một đợt",
+			"row_pool": "Năng suất",
+			"row_cap": "Kho",
+			"row_trickle": "Tăng nhàn rỗi",
+			"row_unlock": "Được mở khóa bởi",
+			"row_price": "Giá cửa hàng",
+			"row_sell": "Người bán trả tiền",
+			"row_duration": "Mất",
+			"row_inputs": "Thành phần",
+			"row_output": "làm cho",
+			"row_made_by": "Công thức",
+			"row_category": "Loại",
+			"row_max_level": "Cấp độ tối đa",
+			"row_order": "Thư số.",
+			"value_speed": "Cứ một {0}s",
+			"value_cap": "{0}",
+			"value_trickle": "Cứ {0}s lại có một cái khi không sử dụng",
+			"value_price": "{0} mỗi cái",
+			"value_unlock": "Khi {0} đạt Lv.{1}",
+			"value_unlock_letter": "Sau khi đọc “{0}”",
+			"search_placeholder": "Tìm kiếm…",
+			"filter_all": "Tất cả",
+			"filter_found": "Thành lập",
+			"filter_missing": "Mất tích",
+			"theme_all": "Tất cả chủ đề",
+			"empty_result": "Không có gì phù hợp.",
+			"category_coffee_machine": "Máy pha cà phê",
+			"category_grinder": "Máy mài",
+			"category_oven": "Lò vi sóng",
+			"category_stove": "Cái lò",
+			"category_steamer": "Nồi hấp",
+			"category_pan": "chảo rán",
+			"tag_all": "Tất cả các thẻ",
+			"category_fridge": "Tủ lạnh",
+			"fact_harvest_at": "{0} mang lại một cái cho mỗi {1}s",
+			"fact_harvest_pool": "Hiện có sẵn: {0}"
+		},
+		"research": {
+			"title": "Bàn nghiên cứu",
+			"tab_candidates": "Ứng viên ({0})",
+			"tab_desk": "Bàn làm việc",
+			"tab_records": "Bản ghi ({0})",
+			"subtitle": "Việc cố gắng sẽ tốn một ít chi phí bạn đốt cháy, nhưng một thành công sẽ được ghi lại vĩnh viễn.",
+			"all_known": "Không còn gì để tìm hiểu - mọi thứ trên bếp đều được biết đến.",
+			"no_candidates": "Không có sự kết hợp nào để thử ngay bây giờ. Nấu hoặc mở khóa nhiều công thức nấu ăn hơn - sẽ theo sau những khách hàng tiềm năng mới.",
+			"show_all": "Hiển thị tất cả khách hàng tiềm năng",
+			"desk_level": "Kiểm tra các bộ {0} cùng một lúc",
+			"burn_rate": "{0} đơn vị bị cháy do lỗi",
+			"upgrade_button": "Bàn nâng cấp ({0})",
+			"upgraded": "Bàn đạt Lv.{0}.",
+			"upgrade_hint": "Ít lãng phí hơn, nhiều bộ hơn cùng một lúc",
+			"candidates": "Thành phần ứng viên",
+			"pick_hint": "Bấm để bỏ vào ô",
+			"only_owned": "Chỉ còn hàng",
+			"search_hint": "Tìm kiếm thành phần",
+			"family_filter": "Loại thành phần",
+			"family_all": "Tất cả",
+			"family_seafood": "hải sản",
+			"family_meat": "Thịt",
+			"family_fruit": "Hoa quả",
+			"family_veg": "Rau",
+			"family_misc": "Khác",
+			"no_match": "Không có thành phần phù hợp.",
+			"picked": "Trong các khe",
+			"slot_tooltip": "Bấm để lấy nó ra",
+			"try_button": "Thử",
+			"need_more": "Thêm {0} nữa.",
+			"too_many": "Tối đa {0} mục.",
+			"desk_busy": "Bàn đang bận - hãy đợi hoặc lấy lại một cái.",
+			"no_materials": "Không đủ vật liệu.",
+			"burn_warn": "Nếu thất bại, vật liệu {0} sẽ cháy.",
+			"in_progress": "Đang tiến hành",
+			"desk_empty": "Bàn làm việc trống rỗng.",
+			"cancel": "Lấy lại",
+			"cancelled": "Vật liệu được lấy lại.",
+			"records": "Các kết hợp đã thử: {0}",
+			"records_empty": "Các kết hợp bạn thử được ghi lại ở đây — việc thử lại không mất phí.",
+			"last": "Cuối cùng: {0}",
+			"started": "Đặt trên bàn - chờ kết quả.",
+			"cant_start": "Không thể đưa vào - vật liệu, vị trí hoặc nhóm ứng viên không phù hợp.",
+			"job": "{0} · {1}% · Còn lại {2}",
+			"line_sep": "",
+			"desc_untried": "Sự kết hợp đó chưa được thử.",
+			"desc_near_miss": "Đóng - {0} thiếu một thứ.",
+			"desc_near_miss_missing": "Đóng — {0} vẫn cần {1}.",
+			"desc_heat": "Nhiệt sai: {0} cần ít nhất Lv.{1}.",
+			"desc_heat_ready": "Nhiệt độ là đủ: {0} hiện là Lv.{1} - bạn có thể thử lại.",
+			"desc_success": "Nó đã hoạt động: {0}.",
+			"desc_mismatch": "Những điều này không tạo nên bất cứ điều gì cùng nhau.",
+			"desc_facility": "thiết bị",
+			"cost_hint": "Mỗi lượt chọn có giá 1; một nửa cơ hội nó có giá 2.",
+			"usage_hint": "Thêm {0} hướng dẫn để thử — chọn 2–4 mục vào các ô, sau đó “Thử”.",
+			"empty_hint": "Nấu thêm một vài món ăn và ghi lại nhiều danh mục hơn - những hướng đi mới sẽ xuất hiện.",
+			"guide_title": "Bàn nghiên cứu hoạt động như thế nào",
+			"guide_step_1": "1. Trên “Ứng viên”, nhấp vào 2–4 thành phần — chúng sẽ rơi vào các ô trên bàn.",
+			"guide_step_2": "2. Nhấn “Thử”: các nguyên liệu đã được sử dụng hết và một kết quả phù hợp sẽ dạy cho bạn công thức.",
+			"guide_step_3": "3. Bỏ lỡ một chút; kết quả sẽ chuyển đến “Bản ghi” và việc thử lại cùng một bộ sẽ không mất phí.",
+			"guide_ok": "Hiểu rồi",
+			"history_cost": "Đã đốt: {0}",
+			"history_no_burn": "Lần này không có gì bị đốt cháy.",
+			"history_tuition": "Mọi thứ trong slot đều được tính là học phí.",
+			"free_badge": "trong tay"
+		},
+		"credits": {
+			"title": "Credits",
+			"subtitle": "Chúng tôi không làm những thứ này, nhưng nếu không có chúng thì căn phòng sẽ yên tĩnh hơn nhiều.",
+			"engine_title": "Động cơ",
+			"engine_body": "Godot Engine 4.7.2 · Giấy phép MIT · Godotengine.org",
+			"framework_title": "Khung trò chơi (của riêng chúng tôi)",
+			"framework_body": "mc_game_framework 1.0.0 · một plugin được viết cho dự án này (SyameimaruZheng) · được cung cấp kèm theo nó",
+			"sfx_title": "Phát lại âm thanh",
+			"sfx_body": "Trình quản lý âm thanh · Giấy phép MIT · Nathan Hoad",
+			"sfx_assets_title": "Hiệu ứng âm thanh",
+			"sfx_assets_body": "Gói âm thanh Kenney (Âm thanh giao diện / Âm thanh tác động - nhấp chuột chuyển đổi và môi trường xung quanh) · CC0 · kenney.nl",
+			"music_title": "Âm nhạc",
+			"music_body": "Giai điệu ấm cúng của pizzadoggy · giấy phép một chỗ · các bản nhạc chỉ phát trong trò chơi và không được phân phối lại · pizzadoggy.itch.io",
+			"font_title": "Phông chữ",
+			"font_body": "MiSans (MiSans-Semibold) · Xiaomi · sử dụng miễn phí theo giấy phép phông chữ MiSans",
+			"icons_title": "Biểu tượng",
+			"icons_body": "Gói biểu tượng trò chơi của Nieobie · CC0 · github.com/Nieobie/game-icon-pack",
+			"shader_title": "Bộ đổ bóng ánh sáng cửa sổ",
+			"shader_body": "Tia thần thánh của pend00 · CC0 1.0 · godotshaders.com/shader/god-rays",
+			"test_title": "Dụng cụ kiểm tra (không được vận chuyển)",
+			"test_body": "GUT 9.6.0 · Giấy phép MIT",
+			"footer": "Danh sách đầy đủ (có văn bản giấy phép) nằm trong docs/THIRD_PARTY.md."
+		},
+		"offline": {
+			"title": "Khi bạn vắng nhà",
+			"locked": "Ở đây chưa có gì tự phát triển - điều đó cần có chữ cái phù hợp.",
+			"nothing": "Không có gì lớn lên. Có lẽ sửa bếp trước.",
+			"tips": "Tiền xu (mẹo xem cửa hàng)",
+			"orders": "Bảng đặt hàng được làm mới {0} lần - các yêu cầu mới đã có trên bàn.",
+			"letters": "{0} thư đã đến hộp thư.",
+			"elapsed_days": "{0}d {1}h",
+			"elapsed_hours": "{0}h {1}m",
+			"elapsed_minutes": "{0}m",
+			"take": "Nhận",
+			"elapsed_less_minute": "dưới một phút"
+		},
+		"hotspot": {
+			"stove_title": "Bếp",
+			"stove_subtitle": "Nấu một món gì đó",
+			"equipment_title": "Thiết bị",
+			"equipment_subtitle": "Thiết bị nhanh hơn",
+			"merchant_title": "Người bán tạp hóa",
+			"merchant_subtitle": "Mua và bán",
+			"merchant_locked": "Mở sau lá thư của người bán tạp hóa",
+			"shelf_title": "Kệ sách",
+			"shelf_subtitle": "Hương vị đã ghi lại",
+			"mail_title": "Hộp thư",
+			"mail_subtitle": "Thư từ bên ngoài",
+			"research_title": "Bàn nghiên cứu",
+			"research_subtitle": "Những kết hợp chưa thử",
+			"research_subtitle_hint": "Vẫn còn món chưa khám phá — thử chứ?"
+		},
+		"table": {
+			"title": "Trên bàn",
+			"caption": "Đang làm và vừa xong",
+			"empty": "Bàn trống",
+			"empty_hint": "Bếp vẫn còn ấm - đi làm gì đó đi.",
+			"go_stove": "Đi đến bếp lò",
+			"thing": "Thứ gì đó",
+			"research_title": "Đang nghiên cứu: {0}",
+			"materials_count": "{0} các loại nguyên liệu có trong tay",
+			"view_warehouse": "Mở phòng đựng thức ăn"
+		},
+		"toast": {
+			"crafted": "{0} đã sẵn sàng",
+			"crafted_first": "(lần đầu tiên: +{0} xu)",
+			"letter": "Một lá thư đã đến · {0}",
+			"facility_upgraded": "{0} đạt Lv.{1}",
+			"recipe_unlocked": "Đã nghiên cứu công thức mới · {0}",
+			"milestone": "Cột mốc danh mục · +{0} xu",
+			"coin_picked": "+{0} xu, bỏ túi",
+			"task_done": "Việc đó đã được xử lý xong · {0}",
+			"merchant_locked": "Cửa hàng tạp hóa vẫn chưa mở cửa - hãy đọc lá thư đó trước.",
+			"orders_locked": "Bảng đặt hàng mở ra sau bức thư trước khi bạn rời đi."
+		},
+		"ambient": {
+			"sign_title": "Thức ăn nóng",
+			"sign_subtitle": "Tắt con đường ăn thịt",
+			"sign_label": "Thực đơn hôm nay",
+			"sign_clear": "Không đặt",
+			"sign_slot": "Món ăn {0}",
+			"sign_auto": "Tự động",
+			"sign_auto_tip": "Các món ăn nhạt dần được chọn tự động mà không có tiền thưởng. Nhấn vào ghi chú để chọn."
+		},
+		"harvest": {
+			"ready": "Sẵn sàng",
+			"cooling": "{0}s",
+			"full": "Đầy"
+		}
+	},
+	"data": {
+		"theme": {
+			"africa": {
+				"name": "Châu phi",
+				"desc": "Một chiếc ghim chắc chắn bên cạnh nồi hầm."
+			},
+			"americas": {
+				"name": "Châu Mỹ",
+				"desc": "Từ thịt nướng đến ngô, khẩu phần đều rất trung thực."
+			},
+			"base": {
+				"name": "nấu ăn tại nhà",
+				"desc": "Thức ăn hàng ngày không phân vùng: cà phê, bánh ngọt, một bữa ăn đơn giản."
+			},
+			"cafe": {
+				"name": "Thực đơn cà phê",
+				"desc": "Thực đơn của quán: cà phê, bánh ngọt và chỗ ngồi vào buổi chiều."
+			},
+			"east_asia": {
+				"name": "Bảng Đông Á",
+				"desc": "Các món ăn theo phong cách gia đình được chế biến từ cơm và mì - hấp, xào, luộc, om."
+			},
+			"fast_food": {
+				"name": "Thức ăn nhanh",
+				"desc": "Bọc trong giấy, ăn đứng."
+			},
+			"mediterranean": {
+				"name": "Địa Trung Hải",
+				"desc": "Dầu ô liu, cà chua và phơi nắng nhiều."
+			},
+			"middle_east": {
+				"name": "Trung Đông và Trung Á",
+				"desc": "Gia vị và lửa chậm; nắp nhấc lên và có mùi."
+			},
+			"south_asia": {
+				"name": "Nam Á",
+				"desc": "Các lớp gia vị được xếp vào, đặc lại khi nấu."
+			},
+			"southeast_asia": {
+				"name": "Đông Nam Á",
+				"desc": "Chua, nóng, dừa - cắn một miếng là bạn sẽ tỉnh giấc."
+			},
+			"western": {
+				"name": "Cổ điển phương Tây",
+				"desc": "Dao và nĩa bày ra, lấy từ từ."
+			}
+		},
+		"tag": {
+			"breakfast": {
+				"name": "Bữa sáng",
+				"desc": "Ánh sáng sớm, một cái gì đó trước ngày."
+			},
+			"festival": {
+				"name": "Lễ ăn mừng",
+				"desc": "Loại chỉ đáng làm khi có ai đó để chia sẻ."
+			},
+			"home": {
+				"name": "nấu ăn tại nhà",
+				"desc": "Loại hàng ngày: nguyên liệu đơn giản, không cầu kì."
+			},
+			"late_night": {
+				"name": "Đêm muộn",
+				"desc": "Tắt đèn rồi vẫn muốn ăn thêm miếng nữa."
+			},
+			"soup": {
+				"name": "Súp & nước dùng",
+				"desc": "Bát đang nóng; cái thìa đi trước."
+			},
+			"spicy": {
+				"name": "Cay",
+				"desc": "Hơi nóng bốc lên sau lưỡi."
+			},
+			"street": {
+				"name": "Đường Phố & Đêm khuya",
+				"desc": "Thứ gì đó bạn có thể mang đi hoặc chỉ muốn khi trời tối."
+			},
+			"sweet": {
+				"name": "Kẹo & Đồ uống",
+				"desc": "Ngọt, mát, hoặc nhấm nháp từ từ trong cốc."
+			},
+			"vegetarian": {
+				"name": "Người ăn chay",
+				"desc": "Không có thịt, và nó không cảm thấy thiếu."
+			},
+			"meat": {
+				"name": "Thịt",
+				"desc": "\"Bất kỳ loại thịt nào\" - hãy lấy bất cứ thứ gì bạn có."
+			},
+			"veg": {
+				"name": "Rau",
+				"desc": "\"Bất kỳ loại rau nào\" - hãy sử dụng những gì có trong giỏ."
+			},
+			"fruit": {
+				"name": "Hoa quả",
+				"desc": "\"Bất kỳ loại trái cây nào\" - ngọt hay chua, cả hai đều được tính."
+			},
+			"seafood": {
+				"name": "hải sản",
+				"desc": "\"Bất kỳ loại hải sản nào\" - cá, tôm, động vật có vỏ."
+			},
+			"pantry": {
+				"name": "Phòng đựng thức ăn",
+				"desc": "Thực phẩm hàng ngày: muối, đường, bột mì, dầu, hạt cà phê."
+			},
+			"livestock": {
+				"name": "chăn nuôi",
+				"desc": "Bất kỳ loại thịt, trứng hoặc sữa nào từ trang trại - hãy sử dụng bất cứ thứ gì nó cung cấp cho bạn."
+			},
+			"chocolate": {
+				"name": "Sôcôla",
+				"desc": "\"Bất kỳ loại sô cô la nào\" - sô cô la đen hoặc sô cô la sữa đều được tính."
+			}
+		},
+		"facility": {
+			"coffee_machine": {
+				"name": "Máy pha cà phê",
+				"desc": "Nhấn nút và nó sẽ im lặng trong một giây đầu tiên."
+			},
+			"grinder": {
+				"name": "Máy mài",
+				"desc": "Nó lắc lư một chút khi nó quay."
+			},
+			"oven": {
+				"name": "Lò vi sóng",
+				"desc": "Kính ở cửa luôn có một chút sương mù."
+			},
+			"pan": {
+				"name": "chảo rán",
+				"desc": "Một lớp dầu mỏng ở phía dưới; vành đã bị cháy đen."
+			},
+			"research_desk": {
+				"name": "Bàn nghiên cứu",
+				"desc": "Một góc bàn: một chiếc khay gỗ bóng loáng và vài chiếc bát trống."
+			},
+			"steamer": {
+				"name": "Nồi hấp",
+				"desc": "Nhấc nắp lên, hơi nước sẽ thoát ra trước và không có gì trong suốt."
+			},
+			"stove": {
+				"name": "Cái lò",
+				"desc": "Tắt lửa và nồi im lặng."
+			},
+			"fridge": {
+				"name": "Tủ lạnh",
+				"desc": "Một chiếc hộp thép ồn ào, bên trong lạnh hơn bên ngoài."
+			},
+			"warehouse": {
+				"name": "Phòng đựng thức ăn",
+				"desc": "Các kệ ở góc. Họ nắm giữ bao nhiêu tùy thuộc vào mức độ họ đi lên."
+			}
+		},
+		"item": {
+			"eggplant": {
+				"name": "cà tím",
+				"desc": "Da tím bóng; bên trong thịt mềm, nhạt màu."
+			},
+			"cassava": {
+				"name": "Sắn",
+				"desc": "Da thô ráp; thịt trắng như tuyết sau khi bóc vỏ."
+			},
+			"roasted_eggplant": {
+				"taste": "Da cháy và đậu nành, đủ mềm để có thể dùng đũa tách ra.",
+				"hint": "Nướng toàn bộ cho đến khi da nhăn lại, sau đó tách đôi và đặt lên trên.",
+				"name": "Cà tím nướng",
+				"desc": "Nướng cà tím mềm, tách nó ra, phủ gia vị và đậu nành rồi cho vào lò nướng cho đến khi bóng."
+			},
+			"eggplant_parmesan": {
+				"taste": "Kéo phô mai; cà tím đã say cà chua.",
+				"hint": "Chiên các lát trước để chúng không bị chảy nước.",
+				"name": "Cà tím Parmesan",
+				"desc": "Chiên các lát cà tím, xếp lớp với cà chua và phô mai rồi nướng cho đến khi sủi bọt."
+			},
+			"cassava_fries": {
+				"taste": "Giòn bên ngoài, bột bên trong.",
+				"hint": "Luộc sắn đã cắt trước khi chiên.",
+				"name": "Khoai mì chiên",
+				"desc": "Cắt sắn thành từng múi, luộc chín, để ráo nước, chiên vàng và muối."
+			},
+			"cassava_cake": {
+				"taste": "Mềm và dai; dừa vượt qua đường.",
+				"hint": "Xay nhuyễn sắn rồi khuấy đều nước cốt dừa.",
+				"name": "Bánh Sắn",
+				"desc": "Nghiền sắn thành bột với nước cốt dừa và đường, sau đó hấp cho đến khi chín."
+			},
+			"americano": {
+				"taste": "Cay đắng và sạch sẽ như lau buổi sáng một lần bằng miếng vải.",
+				"hint": "Những gì còn lại sau khi nước nóng chảy qua cà phê espresso.",
+				"name": "Americano",
+				"desc": "Một cốc espresso, một cốc nước. Quá đơn giản để chờ đợi, quá đơn giản để mắc sai lầm."
+			},
+			"apple_crumble": {
+				"taste": "Bên trên vụn, bên dưới mềm.",
+				"hint": "Bơ lạnh làm cho vụn bánh to hơn.",
+				"name": "táo vụn",
+				"desc": "Táo bên dưới, bột bơ vụn, nướng vàng."
+			},
+			"apple_pie": {
+				"taste": "Vành xe bong tróc hơn; phần giữa mềm mại.",
+				"hint": "Nấu phần nước trong táo để phần nhân giữ lại.",
+				"name": "bánh táo",
+				"desc": "Làm mềm táo với đường, bọc bột, nướng cho đến khi vàng."
+			},
+			"arancini": {
+				"taste": "Phô mai hết ngay miếng đầu tiên.",
+				"hint": "Để nguội cơm hoặc viên bị vỡ ra.",
+				"name": "arancini",
+				"desc": "Bọc cơm nguội quanh phô mai, tạo hình, chiên vàng."
+			},
+			"asado": {
+				"taste": "Bên ngoài cháy đen, bên trong hồng hào.",
+				"hint": "Muối thô, chỉ trước khi nó chạm vào lửa.",
+				"name": "asado",
+				"desc": "Dầu và muối cả miếng, nướng chậm cho đến khi cháy thành than và có màu hồng."
+			},
+			"avocado_toast": {
+				"taste": "Lớp màu xanh lá cây không phẳng lắm.",
+				"hint": "Nướng giòn để không bị nhão.",
+				"name": "Bánh mì nướng chay",
+				"desc": "Nướng lát bánh, nghiền nát rau xanh, phết dầu."
+			},
+			"baba_ganoush": {
+				"taste": "Có khói và bên dưới màu xám.",
+				"hint": "Nướng cho đến khi da nhăn nheo.",
+				"name": "Baba Ganoush",
+				"desc": "Rang cà tím cho đến khi vỏ bong ra, múc thịt, nghiền với dầu và gia vị."
+			},
+			"bagel": {
+				"taste": "Một lớp da dai, một mảnh vụn chặt chẽ.",
+				"hint": "Đun sôi trước khi nướng để tạo độ bóng.",
+				"name": "bánh mì tròn",
+				"desc": "Tạo hình các vòng, đun sôi trong thời gian ngắn rồi nướng."
+			},
+			"bagel_sandwich": {
+				"taste": "Tách bánh mì, phô mai phết ra mép.",
+				"hint": "Nướng các mặt đã cắt trước.",
+				"name": "bánh mì tròn",
+				"desc": "Tách bánh mì tròn, phết phô mai kem, nhét rau xanh vào."
+			},
+			"baklava": {
+				"taste": "Nó vỡ tan khi cắn một miếng; xi-rô trên ngón tay của bạn.",
+				"hint": "Nước si-rô sau khi nướng sẽ giữ được độ giòn.",
+				"name": "Baklava",
+				"desc": "Lớp bánh ngọt với các loại hạt, nướng vàng, sau đó đổ xi-rô."
+			},
+			"banana_rice": {
+				"taste": "Ngọt ngào, nhưng bên cạnh là muối.",
+				"hint": "Chuối phải chín đen.",
+				"name": "Cơm chuối",
+				"desc": "Nấu cơm với nước cốt dừa, ăn kèm chuối chín."
+			},
+			"banh_mi": {
+				"taste": "Lớp vỏ nứt ra; bên trong đã được đóng gói.",
+				"hint": "Nướng cuộn để vỏ hát.",
+				"name": "Bánh mì",
+				"desc": "Bánh mì baguette giòn, nhân thịt và rau xanh, nước sốt."
+			},
+			"beef_bourguignon": {
+				"taste": "Thịt nhường đường; nước sốt phủ lên thìa.",
+				"hint": "Nhiệt độ thấp, đậy nắp, không nhìn trộm.",
+				"name": "Thịt bò om chậm",
+				"desc": "Nâu thịt bò, rắc bột mì, thêm rau và gia vị vào, hầm nhẹ."
+			},
+			"beef_wellington": {
+				"taste": "Bên trong màu hồng, bánh ngọt xếp thành từng lớp.",
+				"hint": "Quấn chặt hoặc bánh sẽ mở ra.",
+				"name": "Thịt Bò Wellington",
+				"desc": "Áp chảo thịt, phủ nấm, bọc bột, quét trứng, nướng."
+			},
+			"bibimbap": {
+				"taste": "Đẹp trước khi trộn, tốt hơn sau.",
+				"hint": "Lòng đỏ chảy ra làm lỏng cả bát.",
+				"name": "bibimbap",
+				"desc": "Cơm dưới rau xanh, thịt và trứng chiên; trộn với tương ớt."
+			},
+			"biryani": {
+				"taste": "Hạt tách riêng, nhuộm màu vàng.",
+				"hint": "Lớp nó; đừng khuấy động.",
+				"name": "Biryani",
+				"desc": "Xếp cơm và thịt, rải các loại hạt, hấp cho đến khi ngấm gia vị."
+			},
+			"blt": {
+				"taste": "Thịt xông khói ngấm mỡ, cà chua vẫn nguội.",
+				"hint": "Thịt xông khói giòn, rau diếp khô.",
+				"name": "BLT",
+				"desc": "Thịt xông khói, rau diếp, cà chua. Tên là công thức."
+			},
+			"boerewors": {
+				"taste": "Dày và chảy nước khi cắt.",
+				"hint": "Đừng chích nó nếu không nước sẽ chảy ra.",
+				"name": "Boerewors",
+				"desc": "Nêm thịt băm, nhồi, xào cho đến khi bắt được da."
+			},
+			"boiled_egg": {
+				"taste": "Lòng đỏ có màu trắng đục, xốp.",
+				"hint": "Sáu phút cho lòng đỏ chảy nước, mười phút cho một bộ.",
+				"name": "Trứng luộc",
+				"desc": "Trứng ngâm trong nước lạnh, tính từ lúc sôi. Lột từ từ."
+			},
+			"braised_egg": {
+				"taste": "Màu trắng đã chuyển sang màu nâu; muối đến cuối cùng.",
+				"hint": "Bẻ vỏ trước khi ngâm.",
+				"name": "Trứng kho",
+				"desc": "Luộc trứng, đập vỏ, đun nhỏ lửa với đậu nành và gia vị."
+			},
+			"brownie": {
+				"taste": "Lớp vỏ mỏng, bên trong ướt.",
+				"hint": "Nướng một chút; một mẩu vụn trên xiên là đủ.",
+				"name": "bánh hạnh nhân",
+				"desc": "Làm tan chảy bơ và đường, cho trứng, bột mì và sô cô la vào, nướng cho đến khi vỏ bánh nổi lên."
+			},
+			"buffalo_wings": {
+				"taste": "Nước sốt đến đốt ngón tay, và sức nóng tăng lên.",
+				"hint": "Bơ trong nước sốt làm cho nó bám dính.",
+				"name": "Cánh Trâu",
+				"desc": "Nướng thịt giòn, cho ớt và bơ vào."
+			},
+			"bun": {
+				"taste": "Người gói uống nước trái cây; tốt hơn so với điền.",
+				"hint": "Bột quanh thịt, hấp chín.",
+				"name": "Bún hấp",
+				"desc": "Bột nổi bọc quanh thịt lợn, khâu lại, hấp cho đến khi da chuyển sang màu trong."
+			},
+			"burrito": {
+				"taste": "Cuộn chặt; cắt nó và các lớp hiển thị.",
+				"hint": "Gấp các đầu vào nếu không nó sẽ bị rò rỉ.",
+				"name": "bánh burrito",
+				"desc": "Đổ đầy thịt, rau xanh và phô mai vào bánh ngô, cuộn lại rồi nướng."
+			},
+			"butter_rice": {
+				"taste": "Bơ tan trong, đậu nành chỉ còn ở mép.",
+				"hint": "Cơm nóng, bơ lạnh.",
+				"name": "Cơm bơ",
+				"desc": "Một miếng cơm nóng, một miếng bơ, đậu nành quanh mép. Nhìn trước khi bạn khuấy động."
+			},
+			"butter_toast": {
+				"taste": "Bơ tan thành vụn, mép vẫn giòn.",
+				"hint": "Trải khi còn nóng, đến tận các góc.",
+				"name": "bánh mì nướng bơ",
+				"desc": "Nướng nó, bơ nó khi còn ấm. Lớp tan chảy đó là điểm."
+			},
+			"caesar_salad": {
+				"taste": "Bánh mì nướng vẫn giòn; lớp phủ đều.",
+				"hint": "Thêm bánh mì cuối cùng hoặc nó sẽ mềm.",
+				"name": "Salad Caesar",
+				"desc": "Xé lá, trộn nước sốt, rải các khối bánh mì và phô mai."
+			},
+			"cake": {
+				"taste": "Trọng lượng của bơ làm giảm vị ngọt.",
+				"hint": "Người mất nhiều thời gian nhất.",
+				"name": "Bánh ngọt",
+				"desc": "Đổ bột vào hộp thiếc và để nó nổi lên."
+			},
+			"candied_fruit": {
+				"taste": "Vỏ đường nứt ra chỉ sau một miếng cắn.",
+				"hint": "Nhúng vào những bong bóng nhỏ nếu không nó sẽ dính vào răng của bạn.",
+				"name": "Kẹo trái cây",
+				"desc": "Xiên hoa quả, nhúng đường nóng vào, để chín."
+			},
+			"cappuccino": {
+				"taste": "Ngọt trước, đắng sau; lớp bọt nằm phía trên như một vật nhẹ.",
+				"hint": "Tên của nó đội một chiếc mũ nhỏ; uống nó giống như một đám mây ngọt ngào.",
+				"name": "Cappuccino",
+				"desc": "Sữa bị đánh lên: vị ngọt nổi lên trên, vị đắng ở dưới."
+			},
+			"caprese": {
+				"taste": "Cắt lát có cùng độ dày.",
+				"hint": "Cà chua ở nhiệt độ phòng, không bao giờ lạnh.",
+				"name": "Caprese",
+				"desc": "Cắt lát cà chua và phô mai, xếp chồng lên nhau, thêm gia vị."
+			},
+			"caramel_macchiato": {
+				"taste": "Xi-rô ở phía dưới vẫn còn; ngụm cuối cùng là ngọt ngào nhất.",
+				"hint": "Đừng khuấy động; các lớp là điểm.",
+				"name": "Caramel Macchiato",
+				"desc": "Xi-rô đựng trong ly, sữa và cà phê espresso phủ lên trên, một vệt caramen ở trên."
+			},
+			"carrot_cake": {
+				"taste": "Bạn không thể nếm được củ cà rốt, chỉ nhìn thấy nó.",
+				"hint": "Hãy xay nhuyễn nếu không vụn bánh sẽ trở nên dai.",
+				"name": "Bánh cà rốt",
+				"desc": "Gấp cà rốt bào sợi vào bột, nướng cho đến khi xiên sạch."
+			},
+			"ceviche": {
+				"taste": "Cá sống, trắng bệch.",
+				"hint": "Đừng để nó lâu kẻo nó sẽ vỡ ra.",
+				"name": "Ceviche",
+				"desc": "Ngâm các lát cá trong nước ép trái cây cho đến khi đục, nêm gia vị."
+			},
+			"chai": {
+				"taste": "Spice đánh đầu tiên; sữa theo sau.",
+				"hint": "Kéo nó ngay trước khi sôi.",
+				"name": "Chai",
+				"desc": "Sữa với lá trà, gia vị và đường, đun nhỏ lửa cho đến khi có màu sẫm."
+			},
+			"cheese_stick": {
+				"taste": "Giòn ra, kéo dài bên trong.",
+				"hint": "Phô mai lạnh, dầu nóng.",
+				"name": "Que phô mai",
+				"desc": "Phô mai dạng que, tẩm bột, chiên vàng. Ăn chúng nóng."
+			},
+			"cheese_toast": {
+				"taste": "Phô mai phồng lên, sau đó chuyển sang màu nâu ở rìa.",
+				"hint": "Nhiệt độ cao nhất và đừng bỏ đi.",
+				"name": "bánh mì nướng phô mai",
+				"desc": "Nướng dưới lớp phô mai cho đến khi nó xẹp xuống. Phần kéo là phần tốt nhất."
+			},
+			"cheeseburger": {
+				"taste": "Phô mai tan chảy trên miếng bánh, tạo thành từng sợi.",
+				"hint": "Phô mai trong mười giây qua, không còn nữa.",
+				"name": "bánh mì kẹp phô mai",
+				"desc": "Đặt một lát phô mai lên miếng chả gần chín rồi đậy lại cho tan chảy."
+			},
+			"cheesecake": {
+				"taste": "Mát ở giữa, nâu ở viền.",
+				"hint": "Không cắt khi còn ấm; một đêm trong cái lạnh đặt nó.",
+				"name": "bánh phô mai",
+				"desc": "Gấp kem phô mai và đường qua bột, đổ vào khuôn, nướng cho đến khi mép se lại."
+			},
+			"chicken_curry": {
+				"taste": "Nước sốt đặc, màu đậm.",
+				"hint": "Xào gia vị trước khi thịt.",
+				"name": "cà ri gà",
+				"desc": "Chiên gia vị, thêm thịt, đun nhỏ lửa với sữa cho đến khi đặc lại."
+			},
+			"chicken_wrap": {
+				"taste": "Cán hơi lỏng lẻo; một miếng cắn rơi đầy.",
+				"hint": "Làm ấm bánh mì dẹt trước để bánh có thể gấp lại mà không bị nứt.",
+				"name": "Bọc gà",
+				"desc": "Chiên và cắt thịt, cuộn với rau xanh trong bánh mì dẹt."
+			},
+			"cinnamon_roll": {
+				"taste": "Đường đọng lại trong các nếp gấp; nó mở ra theo hình xoắn ốc.",
+				"hint": "Cuộn nó mỏng để có nhiều lớp hơn.",
+				"name": "Bánh quế",
+				"desc": "Cán bột, phết bơ, đường và quế, cắt lát và nướng."
+			},
+			"clear_noodle_soup": {
+				"taste": "Nước dùng trong, sợi bún trơn.",
+				"hint": "Luộc mì hoặc súp mây.",
+				"name": "Bún trong",
+				"desc": "Mỳ cho vào tô, dọn kho qua. Một ít hành lá là đủ."
+			},
+			"club_sandwich": {
+				"taste": "Ba lớp, được giữ bằng một cái cuốc.",
+				"hint": "Giữ từng lớp mỏng để nó cắn sạch.",
+				"name": "Câu lạc bộ Sandwich",
+				"desc": "Nướng bánh mì, xếp thịt, trứng và rau xanh, cắt thành hình tam giác."
+			},
+			"coconut_dessert": {
+				"taste": "Ngọt; lạnh tốt hơn ấm.",
+				"hint": "Đừng khuấy mạnh nếu không nó sẽ tạo bọt.",
+				"name": "tráng miệng dừa",
+				"desc": "Giảm nước cốt dừa với đường, thêm hoa quả, để nguội."
+			},
+			"cold_brew": {
+				"taste": "Lạnh chậm, đắng chậm.",
+				"hint": "Mất nhiều thời gian nhưng không có lửa.",
+				"name": "bia lạnh",
+				"desc": "Bã cà phê ngâm trong nước lạnh trong tủ lạnh suốt buổi chiều trước khi tỏa hương."
+			},
+			"con_panna": {
+				"taste": "Kem đầu tiên, sau đó là cà phê espresso - không có sự chuyển tiếp ở giữa.",
+				"hint": "Kem trên đầu ảnh; đừng khuấy động.",
+				"name": "Con Panna",
+				"desc": "Một shot nhỏ dưới đám mây kem, một tấm chăn cho một thứ gì đó cay đắng."
+			},
+			"cookie": {
+				"taste": "Hơi cháy ở rìa, vẫn mềm ở giữa.",
+				"hint": "Miếng tròn nhỏ, ngọt ngào không đường vòng.",
+				"name": "bánh quy",
+				"desc": "Trải thành từng vòng mỏng: các mép có màu nâu trước khi phần giữa kịp thời."
+			},
+			"corn_soup": {
+				"taste": "Ngọt ngào, hạt nhân vẫn còn đó.",
+				"hint": "Giữ lại một nửa số ngô cho đến hết.",
+				"name": "Súp ngô",
+				"desc": "Ngô và sữa trộn đều, đun sôi, cho một ít nhân nguyên hạt lên trên."
+			},
+			"corn_tortilla": {
+				"taste": "Cháy ở rìa, ngô ngọt ở giữa.",
+				"hint": "Ngô và bột mì cán mỏng.",
+				"name": "bánh ngô",
+				"desc": "Ngô và bột mì nhào thành khối, cán mỏng, nướng trên chảo cho đến khi phồng rộp."
+			},
+			"couscous": {
+				"taste": "Hạt thóc mà múc ra cho sạch sẽ.",
+				"hint": "Hấp hai lần cho nhẹ.",
+				"name": "couscous",
+				"desc": "Chà bột vào ngũ cốc, hấp, trộn với rau và gia vị."
+			},
+			"cream_puff": {
+				"taste": "Rỗng ở miếng đầu tiên, sau đó là kem.",
+				"hint": "Nướng vỏ rỗng, sau đó đổ đầy.",
+				"name": "Kem Puff",
+				"desc": "Vỏ phồng lên; khi nguội, kem sẽ chảy từ dưới lên."
+			},
+			"creamed_spinach": {
+				"taste": "Màu đậm, vị nhẹ.",
+				"hint": "Bóp khô sau khi chần.",
+				"name": "rau bina kem",
+				"desc": "Chần và ép rau bina, cắt nhỏ, trộn với nước sốt trắng và bơ."
+			},
+			"creamy_mushroom_chicken": {
+				"taste": "Nước sốt đặc, nấm còn hơi cứng.",
+				"hint": "Chiên nấm trước và đổ nước đi.",
+				"name": "Gà nấm kem",
+				"desc": "Chiên gà, xào nấm, thêm nước sốt trắng và giảm bớt."
+			},
+			"creme_brulee": {
+				"taste": "Caramel ở trên; bạn phải phá vỡ nó.",
+				"hint": "Trứng, kem, đường -- sau đó đốt đường.",
+				"name": "Kem Brulee",
+				"desc": "Nướng cho đến khi chín, rắc đường, đốt thành vỏ mỏng."
+			},
+			"croissant": {
+				"taste": "Lớp này đến lớp khác; ngón tay của bạn tỏa sáng khi bạn làm xong.",
+				"hint": "Thứ đầu tiên cho vào lò sẽ rơi ra từng mảnh vụn.",
+				"name": "bánh sừng bò",
+				"desc": "Bột được gấp trên bơ, gấp vài lần và các lớp sẽ ra khỏi lò."
+			},
+			"curry_puff": {
+				"taste": "Bánh ngọt nhiều lớp, nhân nóng hổi.",
+				"hint": "Làm nguội phần nhân trước khi gói.",
+				"name": "bánh cà ri",
+				"desc": "Bọc nhân cà ri trong bánh ngọt, nướng cho đến khi bong ra."
+			},
+			"curry_rice": {
+				"taste": "Cà ri đặc làm vấy bẩn từng hạt.",
+				"hint": "Chiên gia vị trước để đánh thức nó.",
+				"name": "Cơm cà ri",
+				"desc": "Chiên thịt và rau, thêm gia vị và nước, làm đặc, rưới lên cơm."
+			},
+			"dal": {
+				"taste": "Đủ dày để giữ một cái thìa.",
+				"hint": "Nấu cho đến khi đậu xẹp xuống.",
+				"name": "Dal",
+				"desc": "Luộc đậu cho đến khi chín thì nêm gia vị."
+			},
+			"dumpling": {
+				"taste": "Vỏ mỏng, màu xanh lộ rõ.",
+				"hint": "Làm việc lấp đầy hoặc nó sẽ rơi ra.",
+				"name": "bánh bao",
+				"desc": "Cuộn giấy gói, gấp nhân thịt, hấp chín."
+			},
+			"egg_drop_soup": {
+				"taste": "Trứng nở thành dải ruy băng.",
+				"hint": "Nước luộc, trứng loãng, không khuấy.",
+				"name": "Súp trứng thả",
+				"desc": "Đun sôi, đổ trứng vào sợi. Để nó yên."
+			},
+			"egg_pancake": {
+				"taste": "Giòn ở viền, mềm ở giữa.",
+				"hint": "Bột lỏng sẽ lan ra mỏng hơn.",
+				"name": "bánh trứng",
+				"desc": "Đánh trứng và bột mì, đổ mỏng vào chảo, chiên cả hai mặt."
+			},
+			"egg_roll": {
+				"taste": "Các lớp bên trong, sữa ở cuối.",
+				"hint": "Trải mỏng hoặc bị nứt khi cuộn.",
+				"name": "trứng cuộn",
+				"desc": "Trứng và sữa trải mỏng, cuộn thành hình xoắn ốc và thái lát."
+			},
+			"egg_salad": {
+				"taste": "Lòng đỏ và nước sốt trộn lẫn với nhau, thành từng khối màu trắng.",
+				"hint": "Đun sôi chúng thật kỹ để nghiền dễ dàng hơn.",
+				"name": "Salad trứng",
+				"desc": "Trứng nghiền và nước sốt. Trên bánh mì hoặc bên cạnh rau diếp."
+			},
+			"egg_salad_sandwich": {
+				"taste": "Chất làm đầy mềm ép ra khỏi vết cắt.",
+				"hint": "Đập trứng, đừng thái hạt lựu.",
+				"name": "Sandwich Salad trứng",
+				"desc": "Trứng nghiền và nước sốt giữa bánh mì nướng. Tốt hơn sau khi nghỉ ngơi trong cái lạnh."
+			},
+			"egg_tart": {
+				"taste": "Giòn ở viền, run ở giữa.",
+				"hint": "Mãng cầu đổ vào cốc bột.",
+				"name": "bánh trứng",
+				"desc": "Bột được ép thành những chiếc cốc nhỏ, đổ sữa trứng vào, nướng cho đến khi tạo thành lớp vỏ."
+			},
+			"egg_toast": {
+				"taste": "Cắn xuống và lòng đỏ chảy ra.",
+				"hint": "Trứng chảy, bánh mì nướng giòn.",
+				"name": "bánh mì nướng trứng",
+				"desc": "Bánh mì nướng phết bơ, trứng chiên bên trên. Ngón tay của bạn sẽ bắt được một ít lòng đỏ."
+			},
+			"espresso": {
+				"taste": "Đắng đủ để tỏa sáng, chỉ để lại một chút ở đáy cốc.",
+				"hint": "Bã cà phê được cho qua nước nóng một lần; đây là phần nhỏ xuất hiện.",
+				"name": "cà phê espresso",
+				"desc": "Cơ sở của mỗi loại cà phê. Nó cũng là một thứ đã hoàn thành, bạn có thể pha loãng với nước hoặc sữa."
+			},
+			"falafel": {
+				"taste": "Bên ngoài giòn, bên trong xanh.",
+				"hint": "Ngâm, không đun sôi rồi xay.",
+				"name": "Falafel",
+				"desc": "Ngâm và xay đậu, trộn với bột mì, chiên thành từng viên."
+			},
+			"farinata": {
+				"taste": "Mỏng, giòn ở rìa, mềm ở giữa.",
+				"hint": "Bột lỏng sẽ lan ra mỏng.",
+				"name": "Farinata",
+				"desc": "Đánh bột và nước mỏng, đổ vào khay, phết dầu rồi nướng."
+			},
+			"feijoada": {
+				"taste": "Màu sẫm và mặn, làm cho cơm.",
+				"hint": "Hầm cho đến khi đậu chuyển sang màu cát.",
+				"name": "Feijoada",
+				"desc": "Nấu chậm thịt và đậu với gia vị cho đến khi nước dùng đặc lại."
+			},
+			"fish_and_chips": {
+				"taste": "Vỏ bên ngoài, bong tróc bên trong.",
+				"hint": "Giữ dầu nóng hoặc nó uống dầu.",
+				"name": "Cá & Khoai Tây Chiên",
+				"desc": "Phủ hải sản lên, chiên cho đến khi phồng lên, dùng kèm với khoai tây chiên."
+			},
+			"flat_white": {
+				"taste": "Mạnh hơn một ly latte; sữa chỉ làm giảm vị đắng.",
+				"hint": "Hai mũi, một phần sữa, không đường.",
+				"name": "Trắng phẳng",
+				"desc": "Ít sữa nên cà phê bước tới."
+			},
+			"focaccia": {
+				"taste": "Dầu đọng lại ở lúm đồng tiền.",
+				"hint": "Nhấn bằng ngón tay của bạn, không thông qua.",
+				"name": "Focaccia",
+				"desc": "Trải bột, phết bột, dầu và gia vị rồi nướng."
+			},
+			"french_omelette": {
+				"taste": "Ướt bên trong, đặt bên ngoài.",
+				"hint": "Nhiệt độ thấp, thìa luôn di chuyển.",
+				"name": "Trứng tráng kiểu Pháp",
+				"desc": "Đánh trứng, làm tan bơ, cuộn thành cuộn trên lửa nhỏ."
+			},
+			"french_onion_soup": {
+				"taste": "Hành có vị ngọt, không giống hành tây.",
+				"hint": "Chiên chúng cho đến khi có màu nâu đậm; đừng vội.",
+				"name": "Súp hành kiểu Pháp",
+				"desc": "Caramel hành tây cắt lát, thêm nước dùng, phủ bánh mì và phô mai lên trên, nướng."
+			},
+			"french_toast": {
+				"taste": "Sữa trứng mềm bên trong.",
+				"hint": "Ngâm nó qua, không chỉ nhúng.",
+				"name": "bánh mì nướng kiểu pháp",
+				"desc": "Bánh mì qua trứng và sữa, chiên cả hai mặt. Cắt nó ra: ướt ở giữa."
+			},
+			"fresh_milk": {
+				"taste": "Một lớp màng trắng trên kính.",
+				"hint": "Phục vụ lạnh; đừng làm nóng nó.",
+				"name": "Sữa tươi",
+				"desc": "Sữa vào ly, để nguội."
+			},
+			"fried_chicken": {
+				"taste": "Lớp vỏ phát ra âm thanh; bên trong vẫn cháy.",
+				"hint": "Gia vị trong bột đánh đều gia vị lên trên.",
+				"name": "gà rán",
+				"desc": "Bọc thịt lại, chiên vàng, vớt ra để ráo nước."
+			},
+			"fried_dough": {
+				"taste": "Sắc nét bên ngoài, rỗng bên trong.",
+				"hint": "Bột mềm phồng là tốt nhất.",
+				"name": "bột chiên",
+				"desc": "Để bột nổi lên, xé thành từng miếng, chiên vàng."
+			},
+			"fried_egg": {
+				"taste": "Giòn ở rìa, vẫn mềm ở giữa.",
+				"hint": "Lòng đỏ sẽ lung lay.",
+				"name": "Trứng chiên",
+				"desc": "Một ít dầu, một quả trứng và kiên nhẫn cho đến khi mép cong lại."
+			},
+			"fried_noodles": {
+				"taste": "Tất cả khói chảo; các sợi bị đứt ngắn.",
+				"hint": "Đun sôi trước nếu không nó sẽ chuyển thành bột nhão.",
+				"name": "mì xào",
+				"desc": "Luộc mì một nửa rồi xào chín với rau xanh."
+			},
+			"fried_rice": {
+				"taste": "Từng hạt riêng biệt, chảo rất nóng.",
+				"hint": "Cơm, trứng, rau -- nhiệt độ cao, nấu nhanh.",
+				"name": "cơm chiên",
+				"desc": "Gạo một ngày là tốt nhất; đánh trứng trước, sau đó ném tất cả."
+			},
+			"fries": {
+				"taste": "Muối vẫn bám, mép hơi mềm.",
+				"hint": "Ngâm các dải đã cắt; họ chiên giòn hơn.",
+				"name": "khoai tây chiên",
+				"desc": "Cắt khoai tây, ngâm tinh bột, chiên cho đến khi các cạnh có màu nâu."
+			},
+			"fruit_salad": {
+				"taste": "Cắt không đều, kem bắt đầu lỏng ra.",
+				"hint": "Làm lạnh trái cây trước khi cho vào kem.",
+				"name": "Salad trái cây",
+				"desc": "Cắt trái cây thành khối, cho kem vào, để nguội một lúc."
+			},
+			"fufu": {
+				"taste": "Một quả bóng duy nhất, ăn bằng ngón tay.",
+				"hint": "Đập nó thật nóng; trời lạnh quá.",
+				"name": "Fufu",
+				"desc": "Luộc sắn, giã nóng thành từng viên."
+			},
+			"garlic_toast": {
+				"taste": "Tỏi đánh trước, bơ theo sau.",
+				"hint": "Băm tỏi, đừng thái hạt lựu.",
+				"name": "bánh mì nướng tỏi",
+				"desc": "Bơ mềm, tỏi nghiền, gia vị. Trải và nướng cho đến khi mép có màu nâu."
+			},
+			"gazpacho": {
+				"taste": "Phục vụ lạnh, và chỉ sau đó nó mới có hương vị của mùa hè.",
+				"hint": "Thư giãn đi; không bao giờ làm nóng nó.",
+				"name": "Gazpacho",
+				"desc": "Trộn cà chua với dầu, sau đó để nguội."
+			},
+			"greek_salad": {
+				"taste": "Một miếng phô mai ở trên, dầu sáng.",
+				"hint": "Quăng nhẹ nhàng hoặc nó chảy nước.",
+				"name": "Salad Hy Lạp",
+				"desc": "Cắt nhỏ rau, phủ phô mai, dầu và gia vị."
+			},
+			"green_curry": {
+				"taste": "Xanh nhưng hơi nóng.",
+				"hint": "Đập nước cốt dừa trước khi dán.",
+				"name": "cà ri xanh",
+				"desc": "Đun sôi nước cốt dừa, thêm gia vị và thịt vào, đun nhỏ lửa cho đến khi đặc lại."
+			},
+			"green_papaya_salad": {
+				"taste": "Chua và nóng, và nó giòn.",
+				"hint": "Đập nhẹ; nó không nên nghiền nát.",
+				"name": "Salad rau củ cắt nhỏ",
+				"desc": "Cắt nhỏ rau xanh, giã nhuyễn với gia vị, rải hạt."
+			},
+			"grilled_cheese": {
+				"taste": "Vỏ giòn bên ngoài, kéo bên trong.",
+				"hint": "Nhiệt độ thấp, nhấn nó xuống.",
+				"name": "phô mai nướng",
+				"desc": "Bánh mì nướng và phô mai, phết bơ bên ngoài, chiên vàng. Cắt khi còn nóng."
+			},
+			"groundnut_stew": {
+				"taste": "Dày và có đậu phộng trên mọi thứ.",
+				"hint": "Khuấy bột hạt cuối cùng nếu không nó sẽ tách ra.",
+				"name": "Lạc hầm",
+				"desc": "Hầm thịt và rau xanh mềm, sau đó cho hạt vào trộn đều."
+			},
+			"ham_cheese_sandwich": {
+				"taste": "Vị mặn, ấm, ép phẳng.",
+				"hint": "Giữ giăm bông và phô mai chạm vào nhau.",
+				"name": "Sandwich Thịt nguội & Phô mai",
+				"desc": "Hai lát, giăm bông và phô mai ở giữa. Nhấn, cắt, hai lớp."
+			},
+			"hamburger": {
+				"taste": "Một góc bánh đã mềm vì nước.",
+				"hint": "Nhấn phẳng miếng bánh; nó ngồi tốt hơn.",
+				"name": "bánh mì kẹp thịt",
+				"desc": "Bún chẻ, chả chiên, một lá xà lách rồi ép xuống."
+			},
+			"hash_brown": {
+				"taste": "Vỏ bên ngoài, sợi mềm bên trong.",
+				"hint": "Bóp khô các mảnh vụn.",
+				"name": "Màu nâu băm",
+				"desc": "Khoai tây nghiền, ép, ép thành bánh, chiên vàng đều hai mặt."
+			},
+			"hash_browns": {
+				"taste": "Ép phẳng, nhuộm nâu cả hai mặt.",
+				"hint": "Bóp khô bánh nếu không bánh sẽ bị nát.",
+				"name": "Màu nâu băm",
+				"desc": "Khoai tây gọt vỏ, vắt khô, ép thành bánh rồi chiên vàng 2 mặt."
+			},
+			"hot_cocoa": {
+				"taste": "Một lớp da mỏng hình thành trên đầu.",
+				"hint": "Đừng đun sôi; kéo nó ở bong bóng đầu tiên.",
+				"name": "Cacao nóng",
+				"desc": "Sữa, cacao và đường đun trên lửa nhỏ, khuấy đều cho đến khi sẫm màu."
+			},
+			"hot_dog": {
+				"taste": "Vỏ bánh giòn, nước sốt chua chua.",
+				"hint": "Đừng nướng bánh quá chín; nó trầy xước.",
+				"name": "xúc xích",
+				"desc": "Chiên xúc xích cho đến khi vỏ tách ra, cuộn thành cuộn, thêm cà chua."
+			},
+			"hummus": {
+				"taste": "Mịn màng, có một đường ép tốt ở giữa.",
+				"hint": "Nấu đậu cho đến khi chúng nghiền nát khi chạm vào.",
+				"name": "hummus",
+				"desc": "Luộc đậu mềm, trộn với gia vị, cuối cùng là dầu."
+			},
+			"iced_americano": {
+				"taste": "Băng đã bắt đầu tan; hương vị mỏng đi.",
+				"hint": "Làm nguội cà phê espresso trước khi có đá hoặc bị vẩn đục.",
+				"name": "Americano đá",
+				"desc": "Espresso với nước lạnh và một vài viên đá."
+			},
+			"iced_latte": {
+				"taste": "Sữa chìm xuống rồi dâng lên; hai màu sắc.",
+				"hint": "Sữa lạnh giữ cho các lớp không bị xẹp xuống.",
+				"name": "Latte đá",
+				"desc": "Sữa nguội trong ly, espresso rót từ từ."
+			},
+			"injera": {
+				"taste": "Đầy lỗ và mềm.",
+				"hint": "Để bột lên men tạo thành các lỗ.",
+				"name": "vết thương",
+				"desc": "Lên men bột, dàn mỏng, nấu cho đến khi sủi bọt."
+			},
+			"jam_toast": {
+				"taste": "Mứt lan dày; vành để trần.",
+				"hint": "Trải khi còn ấm để nó mềm ra.",
+				"name": "bánh mì nướng mứt",
+				"desc": "Nướng miếng bánh và phết mứt khi còn nóng."
+			},
+			"jollof": {
+				"taste": "Cơm đỏ, có lớp vỏ ở đáy nồi.",
+				"hint": "Chiên cà chua và gia vị cho đến khi dầu chảy.",
+				"name": "Gạo Jollof",
+				"desc": "Chiên cà chua và gia vị, thêm cơm và thịt vào, hấp chín."
+			},
+			"juice": {
+				"taste": "Một ít bột giấy; lắc trước khi uống.",
+				"hint": "Uống tươi hoặc tách ra.",
+				"name": "Nước ép",
+				"desc": "Nhấn trái cây, lọc các phần thô."
+			},
+			"kebab": {
+				"taste": "Xiên vẫn cháy; các cạnh bị cháy thành than.",
+				"hint": "Ngâm qua đêm sẽ giữ cho thịt mềm.",
+				"name": "Kebab",
+				"desc": "Ướp thịt thành từng miếng vuông, xiên, nướng cho đến khi dính mép."
+			},
+			"kebab_wrap": {
+				"taste": "Thịt được cạo nóng.",
+				"hint": "Làm ấm bánh mì dẹt nếu không nó sẽ bị nứt.",
+				"name": "Kebab gói",
+				"desc": "Xếp bánh mì ra, thêm thịt và rau xanh, nước sốt, cuộn chặt lại."
+			},
+			"khao_soi": {
+				"taste": "Một tổ mì xào bên trên vẫn giòn.",
+				"hint": "Nước dùng phải đặc mới bám được.",
+				"name": "Khao Soi",
+				"desc": "Đun sôi cà ri dừa, thêm nước phở và thịt vào, phủ lên trên là sợi mì giòn."
+			},
+			"kimchi_soup": {
+				"taste": "Chua trước, đun nóng sau.",
+				"hint": "Càng đun lâu thì càng thấm sâu.",
+				"name": "Canh kim chi",
+				"desc": "Chiên dưa chua và thịt, thêm nước, đun nhỏ lửa cho đến khi đậm đà."
+			},
+			"lasagna": {
+				"taste": "Lớp trên lớp; nó sụt xuống khi cắt.",
+				"hint": "Nước sốt từng lớp hoặc nó sẽ khô.",
+				"name": "Lasagna",
+				"desc": "Xếp mì ống, nước sốt thịt và nước sốt trắng vào, nướng cho đến khi sủi bọt."
+			},
+			"latte": {
+				"taste": "Sữa đến trước; sau đó là sự cay đắng ập đến.",
+				"hint": "Thêm một phần sữa vào Americano.",
+				"name": "Latte",
+				"desc": "Sữa đẩy lùi vị đắng một chút và cả cốc trở nên mềm mại."
+			},
+			"lemonade": {
+				"taste": "Chua đến mức nhăn mặt, bạn lại nhấm nháp.",
+				"hint": "Hòa tan đường trước khi ép lấy nước.",
+				"name": "Nước chanh",
+				"desc": "Vắt trái cây, thêm nước đường, để nguội."
+			},
+			"mac_cheese": {
+				"taste": "Một lớp vỏ màu nâu, một lực kéo bên dưới.",
+				"hint": "Phô mai trong hai vòng làm sâu sắc thêm nó.",
+				"name": "Mac và phô mai",
+				"desc": "Luộc mì ống, trộn với phô mai và sữa, nướng cho đến khi chín vàng."
+			},
+			"macaron": {
+				"taste": "Vỏ mỏng: giòn rồi mềm.",
+				"hint": "Đừng trộn quá kỹ nếu không chúng sẽ bị xẹp.",
+				"name": "Macaron",
+				"desc": "Hạt xay với đường và lòng trắng trứng, nặn nhỏ và nướng chín rồi cho nhân vào."
+			},
+			"macchiato": {
+				"taste": "Một chút sữa ở trên, cà phê ở dưới.",
+				"hint": "Một thìa sữa; nhiều hơn nữa sẽ biến nó thành một ly latte.",
+				"name": "Macchiato",
+				"desc": "Một thìa bọt nhỏ trên espresso, không khuấy."
+			},
+			"mango_lassi": {
+				"taste": "Đủ dày để chống lại rơm.",
+				"hint": "Chỉ có quả chín mới làm được.",
+				"name": "Lassi xoài",
+				"desc": "Xay nhuyễn trái cây, sữa chua và đường."
+			},
+			"mango_sticky_rice": {
+				"taste": "Cơm ngọt, trái cây mát.",
+				"hint": "Cho nước cốt dừa vào đun nóng là có thể uống được.",
+				"name": "Xôi xoài",
+				"desc": "Hấp cơm, khuấy qua nước cốt dừa, ăn kèm trái cây thái lát."
+			},
+			"mapo_tofu": {
+				"taste": "Đầu tiên là tê; sức nóng đang chờ đợi phía sau nó.",
+				"hint": "Cho đậu phụ vào, không được khuấy.",
+				"name": "Đậu phụ Mapo",
+				"desc": "Chiên thịt băm, thêm ớt và nước tương, cho vào đậu phụ."
+			},
+			"mashed_potato": {
+				"taste": "Được thôi, còn lại vài cục.",
+				"hint": "Nghiền khi còn nóng nếu không sẽ bị vón cục.",
+				"name": "khoai tây nghiền",
+				"desc": "Luộc và nghiền nát khoai tây, thêm sữa và bơ vào."
+			},
+			"meat_sauce_rice": {
+				"taste": "Nước sốt thấm vào cơm, mặn hơn ở phía dưới.",
+				"hint": "Cơm sốt thịt.",
+				"name": "Cơm sốt thịt",
+				"desc": "Nước sốt thịt giảm cho đến khi đặc lại, rưới lên cơm nóng; các cạnh bị sụt giảm."
+			},
+			"meat_soup": {
+				"taste": "Dày, có lớp mỡ bóng ở trên.",
+				"hint": "Thịt cho vào nước dùng, đun sôi.",
+				"name": "Súp thịt",
+				"desc": "Thịt thái mỏng, trụng trong nước dùng cho đến khi có màu đậm."
+			},
+			"milk_cereal": {
+				"taste": "Lúc đầu giòn, đến thìa cuối cùng mềm.",
+				"hint": "Sữa lạnh, không phải chờ đợi.",
+				"name": "Sữa & Ngũ cốc",
+				"desc": "Ngũ cốc cho vào tô, đổ sữa lạnh lên trên, để ngấm."
+			},
+			"milk_tea": {
+				"taste": "Trà nhạt, sữa đằng sau.",
+				"hint": "Hãy để nó nguội một lát.",
+				"name": "Trà Sữa",
+				"desc": "Đun sôi sữa, lá trà và đường rồi tắt bếp, để nguội."
+			},
+			"milkshake": {
+				"taste": "Quá dày cho ống hút; dùng thìa.",
+				"hint": "Làm lạnh sữa và kem trước để có độ đặc.",
+				"name": "sữa lắc",
+				"desc": "Đánh sữa, kem và đường cho đến khi phủ kín ly."
+			},
+			"mint_tea": {
+				"taste": "Rất ngọt, và mùi bạc hà chảy ra qua mũi bạn.",
+				"hint": "Đổ từ trên cao để tạo bọt.",
+				"name": "Trà bạc hà",
+				"desc": "Đun sôi nước với gia vị và đường, đổ cao vào ly."
+			},
+			"mocha": {
+				"taste": "Sô cô la và cà phê, không rõ ràng là đầu tiên.",
+				"hint": "Làm tan đường trước nếu không nó sẽ chìm.",
+				"name": "mocha",
+				"desc": "Espresso với sữa, sô cô la đen và đường, khuấy đều cho đến khi có màu sẫm."
+			},
+			"mooncake": {
+				"taste": "Cắt ra thì đậm đặc, ngọt ngào không chê vào đâu được.",
+				"hint": "Nhấn mạnh vào khuôn nếu không hoa văn sẽ bị mờ.",
+				"name": "bánh trung thu",
+				"desc": "Ấn bột vào khuôn, quét trứng, nướng."
+			},
+			"muffin": {
+				"taste": "Trứng trước, vị ngọt sau.",
+				"hint": "Bột, đường, bơ - đổ đầy cốc.",
+				"name": "bánh nướng xốp",
+				"desc": "Đổ bột vào cốc, nướng cho đến khi hình vòm và nứt ra."
+			},
+			"mushroom_risotto": {
+				"taste": "Kem bên ngoài, hơi cắn một chút ở lõi.",
+				"hint": "Tiếp tục khuấy hoặc nó không bao giờ dày lên.",
+				"name": "Risotto nấm",
+				"desc": "Xào cơm với nấm và sốt trắng, cuối cùng là phô mai."
+			},
+			"mushroom_soup": {
+				"taste": "Dày, mịn, có nấm ẩn phía sau.",
+				"hint": "Thêm nước sốt trắng từ từ để nó không bị vón cục.",
+				"name": "Súp nấm",
+				"desc": "Nấm nâu, nước sốt trắng và sữa, nấu cho đến khi phủ đầy một thìa."
+			},
+			"naan": {
+				"taste": "Đốm cháy; mềm khi rách.",
+				"hint": "Đập nó lên một bức tường nóng để làm phồng rộp.",
+				"name": "Naan",
+				"desc": "Cán bột và nướng nóng cho đến khi bột chín."
+			},
+			"nachos": {
+				"taste": "Phô mai tan chảy và co lại khi bạn nhấc một con chip lên.",
+				"hint": "Kéo nó như pho mát vừa cho.",
+				"name": "Nachos",
+				"desc": "Trải khoai tây chiên với phô mai và gia vị, nướng cho đến khi tan chảy."
+			},
+			"nasi_goreng": {
+				"taste": "Hạt khô, nhiều khói chảo.",
+				"hint": "Gạo để lâu ngày, hoặc trở nên dẻo.",
+				"name": "Nasi Goreng",
+				"desc": "Cơm nguội xào với thịt và gia vị, bên trên là một quả trứng chiên."
+			},
+			"nasi_lemak": {
+				"taste": "Dừa ở cơm, ớt ở viền.",
+				"hint": "Ngâm gạo cho tơi ra.",
+				"name": "Nasi Lemak",
+				"desc": "Gạo ngâm, hấp với nước cốt dừa, dùng kèm ớt."
+			},
+			"noodle_soup": {
+				"taste": "Nước súp nóng hơn mì; vẫn còn ấm ở miếng cuối cùng.",
+				"hint": "Bún nước trong với rau củ.",
+				"name": "bún nước lèo",
+				"desc": "Bún luộc riêng, nước dùng riêng; kết hợp ở cuối để không có gì mềm mại."
+			},
+			"onigiri": {
+				"taste": "Cơm nguội, nhân mặn.",
+				"hint": "Cơm bao quanh rau và thịt, ép chặt.",
+				"name": "Cơm nắm",
+				"desc": "Làm ướt tay, vo cơm thành hình tam giác, giấu một ít nhân vào bên trong."
+			},
+			"onion_rings": {
+				"taste": "Cắn một miếng là thấy ngọt bên trong.",
+				"hint": "Cắt các vòng dày để bột giữ được.",
+				"name": "Nhẫn hành tây",
+				"desc": "Cắt hành tây thành từng khoanh, tẩm bột, chiên cho đến khi nổi lên."
+			},
+			"onion_soup": {
+				"taste": "Hành tây trong suốt, nước dùng có màu nâu nhạt.",
+				"hint": "Làm mềm chúng trước hoặc súp cắn.",
+				"name": "Súp hành tây",
+				"desc": "Xào hành tây thái lát mềm, cho nước luộc vào, đun nhỏ lửa cho đến khi chín."
+			},
+			"onion_tart": {
+				"taste": "Hành chất đống cao, vành cháy thành than.",
+				"hint": "Đầu tiên nấu hành tây cho ngọt.",
+				"name": "bánh tart hành tây",
+				"desc": "Nhấn bột vào hộp thiếc, phủ hành tây mềm và phô mai lên trên, nướng."
+			},
+			"oyakodon": {
+				"taste": "Một nửa quả trứng trượt trên cơm.",
+				"hint": "Hai lần đổ trứng, hai kết cấu.",
+				"name": "Oyakodon",
+				"desc": "Đun sôi thịt và hành lá, đổ trứng lên trên, tráng đều trên cơm."
+			},
+			"pad_thai": {
+				"taste": "Ngọt, chua và muối cùng một lúc.",
+				"hint": "Nóng cứng, hoặc mì bị vón cục.",
+				"name": "Pad Thái",
+				"desc": "Ngâm mì rồi xào chín với tôm, trứng và rau xanh."
+			},
+			"paella": {
+				"taste": "Lớp vỏ ở phía dưới đi đầu tiên.",
+				"hint": "Đừng khuấy vào cuối; hãy để nó thiết lập.",
+				"name": "cơm thập cẩm",
+				"desc": "Trải cơm và hải sản vào chảo, nêm gia vị, đun nhỏ lửa cho đến khi khô."
+			},
+			"palak_paneer": {
+				"taste": "Khối trắng trong nước sốt xanh.",
+				"hint": "Thêm phô mai cuối cùng nếu không nó sẽ vỡ vụn.",
+				"name": "Palak Paneer",
+				"desc": "Đun sôi và trộn các loại rau xanh, nêm gia vị, xếp thành các khối phô mai."
+			},
+			"pancake": {
+				"taste": "Toàn lỗ nhỏ, uống gì cũng rải.",
+				"hint": "Lật một lần khi bong bóng vỡ.",
+				"name": "bánh xèo",
+				"desc": "Múc bột vào chảo, lật mặt khi bong bóng nổi lên, vàng cả hai mặt."
+			},
+			"pasta_tomato": {
+				"taste": "Các sợi có màu đỏ; cái đĩa trở lại sạch sẽ.",
+				"hint": "Trực tiếp từ nồi vào nước sốt.",
+				"name": "Pasta cà chua",
+				"desc": "Luộc mì ống, cho qua cà chua đã mềm."
+			},
+			"persian_stew": {
+				"taste": "Nước dùng đậm đà, đậu mềm.",
+				"hint": "Gia vị muộn, nếu không nước hoa sẽ bay hết.",
+				"name": "Món hầm Ba Tư",
+				"desc": "Hầm thịt và đậu, thêm rau xanh và gia vị vào gần cuối."
+			},
+			"peruvian_chicken": {
+				"taste": "Da giòn, axit trái cây trong thịt.",
+				"hint": "Axit trong nước xốt giữ cho nó mềm.",
+				"name": "Gà Peru",
+				"desc": "Ướp với gia vị và nước ép trái cây, nướng cho đến khi vỏ giòn."
+			},
+			"pho": {
+				"taste": "Nước dùng trong vắt, vài lát nổi.",
+				"hint": "Đổ nước sôi, nếu không thịt sẽ không bao giờ quay.",
+				"name": "Phở",
+				"desc": "Đun sôi nước luộc mì, đổ mì lên trên, cho thịt và rau xanh lên trên."
+			},
+			"pilaf": {
+				"taste": "Từng hạt tách rời và tỏa sáng.",
+				"hint": "Ngâm, chiên, sau đó thêm nước.",
+				"name": "cơm thập cẩm",
+				"desc": "Ngâm gạo, xào với thịt và gia vị, hấp với nước."
+			},
+			"pita": {
+				"taste": "Rỗng bên trong, bốc hơi khi rách.",
+				"hint": "Nóng và nhanh, hoặc nó không bao giờ phồng lên.",
+				"name": "bánh pita",
+				"desc": "Cán bột phẳng, nướng nóng cho đến khi bột phồng lên."
+			},
+			"pbj_sandwich": {
+				"taste": "Ngọt và mặn, nửa và nửa.",
+				"hint": "Hai lát, mỗi lát có sự lây lan riêng.",
+				"name": "Sandwich Bơ Đậu Phộng & Mứt",
+				"desc": "Bơ đậu phộng một miếng, mứt một miếng, ép lại với nhau."
+			},
+			"pizza": {
+				"taste": "Vành phồng lên; phô mai vẫn kéo.",
+				"hint": "Để bột nghỉ nếu không bột sẽ không giãn.",
+				"name": "pizza",
+				"desc": "Cán bột, phết cà chua, rải phô mai, nướng cho đến khi phồng rộp ở mép."
+			},
+			"poached_egg": {
+				"taste": "Một tấm màn mỏng màu trắng bao quanh vàng lỏng.",
+				"hint": "Một giọt giấm giữ nó lại với nhau.",
+				"name": "Trứng luộc",
+				"desc": "Trượt quả trứng vào đúng lúc nước rung chuyển. Nâng nó lên một cách nhẹ nhàng."
+			},
+			"popcorn": {
+				"taste": "Một số ít không bao giờ bật ra và cắn mạnh.",
+				"hint": "Để lại một khoảng trống cho hơi nước.",
+				"name": "bỏng ngô",
+				"desc": "Ngô cho vào nồi nóng, đậy nắp lại cho đến khi bắp ngô mỏng đi."
+			},
+			"potato_salad": {
+				"taste": "Ít ăn, lạnh, khỏe hơn sau khi nghỉ ngơi.",
+				"hint": "Đun sôi cho đến khi một chiếc đũa xuyên qua.",
+				"name": "Salad khoai tây",
+				"desc": "Khoai tây và trứng nghiền thành nước sốt. Ăn nguội nhé."
+			},
+			"pour_over": {
+				"taste": "Chiếc cốc chạy chậm lại; vị chua đi phía trước.",
+				"hint": "Việc chiết xuất không có thiết bị - bạn phải đợi thêm một thời gian nữa.",
+				"name": "Đổ tràn",
+				"desc": "Nước bao quanh khu đất và bạn phải để nó tự chảy qua."
+			},
+			"poutine": {
+				"taste": "Nước sốt đặc; khoai tây chiên bên dưới đã bỏ cuộc.",
+				"hint": "Chiên hai lần để giữ nước sốt.",
+				"name": "poutine",
+				"desc": "Chiên khoai tây giòn, rưới nước sốt và nước sốt trắng, thêm thịt vào."
+			},
+			"pudding": {
+				"taste": "Lạnh lẽo; chiếc thìa chìm vào trong.",
+				"hint": "Vị ngọt được hấp trong lò.",
+				"name": "bánh pudding",
+				"desc": "Trứng và sữa cùng nhau được nướng trong nồi cách thủy - đó là lý do tại sao nó run rẩy."
+			},
+			"raita": {
+				"taste": "Lạnh, và nó dập tắt lửa.",
+				"hint": "Cắt rau rất mịn.",
+				"name": "Raita",
+				"desc": "Gấp rau xắt nhỏ vào sữa chua, rắc gia vị."
+			},
+			"ramen": {
+				"taste": "Nước dùng đục, sợi phở vẫn săn chắc.",
+				"hint": "Hâm nóng lại ngay trước khi dùng; nó mềm đi nhanh chóng.",
+				"name": "Ramen",
+				"desc": "Đun sôi nước phở trong, cho thịt lợn và trứng lên trên, cuối cùng là hành lá."
+			},
+			"ravioli": {
+				"taste": "Các mép ép chặt, phần nhân phồng lên.",
+				"hint": "Làm ướt vành hoặc chúng mở ra trong nồi.",
+				"name": "Ravioli",
+				"desc": "Cán bột mỏng, cho nhân vào, gấp lại và đậy kín rồi đun sôi."
+			},
+			"red_curry": {
+				"taste": "Dầu màu đỏ ở trên, đặc ở dưới.",
+				"hint": "Một nhúm đường làm giảm nhiệt.",
+				"name": "Cà ri đỏ",
+				"desc": "Đun sôi nước cốt dừa và gia vị, cho thịt vào nấu cho đến khi dầu tách ra."
+			},
+			"ribs": {
+				"taste": "Lớp vỏ bóng; xương trượt ra ngoài.",
+				"hint": "Thấp và chậm, tráng men ở cuối.",
+				"name": "sườn",
+				"desc": "Xoa với gia vị, nướng ở nhiệt độ thấp, phủ đường khi hoàn thành."
+			},
+			"rice_cake": {
+				"taste": "Ngọt từ từ, chỉ sau khi nhai.",
+				"hint": "Gạo xay thành hỗn hợp sệt, hấp với đường.",
+				"name": "Bánh gạo",
+				"desc": "Đổ gạo vào khuôn, hấp cho đến khi dùng đũa nhấc cả lên."
+			},
+			"roast_chicken": {
+				"taste": "Da giòn, nước cốt còn lại trong chảo.",
+				"hint": "Lau khô da trước khi đi vào.",
+				"name": "gà nướng",
+				"desc": "Xoa thịt với gia vị và bơ, nướng cho đến khi da vàng và nước chảy trong."
+			},
+			"roasted_corn": {
+				"taste": "Đốm cháy khét, cắn vào có vị ngọt.",
+				"hint": "Rang cho đến khi hạt nở ra rồi cho bơ vào.",
+				"name": "ngô nướng",
+				"desc": "Nướng ngô cho đến khi chín, phết bơ và gia vị."
+			},
+			"roasted_vegetables": {
+				"taste": "Các cạnh cháy, phần trung tâm mềm mại.",
+				"hint": "Cắt chúng có cùng kích thước để chúng chín đều.",
+				"name": "Rau nướng",
+				"desc": "Trộn rau củ đã cắt với dầu và gia vị, nướng cho đến khi các cạnh dính lại."
+			},
+			"rose_dessert": {
+				"taste": "Cloying, và bạn tiếp tục quay trở lại.",
+				"hint": "Đừng giảm quá mức nếu không nó sẽ khó cứng.",
+				"name": "Món tráng miệng hoa hồng",
+				"desc": "Làm đặc sữa và đường, đổ vào khuôn, rải hạt."
+			},
+			"samosa": {
+				"taste": "Hình tam giác; khoai tây làm bỏng lưỡi bạn.",
+				"hint": "Bịt kín các cạnh nếu không dầu sẽ lọt vào.",
+				"name": "Samosa",
+				"desc": "Bọc nhân khoai tây trong bánh ngọt, gấp thành hình tam giác, chiên."
+			},
+			"sandwich": {
+				"taste": "Bánh mì nướng mềm, rìa giòn của trứng chiên.",
+				"hint": "Bánh mì nướng, trứng chiên, rau.",
+				"name": "Sandwich",
+				"desc": "Hai lát, trứng và rau xanh ở giữa, ép và cắt."
+			},
+			"satay": {
+				"taste": "Nước sốt đặc, dầu vẫn nhỏ giọt từ xiên.",
+				"hint": "Thêm bột hạt vào cuối cùng nếu không nó sẽ trở nên đắng.",
+				"name": "satay",
+				"desc": "Ướp và xiên thịt, nướng, dùng kèm với nước sốt hạt."
+			},
+			"sausage_sauerkraut": {
+				"taste": "Vị chua cắt được mỡ.",
+				"hint": "Chà bắp cải với muối cho đến khi bắp cải mềm và có vị chua.",
+				"name": "Xúc xích & dưa bắp cải",
+				"desc": "Bắp cải cắt nhỏ, xát muối và gia vị rồi đun với xúc xích cho đến khi có vị chua và mặn."
+			},
+			"scallion_noodle": {
+				"taste": "Hành lá chiên sẫm màu, dầu mang đi.",
+				"hint": "Thấp và chậm, đừng đốt chúng.",
+				"name": "Bún hành lá",
+				"desc": "Hành lá cho vào dầu cho thơm, vớt ra, rưới dầu qua bún."
+			},
+			"scone": {
+				"taste": "Bên ngoài khô ráo, bên trong vẫn hơi ẩm.",
+				"hint": "Bơ xoa vào bột, nướng cho đến khi nứt ra.",
+				"name": "bánh nướng",
+				"desc": "Nướng cho đến khi nó tách ra theo đường may."
+			},
+			"scrambled_egg": {
+				"taste": "Mềm, gãy, bơ trước.",
+				"hint": "Chảo nhỏ, lửa nhỏ, giữ cho thìa chuyển động.",
+				"name": "Trứng bác",
+				"desc": "Trứng đánh thành bơ tan chảy, đẩy từ từ thành một đống."
+			},
+			"seafood_pancake": {
+				"taste": "Viền giòn, phần giữa mọng nước.",
+				"hint": "Một lớp bột mỏng sẽ nấu chín hải sản.",
+				"name": "Bánh xèo hải sản",
+				"desc": "Gấp hải sản vào bột, chiên phẳng cho đến khi đều hai mặt."
+			},
+			"sesame_bun": {
+				"taste": "Vừng bên ngoài, bên trong rỗng.",
+				"hint": "Nướng trước, sau đó nướng để làm lớp vỏ.",
+				"name": "Bún mè",
+				"desc": "Cán bột với dầu, dẹt, rắc vừng lên trên rồi nướng."
+			},
+			"shawarma": {
+				"taste": "Cạo mỏng; nước sốt chảy vào lòng bàn tay của bạn.",
+				"hint": "Làm ấm bánh mì để nó có thể gấp lại.",
+				"name": "Shawarma",
+				"desc": "Làm ấm bánh mì, xếp lớp thịt và rau xanh, nước sốt, cuộn chặt lại."
+			},
+			"shepherd_pie": {
+				"taste": "Một lớp nước sốt có màu nâu trên cùng.",
+				"hint": "Giữ cho hỗn hợp nghiền khô nếu không nó sẽ chìm.",
+				"name": "Bánh Shepherd",
+				"desc": "Chiên thịt và rau thành nhân, nghiền nhuyễn lên trên, nướng cho đến khi chín vàng."
+			},
+			"shumai": {
+				"taste": "Da mỏng, nước bên trong.",
+				"hint": "Bột, thịt, rau -- một cái túi nhỏ để mở.",
+				"name": "Shumai",
+				"desc": "Không tăng; giấy gói được cuộn mỏng, xếp nếp, phần nhân lộ ra phía trên."
+			},
+			"soda": {
+				"taste": "Rất nhiều fizz; một ngụm làm bạn ợ hơi.",
+				"hint": "Thư giãn trước khi mở; khí tồn tại lâu hơn.",
+				"name": "nước ngọt",
+				"desc": "Vắt trái cây, thêm nước đường, để nguội cho đến khi sủi bọt."
+			},
+			"souffle": {
+				"taste": "Nó rơi xuống khi rời khỏi lò; ăn nhanh.",
+				"hint": "Đánh lòng trắng đến chóp và gấp nhẹ nhàng.",
+				"name": "Soufflé",
+				"desc": "Gấp sữa trứng lòng đỏ vào lòng trắng đã đánh bông, nướng trong khuôn ramekin cho đến khi nổi lên."
+			},
+			"soy_rice": {
+				"taste": "Nước tương phủ từng hạt; hạt đậu đi qua.",
+				"hint": "Cơm nóng, hoặc mùi không bao giờ đến.",
+				"name": "Cơm nước tương",
+				"desc": "Nước tương quanh viền cơm nóng rồi khuấy đều."
+			},
+			"sparkling_water": {
+				"taste": "Bong bóng nổi lên và cổ họng nghẹn ngào.",
+				"hint": "Làm lạnh thật kỹ trước khi mở.",
+				"name": "nước có ga",
+				"desc": "Làm lạnh nước, thêm nước ép trái cây."
+			},
+			"spring_roll": {
+				"taste": "Giòn và hơi nước tỏa ra khi cắn.",
+				"hint": "Bóp nhân cho khô nếu không chúng sẽ vỡ.",
+				"name": "chả giò",
+				"desc": "Bọc chặt nhân lại, chiên vàng."
+			},
+			"steak": {
+				"taste": "Bên trong màu hồng, cháy thành than ở rìa.",
+				"hint": "Trước tiên hãy mang nó đến nhiệt độ phòng.",
+				"name": "Bít tết",
+				"desc": "Chiên cả hai mặt, thêm bơ và gia vị, để yên trước khi cắt."
+			},
+			"steamed_egg": {
+				"taste": "Nhẹ nhàng, gần như im lặng.",
+				"hint": "Trứng và nước hấp; giữ nhiệt độ thấp.",
+				"name": "Trứng hấp",
+				"desc": "Nước và trứng đánh đều, hấp cho đến khi chín - không có tổ ong trên bề mặt."
+			},
+			"stew": {
+				"taste": "Mọi thứ mềm mại, hương vị hòa quyện.",
+				"hint": "Nước dùng, rau, thịt -- nhạt và chậm.",
+				"name": "món hầm",
+				"desc": "Đun nhỏ lửa; chất lỏng giảm đi và hương vị đặc lại."
+			},
+			"sushi": {
+				"taste": "Cơm ấm, cá mát.",
+				"hint": "Làm ướt tay hoặc que cơm.",
+				"name": "Sushi",
+				"desc": "Tạo hình cơm ấm, phủ cá lên trên, thêm một ít rau xanh."
+			},
+			"taco": {
+				"taste": "Vỏ mềm, làm đầy thoát ra ngoài.",
+				"hint": "Làm ấm bánh tortilla nếu không nó sẽ bị nứt.",
+				"name": "taco",
+				"desc": "Làm ấm bánh tortilla, cho thịt, rau xanh và gia vị vào."
+			},
+			"tagine": {
+				"taste": "Mở nắp và vị ngọt gặp vị mặn.",
+				"hint": "Thấp và chậm, cho đến khi thịt buông ra.",
+				"name": "Tagine",
+				"desc": "Nấu chậm thịt và rau với gia vị, rắc hạt vào cuối."
+			},
+			"tamale": {
+				"taste": "Bóc lá ra và nó mềm.",
+				"hint": "Đánh masa cho đến khi nó giữ được.",
+				"name": "tamale",
+				"desc": "Bọc thịt trong bột ngô và lá rồi hấp chín."
+			},
+			"tamarind_sauce": {
+				"taste": "Rất chua; một chút đi xa.",
+				"hint": "Thêm đường bằng thìa và nếm thử.",
+				"name": "Sốt me",
+				"desc": "Đun sôi trái cây trong nước, lọc, giảm đường."
+			},
+			"tandoori_chicken": {
+				"taste": "Bên ngoài màu đỏ, bên trong màu trắng.",
+				"hint": "Càng để lâu, màu càng đậm.",
+				"name": "Gà Tandoori",
+				"desc": "Ướp thịt với gia vị và sữa, nướng cho đến khi bề mặt chín đỏ."
+			},
+			"tangyuan": {
+				"taste": "Vị ngọt bên trong, nước dùng trong vắt xung quanh.",
+				"hint": "Chúng được thực hiện khi chúng nổi.",
+				"name": "Đường Nguyên",
+				"desc": "Cán bột thành từng viên, đun sôi cho đến khi bột nở."
+			},
+			"tea_egg": {
+				"taste": "Các vết nứt mang màu sắc vào bên trong, nhạt dần khi chúng đi.",
+				"hint": "Bóc vỏ và ngâm qua đêm.",
+				"name": "Trứng trà",
+				"desc": "Đun sôi, bẻ nhỏ rồi đun nhỏ lửa trong nước có gia vị. Không vội vã."
+			},
+			"tea_rice": {
+				"taste": "Trà trong, cơm vẫn đứng.",
+				"hint": "Đừng để trà quá nóng, cơm sẽ bị nát.",
+				"name": "Cơm chè",
+				"desc": "Cơm ra bát, trà nóng rót lên, một ít rau xanh."
+			},
+			"tempura": {
+				"taste": "Bột đủ mỏng để có thể nhìn xuyên qua.",
+				"hint": "Khoai tây chiên giòn bột lạnh.",
+				"name": "Tempura",
+				"desc": "Nhúng hải sản vào bột nhão, chiên vàng nhạt."
+			},
+			"thali": {
+				"taste": "Những chiếc bát nhỏ quây quanh cơm.",
+				"hint": "Mỗi thứ lấy một ít để khay trông đầy.",
+				"name": "Thali",
+				"desc": "Cơm ở giữa; đậu, rau xanh và nước sốt trong bát xung quanh nó."
+			},
+			"tiramisu": {
+				"taste": "Phủ bụi bên trên, mềm mại bên dưới thìa.",
+				"hint": "Một đêm trong cái lạnh kết hôn với hương vị.",
+				"name": "tiramisu",
+				"desc": "Nhúng bánh vào cà phê, phết kem, rắc bã, để nguội."
+			},
+			"toast": {
+				"taste": "Cắt dày, có một vòng sẫm màu ở mép.",
+				"hint": "Làm sạch lát bánh mì ngày cũ.",
+				"name": "Nướng",
+				"desc": "Một ổ bánh thành một chồng. Tốt đơn giản, tốt hơn với bất cứ điều gì."
+			},
+			"toast_slice": {
+				"taste": "Khô, sắc nét, một vòng màu.",
+				"hint": "Một miếng bơ mỏng là đủ.",
+				"name": "lát bánh mì nướng",
+				"desc": "Bánh mì cắt lát, phết bơ, nướng giòn. Tốt nhất bên cạnh súp."
+			},
+			"tom_yum": {
+				"taste": "Chua và nóng cùng một lúc: nhăn nhó, rồi lại một thìa khác.",
+				"hint": "Hương thơm cuối cùng, hoặc nước hoa để lại.",
+				"name": "Tom Yum",
+				"desc": "Đun sôi hải sản và nấm với gia vị và nước cốt dừa."
+			},
+			"tomato_soup": {
+				"taste": "Chua, ấm, dạ dày thư giãn trước.",
+				"hint": "Nấu chín cà chua trước khi cho nước kho vào.",
+				"name": "Súp cà chua",
+				"desc": "Cà chua mềm trong chảo, đổ nước luộc vào. Màu đậm hơn, nước súp ngọt hơn."
+			},
+			"tostada": {
+				"taste": "Đủ sắc nét để vỡ vụn.",
+				"hint": "Chiên qua hoặc nó sẽ mềm.",
+				"name": "Tostada",
+				"desc": "Chiên bánh ngô giòn, phủ thịt và phô mai lên trên."
+			},
+			"tres_leches": {
+				"taste": "Sữa thấm ra ngoài khi bạn cắt nó.",
+				"hint": "Nướng trước, sau đó ngâm.",
+				"name": "Tres Leches",
+				"desc": "Nướng bánh, ngâm với sữa và kem, để nguội."
+			},
+			"tuna_sandwich": {
+				"taste": "Biển, quấn trong quần áo.",
+				"hint": "Nếm thử hỗn hợp trước khi cho vào.",
+				"name": "Sandwich cá ngừ",
+				"desc": "Hải sản và nước sốt giữa bánh mì nướng. Một lá rau diếp sẽ giúp ích."
+			},
+			"turkish_coffee": {
+				"taste": "Một lớp đất ở phía dưới; thôi đi.",
+				"hint": "Kéo nó ra khỏi bọt, không bao giờ đun sôi.",
+				"name": "Cà phê Thổ Nhĩ Kỳ",
+				"desc": "Đun nóng bã, nước và đường; đổ bọt đầu tiên."
+			},
+			"turmeric_rice": {
+				"taste": "Hạt vàng, từng hạt rời rạc.",
+				"hint": "Cho gia vị vào dầu trước.",
+				"name": "Cơm nghệ",
+				"desc": "Cho gia vị vào dầu, trộn đều cơm."
+			},
+			"twice_cooked_pork": {
+				"taste": "Các lát cong lại, mép có màu nâu.",
+				"hint": "Đun sôi trước khi cắt hoặc cắt nhỏ.",
+				"name": "Thịt lợn nấu hai lần",
+				"desc": "Luộc và thái thịt lợn, sau đó xào lại với rau xanh và ớt."
+			},
+			"vegetable_salad": {
+				"taste": "Giòn, lạnh, lá vẫn còn cườm.",
+				"hint": "Lau khô chúng sau khi giặt.",
+				"name": "Salad vườn",
+				"desc": "Lá rách, một ít dầu, quăng. Không có gì khác để nói."
+			},
+			"vegetable_soup": {
+				"taste": "Thông thoáng; ấm áp suốt chặng đường.",
+				"hint": "Nước luộc, rau vào.",
+				"name": "Súp rau",
+				"desc": "Nước dùng trước, rau sau cùng, tắt bếp ngay khi chúng mềm."
+			},
+			"vienna_coffee": {
+				"taste": "Kem nổi lên trên: ngọt trước, đắng sau.",
+				"hint": "Đánh kem đứng; đừng khuấy nó vào.",
+				"name": "Cà phê Viên",
+				"desc": "Làm ngọt espresso và phủ kem tươi lên trên."
+			},
+			"waffle": {
+				"taste": "Đường trong lưới đã chuyển sang vỏ bánh.",
+				"hint": "Bột mềm hơn sẽ ép đều.",
+				"name": "bánh quế",
+				"desc": "Nhấn bột vào bàn ủi và nướng cho đến khi các cạnh giòn."
+			},
+			"cocoa_shake": {
+				"taste": "Lạnh đến mức nhức răng; ca cao đi qua.",
+				"hint": "Trước tiên hãy nghiền đá để có hỗn hợp mịn hơn.",
+				"name": "Cacao lắc",
+				"desc": "Ca cao, sữa, đá và đường, trộn đều."
+			},
+			"white_rice": {
+				"taste": "Không thêm gì cả, chỉ có vị ngọt của cơm.",
+				"hint": "Đổ quá nhiều là cháo; quá ít, nghiệt ngã.",
+				"name": "Gạo trắng",
+				"desc": "Một bát cơm tẻ. Có vẻ trống rỗng; mọi thứ khác đều đứng trên đó."
+			},
+			"wonton": {
+				"taste": "Vỏ mỏng đến mức có thể nhìn thấy, dầu trên nước dùng.",
+				"hint": "Nấu chúng ngay lập tức nếu không chúng sẽ dính vào nhau.",
+				"name": "hoành thánh",
+				"desc": "Cuộn giấy gói mỏng, cho thịt vào, luộc trong kho."
+			},
+			"yogurt_soup": {
+				"taste": "Chua chát nhưng nhẹ nhàng.",
+				"hint": "Giữ nó ở mức thấp nếu không sữa chua sẽ bị tách ra.",
+				"name": "Súp sữa chua",
+				"desc": "Khuấy sữa chua, bột mì và gia vị trên lửa nhỏ cho đến khi đặc lại."
+			},
+			"yorkshire_pudding": {
+				"taste": "Rỗng ở giữa, sắc nét ở viền.",
+				"hint": "Mỡ phải nóng trước khi trộn.",
+				"name": "Bánh pudding Yorkshire",
+				"desc": "Đổ bột vào mỡ nóng và nướng cho đến khi bột nở lên."
+			},
+			"zongzi": {
+				"taste": "Lúc mới mở cơm đã có màu.",
+				"hint": "Ngâm gạo nếu không cơm sẽ không bao giờ chín.",
+				"name": "Tông Tử",
+				"desc": "Bọc cơm và thịt trong lá, buộc chặt, hấp chín."
+			},
+			"yogurt": {
+				"name": "Da ua",
+				"desc": "Sữa và đường, để ấm đến khi đông lại."
+			},
+			"bacon": {
+				"name": "Thịt xông khói",
+				"desc": "Những lát mỡ sọc và nạc."
+			},
+			"batter": {
+				"name": "Bột",
+				"desc": "Bột"
+			},
+			"bean": {
+				"name": "Đậu Hỗn Hợp",
+				"desc": "Khô, cứng, cả một bao tải. Tất cả mọi thứ trừ đậu nành."
+			},
+			"bread": {
+				"name": "Bánh mỳ",
+				"desc": "Nhẹ hơn bột; chạm vào nó và nó có vẻ trống rỗng."
+			},
+			"broth": {
+				"name": "Canh",
+				"desc": "Hớt bọt và những gì còn lại sẽ nhợt nhạt."
+			},
+			"butter": {
+				"name": "Bơ",
+				"desc": "Vì lạnh, đầu tiên nó đổ mồ hôi mỏng."
+			},
+			"cereal": {
+				"name": "Ngũ cốc",
+				"desc": "To khô, yên tĩnh trong sữa."
+			},
+			"cheese": {
+				"name": "Phô mai",
+				"desc": "Những lỗ nhỏ trên mặt cắt."
+			},
+			"coconut_milk": {
+				"name": "nước cốt dừa",
+				"desc": "Đặc như nó đổ, ngọt ngào nhẹ nhàng."
+			},
+			"coffee_bean": {
+				"name": "Hạt cà phê xanh",
+				"desc": "Đậu xanh nhạt; chúng có mùi như buổi sáng vẫn chưa thức dậy."
+			},
+			"coffee_ground": {
+				"name": "Cà phê xay",
+				"desc": "Xay nhuyễn, mùi thơm sẽ lan tỏa nhanh hơn - và dễ nhớ hơn."
+			},
+			"corn": {
+				"name": "ngô",
+				"desc": "Tơ vẫn còn bám vào lõi ngô."
+			},
+			"cream": {
+				"name": "Kem",
+				"desc": "Sữa hớt váng, đặc đủ để dính vào thìa."
+			},
+			"cream_cheese": {
+				"name": "kem phô mai",
+				"desc": "Giàu sữa, mềm mại trên bánh mì ấm."
+			},
+			"dough": {
+				"name": "bột",
+				"desc": "Nhào cho đến khi hết dính; nó vẫn sẽ tăng chậm."
+			},
+			"egg": {
+				"name": "Trứng",
+				"desc": "Trong một chiếc giỏ nhỏ bên bếp lò; luôn có một vài cái mỗi ngày."
+			},
+			"flour": {
+				"name": "Bột mì",
+				"desc": "Nhấc nó lên và nó trượt qua ngón tay bạn; rất nhẹ."
+			},
+			"jam": {
+				"name": "Mứt",
+				"desc": "Trái cây và đường, đun nhỏ lửa cho đến khi phủ đầy thìa."
+			},
+			"meat_sauce": {
+				"name": "nước sốt thịt",
+				"desc": "Giảm trên ngọn lửa nhỏ, càng để lâu thì càng đặc."
+			},
+			"dark_chocolate": {
+				"taste": "Đắng và cùn, mép gãy vẫn bóng.",
+				"hint": "Nhiều ca cao, ít đường; giữ nhiệt độ thấp.",
+				"name": "Sôcôla đen",
+				"desc": "Ca cao được khuấy thành bơ và đường tan chảy, ép vào khuôn để định hình."
+			},
+			"milk_chocolate": {
+				"taste": "Sữa đi trước, đắng theo sau.",
+				"hint": "Đừng để sữa sôi - hãy kéo sữa ra ngay khi mép nổi bong bóng.",
+				"name": "Sôcôla sữa",
+				"desc": "Cacao với sữa tươi, bơ và đường được khuấy đều và đổ vào khuôn."
+			},
+			"lava_cake": {
+				"taste": "Phần giữa chạy khi bạn cắt nó; vành vẫn mềm.",
+				"hint": "Kéo nó sớm hoặc bộ trung tâm.",
+				"name": "Bánh sô cô la nóng chảy",
+				"desc": "Sô cô la đen, bơ, trứng và đường, nướng cho đến khi vẫn còn chảy ở giữa."
+			},
+			"milk": {
+				"name": "Sữa",
+				"desc": "Trắng, lặng lẽ, như một câu nói còn dang dở."
+			},
+			"mushroom": {
+				"name": "nấm",
+				"desc": "Mang mịn dưới nắp."
+			},
+			"noodle": {
+				"name": "Mì",
+				"desc": "Cắt không đều một chút; lắc chúng trước khi chúng đi vào."
+			},
+			"nuts": {
+				"name": "quả hạch",
+				"desc": "Một nắm, vỏ và dầu trên ngón tay của bạn."
+			},
+			"oil": {
+				"name": "Dầu thực vật",
+				"desc": "Cái chai cũ bên bếp lò; nó chảy ra trong và có màu vàng."
+			},
+			"onion": {
+				"name": "Củ hành",
+				"desc": "Các lớp bị rát khi cắt."
+			},
+			"peanut_butter": {
+				"name": "Bơ đậu phộng",
+				"desc": "Đậu phộng xay, dầu tự bốc lên."
+			},
+			"potato": {
+				"name": "Khoai tây",
+				"desc": "Da bẩn, lúm đồng tiền."
+			},
+			"rice": {
+				"name": "Cơm",
+				"desc": "Hạt trấu; nó kêu xào xạc yếu ớt trên tay."
+			},
+			"roasted_bean": {
+				"name": "Hạt cà phê rang",
+				"desc": "Bây giờ sẫm màu hơn và mùi thơm đậm hơn so với đậu xanh."
+			},
+			"salad_dressing": {
+				"name": "Nước sốt sa-lát",
+				"desc": "Nước sốt sa-lát"
+			},
+			"sausage": {
+				"name": "xúc xích",
+				"desc": "Thịt nguyên vỏ, chiên cho đến khi tách vỏ."
+			},
+			"soy_sauce": {
+				"name": "nước tương",
+				"desc": "nước tương"
+			},
+			"spice": {
+				"name": "Gia vị",
+				"desc": "Một nhúm, và bạn hắt hơi."
+			},
+			"sugar": {
+				"name": "Đường",
+				"desc": "Hạt mịn; trên đầu ngón tay của bạn chúng hơi dính."
+			},
+			"syrup": {
+				"name": "Xi-rô",
+				"desc": "Đường tan thành nước, đặc hơn khi nguội."
+			},
+			"tomato": {
+				"name": "Cà chua",
+				"desc": "Màu đỏ bóng, cầm nặng tay."
+			},
+			"water": {
+				"name": "Nước",
+				"desc": "Thứ bạn luôn có thể lấy từ một công thức nấu ăn. Danh mục không ghi lại nó."
+			},
+			"white_sauce": {
+				"name": "nước sốt trắng",
+				"desc": "nước sốt trắng"
+			},
+			"pork": {
+				"name": "Thịt lợn",
+				"desc": "Được gói trong giấy, mập mạp và có sọc; lạnh khi chạm vào."
+			},
+			"beef": {
+				"name": "Thịt bò",
+				"desc": "Màu sẫm và hạt thô; con dao phải kiên nhẫn."
+			},
+			"chicken": {
+				"name": "Thịt gà",
+				"desc": "Xanh xao và ôn hòa, sẵn sàng trở thành một thứ khác."
+			},
+			"shrimp": {
+				"name": "Con tôm",
+				"desc": "Vẫn đang di chuyển, vỏ có màu xanh mờ."
+			},
+			"fish": {
+				"name": "Cá",
+				"desc": "Mắt sáng, mang vẫn đỏ."
+			},
+			"leafy": {
+				"name": "rau lá xanh",
+				"desc": "Buộc thành chùm, nước vẫn đọng trên lá."
+			},
+			"cabbage": {
+				"name": "Bắp cải",
+				"desc": "Lá bên ngoài héo; bên trong vẫn giòn."
+			},
+			"root": {
+				"name": "Rau củ",
+				"desc": "Bùn và nặng nề, một vết bầm tím ở chỗ nó bị gãy."
+			},
+			"scallion": {
+				"name": "hành lá",
+				"desc": "Rễ trắng, lá xanh, sắc và ngọt cùng một lúc."
+			},
+			"apple": {
+				"name": "Quả táo",
+				"desc": "Một sự nở hoa mờ nhạt trên da; nó nứt khi bạn cắn."
+			},
+			"banana": {
+				"name": "Chuối",
+				"desc": "Một bàn tay của họ, chỉ có đốm đen."
+			},
+			"tropical": {
+				"name": "Trái cây nhiệt đới",
+				"desc": "Xoài, dứa, dừa - chúng có mùi nắng."
+			},
+			"lemon": {
+				"name": "Chanh vàng",
+				"desc": "Da rỗ; bóp nó và cả bàn tay của bạn có mùi của nó."
+			},
+			"salt": {
+				"name": "Muối",
+				"desc": "Một chiếc túi nhỏ, ít nhất trong số đó, và chiếc nồi nào cũng muốn có một nhúm."
+			},
+			"ice": {
+				"name": "Đá",
+				"desc": "Những khối nhỏ rơi ra khỏi tủ đông, đủ cứng để kêu leng keng."
+			},
+			"vanilla": {
+				"name": "Vanilla",
+				"desc": "Vỏ ngắn màu sẫm; vị ngọt cần có thời gian để lộ ra."
+			},
+			"cocoa": {
+				"name": "ca cao",
+				"desc": "Bột đắng nghiền mịn; nó chuyển sang màu nâu khi gặp nhiệt."
+			},
+			"olive_oil": {
+				"name": "Dầu ô liu",
+				"desc": "Nhấn ra màu xanh lá cây, có một chút vướng víu ở phía sau cổ họng."
+			},
+			"tea_leaf": {
+				"name": "Lá trà",
+				"desc": "Những chiếc lá khô vẫn khép chặt, tỉnh dậy khi làn nước nóng thứ hai ập vào."
+			},
+			"ice_cream_scoop": {
+				"name": "Một muỗng kem",
+				"desc": "Làm tròn gọn gàng; một cái thìa bị mắc kẹt trong đó sẽ đứng đó một lúc.",
+				"taste": "Lạnh và sạch sẽ; sự ngọt ngào cần có thời gian của nó.",
+				"hint": "Múc một cái ra khỏi bồn tắm."
+			},
+			"shaved_ice": {
+				"name": "Đá bào",
+				"desc": "Một bát tuyết lớn sẽ giảm đi một nửa khi xi-rô rơi xuống.",
+				"taste": "Xi-rô thấm qua các vết nứt; ngọt ngào tươi sáng.",
+				"hint": "Cạo đá mịn và đổ xi-rô lên."
+			},
+			"popsicle": {
+				"name": "kem que",
+				"desc": "Đông lạnh trong khuôn; que rút ra sạch sẽ.",
+				"taste": "Lúc đầu lạnh, sau đó quả bò vào.",
+				"hint": "Làm đông đá và trái cây trong khuôn."
+			},
+			"smoothie": {
+				"name": "sinh tố",
+				"desc": "Lạnh bọc bột giấy; một lớp sương mù đọng lại trên kính.",
+				"taste": "Đủ dày để giữ rơm, cùi vẫn còn sần sùi.",
+				"hint": "Nghiền đá và trái cây cùng nhau."
+			},
+			"ice_bar": {
+				"name": "Quán băng",
+				"desc": "Đủ vững chắc để lại một hàng dấu răng.",
+				"taste": "Sữa cưỡi lên trên; băng tan dần phía sau nó.",
+				"hint": "Làm đông đá và sữa thật cứng rồi cắt nhỏ."
+			},
+			"milk_pudding": {
+				"name": "Bánh pudding sữa",
+				"desc": "Nó lung lay khi chiếc thìa nhấc lên - và vẫn giữ nguyên.",
+				"taste": "Đi xuống không một tiếng động; sữa đọng lại ở cuối lưỡi.",
+				"hint": "Sữa và đường, đông lạnh vừa đủ cứng."
+			},
+			"vanilla_ice_cream": {
+				"name": "Kem Vani",
+				"desc": "Cả một bồn tắm, bề mặt nhẵn phẳng, đường đi của thìa vẫn hiện rõ.",
+				"taste": "Vani làm ngọt trước; cái lạnh ập đến sau đó.",
+				"hint": "Đá, sữa, đường và một chút vani."
+			},
+			"chocolate_ice_cream": {
+				"name": "Kem sô cô la",
+				"desc": "Trong bồn tối đến nỗi trông giống như bùn và đào ra rất nặng.",
+				"taste": "Cay đắng và ngọt ngào níu kéo nhau; không thắng.",
+				"hint": "Làm đông lạnh ca cao và sữa cùng nhau; trời tối dần."
+			},
+			"fruit_ice_cream": {
+				"name": "Kem trái cây",
+				"desc": "Tất cả đều có một màu, và bạn vẫn có thể nếm được các hình dạng.",
+				"taste": "Quả đông cứng lại; vị ngọt có chút chua.",
+				"hint": "Sử dụng bất cứ loại trái cây nào có trong tay."
+			},
+			"sundae": {
+				"name": "Sundae",
+				"desc": "Mứt lên quả bóng, sau đó phủ một lớp kem.",
+				"taste": "Kem tan trước, mứt ngọt sau, đá cuối cùng.",
+				"hint": "Một muỗng, với mứt và kem chồng lên nhau."
+			},
+			"black_tea": {
+				"name": "Trà đen",
+				"desc": "Màu chìm xuống đáy; một chiếc nhẫn vẫn ở trên cốc.",
+				"taste": "Tannin sạch; vị ngọt dần dần quay trở lại.",
+				"hint": "Chỉ cần để nước nóng mở lá."
+			},
+			"green_tea": {
+				"name": "Trà xanh",
+				"desc": "Những chiếc lá không bao giờ mở hoàn toàn; rượu vẫn nhạt.",
+				"taste": "Đầu tiên là vị đắng xanh, sau đó là vị mát của lá.",
+				"hint": "Ngâm nó ngắn hơn trà đen."
+			},
+			"lemon_tea": {
+				"name": "Trà chanh",
+				"desc": "Những lát trà nổi lên và trà nhạt đi.",
+				"taste": "Chua đánh trước; trà bắt nó từ phía sau.",
+				"hint": "Hai lát chanh trong trà."
+			},
+			"wheat": {
+				"name": "Lúa mì",
+				"desc": "Nghiền nó và bạn đã có được bột mì."
+			},
+			"whole_wheat_flour": {
+				"name": "Bột mì nguyên chất",
+				"desc": "Cám vẫn ở trong nên màu đậm."
+			},
+			"cocoa_powder": {
+				"name": "Bột cacao",
+				"desc": "Ca cao xay: vị đắng, sạch."
+			},
+			"marshmallow": {
+				"name": "kẹo dẻo",
+				"desc": "Nhấn vào nó và nó sẽ từ từ bật trở lại."
+			},
+			"whole_wheat_bread": {
+				"taste": "Một lớp vỏ cứng trên lớp vỏ mềm.",
+				"hint": "Màu sắc của lúa mì nguyên hạt rất đậm.",
+				"name": "Bún Âu",
+				"desc": "Nướng cho đến khi lớp vỏ rỗng."
+			},
+			"whole_wheat_cracker": {
+				"taste": "Càng nhai càng thấy ngọt.",
+				"hint": "Cuộn nó mỏng để có một snap sạch hơn.",
+				"name": "Bánh mì nguyên hạt",
+				"desc": "Cán mỏng và nướng thành vành màu nâu nhạt."
+			},
+			"chocolate_chip_cookie": {
+				"taste": "Ngọt ngào với chút đắng cay.",
+				"hint": "Gấp sô cô la vào bột.",
+				"name": "Bánh quy sô cô la",
+				"desc": "Nướng đến mép có màu nâu, phần giữa vẫn mềm."
+			},
+			"chocolate_cookie": {
+				"taste": "Ca cao đắng chống lại bột ngọt.",
+				"hint": "Sô cô la đi vào bột.",
+				"name": "bánh quy sô cô la",
+				"desc": "Bột và ca cao nướng cho đến khi nứt trên cùng."
+			},
+			"oreo": {
+				"taste": "Hai chiếc bánh quy đen bao quanh một lớp ngọt ngào.",
+				"hint": "Hai cái bánh quy, một cái nhân kem.",
+				"name": "bánh Oreo",
+				"desc": "Hai chiếc bánh sô-cô-la ép xung quanh lớp kem."
+			},
+			"roasted_marshmallow": {
+				"taste": "Giòn bên ngoài, tan chảy bên trong.",
+				"hint": "Lật lửa một lần là đủ.",
+				"name": "Kẹo dẻo nướng",
+				"desc": "Nướng cho đến khi phồng rộp bề mặt; ăn nóng nhé."
+			},
+			"smore": {
+				"taste": "Bánh mì nướng, sô cô la và lúa mì nguyên hạt cùng nhau.",
+				"hint": "Xếp chồng cả ba.",
+				"name": "S'more",
+				"desc": "Một chiếc bánh quy làm từ lúa mì nguyên hạt bao quanh kẹo dẻo nướng và sô cô la đen."
+			},
+			"chili": {
+				"name": "Ớt Ớt",
+				"desc": "Màu đỏ không hối lỗi; cắt một cái và tay bạn có mùi của nó."
+			},
+			"soy": {
+				"name": "Đậu nành",
+				"desc": "Một số ít vòng nhạt màu; ngâm qua đêm rồi xay."
+			},
+			"tofu": {
+				"name": "Đậu hũ",
+				"desc": "Sữa đậu nành đông lại và ép thành khối, nhẹ như không."
+			},
+			"kimchi": {
+				"name": "kim chi",
+				"desc": "bắp cải xát muối ớt; một vài ngày và nó trở nên chua chát."
+			},
+			"tomato_egg_stirfry": {
+				"taste": "Cà chua cho nước ép trước; trứng vẫn mềm.",
+				"hint": "Lấy quả trứng đã chín một nửa ra và trượt lại ở cuối.",
+				"name": "Xào cà chua và trứng",
+				"desc": "Cà chua chiên lấy nước, trứng trượt vào, có màu đỏ và vàng trong một chảo."
+			},
+			"stir_fried_greens": {
+				"taste": "Sắc nét, với hơi thở của chảo.",
+				"hint": "Nhiệt độ cao, đảo nhanh, không có nắp.",
+				"name": "Rau xanh xào",
+				"desc": "Bất cứ loại rau xanh nào trong tầm tay, một nhúm muối, lấy thẳng ra khỏi chảo."
+			},
+			"vinegar_potato_shreds": {
+				"taste": "Vị chua sạch, khoai vẫn giòn.",
+				"hint": "Ngâm các mảnh vụn trước hoặc chúng dính lại với nhau.",
+				"name": "Giấm khoai tây vụn",
+				"desc": "Khoai tây cắt sợi, ngâm, thêm vị chua ngay trước khi rời khỏi chảo lửa."
+			},
+			"braised_tofu": {
+				"taste": "Nước sốt bên ngoài, bên trong vẫn mềm.",
+				"hint": "Chiên một mặt đậu hũ rồi rưới đậu nành lên.",
+				"name": "Đậu hũ om",
+				"desc": "Đậu phụ được chiên thành lớp vỏ mỏng; ớt và đường giảm thành nước sốt bóng."
+			},
+			"kung_pao_chicken": {
+				"taste": "Đậu phộng đầu tiên; sức nóng bắt kịp sau đó.",
+				"hint": "Đậu phộng sẽ được xếp cuối cùng nếu không sẽ mất đi độ giòn.",
+				"name": "gà Kung Pao",
+				"desc": "Các miếng thịt gà được lăn qua dầu, ớt khô và đậu phộng được ném vào, ra khỏi chảo nhanh chóng."
+			},
+			"yu_xiang_pork": {
+				"taste": "Chua, ngọt, cay - cả ba trong một miếng.",
+				"hint": "Trộn đường và đậu nành trước; không có thời gian một khi chảo đã nóng.",
+				"name": "Thịt lợn xé Yuxiang",
+				"desc": "Thịt lợn thái sợi nhung; ớt ngâm gặp dấm ngọt trong chảo."
+			},
+			"spicy_chicken": {
+				"taste": "Săn gà trong đống ớt sướng nửa vời.",
+				"hint": "Chiên gà hai lần; thơm ớt rồi trả gà lại.",
+				"name": "Gà cay Trùng Khánh",
+				"desc": "Gà rán chín vùi trong nắm ớt rồi trộn qua."
+			},
+			"xiao_chao_rou": {
+				"taste": "Ớt ăn cắp chương trình từ thịt lợn.",
+				"hint": "Làm thịt lợn trước; ớt đi vào sau.",
+				"name": "Thịt lợn xào",
+				"desc": "Thịt lợn rán, ớt ném vào, đậu nành đổ xuống thành chảo."
+			},
+			"shui_zhu_rou_pian": {
+				"taste": "Lớp súp màu đỏ, bên dưới là thịt lợn mềm.",
+				"hint": "Cho thịt lợn vào cuối cùng và không khuấy.",
+				"name": "Thịt lợn luộc lát",
+				"desc": "Nước kho sôi lăn tăn, thịt heo thả vào, ớt ở trên, dầu nóng rưới lên."
+			},
+			"dan_dan_noodles": {
+				"taste": "Một khi bạn ném nó đi, mọi thứ tốt đẹp đều ở dưới đáy.",
+				"hint": "Mì và topping được để riêng biệt cho đến khi bạn ăn.",
+				"name": "Bún Đan Đan",
+				"desc": "Mì bát; thịt heo băm, ớt và đậu phộng xếp chồng lên nhau."
+			},
+			"dry_pot_cabbage": {
+				"taste": "Các cạnh cháy là điểm.",
+				"hint": "Xé bắp cải, không cắt.",
+				"name": "Bắp cải khô",
+				"desc": "Bắp cải được xé bằng tay, thịt xông khói và ớt béo ngậy, tất cả trộn lẫn với nhau."
+			},
+			"steamed_chili_fish": {
+				"taste": "Hơi nóng bốc vào; nó không được đổ vào.",
+				"hint": "Nhiệt độ cao và không hấp lâu hơn một phút.",
+				"name": "Đầu Cá Hấp Ớt",
+				"desc": "Đầu cá phủ ớt băm, hấp chín, rưới nước tương vào cuối."
+			},
+			"budae_jjigae": {
+				"taste": "Mọi thứ đều ở trong đó, và tất cả đều hoạt động.",
+				"hint": "Hãy chiên kim chi trước nếu không súp sẽ bị nhão.",
+				"name": "Budae Jjigae",
+				"desc": "Kim chi, xúc xích và mì trong một nồi, ớt cho vào nước dùng, đun sôi cho đến khi cuộn lại."
+			},
+			"kimchi_fried_rice": {
+				"taste": "Vị chua nóng trên từng hạt.",
+				"hint": "Lúa ngày tuổi; cơm tươi dẻo.",
+				"name": "Cơm Chiên Kim Chi",
+				"desc": "Kim chi cắt nhỏ trước, cơm và trứng sau, ớt cho hết."
+			},
+			"dak_galbi": {
+				"taste": "Hơi ấm ngọt ngào phả vào da.",
+				"hint": "Ớt và cơm trộn cùng nhau để tạo thành lớp vỏ.",
+				"name": "Gà xào cay",
+				"desc": "Thịt gà được nướng chín ở mép, ớt và cơm vào, đảo cho đến khi tạo thành lớp vỏ."
+			},
+			"pad_kra_pow": {
+				"taste": "Basil đến trước cái nóng.",
+				"hint": "Chiên trứng giòn ở rìa, mềm ở giữa.",
+				"name": "Pad Kra Pao",
+				"desc": "Thịt bò và ớt trên lửa to, trên cơm, với một quả trứng chiên ở trên."
+			},
+			"laksa": {
+				"taste": "Dừa quấn nóng; kết thúc kéo dài lâu hơn.",
+				"hint": "Nước cốt dừa cuối cùng hoặc nó tách ra.",
+				"name": "Laksa",
+				"desc": "Chiên ớt vào dầu đỏ; Nước cốt dừa và bún cho vào, tôm cuối cùng."
+			},
+			"sambal_shrimp": {
+				"taste": "Tôm ngọt; sambal không lịch sự.",
+				"hint": "Tôm cuối cùng; ra khỏi chảo ngay khi chúng chuyển sang màu đỏ.",
+				"name": "Tôm Sambal",
+				"desc": "Ớt và hành đập thành bột, chiên, tôm lăn qua hai lần."
+			},
+			"mirchi_salan": {
+				"taste": "Ớt nguyên quả hầm mềm, có vị nóng trong nước sốt.",
+				"hint": "Cắt ớt trước nếu không sẽ không có gì lọt vào.",
+				"name": "Mirchi Salan",
+				"desc": "Ớt hầm với các loại hạt và gia vị, trộn kem vào cuối cùng."
+			},
+			"chilli_chicken": {
+				"taste": "Tráng men bên ngoài, bên trong vẫn ngon ngọt.",
+				"hint": "Rắc gà vào bột trước nếu không nước sốt sẽ chảy ra.",
+				"name": "Gà Ớt",
+				"desc": "Gà tẩm bột chiên giòn, ớt và đậu nành xay nhuyễn."
+			},
+			"vindaloo": {
+				"taste": "Đầu tiên chua, sau đó đun nóng, sau đó dùng thìa khác.",
+				"hint": "Chiên gia vị và ớt cho đến khi dầu chuyển sang màu đỏ.",
+				"name": "Vindaloo",
+				"desc": "Thịt lợn om ớt và gia vị, vị chua thấm vào thịt."
+			},
+			"shakshuka": {
+				"taste": "Lòng đỏ chạy; sử dụng bánh mì.",
+				"hint": "Đập trứng và để nguyên; đậy nắp, đun nhỏ lửa.",
+				"name": "Shakshuka",
+				"desc": "Cà chua và ớt nấu chín, trứng đập vào, đậy nắp cho đến khi chín."
+			},
+			"lemon_chili_chicken": {
+				"taste": "Chà vỏ chanh và hơi nóng sẽ sáng lên.",
+				"hint": "Vắt chanh vào cuối; vỏ nướng trở nên đắng.",
+				"name": "Gà nướng chanh ớt",
+				"desc": "Da gà xát ớt và dầu, nướng giòn, vắt thêm nửa quả chanh."
+			},
+			"paprikash": {
+				"taste": "Kem làm giảm nhiệt.",
+				"hint": "Kem giảm nhiệt; không bao giờ để nó sôi.",
+				"name": "ớt bột",
+				"desc": "Thịt gà và hành tây hầm mềm, cho ớt vào, kem chuyển màu hồng."
+			},
+			"nashville_hot_chicken": {
+				"taste": "Cắn một miếng là môi bạn tê cứng trước tiên.",
+				"hint": "Khuấy ớt vào dầu chiên nóng và đổ lên.",
+				"name": "Gà nóng Nashville",
+				"desc": "Gà rán sẫm màu, ớt và bơ cháy thành dầu đỏ, rưới lên."
+			},
+			"chili_con_carne": {
+				"taste": "Càng hầm lâu, nhiệt càng sâu.",
+				"hint": "Làm chín thịt bò trước, sau đó thêm chất lỏng.",
+				"name": "Ớt con Carne",
+				"desc": "Thịt bò chín vàng, cho cà chua và đậu vào, hầm ớt dày."
+			},
+			"jerk_chicken": {
+				"taste": "Khói đến trước, sau đó là hơi nóng.",
+				"hint": "Ướp qua đêm; đốt cháy da mà không làm bỏng da.",
+				"name": "gà giật",
+				"desc": "Thịt gà xát ớt và gia vị, nướng chín vàng, bên trong vẫn mềm."
+			},
+			"elote": {
+				"taste": "Ngọt, mặn, nóng, tất cả đều thoang thoảng trên bắp.",
+				"hint": "Than ngô trước khi bôi.",
+				"name": "bầu cử",
+				"desc": "Ngô nướng, phết kem và phô mai, một lớp ớt lên trên."
+			},
+			"doro_wat": {
+				"taste": "Nắng nóng gay gắt; bạn cần bánh mì với nó.",
+				"hint": "Nấu hành tây sẫm màu; đừng vội vàng.",
+				"name": "Doro Wat",
+				"desc": "Hành tây nấu chín sẫm, ớt và thịt gà cho vào, trứng vùi vào cuối cùng."
+			},
+			"peri_peri_chicken": {
+				"taste": "Da giòn, hơi nóng phả vào.",
+				"hint": "Quét dầu ớt hai lần, lần cuối cùng ở cuối.",
+				"name": "Gà Peri-Peri",
+				"desc": "Thịt gà tẩm dầu ớt, nướng cho đến khi da cong lại."
+			},
+			"suya": {
+				"taste": "Gia vị và ớt trên thịt; càng nhai càng khô và ngon.",
+				"hint": "Cắt thịt mỏng; gia vị đi vào cuối cùng.",
+				"name": "Suya",
+				"desc": "Thịt bò thái mỏng, ướp gia vị ớt và lạc, nướng chín vàng."
+			},
+			"chili_dog": {
+				"taste": "Bánh mì thấm dầu ớt rồi đập xúc xích.",
+				"hint": "Làm ấm ớt trước; nướng bánh mì lần cuối.",
+				"name": "chó ớt",
+				"desc": "Xúc xích chiên trong mỡ, bánh mì bao quanh, ớt và phô mai phủ lên trên."
+			},
+			"miso": {
+				"name": "tương miso",
+				"desc": "Đậu nành lên men thành bột nhão màu nâu; một thìa là đủ hương vị."
+			},
+			"rice_noodle": {
+				"name": "Bún",
+				"desc": "Gạo ngâm, xay, ép thành sợi mỏng rồi phơi khô."
+			},
+			"nian_gao": {
+				"name": "Bánh gạo",
+				"desc": "Gạo đã nấu chín giã nát; cắt nó và nó vẫn kéo một chút."
+			},
+			"miso_soup": {
+				"taste": "Vị mặn với hậu vị ngọt ngào; đậu phụ vỡ ra khi chạm vào.",
+				"hint": "Khuấy miso vào cuối cùng và không bao giờ để nó sôi.",
+				"name": "Súp Miso",
+				"desc": "Miso hòa tan vào nước dùng, đậu hủ ở dưới, hành lá nổi."
+			},
+			"tofu_dengaku": {
+				"taste": "Char đầu tiên, sau đó là men mặn ngọt.",
+				"hint": "Làm khô bề mặt đậu phụ trước nếu không lớp men sẽ bong ra.",
+				"name": "Đậu phụ Dengaku",
+				"desc": "Đậu phụ nướng cho đến khi các cạnh có màu nâu, phết một lớp miso và đường rồi đun nóng trở lại."
+			},
+			"miso_ramen": {
+				"taste": "Nước dùng đặc và sợi mì vẫn chắc - vừa phải.",
+				"hint": "Đừng đun sôi miso; làm mỏng nó ngay trước khi phục vụ.",
+				"name": "mì miso",
+				"desc": "Nước phở trong chuyển sang màu miso sẫm, trứng và hành lá nổi lên trên."
+			},
+			"fried_rice_noodle": {
+				"taste": "Khô và thơm, mỗi sợi riêng.",
+				"hint": "Ngâm mì mềm trước, sau đó chỉ cần quăng vài cái vào chảo.",
+				"name": "Bún xào",
+				"desc": "Bún trộn với trứng, rau xanh và đậu nành cho đến khi chảo có mùi khô rồi nướng."
+			},
+			"tteokbokki": {
+				"taste": "Ngọt ngào trong nóng bức; càng nhai càng dính.",
+				"hint": "Ngâm bánh gạo trước hoặc dán vào chảo.",
+				"name": "Tteokbokki",
+				"desc": "Bánh gạo cuộn trong nước sốt đỏ bóng, ớt và đường bám vào từng miếng."
+			},
+			"di_san_xian": {
+				"name": "Ba kho báu của trái đất",
+				"desc": "Khoai tây và cà tím cùng với bất kỳ loại rau nào theo mùa, áp chảo cho đến khi các cạnh mềm.",
+				"taste": "Khoai tây mềm, cà tím mềm hơn, cái thứ ba vẫn cắn một miếng.",
+				"hint": "Đầu tiên là khoai tây và cà tím, sau đó mới đến rau."
+			},
+			"scallion_pancake": {
+				"name": "Bánh xèo hành lá",
+				"desc": "Cán bột, phết dầu và rải hành lá, cuộn lại, dẹt lại rồi chiên trên chảo cho đến khi cả hai mặt đều có màu nâu.",
+				"taste": "Bên ngoài sắc nét; từng lớp dầu hành lá bên trong.",
+				"hint": "Cho dầu và hành lá vào bột, cuộn lại, dẹt, chiên."
+			},
+			"liangpi": {
+				"name": "Lương Bì",
+				"desc": "Hấp một miếng bột mỏng, cắt thành dải và trộn với dầu ớt.",
+				"taste": "Mát lạnh, trơn trượt, dầu ớt bám vào mép.",
+				"hint": "Hấp bột mỏng, cắt thành dải, trộn với dầu ớt."
+			}
+		},
+		"letter": {
+			"window": {
+				"title": "Bên cửa sổ",
+				"name": "Bên cửa sổ",
+				"desc": "Một lá thư để trên bậu cửa sổ, mép nó bị ánh sáng tẩy trắng.",
+				"body": "Tôi không biết liệu lá thư này có được đọc hay không.\nNgoài cửa sổ không có con đường nào, chỉ có ánh sáng. Nhưng mỗi buổi sáng ánh sáng đều chiếu vào cùng một chỗ.\nNếu bạn cũng sống ở đây, bạn chắc chắn đã nhìn thấy nó.\n- người viết"
+			},
+			"task_window_1": {
+				"title": "Cúp đầu tiên",
+				"name": "Cúp đầu tiên",
+				"desc": "Dòng chữ được viết ở mặt sau của tấm thiệp, được ép chặt.",
+				"task_title": "Đặt ấm lên và đổ",
+				"task_body": "Nghiền và đổ nhỏ giọt.\nBàn giao nó từ tab hộp thư thứ ba khi sẵn sàng.",
+				"body": "Chiếc cốc ở trên kệ. Ấm đun nước cũng vậy.\nĐun sôi nước một lần, để đậu khô ướt, có mùi thơm.\nĐể nó trên bệ cửa sổ khi xong việc - tôi muốn thấy nó hấp.\n- người viết"
+			},
+			"coffee_machine": {
+				"title": "Cái thùng ở cửa",
+				"name": "Cái thùng ở cửa",
+				"desc": "Một tờ giấy giao hàng được nhét vào phong bì, các góc của nó được uốn cong.",
+				"body": "Một chiếc thùng được để ở cửa, cao hơn tôi một chút.\nBên trong là một máy pha cà phê. Thau. Lau nó đi và bạn có thể nhìn thấy chính mình.\nBên cạnh: một chai sữa và một túi đậu.\nNó đã từng là của tôi. Bây giờ nó là của bạn. Đừng để nó ngồi yên.\n- người viết"
+			},
+			"milk_merchant": {
+				"title": "Người bán tạp hóa",
+				"name": "Người bán tạp hóa",
+				"desc": "Có vết sữa khô dọc theo mép phong bì.",
+				"task_title": "Chiếc cốc anh ấy yêu cầu",
+				"body": "Xe đi qua vào giờ này hàng ngày.\nSữa được đựng trong hộp phía sau xe đẩy, có lót khăn ẩm. Ông nói: Hãy giữ nó tránh ánh nắng mặt trời; một khi nó ấm lên, nó sẽ không giữ được.\nXe đẩy không chỉ chở sữa - gạo, bột mì, dầu, muối, lọ và hộp thiếc.\nTrong suốt những năm ở đây, tôi đã mua hàng của anh ấy nhiều lần và chưa bao giờ nói nhiều.\n- nếu nó có ích gì cho bạn, hãy nhớ nó.",
+				"task_body": "Ông cho biết một số cửa hàng làm theo cách này: cà phê espresso dưới sữa nóng, một lớp bọt mỏng bên trên.\n“Có một bàn nghiên cứu trên chiếc xe đẩy này,” anh nói, gõ gõ vào mép bàn. \"Đặt hai thứ vào và chờ đợi - xem những gì xuất hiện.\"\nTrước tiên hãy pha một tách espresso, sau đó đặt nó lên bàn cùng với sữa và thử."
+			},
+			"teach_market": {
+				"title": "Chiếc xe và ngọn đồi",
+				"name": "Chiếc xe và ngọn đồi",
+				"desc": "Ở mặt sau là một hình vẽ chiếc xe đẩy nhỏ ngoằn ngoèo.",
+				"body": "Bây giờ bạn có thể nhận được mọi thứ từ hai nơi. Đừng chỉ đi một mình.\nXe đẩy đến mỗi ngày một lần và khi bán hết, bạn hãy đợi - hãy mua sớm nếu muốn.\nCon dốc phía sau nhà cũng mọc lên nhiều thứ. Nghiêng người ra ngoài cửa sổ và với tới; không có ai để hỏi.\nSử dụng cả hai, nếu không bộ đếm sẽ trống rỗng.\nNgay cả khi bạn ăn một mình, hãy đợi nước sôi."
+			},
+			"sugar_jar": {
+				"title": "lọ đường",
+				"name": "lọ đường",
+				"desc": "Có một vòng đường bao quanh viền, đủ cứng để cạo bằng móng tay.",
+				"body": "Cái lọ bị người khác bỏ lại; một lớp đường không hòa tan nằm ở phía dưới.\nTôi đặt nó ở nơi bạn có thể với tới.\nNếu bạn đã làm món sữa đó, hãy cho một thìa vào.\n- không cần phải trả lại."
+			},
+			"flour_sack": {
+				"title": "Bao bột mì",
+				"name": "Bao bột mì",
+				"desc": "Một bao giấy kraft có bột rỉ ra ở một góc.",
+				"body": "Những dòng chữ trên bao bị nước thấm ướt; chỉ còn lại một nửa.\nTôi đoán bạn vẫn còn nhớ rằng bột phải được nhào nặn -\ncó một vết trắng ở mép bàn, do người đã ở đây trước đó để lại.\nBạn đã bắt đầu làm mọi thứ chưa?"
+			},
+			"teach_upgrade": {
+				"title": "Vít lỏng lẻo",
+				"name": "Vít lỏng lẻo",
+				"desc": "Một chiếc vít đồng ngắn rơi ra khỏi phong bì.",
+				"body": "Những thứ trên quầy bắt đầu kêu cọt kẹt sau một lúc.\nĐừng chịu đựng nó. Hãy mở chúng ra, thắt chặt những gì lỏng lẻo và chúng sẽ hoạt động nhanh hơn.\nVà cái bảng bên cạnh bếp lò - đặt hai thứ lên đó và nó cho bạn thấy cái thứ ba.\nHãy thử một lần bạn sẽ thấy."
+			},
+			"butter_warmth": {
+				"title": "Sự ấm áp của bơ",
+				"name": "Sự ấm áp của bơ",
+				"desc": "Giấy có vết dầu mỡ mờ; đến gần nó có mùi sữa.",
+				"body": "Bơ phải ra khỏi tủ lạnh và để yên cho đến khi tự mềm.\nĐun nóng nó và nó tách ra; để nó một mình và nó mềm đi vừa phải.\nTôi phải mất vài lần cố gắng mới nhớ được điều đó."
+			},
+			"grinder_owner": {
+				"title": "Chủ cũ của máy xay",
+				"name": "Chủ cũ của máy xay",
+				"desc": "Có một bánh răng cong được vẽ ở góc.",
+				"body": "Chiếc máy đó thuộc về một người xay đậu mỗi ngày một lần.\nĐến lần xay thứ một trăm, người đó đã rời đi và chiếc máy vẫn ở lại.\nNó lung lay vì có thứ gì đó bên trong bị lỏng ra.\nKhông cần phải sửa nó."
+			},
+			"oven_heat": {
+				"title": "Sức nóng của lò nướng",
+				"name": "Sức nóng của lò nướng",
+				"desc": "Mép giấy hơi ố vàng, như bị nướng chín.",
+				"task_title": "Nướng một khay bánh quy",
+				"task_body": "Sáu cái bánh quy.\nNướng chúng, sau đó giao chúng từ tab hộp thư thứ ba.",
+				"body": "Kính cửa luôn bị mờ; bạn không thể nhìn thấy bên trong\nNó đã nướng rất nhiều thứ, hầu hết là bữa sáng của người khác.\nKhi bạn kéo nó ra, hơi nóng sẽ phả vào mặt bạn trước tiên —\nđó là khoảnh khắc trong căn phòng này có cảm giác giống như có ai đó đang sống ở đây.\nTrước tiên hãy nướng một khay bánh quy nhỏ. Bơ và đường, cho đến khi các cạnh chuyển sang màu nâu."
+			},
+			"task_oven_heat_1": {
+				"title": "Đợt thứ hai",
+				"name": "Đợt thứ hai",
+				"desc": "Trên giấy có một vết bơ khô nhỏ.",
+				"task_title": "Nướng thêm một chiếc bánh sừng bò nữa",
+				"task_body": "Một chiếc bánh sừng bò.\nBàn giao nó từ tab hộp thư thứ ba khi sẵn sàng.",
+				"body": "Các cookie ra đời tốt.\nNướng thêm một mẻ bánh sừng bò nữa - lần này chậm hơn, để chúng tự nở.\nTôi để bột mì trong bao. Đủ cho ba lần thử."
+			},
+			"fridge_hum": {
+				"title": "Hộp ồn ào",
+				"name": "Hộp ồn ào",
+				"desc": "Một chiếc hộp thép kêu vo vo xuất hiện bên trong cửa sau.",
+				"body": "Sáng nay thức dậy thấy bên trong cửa sau có một chiếc hộp thép kêu vo vo.\nMột ghi chú ở trên: 'Trong nhà lạnh hơn ngoài. Đổ nước vào; một lúc sau nó là băng. Đừng bận tâm đến tiếng ồn – nó không bao giờ dừng lại.”\nTôi đặt một bát nước vào trong và đứng lắng nghe một lúc lâu. Nó không có dấu hiệu dừng lại.\nĐến tối, băng đã thành hình - dày ở rìa, mỏng ở giữa, tách ra khi có tiếng gõ."
+			},
+			"before_leaving": {
+				"title": "Thời gian bắt đầu",
+				"name": "Thời gian bắt đầu",
+				"desc": "Tờ giấy có những đường nhăn, như thể được mở ra và gấp lại nhiều lần.",
+				"body": "Chiếc xe tải đã dừng lại từ lâu.\nĐủ lâu để tôi bắt đầu nghĩ đây là cách nó luôn phải như vậy - dừng lại, rồi dần dần trở thành một căn phòng.\nSáng nay ánh sáng chiếu vào từ phía bên kia. Tôi đẩy cửa bước vào và đứng trước ngưỡng cửa như thường lệ.\nCó thứ gì đó gõ nhẹ vào phía sau.\nTôi do dự, rồi lần đầu tiên rời khỏi cửa, băng qua mặt đất phía sau rồi quay lại.\nChỉ khi đó tôi mới nhìn thấy toàn bộ nó: một chiếc xe bán đồ ăn cũ, sơn gần hết, bánh xe lấm lem bùn đất.\nVậy ra căn phòng tôi ở bấy lâu nay chính là chiếc xe tải này.\nNó đã chạy đi rất nhiều nơi rồi đứng yên quá lâu đến nỗi quên mất chính mình.\nTôi quay lại cửa và lau một mảng bụi nhỏ bên trong.\nBên dưới, một dòng chữ sơn màu hiển thị —\n'TẮT ĐƯỜNG ĂN'.\nTôi lau sạch chìa khóa rồi ngồi lại vào ghế lái.\nĐã đến lúc bắt đầu."
+			},
+			"east_asia_arrive": {
+				"title": "Điểm dừng đầu tiên",
+				"name": "Điểm dừng đầu tiên",
+				"desc": "Giấy mỏng, các góc cong lại như đã nằm trên bậu cửa sổ rất lâu.",
+				"body": "Chiếc xe tải dừng lại.\nTôi không biết liệu nó có quyết định như vậy hay không, hay con đường chỉ cần lấy lại hơi thở.\nBên ngoài cửa sổ: một dãy mái hiên thấp, và mọi thứ treo bên dưới chúng va vào nhau trong gió. Có người đi ngang qua chiếc xe tải mà không nhìn lên.\nTôi mở hé cửa sổ. Không khí ấm áp tràn vào với mùi rất sạch - gạo và một ít than củi.\nBát ở đây nhỏ, đũa nhẹ. Không ai nói chuyện trong khi ăn."
+			},
+			"task_east_asia_arrive_1": {
+				"title": "Hai Đôi Đũa",
+				"name": "Hai Đôi Đũa",
+				"desc": "Một nếp gấp chiếc đũa chạy ngang qua tờ giấy.",
+				"task_title": "Nấu hai món ăn Đông Á",
+				"task_body": "Hai là đủ. Không cần phải chọn cái khó nhất.\nXác nhận từ tab hộp thư thứ ba khi hoàn tất.",
+				"body": "Có người đang ngồi ở bậc cửa ở góc đường, ăn mì.\nAnh ấy không nhìn lên. Anh chỉ nói: từ đây làm hai món đi, để tôi ngửi xem có đúng không.\nChỉ hai thôi. Hơn thế nữa và anh ấy không thể hoàn thành."
+			},
+			"east_asia_note": {
+				"title": "Giấy trên bước",
+				"name": "Giấy trên bước",
+				"desc": "Một trang bị rách từ một cuốn sách bài tập, các cạnh không đều nhau.",
+				"body": "Đến sáng, tôi mở cửa và thấy một mảnh giấy trên bậc thềm. Sách bài tập bị rách, mép không đều.\nBa dòng trong một bàn tay cong:\n\"Một bát nóng. Phải có súp.\"\n“Loại cuộn lại. Giống như lần trước.”\n\"Thứ gì đó ngọt ngào. Không quá ngọt.\"\nKhông có tên. Không có thời gian để đến và thu thập nó.\nTôi đặt tờ giấy lên bậu cửa sổ. Vào những ngày gió nó di chuyển một chút."
+			},
+			"task_east_asia_note_1": {
+				"title": "Ba dòng trên bước",
+				"body": "Tờ giấy đó còn có một dòng nữa:\n\"Hai món súp khác nhau. Thế là được.\"\nTôi gấp nó lại và để nó bên bậu cửa sổ.",
+				"name": "Ba dòng trên bước",
+				"desc": "Một dấu giày nằm ở một góc.",
+				"task_title": "Nấu hai món súp khác nhau",
+				"task_body": "Một cái gì đó ấm áp. Hai món súp khác nhau sẽ làm được.\nXác nhận từ tab hộp thư thứ ba khi hoàn tất."
+			},
+			"east_asia_leave": {
+				"title": "rời đi",
+				"name": "rời đi",
+				"desc": "Một tờ giấy được gấp và mở ra nhiều lần, giữ bên trong.",
+				"body": "Sáng thứ ba chiếc xe tải tự di chuyển.\nKhi tôi tỉnh dậy, mái hiên đã thu hẹp lại thành một đường ở phía xa.\nTờ giấy vẫn còn trên bậu cửa sổ. Tôi ghi nó vào cuốn sổ, bên cạnh trang có chữ viết trên đó.\nCó những nơi bạn chỉ dừng lại ba ngày mà nhớ rất lâu.\nĐiểm dừng tiếp theo là ở đâu, tôi không biết. Xe tải thì có."
+			},
+			"middle_page": {
+				"title": "Trang giữa của danh mục",
+				"name": "Trang giữa của danh mục",
+				"desc": "Hai loại mực khác nhau trên giấy.",
+				"body": "Lật sang trang giữa và bạn sẽ thấy ai đó đã ghi lại điều gì đó trước bạn.\nChữ viết khác nhau, vẽ một cách khác nhau.\nNhững gì anh ấy ghi lại là cùng một chiếc cốc - chỉ có điều hôm đó anh ấy thêm vào ít hơn tôi một thứ.\nViệc ghi chép là như vậy - mọi người đều tự viết.\nCuốn sổ ngày càng dày hơn. Đôi khi lật lại, tôi quên mất mình đã bắt đầu từ trang nào."
+			},
+			"beyond_paper": {
+				"title": "Ngoài Sách Trắng",
+				"name": "Ngoài Sách Trắng",
+				"desc": "Có một vệt màu mờ ở mặt sau của tờ giấy, không nhìn thấy được từ mặt trước.",
+				"task_title": "Hãy thử một điều trên giấy",
+				"task_body": "Chế tạo một món ăn mới trên bàn nghiên cứu.\nĐã unlock xong.",
+				"body": "Có màu ở mép giấy.\nChỉ là chưa ở đâu bạn có thể nhìn thấy nó.\nViết xong trang này và chúng ta sẽ nói về phần còn lại.\n- vẫn là người viết"
+			},
+			"southeast_asia_arrive": {
+				"title": "Ẩm ướt",
+				"name": "Ẩm ướt",
+				"desc": "Giấy có cảm giác ẩm ướt.",
+				"body": "Điểm dừng này ồn ào.\nTrước khi chiếc xe tải dừng lại, âm thanh đã ập đến từ mọi phía: tiếng xe máy, tiếng la hét, tiếng nước đổ từ đâu đó trên cao xuống.\nKhông khí ẩm ướt. Nó nằm trên da như một miếng vải không bao giờ khô.\nBên ngoài cửa sổ, màu xanh dày đặc đến mức bạn không thể nhìn thấy những gì đằng sau nó.\nCó người gõ hai lần vào thành xe tải. Tôi kéo cửa sổ xuống. Anh đưa cho tôi một bó lá rồi bỏ đi không nói một lời.\nNhững chiếc lá vẫn còn ướt."
+			},
+			"task_southeast_asia_arrive_1": {
+				"title": "Lửa dưới mái hiên",
+				"name": "Lửa dưới mái hiên",
+				"desc": "Giấy hơi ẩm.",
+				"task_title": "Nấu hai món ăn Đông Nam Á",
+				"task_body": "Hai. Nóng hay chua đều được.\nXác nhận từ tab hộp thư thứ ba khi hoàn tất.",
+				"body": "Ngọn lửa nhỏ đang cháy dưới mái hiên mưa.\nNgười chăm sóc nó nói rằng vị ở đây cần nhiệt, cần chua, cần người canh lửa.\nLàm hai cái và cho tôi xem."
+			},
+			"southeast_asia_note": {
+				"title": "Mặt sau của bao thuốc lá",
+				"name": "Mặt sau của bao thuốc lá",
+				"desc": "Mặt sau bao thuốc lá, cây bút chì cọ xát một lần.",
+				"body": "Hôm nay không có giấy tờ trước cửa. Cái này đi qua khoảng trống cửa sổ.\nMặt sau của bao thuốc lá, bằng bút chì:\n“Cay, cay, cái có dừa.”\n\"Món súp lần trước. Tôi đã nghĩ về nó rất lâu.\"\nCó một dòng khác bên dưới, bị xóa đi và viết đè lên. Tôi không thể đọc nó.\nTôi dựng nó lên bên cửa sổ."
+			},
+			"task_southeast_asia_note_1": {
+				"title": "Viết trên vải ướt",
+				"name": "Viết trên vải ướt",
+				"desc": "Vải đã khô một nửa; các từ vẫn còn.",
+				"task_title": "Giao hai đơn hàng",
+				"task_body": "Đừng để ai phải chờ đợi quá lâu.",
+				"body": "Trên bậu cửa sổ có một miếng vải ướt, một tờ giấy phủ lên trên.\nHơi ẩm đã làm mềm giấy và mực đã chảy. Tất cả những gì tôi có thể đọc được là “hai”.\nNhận hai đơn đặt hàng và giao chúng."
+			},
+			"southeast_asia_leave": {
+				"title": "Cơn mưa",
+				"name": "Cơn mưa",
+				"desc": "Một góc phong bì mềm mại như thể bị mưa tạt vào.",
+				"body": "Trời mưa khi xe tải rời đi.\nMưa rơi lộp độp dày đặc trên mái nhà, như có người chạy ngang qua.\nTôi để một cái bát trên bậu cửa sổ cho nguội.\nKhi tôi quay lại lấy thì cái bát đã trống rỗng và bên dưới có một chiếc lá.\nXe đi một quãng đường dài mà lá vẫn nhỏ giọt."
+			},
+			"vegetable_patch": {
+				"title": "Miếng rau",
+				"name": "Miếng rau",
+				"desc": "Một cây gậy có sợi dây màu đỏ nhạt buộc vào.",
+				"task_title": "Chọn ba bó rau xanh",
+				"task_body": "Ba bó rau xanh.\nTập hợp chúng lại, sau đó giao chúng từ tab hộp thư thứ ba.",
+				"body": "Có một mảnh đất nhỏ ở góc ngoài cửa sổ.\nĐất tơi xốp; một cây gậy có sợi dây màu đỏ đã phai màu mắc kẹt trong đó.\nTôi không biết ai đã trồng nó, nhưng nó phát triển tốt hơn bất cứ thứ gì trong nhà.\nNếu bạn thiếu rau, hãy đưa tay ra ngoài cửa sổ - đừng kéo toàn bộ cây."
+			},
+			"rice_sack": {
+				"title": "Bao gạo",
+				"name": "Bao gạo",
+				"desc": "Bao được buộc kín bằng dây gai, hai lần.",
+				"task_title": "Gom năm đấu gạo",
+				"task_body": "Năm đấu gạo.\nTập hợp chúng lại, sau đó giao chúng từ tab hộp thư thứ ba.",
+				"body": "Trên bao có in những chữ tôi không đọc được; thứ duy nhất tôi nhận ra là \"gạo\".\nPhần còn lại của câu chuyện bị thiếu.\nMúc ra một nắm. Những hạt lúa trượt qua ngón tay tôi với tiếng xào xạc khô khốc.\nNgười từng sống ở đây có lẽ cũng không phải người quanh đây."
+			},
+			"south_asia_arrive": {
+				"title": "Màu sắc",
+				"name": "Màu sắc",
+				"desc": "Bụi mịn trên giấy; nó nhòe khi bạn chạm vào nó.",
+				"body": "Màu sắc ở đây nặng nề.\nMột lớp bụi mịn đọng lại trên cửa sổ. Tôi lau nó bằng tay áo và tạo thành một vệt sáng; từ từ nó lại có sương mù.\nCó người đã đặt một cái chậu bên ngoài. Ngọn lửa liếm phía dưới. Gió mang theo mùi - có quá nhiều loại để gọi tên, nhưng loại nào cũng ồn ào."
+			},
+			"task_south_asia_arrive_1": {
+				"title": "Màu sắc trên tay họ",
+				"name": "Màu sắc trên tay họ",
+				"desc": "Một vết ố vàng nhỏ ở góc phong bì.",
+				"task_title": "Nấu ba món ăn Nam Á",
+				"task_body": "Ba. Kiểm tra màu sắc và gia vị.\nXác nhận từ tab hộp thư thứ ba khi hoàn tất.",
+				"body": "Người dân ở đây ăn bằng ngón tay.\nNghệ và ớt nhuộm chúng. Nó không rửa sạch được nên họ để nó ở lại.\nLàm ba. Màu sắc phải đúng."
+			},
+			"south_asia_note": {
+				"title": "Mặt sau của một hóa đơn",
+				"name": "Mặt sau của một hóa đơn",
+				"desc": "Mặt sau của tờ tiền cũ; phía sau có nhiều chữ viết hơn phía trước.",
+				"body": "Mặt sau của tờ tiền, có chữ tròn, được ép cứng:\n“Cái màu vàng. Cái có đậu bên trong.”\n\"Bánh mỳ dẹt. Hai.\"\n\"Không quá nóng.\"\nỞ phía dưới có hình vẽ một cái bát cong queo.\nTôi đã làm được. Trong khi tôi nấu ăn, bài hát đó cứ vang lên bên ngoài suốt thời gian đó."
+			},
+			"task_south_asia_note_1": {
+				"title": "Lưu ý về túi gia vị",
+				"name": "Lưu ý về túi gia vị",
+				"desc": "Miếng trượt có mùi quế.",
+				"task_title": "Nấu ba món chay",
+				"task_body": "Ba món không có thịt nhưng cũng đừng tiết kiệm gia vị.\nXác nhận từ tab hộp thư thứ ba khi hoàn tất.",
+				"body": "Một sợi dây được buộc quanh túi đựng gia vị, trên đó có luồn một mảnh giấy.\nPhiếu ghi: ba món không thịt.\nKhông có gì khác."
+			},
+			"south_asia_leave": {
+				"title": "cái nồi",
+				"name": "cái nồi",
+				"desc": "Một lỗ nhỏ trên tờ giấy nơi cây bút xuyên qua.",
+				"body": "Cái nồi vẫn còn đó khi chiếc xe tải lao đi.\nLửa vẫn chưa tắt. Khói từ từ bay lên.\nTôi đóng cửa sổ lại. Dù sao thì mùi vẫn còn trong xe tải.\nTôi đã viết trang này ba lần trước khi tôi viết đúng từ.\nTôi đã không gạch bỏ những cái sai."
+			},
+			"butcher_street": {
+				"title": "Đường phố với người bán thịt",
+				"name": "Đường phố với người bán thịt",
+				"desc": "Có vết dầu mỡ trên lá thư.",
+				"task_title": "Giao một đơn hàng",
+				"task_body": "Điền vào đơn đặt hàng của một khách hàng.",
+				"body": "Qua cửa sổ bên trái, ngã tư thứ ba: một cửa hàng thịt.\nNgười chủ không hỏi bạn đang làm gì, chỉ hỏi bao nhiêu.\nHôm nay có người để trên bậu cửa sổ một gói thịt gói trong giấy dầu, thắt nút theo kiểu cũ.\nTôi đã không gặp anh ấy trong một thời gian dài. Tôi tự hỏi liệu anh ấy có còn nhớ tôi không."
+			},
+			"middle_east_arrive": {
+				"title": "dưới bức tường",
+				"name": "dưới bức tường",
+				"desc": "Giấy đã bị giòn do nắng.",
+				"body": "Chiếc xe tải dừng lại dưới một bức tường. Màu vàng đất, bị ánh nắng tẩy trắng.\nBuổi trưa cả con phố vắng tanh. Mọi âm thanh đều biến mất, chỉ còn lại hơi ấm.\nVào buổi tối mọi người đi ra cùng một lúc.\nCó người trải tấm vải bên cạnh xe tải, đặt xuống một chiếc nồi đồng và vài chiếc cốc nhỏ. Anh ấy đổ một cốc và đẩy nó lên bậu cửa sổ của tôi.\nRất ngọt ngào. Ngọt đến mức có vị đắng."
+			},
+			"task_middle_east_arrive_1": {
+				"title": "Lò nướng ở bức tường",
+				"name": "Lò nướng ở bức tường",
+				"desc": "Các mép giấy được hát sém sắc nét.",
+				"task_title": "Nấu ba món ăn Trung Đông",
+				"task_body": "Ba. Đừng để lửa quá nóng.\nXác nhận từ tab hộp thư thứ ba khi hoàn tất.",
+				"body": "Một lò nướng được chôn dưới chân tường. Ngọn lửa của nó chưa bao giờ tắt.\nNhấn bột vào nó và nó sẽ phồng lên trong giây lát.\nLàm ba. Hãy xem liệu bạn có thể nhấn chúng ổn định không."
+			},
+			"middle_east_note": {
+				"title": "Không có chữ ký",
+				"name": "Không có chữ ký",
+				"desc": "Một vết dầu nhỏ trên giấy; đến gần có mùi mè.",
+				"body": "Một tờ giấy, nhàu nát rồi lại vuốt phẳng. Chữ lớn:\n\"Vừng.\"\n\"Nướng. Tôi muốn nó có màu sẫm ở rìa.\"\n\"Trà. Ngọt.\"\nCó một vết dầu nhỏ ở một góc, giống như dấu vân tay.\nTôi lật tờ giấy lại. Mặt sau có vài dòng mờ:\n“Dốc này ngày xưa là đồng cỏ, có một đôi hoa màu đỏ tươi. Cô ấy chỉ ra và nói đó là hải quỳ.”\n“Bà ấy nói tiếng hoa hải quỳ là gió.”\n“Khi cô ấy cưỡi ngựa, cỏ uốn cong hai bên, như thể có gió thổi qua. Tôi thích nhìn cô ấy cưỡi ngựa. Tôi nghĩ rằng một ngày nào đó tôi có thể cưỡi ngựa bên cạnh cô ấy.”\n\"Bây giờ trên sườn núi chỉ còn cát.\""
+			},
+			"task_middle_east_note_1": {
+				"title": "Cú trượt chân của người chăn cừu",
+				"name": "Cú trượt chân của người chăn cừu",
+				"desc": "Cát đã sờn mép phiếu.",
+				"task_title": "Một chiếc khăn choàng",
+				"task_body": "Làm một chiếc khăn choàng. Bàn giao nó từ tab hộp thư thứ ba khi nó đã sẵn sàng.",
+				"body": "Một người chăn cừu đi ngang qua chiếc xe tải và để lại một mảnh giấy dưới tường. Đàn cừu của anh đợi bên ngoài bức tường, và anh giữ một tay trên sợi dây.\nTôi đoán rằng khi ăn, anh ấy chỉ rảnh một tay.\nNó nói: Đàn cừu đi ra ngoài, gió thổi xuống dốc. Tôi muốn ăn thứ gì đó giống như gió.\nBên dưới đó, một dòng nữa: Cuộn lại. Thịt, rau, dễ mang theo.\nTôi kéo chiếc phiếu ra. Cuộn lại, rảnh một tay - nghe giống như shawarma."
+			},
+			"middle_east_leave": {
+				"title": "Ngọt",
+				"name": "Ngọt",
+				"desc": "Một ít đường dính vào nắp, bây giờ cứng lại.",
+				"body": "Chúng tôi ra đi lúc bình minh, bóng tường trải dài bên đường.\nChiếc nồi đồng vẫn còn đó. Những chiếc cốc đã được thu thập.\nTôi rót chỗ trà đang uống dở của ngày hôm qua, rửa sạch chiếc cốc và đặt nó lên bậu cửa sổ.\nĐi một đoạn xa, bức tường trong gương vẫn còn màu vàng.\nTừ điểm dừng này, điều tôi nhớ là ngọt ngào."
+			},
+			"stove_fire": {
+				"title": "Giữ lửa ở mức thấp",
+				"name": "Giữ lửa ở mức thấp",
+				"desc": "Một góc của lá thư bị cháy sém màu nâu.",
+				"task_title": "Nấu súp rau",
+				"task_body": "Một món súp rau.\nBàn giao nó từ tab hộp thư thứ ba khi sẵn sàng.",
+				"body": "Những thứ trong nồi sẽ cháy nếu ngọn lửa quá cao.\nTôi đã thử nhiều lần. Cuối cùng, tôi thấy rằng nếu tôi giảm bớt, súp sẽ tự giảm bớt.\nNước dùng trong hơn sẽ giữ được hương vị tốt hơn."
+			},
+			"mediterranean_arrive": {
+				"title": "Muối",
+				"name": "Muối",
+				"desc": "Trên giấy có vài hạt muối, chỗ khô lại có màu trắng.",
+				"body": "Gió ở đây có vị mặn.\nChiếc xe tải dừng lại trên một con dốc. Phía dưới là nước - sáng đến nỗi nhìn lâu sẽ nhức mắt.\nAi đó ở dưới dốc đang kéo lưới. Khi nó nhô lên, có thứ gì đó màu bạc lóe lên rồi tắt phụt.\nBuổi trưa họ ăn ở ven đường. Bánh xé ra, rưới dầu, rắc muối.\nQuá đơn giản để gọi một bữa ăn nhưng lại mất rất nhiều thời gian."
+			},
+			"task_mediterranean_arrive_1": {
+				"title": "Sấy dầu dưới ánh nắng mặt trời",
+				"name": "Sấy dầu dưới ánh nắng mặt trời",
+				"desc": "Một vòng dầu đánh dấu phong bì.",
+				"task_title": "Nấu ba món ăn Địa Trung Hải",
+				"task_body": "Ba. Dễ dàng trên dầu.\nXác nhận từ tab hộp thư thứ ba khi hoàn tất.",
+				"body": "Một dãy chai lọ đang phơi trên mái nhà; dầu bên trong có màu xanh lá cây.\nMọi thứ ở đây rất đơn giản: dầu, muối, lửa và thời gian.\nLàm ba. Đừng sử dụng quá nhiều."
+			},
+			"mediterranean_note": {
+				"title": "Khăn ăn",
+				"name": "Khăn ăn",
+				"desc": "Một chiếc khăn giấy, mềm ngay cả khi bị xẹp xuống.",
+				"body": "Một chiếc khăn giấy, một cây bút chì, rất nhẹ:\n\"Cà chua và pho mát trắng đó.\"\n\"Mì ống. Không quá mềm.\"\n\"Nếu có chanh thì vắt một chút.\"\nGió đẩy nó vào khe cửa. Khi tôi nhặt nó lên, các cạnh đã cong lại.\nTôi đã làm được một lần, như tờ khăn ăn nói. Muối và dầu đều nhẹ. Được nửa chừng, nó có vị giống như nơi nào đó tôi đã từng ăn trước đây - tôi không thể nhớ được ở đâu.\nĂn một mình đủ lâu và bạn bắt đầu quên mất mùi vị ở nhà như thế nào."
+			},
+			"task_mediterranean_note_1": {
+				"title": "Lời ghi chú của chai dầu",
+				"body": "Một tờ giấy ghi chú đứng cạnh chai dầu.\nNó nói: ba món không thịt, khi còn nóng.\nTôi đặt tờ giấy lại.",
+				"name": "Lời ghi chú của chai dầu",
+				"desc": "Một dấu vân tay nhờn trên ghi chú.",
+				"task_title": "Nấu ba món chay",
+				"task_body": "Ba cái mới. Đừng giữ lại dầu ô liu.\nXác nhận từ tab hộp thư thứ ba khi hoàn tất."
+			},
+			"mediterranean_leave": {
+				"title": "Vô ích",
+				"name": "Vô ích",
+				"desc": "Một ít dầu ở góc, như thể tờ giấy được giữ lại.",
+				"body": "Trời mưa một chút vào ngày chúng tôi rời đi, rồi tạnh.\nNước bên dưới chuyển sang màu xám và vẫn trong sáng.\nTôi xé chiếc bánh mì hôm qua và để nó trên bậu cửa sổ bên ngoài.\nĐi xa, miệng vẫn còn vị muối.\nTừ điểm dừng này, tôi học được cách bỏ vào ít hơn."
+			},
+			"steamer_lid": {
+				"title": "Nước trên nắp nồi hấp",
+				"name": "Nước trên nắp nồi hấp",
+				"desc": "Một vòng ngưng tụ trên nắp.",
+				"task_title": "Hấp một rổ bánh bao",
+				"task_body": "Một phần bánh bao.\nBàn giao chúng từ tab hộp thư thứ ba khi sẵn sàng.",
+				"body": "Hãy cẩn thận khi nhấc nắp lên - nước sẽ chảy xuống mép.\nNước nóng và chạm vào tay bạn sẽ thấy đau.\nTôi đã bị bỏng rất nhiều khi còn nhỏ. Sau này tôi học cách nhấc nó lên chỉ một chút và cho hơi nước thoát ra trước.\nHãy kiên nhẫn. Thức ăn đang được nấu bên trong."
+			},
+			"western_arrive": {
+				"title": "Sương mù",
+				"name": "Sương mù",
+				"desc": "Giấy dày như giấy nhà bếp.",
+				"body": "Chiếc xe tải dừng lại xa hơn thường lệ. Đất ở đây bằng phẳng - đủ phẳng để bạn có thể nhìn thấy sương mù bắt đầu từ rất xa.\nSự ngưng tụ hình thành trên cửa sổ. Tôi vẽ một đường ngang qua nó rồi xóa đi.\nAi đó đã để trước cửa một chiếc giỏ nhỏ phủ vải. Bên dưới: bánh mì, vẫn còn ấm.\nLớp vỏ cứng và dễ vỡ vụn khi vỡ. Bên trong mềm mại.\nBơ ở đây có màu vàng chứ không phải màu trắng."
+			},
+			"task_western_arrive_1": {
+				"title": "Nửa thực đơn",
+				"name": "Nửa thực đơn",
+				"desc": "Giấy cứng như bị xé ra khỏi thực đơn.",
+				"task_title": "Nấu ba món ăn cổ điển phương Tây",
+				"task_body": "Ba. Họ vẫn còn nóng trên bàn.\nXác nhận từ tab hộp thư thứ ba khi hoàn tất.",
+				"body": "Chỉ còn lại một nửa thực đơn trên tường.\nMột nửa còn lại ghi: dùng nóng.\nLàm ba. Họ phải nóng khi đến bàn."
+			},
+			"western_note": {
+				"title": "Một giỏ bánh mì nhỏ",
+				"name": "Một giỏ bánh mì nhỏ",
+				"desc": "Đã từng có bơ dưới tờ tiền này; tờ giấy đã giữ được dấu ấn.",
+				"body": "Một ghi chú trên giấy tốt, viết chữ nhỏ:\n\"Súp. Đặc.\"\n\"Bánh mì. Loại mà bạn có thể chấm.\"\n\"Loại nồi. Với thịt bò.\"\nDưới tờ giấy có một miếng bơ nhỏ bọc trong giấy sáp.\nTôi đưa miếng bơ lại gần và ngửi nó. Mùi này quen quen nhưng tôi không nhớ mình đã ngửi thấy ở đâu rồi."
+			},
+			"task_western_note_1": {
+				"title": "Bảng thực đơn chính thức",
+				"name": "Bảng thực đơn chính thức",
+				"desc": "Lời cũ vẫn còn đó, không thể xóa đi, bên cạnh là những vết khoét sâu.",
+				"task_title": "Một kebab",
+				"task_body": "Làm một chiếc kebab, nướng một chút và chuyển nó từ tab hộp thư thứ ba khi nó đã sẵn sàng.",
+				"body": "Một bảng thực đơn hiện lên trên quầy, không phải của chúng tôi.\nỞ mặt sau, ấn mạnh: Một đám man rợ từ ngoài thị trấn xé ​​nát ngọn hải đăng. Không ai làm gì cả.\nViệc viết dừng lại ở đó. Cây bút đã khoét bảng.\nSau đó là một khoảng trống: Một món nướng Trung Đông. Char nó một chút. Hãy để họ là họ.\nMột con dấu chính thức được đóng dấu ở phía dưới, có vết mực.\nAnh ta muốn loại bỏ nó - đốt nó, loại bỏ nó khỏi hệ thống của mình và sau đó tìm cách dọn dẹp mớ hỗn độn."
+			},
+			"western_leave": {
+				"title": "Sự ấm áp",
+				"name": "Sự ấm áp",
+				"desc": "Bơ đã thấm qua giấy.",
+				"body": "Sương mù vẫn chưa tan khi chúng tôi rời đi.\nChiếc xe tải đi chậm như thể nó không hề muốn vậy.\nTôi đã ăn miếng bánh mì cuối cùng. Những mảnh vụn rơi vào lòng tôi.\nMột ít bơ có trên trang này. Nó đã xuyên qua và còn có một dấu vết ở phía sau.\nTừ điểm dừng này, điều tôi nhớ là sự ấm áp."
+			},
+			"americas_arrive": {
+				"title": "Con đường thẳng",
+				"name": "Con đường thẳng",
+				"desc": "Một vết dầu mỡ thấm qua phong bì.",
+				"task_title": "Giao một đơn hàng",
+				"task_body": "Điền vào đơn đặt hàng của một khách hàng.",
+				"body": "Đường ở đây thẳng - thẳng đến mức bạn không thể nhìn thấy khúc cua.\nSau khi xe dừng lại, hồi lâu không có ai đến. Xa xa là những mái tôn rung rinh trong gió.\nĐến tối, một chiếc ô tô dừng lại bên cạnh tôi và người tài xế hạ cửa sổ xuống, hỏi tôi có muốn thử món anh ta có không.\nTôi lắc đầu. Anh mỉm cười, đặt một chiếc túi giấy lên bậu cửa sổ của tôi rồi lái xe đi.\nCái túi rất nóng. Dầu mỡ đã thấm qua giấy."
+			},
+			"task_americas_arrive_1": {
+				"title": "Xe trên đường thẳng",
+				"name": "Xe trên đường thẳng",
+				"desc": "Một vệt bụi màu xám của lốp xe chạy ngang qua đường bao.",
+				"task_title": "Nấu ba món ăn Mỹ",
+				"task_body": "Ba. Cho thêm một chút.\nXác nhận từ tab hộp thư thứ ba khi hoàn tất.",
+				"body": "Một con đường chạy thẳng qua, không thấy một khúc cua nào cả.\nMột chiếc radio đang phát trong ô tô. Không ai tắt nó đi.\nLàm ba. Phần lớn hơn."
+			},
+			"americas_note": {
+				"title": "Biên nhận",
+				"name": "Biên nhận",
+				"desc": "Mặt sau của biên nhận; giá vẫn ở phía trước.",
+				"body": "Mặt sau của biên lai, bút bi:\n\"Thịt. Loại ở giữa bánh mì.\"\n\"Khoai tây. Cắt thành dải.\"\n“Thứ gì đó ngọt, lạnh, có bong bóng.”\nCác chữ cái rất lớn, chiếm gần như toàn bộ tờ giấy.\nGọi hai phần cho một người là một thói quen mà con đường đã dạy."
+			},
+			"task_americas_note_1": {
+				"title": "Một bàn tay trong cửa sổ ô tô",
+				"name": "Một bàn tay trong cửa sổ ô tô",
+				"desc": "Dấu vân tay bằng mực đánh dấu phong bì.",
+				"task_title": "Giao hai đơn hàng",
+				"task_body": "Hai, tới ô tô.",
+				"body": "Chiếc xe đậu bên đường, cửa kính hạ xuống nửa chừng.\nMột bàn tay đưa ra và giơ hai ngón tay lên.\nTôi đoán điều đó có nghĩa là hai mệnh lệnh."
+			},
+			"americas_leave": {
+				"title": "Chưa bao giờ nhìn thấy khuôn mặt",
+				"name": "Chưa bao giờ nhìn thấy khuôn mặt",
+				"desc": "Một túi giấy gấp làm bốn; vết dầu mỡ vẫn còn đó.",
+				"body": "Chúng tôi rời đi lúc bình minh. Con đường vẫn thẳng tắp.\nTôi gấp chiếc túi giấy lại và cho vào cuốn sổ.\nVết dầu mỡ vẫn còn đó một ngày sau đó.\nChiếc xe tải đã đi được một quãng đường dài trước khi tôi nhận ra rằng mình chưa bao giờ nhìn rõ khuôn mặt của người đàn ông đó.\nTừ điểm dừng này, tôi nhớ đến bàn tay.\nHai ngón tay, một cử chỉ nhỏ là đủ.\nThế giới cứ chuyển động bên ngoài cửa sổ; Tôi ngồi và quan sát. Tôi chưa bao giờ đi hầu hết những con đường đó, và có rất nhiều câu chưa bao giờ nói xong."
+			},
+			"africa_arrive": {
+				"title": "Mặt trời lặn chậm",
+				"name": "Mặt trời lặn chậm",
+				"desc": "Giấy có màu sẫm hơn những tờ khác.",
+				"task_title": "Nấu một món ăn từ Châu Phi",
+				"task_body": "Bất kỳ món ăn nào từ Châu Phi.\nXác nhận từ tab hộp thư thứ ba khi hoàn tất.",
+				"body": "Mặt trời lặn dần ở đây.\nChiếc xe tải dừng lại dưới gốc cây. Bóng râm chỉ che phủ một nửa. Nửa còn lại quá nóng để chạm vào.\nĐến tối có người đốt lửa gần đó. Lửa nhỏ, nồi lớn.\nCó người mang tới một cái bát. Dày, tối.\nTôi nuốt một ngụm. Rất nóng. Mạnh mẽ với đậu phộng."
+			},
+			"task_africa_arrive_1": {
+				"title": "Mặt trời lặn chậm",
+				"name": "Mặt trời lặn chậm",
+				"desc": "Tờ giấy đã ố vàng dưới nắng.",
+				"task_title": "Nấu hai món ăn châu Phi",
+				"task_body": "Hai. Chậm là được.\nXác nhận từ tab hộp thư thứ ba khi hoàn tất.",
+				"body": "Ở đây mặt trời lặn dần.\nChậm đủ để một nồi hầm xong, chậm đủ để người ta ngồi chờ.\nLàm hai cái. Không vội vàng."
+			},
+			"africa_note": {
+				"title": "Một góc cháy",
+				"name": "Một góc cháy",
+				"desc": "Một góc tờ giấy bị lửa liếm; mép bị cháy thành than.",
+				"body": "Một mảnh giấy có cạnh bị cháy:\n\"Hầm. Nấu cho đến khi nó nát ra.\"\n\"Rễ màu vàng. Nghiền nát nó.\"\n\"Bánh mì dẹt. Để nhúng.\"\nNhững dòng chữ viết nối tiếp nhau, giống như một người không thường xuyên viết."
+			},
+			"task_africa_note_1": {
+				"title": "Chiếc đồng hồ chậm lại",
+				"name": "Chiếc đồng hồ chậm lại",
+				"desc": "Phong bì nhẹ; chỉ có một tờ bên trong.",
+				"task_title": "Nấu ba món ăn vặt đường phố",
+				"task_body": "Ba bạn có thể ăn khi đang di chuyển. Gia vị được chào đón.\nXác nhận từ tab hộp thư thứ ba khi hoàn tất.",
+				"body": "Đồng hồ trên tường dừng một lần; ai đó đã đặt nó thành ba và nó bắt đầu lại.\nNó chạy chậm - chậm đến mức cả buổi chiều hầu như không cử động được đôi tay.\nCó người muốn ba món ăn vặt đường phố và nói không cần vội."
+			},
+			"africa_leave": {
+				"title": "Chậm",
+				"name": "Chậm",
+				"desc": "Một chút tro trên phong bì, như thể nó đến từ bên cạnh một ngọn lửa.",
+				"body": "Ngọn lửa vẫn còn cháy khi chúng tôi rời đi.\nCó một chiếc ghế đẩu nhỏ dưới gốc cây mà trước đây chưa từng có.\nTôi rửa bát và đặt nó lên bậu cửa sổ bên ngoài.\nXa xa, ngọn lửa trong gương chỉ còn là một chấm.\nTừ điểm dừng này, tôi học cách sống chậm lại."
+			},
+			"fast_food_arrive": {
+				"title": "Điểm dừng cuối cùng",
+				"name": "Điểm dừng cuối cùng",
+				"desc": "Giấy rất trắng, như thể được kéo ra từ khay máy in.",
+				"task_title": "Nấu một món ăn nhanh",
+				"task_body": "Bất kỳ một món ăn nhanh nào.\nXác nhận từ tab hộp thư thứ ba khi hoàn tất.",
+				"body": "Điểm dừng cuối cùng đông đúc hơn tôi tưởng.\nĐèn neon cháy từ hoàng hôn đến khuya, biến cửa sổ thành những khối màu.\nNgười dân ở đây đi bộ nhanh và ăn nhanh. Có người đứng cạnh xe tải, ăn xong, vò nát tờ giấy, ném vào thùng rác rồi bỏ đi.\nTôi đã xem rất lâu.\nTôi nghĩ đây là lần đầu tiên tôi thấy ai đó coi bữa ăn như một thứ gì đó để vượt qua."
+			},
+			"task_fast_food_arrive_1": {
+				"title": "Cửa hàng cuối cùng",
+				"name": "Cửa hàng cuối cùng",
+				"desc": "Logo mờ được in trên phong bì.",
+				"task_title": "Nấu hai món ăn nhanh",
+				"task_body": "Hai. Nhanh.\nXác nhận từ tab hộp thư thứ ba khi hoàn tất.",
+				"body": "Con đường này kết thúc ở đây.\nCửa hàng cuối cùng vẫn còn sáng đèn. Không có ai đằng sau quầy cả.\nLàm hai cái, trong khi đèn vẫn sáng."
+			},
+			"fast_food_note": {
+				"title": "Phiếu biên nhận",
+				"name": "Phiếu biên nhận",
+				"desc": "Một biên lai; ai đó đã viết hai từ ở mặt sau bằng bút.",
+				"body": "Một tờ giấy biên nhận in nhỏ, mấy chữ nhỏ xíu:\n\"Một. Tất cả.\"\n\"Uống. Với đá.\"\n\"Nhanh chóng.\"\nPhía dưới dòng cuối cùng, có người viết thêm hai chữ bằng bút mực:\n\"Cảm ơn bạn.\""
+			},
+			"task_fast_food_note_1": {
+				"title": "Ba trước khi đóng cửa",
+				"name": "Ba trước khi đóng cửa",
+				"desc": "Có vết dầu trên phong bì.",
+				"task_title": "Nấu ba món ăn nhẹ đường phố cuối cùng",
+				"task_body": "Còn ba cái nữa thì chúng ta đóng cửa.\nXác nhận từ tab hộp thư thứ ba khi hoàn tất.",
+				"body": "Đèn sắp tắt.\nCuối cùng có người lên tiếng từ phía sau quầy: ba cái nữa, ba cái cuối cùng.\nNấu ba món này và hôm nay thế là xong."
+			},
+			"fast_food_leave": {
+				"title": "Tất Cả Bỏ Đi",
+				"name": "Tất Cả Bỏ Đi",
+				"desc": "Một phong bì dày có nhiều tờ gấp bên trong.",
+				"task_title": "Giao hai đơn hàng",
+				"task_body": "Thực hiện hai đơn đặt hàng của khách hàng.",
+				"body": "Tôi không rời đi ngay lập tức.\nChiếc xe tải vẫn đứng yên tại chỗ trong khi đèn lần lượt tắt.\nTôi trải từng mảnh giấy từ con đường này ra và sắp xếp chúng theo thứ tự.\nSách bài tập bị rách mép, bìa sau bao thuốc lá, khăn ăn, một góc bị cháy, một tờ biên lai in sẵn.\nChữ viết tay đều khác nhau. Một số tôi nhận ra. Một số thì không.\nMột số trong số này tôi giữ không phải để viết chữ mà vì nét chữ trông như của một người tôi biết.\nTôi lại cất chúng vào cuốn sổ.\nSau đó chiếc xe tải di chuyển."
+			},
+			"on_the_road": {
+				"title": "Vẫn Trên Đường",
+				"name": "Vẫn Trên Đường",
+				"desc": "Một phong bì rất nhẹ chỉ có một trang bên trong.",
+				"body": "Chiếc xe tải không dừng lại.\nTrước bình minh, tôi cất bàn đi và mở cuốn sổ bên cửa sổ.\nBên ngoài là những nơi tôi đã đi qua: những ngọn đèn chợ sáng lần lượt bật sáng, hơi nước ngập đầu ngõ, than củi vẫn cháy rực giữa sa mạc.\nHọ xếp hàng và mờ dần phía sau.\nTôi không nhìn lại nữa. Xe tải tiếp tục đi."
+			},
+			"east_asia_noodle_stand": {
+				"title": "Quán bún ở ngõ sau",
+				"name": "Quán bún ở ngõ sau",
+				"desc": "Một ghi chú bằng bút chì, phía sau vẫn còn bột mì.",
+				"body": "Ông chủ quán nhắn tin: ba câu đó đến từ quán bún ở ngõ sau phía nam thị trấn.\nNgày hôm sau, người bán mì đẩy bệ đứng của mình lên cạnh xe tải. Hai cái bàn thấp và một cái nồi chưa bao giờ tắt.\nAnh ấy không nhìn lên. Anh ấy chỉ nói: 'Cô gái của tôi đã viết điều đó. Cô ấy thật kén chọn.”\nAnh thả mì vào nồi và thêm một muôi nước dùng.\n'Nước dùng của bạn rất ngon. Muốn học không?'\nHai chiếc chảo treo cạnh bếp - một chiếc để xào, một chiếc để luộc."
+			},
+			"task_east_asia_noodle_stand_1": {
+				"title": "Việc vặt của Stand",
+				"name": "Việc vặt của Stand",
+				"desc": "Một phiếu ghi thời gian và địa điểm, gọn gàng hơn phiếu trước.",
+				"task_title": "Mang theo hai bát bún trong",
+				"task_body": "Hai bát phở trong.\nBàn giao chúng từ tab hộp thư thứ ba khi sẵn sàng.",
+				"body": "Người bán mì nhắn: Ngày mai hãy chuẩn bị sẵn hai bát phở trong.\nAnh ấy nói anh ấy muốn xem liệu nước dùng của tôi có trụ được không.\n'Mì là mì. Nước dùng là nước dùng. Đừng làm xáo trộn chúng.”\nTôi đếm bột và trứng của mình. Đủ. Hai cái bát."
+			}
+		},
+		"merchant": {
+			"name": "Người bán tạp hóa",
+			"desc": "Người đàn ông với chiếc xe đẩy. Anh ấy nhớ những gì bạn cần"
+		},
+		"recipe": {
+			"roasted_eggplant": {
+				"name": "Cà tím nướng",
+				"desc": "Nướng cà tím mềm, tách nó ra, rắc gia vị và đậu nành lên trên rồi nướng cho đến khi bóng."
+			},
+			"eggplant_parmesan": {
+				"name": "Cà tím Parmesan",
+				"desc": "Chiên các lát cà tím, xếp lớp với cà chua và phô mai rồi nướng cho đến khi sủi bọt."
+			},
+			"cassava_fries": {
+				"name": "Khoai mì chiên",
+				"desc": "Luộc chín củ sắn, để ráo nước, chiên vàng và muối."
+			},
+			"cassava_cake": {
+				"name": "Bánh Sắn",
+				"desc": "Nghiền sắn thành bột với nước cốt dừa và đường, sau đó hấp cho đến khi chín."
+			},
+			"americano": {
+				"name": "Pha loãng thành Americano",
+				"desc": "Pha loãng: espresso cộng với một lần đổ nước. Khó có thể sai."
+			},
+			"apple_crumble": {
+				"name": "táo vụn",
+				"desc": "Táo bên dưới, bột bơ vụn, nướng vàng."
+			},
+			"apple_pie": {
+				"name": "bánh táo",
+				"desc": "Làm mềm táo với đường, bọc bột, nướng cho đến khi vàng."
+			},
+			"arancini": {
+				"name": "arancini",
+				"desc": "Bọc cơm nguội quanh phô mai, tạo hình, chiên vàng."
+			},
+			"asado": {
+				"name": "asado",
+				"desc": "Dầu và muối cả miếng, nướng chậm cho đến khi cháy thành than và có màu hồng."
+			},
+			"avocado_toast": {
+				"name": "Bánh mì nướng chay",
+				"desc": "Nướng lát bánh, nghiền nát rau xanh, phết dầu."
+			},
+			"baba_ganoush": {
+				"name": "Baba Ganoush",
+				"desc": "Rang cà tím cho đến khi vỏ bong ra, múc thịt, nghiền với dầu và gia vị."
+			},
+			"bagel": {
+				"name": "bánh mì tròn",
+				"desc": "Tạo hình các vòng, đun sôi trong thời gian ngắn rồi nướng."
+			},
+			"bagel_sandwich": {
+				"name": "bánh mì tròn",
+				"desc": "Tách bánh mì tròn, phết phô mai kem, nhét rau xanh vào."
+			},
+			"baklava": {
+				"name": "Baklava",
+				"desc": "Lớp bánh ngọt với các loại hạt, nướng vàng, sau đó đổ xi-rô."
+			},
+			"banana_rice": {
+				"name": "Cơm chuối",
+				"desc": "Nấu cơm với nước cốt dừa, ăn kèm chuối chín."
+			},
+			"banh_mi": {
+				"name": "Bánh mì",
+				"desc": "Bánh mì baguette giòn, nhân thịt và rau xanh, nước sốt."
+			},
+			"batter": {
+				"name": "Bột",
+				"desc": "Bột, nước, trứng vào nhào bột."
+			},
+			"beef_bourguignon": {
+				"name": "Thịt bò om chậm",
+				"desc": "Nâu thịt bò, rắc bột mì, thêm rau và gia vị vào, hầm nhẹ."
+			},
+			"beef_wellington": {
+				"name": "Thịt Bò Wellington",
+				"desc": "Áp chảo thịt, phủ nấm, bọc bột, quét trứng, nướng."
+			},
+			"bibimbap": {
+				"name": "bibimbap",
+				"desc": "Cơm dưới rau xanh, thịt và trứng chiên; trộn với tương ớt."
+			},
+			"biryani": {
+				"name": "Biryani",
+				"desc": "Xếp cơm và thịt, rải các loại hạt, hấp cho đến khi ngấm gia vị."
+			},
+			"blt": {
+				"name": "BLT",
+				"desc": "Thịt xông khói, rau diếp, cà chua xếp trong bánh mì nướng."
+			},
+			"boerewors": {
+				"name": "Boerewors",
+				"desc": "Nêm thịt băm, nhồi, xào cho đến khi bắt được da."
+			},
+			"boiled_egg": {
+				"name": "Trứng luộc",
+				"desc": "Trứng ngâm trong nước lạnh, tính từ lúc sôi."
+			},
+			"braised_egg": {
+				"name": "Trứng kho",
+				"desc": "Luộc trứng, đập vỏ, đun nhỏ lửa với đậu nành và gia vị."
+			},
+			"bread": {
+				"name": "nướng bánh mì",
+				"desc": "Sau khi nướng, bột sẽ tự nâng lên từ bên trong."
+			},
+			"broth": {
+				"name": "Nước luộc",
+				"desc": "Rau và thịt cùng nhau; hương vị vẫn còn trong nước."
+			},
+			"brownie": {
+				"name": "bánh hạnh nhân",
+				"desc": "Nướng: bơ và đường tan chảy, trộn trứng, bột mì và sô cô la vào, nướng thành lớp vỏ."
+			},
+			"buffalo_wings": {
+				"name": "Cánh Trâu",
+				"desc": "Chiên: gà chiên giòn, rưới nước sốt nóng và bơ."
+			},
+			"bun": {
+				"name": "Bún hấp",
+				"desc": "Bột nổi bọc quanh thịt lợn, khâu lại, hấp cho đến khi da chuyển sang màu trong."
+			},
+			"burrito": {
+				"name": "bánh burrito",
+				"desc": "Đổ đầy thịt, rau xanh và phô mai vào bánh ngô, cuộn lại rồi nướng."
+			},
+			"butter_rice": {
+				"name": "Cơm bơ",
+				"desc": "Trộn: cơm nóng, một ít bơ, nước tương xuống một bên, trộn đều."
+			},
+			"butter_toast": {
+				"name": "bánh mì nướng bơ",
+				"desc": "Bánh mì nướng bơ nóng."
+			},
+			"caesar_salad": {
+				"name": "Salad Caesar",
+				"desc": "Xé lá, trộn nước sốt, rải các khối bánh mì và phô mai."
+			},
+			"cake": {
+				"name": "Nướng bánh",
+				"desc": "Đổ bột vào hộp thiếc và để nó nổi lên."
+			},
+			"candied_fruit": {
+				"name": "Kẹo trái cây",
+				"desc": "Xiên hoa quả, nhúng đường nóng vào, để chín."
+			},
+			"cappuccino": {
+				"hint": "Tên của nó đội một chiếc mũ nhỏ; uống nó giống như một đám mây ngọt ngào.",
+				"name": "Sữa hấp cho Cappuccino",
+				"desc": "Bọt: espresso đầu tiên, hai phần sữa hấp đặc, bọt nổi lên trên."
+			},
+			"caprese": {
+				"name": "Caprese",
+				"desc": "Cắt lát cà chua và phô mai, xếp chồng lên nhau, thêm gia vị."
+			},
+			"caramel_macchiato": {
+				"name": "Caramel Macchiato",
+				"desc": "Xi-rô đựng trong ly, sữa và cà phê espresso phủ lên trên, một vệt caramen ở trên."
+			},
+			"carrot_cake": {
+				"name": "Bánh cà rốt",
+				"desc": "Gấp cà rốt bào sợi vào bột, nướng cho đến khi xiên sạch."
+			},
+			"cereal": {
+				"name": "Ngũ cốc",
+				"desc": "To khô, yên tĩnh trong sữa."
+			},
+			"ceviche": {
+				"name": "Ceviche",
+				"desc": "Ngâm các lát cá trong nước ép trái cây cho đến khi đục, nêm gia vị."
+			},
+			"chai": {
+				"name": "Chai",
+				"desc": "Hai phần sữa với lá trà, gia vị và đường, đun sôi sẫm màu."
+			},
+			"cheese_stick": {
+				"name": "Que phô mai",
+				"desc": "Phô mai trong bột, cho vào dầu."
+			},
+			"cheese_toast": {
+				"name": "bánh mì nướng phô mai",
+				"desc": "Nướng dưới phô mai cho đến khi tan chảy."
+			},
+			"cheeseburger": {
+				"name": "bánh mì kẹp phô mai",
+				"desc": "Đặt một lát phô mai lên miếng chả gần chín rồi đậy lại cho tan chảy."
+			},
+			"cheesecake": {
+				"name": "bánh phô mai",
+				"desc": "Gấp kem phô mai và đường qua bột, đổ vào khuôn, nướng cho đến khi mép se lại."
+			},
+			"chicken_curry": {
+				"name": "cà ri gà",
+				"desc": "Món hầm: nướng gia vị, cho gà vào, sữa đun sôi đặc."
+			},
+			"chicken_wrap": {
+				"name": "Bọc gà",
+				"desc": "Chiên và cắt thịt, cuộn với rau xanh trong bánh mì dẹt."
+			},
+			"cinnamon_roll": {
+				"name": "Bánh quế",
+				"desc": "Cán bột, phết bơ, đường và quế, cắt lát và nướng."
+			},
+			"clear_noodle_soup": {
+				"name": "Bún trong",
+				"desc": "Bát bún, nước đổ trong vắt."
+			},
+			"club_sandwich": {
+				"name": "Câu lạc bộ Sandwich",
+				"desc": "Nướng bánh mì, xếp thịt, trứng và rau xanh, cắt thành hình tam giác."
+			},
+			"coconut_dessert": {
+				"name": "tráng miệng dừa",
+				"desc": "Giảm nước cốt dừa với đường, thêm hoa quả, để nguội."
+			},
+			"cold_brew": {
+				"name": "bia lạnh",
+				"desc": "Bã cà phê ngâm trong nước lạnh trong tủ lạnh suốt buổi chiều trước khi tỏa hương.",
+				"hint": "Nước lạnh, bã cà phê và tủ lạnh; để nó yên."
+			},
+			"con_panna": {
+				"name": "Con Panna",
+				"desc": "Một shot nhỏ dưới đám mây kem, một tấm chăn cho một thứ gì đó cay đắng."
+			},
+			"cookie": {
+				"name": "Nướng bánh quy",
+				"desc": "Trải thành từng vòng mỏng: các mép có màu nâu trước khi phần giữa kịp thời."
+			},
+			"corn_soup": {
+				"name": "Súp ngô",
+				"desc": "Ngô và sữa trộn đều rồi đun sôi."
+			},
+			"corn_tortilla": {
+				"name": "Bánh ngô nướng",
+				"desc": "Bánh mì nướng: ngô và bột mì thành khối, cán mỏng, nướng cho đến khi phồng rộp.",
+				"hint": "Mỏng như tờ giấy và có thể bọc được hầu hết mọi thứ."
+			},
+			"couscous": {
+				"name": "couscous",
+				"desc": "Chà bột vào ngũ cốc, hấp, trộn với rau và gia vị."
+			},
+			"cream": {
+				"name": "Kem tươi",
+				"desc": "Whip: sữa nghỉ, phần trên đặc tách béo và đánh bông đến chóp."
+			},
+			"cream_cheese": {
+				"name": "kem phô mai",
+				"desc": "Whip: sữa và bơ đánh bông đủ dày để dàn đều."
+			},
+			"cream_puff": {
+				"name": "Kem Puff",
+				"desc": "Vỏ phồng lên; khi nguội, kem sẽ chảy từ dưới lên."
+			},
+			"creamed_spinach": {
+				"name": "rau bina kem",
+				"desc": "Chần và ép rau bina, cắt nhỏ, trộn với nước sốt trắng và bơ."
+			},
+			"creamy_mushroom_chicken": {
+				"name": "Gà nấm kem",
+				"desc": "Chiên gà, xào nấm, thêm nước sốt trắng và giảm bớt."
+			},
+			"creme_brulee": {
+				"name": "Kem Brulee",
+				"desc": "Nướng cho đến khi chín, rắc đường, đốt thành vỏ mỏng.",
+				"hint": "Trứng và kem trước; đường ở trên cùng ở cuối."
+			},
+			"croissant": {
+				"name": "Nướng bánh sừng bò",
+				"desc": "Bột được gấp lại trên bơ một vài lần và các lớp bột sẽ ra khỏi lò."
+			},
+			"curry_puff": {
+				"name": "bánh cà ri",
+				"desc": "Bọc nhân cà ri trong bánh ngọt, nướng cho đến khi bong ra."
+			},
+			"curry_rice": {
+				"name": "Cơm cà ri",
+				"desc": "Chiên thịt và rau, thêm gia vị và nước, làm đặc, rưới lên cơm."
+			},
+			"dal": {
+				"name": "Dal",
+				"desc": "Luộc đậu cho đến khi chín thì nêm gia vị."
+			},
+			"dumpling": {
+				"name": "bánh bao",
+				"desc": "Hấp: bột cán mỏng, nhân thịt lợn, một nhúm hành lá, hấp chín."
+			},
+			"egg_drop_soup": {
+				"name": "Súp trứng thả",
+				"desc": "Một dòng trứng mỏng vào nước sôi."
+			},
+			"egg_pancake": {
+				"name": "bánh trứng",
+				"desc": "Đánh trứng và bột mì, đổ mỏng vào chảo, chiên cả hai mặt."
+			},
+			"egg_roll": {
+				"name": "trứng cuộn",
+				"desc": "Trải mỏng, cán từng lớp."
+			},
+			"egg_salad": {
+				"name": "Salad trứng",
+				"desc": "Trứng nghiền làm nước sốt."
+			},
+			"egg_salad_sandwich": {
+				"name": "Sandwich Salad trứng",
+				"desc": "Trứng nghiền và nước sốt, làm bánh mì nướng."
+			},
+			"egg_tart": {
+				"name": "bánh trứng",
+				"desc": "Nướng: bột ép vào cốc, đổ sữa trứng vào, nướng chín tới da."
+			},
+			"egg_toast": {
+				"name": "bánh mì nướng trứng",
+				"desc": "Bánh mì nướng phết bơ, trứng chiên bên trên."
+			},
+			"espresso": {
+				"name": "Kéo một tách Espresso",
+				"desc": "Kéo: nước nóng chảy qua mặt đất, một cốc nhỏ trong 20 giây."
+			},
+			"falafel": {
+				"name": "Falafel",
+				"desc": "Ngâm và xay đậu, trộn với bột mì, chiên thành từng viên."
+			},
+			"farinata": {
+				"name": "Farinata",
+				"desc": "Đánh bột và nước mỏng, đổ vào khay, phết dầu rồi nướng."
+			},
+			"feijoada": {
+				"name": "Feijoada",
+				"desc": "Nấu chậm thịt và đậu với gia vị cho đến khi nước dùng đặc lại."
+			},
+			"fish_and_chips": {
+				"name": "Cá & Khoai Tây Chiên",
+				"desc": "Phủ hải sản lên, chiên cho đến khi phồng lên, dùng kèm với khoai tây chiên."
+			},
+			"flat_white": {
+				"name": "Trắng phẳng",
+				"desc": "Ít sữa nên cà phê bước tới.",
+				"hint": "Hai mũi tiêm và một phần sữa; đừng đánh sữa quá cứng."
+			},
+			"focaccia": {
+				"name": "Focaccia",
+				"desc": "Trải bột, phết bột, dầu và gia vị rồi nướng."
+			},
+			"french_omelette": {
+				"name": "Trứng tráng kiểu Pháp",
+				"desc": "Đánh trứng, làm tan bơ, cuộn thành cuộn trên lửa nhỏ."
+			},
+			"french_onion_soup": {
+				"name": "Súp hành kiểu Pháp",
+				"desc": "Caramel hành tây cắt lát, thêm nước dùng, phủ bánh mì và phô mai lên trên, nướng."
+			},
+			"french_toast": {
+				"name": "bánh mì nướng kiểu pháp",
+				"desc": "Ngâm trong trứng và sữa, chiên cả hai mặt."
+			},
+			"fresh_milk": {
+				"name": "Sữa tươi",
+				"desc": "Sữa vào ly, để nguội."
+			},
+			"fried_chicken": {
+				"name": "gà rán",
+				"desc": "Bọc thịt lại, chiên vàng, vớt ra để ráo nước."
+			},
+			"fried_dough": {
+				"name": "bột chiên",
+				"desc": "Để bột nổi lên, xé thành từng miếng, chiên vàng."
+			},
+			"fried_egg": {
+				"name": "Chiên một quả trứng",
+				"desc": "Dầu lung linh, trứng đi vào, mép lên tiếng trước."
+			},
+			"fried_noodles": {
+				"name": "mì xào",
+				"desc": "Luộc mì một nửa rồi xào chín với rau xanh."
+			},
+			"fried_rice": {
+				"name": "cơm chiên",
+				"desc": "Gạo một ngày là tốt nhất; đánh trứng trước, sau đó ném tất cả."
+			},
+			"fries": {
+				"name": "khoai tây chiên",
+				"desc": "Cắt khoai tây, ngâm tinh bột, chiên cho đến khi các cạnh có màu nâu."
+			},
+			"fruit_salad": {
+				"name": "Salad trái cây",
+				"desc": "Cắt trái cây thành khối, cho kem vào, để nguội một lúc."
+			},
+			"fufu": {
+				"name": "Fufu",
+				"desc": "Luộc sắn, giã nóng thành từng viên."
+			},
+			"garlic_toast": {
+				"name": "bánh mì nướng tỏi",
+				"desc": "Bơ và tỏi nghiền nát, phết và nướng."
+			},
+			"gazpacho": {
+				"name": "Gazpacho",
+				"desc": "Trộn cà chua với dầu, sau đó để nguội."
+			},
+			"greek_salad": {
+				"name": "Salad Hy Lạp",
+				"desc": "Cắt nhỏ rau, phủ phô mai, dầu và gia vị."
+			},
+			"green_curry": {
+				"name": "cà ri xanh",
+				"desc": "Đun sôi nước cốt dừa, thêm gia vị và thịt vào, đun nhỏ lửa cho đến khi đặc lại."
+			},
+			"green_papaya_salad": {
+				"name": "Salad rau củ cắt nhỏ",
+				"desc": "Cắt nhỏ rau xanh, giã nhuyễn với gia vị, rải hạt."
+			},
+			"grilled_cheese": {
+				"name": "phô mai nướng",
+				"desc": "Bánh mì nướng và phô mai, phết bơ, chiên vàng cả hai mặt."
+			},
+			"grind_bean": {
+				"name": "xay cà phê",
+				"desc": "Tiếng máy xay đến trước mùi thơm."
+			},
+			"groundnut_stew": {
+				"name": "Lạc hầm",
+				"desc": "Hầm thịt và rau xanh mềm, sau đó cho hạt vào trộn đều."
+			},
+			"ham_cheese_sandwich": {
+				"name": "Sandwich Thịt nguội & Phô mai",
+				"desc": "Giăm bông và phô mai kẹp giữa bánh mì nướng."
+			},
+			"hamburger": {
+				"name": "bánh mì kẹp thịt",
+				"desc": "Bún chẻ, chả chiên, một lá xà lách rồi ép xuống."
+			},
+			"hash_brown": {
+				"name": "Màu nâu băm",
+				"desc": "Những mảnh vụn khô được ép thành bánh và chín vàng."
+			},
+			"hash_browns": {
+				"name": "Màu nâu băm",
+				"desc": "Khoai tây gọt vỏ, vắt khô, ép thành bánh rồi chiên vàng 2 mặt."
+			},
+			"hot_cocoa": {
+				"name": "Cacao nóng",
+				"desc": "Sữa, cacao và đường đun trên lửa nhỏ, khuấy đều cho đến khi sẫm màu."
+			},
+			"hot_dog": {
+				"name": "xúc xích",
+				"desc": "Chiên xúc xích cho đến khi vỏ tách ra, cuộn thành cuộn, thêm cà chua."
+			},
+			"hummus": {
+				"name": "hummus",
+				"desc": "Luộc đậu mềm, trộn với gia vị, cuối cùng là dầu."
+			},
+			"iced_americano": {
+				"name": "Americano đá",
+				"desc": "Pha loãng: cà phê espresso và nước lạnh, hai viên đá, ly sẽ nguội."
+			},
+			"iced_latte": {
+				"name": "Latte đá",
+				"desc": "Làm lạnh: sữa nguội trước, espresso rót tràn, ly mờ dần."
+			},
+			"injera": {
+				"name": "vết thương",
+				"desc": "Lên men: bột bột mỏng được ủ cho đến khi sủi bọt, dàn mỏng và nướng."
+			},
+			"jam": {
+				"name": "Mứt",
+				"desc": "Đun nhỏ lửa: trái cây và đường cho đến mức mứt phủ bằng thìa, còn lại một nửa nước."
+			},
+			"jam_toast": {
+				"name": "bánh mì nướng mứt",
+				"desc": "Nướng miếng bánh và phết mứt khi còn nóng."
+			},
+			"jollof": {
+				"name": "Gạo Jollof",
+				"desc": "Chiên cà chua và gia vị, thêm cơm và thịt vào, hấp chín."
+			},
+			"juice": {
+				"name": "Nước ép",
+				"desc": "Press: trái cây ép và lọc, uống ngay."
+			},
+			"kebab": {
+				"name": "Kebab",
+				"desc": "Ướp thịt thành từng miếng vuông, xiên, nướng cho đến khi dính mép."
+			},
+			"kebab_wrap": {
+				"name": "Kebab gói",
+				"desc": "Xếp bánh mì ra, thêm thịt và rau xanh, nước sốt, cuộn chặt lại."
+			},
+			"khao_soi": {
+				"name": "Khao Soi",
+				"desc": "Đun sôi cà ri dừa, thêm nước phở và thịt vào, phủ lên trên là sợi mì giòn."
+			},
+			"kimchi_soup": {
+				"name": "Canh kim chi",
+				"desc": "Chiên dưa chua và thịt, thêm nước, đun nhỏ lửa cho đến khi đậm đà."
+			},
+			"lasagna": {
+				"name": "Lasagna",
+				"desc": "Xếp mì ống, nước sốt thịt và nước sốt trắng vào, nướng cho đến khi sủi bọt."
+			},
+			"latte": {
+				"hint": "Một số người nói rằng khi sữa hòa vào cà phê espresso, vị đắng sẽ giảm đi một chút.",
+				"name": "Thêm sữa cho Latte",
+				"desc": "Hấp: sữa hấp đặc, rót vào espresso để đẩy lùi vị đắng."
+			},
+			"lemonade": {
+				"name": "Nước chanh",
+				"desc": "Vắt trái cây, thêm nước đường, để nguội."
+			},
+			"mac_cheese": {
+				"name": "Mac và phô mai",
+				"desc": "Luộc mì ống, trộn với phô mai và sữa, nướng cho đến khi chín vàng."
+			},
+			"macaron": {
+				"name": "Macaron",
+				"desc": "Hạt xay với đường và lòng trắng trứng, nặn nhỏ và nướng chín rồi cho nhân vào."
+			},
+			"macchiato": {
+				"name": "Macchiato",
+				"desc": "Chấm: một thìa nhỏ kem đánh bông trên espresso. Đừng khuấy động."
+			},
+			"make_dough": {
+				"name": "Làm bột",
+				"desc": "Bột và sữa cùng nhau; bàn tay của bạn biết nhào nặn bao lâu trước khi đầu bạn làm được."
+			},
+			"mango_lassi": {
+				"name": "Lassi xoài",
+				"desc": "Xay nhuyễn trái cây, sữa chua và đường."
+			},
+			"mango_sticky_rice": {
+				"name": "Xôi xoài",
+				"desc": "Hấp cơm, khuấy qua nước cốt dừa, ăn kèm trái cây thái lát."
+			},
+			"mapo_tofu": {
+				"name": "Đậu phụ Mapo",
+				"desc": "Chiên thịt băm, thêm ớt và nước tương, cho vào đậu phụ."
+			},
+			"mashed_potato": {
+				"name": "khoai tây nghiền",
+				"desc": "Luộc và nghiền nát khoai tây, thêm sữa và bơ vào."
+			},
+			"meat_sauce": {
+				"name": "Nấu nước sốt thịt",
+				"desc": "Làm chín thịt trước, sau đó cho rau và nước vào."
+			},
+			"meat_sauce_rice": {
+				"name": "Cơm sốt thịt",
+				"desc": "Nước sốt thịt giảm cho đến khi đặc lại, rưới lên cơm nóng; các cạnh bị sụt giảm.",
+				"hint": "Giảm nước sốt thịt cho đến khi đặc lại rồi rưới lên cơm."
+			},
+			"meat_soup": {
+				"name": "Súp thịt",
+				"desc": "Thịt thái mỏng, trụng trong nước dùng cho đến khi có màu đậm."
+			},
+			"dark_chocolate": {
+				"name": "Sôcôla đen",
+				"desc": "Đun chảy: ca cao, bơ và đường thành hỗn hợp sệt, ép và để nguội."
+			},
+			"milk_chocolate": {
+				"name": "Sôcôla sữa",
+				"desc": "Đun chảy: cacao, sữa tươi, bơ và đường qua nước, đổ vào và để nguội."
+			},
+			"lava_cake": {
+				"name": "Bánh sô cô la nóng chảy",
+				"desc": "Nướng: sô cô la đen, bơ, trứng và đường, cho đến khi vẫn chảy ở giữa."
+			},
+			"milk_cereal": {
+				"name": "Đổ sữa lên ngũ cốc",
+				"desc": "Đổ: ngũ cốc vào tô, đổ sữa lạnh lên trên, để cho mềm."
+			},
+			"milk_tea": {
+				"name": "Trà Sữa",
+				"desc": "Đun sôi sữa, lá trà và đường rồi tắt bếp, để nguội."
+			},
+			"milkshake": {
+				"name": "sữa lắc",
+				"desc": "Đánh sữa, kem và đường cho đến khi phủ kín ly."
+			},
+			"mint_tea": {
+				"name": "Trà bạc hà",
+				"desc": "Đun sôi nước với gia vị và đường, đổ cao vào ly."
+			},
+			"mocha": {
+				"name": "mocha",
+				"desc": "Khuấy: espresso, sữa và sô cô la đen khuấy đều cho đến khi màu đậm hơn."
+			},
+			"mooncake": {
+				"name": "bánh trung thu",
+				"desc": "Ấn bột vào khuôn, quét trứng, nướng."
+			},
+			"muffin": {
+				"name": "bánh nướng xốp",
+				"desc": "Gấp sữa, bơ và đường vào bột, đổ đầy cốc, nướng cho đến khi hình vòm và nứt."
+			},
+			"mushroom_risotto": {
+				"name": "Risotto nấm",
+				"desc": "Xào cơm với nấm và sốt trắng, cuối cùng là phô mai."
+			},
+			"mushroom_soup": {
+				"name": "Súp nấm",
+				"desc": "Nấm nâu, sốt trắng và sữa."
+			},
+			"naan": {
+				"name": "Naan",
+				"desc": "Cán bột và nướng nóng cho đến khi bột chín."
+			},
+			"nachos": {
+				"name": "Nachos",
+				"desc": "Trải khoai tây chiên với phô mai và gia vị, nướng cho đến khi tan chảy."
+			},
+			"nasi_goreng": {
+				"name": "Nasi Goreng",
+				"desc": "Cơm nguội xào với thịt và gia vị, bên trên là một quả trứng chiên."
+			},
+			"nasi_lemak": {
+				"name": "Nasi Lemak",
+				"desc": "Gạo ngâm, hấp với nước cốt dừa, dùng kèm ớt."
+			},
+			"noodle": {
+				"name": "Mì cuộn",
+				"desc": "Cán bột ra, gấp, cắt và lắc đều."
+			},
+			"noodle_soup": {
+				"name": "bún nước lèo",
+				"desc": "Bún luộc riêng, nước dùng riêng; kết hợp ở cuối để không có gì mềm mại.",
+				"hint": "Tự luộc mì; giữ nước dùng riêng biệt."
+			},
+			"onigiri": {
+				"name": "Cơm nắm",
+				"desc": "Làm ướt tay, vo cơm thành hình tam giác, giấu một ít nhân vào bên trong."
+			},
+			"onion_rings": {
+				"name": "Nhẫn hành tây",
+				"desc": "Cắt hành tây thành từng khoanh, tẩm bột, chiên cho đến khi nổi lên."
+			},
+			"onion_soup": {
+				"name": "Súp hành tây",
+				"desc": "Xào hành tây thái lát mềm, cho nước luộc vào, đun nhỏ lửa cho đến khi chín."
+			},
+			"onion_tart": {
+				"name": "bánh tart hành tây",
+				"desc": "Nhấn bột vào hộp thiếc, phủ hành tây mềm và phô mai lên trên, nướng."
+			},
+			"oyakodon": {
+				"name": "Oyakodon",
+				"desc": "Đun sôi thịt và hành lá, đổ trứng lên trên, tráng đều trên cơm."
+			},
+			"pad_thai": {
+				"name": "Pad Thái",
+				"desc": "Ngâm mì rồi xào chín với tôm, trứng và rau xanh."
+			},
+			"paella": {
+				"name": "cơm thập cẩm",
+				"desc": "Trải cơm và hải sản vào chảo, nêm gia vị, đun nhỏ lửa cho đến khi khô."
+			},
+			"palak_paneer": {
+				"name": "Palak Paneer",
+				"desc": "Đun sôi và trộn các loại rau xanh, nêm gia vị, xếp thành các khối phô mai."
+			},
+			"pancake": {
+				"name": "bánh xèo",
+				"desc": "Múc bột vào chảo, lật mặt khi bong bóng nổi lên, vàng cả hai mặt."
+			},
+			"pasta_tomato": {
+				"name": "Pasta cà chua",
+				"desc": "Luộc mì ống, cho qua cà chua đã mềm."
+			},
+			"peanut_butter": {
+				"name": "Bơ đậu phộng",
+				"desc": "Đậu phộng xay, dầu tự bốc lên."
+			},
+			"pbj_sandwich": {
+				"name": "Tạo một PB&J",
+				"desc": "Trải: bơ đậu phộng trên một lát, mứt trên miếng kia, ấn chúng lại với nhau."
+			},
+			"persian_stew": {
+				"name": "Món hầm Ba Tư",
+				"desc": "Hầm thịt và đậu, thêm rau xanh và gia vị vào gần cuối."
+			},
+			"peruvian_chicken": {
+				"name": "Gà Peru",
+				"desc": "Ướp với gia vị và nước ép trái cây, nướng cho đến khi vỏ giòn."
+			},
+			"pho": {
+				"name": "Phở",
+				"desc": "Đun sôi nước luộc mì, đổ mì lên trên, cho thịt và rau xanh lên trên."
+			},
+			"pilaf": {
+				"name": "cơm thập cẩm",
+				"desc": "Ngâm gạo, xào với thịt và gia vị, hấp với nước."
+			},
+			"pita": {
+				"name": "bánh pita",
+				"desc": "Nướng: bột cán tròn, nướng nóng cho đến khi nở phồng."
+			},
+			"pizza": {
+				"name": "pizza",
+				"desc": "Cán bột, phết cà chua, rải phô mai, nướng cho đến khi phồng rộp ở mép."
+			},
+			"poached_egg": {
+				"name": "Trứng luộc",
+				"desc": "Luộc: nước vừa sôi, một chút muối, trứng lọt vào."
+			},
+			"popcorn": {
+				"name": "bỏng ngô",
+				"desc": "Ngô cho vào nồi nóng, đậy nắp lại cho đến khi bắp ngô mỏng đi."
+			},
+			"potato_salad": {
+				"name": "Salad khoai tây",
+				"desc": "Khoai tây và trứng nghiền thành nước sốt."
+			},
+			"pour_over": {
+				"name": "Nhỏ giọt từ từ",
+				"desc": "Nước bao quanh khu đất và bạn phải để nó tự chảy qua."
+			},
+			"poutine": {
+				"name": "poutine",
+				"desc": "Chiên khoai tây giòn, rưới nước sốt và nước sốt trắng, thêm thịt vào."
+			},
+			"pudding": {
+				"hint": "Lạnh lẽo; thìa chìm vào trong. Bạn phải để lò nóng qua.",
+				"name": "Nướng bánh pudding bằng hơi nước",
+				"desc": "Trứng và sữa cùng nhau được nướng trong nồi cách thủy - đó là lý do tại sao nó run rẩy."
+			},
+			"raita": {
+				"name": "Raita",
+				"desc": "Gấp rau xắt nhỏ vào sữa chua, rắc gia vị."
+			},
+			"ramen": {
+				"name": "Ramen",
+				"desc": "Đun sôi nước phở trong, cho thịt lợn và trứng lên trên, cuối cùng là hành lá."
+			},
+			"ravioli": {
+				"name": "Ravioli",
+				"desc": "Cán bột mỏng, cho nhân vào, gấp lại và đậy kín rồi đun sôi."
+			},
+			"red_curry": {
+				"name": "Cà ri đỏ",
+				"desc": "Đun sôi nước cốt dừa và gia vị, cho thịt vào nấu cho đến khi dầu tách ra."
+			},
+			"ribs": {
+				"name": "sườn",
+				"desc": "Xoa với gia vị, nướng ở nhiệt độ thấp, phủ đường khi hoàn thành."
+			},
+			"rice_cake": {
+				"name": "Bánh gạo",
+				"desc": "Đổ gạo vào khuôn, hấp cho đến khi dùng đũa nhấc cả lên."
+			},
+			"roast_bean": {
+				"name": "Hạt cà phê rang",
+				"desc": "Đậu xanh cho vào chảo, đun lửa nhỏ, đảo đều cho đến khi màu đậm."
+			},
+			"roast_chicken": {
+				"name": "gà nướng",
+				"desc": "Rang: tẩm gia vị và bơ vào, rang cho đến khi vỏ vàng và nước trong."
+			},
+			"roasted_corn": {
+				"name": "ngô nướng",
+				"desc": "Nướng ngô cho đến khi chín, phết bơ và gia vị."
+			},
+			"roasted_vegetables": {
+				"name": "Rau nướng",
+				"desc": "Trộn rau củ đã cắt với dầu và gia vị, nướng cho đến khi các cạnh dính lại."
+			},
+			"rose_dessert": {
+				"name": "Món tráng miệng hoa hồng",
+				"desc": "Làm đặc sữa và đường, đổ vào khuôn, rải hạt."
+			},
+			"salad_dressing": {
+				"name": "Nước sốt sa-lát",
+				"desc": "Trứng, dầu, gia vị đánh đều."
+			},
+			"samosa": {
+				"name": "Samosa",
+				"desc": "Bọc nhân khoai tây trong bánh ngọt, gấp thành hình tam giác, chiên."
+			},
+			"sandwich": {
+				"name": "Sandwich",
+				"desc": "Hai lát, trứng và rau xanh ở giữa, ép và cắt."
+			},
+			"satay": {
+				"name": "satay",
+				"desc": "Ướp và xiên thịt, nướng, dùng kèm với nước sốt hạt."
+			},
+			"sausage": {
+				"name": "xúc xích",
+				"desc": "Thịt xay, ướp muối và gia vị rồi cho vào vỏ."
+			},
+			"sausage_sauerkraut": {
+				"name": "Xúc xích & dưa bắp cải",
+				"desc": "Bắp cải cắt nhỏ, xát muối và gia vị rồi đun với xúc xích cho đến khi có vị chua và mặn."
+			},
+			"scallion_noodle": {
+				"name": "Bún hành lá",
+				"desc": "Hành lá xào sơ, rưới dầu vào mì."
+			},
+			"scone": {
+				"name": "bánh nướng",
+				"desc": "Nướng cho đến khi nó tách ra theo đường may.",
+				"hint": "Xoa bơ vào bột nhưng đừng xoa lâu."
+			},
+			"scrambled_egg": {
+				"name": "Trứng bác",
+				"desc": "Trứng vào bơ, đẩy vào sữa đông mềm."
+			},
+			"seafood_pancake": {
+				"name": "Bánh xèo hải sản",
+				"desc": "Gấp hải sản vào bột, chiên phẳng cho đến khi đều hai mặt."
+			},
+			"sesame_bun": {
+				"name": "Bún mè",
+				"desc": "Cán bột với dầu, dẹt, rắc vừng lên trên rồi nướng."
+			},
+			"shawarma": {
+				"name": "Shawarma",
+				"desc": "Làm ấm bánh mì, xếp lớp thịt và rau xanh, nước sốt, cuộn chặt lại."
+			},
+			"shepherd_pie": {
+				"name": "Bánh Shepherd",
+				"desc": "Chiên thịt và rau thành nhân, nghiền nhuyễn lên trên, nướng cho đến khi chín vàng."
+			},
+			"shumai": {
+				"name": "Shumai",
+				"desc": "Hấp: giấy gói mỏng có nếp gấp, để hở phía trên để lộ nhân.",
+				"hint": "Để mở lớp bọc; phần điền sẽ hiển thị ở trên."
+			},
+			"soda": {
+				"name": "nước ngọt",
+				"desc": "Đổ: nước trái cây ngọt ướp lạnh, đổ đá, sủi bọt."
+			},
+			"souffle": {
+				"name": "Soufflé",
+				"desc": "Gấp sữa trứng lòng đỏ vào lòng trắng đã đánh bông, nướng trong khuôn ramekin cho đến khi nổi lên."
+			},
+			"soy_rice": {
+				"name": "Cơm nước tương",
+				"desc": "Quăng: chỉ cơm nóng và nước tương, không bơ, đậu lọt qua."
+			},
+			"soy_sauce": {
+				"name": "nước tương",
+				"desc": "Đậu và gia vị đun nhỏ lửa."
+			},
+			"sparkling_water": {
+				"name": "nước có ga",
+				"desc": "Làm lạnh nước, thêm nước ép trái cây."
+			},
+			"spring_roll": {
+				"name": "chả giò",
+				"desc": "Bọc chặt nhân lại, chiên vàng."
+			},
+			"steak": {
+				"name": "Bít tết",
+				"desc": "Chiên cả hai mặt, thêm bơ và gia vị, để yên trước khi cắt."
+			},
+			"steamed_egg": {
+				"name": "Trứng hấp",
+				"desc": "Nước và trứng đánh đều, hấp cho đến khi chín - không có tổ ong trên bề mặt."
+			},
+			"stew": {
+				"name": "món hầm",
+				"desc": "Đun nhỏ lửa; chất lỏng giảm đi và hương vị đặc lại."
+			},
+			"sushi": {
+				"name": "Sushi",
+				"desc": "Tạo hình cơm ấm, phủ cá lên trên, thêm một ít rau xanh."
+			},
+			"syrup": {
+				"name": "Xi-rô",
+				"desc": "Đường tan thành nước trên ngọn lửa nhỏ; dày hơn khi nguội."
+			},
+			"taco": {
+				"name": "taco",
+				"desc": "Làm ấm bánh tortilla, cho thịt, rau xanh và gia vị vào."
+			},
+			"tagine": {
+				"name": "Tagine",
+				"desc": "Nấu chậm thịt và rau với gia vị, rắc hạt vào cuối."
+			},
+			"tamale": {
+				"name": "tamale",
+				"desc": "Bọc thịt trong bột ngô và lá rồi hấp chín."
+			},
+			"tamarind_sauce": {
+				"name": "Sốt me",
+				"desc": "Đun nhỏ lửa: trái cây ninh với nước, lọc, làm ngọt và giảm bớt."
+			},
+			"tandoori_chicken": {
+				"name": "Gà Tandoori",
+				"desc": "Roast: gà ướp gia vị và sữa, phết kem, nướng đỏ."
+			},
+			"tangyuan": {
+				"name": "Đường Nguyên",
+				"desc": "Cán bột thành từng viên, đun sôi cho đến khi bột nở."
+			},
+			"tea_egg": {
+				"name": "Trứng trà",
+				"desc": "om: trứng luộc chín đập vỏ, ngâm với đậu nành, gia vị và trà."
+			},
+			"tea_rice": {
+				"name": "Cơm chè",
+				"desc": "Cơm ra bát, trà nóng rót lên, một ít rau xanh."
+			},
+			"tempura": {
+				"name": "Tempura",
+				"desc": "Nhúng hải sản vào bột nhão, chiên vàng nhạt."
+			},
+			"thali": {
+				"name": "Thali",
+				"desc": "Cơm ở giữa; đậu, rau xanh và nước sốt trong bát xung quanh nó."
+			},
+			"tiramisu": {
+				"name": "tiramisu",
+				"desc": "Nhúng bánh vào cà phê, phết kem, rắc bã, để nguội."
+			},
+			"toast": {
+				"name": "Nướng",
+				"desc": "Cắt lát bánh mì dày."
+			},
+			"toast_slice": {
+				"name": "lát bánh mì nướng",
+				"desc": "Bánh mỳ bơ nướng giòn."
+			},
+			"tom_yum": {
+				"name": "Tom Yum",
+				"desc": "Đun sôi hải sản và nấm với gia vị và nước cốt dừa."
+			},
+			"tomato_soup": {
+				"name": "Súp cà chua",
+				"desc": "Cà chua mềm, nước luộc sôi."
+			},
+			"tostada": {
+				"name": "Tostada",
+				"desc": "Chiên bánh ngô giòn, phủ thịt và phô mai lên trên."
+			},
+			"tres_leches": {
+				"name": "Tres Leches",
+				"desc": "Nướng bánh, ngâm với sữa và kem, để nguội."
+			},
+			"tuna_sandwich": {
+				"name": "Sandwich cá ngừ",
+				"desc": "Hải sản và nước sốt giữa bánh mì nướng."
+			},
+			"turkish_coffee": {
+				"name": "Cà phê Thổ Nhĩ Kỳ",
+				"desc": "Đun nóng bã, nước và đường; đổ bọt đầu tiên."
+			},
+			"turmeric_rice": {
+				"name": "Cơm nghệ",
+				"desc": "Cho gia vị vào dầu, trộn đều cơm."
+			},
+			"twice_cooked_pork": {
+				"name": "Thịt lợn nấu hai lần",
+				"desc": "Luộc và thái thịt lợn, sau đó xào lại với rau xanh và ớt."
+			},
+			"vegetable_salad": {
+				"name": "Salad vườn",
+				"desc": "Lá rách, dầu, quăng."
+			},
+			"vegetable_soup": {
+				"name": "Súp rau",
+				"desc": "Nước dùng trước, rau sau cùng, tắt bếp ngay khi chúng mềm."
+			},
+			"vienna_coffee": {
+				"name": "Cà phê Viên",
+				"desc": "Làm ngọt espresso và phủ kem tươi lên trên."
+			},
+			"waffle": {
+				"name": "bánh quế",
+				"desc": "Nướng: ấn bột vào bàn ủi, đổ bột vào để giữ hình dạng, nướng cho đến khi các cạnh giòn."
+			},
+			"cocoa_shake": {
+				"name": "Cacao lắc",
+				"desc": "Trộn: cacao, sữa, đá và đường thành hỗn hợp đặc."
+			},
+			"white_rice": {
+				"name": "Gạo trắng",
+				"desc": "Gạo và nước, hấp cho đến khi hạt tách rời."
+			},
+			"white_sauce": {
+				"name": "nước sốt trắng",
+				"desc": "Bột mì trong bơ, sữa khuấy đặc."
+			},
+			"wonton": {
+				"name": "hoành thánh",
+				"desc": "Cuộn giấy gói mỏng, cho thịt vào, luộc trong kho."
+			},
+			"yogurt_soup": {
+				"name": "Súp sữa chua",
+				"desc": "Khuấy sữa chua, bột mì và gia vị trên lửa nhỏ cho đến khi đặc lại."
+			},
+			"yorkshire_pudding": {
+				"name": "Bánh pudding Yorkshire",
+				"desc": "Đổ bột vào mỡ nóng và nướng cho đến khi bột nở lên."
+			},
+			"zongzi": {
+				"name": "Tông Tử",
+				"desc": "Bọc cơm và thịt trong lá, buộc chặt, hấp chín."
+			},
+			"ice": {
+				"name": "Đá",
+				"desc": "Nước đông thành khối - tủ lạnh sẽ làm phần còn lại."
+			},
+			"ice_cream_scoop": {
+				"name": "Muỗng Kem",
+				"desc": "Múc một cái ra khỏi bồn tắm."
+			},
+			"shaved_ice": {
+				"name": "Đá bào",
+				"desc": "Cạo đá, rưới si-rô lên."
+			},
+			"popsicle": {
+				"name": "kem que",
+				"desc": "Đông lạnh: trái cây và đường cho vào khuôn, dạng que, đông cứng."
+			},
+			"smoothie": {
+				"name": "sinh tố",
+				"desc": "Xay: hoa quả, sữa và đá xay nhuyễn."
+			},
+			"ice_bar": {
+				"name": "Quán băng",
+				"desc": "Làm đông: đá, sữa và đường đông cứng rồi cắt thành từng thanh."
+			},
+			"milk_pudding": {
+				"name": "Bánh pudding sữa",
+				"desc": "Làm lạnh: sữa, đường và vani vừa đủ cứng."
+			},
+			"vanilla_ice_cream": {
+				"name": "Kem Vani",
+				"desc": "Đá, sữa, đường và một chút vani."
+			},
+			"chocolate_ice_cream": {
+				"name": "Kem sô cô la",
+				"desc": "Làm đông lạnh ca cao và sữa cùng nhau."
+			},
+			"fruit_ice_cream": {
+				"name": "Kem trái cây",
+				"desc": "Trái cây, sữa, đường và đá xay và đông lạnh."
+			},
+			"sundae": {
+				"name": "Sundae",
+				"desc": "Một muỗng, mứt và kem xếp chồng lên nhau."
+			},
+			"black_tea": {
+				"name": "Trà đen",
+				"desc": "Dốc: hai thước lá, nước sôi, ngâm cho đến khi rượu có màu đỏ."
+			},
+			"green_tea": {
+				"name": "Trà xanh",
+				"desc": "Dốc: một thước lá, nước nguội một chút, ngâm nhẹ."
+			},
+			"lemon_tea": {
+				"name": "Trà chanh",
+				"desc": "Hai lát chanh trong trà."
+			},
+			"whole_wheat_flour": {
+				"name": "Xay bột mì nguyên hạt",
+				"desc": "Lúa mì, xay hai lần, còn cám."
+			},
+			"flour_from_whole_wheat": {
+				"name": "Nhà máy bột tinh chế",
+				"desc": "Nghiền mịn hơn và rây cám; nhiều bột hơn đi qua."
+			},
+			"cocoa_powder": {
+				"name": "Xay bột cacao",
+				"desc": "Hạt cacao xay cho đến khi có vị đắng đầu tiên."
+			},
+			"whole_wheat_bread": {
+				"name": "Nướng bún châu Âu",
+				"desc": "Bột mì nguyên hạt được ủ và nướng thành lớp vỏ cứng."
+			},
+			"whole_wheat_cracker": {
+				"name": "Nướng bánh mì nguyên hạt",
+				"desc": "Ép mỏng và nướng giòn."
+			},
+			"chocolate_chip_cookie": {
+				"name": "Nướng bánh quy sô cô la chip",
+				"desc": "Sô cô la gấp vào bột, nướng thành vành màu nâu."
+			},
+			"chocolate_cookie": {
+				"name": "Nướng bánh quy sô cô la",
+				"desc": "Ca cao và sô cô la cùng nhau tạo thành bột."
+			},
+			"oreo": {
+				"name": "Nhấn một chiếc Oreo",
+				"desc": "Hai chiếc bánh sô-cô-la ép chặt xung quanh lớp kem."
+			},
+			"marshmallow": {
+				"name": "Đun sôi kẹo dẻo",
+				"desc": "Đường và si-rô đun sôi thành keo, đổ ra cho mềm."
+			},
+			"roasted_marshmallow": {
+				"name": "Bánh mì nướng Marshmallow",
+				"desc": "Giữ nó trên lửa cho đến khi da cháy thành than."
+			},
+			"smore": {
+				"name": "Làm một ly S'more",
+				"desc": "Một chiếc bánh quy giòn, kẹo dẻo nướng và sôcôla đen xếp chồng lên nhau."
+			},
+			"tomato_egg_stirfry": {
+				"name": "Xào cà chua và trứng",
+				"desc": "Cà chua chiên lấy nước, trứng trượt vào."
+			},
+			"stir_fried_greens": {
+				"name": "Rau xanh xào",
+				"desc": "Một nắm rau xanh, một chút muối, đun nóng."
+			},
+			"vinegar_potato_shreds": {
+				"name": "Giấm khoai tây vụn",
+				"desc": "Cắt nhỏ và ngâm khoai tây; thêm vị chua vào cuối cùng."
+			},
+			"braised_tofu": {
+				"name": "Đậu hũ om",
+				"desc": "Xào đậu phụ, giảm ớt và đường thành men."
+			},
+			"kung_pao_chicken": {
+				"name": "gà Kung Pao",
+				"desc": "Thịt gà tẩm dầu, ớt khô và lạc trộn vào."
+			},
+			"yu_xiang_pork": {
+				"name": "Thịt lợn xé Yuxiang",
+				"desc": "Nhung thịt lợn; ớt ngâm gặp giấm ngọt."
+			},
+			"spicy_chicken": {
+				"name": "Gà cay Trùng Khánh",
+				"desc": "Chiên gà thật chín, nhúng ớt vào, đảo đều."
+			},
+			"tofu": {
+				"name": "Nhấn đậu phụ",
+				"desc": "Đậu nành xay nhuyễn, đông lại, ép thành khối."
+			},
+			"kimchi": {
+				"name": "Làm kim chi",
+				"desc": "Chà bắp cải với ớt và muối; đợi vài ngày."
+			},
+			"xiao_chao_rou": {
+				"name": "Thịt lợn xào",
+				"desc": "Làm thịt lợn; ném ớt qua."
+			},
+			"shui_zhu_rou_pian": {
+				"name": "Luộc lát thịt lợn",
+				"desc": "Đun sôi nước dùng, thả thịt heo vào, ớt lên trên, dầu nóng cuối cùng."
+			},
+			"dan_dan_noodles": {
+				"name": "Bún Đan Đan",
+				"desc": "Mì bát; thịt lợn, ớt và đậu phộng xếp chồng lên nhau."
+			},
+			"dry_pot_cabbage": {
+				"name": "Bắp cải khô",
+				"desc": "Bắp cải xé, thịt xông khói và ớt làm béo ngậy."
+			},
+			"steamed_chili_fish": {
+				"name": "Đầu Cá Hấp Ớt",
+				"desc": "Phủ cá với ớt cắt nhỏ rồi hấp chín."
+			},
+			"budae_jjigae": {
+				"name": "Budae Jjigae",
+				"desc": "Kim chi, xúc xích, mì trong một nồi; ớt làm nước dùng."
+			},
+			"kimchi_fried_rice": {
+				"name": "Cơm Chiên Kim Chi",
+				"desc": "Chiên kim chi cắt nhỏ, sau đó chiên cơm và trứng."
+			},
+			"dak_galbi": {
+				"name": "Cơm gà cay",
+				"desc": "Xào thịt gà, sau đó là ớt và cơm."
+			},
+			"pad_kra_pow": {
+				"name": "Pad Kra Pao",
+				"desc": "Thịt bò và ớt trên lửa cao, trên cơm, dưới trứng chiên."
+			},
+			"laksa": {
+				"name": "Laksa",
+				"desc": "Chiên ớt vào dầu đỏ; Nước cốt dừa và bún cho vào, tôm cuối cùng."
+			},
+			"sambal_shrimp": {
+				"name": "Tôm Sambal",
+				"desc": "Giã ớt và hành tây thành bột nhão, chiên, đảo tôm hai lần."
+			},
+			"mirchi_salan": {
+				"name": "Mirchi Salan",
+				"desc": "Hầm ớt với các loại hạt và gia vị; kem để hoàn thành."
+			},
+			"chilli_chicken": {
+				"name": "Gà Ớt",
+				"desc": "Chiên gà tẩm bột chiên giòn; giảm ớt và đậu nành thành men."
+			},
+			"vindaloo": {
+				"name": "Vindaloo",
+				"desc": "Ướp thịt với ớt và gia vị cho đến khi thịt có vị chua."
+			},
+			"shakshuka": {
+				"name": "Shakshuka",
+				"desc": "Nấu cà chua và ớt làm nước sốt; đập trứng vào và đậy lại."
+			},
+			"lemon_chili_chicken": {
+				"name": "Gà nướng với chanh và ớt",
+				"desc": "Chà xát vỏ với ớt và dầu, nướng giòn, vắt chanh lên trên."
+			},
+			"paprikash": {
+				"name": "ớt bột",
+				"desc": "Hầm gà và hành tây mềm; ớt và kem biến nó thành màu hồng."
+			},
+			"nashville_hot_chicken": {
+				"name": "Gà nóng Nashville",
+				"desc": "Đổ dầu bơ ớt lên gà rán."
+			},
+			"chili_con_carne": {
+				"name": "Ớt con Carne",
+				"desc": "Làm chín thịt bò; hầm cà chua, đậu và ớt xuống dày."
+			},
+			"jerk_chicken": {
+				"name": "gà giật",
+				"desc": "Xoa gà với ớt và gia vị; nướng nó cháy thành than."
+			},
+			"elote": {
+				"name": "bầu cử",
+				"desc": "Char ngô; bôi kem và phô mai, rắc ớt."
+			},
+			"doro_wat": {
+				"name": "Doro Wat",
+				"desc": "Nấu hành tây sẫm màu; thêm ớt và thịt gà; vùi trứng vào."
+			},
+			"peri_peri_chicken": {
+				"name": "Gà Peri-Peri",
+				"desc": "Lăn gà trong dầu ớt cho đến khi da cong lại."
+			},
+			"suya": {
+				"name": "Suya",
+				"desc": "Xào thịt bò mỏng với ớt và gia vị lạc; nướng để các cạnh khô."
+			},
+			"chili_dog": {
+				"name": "chó ớt",
+				"desc": "Chiên xúc xích, tẩm bột, phủ ớt và phô mai."
+			},
+			"cheese": {
+				"name": "làm phô mai",
+				"desc": "Sữa và muối đun nóng đến khi đông lại rồi ép khô."
+			},
+			"butter": {
+				"name": "Bơ khuấy",
+				"desc": "Kem với một chút muối, đánh cho đến khi mịn."
+			},
+			"yogurt": {
+				"name": "Làm sữa chua",
+				"desc": "Sữa và đường, khuấy đều và để yên."
+			},
+			"rice_noodle": {
+				"name": "Bún ép",
+				"desc": "Gạo và nước xay thành bùn, hấp chín và ép thành sợi."
+			},
+			"nian_gao": {
+				"name": "Bánh gạo pound",
+				"desc": "Giã gạo nóng cho đến khi không còn hạt nào."
+			},
+			"miso_soup": {
+				"name": "Nấu súp Miso",
+				"desc": "Miso hòa vào nước dùng, đậu hũ cắt nhỏ thả vào."
+			},
+			"tofu_dengaku": {
+				"name": "Đậu phụ nướng Dengaku",
+				"desc": "Đậu phụ nướng thơm, phết miso pha loãng với đường."
+			},
+			"miso_ramen": {
+				"name": "Nấu mì Miso",
+				"desc": "Nước súp trong suốt có thêm miso, trứng và hành lá vào cuối cùng."
+			},
+			"fried_rice_noodle": {
+				"name": "Bún xào",
+				"desc": "Bún ngâm được cho vào chảo cùng trứng, rau xanh và đậu nành."
+			},
+			"tteokbokki": {
+				"name": "Tteokbokki đun nhỏ lửa",
+				"desc": "Bánh gạo gia giảm ớt, đậu nành và đường cho đến khi nước sốt bám vào."
+			},
+			"di_san_xian": {
+				"name": "Ba kho báu của trái đất",
+				"desc": "Chiên khoai tây và cà tím trước, sau đó thêm loại rau thứ ba; kết thúc với dầu và để cho nó thắt chặt."
+			},
+			"scallion_pancake": {
+				"name": "Bánh xèo hành lá",
+				"desc": "Cho dầu và hành lá lên bột, cán mỏng, chiên áp chảo cho đến khi cả hai mặt đều có màu nâu."
+			},
+			"liangpi": {
+				"name": "Lương Bì",
+				"desc": "Hấp bột mỏng, cắt thành dải, chấm với dầu ớt."
+			}
+		},
+		"research": {
+			"rules": {
+				"name": "Nội quy bàn nghiên cứu",
+				"desc": "Cái giá của việc thử và sai: bàn càng phẳng thì càng ít bị cháy."
+			}
+		},
+		"world": {
+			"room": {
+				"subtitle": "Một căn phòng đã tồn tại trong một thời gian dài",
+				"hint": "Căn phòng bạn đang đứng lúc này.",
+				"name": "Phòng",
+				"desc": "Mọi hương vị đều bắt đầu từ đây.",
+				"body": "Chiếc bàn được bắt vít vào sàn nhà.\nMột cái bếp, một cửa sổ, một ngọn đèn không bao giờ sáng - chỉ có vậy thôi.\nBạn nấu ăn ở đây và bạn đợi ở đây cho đến sáng. Một chiếc kệ chạy dọc theo bức tường, mọi hương vị bạn đã viết ra đều được lưu giữ ở đó."
+			},
+			"nearby": {
+				"subtitle": "Khoảng trời nhỏ bên ngoài cửa sổ",
+				"hint": "Tiếng gõ cửa sổ thường xuất phát từ đây.",
+				"name": "Cánh cửa",
+				"desc": "Nơi đơn đặt hàng và tin tức đến.",
+				"body": "Ai đó đi ngang qua, dừng lại ở cửa sổ và đưa ra ghi chú về món họ muốn ăn.\nTờ giấy gấp lại, viết vội vã.\nHọ đặt nó xuống và rời đi, như thể đang giao cho bạn một việc vặt."
+			},
+			"cafe": {
+				"subtitle": "Một chiếc xe bán đồ ăn cũ đã chạy được nhiều năm",
+				"hint": "Bốn chữ quét sạch bụi bên trong cánh cửa.",
+				"name": "Tắt con đường ăn thịt",
+				"desc": "Chiếc xe tải này từng được gọi là gì.",
+				"body": "Quay lại phía sau, cuối cùng tôi cũng nhìn thấy toàn bộ chiếc xe: một chiếc xe bán đồ ăn cũ.\nTrở lại cửa, tôi lau bụi bên trong và bốn từ hiện ra rõ ràng - RA KHỎI ĐƯỜNG ĂN.\nMột tấm bảng nhỏ cũ kỹ được đóng đinh bên cạnh, ghi rõ lộ trình nó từng chạy.\nCăn phòng bạn đã sống bấy lâu nay chính là chiếc xe tải này."
+			},
+			"east_asia": {
+				"subtitle": "Các quầy hàng mở cửa trước bình minh",
+				"hint": "Ở đâu đó chiếc xe tải đã dừng lại.",
+				"name": "Chợ sáng miền Đông",
+				"desc": "Điểm dừng đầu tiên.",
+				"body": "Trước khi trời sáng, các quầy hàng đã hết hàng.\nBột xoắn lại trong dầu, sữa đậu nành bốc hơi trắng.\nNhiều người áp mặt vào cửa sổ hơn ngày hôm qua."
+			},
+			"southeast_asia": {
+				"subtitle": "Con hẻm nơi mưa đến rồi đi",
+				"hint": "Ở đâu đó chiếc xe tải đã dừng lại.",
+				"name": "Con hẻm bên rừng nhiệt đới",
+				"desc": "Ẩm ướt và ồn ào.",
+				"body": "Mưa đến thành từng đợt.\nĐầu ngõ đặt một bếp than, những thứ bọc lá đang từ từ nấu chín.\nKhông khí ngọt ngào và cay nồng."
+			},
+			"south_asia": {
+				"subtitle": "Một cửa hàng cân màu bằng thìa",
+				"hint": "Ở đâu đó chiếc xe tải đã dừng lại.",
+				"name": "Buổi chiều ở cửa hàng gia vị",
+				"desc": "Ở đây một hương vị chỉ được tính khi nó đã hoàn thành.",
+				"body": "Quán chất đầy màu sắc, cân từng thìa một.\nChủ quán nói màu nào cũng phải cho vào nồi chung.\nBạn viết đơn đặt hàng xuống."
+			},
+			"middle_east": {
+				"subtitle": "Ban ngày nóng quá, mất ngủ vào ban đêm",
+				"hint": "Ở đâu đó chiếc xe tải đã dừng lại.",
+				"name": "Chợ đêm sa mạc",
+				"desc": "Càng về sau càng sáng.",
+				"body": "Ngày quá nóng; chợ đêm chỉ thức dậy lúc chạng vạng.\nNhững ngọn lửa dưới những chiếc bánh dẹt xếp thành hàng như những ngôi sao trên mặt đất.\nMọi người len lỏi giữa các quầy hàng với trà trên tay."
+			},
+			"mediterranean": {
+				"subtitle": "Một bờ biển ăn chậm",
+				"hint": "Ở đâu đó chiếc xe tải đã dừng lại.",
+				"name": "Tường trắng và gió biển",
+				"desc": "Chậm lại, và hương vị sẽ tỏa ra.",
+				"body": "Những bức tường trắng chói lóa dưới ánh mặt trời; gió biển thổi qua từ đầu ngõ.\nDầu ô liu trên bàn còn mới, bánh mì vẫn còn ấm.\nNgười dân ở đây ăn chậm rãi."
+			},
+			"western": {
+				"subtitle": "Tuyết ở trên đỉnh, đường ở cửa",
+				"hint": "Ở đâu đó chiếc xe tải đã dừng lại.",
+				"name": "Một thị trấn bên dưới đường tuyết",
+				"desc": "Lạnh lùng nhưng ngọt ngào.",
+				"body": "Trên đỉnh tuyết, thị trấn bên dưới.\nỐng khói bốc khói, bơ và đường trôi ra khỏi cửa.\nKhông có nhiều người đi ngang qua nhưng họ đều dừng lại."
+			},
+			"americas": {
+				"subtitle": "Một con đường, đi đến tận cùng",
+				"hint": "Ở đâu đó chiếc xe tải đã dừng lại.",
+				"name": "Cây xăng ở cuối đường",
+				"desc": "Mọi người trên đường đều dừng lại ở đây một lần.",
+				"body": "Một con đường chạy thẳng cho đến khi kết thúc tại một trạm xăng.\nBánh mì kẹp thịt rít lên trên vỉ nướng, cà phê vẫn ấm trong ấm.\nNhững ánh đèn pha từ xa tới và đi qua."
+			},
+			"africa": {
+				"subtitle": "Một nồi hầm cả ngày",
+				"hint": "Ở đâu đó chiếc xe tải đã dừng lại.",
+				"name": "Đất đỏ và lửa than",
+				"desc": "Chia sẻ là quy tắc ở đây.",
+				"body": "Đất màu đỏ, lửa màu than.\nNồi đặt trên đá hầm suốt ngày.\nBất cứ ai đi ngang qua đều đưa tay lấy một cái bát."
+			},
+			"fast_food": {
+				"subtitle": "Bạn chỉ xếp hàng sau khi trời tối",
+				"hint": "Ở đâu đó chiếc xe tải đã dừng lại.",
+				"name": "Cửa sổ dưới ánh đèn neon",
+				"desc": "Điểm dừng cuối cùng.",
+				"body": "Bầu trời tối dần và đèn neon bật sáng.\nCửa sổ đưa ra hết thứ nóng hổi này đến thứ khác, những chiếc túi giấy in hình mặt cười.\nDòng không bao giờ ngắn hơn."
+			}
+		},
+		"harvest": {
+			"mailbox": {
+				"name": "Hộp thả",
+				"desc": "Một thùng giao hàng ở cửa. Muối, đường và hạt cà phê rơi vào bên trong, không cần chữ ký."
+			},
+			"farm": {
+				"name": "Lô trang trại",
+				"desc": "Một miếng vá phía sau ngôi nhà. Bất cứ thứ gì bạn trồng, nó sẽ phát triển - từ từ."
+			},
+			"orchard": {
+				"name": "vườn cây ăn quả",
+				"desc": "Một vài cây. Quả rụng nhiều hơn quả được hái."
+			},
+			"sea": {
+				"name": "Điểm hải sản",
+				"desc": "Một mỏm đá cạnh nước. Ăn gì thì tùy vào may mắn."
+			},
+			"ranch": {
+				"name": "trang trại",
+				"desc": "Thịt, trứng và sữa sau hàng rào. Việc bạn nhận được thùng hay giỏ là tùy thuộc vào người hợp tác."
+			}
+		}
+	}
+}

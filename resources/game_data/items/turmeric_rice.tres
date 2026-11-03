@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_vxpq3"]
+
+[resource]
+script = ExtResource("1_vxpq3")
+kind = 1
+sell_price = 14
+taste = "data.item.turmeric_rice.taste"
+catalog_hint = "data.item.turmeric_rice.hint"
+order = 221
+theme = "game:theme/south_asia"
+order_weight = 1.2
+tags = Array[String](["game:tag/home", "game:tag/vegetarian"])
+id = "item/turmeric_rice"
+display_name = "data.item.turmeric_rice.name"
+description = "data.item.turmeric_rice.desc"

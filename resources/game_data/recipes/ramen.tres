@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="RecipeDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/material_stack.gd" id="1_stack"]
+[ext_resource type="Script" path="res://scripts/resources/recipe_def.gd" id="2_recipe"]
+[ext_resource type="Script" path="res://scripts/resources/facility_def.gd" id="3_fac"]
+
+[sub_resource type="Resource" id="Resource_0"]
+script = ExtResource("1_stack")
+material = "game:item/clear_noodle_soup"
+amount = 1
+
+[sub_resource type="Resource" id="Resource_1"]
+script = ExtResource("1_stack")
+material = "game:item/pork"
+amount = 1
+
+[sub_resource type="Resource" id="Resource_2"]
+script = ExtResource("1_stack")
+material = "game:item/egg"
+amount = 1
+
+[sub_resource type="Resource" id="Resource_3"]
+script = ExtResource("1_stack")
+material = "game:item/scallion"
+amount = 1
+
+[resource]
+script = ExtResource("2_recipe")
+output = "game:item/ramen"
+inputs = Array[ExtResource("1_stack")]([SubResource("Resource_0"), SubResource("Resource_1"), SubResource("Resource_2"), SubResource("Resource_3")])
+duration_seconds = 30.0
+order = 203
+group = "meal"
+id = "recipe/ramen"
+display_name = "data.recipe.ramen.name"
+description = "data.recipe.ramen.desc"
+facility = "game:facility/stove"

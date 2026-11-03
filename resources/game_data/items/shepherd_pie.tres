@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_8fq26"]
+
+[resource]
+script = ExtResource("1_8fq26")
+kind = 1
+sell_price = 40
+taste = "data.item.shepherd_pie.taste"
+catalog_hint = "data.item.shepherd_pie.hint"
+order = 136
+theme = "game:theme/western"
+order_weight = 0.9
+tags = Array[String](["game:tag/home"])
+id = "item/shepherd_pie"
+display_name = "data.item.shepherd_pie.name"
+description = "data.item.shepherd_pie.desc"

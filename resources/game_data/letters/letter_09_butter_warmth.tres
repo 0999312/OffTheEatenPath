@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="LetterDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/material_stack.gd" id="1_nnu2q"]
+[ext_resource type="Script" path="res://scripts/resources/letter_def.gd" id="2_wn0i7"]
+
+[sub_resource type="Resource" id="Resource_g87v2"]
+script = ExtResource("1_nnu2q")
+material = "game:item/butter"
+amount = 5
+
+[resource]
+script = ExtResource("2_wn0i7")
+title = "data.letter.butter_warmth.title"
+body = "data.letter.butter_warmth.body"
+order = 9
+condition = 1
+condition_ref = "game:letter/teach_upgrade"
+rewards = Array[ExtResource("1_nnu2q")]([SubResource("Resource_g87v2")])
+reward_coins = 15
+id = "letter/butter_warmth"
+display_name = "data.letter.butter_warmth.name"
+description = "data.letter.butter_warmth.desc"

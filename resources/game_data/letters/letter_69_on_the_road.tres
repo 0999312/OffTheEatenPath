@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="LetterDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/letter_def.gd" id="2_d05"]
+
+[resource]
+script = ExtResource("2_d05")
+title = "data.letter.on_the_road.title"
+body = "data.letter.on_the_road.body"
+order = 69
+condition = 3
+condition_value = 650
+reward_coins = 120
+id = "letter/on_the_road"
+display_name = "data.letter.on_the_road.name"
+description = "data.letter.on_the_road.desc"

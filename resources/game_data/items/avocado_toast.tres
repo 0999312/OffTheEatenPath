@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_akt5v"]
+
+[resource]
+script = ExtResource("1_akt5v")
+kind = 1
+sell_price = 12
+taste = "data.item.avocado_toast.taste"
+catalog_hint = "data.item.avocado_toast.hint"
+order = 143
+order_weight = 1.2
+tags = Array[String](["game:tag/home", "game:tag/breakfast"])
+id = "item/avocado_toast"
+display_name = "data.item.avocado_toast.name"
+description = "data.item.avocado_toast.desc"

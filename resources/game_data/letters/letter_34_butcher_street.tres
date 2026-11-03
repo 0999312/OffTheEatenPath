@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="LetterDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/material_stack.gd" id="1_s02"]
+[ext_resource type="Script" path="res://scripts/resources/letter_def.gd" id="2_d02"]
+
+[sub_resource type="Resource" id="Resource_r02"]
+script = ExtResource("1_s02")
+material = "game:item/pork"
+amount = 4
+
+[resource]
+script = ExtResource("2_d02")
+title = "data.letter.butcher_street.title"
+body = "data.letter.butcher_street.body"
+order = 36
+condition = 1
+condition_ref = "game:letter/south_asia_leave"
+rewards = Array[ExtResource("1_s02")]([SubResource("Resource_r02")])
+reward_coins = 30
+id = "letter/butcher_street"
+display_name = "data.letter.butcher_street.name"
+description = "data.letter.butcher_street.desc"
+task_title = "data.letter.butcher_street.task_title"
+task_body = "data.letter.butcher_street.task_body"
+task_goal = 5
+task_amount = 1
+task_reward_coins = 30

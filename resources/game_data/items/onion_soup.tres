@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_njtcl"]
+
+[resource]
+script = ExtResource("1_njtcl")
+kind = 1
+sell_price = 12
+taste = "data.item.onion_soup.taste"
+catalog_hint = "data.item.onion_soup.hint"
+order = 147
+order_weight = 1.2
+tags = Array[String](["game:tag/home", "game:tag/soup"])
+id = "item/onion_soup"
+display_name = "data.item.onion_soup.name"
+description = "data.item.onion_soup.desc"

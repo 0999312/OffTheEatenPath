@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="WorldDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/world_def.gd" id="1_world"]
+
+[resource]
+script = ExtResource("1_world")
+subtitle = "data.world.mediterranean.subtitle"
+body = "data.world.mediterranean.body"
+order = 8
+catalog_hint = "data.world.mediterranean.hint"
+unlock_letter = "game:letter/mediterranean_arrive"
+id = "world/mediterranean"
+display_name = "data.world.mediterranean.name"
+description = "data.world.mediterranean.desc"

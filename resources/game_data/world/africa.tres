@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="WorldDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/world_def.gd" id="1_world"]
+
+[resource]
+script = ExtResource("1_world")
+subtitle = "data.world.africa.subtitle"
+body = "data.world.africa.body"
+order = 10
+catalog_hint = "data.world.africa.hint"
+unlock_letter = "game:letter/africa_arrive"
+id = "world/africa"
+display_name = "data.world.africa.name"
+description = "data.world.africa.desc"

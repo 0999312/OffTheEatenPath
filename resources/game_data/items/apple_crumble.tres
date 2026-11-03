@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_iv8cy"]
+
+[resource]
+script = ExtResource("1_iv8cy")
+kind = 1
+sell_price = 34
+taste = "data.item.apple_crumble.taste"
+catalog_hint = "data.item.apple_crumble.hint"
+order = 127
+theme = "game:theme/cafe"
+tags = Array[String](["game:tag/sweet"])
+id = "item/apple_crumble"
+display_name = "data.item.apple_crumble.name"
+description = "data.item.apple_crumble.desc"

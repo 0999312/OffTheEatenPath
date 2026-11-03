@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_v6eyb"]
+
+[resource]
+script = ExtResource("1_v6eyb")
+kind = 1
+sell_price = 20
+taste = "data.item.hamburger.taste"
+catalog_hint = "data.item.hamburger.hint"
+order = 101
+theme = "game:theme/fast_food"
+order_weight = 1.2
+tags = Array[String](["game:tag/street"])
+id = "item/hamburger"
+display_name = "data.item.hamburger.name"
+description = "data.item.hamburger.desc"

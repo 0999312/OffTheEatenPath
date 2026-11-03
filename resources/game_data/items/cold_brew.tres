@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_o2rwx"]
+
+[resource]
+script = ExtResource("1_o2rwx")
+kind = 1
+sell_price = 30
+taste = "data.item.cold_brew.taste"
+catalog_hint = "data.item.cold_brew.hint"
+order = 11
+theme = "game:theme/cafe"
+order_weight = 0.6
+tags = Array[String](["game:tag/sweet"])
+id = "item/cold_brew"
+display_name = "data.item.cold_brew.name"
+description = "data.item.cold_brew.desc"

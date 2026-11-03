@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_item"]
+
+[resource]
+script = ExtResource("1_item")
+kind = 1
+sell_price = 16
+taste = "data.item.cassava_fries.taste"
+catalog_hint = "data.item.cassava_fries.hint"
+order = 407
+theme = "game:theme/africa"
+order_weight = 1.3
+tags = Array[String](["game:tag/street", "game:tag/vegetarian"])
+id = "item/cassava_fries"
+display_name = "data.item.cassava_fries.name"
+description = "data.item.cassava_fries.desc"

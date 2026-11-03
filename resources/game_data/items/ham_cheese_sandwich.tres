@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_8caxn"]
+
+[resource]
+script = ExtResource("1_8caxn")
+kind = 1
+sell_price = 12
+taste = "data.item.ham_cheese_sandwich.taste"
+catalog_hint = "data.item.ham_cheese_sandwich.hint"
+order = 42
+order_weight = 1.2
+tags = Array[String](["game:tag/home", "game:tag/street"])
+id = "item/ham_cheese_sandwich"
+display_name = "data.item.ham_cheese_sandwich.name"
+description = "data.item.ham_cheese_sandwich.desc"

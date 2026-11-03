@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_nvd1j"]
+
+[resource]
+script = ExtResource("1_nvd1j")
+kind = 1
+sell_price = 30
+taste = "data.item.apple_pie.taste"
+catalog_hint = "data.item.apple_pie.hint"
+order = 110
+theme = "game:theme/fast_food"
+tags = Array[String](["game:tag/sweet", "game:tag/street"])
+id = "item/apple_pie"
+display_name = "data.item.apple_pie.name"
+description = "data.item.apple_pie.desc"

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="RecipeDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/material_stack.gd" id="1_stack"]
+[ext_resource type="Script" path="res://scripts/resources/recipe_def.gd" id="2_recipe"]
+
+[sub_resource type="Resource" id="Resource_ice_cream_scoop_0"]
+script = ExtResource("1_stack")
+material = "game:item/vanilla_ice_cream"
+
+[resource]
+script = ExtResource("2_recipe")
+output = "game:item/ice_cream_scoop"
+inputs = Array[ExtResource("1_stack")]([SubResource("Resource_ice_cream_scoop_0")])
+duration_seconds = 5.0
+order = 300
+group = "simple"
+id = "recipe/ice_cream_scoop"
+display_name = "data.recipe.ice_cream_scoop.name"
+description = "data.recipe.ice_cream_scoop.desc"

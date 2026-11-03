@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_8532l"]
+
+[resource]
+script = ExtResource("1_8532l")
+kind = 1
+sell_price = 30
+taste = "data.item.pilaf.taste"
+catalog_hint = "data.item.pilaf.hint"
+order = 202
+theme = "game:theme/middle_east"
+order_weight = 1.1
+tags = Array[String](["game:tag/home", "game:tag/festival"])
+id = "item/pilaf"
+display_name = "data.item.pilaf.name"
+description = "data.item.pilaf.desc"

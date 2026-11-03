@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_oobur"]
+
+[resource]
+script = ExtResource("1_oobur")
+kind = 1
+sell_price = 30
+taste = "data.item.meat_soup.taste"
+catalog_hint = "data.item.meat_soup.hint"
+order = 25
+theme = "game:theme/east_asia"
+order_weight = 0.8
+tags = Array[String](["game:tag/home", "game:tag/soup"])
+id = "item/meat_soup"
+display_name = "data.item.meat_soup.name"
+description = "data.item.meat_soup.desc"

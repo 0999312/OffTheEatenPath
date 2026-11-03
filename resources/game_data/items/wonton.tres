@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_rlwq4"]
+
+[resource]
+script = ExtResource("1_rlwq4")
+kind = 1
+sell_price = 20
+taste = "data.item.wonton.taste"
+catalog_hint = "data.item.wonton.hint"
+order = 192
+theme = "game:theme/east_asia"
+order_weight = 1.2
+tags = Array[String](["game:tag/home", "game:tag/soup"])
+id = "item/wonton"
+display_name = "data.item.wonton.name"
+description = "data.item.wonton.desc"

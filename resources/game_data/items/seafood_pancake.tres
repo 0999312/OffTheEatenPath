@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_8xcpd"]
+
+[resource]
+script = ExtResource("1_8xcpd")
+kind = 1
+sell_price = 26
+taste = "data.item.seafood_pancake.taste"
+catalog_hint = "data.item.seafood_pancake.hint"
+order = 188
+theme = "game:theme/east_asia"
+order_weight = 1.1
+tags = Array[String](["game:tag/street"])
+id = "item/seafood_pancake"
+display_name = "data.item.seafood_pancake.name"
+description = "data.item.seafood_pancake.desc"

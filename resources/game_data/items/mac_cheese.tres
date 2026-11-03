@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_n15al"]
+
+[resource]
+script = ExtResource("1_n15al")
+kind = 1
+sell_price = 24
+taste = "data.item.mac_cheese.taste"
+catalog_hint = "data.item.mac_cheese.hint"
+order = 240
+theme = "game:theme/americas"
+order_weight = 1.1
+tags = Array[String](["game:tag/home", "game:tag/vegetarian"])
+id = "item/mac_cheese"
+display_name = "data.item.mac_cheese.name"
+description = "data.item.mac_cheese.desc"

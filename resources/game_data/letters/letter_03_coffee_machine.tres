@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="LetterDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/material_stack.gd" id="1_stack"]
+[ext_resource type="Script" path="res://scripts/resources/letter_def.gd" id="2_letter"]
+
+[sub_resource type="Resource" id="Resource_r0"]
+script = ExtResource("1_stack")
+material = "game:item/milk"
+amount = 1
+
+[sub_resource type="Resource" id="Resource_r1"]
+script = ExtResource("1_stack")
+material = "game:item/coffee_bean"
+amount = 1
+
+[resource]
+script = ExtResource("2_letter")
+title = "data.letter.coffee_machine.title"
+body = "data.letter.coffee_machine.body"
+order = 3
+condition = 4
+condition_ref = "game:letter/task_window_1"
+rewards = Array[ExtResource("1_stack")]([SubResource("Resource_r0"), SubResource("Resource_r1")])
+id = "letter/coffee_machine"
+display_name = "data.letter.coffee_machine.name"
+description = "data.letter.coffee_machine.desc"

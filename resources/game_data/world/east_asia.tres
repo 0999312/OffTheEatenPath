@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="WorldDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/world_def.gd" id="1_world"]
+
+[resource]
+script = ExtResource("1_world")
+subtitle = "data.world.east_asia.subtitle"
+body = "data.world.east_asia.body"
+order = 4
+catalog_hint = "data.world.east_asia.hint"
+unlock_letter = "game:letter/east_asia_arrive"
+id = "world/east_asia"
+display_name = "data.world.east_asia.name"
+description = "data.world.east_asia.desc"

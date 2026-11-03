@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_omaam"]
+
+[resource]
+script = ExtResource("1_omaam")
+kind = 1
+sell_price = 22
+taste = "data.item.flat_white.taste"
+catalog_hint = "data.item.flat_white.hint"
+order = 10
+theme = "game:theme/cafe"
+order_weight = 1.3
+tags = Array[String](["game:tag/sweet"])
+id = "item/flat_white"
+display_name = "data.item.flat_white.name"
+description = "data.item.flat_white.desc"

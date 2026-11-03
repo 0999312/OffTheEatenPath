@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_ojujb"]
+
+[resource]
+script = ExtResource("1_ojujb")
+kind = 1
+sell_price = 18
+taste = "data.item.pasta_tomato.taste"
+catalog_hint = "data.item.pasta_tomato.hint"
+order = 166
+theme = "game:theme/mediterranean"
+order_weight = 1.2
+tags = Array[String](["game:tag/home", "game:tag/vegetarian"])
+id = "item/pasta_tomato"
+display_name = "data.item.pasta_tomato.name"
+description = "data.item.pasta_tomato.desc"

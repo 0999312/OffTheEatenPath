@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_7m3vg"]
+
+[resource]
+script = ExtResource("1_7m3vg")
+kind = 1
+sell_price = 45
+taste = "data.item.cheesecake.taste"
+catalog_hint = "data.item.cheesecake.hint"
+order = 123
+theme = "game:theme/cafe"
+tags = Array[String](["game:tag/sweet"])
+id = "item/cheesecake"
+display_name = "data.item.cheesecake.name"
+description = "data.item.cheesecake.desc"

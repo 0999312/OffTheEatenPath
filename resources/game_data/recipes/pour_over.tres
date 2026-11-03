@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="RecipeDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/material_stack.gd" id="1_63r62"]
+[ext_resource type="Script" path="res://scripts/resources/recipe_def.gd" id="2_v6rqo"]
+
+[sub_resource type="Resource" id="Resource_tfjj6"]
+script = ExtResource("1_63r62")
+material = "game:item/coffee_ground"
+amount = 2
+
+[sub_resource type="Resource" id="Resource_oq7w2"]
+script = ExtResource("1_63r62")
+material = "game:item/water"
+amount = 1
+
+[resource]
+script = ExtResource("2_v6rqo")
+output = "game:item/pour_over"
+inputs = Array[ExtResource("1_63r62")]([SubResource("Resource_tfjj6"), SubResource("Resource_oq7w2")])
+duration_seconds = 30.0
+order = 8
+group = "drink"
+id = "recipe/pour_over"
+display_name = "data.recipe.pour_over.name"
+description = "data.recipe.pour_over.desc"

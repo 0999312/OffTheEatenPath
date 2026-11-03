@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_jexak"]
+
+[resource]
+script = ExtResource("1_jexak")
+kind = 1
+sell_price = 18
+taste = "data.item.yorkshire_pudding.taste"
+catalog_hint = "data.item.yorkshire_pudding.hint"
+order = 160
+theme = "game:theme/western"
+order_weight = 1.1
+tags = Array[String](["game:tag/home"])
+id = "item/yorkshire_pudding"
+display_name = "data.item.yorkshire_pudding.name"
+description = "data.item.yorkshire_pudding.desc"

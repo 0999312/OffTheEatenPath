@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_bg6ii"]
+
+[resource]
+script = ExtResource("1_bg6ii")
+kind = 1
+sell_price = 14
+taste = "data.item.caesar_salad.taste"
+catalog_hint = "data.item.caesar_salad.hint"
+order = 148
+order_weight = 1.2
+tags = Array[String](["game:tag/home", "game:tag/vegetarian"])
+id = "item/caesar_salad"
+display_name = "data.item.caesar_salad.name"
+description = "data.item.caesar_salad.desc"

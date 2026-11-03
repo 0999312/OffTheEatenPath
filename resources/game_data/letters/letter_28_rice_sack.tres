@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="LetterDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/material_stack.gd" id="1_s01"]
+[ext_resource type="Script" path="res://scripts/resources/letter_def.gd" id="2_d01"]
+
+[sub_resource type="Resource" id="Resource_r01"]
+script = ExtResource("1_s01")
+material = "game:item/rice"
+amount = 8
+
+[resource]
+script = ExtResource("2_d01")
+title = "data.letter.rice_sack.title"
+body = "data.letter.rice_sack.body"
+order = 30
+condition = 1
+condition_ref = "game:letter/vegetable_patch"
+rewards = Array[ExtResource("1_s01")]([SubResource("Resource_r01")])
+reward_coins = 25
+id = "letter/rice_sack"
+display_name = "data.letter.rice_sack.name"
+description = "data.letter.rice_sack.desc"
+task_title = "data.letter.rice_sack.task_title"
+task_body = "data.letter.rice_sack.task_body"
+task_goal = 3
+task_ref = "game:item/rice"
+task_amount = 5
+task_reward_coins = 25

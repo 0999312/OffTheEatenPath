@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_x2s6m"]
+
+[resource]
+script = ExtResource("1_x2s6m")
+merchant_price = 2
+sell_price = 1
+harvest_tier = 2
+tags = Array[String](["game:tag/pantry"])
+id = "item/flour"
+display_name = "data.item.flour.name"
+description = "data.item.flour.desc"

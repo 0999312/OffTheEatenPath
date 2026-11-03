@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_krfw3"]
+
+[resource]
+script = ExtResource("1_krfw3")
+kind = 1
+sell_price = 28
+taste = "data.item.french_onion_soup.taste"
+catalog_hint = "data.item.french_onion_soup.hint"
+order = 133
+theme = "game:theme/western"
+order_weight = 1.1
+tags = Array[String](["game:tag/soup", "game:tag/home"])
+id = "item/french_onion_soup"
+display_name = "data.item.french_onion_soup.name"
+description = "data.item.french_onion_soup.desc"

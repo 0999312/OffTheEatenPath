@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="RecipeDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/material_stack.gd" id="1_stack"]
+[ext_resource type="Script" path="res://scripts/resources/recipe_def.gd" id="2_recipe"]
+
+[sub_resource type="Resource" id="Resource_sundae_0"]
+script = ExtResource("1_stack")
+material = "game:item/vanilla_ice_cream"
+
+[sub_resource type="Resource" id="Resource_sundae_1"]
+script = ExtResource("1_stack")
+material = "game:item/jam"
+
+[sub_resource type="Resource" id="Resource_sundae_2"]
+script = ExtResource("1_stack")
+material = "game:item/cream"
+
+[resource]
+script = ExtResource("2_recipe")
+output = "game:item/sundae"
+inputs = Array[ExtResource("1_stack")]([SubResource("Resource_sundae_0"), SubResource("Resource_sundae_1"), SubResource("Resource_sundae_2")])
+duration_seconds = 10.0
+order = 309
+group = "simple"
+research_pool = Array[String](["game:item/vanilla_ice_cream", "game:item/jam", "game:item/cream"])
+id = "recipe/sundae"
+display_name = "data.recipe.sundae.name"
+description = "data.recipe.sundae.desc"

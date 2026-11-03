@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_qdiou"]
+
+[resource]
+script = ExtResource("1_qdiou")
+kind = 1
+sell_price = 16
+taste = "data.item.nachos.taste"
+catalog_hint = "data.item.nachos.hint"
+order = 250
+theme = "game:theme/americas"
+order_weight = 1.2
+tags = Array[String](["game:tag/street", "game:tag/late_night"])
+id = "item/nachos"
+display_name = "data.item.nachos.name"
+description = "data.item.nachos.desc"

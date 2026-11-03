@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ResearchDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/research_def.gd" id="1_res"]
+
+[resource]
+script = ExtResource("1_res")
+burn_rates = Array[float]([1.0, 0.7, 0.4, 0.25, 0.15])
+burn_counts = Array[int]([2, 1, 1, 1, 1])
+charge_chance = 0.5
+id = "research/rules"
+display_name = "data.research.rules.name"
+description = "data.research.rules.desc"

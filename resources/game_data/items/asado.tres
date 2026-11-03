@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_t2pc5"]
+
+[resource]
+script = ExtResource("1_t2pc5")
+kind = 1
+sell_price = 50
+taste = "data.item.asado.taste"
+catalog_hint = "data.item.asado.hint"
+order = 248
+theme = "game:theme/americas"
+order_weight = 0.8
+tags = Array[String](["game:tag/festival"])
+id = "item/asado"
+display_name = "data.item.asado.name"
+description = "data.item.asado.desc"

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_ubf40"]
+
+[resource]
+script = ExtResource("1_ubf40")
+kind = 1
+sell_price = 15
+taste = "data.item.mushroom_soup.taste"
+catalog_hint = "data.item.mushroom_soup.hint"
+order = 48
+order_weight = 1.2
+tags = Array[String](["game:tag/home", "game:tag/soup"])
+id = "item/mushroom_soup"
+display_name = "data.item.mushroom_soup.name"
+description = "data.item.mushroom_soup.desc"

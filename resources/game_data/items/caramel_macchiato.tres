@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_8nl6d"]
+
+[resource]
+script = ExtResource("1_8nl6d")
+kind = 1
+sell_price = 24
+taste = "data.item.caramel_macchiato.taste"
+catalog_hint = "data.item.caramel_macchiato.hint"
+order = 116
+theme = "game:theme/cafe"
+order_weight = 1.1
+tags = Array[String](["game:tag/sweet"])
+id = "item/caramel_macchiato"
+display_name = "data.item.caramel_macchiato.name"
+description = "data.item.caramel_macchiato.desc"

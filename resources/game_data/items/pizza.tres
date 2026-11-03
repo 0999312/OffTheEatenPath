@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_ity6c"]
+
+[resource]
+script = ExtResource("1_ity6c")
+kind = 1
+sell_price = 45
+taste = "data.item.pizza.taste"
+catalog_hint = "data.item.pizza.hint"
+order = 165
+theme = "game:theme/mediterranean"
+order_weight = 0.8
+tags = Array[String](["game:tag/home", "game:tag/festival", "game:tag/street"])
+id = "item/pizza"
+display_name = "data.item.pizza.name"
+description = "data.item.pizza.desc"

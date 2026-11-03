@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="RecipeDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/material_stack.gd" id="1_stack"]
+[ext_resource type="Script" path="res://scripts/resources/recipe_def.gd" id="2_recipe"]
+[ext_resource type="Script" path="res://scripts/resources/facility_def.gd" id="3_fac"]
+[sub_resource type="Resource" id="Resource_0"]
+script = ExtResource("1_stack")
+material = "game:item/espresso"
+amount = 1
+
+[sub_resource type="Resource" id="Resource_1"]
+script = ExtResource("1_stack")
+material = "game:item/cream"
+amount = 1
+
+[sub_resource type="Resource" id="Resource_2"]
+script = ExtResource("1_stack")
+material = "game:item/sugar"
+amount = 1
+
+[resource]
+script = ExtResource("2_recipe")
+output = "game:item/vienna_coffee"
+inputs = Array[ExtResource("1_stack")]([SubResource("Resource_0"), SubResource("Resource_1"), SubResource("Resource_2")])
+duration_seconds = 18.0
+order = 131
+group = "drink"
+research_pool = Array[String](["game:item/espresso", "game:item/cream", "game:item/sugar"])
+id = "recipe/vienna_coffee"
+display_name = "data.recipe.vienna_coffee.name"
+description = "data.recipe.vienna_coffee.desc"
+facility = "game:facility/coffee_machine"

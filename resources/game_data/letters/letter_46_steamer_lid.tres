@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="LetterDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/material_stack.gd" id="1_s04"]
+[ext_resource type="Script" path="res://scripts/resources/letter_def.gd" id="2_d04"]
+
+[sub_resource type="Resource" id="Resource_r04"]
+script = ExtResource("1_s04")
+material = "game:item/white_rice"
+amount = 3
+
+[resource]
+script = ExtResource("2_d04")
+title = "data.letter.steamer_lid.title"
+body = "data.letter.steamer_lid.body"
+order = 48
+condition = 1
+condition_ref = "game:letter/mediterranean_leave"
+rewards = Array[ExtResource("1_s04")]([SubResource("Resource_r04")])
+reward_coins = 40
+id = "letter/steamer_lid"
+display_name = "data.letter.steamer_lid.name"
+description = "data.letter.steamer_lid.desc"
+task_title = "data.letter.steamer_lid.task_title"
+task_body = "data.letter.steamer_lid.task_body"
+task_goal = 1
+task_ref = "game:item/dumpling"
+task_amount = 1
+task_reward_coins = 40

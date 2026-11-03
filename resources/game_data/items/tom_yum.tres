@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_frgwq"]
+
+[resource]
+script = ExtResource("1_frgwq")
+kind = 1
+sell_price = 30
+taste = "data.item.tom_yum.taste"
+catalog_hint = "data.item.tom_yum.hint"
+order = 223
+theme = "game:theme/southeast_asia"
+order_weight = 1.1
+tags = Array[String](["game:tag/spicy", "game:tag/soup"])
+id = "item/tom_yum"
+display_name = "data.item.tom_yum.name"
+description = "data.item.tom_yum.desc"

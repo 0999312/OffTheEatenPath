@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="LetterDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/material_stack.gd" id="1_stack"]
+[ext_resource type="Script" path="res://scripts/resources/letter_def.gd" id="2_letter"]
+
+[sub_resource type="Resource" id="Resource_r0"]
+script = ExtResource("1_stack")
+material = "game:item/butter"
+amount = 4
+
+[sub_resource type="Resource" id="Resource_r1"]
+script = ExtResource("1_stack")
+material = "game:item/flour"
+amount = 4
+
+[resource]
+script = ExtResource("2_letter")
+title = "data.letter.western_arrive.title"
+body = "data.letter.western_arrive.body"
+order = 49
+condition = 1
+condition_ref = "game:letter/steamer_lid"
+catalog_min = 430
+rewards = Array[ExtResource("1_stack")]([SubResource("Resource_r0"), SubResource("Resource_r1")])
+reward_coins = 30
+id = "letter/western_arrive"
+display_name = "data.letter.western_arrive.name"
+description = "data.letter.western_arrive.desc"

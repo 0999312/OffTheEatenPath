@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_v5atg"]
+
+[resource]
+script = ExtResource("1_v5atg")
+kind = 1
+sell_price = 22
+taste = "data.item.ceviche.taste"
+catalog_hint = "data.item.ceviche.hint"
+order = 245
+theme = "game:theme/americas"
+order_weight = 1.1
+id = "item/ceviche"
+display_name = "data.item.ceviche.name"
+description = "data.item.ceviche.desc"

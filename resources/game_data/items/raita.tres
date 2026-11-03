@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_lasg8"]
+
+[resource]
+script = ExtResource("1_lasg8")
+kind = 1
+sell_price = 14
+taste = "data.item.raita.taste"
+catalog_hint = "data.item.raita.hint"
+order = 218
+theme = "game:theme/south_asia"
+order_weight = 1.2
+tags = Array[String](["game:tag/home", "game:tag/vegetarian"])
+id = "item/raita"
+display_name = "data.item.raita.name"
+description = "data.item.raita.desc"

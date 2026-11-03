@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_5s4tp"]
+
+[resource]
+script = ExtResource("1_5s4tp")
+kind = 1
+sell_price = 42
+taste = "data.item.cream_puff.taste"
+catalog_hint = "data.item.cream_puff.hint"
+order = 16
+theme = "game:theme/cafe"
+order_weight = 0.7
+tags = Array[String](["game:tag/sweet", "game:tag/festival"])
+id = "item/cream_puff"
+display_name = "data.item.cream_puff.name"
+description = "data.item.cream_puff.desc"

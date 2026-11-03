@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="RecipeDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/material_stack.gd" id="1_m1xxy"]
+[ext_resource type="Script" path="res://scripts/resources/recipe_def.gd" id="2_gjk8u"]
+
+[sub_resource type="Resource" id="Resource_e3f56"]
+script = ExtResource("1_m1xxy")
+material = "game:item/milk"
+amount = 2
+
+[sub_resource type="Resource" id="Resource_sujb7"]
+script = ExtResource("1_m1xxy")
+material = "game:item/sugar"
+amount = 2
+
+[sub_resource type="Resource" id="Resource_wff1l"]
+script = ExtResource("1_m1xxy")
+material = "game:item/egg"
+amount = 3
+
+[resource]
+script = ExtResource("2_gjk8u")
+output = "game:item/pudding"
+inputs = Array[ExtResource("1_m1xxy")]([SubResource("Resource_e3f56"), SubResource("Resource_sujb7"), SubResource("Resource_wff1l")])
+duration_seconds = 40.0
+facility = "game:facility/oven"
+order = 12
+group = "bake"
+research_pool = Array[String](["game:item/milk", "game:item/sugar", "game:item/egg"])
+research_hint = "data.recipe.pudding.hint"
+research_min_facility_level = 2
+id = "recipe/pudding"
+display_name = "data.recipe.pudding.name"
+description = "data.recipe.pudding.desc"

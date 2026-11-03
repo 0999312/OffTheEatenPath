@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="LetterDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/material_stack.gd" id="1_stack"]
+[ext_resource type="Script" path="res://scripts/resources/letter_def.gd" id="2_letter"]
+
+[resource]
+script = ExtResource("2_letter")
+title = "data.letter.task_americas_arrive_1.title"
+body = "data.letter.task_americas_arrive_1.body"
+order = 60
+condition = 1
+condition_ref = "game:letter/americas_arrive"
+id = "letter/task_americas_arrive_1"
+display_name = "data.letter.task_americas_arrive_1.name"
+description = "data.letter.task_americas_arrive_1.desc"
+task_title = "data.letter.task_americas_arrive_1.task_title"
+task_body = "data.letter.task_americas_arrive_1.task_body"
+task_goal = 2
+task_ref = "game:theme/americas"
+task_amount = 3
+task_reward_coins = 60

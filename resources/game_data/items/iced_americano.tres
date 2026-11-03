@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_4c08u"]
+
+[resource]
+script = ExtResource("1_4c08u")
+kind = 1
+sell_price = 12
+taste = "data.item.iced_americano.taste"
+catalog_hint = "data.item.iced_americano.hint"
+order = 117
+theme = "game:theme/cafe"
+order_weight = 1.3
+tags = Array[String](["game:tag/sweet"])
+id = "item/iced_americano"
+display_name = "data.item.iced_americano.name"
+description = "data.item.iced_americano.desc"

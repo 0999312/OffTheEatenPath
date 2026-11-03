@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_e3g0f"]
+
+[resource]
+script = ExtResource("1_e3g0f")
+kind = 1
+sell_price = 35
+taste = "data.item.mooncake.taste"
+catalog_hint = "data.item.mooncake.hint"
+order = 189
+theme = "game:theme/east_asia"
+order_weight = 0.8
+tags = Array[String](["game:tag/festival", "game:tag/sweet"])
+id = "item/mooncake"
+display_name = "data.item.mooncake.name"
+description = "data.item.mooncake.desc"

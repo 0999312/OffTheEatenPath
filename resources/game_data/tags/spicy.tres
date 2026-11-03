@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="TagDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/tag_def.gd" id="1_tag"]
+
+[resource]
+script = ExtResource("1_tag")
+id = "tag/spicy"
+display_name = "data.tag.spicy.name"
+description = "data.tag.spicy.desc"
+order = 80

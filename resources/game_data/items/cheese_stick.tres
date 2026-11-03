@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_e7xg2"]
+
+[resource]
+script = ExtResource("1_e7xg2")
+kind = 1
+sell_price = 10
+taste = "data.item.cheese_stick.taste"
+catalog_hint = "data.item.cheese_stick.hint"
+order = 60
+order_weight = 1.2
+tags = Array[String](["game:tag/home", "game:tag/street"])
+id = "item/cheese_stick"
+display_name = "data.item.cheese_stick.name"
+description = "data.item.cheese_stick.desc"

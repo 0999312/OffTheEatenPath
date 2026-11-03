@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_p7mb7"]
+
+[resource]
+script = ExtResource("1_p7mb7")
+kind = 1
+sell_price = 32
+taste = "data.item.onion_tart.taste"
+catalog_hint = "data.item.onion_tart.hint"
+order = 163
+theme = "game:theme/western"
+tags = Array[String](["game:tag/home", "game:tag/vegetarian"])
+id = "item/onion_tart"
+display_name = "data.item.onion_tart.name"
+description = "data.item.onion_tart.desc"

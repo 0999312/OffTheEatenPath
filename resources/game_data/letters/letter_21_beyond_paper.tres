@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="LetterDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/material_stack.gd" id="1_ecabs"]
+[ext_resource type="Script" path="res://scripts/resources/letter_def.gd" id="2_l621s"]
+
+[resource]
+script = ExtResource("2_l621s")
+title = "data.letter.beyond_paper.title"
+body = "data.letter.beyond_paper.body"
+order = 23
+condition = 1
+condition_ref = "game:letter/middle_page"
+reward_coins = 50
+id = "letter/beyond_paper"
+display_name = "data.letter.beyond_paper.name"
+description = "data.letter.beyond_paper.desc"
+task_title = "data.letter.beyond_paper.task_title"
+task_body = "data.letter.beyond_paper.task_body"
+task_goal = 6
+task_ref = "game:recipe/noodle_soup"
+task_amount = 1
+task_reward_coins = 40

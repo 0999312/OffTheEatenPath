@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="LetterDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/material_stack.gd" id="1_sq1vx"]
+[ext_resource type="Script" path="res://scripts/resources/letter_def.gd" id="2_jc67p"]
+
+[sub_resource type="Resource" id="Resource_kcm77"]
+script = ExtResource("1_sq1vx")
+material = "game:item/flour"
+amount = 8
+
+[resource]
+script = ExtResource("2_jc67p")
+title = "data.letter.flour_sack.title"
+body = "data.letter.flour_sack.body"
+order = 7
+condition = 3
+condition_value = 50
+rewards = Array[ExtResource("1_sq1vx")]([SubResource("Resource_kcm77")])
+reward_coins = 15
+id = "letter/flour_sack"
+display_name = "data.letter.flour_sack.name"
+description = "data.letter.flour_sack.desc"

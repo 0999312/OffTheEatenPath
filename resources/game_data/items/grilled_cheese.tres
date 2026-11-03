@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_p028r"]
+
+[resource]
+script = ExtResource("1_p028r")
+kind = 1
+sell_price = 13
+taste = "data.item.grilled_cheese.taste"
+catalog_hint = "data.item.grilled_cheese.hint"
+order = 45
+order_weight = 1.2
+tags = Array[String](["game:tag/home"])
+id = "item/grilled_cheese"
+display_name = "data.item.grilled_cheese.name"
+description = "data.item.grilled_cheese.desc"

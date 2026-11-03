@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="RecipeDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/material_stack.gd" id="1_stack"]
+[ext_resource type="Script" path="res://scripts/resources/recipe_def.gd" id="2_recipe"]
+[ext_resource type="Script" path="res://scripts/resources/facility_def.gd" id="3_fac"]
+[sub_resource type="Resource" id="Resource_0"]
+script = ExtResource("1_stack")
+material = "game:item/yogurt"
+amount = 1
+
+[sub_resource type="Resource" id="Resource_1"]
+script = ExtResource("1_stack")
+material = "game:item/flour"
+amount = 1
+
+[sub_resource type="Resource" id="Resource_2"]
+script = ExtResource("1_stack")
+material = "game:item/spice"
+amount = 1
+
+[resource]
+script = ExtResource("2_recipe")
+output = "game:item/yogurt_soup"
+inputs = Array[ExtResource("1_stack")]([SubResource("Resource_0"), SubResource("Resource_1"), SubResource("Resource_2")])
+duration_seconds = 25.0
+order = 228
+group = "simple"
+research_pool = Array[String](["game:item/yogurt", "game:item/flour", "game:item/spice"])
+id = "recipe/yogurt_soup"
+display_name = "data.recipe.yogurt_soup.name"
+description = "data.recipe.yogurt_soup.desc"
+facility = "game:facility/stove"

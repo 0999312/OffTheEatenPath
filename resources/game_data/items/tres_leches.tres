@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_34fmb"]
+
+[resource]
+script = ExtResource("1_34fmb")
+kind = 1
+sell_price = 34
+taste = "data.item.tres_leches.taste"
+catalog_hint = "data.item.tres_leches.hint"
+order = 249
+theme = "game:theme/americas"
+order_weight = 0.9
+tags = Array[String](["game:tag/sweet", "game:tag/festival"])
+id = "item/tres_leches"
+display_name = "data.item.tres_leches.name"
+description = "data.item.tres_leches.desc"

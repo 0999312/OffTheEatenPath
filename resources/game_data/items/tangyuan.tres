@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_evp5n"]
+
+[resource]
+script = ExtResource("1_evp5n")
+kind = 1
+sell_price = 12
+taste = "data.item.tangyuan.taste"
+catalog_hint = "data.item.tangyuan.hint"
+order = 190
+theme = "game:theme/east_asia"
+order_weight = 1.3
+tags = Array[String](["game:tag/festival", "game:tag/sweet"])
+id = "item/tangyuan"
+display_name = "data.item.tangyuan.name"
+description = "data.item.tangyuan.desc"

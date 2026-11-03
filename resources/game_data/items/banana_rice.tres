@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_7txrb"]
+
+[resource]
+script = ExtResource("1_7txrb")
+kind = 1
+sell_price = 20
+taste = "data.item.banana_rice.taste"
+catalog_hint = "data.item.banana_rice.hint"
+order = 257
+theme = "game:theme/africa"
+order_weight = 1.1
+tags = Array[String](["game:tag/home"])
+id = "item/banana_rice"
+display_name = "data.item.banana_rice.name"
+description = "data.item.banana_rice.desc"

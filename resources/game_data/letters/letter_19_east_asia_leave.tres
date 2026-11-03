@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="LetterDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/material_stack.gd" id="1_stack"]
+[ext_resource type="Script" path="res://scripts/resources/letter_def.gd" id="2_letter"]
+
+[resource]
+script = ExtResource("2_letter")
+title = "data.letter.east_asia_leave.title"
+body = "data.letter.east_asia_leave.body"
+order = 21
+condition = 3
+condition_value = 206
+reward_coins = 60
+id = "letter/east_asia_leave"
+display_name = "data.letter.east_asia_leave.name"
+description = "data.letter.east_asia_leave.desc"

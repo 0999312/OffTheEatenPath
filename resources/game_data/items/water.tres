@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_o16f2"]
+
+[resource]
+script = ExtResource("1_o16f2")
+material_kind = 2
+in_catalog = false
+id = "item/water"
+display_name = "data.item.water.name"
+description = "data.item.water.desc"

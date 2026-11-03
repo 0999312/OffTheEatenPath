@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_1h5wb"]
+
+[resource]
+script = ExtResource("1_1h5wb")
+kind = 1
+sell_price = 22
+taste = "data.item.cappuccino.taste"
+catalog_hint = "data.item.cappuccino.hint"
+order = 4
+theme = "game:theme/cafe"
+order_weight = 1.1
+tags = Array[String](["game:tag/sweet"])
+id = "item/cappuccino"
+display_name = "data.item.cappuccino.name"
+description = "data.item.cappuccino.desc"

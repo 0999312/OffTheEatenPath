@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="LetterDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/material_stack.gd" id="1_s03"]
+[ext_resource type="Script" path="res://scripts/resources/letter_def.gd" id="2_d03"]
+
+[sub_resource type="Resource" id="Resource_r03"]
+script = ExtResource("1_s03")
+material = "game:item/broth"
+amount = 3
+
+[resource]
+script = ExtResource("2_d03")
+title = "data.letter.stove_fire.title"
+body = "data.letter.stove_fire.body"
+order = 42
+condition = 1
+condition_ref = "game:letter/middle_east_leave"
+rewards = Array[ExtResource("1_s03")]([SubResource("Resource_r03")])
+reward_coins = 40
+id = "letter/stove_fire"
+display_name = "data.letter.stove_fire.name"
+description = "data.letter.stove_fire.desc"
+task_title = "data.letter.stove_fire.task_title"
+task_body = "data.letter.stove_fire.task_body"
+task_goal = 1
+task_ref = "game:item/vegetable_soup"
+task_amount = 1
+task_reward_coins = 40

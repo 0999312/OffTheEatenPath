@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="RecipeDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/material_stack.gd" id="1_stack"]
+[ext_resource type="Script" path="res://scripts/resources/recipe_def.gd" id="2_recipe"]
+
+[sub_resource type="Resource" id="Resource_0"]
+script = ExtResource("1_stack")
+material = "game:item/bread"
+amount = 1
+
+
+[sub_resource type="Resource" id="Resource_1"]
+script = ExtResource("1_stack")
+material = "game:item/pork"
+amount = 1
+
+
+[sub_resource type="Resource" id="Resource_2"]
+script = ExtResource("1_stack")
+by_tag = "game:tag/veg"
+amount = 1
+
+
+[sub_resource type="Resource" id="Resource_3"]
+script = ExtResource("1_stack")
+material = "game:item/salad_dressing"
+
+
+[resource]
+script = ExtResource("2_recipe")
+output = "game:item/banh_mi"
+inputs = Array[ExtResource("1_stack")]([SubResource("Resource_0"), SubResource("Resource_1"), SubResource("Resource_2"), SubResource("Resource_3")])
+duration_seconds = 20.0
+order = 255
+group = "meal"
+research_pool = Array[String](["game:item/bread", "game:item/pork", "game:item/bean", "game:item/salad_dressing"])
+id = "recipe/banh_mi"
+display_name = "data.recipe.banh_mi.name"
+description = "data.recipe.banh_mi.desc"

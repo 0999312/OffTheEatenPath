@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="FacilityDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/material_stack.gd" id="1_stack"]
+[ext_resource type="Script" path="res://scripts/resources/facility_upgrade.gd" id="2_up"]
+[ext_resource type="Script" path="res://scripts/resources/facility_def.gd" id="3_fac"]
+
+[sub_resource type="Resource" id="Resource_r083j"]
+script = ExtResource("1_stack")
+material = "game:item/dough"
+amount = 10
+
+[sub_resource type="Resource" id="Resource_jc6nv"]
+script = ExtResource("2_up")
+coin_cost = 60
+materials = Array[ExtResource("1_stack")]([SubResource("Resource_r083j")])
+
+[sub_resource type="Resource" id="Resource_a6ps0"]
+script = ExtResource("1_stack")
+material = "game:item/flour"
+amount = 25
+
+[sub_resource type="Resource" id="Resource_6vgtn"]
+script = ExtResource("2_up")
+target_level = 3
+coin_cost = 150
+materials = Array[ExtResource("1_stack")]([SubResource("Resource_a6ps0")])
+
+[sub_resource type="Resource" id="Resource_lv4_mat"]
+script = ExtResource("1_stack")
+material = "game:item/dough"
+amount = 60
+
+[sub_resource type="Resource" id="Resource_lv4_up"]
+script = ExtResource("2_up")
+target_level = 4
+coin_cost = 320
+materials = Array[ExtResource("1_stack")]([SubResource("Resource_lv4_mat")])
+
+[resource]
+script = ExtResource("3_fac")
+max_level = 4
+level_speed_factors = Array[float]([1.0, 0.8, 0.6, 0.5])
+upgrades = Array[ExtResource("2_up")]([SubResource("Resource_jc6nv"), SubResource("Resource_6vgtn"), SubResource("Resource_lv4_up")])
+category = "oven"
+id = "facility/oven"
+display_name = "data.facility.oven.name"
+description = "data.facility.oven.desc"

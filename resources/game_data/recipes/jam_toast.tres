@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="RecipeDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/material_stack.gd" id="1_stack"]
+[ext_resource type="Script" path="res://scripts/resources/recipe_def.gd" id="2_recipe"]
+
+[sub_resource type="Resource" id="Resource_0"]
+script = ExtResource("1_stack")
+material = "game:item/toast"
+amount = 1
+
+[sub_resource type="Resource" id="Resource_1"]
+script = ExtResource("1_stack")
+material = "game:item/jam"
+amount = 1
+
+[resource]
+script = ExtResource("2_recipe")
+output = "game:item/jam_toast"
+inputs = Array[ExtResource("1_stack")]([SubResource("Resource_0"), SubResource("Resource_1")])
+duration_seconds = 5.0
+order = 166
+group = "simple"
+id = "recipe/jam_toast"
+display_name = "data.recipe.jam_toast.name"
+description = "data.recipe.jam_toast.desc"

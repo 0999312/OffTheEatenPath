@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="LetterDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/material_stack.gd" id="1_ec15q"]
+[ext_resource type="Script" path="res://scripts/resources/letter_def.gd" id="2_278en"]
+
+[resource]
+script = ExtResource("2_278en")
+title = "data.letter.middle_page.title"
+body = "data.letter.middle_page.body"
+order = 22
+condition = 1
+condition_ref = "game:letter/east_asia_leave"
+reward_coins = 50
+id = "letter/middle_page"
+display_name = "data.letter.middle_page.name"
+description = "data.letter.middle_page.desc"
+handwriting = "familiar"

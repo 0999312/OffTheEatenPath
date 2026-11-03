@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="RecipeDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/material_stack.gd" id="1_stack"]
+[ext_resource type="Script" path="res://scripts/resources/recipe_def.gd" id="2_recipe"]
+
+[sub_resource type="Resource" id="Resource_0"]
+script = ExtResource("1_stack")
+material = "game:item/clear_noodle_soup"
+
+[sub_resource type="Resource" id="Resource_1"]
+script = ExtResource("1_stack")
+material = "game:item/miso"
+
+[sub_resource type="Resource" id="Resource_2"]
+script = ExtResource("1_stack")
+material = "game:item/egg"
+
+[sub_resource type="Resource" id="Resource_3"]
+script = ExtResource("1_stack")
+material = "game:item/scallion"
+
+
+[resource]
+script = ExtResource("2_recipe")
+output = "game:item/miso_ramen"
+inputs = Array[ExtResource("1_stack")]([SubResource("Resource_0"), SubResource("Resource_1"), SubResource("Resource_2"), SubResource("Resource_3")])
+duration_seconds = 30.0
+facility = "game:facility/stove"
+order = 405
+group = "meal"
+research_pool = Array[String](["game:item/clear_noodle_soup", "game:item/miso", "game:item/egg", "game:item/scallion"])
+id = "recipe/miso_ramen"
+display_name = "data.recipe.miso_ramen.name"
+description = "data.recipe.miso_ramen.desc"

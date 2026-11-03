@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="RecipeDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/material_stack.gd" id="1_stack"]
+[ext_resource type="Script" path="res://scripts/resources/recipe_def.gd" id="2_recipe"]
+
+[sub_resource type="Resource" id="Resource_0"]
+script = ExtResource("1_stack")
+material = "game:item/tofu"
+
+[sub_resource type="Resource" id="Resource_1"]
+script = ExtResource("1_stack")
+material = "game:item/miso"
+
+[sub_resource type="Resource" id="Resource_2"]
+script = ExtResource("1_stack")
+material = "game:item/sugar"
+
+
+[resource]
+script = ExtResource("2_recipe")
+output = "game:item/tofu_dengaku"
+inputs = Array[ExtResource("1_stack")]([SubResource("Resource_0"), SubResource("Resource_1"), SubResource("Resource_2")])
+duration_seconds = 20.0
+facility = "game:facility/oven"
+order = 404
+group = "bake"
+research_pool = Array[String](["game:item/tofu", "game:item/miso", "game:item/sugar"])
+id = "recipe/tofu_dengaku"
+display_name = "data.recipe.tofu_dengaku.name"
+description = "data.recipe.tofu_dengaku.desc"

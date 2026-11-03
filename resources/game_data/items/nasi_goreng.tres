@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_8g27e"]
+
+[resource]
+script = ExtResource("1_8g27e")
+kind = 1
+sell_price = 22
+taste = "data.item.nasi_goreng.taste"
+catalog_hint = "data.item.nasi_goreng.hint"
+order = 232
+theme = "game:theme/southeast_asia"
+order_weight = 1.2
+tags = Array[String](["game:tag/street", "game:tag/late_night"])
+id = "item/nasi_goreng"
+display_name = "data.item.nasi_goreng.name"
+description = "data.item.nasi_goreng.desc"

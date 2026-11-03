@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_h8mot"]
+
+[resource]
+script = ExtResource("1_h8mot")
+kind = 1
+sell_price = 42
+taste = "data.item.carrot_cake.taste"
+catalog_hint = "data.item.carrot_cake.hint"
+order = 126
+theme = "game:theme/cafe"
+tags = Array[String](["game:tag/sweet"])
+id = "item/carrot_cake"
+display_name = "data.item.carrot_cake.name"
+description = "data.item.carrot_cake.desc"

@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="RecipeDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/material_stack.gd" id="1_stack"]
+[ext_resource type="Script" path="res://scripts/resources/recipe_def.gd" id="2_recipe"]
+
+[sub_resource type="Resource" id="Resource_lemon_tea_0"]
+script = ExtResource("1_stack")
+material = "game:item/tea_leaf"
+
+[sub_resource type="Resource" id="Resource_lemon_tea_1"]
+script = ExtResource("1_stack")
+material = "game:item/water"
+
+[sub_resource type="Resource" id="Resource_lemon_tea_2"]
+script = ExtResource("1_stack")
+material = "game:item/lemon"
+
+[resource]
+script = ExtResource("2_recipe")
+output = "game:item/lemon_tea"
+inputs = Array[ExtResource("1_stack")]([SubResource("Resource_lemon_tea_0"), SubResource("Resource_lemon_tea_1"), SubResource("Resource_lemon_tea_2")])
+duration_seconds = 12.0
+order = 312
+group = "drink"
+research_pool = Array[String](["game:item/tea_leaf", "game:item/water", "game:item/lemon"])
+id = "recipe/lemon_tea"
+display_name = "data.recipe.lemon_tea.name"
+description = "data.recipe.lemon_tea.desc"

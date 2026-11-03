@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_hhrlj"]
+
+[resource]
+script = ExtResource("1_hhrlj")
+kind = 1
+sell_price = 26
+taste = "data.item.zongzi.taste"
+catalog_hint = "data.item.zongzi.hint"
+order = 191
+theme = "game:theme/east_asia"
+tags = Array[String](["game:tag/festival"])
+id = "item/zongzi"
+display_name = "data.item.zongzi.name"
+description = "data.item.zongzi.desc"

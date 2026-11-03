@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_swqyd"]
+
+[resource]
+script = ExtResource("1_swqyd")
+kind = 1
+sell_price = 30
+taste = "data.item.meat_sauce_rice.taste"
+catalog_hint = "data.item.meat_sauce_rice.hint"
+order = 23
+theme = "game:theme/east_asia"
+order_weight = 0.9
+tags = Array[String](["game:tag/home", "game:tag/street"])
+id = "item/meat_sauce_rice"
+display_name = "data.item.meat_sauce_rice.name"
+description = "data.item.meat_sauce_rice.desc"

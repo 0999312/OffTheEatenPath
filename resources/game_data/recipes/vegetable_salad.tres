@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="RecipeDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/material_stack.gd" id="1_stack"]
+[ext_resource type="Script" path="res://scripts/resources/recipe_def.gd" id="2_recipe"]
+
+[sub_resource type="Resource" id="Resource_1"]
+script = ExtResource("1_stack")
+by_tag = "game:tag/veg"
+amount = 2
+
+
+[sub_resource type="Resource" id="Resource_2"]
+script = ExtResource("1_stack")
+material = "game:item/oil"
+
+
+[resource]
+script = ExtResource("2_recipe")
+output = "game:item/vegetable_salad"
+inputs = Array[ExtResource("1_stack")]([SubResource("Resource_1"), SubResource("Resource_2")])
+duration_seconds = 10.0
+group = "simple"
+order = 61
+id = "recipe/vegetable_salad"
+display_name = "data.recipe.vegetable_salad.name"
+description = "data.recipe.vegetable_salad.desc"

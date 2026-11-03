@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="FacilityDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/facility_upgrade.gd" id="1_up"]
+[ext_resource type="Script" path="res://scripts/resources/facility_def.gd" id="2_fac"]
+
+[sub_resource type="Resource" id="Resource_l2"]
+script = ExtResource("1_up")
+target_level = 2
+coin_cost = 60
+
+[sub_resource type="Resource" id="Resource_l3"]
+script = ExtResource("1_up")
+target_level = 3
+coin_cost = 150
+
+[sub_resource type="Resource" id="Resource_lv4_up"]
+script = ExtResource("1_up")
+target_level = 4
+coin_cost = 320
+
+[sub_resource type="Resource" id="Resource_lv5_up"]
+script = ExtResource("1_up")
+target_level = 5
+coin_cost = 600
+
+[resource]
+script = ExtResource("2_fac")
+max_level = 5
+level_speed_factors = Array[float]([1.0, 1.0, 1.0, 1.0, 1.0])
+upgrades = Array[ExtResource("1_up")]([SubResource("Resource_l2"), SubResource("Resource_l3"), SubResource("Resource_lv4_up"), SubResource("Resource_lv5_up")])
+category = "research"
+id = "facility/research_desk"
+display_name = "data.facility.research_desk.name"
+description = "data.facility.research_desk.desc"

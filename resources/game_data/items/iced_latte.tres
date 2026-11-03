@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_lrm8e"]
+
+[resource]
+script = ExtResource("1_lrm8e")
+kind = 1
+sell_price = 18
+taste = "data.item.iced_latte.taste"
+catalog_hint = "data.item.iced_latte.hint"
+order = 118
+theme = "game:theme/cafe"
+order_weight = 1.2
+tags = Array[String](["game:tag/sweet"])
+id = "item/iced_latte"
+display_name = "data.item.iced_latte.name"
+description = "data.item.iced_latte.desc"

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_kn0rb"]
+
+[resource]
+script = ExtResource("1_kn0rb")
+kind = 1
+sell_price = 30
+taste = "data.item.sausage_sauerkraut.taste"
+catalog_hint = "data.item.sausage_sauerkraut.hint"
+order = 137
+theme = "game:theme/western"
+tags = Array[String](["game:tag/home"])
+id = "item/sausage_sauerkraut"
+display_name = "data.item.sausage_sauerkraut.name"
+description = "data.item.sausage_sauerkraut.desc"

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_m2pwk"]
+
+[resource]
+script = ExtResource("1_m2pwk")
+kind = 1
+sell_price = 30
+taste = "data.item.buffalo_wings.taste"
+catalog_hint = "data.item.buffalo_wings.hint"
+order = 239
+theme = "game:theme/americas"
+tags = Array[String](["game:tag/street", "game:tag/late_night", "game:tag/spicy"])
+id = "item/buffalo_wings"
+display_name = "data.item.buffalo_wings.name"
+description = "data.item.buffalo_wings.desc"

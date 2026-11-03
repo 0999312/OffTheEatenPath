@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_yeqcr"]
+
+[resource]
+script = ExtResource("1_yeqcr")
+kind = 1
+sell_price = 22
+taste = "data.item.mango_sticky_rice.taste"
+catalog_hint = "data.item.mango_sticky_rice.hint"
+order = 228
+theme = "game:theme/southeast_asia"
+order_weight = 1.1
+tags = Array[String](["game:tag/sweet"])
+id = "item/mango_sticky_rice"
+display_name = "data.item.mango_sticky_rice.name"
+description = "data.item.mango_sticky_rice.desc"

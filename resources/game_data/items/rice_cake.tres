@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_tls3o"]
+
+[resource]
+script = ExtResource("1_tls3o")
+kind = 1
+sell_price = 10
+taste = "data.item.rice_cake.taste"
+catalog_hint = "data.item.rice_cake.hint"
+order = 21
+theme = "game:theme/east_asia"
+order_weight = 1.4
+tags = Array[String](["game:tag/home", "game:tag/street"])
+id = "item/rice_cake"
+display_name = "data.item.rice_cake.name"
+description = "data.item.rice_cake.desc"

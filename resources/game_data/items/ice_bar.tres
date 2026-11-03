@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_item"]
+
+[resource]
+script = ExtResource("1_item")
+kind = 1
+sell_price = 18
+taste = "data.item.ice_bar.taste"
+catalog_hint = "data.item.ice_bar.hint"
+order = 304
+tags = Array[String](["game:tag/sweet", "game:tag/home"])
+id = "item/ice_bar"
+display_name = "data.item.ice_bar.name"
+description = "data.item.ice_bar.desc"

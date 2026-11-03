@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_item"]
+
+[resource]
+script = ExtResource("1_item")
+kind = 1
+sell_price = 20
+taste = "data.item.pbj_sandwich.taste"
+catalog_hint = "data.item.pbj_sandwich.hint"
+order = 252
+theme = "game:theme/americas"
+order_weight = 1.1
+tags = Array[String](["game:tag/home"])
+id = "item/pbj_sandwich"
+display_name = "data.item.pbj_sandwich.name"
+description = "data.item.pbj_sandwich.desc"

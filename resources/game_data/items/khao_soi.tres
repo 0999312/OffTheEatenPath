@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_7hpun"]
+
+[resource]
+script = ExtResource("1_7hpun")
+kind = 1
+sell_price = 30
+taste = "data.item.khao_soi.taste"
+catalog_hint = "data.item.khao_soi.hint"
+order = 234
+theme = "game:theme/southeast_asia"
+tags = Array[String](["game:tag/spicy", "game:tag/soup"])
+id = "item/khao_soi"
+display_name = "data.item.khao_soi.name"
+description = "data.item.khao_soi.desc"

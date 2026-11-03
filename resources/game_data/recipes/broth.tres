@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="RecipeDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/material_stack.gd" id="1_stack"]
+[ext_resource type="Script" path="res://scripts/resources/recipe_def.gd" id="2_rec"]
+
+[sub_resource type="Resource" id="Resource_veg"]
+script = ExtResource("1_stack")
+by_tag = "game:tag/veg"
+amount = 2
+
+
+[sub_resource type="Resource" id="Resource_meat"]
+script = ExtResource("1_stack")
+by_tag = "game:tag/meat"
+
+
+[resource]
+script = ExtResource("2_rec")
+output = "game:item/broth"
+inputs = Array[ExtResource("1_stack")]([SubResource("Resource_veg"), SubResource("Resource_meat")])
+duration_seconds = 40.0
+facility = "game:facility/stove"
+order = 17
+group = "semi"
+id = "recipe/broth"
+display_name = "data.recipe.broth.name"
+description = "data.recipe.broth.desc"

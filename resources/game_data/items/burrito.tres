@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_xbghb"]
+
+[resource]
+script = ExtResource("1_xbghb")
+kind = 1
+sell_price = 28
+taste = "data.item.burrito.taste"
+catalog_hint = "data.item.burrito.hint"
+order = 242
+theme = "game:theme/americas"
+order_weight = 1.1
+tags = Array[String](["game:tag/street"])
+id = "item/burrito"
+display_name = "data.item.burrito.name"
+description = "data.item.burrito.desc"

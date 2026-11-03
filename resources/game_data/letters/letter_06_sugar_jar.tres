@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="LetterDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/material_stack.gd" id="1_ink23"]
+[ext_resource type="Script" path="res://scripts/resources/letter_def.gd" id="2_npjkr"]
+
+[sub_resource type="Resource" id="Resource_il45p"]
+script = ExtResource("1_ink23")
+material = "game:item/sugar"
+amount = 8
+
+[resource]
+script = ExtResource("2_npjkr")
+title = "data.letter.sugar_jar.title"
+body = "data.letter.sugar_jar.body"
+order = 6
+condition = 2
+condition_ref = "game:item/latte"
+rewards = Array[ExtResource("1_ink23")]([SubResource("Resource_il45p")])
+reward_coins = 20
+id = "letter/sugar_jar"
+display_name = "data.letter.sugar_jar.name"
+description = "data.letter.sugar_jar.desc"

@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="RecipeDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/material_stack.gd" id="1_stack"]
+[ext_resource type="Script" path="res://scripts/resources/recipe_def.gd" id="2_recipe"]
+[ext_resource type="Script" path="res://scripts/resources/facility_def.gd" id="3_fac"]
+
+[sub_resource type="Resource" id="Resource_0"]
+script = ExtResource("1_stack")
+material = "game:item/banana"
+amount = 1
+
+
+[sub_resource type="Resource" id="Resource_1"]
+script = ExtResource("1_stack")
+material = "game:item/white_rice"
+amount = 1
+
+
+[sub_resource type="Resource" id="Resource_2"]
+script = ExtResource("1_stack")
+material = "game:item/coconut_milk"
+
+
+[resource]
+script = ExtResource("2_recipe")
+output = "game:item/banana_rice"
+inputs = Array[ExtResource("1_stack")]([SubResource("Resource_0"), SubResource("Resource_1"), SubResource("Resource_2")])
+duration_seconds = 30.0
+order = 279
+group = "meal"
+research_pool = Array[String](["game:item/banana", "game:item/white_rice", "game:item/coconut_milk"])
+id = "recipe/banana_rice"
+display_name = "data.recipe.banana_rice.name"
+description = "data.recipe.banana_rice.desc"
+facility = "game:facility/stove"

@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="RecipeDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/material_stack.gd" id="1_stack"]
+[ext_resource type="Script" path="res://scripts/resources/recipe_def.gd" id="2_recipe"]
+
+[sub_resource type="Resource" id="Resource_0"]
+script = ExtResource("1_stack")
+by_tag = "game:tag/fruit"
+
+
+[resource]
+script = ExtResource("2_recipe")
+output = "game:item/juice"
+inputs = Array[ExtResource("1_stack")]([SubResource("Resource_0")])
+duration_seconds = 8.0
+order = 179
+group = "drink"
+id = "recipe/juice"
+display_name = "data.recipe.juice.name"
+description = "data.recipe.juice.desc"

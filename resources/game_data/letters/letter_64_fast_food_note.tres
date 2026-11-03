@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="LetterDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/material_stack.gd" id="1_stack"]
+[ext_resource type="Script" path="res://scripts/resources/letter_def.gd" id="2_letter"]
+
+[sub_resource type="Resource" id="Resource_r0"]
+script = ExtResource("1_stack")
+material = "game:item/potato"
+amount = 6
+
+[resource]
+script = ExtResource("2_letter")
+title = "data.letter.fast_food_note.title"
+body = "data.letter.fast_food_note.body"
+order = 66
+condition = 3
+condition_value = 595
+rewards = Array[ExtResource("1_stack")]([SubResource("Resource_r0")])
+reward_coins = 40
+id = "letter/fast_food_note"
+display_name = "data.letter.fast_food_note.name"
+description = "data.letter.fast_food_note.desc"
+handwriting = "own"

@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="LetterDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/material_stack.gd" id="1_puosr"]
+[ext_resource type="Script" path="res://scripts/resources/letter_def.gd" id="2_i64b4"]
+
+[sub_resource type="Resource" id="Resource_cfvth"]
+script = ExtResource("1_puosr")
+material = "game:item/egg"
+amount = 4
+
+[resource]
+script = ExtResource("2_i64b4")
+title = "data.letter.before_leaving.title"
+body = "data.letter.before_leaving.body"
+order = 16
+condition = 3
+condition_value = 110
+rewards = Array[ExtResource("1_puosr")]([SubResource("Resource_cfvth")])
+reward_coins = 30
+unlocks_offline = true
+id = "letter/before_leaving"
+display_name = "data.letter.before_leaving.name"
+description = "data.letter.before_leaving.desc"

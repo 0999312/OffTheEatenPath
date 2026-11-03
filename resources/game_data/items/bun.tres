@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_rhu63"]
+
+[resource]
+script = ExtResource("1_rhu63")
+kind = 1
+sell_price = 26
+taste = "data.item.bun.taste"
+catalog_hint = "data.item.bun.hint"
+order = 19
+theme = "game:theme/east_asia"
+order_weight = 0.9
+tags = Array[String](["game:tag/home", "game:tag/street"])
+id = "item/bun"
+display_name = "data.item.bun.name"
+description = "data.item.bun.desc"

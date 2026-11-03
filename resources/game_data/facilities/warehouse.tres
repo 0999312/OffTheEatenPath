@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="FacilityDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/facility_upgrade.gd" id="1_up"]
+[ext_resource type="Script" path="res://scripts/resources/facility_def.gd" id="2_fac"]
+
+[sub_resource type="Resource" id="Resource_l2_up"]
+script = ExtResource("1_up")
+target_level = 2
+coin_cost = 80
+
+[sub_resource type="Resource" id="Resource_l3_up"]
+script = ExtResource("1_up")
+target_level = 3
+coin_cost = 200
+
+[sub_resource type="Resource" id="Resource_l4_up"]
+script = ExtResource("1_up")
+target_level = 4
+coin_cost = 450
+
+[sub_resource type="Resource" id="Resource_l5_up"]
+script = ExtResource("1_up")
+target_level = 5
+coin_cost = 900
+
+[resource]
+script = ExtResource("2_fac")
+max_level = 5
+level_speed_factors = Array[float]([1.0, 1.0, 1.0, 1.0, 1.0])
+upgrades = Array[ExtResource("1_up")]([SubResource("Resource_l2_up"), SubResource("Resource_l3_up"), SubResource("Resource_l4_up"), SubResource("Resource_l5_up")])
+category = "storage"
+id = "facility/warehouse"
+display_name = "data.facility.warehouse.name"
+description = "data.facility.warehouse.desc"

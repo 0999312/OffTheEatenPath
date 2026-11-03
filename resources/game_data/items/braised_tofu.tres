@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_item"]
+
+[resource]
+script = ExtResource("1_item")
+kind = 1
+sell_price = 20
+taste = "data.item.braised_tofu.taste"
+catalog_hint = "data.item.braised_tofu.hint"
+order = 368
+theme = "game:theme/east_asia"
+order_weight = 1.0
+tags = Array[String](["game:tag/home", "game:tag/spicy"])
+id = "item/braised_tofu"
+display_name = "data.item.braised_tofu.name"
+description = "data.item.braised_tofu.desc"

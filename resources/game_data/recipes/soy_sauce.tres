@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="RecipeDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/material_stack.gd" id="1_stack"]
+[ext_resource type="Script" path="res://scripts/resources/recipe_def.gd" id="2_rec"]
+
+[sub_resource type="Resource" id="Resource_bean"]
+script = ExtResource("1_stack")
+material = "game:item/soy"
+
+[sub_resource type="Resource" id="Resource_spice"]
+script = ExtResource("1_stack")
+material = "game:item/spice"
+
+[sub_resource type="Resource" id="Resource_miso"]
+script = ExtResource("1_stack")
+material = "game:item/miso"
+
+[resource]
+script = ExtResource("2_rec")
+output = "game:item/soy_sauce"
+inputs = Array[ExtResource("1_stack")]([SubResource("Resource_bean"), SubResource("Resource_spice")])
+extra_outputs = Array[ExtResource("1_stack")]([SubResource("Resource_miso")])
+duration_seconds = 30.0
+facility = "game:facility/stove"
+order = 315
+group = "semi"
+id = "recipe/soy_sauce"
+display_name = "data.recipe.soy_sauce.name"
+description = "data.recipe.soy_sauce.desc"

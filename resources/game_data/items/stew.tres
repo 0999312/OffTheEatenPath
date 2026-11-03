@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_qtgh8"]
+
+[resource]
+script = ExtResource("1_qtgh8")
+kind = 1
+sell_price = 40
+taste = "data.item.stew.taste"
+catalog_hint = "data.item.stew.hint"
+order = 29
+theme = "game:theme/east_asia"
+order_weight = 0.6
+tags = Array[String](["game:tag/home", "game:tag/festival"])
+id = "item/stew"
+display_name = "data.item.stew.name"
+description = "data.item.stew.desc"

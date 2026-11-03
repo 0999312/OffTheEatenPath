@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="RecipeDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/material_stack.gd" id="1_287po"]
+[ext_resource type="Script" path="res://scripts/resources/recipe_def.gd" id="2_jj75l"]
+
+[sub_resource type="Resource" id="Resource_ttdv4"]
+script = ExtResource("1_287po")
+material = "game:item/dough"
+amount = 2
+
+[sub_resource type="Resource" id="Resource_33mkx"]
+script = ExtResource("1_287po")
+material = "game:item/butter"
+amount = 1
+
+[resource]
+script = ExtResource("2_jj75l")
+output = "game:item/croissant"
+inputs = Array[ExtResource("1_287po")]([SubResource("Resource_ttdv4"), SubResource("Resource_33mkx")])
+duration_seconds = 45.0
+facility = "game:facility/oven"
+order = 9
+group = "bake"
+research_pool = Array[String](["game:item/dough", "game:item/butter"])
+id = "recipe/croissant"
+display_name = "data.recipe.croissant.name"
+description = "data.recipe.croissant.desc"

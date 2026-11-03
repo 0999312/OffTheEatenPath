@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_ok0l3"]
+
+[resource]
+script = ExtResource("1_ok0l3")
+kind = 1
+sell_price = 24
+taste = "data.item.satay.taste"
+catalog_hint = "data.item.satay.hint"
+order = 229
+theme = "game:theme/southeast_asia"
+order_weight = 1.1
+tags = Array[String](["game:tag/street"])
+id = "item/satay"
+display_name = "data.item.satay.name"
+description = "data.item.satay.desc"

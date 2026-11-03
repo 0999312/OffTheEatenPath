@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ThemeDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/theme_def.gd" id="1_theme"]
+
+[resource]
+script = ExtResource("1_theme")
+id = "theme/middle_east"
+display_name = "data.theme.middle_east.name"
+description = "data.theme.middle_east.desc"
+order = 60
+unlock_letter = "game:letter/middle_east_arrive"

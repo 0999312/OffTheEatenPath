@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_wdeha"]
+
+[resource]
+script = ExtResource("1_wdeha")
+kind = 1
+sell_price = 6
+taste = "data.item.espresso.taste"
+catalog_hint = "data.item.espresso.hint"
+order = 1
+theme = "game:theme/cafe"
+order_weight = 1.2
+tags = Array[String](["game:tag/home", "game:tag/sweet"])
+id = "item/espresso"
+display_name = "data.item.espresso.name"
+description = "data.item.espresso.desc"

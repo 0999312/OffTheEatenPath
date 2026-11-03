@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_ccmob"]
+
+[resource]
+script = ExtResource("1_ccmob")
+kind = 1
+sell_price = 12
+taste = "data.item.farinata.taste"
+catalog_hint = "data.item.farinata.hint"
+order = 177
+theme = "game:theme/mediterranean"
+order_weight = 1.3
+tags = Array[String](["game:tag/vegetarian", "game:tag/street"])
+id = "item/farinata"
+display_name = "data.item.farinata.name"
+description = "data.item.farinata.desc"

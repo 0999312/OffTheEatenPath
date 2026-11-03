@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="RecipeDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/material_stack.gd" id="1_stack"]
+[ext_resource type="Script" path="res://scripts/resources/recipe_def.gd" id="2_rec"]
+
+[sub_resource type="Resource" id="Resource_0"]
+script = ExtResource("1_stack")
+material = "game:item/whole_wheat_flour"
+amount = 2
+
+[sub_resource type="Resource" id="Resource_1"]
+script = ExtResource("1_stack")
+material = "game:item/water"
+amount = 1
+
+[sub_resource type="Resource" id="Resource_2"]
+script = ExtResource("1_stack")
+material = "game:item/salt"
+amount = 1
+
+
+[resource]
+script = ExtResource("2_rec")
+output = "game:item/whole_wheat_bread"
+inputs = Array[ExtResource("1_stack")]([SubResource("Resource_0"), SubResource("Resource_1"), SubResource("Resource_2")])
+duration_seconds = 45.0
+facility = "game:facility/oven"
+order = 356
+group = "bake"
+id = "recipe/whole_wheat_bread"
+display_name = "data.recipe.whole_wheat_bread.name"
+description = "data.recipe.whole_wheat_bread.desc"

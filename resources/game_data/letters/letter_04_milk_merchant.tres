@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="LetterDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/material_stack.gd" id="1_crbah"]
+[ext_resource type="Script" path="res://scripts/resources/letter_def.gd" id="2_unyg6"]
+
+[sub_resource type="Resource" id="Resource_sqlgc"]
+script = ExtResource("1_crbah")
+material = "game:item/milk"
+amount = 6
+
+[resource]
+script = ExtResource("2_unyg6")
+title = "data.letter.milk_merchant.title"
+body = "data.letter.milk_merchant.body"
+order = 4
+condition = 1
+condition_ref = "game:letter/window"
+rewards = Array[ExtResource("1_crbah")]([SubResource("Resource_sqlgc")])
+reward_coins = 10
+id = "letter/milk_merchant"
+display_name = "data.letter.milk_merchant.name"
+description = "data.letter.milk_merchant.desc"
+task_title = "data.letter.milk_merchant.task_title"
+task_body = "data.letter.milk_merchant.task_body"
+task_goal = 6
+task_ref = "game:recipe/latte"
+task_amount = 1
+task_reward_coins = 20

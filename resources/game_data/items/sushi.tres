@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_yemcu"]
+
+[resource]
+script = ExtResource("1_yemcu")
+kind = 1
+sell_price = 32
+taste = "data.item.sushi.taste"
+catalog_hint = "data.item.sushi.hint"
+order = 179
+theme = "game:theme/east_asia"
+tags = Array[String](["game:tag/home"])
+id = "item/sushi"
+display_name = "data.item.sushi.name"
+description = "data.item.sushi.desc"

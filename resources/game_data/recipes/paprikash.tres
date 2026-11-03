@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="RecipeDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/material_stack.gd" id="1_stack"]
+[ext_resource type="Script" path="res://scripts/resources/recipe_def.gd" id="2_recipe"]
+
+[sub_resource type="Resource" id="Resource_0"]
+script = ExtResource("1_stack")
+material = "game:item/chicken"
+amount = 1
+
+[sub_resource type="Resource" id="Resource_1"]
+script = ExtResource("1_stack")
+material = "game:item/chili"
+amount = 1
+
+[sub_resource type="Resource" id="Resource_2"]
+script = ExtResource("1_stack")
+material = "game:item/cream"
+amount = 1
+
+[sub_resource type="Resource" id="Resource_3"]
+script = ExtResource("1_stack")
+material = "game:item/onion"
+amount = 1
+
+
+[resource]
+script = ExtResource("2_recipe")
+output = "game:item/paprikash"
+inputs = Array[ExtResource("1_stack")]([SubResource("Resource_0"), SubResource("Resource_1"), SubResource("Resource_2"), SubResource("Resource_3")])
+duration_seconds = 45.0
+facility = "game:facility/stove"
+order = 390
+group = "meal"
+research_pool = Array[String](["game:item/chicken", "game:item/chili", "game:item/cream", "game:item/onion"])
+id = "recipe/paprikash"
+display_name = "data.recipe.paprikash.name"
+description = "data.recipe.paprikash.desc"

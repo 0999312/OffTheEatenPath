@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="RecipeDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/material_stack.gd" id="1_2jwm4"]
+[ext_resource type="Script" path="res://scripts/resources/recipe_def.gd" id="2_pefco"]
+
+[sub_resource type="Resource" id="Resource_in0"]
+script = ExtResource("1_2jwm4")
+material = "game:item/espresso"
+
+[sub_resource type="Resource" id="Resource_in1"]
+script = ExtResource("1_2jwm4")
+material = "game:item/milk"
+amount = 2
+
+[sub_resource type="Resource" id="Resource_in2"]
+script = ExtResource("1_2jwm4")
+material = "game:item/sugar"
+
+[resource]
+script = ExtResource("2_pefco")
+output = "game:item/cappuccino"
+inputs = Array[ExtResource("1_2jwm4")]([SubResource("Resource_in0"), SubResource("Resource_in1"), SubResource("Resource_in2")])
+duration_seconds = 25.0
+order = 7
+group = "drink"
+research_pool = Array[String](["game:item/espresso", "game:item/milk", "game:item/sugar"])
+research_hint = "data.recipe.cappuccino.hint"
+id = "recipe/cappuccino"
+display_name = "data.recipe.cappuccino.name"
+description = "data.recipe.cappuccino.desc"

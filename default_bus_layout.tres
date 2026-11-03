@@ -1,0 +1,37 @@
+[gd_resource type="AudioBusLayout" format=3 uid="uid://bq6m2xw8vd1ya"]
+
+[sub_resource type="AudioEffectCompressor" id="AudioEffectCompressor_ui"]
+threshold = -18.0
+ratio = 3.0
+attack_us = 5000.0
+release_ms = 150.0
+gain = 0.0
+mix = 1.0
+
+[sub_resource type="AudioEffectEQ21" id="AudioEffectEQ21_ui"]
+band_db/2800_hz = -4.0
+band_db/4000_hz = -6.0
+band_db/5600_hz = -7.0
+band_db/8000_hz = -6.0
+band_db/11000_hz = -4.5
+band_db/16000_hz = -4.0
+
+[sub_resource type="AudioEffectHardLimiter" id="AudioEffectHardLimiter_master"]
+ceiling_db = -1.0
+
+[resource]
+bus/0/effect/0/effect = SubResource("AudioEffectHardLimiter_master")
+bus/1/name = &"Music"
+bus/1/solo = false
+bus/1/mute = false
+bus/1/bypass_fx = false
+bus/1/volume_db = 0.0
+bus/1/send = &"Master"
+bus/2/name = &"UI"
+bus/2/solo = false
+bus/2/mute = false
+bus/2/bypass_fx = false
+bus/2/volume_db = 0.0
+bus/2/send = &"Master"
+bus/2/effect/0/effect = SubResource("AudioEffectCompressor_ui")
+bus/2/effect/1/effect = SubResource("AudioEffectEQ21_ui")

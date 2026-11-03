@@ -1,0 +1,11 @@
+[gd_resource type="FontVariation" load_steps=4 format=3]
+
+[ext_resource type="FontFile" path="res://assets/fonts/MiSans-Semibold.ttf" id="1_base"]
+[ext_resource type="FontFile" path="res://assets/fonts/NotoSansThai-Regular.ttf" id="2_thai"]
+[ext_resource type="FontFile" path="res://assets/fonts/NotoSansKR-Regular.otf" id="3_kr"]
+
+[resource]
+base_font = ExtResource("1_base")
+fallbacks = Array[Font]([ExtResource("2_thai"), ExtResource("3_kr")])
+spacing_top = -3
+spacing_bottom = -3

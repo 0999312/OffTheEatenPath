@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_kjwlo"]
+
+[resource]
+script = ExtResource("1_kjwlo")
+kind = 1
+sell_price = 55
+taste = "data.item.cake.taste"
+catalog_hint = "data.item.cake.hint"
+order = 8
+theme = "game:theme/cafe"
+order_weight = 0.6
+tags = Array[String](["game:tag/sweet", "game:tag/festival"])
+id = "item/cake"
+display_name = "data.item.cake.name"
+description = "data.item.cake.desc"

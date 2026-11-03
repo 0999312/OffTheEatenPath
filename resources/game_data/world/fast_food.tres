@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="WorldDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/world_def.gd" id="1_world"]
+
+[resource]
+script = ExtResource("1_world")
+subtitle = "data.world.fast_food.subtitle"
+body = "data.world.fast_food.body"
+order = 12
+catalog_hint = "data.world.fast_food.hint"
+unlock_letter = "game:letter/fast_food_arrive"
+id = "world/fast_food"
+display_name = "data.world.fast_food.name"
+description = "data.world.fast_food.desc"

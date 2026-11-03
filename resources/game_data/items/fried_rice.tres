@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_jtwkf"]
+
+[resource]
+script = ExtResource("1_jtwkf")
+kind = 1
+sell_price = 20
+taste = "data.item.fried_rice.taste"
+catalog_hint = "data.item.fried_rice.hint"
+order = 22
+theme = "game:theme/east_asia"
+order_weight = 1.3
+tags = Array[String](["game:tag/home", "game:tag/street"])
+id = "item/fried_rice"
+display_name = "data.item.fried_rice.name"
+description = "data.item.fried_rice.desc"

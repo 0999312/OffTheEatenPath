@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_lono4"]
+
+[resource]
+script = ExtResource("1_lono4")
+kind = 1
+sell_price = 28
+taste = "data.item.creme_brulee.taste"
+catalog_hint = "data.item.creme_brulee.hint"
+order = 17
+theme = "game:theme/cafe"
+order_weight = 0.8
+tags = Array[String](["game:tag/sweet"])
+id = "item/creme_brulee"
+display_name = "data.item.creme_brulee.name"
+description = "data.item.creme_brulee.desc"

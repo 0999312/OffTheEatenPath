@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_6vl7h"]
+
+[resource]
+script = ExtResource("1_6vl7h")
+kind = 1
+sell_price = 26
+taste = "data.item.pad_thai.taste"
+catalog_hint = "data.item.pad_thai.hint"
+order = 231
+theme = "game:theme/southeast_asia"
+order_weight = 1.1
+tags = Array[String](["game:tag/street"])
+id = "item/pad_thai"
+display_name = "data.item.pad_thai.name"
+description = "data.item.pad_thai.desc"

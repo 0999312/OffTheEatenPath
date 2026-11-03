@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_d6he0"]
+
+[resource]
+script = ExtResource("1_d6he0")
+kind = 1
+sell_price = 16
+taste = "data.item.dal.taste"
+catalog_hint = "data.item.dal.hint"
+order = 217
+theme = "game:theme/south_asia"
+order_weight = 1.2
+tags = Array[String](["game:tag/home", "game:tag/soup", "game:tag/vegetarian"])
+id = "item/dal"
+display_name = "data.item.dal.name"
+description = "data.item.dal.desc"

@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="LetterDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/material_stack.gd" id="1_stack"]
+[ext_resource type="Script" path="res://scripts/resources/letter_def.gd" id="2_letter"]
+
+[resource]
+script = ExtResource("2_letter")
+title = "data.letter.task_africa_note_1.title"
+body = "data.letter.task_africa_note_1.body"
+order = 57
+condition = 1
+condition_ref = "game:letter/africa_note"
+id = "letter/task_africa_note_1"
+display_name = "data.letter.task_africa_note_1.name"
+description = "data.letter.task_africa_note_1.desc"
+task_title = "data.letter.task_africa_note_1.task_title"
+task_body = "data.letter.task_africa_note_1.task_body"
+task_goal = 7
+task_ref = "game:tag/street"
+task_amount = 3
+task_reward_coins = 50

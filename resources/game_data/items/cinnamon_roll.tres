@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_87yjk"]
+
+[resource]
+script = ExtResource("1_87yjk")
+kind = 1
+sell_price = 36
+taste = "data.item.cinnamon_roll.taste"
+catalog_hint = "data.item.cinnamon_roll.hint"
+order = 125
+theme = "game:theme/cafe"
+tags = Array[String](["game:tag/sweet"])
+id = "item/cinnamon_roll"
+display_name = "data.item.cinnamon_roll.name"
+description = "data.item.cinnamon_roll.desc"

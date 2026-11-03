@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_jkol7"]
+
+[resource]
+script = ExtResource("1_jkol7")
+kind = 1
+sell_price = 32
+taste = "data.item.fish_and_chips.taste"
+catalog_hint = "data.item.fish_and_chips.hint"
+order = 108
+theme = "game:theme/fast_food"
+tags = Array[String](["game:tag/street"])
+id = "item/fish_and_chips"
+display_name = "data.item.fish_and_chips.name"
+description = "data.item.fish_and_chips.desc"

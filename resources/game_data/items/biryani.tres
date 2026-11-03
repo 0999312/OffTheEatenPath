@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_ap2jy"]
+
+[resource]
+script = ExtResource("1_ap2jy")
+kind = 1
+sell_price = 45
+taste = "data.item.biryani.taste"
+catalog_hint = "data.item.biryani.hint"
+order = 214
+theme = "game:theme/south_asia"
+order_weight = 0.9
+tags = Array[String](["game:tag/home", "game:tag/festival", "game:tag/spicy"])
+id = "item/biryani"
+display_name = "data.item.biryani.name"
+description = "data.item.biryani.desc"

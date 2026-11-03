@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="LetterDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/material_stack.gd" id="1_stack"]
+[ext_resource type="Script" path="res://scripts/resources/letter_def.gd" id="2_letter"]
+
+[resource]
+script = ExtResource("2_letter")
+title = "data.letter.task_east_asia_noodle_stand_1.title"
+body = "data.letter.task_east_asia_noodle_stand_1.body"
+order = 20
+condition = 1
+condition_ref = "game:letter/east_asia_noodle_stand"
+id = "letter/task_east_asia_noodle_stand_1"
+display_name = "data.letter.task_east_asia_noodle_stand_1.name"
+description = "data.letter.task_east_asia_noodle_stand_1.desc"
+task_title = "data.letter.task_east_asia_noodle_stand_1.task_title"
+task_body = "data.letter.task_east_asia_noodle_stand_1.task_body"
+task_goal = 1
+task_ref = "game:item/clear_noodle_soup"
+task_amount = 2
+task_reward_coins = 50

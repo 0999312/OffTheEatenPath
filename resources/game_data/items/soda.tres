@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_xwlcw"]
+
+[resource]
+script = ExtResource("1_xwlcw")
+kind = 1
+sell_price = 8
+taste = "data.item.soda.taste"
+catalog_hint = "data.item.soda.hint"
+order = 111
+theme = "game:theme/fast_food"
+order_weight = 1.3
+tags = Array[String](["game:tag/sweet", "game:tag/street"])
+id = "item/soda"
+display_name = "data.item.soda.name"
+description = "data.item.soda.desc"

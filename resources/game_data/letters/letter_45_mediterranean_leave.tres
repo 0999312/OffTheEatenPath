@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="LetterDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/material_stack.gd" id="1_stack"]
+[ext_resource type="Script" path="res://scripts/resources/letter_def.gd" id="2_letter"]
+
+[resource]
+script = ExtResource("2_letter")
+title = "data.letter.mediterranean_leave.title"
+body = "data.letter.mediterranean_leave.body"
+order = 47
+condition = 3
+condition_value = 410
+reward_coins = 60
+id = "letter/mediterranean_leave"
+display_name = "data.letter.mediterranean_leave.name"
+description = "data.letter.mediterranean_leave.desc"

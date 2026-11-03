@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_qmadi"]
+
+[resource]
+script = ExtResource("1_qmadi")
+kind = 1
+sell_price = 10
+taste = "data.item.naan.taste"
+catalog_hint = "data.item.naan.hint"
+order = 212
+theme = "game:theme/south_asia"
+order_weight = 1.3
+tags = Array[String](["game:tag/home", "game:tag/vegetarian"])
+id = "item/naan"
+display_name = "data.item.naan.name"
+description = "data.item.naan.desc"

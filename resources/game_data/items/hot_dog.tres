@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_wnnsg"]
+
+[resource]
+script = ExtResource("1_wnnsg")
+kind = 1
+sell_price = 18
+taste = "data.item.hot_dog.taste"
+catalog_hint = "data.item.hot_dog.hint"
+order = 103
+theme = "game:theme/fast_food"
+order_weight = 1.3
+tags = Array[String](["game:tag/street"])
+id = "item/hot_dog"
+display_name = "data.item.hot_dog.name"
+description = "data.item.hot_dog.desc"

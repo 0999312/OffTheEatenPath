@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_i0g0i"]
+
+[resource]
+script = ExtResource("1_i0g0i")
+kind = 1
+sell_price = 24
+taste = "data.item.oyakodon.taste"
+catalog_hint = "data.item.oyakodon.hint"
+order = 187
+theme = "game:theme/east_asia"
+order_weight = 1.1
+tags = Array[String](["game:tag/home"])
+id = "item/oyakodon"
+display_name = "data.item.oyakodon.name"
+description = "data.item.oyakodon.desc"

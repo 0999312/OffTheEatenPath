@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_mtl17"]
+
+[resource]
+script = ExtResource("1_mtl17")
+kind = 1
+sell_price = 12
+taste = "data.item.fruit_salad.taste"
+catalog_hint = "data.item.fruit_salad.hint"
+order = 149
+order_weight = 1.2
+tags = Array[String](["game:tag/home", "game:tag/sweet", "game:tag/vegetarian"])
+id = "item/fruit_salad"
+display_name = "data.item.fruit_salad.name"
+description = "data.item.fruit_salad.desc"

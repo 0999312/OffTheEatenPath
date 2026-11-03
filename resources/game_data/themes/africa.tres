@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ThemeDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/theme_def.gd" id="1_theme"]
+
+[resource]
+script = ExtResource("1_theme")
+id = "theme/africa"
+display_name = "data.theme.africa.name"
+description = "data.theme.africa.desc"
+order = 90
+unlock_letter = "game:letter/africa_arrive"

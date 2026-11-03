@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="LetterDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/material_stack.gd" id="1_stack"]
+[ext_resource type="Script" path="res://scripts/resources/letter_def.gd" id="2_letter"]
+
+[resource]
+script = ExtResource("2_letter")
+title = "data.letter.teach_upgrade.title"
+body = "data.letter.teach_upgrade.body"
+order = 8
+condition = 1
+condition_ref = "game:letter/flour_sack"
+id = "letter/teach_upgrade"
+display_name = "data.letter.teach_upgrade.name"
+description = "data.letter.teach_upgrade.desc"

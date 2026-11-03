@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_ph6hc"]
+
+[resource]
+script = ExtResource("1_ph6hc")
+kind = 1
+sell_price = 15
+taste = "data.item.butter_rice.taste"
+catalog_hint = "data.item.butter_rice.hint"
+order = 55
+theme = "game:theme/east_asia"
+order_weight = 1.2
+tags = Array[String](["game:tag/home"])
+id = "item/butter_rice"
+display_name = "data.item.butter_rice.name"
+description = "data.item.butter_rice.desc"

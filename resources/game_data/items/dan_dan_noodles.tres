@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_item"]
+
+[resource]
+script = ExtResource("1_item")
+kind = 1
+sell_price = 26
+taste = "data.item.dan_dan_noodles.taste"
+catalog_hint = "data.item.dan_dan_noodles.hint"
+order = 374
+theme = "game:theme/east_asia"
+order_weight = 1.0
+tags = Array[String](["game:tag/home", "game:tag/spicy", "game:tag/street"])
+id = "item/dan_dan_noodles"
+display_name = "data.item.dan_dan_noodles.name"
+description = "data.item.dan_dan_noodles.desc"

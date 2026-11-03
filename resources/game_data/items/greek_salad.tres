@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_duj5f"]
+
+[resource]
+script = ExtResource("1_duj5f")
+kind = 1
+sell_price = 18
+taste = "data.item.greek_salad.taste"
+catalog_hint = "data.item.greek_salad.hint"
+order = 170
+theme = "game:theme/mediterranean"
+order_weight = 1.2
+tags = Array[String](["game:tag/home", "game:tag/vegetarian"])
+id = "item/greek_salad"
+display_name = "data.item.greek_salad.name"
+description = "data.item.greek_salad.desc"

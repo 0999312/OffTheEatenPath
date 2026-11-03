@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ThemeDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/theme_def.gd" id="1_theme"]
+
+[resource]
+script = ExtResource("1_theme")
+id = "theme/western"
+display_name = "data.theme.western.name"
+description = "data.theme.western.desc"
+order = 40
+unlock_letter = "game:letter/western_arrive"

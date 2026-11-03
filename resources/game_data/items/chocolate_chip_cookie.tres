@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_item"]
+
+[resource]
+script = ExtResource("1_item")
+kind = 1
+sell_price = 22
+taste = "data.item.chocolate_chip_cookie.taste"
+catalog_hint = "data.item.chocolate_chip_cookie.hint"
+order = 359
+theme = "game:theme/cafe"
+order_weight = 0.8
+id = "item/chocolate_chip_cookie"
+display_name = "data.item.chocolate_chip_cookie.name"
+description = "data.item.chocolate_chip_cookie.desc"

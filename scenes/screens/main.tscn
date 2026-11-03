@@ -1,0 +1,172 @@
+[gd_scene load_steps=12 format=3]
+
+[ext_resource type="Script" path="res://scripts/screens/main.gd" id="1_script"]
+[ext_resource type="Theme" path="res://resources/themes/paper_theme.tres" id="2_theme"]
+[ext_resource type="PackedScene" path="res://scenes/ui/hud.tscn" id="3_hud"]
+[ext_resource type="Script" path="res://scripts/systems/game_bridge.gd" id="4_bridge"]
+[ext_resource type="Script" path="res://scripts/ui/grain_overlay.gd" id="6_grain"]
+[ext_resource type="Script" path="res://scripts/ui/room_backdrop.gd" id="5_backdrop"]
+[ext_resource type="Script" path="res://scripts/ui/ambient_layer.gd" id="7_ambient"]
+[ext_resource type="Script" path="res://scripts/ui/harvest_layer.gd" id="8_harvest"]
+[ext_resource type="Script" path="res://scripts/ui/tooltip_layer.gd" id="9_tooltip"]
+[ext_resource type="Script" path="res://scripts/ui/sunlight_layer.gd" id="10_sunlight"]
+
+[sub_resource type="StyleBoxFlat" id="S_table"]
+content_margin_left = 22.0
+content_margin_top = 20.0
+content_margin_right = 22.0
+content_margin_bottom = 20.0
+bg_color = Color(0.949020, 0.964706, 0.980392, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.133333, 0.188235, 0.239216, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_theme")
+script = ExtResource("1_script")
+
+[node name="Paper" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.788235, 0.839216, 0.882353, 1)
+
+[node name="Backdrop" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("5_backdrop")
+
+[node name="Sunlight" type="ColorRect" parent="Backdrop"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("10_sunlight")
+
+[node name="Room" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+
+[node name="Desktop" type="Control" parent="Room"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Table" type="Control" parent="Room/Desktop"]
+layout_mode = 1
+anchors_preset = 0
+offset_left = 248.0
+offset_top = 132.0
+offset_right = 1032.0
+offset_bottom = 608.0
+mouse_filter = 2
+
+[node name="Front" type="PanelContainer" parent="Room/Desktop/Table"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("S_table")
+
+[node name="TableBox" type="VBoxContainer" parent="Room/Desktop/Table/Front"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="LeftRail" type="VBoxContainer" parent="Room/Desktop"]
+layout_mode = 1
+anchors_preset = 0
+offset_left = 36.0
+offset_top = 132.0
+offset_right = 222.0
+offset_bottom = 608.0
+theme_override_constants/separation = 20
+
+[node name="RightRail" type="VBoxContainer" parent="Room/Desktop"]
+layout_mode = 1
+anchors_preset = 0
+offset_left = 1058.0
+offset_top = 132.0
+offset_right = 1244.0
+offset_bottom = 608.0
+theme_override_constants/separation = 20
+
+[node name="Ambient" type="Control" parent="Room"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("7_ambient")
+
+[node name="Harvest" type="Control" parent="Room"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("8_harvest")
+
+[node name="GrainLayer" type="CanvasLayer" parent="."]
+layer = 3
+
+[node name="Grain" type="Control" parent="GrainLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("6_grain")
+
+[node name="HudLayer" type="CanvasLayer" parent="."]
+layer = 2
+
+[node name="Hud" parent="HudLayer" instance=ExtResource("3_hud")]
+
+[node name="GameBridge" type="Node" parent="."]
+script = ExtResource("4_bridge")
+
+[node name="TooltipCanvas" type="CanvasLayer" parent="."]
+layer = 250
+
+[node name="TooltipLayer" type="Control" parent="TooltipCanvas"]
+mouse_filter = 2
+script = ExtResource("9_tooltip")

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_wt5hg"]
+
+[resource]
+script = ExtResource("1_wt5hg")
+kind = 1
+sell_price = 16
+taste = "data.item.club_sandwich.taste"
+catalog_hint = "data.item.club_sandwich.hint"
+order = 145
+order_weight = 1.2
+tags = Array[String](["game:tag/home", "game:tag/street"])
+id = "item/club_sandwich"
+display_name = "data.item.club_sandwich.name"
+description = "data.item.club_sandwich.desc"

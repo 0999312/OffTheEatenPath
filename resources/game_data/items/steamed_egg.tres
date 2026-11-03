@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_lqvt6"]
+
+[resource]
+script = ExtResource("1_lqvt6")
+kind = 1
+sell_price = 9
+taste = "data.item.steamed_egg.taste"
+catalog_hint = "data.item.steamed_egg.hint"
+order = 18
+theme = "game:theme/east_asia"
+order_weight = 1.3
+tags = Array[String](["game:tag/home"])
+id = "item/steamed_egg"
+display_name = "data.item.steamed_egg.name"
+description = "data.item.steamed_egg.desc"

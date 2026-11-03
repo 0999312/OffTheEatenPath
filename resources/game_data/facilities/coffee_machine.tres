@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="FacilityDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/material_stack.gd" id="1_stack"]
+[ext_resource type="Script" path="res://scripts/resources/facility_upgrade.gd" id="2_up"]
+[ext_resource type="Script" path="res://scripts/resources/facility_def.gd" id="3_fac"]
+
+[sub_resource type="Resource" id="Resource_xuln7"]
+script = ExtResource("1_stack")
+material = "game:item/coffee_ground"
+amount = 10
+
+[sub_resource type="Resource" id="Resource_qlx82"]
+script = ExtResource("2_up")
+coin_cost = 60
+materials = Array[ExtResource("1_stack")]([SubResource("Resource_xuln7")])
+
+[sub_resource type="Resource" id="Resource_mjjr1"]
+script = ExtResource("1_stack")
+material = "game:item/coffee_ground"
+amount = 25
+
+[sub_resource type="Resource" id="Resource_5kxdx"]
+script = ExtResource("2_up")
+target_level = 3
+coin_cost = 150
+materials = Array[ExtResource("1_stack")]([SubResource("Resource_mjjr1")])
+
+[sub_resource type="Resource" id="Resource_lv4_mat"]
+script = ExtResource("1_stack")
+material = "game:item/coffee_ground"
+amount = 60
+
+[sub_resource type="Resource" id="Resource_lv4_up"]
+script = ExtResource("2_up")
+target_level = 4
+coin_cost = 320
+materials = Array[ExtResource("1_stack")]([SubResource("Resource_lv4_mat")])
+
+[resource]
+script = ExtResource("3_fac")
+max_level = 4
+level_speed_factors = Array[float]([1.0, 0.8, 0.6, 0.5])
+upgrades = Array[ExtResource("2_up")]([SubResource("Resource_qlx82"), SubResource("Resource_5kxdx"), SubResource("Resource_lv4_up")])
+category = "coffee_machine"
+unlock_letter = "game:letter/coffee_machine"
+id = "facility/coffee_machine"
+display_name = "data.facility.coffee_machine.name"
+description = "data.facility.coffee_machine.desc"

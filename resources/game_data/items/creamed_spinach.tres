@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_rlc3k"]
+
+[resource]
+script = ExtResource("1_rlc3k")
+kind = 1
+sell_price = 18
+taste = "data.item.creamed_spinach.taste"
+catalog_hint = "data.item.creamed_spinach.hint"
+order = 140
+theme = "game:theme/western"
+order_weight = 1.2
+tags = Array[String](["game:tag/vegetarian", "game:tag/home"])
+id = "item/creamed_spinach"
+display_name = "data.item.creamed_spinach.name"
+description = "data.item.creamed_spinach.desc"

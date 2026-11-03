@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="RecipeDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/material_stack.gd" id="1_stack"]
+[ext_resource type="Script" path="res://scripts/resources/recipe_def.gd" id="2_recipe"]
+
+[sub_resource type="Resource" id="Resource_0"]
+script = ExtResource("1_stack")
+by_tag = "game:tag/veg"
+amount = 1
+
+
+[resource]
+script = ExtResource("2_recipe")
+output = "game:item/stir_fried_greens"
+inputs = Array[ExtResource("1_stack")]([SubResource("Resource_0")])
+duration_seconds = 15.0
+facility = "game:facility/pan"
+order = 365
+group = "meal"
+id = "recipe/stir_fried_greens"
+display_name = "data.recipe.stir_fried_greens.name"
+description = "data.recipe.stir_fried_greens.desc"

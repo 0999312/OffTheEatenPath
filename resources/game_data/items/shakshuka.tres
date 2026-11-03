@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_item"]
+
+[resource]
+script = ExtResource("1_item")
+kind = 1
+sell_price = 28
+taste = "data.item.shakshuka.taste"
+catalog_hint = "data.item.shakshuka.hint"
+order = 386
+theme = "game:theme/middle_east"
+order_weight = 1.0
+tags = Array[String](["game:tag/spicy", "game:tag/vegetarian", "game:tag/breakfast"])
+id = "item/shakshuka"
+display_name = "data.item.shakshuka.name"
+description = "data.item.shakshuka.desc"

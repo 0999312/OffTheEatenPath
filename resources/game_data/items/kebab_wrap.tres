@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_ugpm5"]
+
+[resource]
+script = ExtResource("1_ugpm5")
+kind = 1
+sell_price = 28
+taste = "data.item.kebab_wrap.taste"
+catalog_hint = "data.item.kebab_wrap.hint"
+order = 171
+theme = "game:theme/mediterranean"
+tags = Array[String](["game:tag/street", "game:tag/late_night"])
+id = "item/kebab_wrap"
+display_name = "data.item.kebab_wrap.name"
+description = "data.item.kebab_wrap.desc"

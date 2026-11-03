@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_mvcum"]
+
+[resource]
+script = ExtResource("1_mvcum")
+kind = 1
+sell_price = 16
+taste = "data.item.roasted_vegetables.taste"
+catalog_hint = "data.item.roasted_vegetables.hint"
+order = 164
+theme = "game:theme/western"
+order_weight = 1.2
+tags = Array[String](["game:tag/home", "game:tag/vegetarian"])
+id = "item/roasted_vegetables"
+display_name = "data.item.roasted_vegetables.name"
+description = "data.item.roasted_vegetables.desc"

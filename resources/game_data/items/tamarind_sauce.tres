@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_def.gd" id="1_ugtd2"]
+
+[resource]
+script = ExtResource("1_ugtd2")
+kind = 1
+sell_price = 8
+taste = "data.item.tamarind_sauce.taste"
+catalog_hint = "data.item.tamarind_sauce.hint"
+order = 222
+theme = "game:theme/south_asia"
+order_weight = 1.3
+tags = Array[String](["game:tag/vegetarian"])
+id = "item/tamarind_sauce"
+display_name = "data.item.tamarind_sauce.name"
+description = "data.item.tamarind_sauce.desc"
